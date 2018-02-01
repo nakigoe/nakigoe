@@ -1,3 +1,3 @@
 # nakigoe.github.io
 personal website
-*Bookmark me, actively adding content!!!*
+<p><b>*Bookmark me, actively adding content!!!*</b></p>
