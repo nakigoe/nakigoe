@@ -11,9 +11,253 @@
     <meta name="description" content="Perfect life instructions, DOs and DON'Ts, computer instructions">
     <meta name="author" content="Maxim Angel">
 <style amp-custom>
-  h1 {
-    color: yellow;
-  }
+#angelblaze {
+	-webkit-animation:angelblaze 6s ease-out 0s infinite alternate;
+	animation:angelblaze 6s ease-out 0s infinite alternate;
+}
+
+@-webkit-keyframes angelblaze {
+	from {
+		color: #ffb;
+		text-shadow: 0px 0px .7em #ffb;
+	}
+	to {
+		color: white;
+		text-shadow: 0px 0px .8em white,0 0 .8em white;
+	}
+	}
+
+@keyframes angelblaze {
+	from {
+		color: #ffb;
+		text-shadow: 0px 0px .7em #ffb;
+	}
+	to {
+		color: white;
+		text-shadow: 0px 0px .8em white,0 0 .8em white;
+	}
+	}
+
+html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
+	margin:0;
+	padding:0;
+	}
+body{
+	color: #eee;
+	width: 100%;
+	background-color:black;
+	}
+
+main {
+	width: 60%;
+	margin: 0 auto;
+	}
+h1 {
+	font-family:calibri;
+	text-align: center;
+	padding-top: 0.8em;
+	padding-bottom: 0.75em;
+	font-size: 4em;
+	letter-spacing: .12em;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	}
+	
+h2 {
+	font-family:Calibri;
+	font-size:3em;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	margin:.48em 0 .2em .2em;
+}
+
+h3 {
+	font-family:Calibri;
+	font-size:2em;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	margin-left:0;
+	margin-bottom:.5em;
+	}
+
+ul, li, dl, dd, dt {
+	list-style:none;
+	}
+dd {display:inline;}
+dt {
+	display:inline;
+	font-size:.8em;	
+	}	
+dt a{
+	margin-left: .25em;
+	margin-right: 0em;
+	}
+.dt{margin-left:1.5em;}/*section of dt*/
+
+a  {
+	font-size: 1.6em;
+	display: inline-block;
+	color: #ffb;
+	margin: .5em 0 0 .7em;
+	padding: .2em .4em;
+	text-decoration: none;
+	outline: 0;
+	white-space:nowrap;
+	border-radius: 1em;
+	background-color: #000;
+	box-shadow:0 0 .5em white;
+	background-image: -webkit-linear-gradient(270deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
+	background-image: -moz-linear-gradient(270deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
+	background-image: -o-linear-gradient(270deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
+}
+a:hover, #topNav:hover dl a{
+	color:white;
+	text-shadow: 0 0 1em white;
+	box-shadow: 0 0 2em white;
+	background-color:#555;}
+a:active{
+	color:white;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+	}
+	
+.link {
+	display:inline;
+	margin:0;
+	padding:0 .5em;
+	font-size:inherit;
+	color:white;
+	}
+.sameSite {
+	display:inline;
+	margin:0;
+	padding:0 .5em;
+	font-size:inherit;
+	}
+
+.linksList {
+	font-family:adobeclean-light;
+	font-size:1.6em;
+	margin:1.4em 0 1em .635em;	
+	}
+.linksList li {margin-bottom:1em;}
+
+.list {
+	font-family:adobeclean-light;
+	font-size:1.4em;
+	margin-left:1.5em;
+	line-height:1.5em;
+	}
+ 
+.linksListSection {margin-bottom:2em;}
+.linksListSection p{
+	font-size:.85em;
+	margin:.5em 0 0 .5em}
+
+
+
+#topNav{
+	margin-bottom: 1.6em;
+	}
+#topNav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+#topNav a{font-size: 1.4em;}
+
+#newArticles{
+	margin: 1em 1em .5em;
+	}
+#newArticles a{
+	font-size:1.2em;
+	color:#eee;
+	}
+#newArticles li:last-child a{margin-bottom:.6em;}
+#newArticles li:first-child a{margin-top:.15em;}
+#newArticles a:hover {color:white;}
+
+.siteLinks {margin-top:.7em;}
+.siteLinks a{margin-bottom:.4em;}
+
+hr {display:block;
+	box-shadow:0 0 .5em .1em white;
+	position:relative;
+	top:-.6em;
+	margin-bottom:0;
+	/*possible to control through margins if necessary*/
+	}
+kbd {
+	border: 1px solid #eee;
+	border-radius:.4em;
+	padding:.2em .4em;
+	}
+p {
+	line-height: 1.4;
+	text-align: justify;
+	margin-bottom: 1em;
+	font-family: "Adobe Clean Light";
+	font-size:1.2em;
+	letter-spacing:.02em;
+	}
+em {color:#fff;}
+	
+.question {
+	margin: 1em 2em 1em 0;
+	box-shadow: inset 0 0 .2em #f00,inset 0 0 2em #f00;
+	color: #ffb;
+	border-radius: 1em;
+	padding: .7em 1em;
+	}	
+.answer {
+	margin:1em 0 1em 2em;
+	box-shadow: inset 0 0 1.5em #fff;
+	border-radius: 1em;
+	padding: .7em 1em;
+	}
+.answer p, .question p{
+	margin-bottom:.5em;
+	}
+.answer p:last-child, .question p:last-child{
+	margin-bottom:.2em;
+	}
+.answer em {
+	color:#fff;
+}
+
+.articleHr {margin:2.25em 0 1em;}
+
+li small  {
+	font-size:0.65em;
+	font-color:#eee;
+	margin-left:auto;
+	margin-top:.25em;
+	}
+
+.linkAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:wrap;
+}
+.headingAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:nowrap;
+}
+footer {
+	width:60%;
+	margin: 5.5em auto 0;
+	padding-left:1em;
+	}
+#pageViews {
+	font-size:1.8em;
+	}
+#mainPageFooter {margin-top:2.6em;}
+
+.group::before, .group::after {content:"";display:table;}
+.group::after {clear:both}
 </style>
 </head>
 
