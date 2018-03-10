@@ -165,17 +165,20 @@ a:active{
 	font-size:.85em;
 	margin:.5em 0 0 .5em}
 
-#topNav{
+nav{
 	margin-bottom: 1.6em;
 	}
-#topNav li{
+nav li{
 	display:inline-block;
 	margin-bottom: 0.4em;
 	}
-#topNav a{font-size: 1.4em;}
+nav a{font-size: 1.4em;}
 
 #newArticles{
 	margin: 1em 1em .5em;
+	}
+#newArticles li{
+	display: block;
 	}
 #newArticles a{
 	font-size:1.2em;
@@ -229,11 +232,17 @@ li small  {
 footer {
 	width:60%;
 	margin: 5.5em auto 0;
-	padding-left:1em;
 	}
+#copyright{display: block;
+	margin: 20em auto 2em;
+	text-align: center;}
 #pageViews {
 	font-size:1.8em;
 	}
+#copyright{
+	margin: 20em auto 2em;
+	text-align: center;
+}
 #mainPageFooter {margin-top:2.6em;}
 
 .group:before, .group:after {content:"";display:table;}
@@ -241,7 +250,8 @@ footer {
 
 @media screen{}
 @media only screen and (max-width:720px) {
-	main {width:90%;}
+	main {width: 90%;}
+	footer{width: 90%}
 	}
 </style>
 </head>
@@ -263,7 +273,7 @@ footer {
 </script>
 </amp-analytics>
 
-<header>
+<header id="top">
   <h1 id="angelblaze">Angel in the Sky</h1>
 </header>
 
@@ -299,9 +309,15 @@ footer {
 <div>
 <p id="pageViews">Total Website Views</p>
 </div>
-<div>
-<p><small>&copy; to Nakigoe 2018</small></p>
-</div>
+<nav>
+<ul>
+<li><a href="#top">top</a></li>	
+<li><a href="me/me.html">me</a></li>
+<li><a href="articles/apps.html">Useful&nbsp;Programs</a></li>
+<li><a href="articles/video-courses.html">Video-courses</a></li>
+</ul>
+</nav>
+<p id="copyright"><small>&copy; to Nakigoe 2018</small></p>
 </footer>
 </body>
 </html>
