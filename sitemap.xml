@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+
+         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>https://nakigoe.github.io/</loc>
+
+      <lastmod>2018-04-16</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+      
+   <url>
+
+      <loc>https://nakigoe.github.io/index.html</loc>
+
+      <lastmod>2018-04-16</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+         
+   <url>
+
+      <loc>https://nakigoe.github.io/me/me.html</loc>
+
+      <lastmod>2018-04-16</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+         
+   <url>
+
+      <loc>https://nakigoe.github.io/me/bio.html</loc>
+
+      <lastmod>2018-04-16</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+    
+   <url>
+
+      <loc>https://nakigoe.github.io/me/current.html</loc>
+
+      <lastmod>2018-04-16</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>https://nakigoe.github.io/article/girl.html</loc>
+
+      <lastmod>2018-04-16</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+</urlset>
