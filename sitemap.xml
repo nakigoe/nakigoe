@@ -68,7 +68,7 @@
 
    <url>
 
-      <loc>https://nakigoe.github.io/article/girl.html</loc>
+      <loc>https://nakigoe.github.io/articles/girl.html</loc>
 
       <lastmod>2018-04-16</lastmod>
 
@@ -78,4 +78,15 @@
 
    </url>
 
+   <url>
+
+      <loc>https://nakigoe.github.io/articles/apps.html</loc>
+
+      <lastmod>2018-04-16</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
 </urlset>
