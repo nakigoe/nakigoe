@@ -79,71 +79,117 @@
 	</script>
   <!--Change "url" !!!-->
   <style amp-custom>
-    body {
-      background-color: #250000;
-      color: #eee;
-    }
+    html,body,header,h1,h2,ul,li,p,div{
+	margin:0;
+	padding:0;
+	}
+body{
+	color: #eee;
+	width: 100%;
+	background-color:#250000;
+	}
+main {
+	width: 60%;
+	margin: 0 auto;
+	}
 
-    ul {
-      list-style: none;
-    }
-
-    main {
-      padding: 10px;
-      width: 720px;
-      margin: 5em auto 2.5em;
-    }
-
-    footer {
-      width: 720px;
-      margin: 0 auto;
-    }
-
-    footer p {
+footer p {
       font-size: 1.1em;
       line-height: 1em;
     }
-
-    h1 {
-      text-align: center;
-      font-size: 4.5em;
-    }
-
-    h2 {
-      text-align: center;
-      font-size: 3em;
-    }
-
-    h3 {
-      font-size: 2em;
-    }
+    ul, li {
+	list-style:none;
+	}
+h1 {
+	font-family:calibri;
+	text-align: center;
+	padding-top: 0.8em;
+	padding-bottom: 0.75em;
+	font-size: 4em;
+	letter-spacing: .12em;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	}
+	
+h2 {
+	font-family:Calibri;
+	font-size:3em;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	margin:.48em 0 .5em 0;
+}
+h3 {
+	font-family:Calibri;
+	font-size:2em;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white, 0 0 .6em white;
+	margin-bottom:.5em;
+	}
 
     hr {
       display: block;
       margin-top: 4em;
+      box-shadow:0 0 .5em .1em white;
     }
 
     p,
     li {
       font-size: 1.4em;
-      line-height: 1.5em;
+      line-height: 1.8em;
+      letter-spacing:.02em;
+      font-family: "Calibri"
     }
-
-    a {
-      color: white;
-      text-shadow: 0 0 1px #330000, 0 0 1px #330000, 0 0 1px #330000, 0 0 1px #330000;
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-shadow: 0 0 10px pink, 0 0 20px yellow;
-    }
-
-    a:active {
-      position: relative;
-      left: 1px;
-      top: 1px;
-    }
+    nav{
+	margin-bottom: 1.6em;
+	}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{font-size: 1.4em;}
+a  {
+	font-size: 1.6em;
+	display: inline-block;
+	color: #ffb;
+	margin: .5em 0 0 .7em;
+	padding: .2em .4em;
+	text-decoration: none;
+	outline: 0;
+	white-space:nowrap;
+	border-radius: 1em;
+	background-color: #000;
+	box-shadow:0 0 .5em white;
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
+}
+a:hover, #topNav:hover dl a{
+	color:white;
+	text-shadow: 0 0 1em white;
+	box-shadow: 0 0 2em white;
+	background-color:#555;}
+a:active{
+	color:white;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+	}
+  footer {
+	width:60%;
+	margin: 5.5em auto 0;
+	}
+  #mobile{ font-size: 150%;}
+  #contacts{ margin: 1em auto 2em;}
+#copyright{
+	margin: 20em auto 2em;
+	text-align: center;
+}
+#pageViews {
+	font-size:1.8em;
+	}
+.group::before, .group::after {content:"";display:table;}
+.group::after {clear:both}
+@media only screen and (max-width:720px) {
+	main {width:90%;}
+	footer {width:90%;}
+	}
   </style>
 </head>
 
@@ -241,7 +287,7 @@
     <hr>
   </main>
   <footer>
-    <p>mob. 7 996 764 84 54</p>
+    <p id="contacts">mobile Tele2 Russia St. Petersburg: <span id="mobile">7 996 764 84 54</span></p>
     <nav>
       <ul>
         <li><a href="#top">top</a></li>
