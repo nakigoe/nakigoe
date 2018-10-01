@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+  <script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
   <link rel="canonical" href="https://nakigoe.github.io/ru/services.html">
   <!--Change!!!-->
   <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -24,7 +25,7 @@
   <meta name="distribution" content="Global">
   <meta name="rating" content="General">
   <meta name="revised" content="2018-09-12" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400">
   <script type="application/ld+json">
 		{
 		  "@context": {
@@ -174,24 +175,55 @@ nav a{font-size: 1.4em;}
       line-height: 1.8em;
       letter-spacing:.02em;
       font-family: 'Nunito Sans', sans-serif;
+	  font-weight: 400;
     }
-
 
   footer {
 	width:60%;
 	margin: 5.5em auto 0;
 	}
-  #mobile{ font-size: 150%;}
-  #contacts{ margin: 1em auto 2em;}
-#copyright{
+  #mobile {
+	  font-size: 150%;
+	  }
+  #contacts {
+	  margin: 1em auto 2em;
+	  }
+#copyright {
 	margin: 20em auto 2em;
 	text-align: center;
 }
-#pageViews {
-	font-size:1.8em;
-	}
-.group::before, .group::after {content:"";display:table;}
-.group::after {clear:both}
+	  .social {
+		  display: block;
+		  margin: 2.5em auto 0;
+		  text-align: center;
+	  }
+	  .social p {
+		  margin-bottom: 1em;
+	  }
+    amp-social-share {
+      border-radius: 50%;
+      background-size: 60%;
+		border: solid thin #FF0000;
+		box-shadow:0 0 5px white;
+		margin: .25em;
+    }
+	  
+ 	  amp-social-share:hover {
+		  color: red;
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+		  background-size: 100%;
+	  } 
+	   	  amp-social-share:active {
+		  color: red;
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+		  background-size: 100%;
+			  	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+	  } 
+	  
 @media only screen and (max-width:720px) {
 	main {width:90%;}
 	footer {width:90%;}
@@ -303,6 +335,20 @@ nav a{font-size: 1.4em;}
         <li><a href="../video/video.html">Video-courses</a></li>
       </ul>
     </nav>
+        <div class="social">
+        <p>SHARE VIA</p>
+      <amp-social-share width="72" height="72" type="email"></amp-social-share>
+      <amp-social-share width="72" height="72" type="facebook"
+    data-param-app_id="272325784911610"></amp-social-share>
+      <amp-social-share width="72" height="72" type="gplus"></amp-social-share>
+      <amp-social-share width="72" height="72" type="linkedin"></amp-social-share>
+      <amp-social-share width="72" height="72" type="pinterest"
+    data-param-media="https://ampbyexample.com/img/amp.jpg"></amp-social-share>
+      <amp-social-share width="72" height="72" type="tumblr"></amp-social-share>
+      <amp-social-share width="72" height="72" type="twitter"></amp-social-share>
+      <amp-social-share width="72" height="72" type="whatsapp"></amp-social-share>
+      <amp-social-share width="72" height="72" type="line"></amp-social-share>
+    </div>
     <p id="copyright"><small>&copy; to Ooou 2018</small></p>
   </footer>
 </body>
