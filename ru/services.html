@@ -224,6 +224,15 @@ nav a{font-size: 1.4em;}
 	text-shadow: 0 0 1em white;
 	  } 
 	  
+	amp-social-share[type="vk"] {
+		background-color: #5D7EFF;
+		color: white;
+		background-size: 50%;
+    background-image: url(../_SVG/vk.svg);
+}  	amp-social-share[type="vk"]:hover {
+		background-size: 75%;
+} 
+	  
 @media only screen and (max-width:720px) {
 	main {width:90%;}
 	footer {width:90%;}
@@ -348,6 +357,10 @@ nav a{font-size: 1.4em;}
       <amp-social-share width="72" height="72" type="twitter"></amp-social-share>
       <amp-social-share width="72" height="72" type="whatsapp"></amp-social-share>
       <amp-social-share width="72" height="72" type="line"></amp-social-share>
+      <amp-social-share width="72" height="72" type="vk" 
+      	      data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/ru/services.html"
+      	      	data-param-text="Веб-дизайн. Репетитор по математике, информатике, английскому языку, русскому языку, таджикскому языку, японскому языку - https://nakigoe.github.io/ru/services.html"
+      	      ></amp-social-share>
     </div>
     <p id="copyright"><small>&copy; to Ooou 2018</small></p>
   </footer>
