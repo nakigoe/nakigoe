@@ -88,7 +88,26 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-	
+	.alert {
+		color: #FF6600;
+        background-color: #1a0000;
+        box-shadow: 0 0 .5em red;
+        background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+		/*-----margin was .5em (experiment for different screens)-----*/
+	}
+	.alert:hover {
+        color: yellow;
+        text-align: center;
+        text-decoration: none;
+        padding: .2em .4em;
+        outline: 0;
+        white-space: nowrap;
+        border-radius: 1em;
+        text-shadow: 0 0 1em red;
+        box-shadow: 0 0 2em red;
+        background-color: #500;
+        background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+	}	
 .link {
 	display:inline;
 	margin:0;
@@ -312,7 +331,7 @@ footer {
 <nav id="topNav">
 <ul>
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/bio.html">bio</a></li>
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/current.html">insider</a></li>
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/current.html">help&nbsp;needed</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/index.html">New&nbsp;Articles</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Programs</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/video/video.html">Video-courses</a></li>
@@ -569,7 +588,7 @@ footer {
 <ul>
 <li><a href="#top">top</a></li>
 <li><a href="../me/bio.html">bio</a></li>
-<li><a href="../me/current.html">insider</a></li>
+<li><a class="alert" href="../me/current.html">help&nbsp;needed</a></li>
 <li><a href="../index.html">New-Articles</a></li>
 <li><a href="../articles/apps.html">Useful&nbsp;Programs</a></li>
 <li><a href="../video/video.html">Video-courses</a></li>
