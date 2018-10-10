@@ -54,7 +54,7 @@ html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
 body{
 	color: #eee;
 	width: 100%;
-	background-color:black;
+	background-color: black;
 	}
 
 main {
@@ -117,7 +117,27 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-	
+	.ru {
+		color: #FF6600;
+        background-color: #1a0000;
+        box-shadow: 0 0 .5em red;
+        background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+		/*-----margin was .5em (experiment for different screens)-----*/
+	}
+	.ru:hover {
+        color: yellow;
+        text-align: center;
+        text-decoration: none;
+        padding: .2em .4em;
+        outline: 0;
+        white-space: nowrap;
+        border-radius: 1em;
+        text-shadow: 0 0 1em red;
+        box-shadow: 0 0 2em red;
+        background-color: #500;
+        background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+	}
+
 .link {
 	display:inline;
 	margin:0;
@@ -271,7 +291,7 @@ footer {
 	<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Programs</a></li>
 <!--	<li><a property="significantLink" href="articles/video-courses.html">Video-courses</a></li>-->
-	<li><a property="significantLink" href="https://nakigoe.github.io/ru/services.html">RU</a></li>
+	<li><a class="ru" property="significantLink" href="https://nakigoe.github.io/ru/services.html">RU</a></li>
 </ul>
 </div>
 
@@ -298,9 +318,6 @@ footer {
 </main>
 
 <footer id="mainPageFooter">
-<div>
-<p id="pageViews">Total Website Views</p>
-</div>
 <nav>
 <ul>
 <li><a href="#top">top</a></li>	
