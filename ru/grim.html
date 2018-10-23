@@ -145,11 +145,6 @@ hr {display:block;
 	margin-bottom:0;
 	/*possible to control through margins if necessary*/
 	}
-kbd {
-	border: 1px solid #eee;
-	border-radius:.4em;
-	padding:.2em .4em;
-	}
 p {
 	line-height: 1.4;
 	text-align: justify;
@@ -183,19 +178,19 @@ footer {
 	width:60%;
 	margin: 5.5em auto 0;
 	}
+#footnav { 
+	margin: 0 auto 0;
+	/*<home> <me> <etc>               <top> to the right*/
+}
+
 #copyright{
 	margin: 20em auto 2em;
 	text-align: center;
 }
-#pageViews {
-	font-size:1.8em;
-	}
-.group::before, .group::after {content:"";display:table;}
-.group::after {clear:both}
 
 .social {
 	display: block;
-	margin: 2.5em auto 0;
+	margin: 2.5em auto 6.5em;
 	text-align: center;
 }
 .social p {
@@ -433,7 +428,7 @@ Yet government officials continue to claim that ‘they won’t let rouble fall�
       	      	data-param-text="Exit Russia - https://nakigoe.github.io/ru/grim.html"
       	      ></amp-social-share>
 </div>
-<nav>
+<nav id="footnav">
 	<ul>
 	<li><a href="#top">top</a></li>	
 	<li><a href="../me/me.html">Me</a></li>
@@ -441,7 +436,7 @@ Yet government officials continue to claim that ‘they won’t let rouble fall�
 	<li><a href="../articles/apps.html">Useful&nbsp;Programs</a></li>
 	<li><a href="../video/video.html">Video-courses</a></li>
 	</ul>
-	</nav>
+</nav>
 <p id="copyright"><small>&copy; to Ooou 2018</small></p>
 </footer>
 </body>
