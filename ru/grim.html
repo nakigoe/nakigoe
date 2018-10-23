@@ -58,19 +58,9 @@ h3 {
 	text-shadow:0 0 .6em white, 0 0 .6em white;
 	margin-bottom:.5em;
 	}
-ul, li, dl, dd, dt {
+ul, li {
 	list-style:none;
 	}
-dd {display:inline;}
-dt {
-	display:inline;
-	font-size:.8em;	
-	}	
-dt a{
-	margin-left: .25em;
-	margin-right: 0em;
-	}
-.dt{margin-left:1.5em;}/*section of dt*/
 a  {
 	font-size: 1.6em;
 	display: inline-block;
@@ -178,13 +168,14 @@ footer {
 	width:60%;
 	margin: 5.5em auto 0;
 	}
+/* just in case more styles appear for the footer nav panel
 #footnav { 
-	margin: 0 auto 0;
-	/*<home> <me> <etc>               <top> to the right*/
 }
+*/
+#topLink {float: right;}/*maybe add red color using class .attention link?*/
 
 #copyright{
-	margin: 20em auto 2em;
+	margin: 10em auto 2em;
 	text-align: center;
 }
 
@@ -434,7 +425,7 @@ Yet government officials continue to claim that ‘they won’t let rouble fall�
 	<li><a href="../me/me.html">Me</a></li>
 	<li><a href="../articles/apps.html">Useful&nbsp;Programs</a></li>
 	<!-- <li><a href="../video/video.html">Video-courses</a></li> -->
-	<li><a href="#top">top</a></li>
+	<li id="topLink"><a href="#top">top</a></li>
 	</ul>
 </nav>
 <p id="copyright"><small>&copy; to Ooou 2018</small></p>
