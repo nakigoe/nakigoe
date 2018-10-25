@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <link rel="canonical" href="https://nakigoe.github.io/online/online-hour.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -27,7 +28,7 @@ html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
 body{
 	color: #eee;
 	width: 100%;
-	background-color: #000000;
+	background-color: #250000;
 	}
 
 main {
@@ -73,19 +74,9 @@ h5 {
 	text-shadow: 0 0 .6em white;
 	margin-bottom: .9em;
     }
-ul, li, dl, dd, dt {
+ul, li{
 	list-style:none;
 	}
-dd {display:inline;}
-dt {
-	display:inline;
-	font-size:.8em;	
-	}	
-dt a{
-	margin-left: .25em;
-	margin-right: 0em;
-	}
-.dt{margin-left:1.5em;}/*section of dt*/
 
 a  {
 	font-size: 1.6em;
@@ -207,9 +198,67 @@ footer {
 	width:60%;
 	margin: 5.5em auto 0;
 	}
+#topLink {float: right;}
 #copyright{
-	margin: 20em auto 2em;
+	margin: 10em auto 2em;
 	text-align: center;
+}
+
+.social {
+	display: block;
+	margin: 2.5em auto 6.5em;
+	text-align: center;
+}
+.social p {
+	margin-bottom: 1em;
+	text-align: center;
+	font-weight: 400;
+}
+amp-social-share {
+	border-radius: 50%;
+	background-size: 60%;
+	border: solid thin #FF0000;
+	box-shadow: 0 0 5px white;
+	margin: .25em;
+}
+amp-social-share:hover {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+}
+
+amp-social-share:active {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+}
+amp-social-share[type="vk"] {
+	background-color: #5D7EFF;
+	background-size: 50%;
+	background-image: url(../_SVG/vk.svg);
+}
+amp-social-share[type="vk"]:hover {
+	background-size: 75%;
+}
+amp-social-share[type="ok"] {
+	background-color: orangered; /*orangered*/
+	background-size: 50%;
+	background-image: url(../_SVG/ok.svg);
+}
+amp-social-share[type="ok"]:hover {
+	background-size: 75%;
+}
+	
+	amp-social-share[type="livejournal"] {
+	background-color: #21A5D8;
+	background-size: 50%;
+	background-image: url(../_SVG/livejournal.svg);
+}
+amp-social-share[type="livejournal"]:hover {
+	background-size: 75%;
 }
 
 @media only screen and (max-width:720px) {
@@ -243,10 +292,9 @@ footer {
 <main>
 <nav id="topNav">
 <ul>
-<li><a property="significantLink" href="../me/me.html">Me</a></li>
-<li><a property="significantLink" href="../index.html">New&nbsp;Articles</a></li>
-<li><a property="significantLink" href="../articles/apps.html">Useful&nbsp;Programs</a></li>
-<li><a property="significantLink" href="../video/video.html">Video-courses</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/index.html">Main</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Programs</a></li>
 </ul>
 </nav>
 
@@ -290,12 +338,43 @@ footer {
 </article>
 </main>
 <footer>
+<div class="social">
+    <p>SHARE VIA</p>
+    <amp-social-share width="72" height="72" type="email"></amp-social-share>
+    <amp-social-share width="72" height="72" type="facebook"
+    data-param-app_id="272325784911610"></amp-social-share>
+    <amp-social-share width="72" height="72" type="gplus"></amp-social-share>
+    <amp-social-share width="72" height="72" type="linkedin"></amp-social-share>
+    <amp-social-share width="72" height="72" type="pinterest"
+    data-param-media="https://nakigoe.github.io/_IMG/big.jpg"></amp-social-share>
+    <amp-social-share width="72" height="72" type="tumblr"></amp-social-share>
+    <amp-social-share width="72" height="72" type="twitter"></amp-social-share>
+    <amp-social-share width="72" height="72" type="whatsapp"></amp-social-share>
+    <amp-social-share width="72" height="72" type="line"></amp-social-share>
+    <amp-social-share width="72" height="72" type="vk" 
+      	      data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/swords/sword-length.html"
+      	      	data-param-text="Custom Sword - https://nakigoe.github.io/swords/sword-length.html"
+      	      ></amp-social-share>
+    <amp-social-share width="72" height="72" type="ok" 
+      	      data-share-endpoint="https://connect.ok.ru/offer
+?url=https://nakigoe.github.io/swords/sword-length.html
+&title=Custom Sword
+&description=Sword weight, length, curvature, custom swords."
+      	      	data-param-text="Custom Sword - https://nakigoe.github.io/swords/sword-length.html"
+      	      ></amp-social-share>
+	  <amp-social-share width="72" height="72" type="livejournal" 
+      	      data-share-endpoint="https://www.livejournal.com/update.bml?
+								   subject=Custom Sword
+								   &event=Sword weight, length, curvature, custom swords - https://nakigoe.github.io/swords/sword-length.html"
+      	      	data-param-text="Custom Sword - https://nakigoe.github.io/swords/sword-length.html"
+      	      ></amp-social-share>
+</div>
 <nav>
 <ul>
-<li><a href="#top">top</a></li>	
-<li><a href="../me/me.html">Me</a></li>
-<li><a href="../index.html">New&nbsp;Articles</a></li>
-<li><a href="../articles/apps.html">Useful&nbsp;Programs</a></li>
+	<li><a href="../index.html">Main</a></li>
+	<li><a href="../me/me.html">Me</a></li>
+	<li><a href="../articles/apps.html">Useful&nbsp;Programs</a></li>
+	<li id="topLink"><a href="#top">top</a></li>
 </ul>
 </nav>
 <p id="copyright"><small>&copy; to Ooou 2018</small></p>
