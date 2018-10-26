@@ -239,14 +239,14 @@ footer {
 	margin: 1em auto 2em;
 	max-width: 400px;
 }
-
+#topLink {float: right;}
 #copyright {
-	margin: 20em auto 2em;
+	margin: 10em auto 2em;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 0;
+	margin: 2.5em auto 6.5em;
 	text-align: center;
 }
 .social p {
@@ -332,10 +332,9 @@ footer {
 <main>
   <nav id="topNav">
     <ul>
-      <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-      <li><a property="significantLink" href="https://nakigoe.github.io/index.html">New&nbsp;Articles</a></li>
-      <li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Programs</a></li>
-      <li><a property="significantLink" href="https://nakigoe.github.io/video/video.html">Video-courses</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/index.html">Main</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Programs</a></li>
     </ul>
   </nav>
   <section>
@@ -407,16 +406,8 @@ footer {
   height="50"
   layout="intrinsic"
   alt="nakigoe @ protonmail . com">
-</amp-img></p>
-  <nav>
-    <ul>
-      <li><a href="#top">top</a></li>
-      <li><a href="../me/me.html">Me</a></li>
-      <li><a href="../index.html">New&nbsp;Articles</a></li>
-      <li><a href="../articles/apps.html">Useful&nbsp;Programs</a></li>
-      <li><a href="../video/video.html">Video-courses</a></li>
-    </ul>
-  </nav>
+</amp-img>
+</p>
   <div class="social">
     <p>SHARE VIA</p>
     <amp-social-share width="72" height="72" type="email"></amp-social-share>
@@ -447,7 +438,15 @@ footer {
 								   &event=Веб-дизайн. Репетитор по математике, информатике, английскому языку, русскому языку, таджикскому языку, японскому языку - https://nakigoe.github.io/ru/services.html"
       	      	data-param-text="Веб-дизайн. Репетитор по математике, информатике, английскому языку, русскому языку, таджикскому языку, японскому языку - https://nakigoe.github.io/ru/services.html"
       	      ></amp-social-share>
-  </div>
+	</div>
+  <nav>
+			<ul>
+			<li><a href="../index.html">Main</a></li>
+			<li><a href="../me/me.html">Me</a></li>
+			<li><a href="../articles/apps.html">Useful&nbsp;Programs</a></li>
+			<li id="topLink"><a href="#top">top</a></li>
+			</ul>
+			</nav>
   <p id="copyright"><small>&copy; to Ooou 2018</small></p>
 </footer>
 </body>
