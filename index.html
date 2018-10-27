@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 	<link rel="canonical" href="https://nakigoe.github.io/index.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
 	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -18,7 +19,8 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content="2018-04-07"><!--Change!!!-->
+	<meta name="revised" content="2018-10-27"><!--Change!!!-->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
 #angelblaze {
 	-webkit-animation:angelblaze 6s ease-out 0s infinite alternate;
@@ -54,7 +56,7 @@ html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
 body{
 	color: #eee;
 	width: 100%;
-	background-color: black;
+	background-color: #250000;
 	}
 
 main {
@@ -88,7 +90,7 @@ h3 {
 	margin-bottom:.5em;
 	}
 
-ul, li, dl, dd, dt {
+ul, li {
 	list-style:none;
 	}
 
@@ -208,7 +210,8 @@ p {
 	line-height: 1.4;
 	text-align: justify;
 	margin-bottom: 1em;
-	font-family: "Adobe Clean Light";
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
 	font-size:1.2em;
 	letter-spacing:.02em;
 	}
@@ -239,20 +242,73 @@ footer {
 	width:60%;
 	margin: 5.5em auto 0;
 	}
+/*#mainPageFooter {margin-top:5.5em;}*/
 .rightLink{
 	float: right;
 }
-#copyright{display: block;
-	margin: 20em auto 2em;
-	text-align: center;}
-#pageViews {
-	font-size:1.8em;
-	}
+
 #copyright{
 	margin: 10em auto 2em;
 	text-align: center;
 }
-#mainPageFooter {margin-top:2.6em;}
+
+.social {
+	display: block;
+	margin: 2.5em auto 6.5em;
+	text-align: center;
+}
+.social p {
+	margin-bottom: 1em;
+	text-align: center;
+	font-weight: 400;
+}
+amp-social-share {
+	border-radius: 50%;
+	background-size: 60%;
+	border: solid thin #FF0000;
+	box-shadow: 0 0 5px white;
+	margin: .25em;
+}
+amp-social-share:hover {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+}
+
+amp-social-share:active {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+}
+amp-social-share[type="vk"] {
+	background-color: #5D7EFF;
+	background-size: 50%;
+	background-image: url(_SVG/vk.svg);
+}
+amp-social-share[type="vk"]:hover {
+	background-size: 75%;
+}
+amp-social-share[type="ok"] {
+	background-color: orangered; /*orangered*/
+	background-size: 50%;
+	background-image: url(_SVG/ok.svg);
+}
+amp-social-share[type="ok"]:hover {
+	background-size: 75%;
+}
+	
+	amp-social-share[type="livejournal"] {
+	background-color: #21A5D8;
+	background-size: 50%;
+	background-image: url(_SVG/livejournal.svg);
+}
+amp-social-share[type="livejournal"]:hover {
+	background-size: 75%;
+}
+
 
 
 @media screen{}
@@ -303,7 +359,7 @@ footer {
 <li><a property="significantLink" href="https://nakigoe.github.io/usa/america.html">Come to USA!</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/articles/girl.html">Girl: a Real Princess</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/online/online-hour.html">Get Online in an Hour</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/swords/sword-length.html">Ideal Sword Length</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io">Ideal Sword Length</a></li>
 <!--
 <li><a property="significantLink" href="articles/typing.html">Modern Touch-Typing</a></li>
 <li><a property="significantLink" href="articles/ai.html">AI vs Emotions and Feelings</a></li>
@@ -319,7 +375,37 @@ footer {
 </main>
 
 <footer id="mainPageFooter">
-
+<div class="social">
+    <p>SHARE VIA</p>
+    <amp-social-share width="72" height="72" type="email"></amp-social-share>
+    <amp-social-share width="72" height="72" type="facebook"
+    data-param-app_id="272325784911610"></amp-social-share>
+    <amp-social-share width="72" height="72" type="gplus"></amp-social-share>
+    <amp-social-share width="72" height="72" type="linkedin"></amp-social-share>
+    <amp-social-share width="72" height="72" type="pinterest"
+    data-param-media="https://nakigoe.github.io/_IMG/big.jpg"></amp-social-share>
+    <amp-social-share width="72" height="72" type="tumblr"></amp-social-share>
+    <amp-social-share width="72" height="72" type="twitter"></amp-social-share>
+    <amp-social-share width="72" height="72" type="whatsapp"></amp-social-share>
+    <amp-social-share width="72" height="72" type="line"></amp-social-share>
+    <amp-social-share width="72" height="72" type="vk" 
+      	      data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io"
+      	      	data-param-text="nakigoe - https://nakigoe.github.io"
+      	      ></amp-social-share>
+    <amp-social-share width="72" height="72" type="ok" 
+      	      data-share-endpoint="https://connect.ok.ru/offer
+?url=https://nakigoe.github.io
+&title=nakigoe
+&description=Perfect life instructions, DOs and DON'Ts, computer instructions"
+      	      	data-param-text="nakigoe - https://nakigoe.github.io"
+      	      ></amp-social-share>
+	  <amp-social-share width="72" height="72" type="livejournal" 
+      	      data-share-endpoint="https://www.livejournal.com/update.bml?
+								   subject=nakigoe
+								   &event=Perfect life instructions, DOs and DON'Ts, computer instructions - https://nakigoe.github.io"
+      	      	data-param-text="nakigoe - https://nakigoe.github.io"
+      	      ></amp-social-share>
+</div>
 <p id="copyright"><small>&copy; to Ooou 2018</small></p>
 </footer>
 </body>
