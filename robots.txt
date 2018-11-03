@@ -7,4 +7,3 @@ Disallow: /_SVG
 
 User-agent: YandexBot
 Allow: /https://nakigoe.github.io/services.rss
-Allow: /https://nakigoe.github.io
