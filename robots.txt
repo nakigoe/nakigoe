@@ -1,4 +1,7 @@
 Sitemap: https://nakigoe.github.io/sitemap.xml
+Disallow: /_IMG
+Disallow: /_VID
+Disallow: /_SVG
 
 User-agent: YandexBot
 Allow: /https://nakigoe.github.io/services.rss
