@@ -1,5 +1,5 @@
 Sitemap: https://nakigoe.github.io/sitemap.xml
 
 User-agent: YandexBot
-Allow: https://nakigoe.github.io/services.rss
-Allow: https://nakigoe.github.io
+Allow: /https://nakigoe.github.io/services.rss
+Allow: /https://nakigoe.github.io
