@@ -1,0 +1,455 @@
+<!DOCTYPE HTML>
+<html amp lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+    <link rel="canonical" href="https://nakigoe.github.io/articles/hot.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <!--[if lt IE9]><script> src="http::/html5.shim/googlecode.com/svn/trunk/html5.js"</script><![end if]-->
+    <title>hot CPU &amp; melted GPU</title>
+    <meta name="description" content="Love Song, love letter, being in love, shower kissing, love forever">
+	<meta name="author" content="Maxim Angel">
+	<meta name="designer" content="Maxim Angel">
+	<meta name="copyright" content="Maxim Angel">
+	<meta name="owner" content="Maxim Angel">
+	<meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+	<meta name="rating" content="General">
+	<meta name="revised" content="2018-11-07"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
+<style amp-custom>
+html,body,header,h1,h2,ul,li,p,div{
+	margin:0;
+	padding:0;
+	}
+body{
+	color: #eee;
+	width: 100%;
+	background-color:#250000;
+	}
+
+main {
+	width: 60%;
+	margin: 0 auto;
+	}
+h1 {
+	font-family:calibri;
+	text-align: center;
+	padding-top: 0.8em;
+	padding-bottom: 0.75em;
+	font-size: 4em;
+	letter-spacing: .12em;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	}
+	
+h2 {
+	font-family:Calibri;
+	font-size:3em;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	margin:.48em 0 .5em 0;
+}
+
+h3 {
+	font-family:Calibri;
+	font-size:2em;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white, 0 0 .6em white;
+	margin-bottom:.5em;
+	}
+
+ul, li {
+	list-style:none;
+	}
+
+a  {
+	font-size: 1.6em;
+	display: inline-block;
+	color: #ffb;
+	margin: .5em 0 0 .7em;
+	padding: .2em .4em;
+	text-decoration: none;
+	outline: 0;
+	white-space:nowrap;
+	border-radius: 1em;
+	background-color: #000;
+	box-shadow:0 0 .5em white;
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
+}
+a:hover, #topNav:hover dl a{
+	color:white;
+	text-shadow: 0 0 1em white;
+	box-shadow: 0 0 2em white;
+	background-color:#555;}
+a:active{
+	color:white;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+	}
+	
+.link {
+	display:inline;
+	margin:0;
+	padding:0 .5em;
+	font-size:inherit;
+	color:white;
+	}
+.sameSite {
+	display:inline;
+	margin:0;
+	padding:0 .5em;
+	font-size:inherit;
+	}
+
+.linksList {
+	font-family: "Adobe Clean Light";
+	font-size:1.6em;
+	margin:1.4em 0 1em .635em;	
+	}
+.linksList li {margin-bottom:1em;}
+
+.list {
+	font-family: "Adobe Clean Light";
+	font-size:1.2em;
+	margin-left:1.5em;
+	line-height:1.5em;
+	letter-spacing:.02em;
+	}
+ 
+.linksListSection {margin-bottom:2em;}
+.linksListSection p{
+	font-size:.85em;
+	margin:.5em 0 0 .5em}
+
+nav{
+	margin-bottom: 1.6em;
+	}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{font-size: 1.4em;}
+
+.siteLinks {margin-top:.7em;}
+.siteLinks a{margin-bottom:.4em;}
+
+hr {display:block;
+	box-shadow:0 0 .5em .1em white;
+	position:relative;
+	top:-.6em;
+	margin-bottom:0;
+	/*possible to control through margins if necessary*/
+	}
+kbd {
+	border: 1px solid #eee;
+	border-radius:.4em;
+	padding:.2em .4em;
+	}
+p {
+	line-height: 1.4;
+	text-align: justify;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+	font-size:1.2em;
+	letter-spacing:.02em;
+	}
+em {color:#fff;}
+
+.articleHr {margin:2.25em 0 1em;}
+
+li small  {
+	font-size:0.65em;
+	color:#eee;
+	margin-left:auto;
+	margin-top:.25em;
+	}
+
+.linkAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:wrap;
+}
+.headingAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:nowrap;
+}
+footer {
+	width:60%;
+	margin: 5.5em auto 0;
+	}
+#topLink {float: right;}
+#copyright{
+	margin: 10em auto 2em;
+	text-align: center;
+}
+
+.social {
+	display: block;
+	margin: 2.5em auto 6.5em;
+	text-align: center;
+}
+.social p {
+	margin-bottom: 1em;
+	text-align: center;
+	font-weight: 400;
+}
+amp-social-share {
+	border-radius: 50%;
+	background-size: 60%;
+	border: solid thin #FF0000;
+	box-shadow: 0 0 5px white;
+	margin: .25em;
+}
+amp-social-share:hover {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+}
+
+amp-social-share:active {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+}
+amp-social-share[type="vk"] {
+	background-color: #5D7EFF;
+	background-size: 50%;
+	background-image: url(../_SVG/vk.svg);
+}
+amp-social-share[type="vk"]:hover {
+	background-size: 75%;
+}
+amp-social-share[type="ok"] {
+	background-color: orangered; /*orangered*/
+	background-size: 50%;
+	background-image: url(../_SVG/ok.svg);
+}
+amp-social-share[type="ok"]:hover {
+	background-size: 75%;
+}
+	
+amp-social-share[type="livejournal"] {
+	background-color: #21A5D8;
+	background-size: 50%;
+	background-image: url(../_SVG/livejournal.svg);
+}
+amp-social-share[type="livejournal"]:hover {
+	background-size: 75%;
+}
+amp-social-share[type="telegram"] {
+	background-color: #1e96c8;
+	background-size: 50%;
+	background-image: url(../_SVG/telegram.svg);
+}
+amp-social-share[type="telegram"]:hover {
+	background-size: 75%;
+}
+@media only screen and (max-width:720px) {
+	main {width:90%;}
+	footer {width:90%;}
+	}
+</style>
+
+<script type="application/ld+json">
+		{
+            "@context": "http://schema.org/",
+            "@type": "WebPage",
+			"isFamilyFriendly": "True",
+			"significantLink": "https://nakigoe.github.io/index.html",		
+			"name": "Ideal Girlfriend",
+            "isPartOf": {
+                "@type": "ProfilePage",
+                "name": "Ooou",
+				"url": "https://nakigoe.github.io/me/me.html",
+				"mainEntity": {
+					"@type": "Person",
+					"name": "Ooou",
+					"seeks": {
+						"@type": "Demand",
+						"name": "girlfriend",
+						"description": [
+						"white",
+						"17-21y", 
+						"180cm+ (5'11''+)",
+						"fit",
+						"lives near sea and mountains",
+						"with good voice",
+						"sings well",
+						"a beauty :)",
+						"a fire",
+						"trained in martial arts",
+						"tech competent",
+						"pure",
+						"kind",
+						"perceptive",
+						"communicative, informative, open",
+						"sensible",
+						"discernible",
+						"from Excellent parents",
+						"with higher education",
+						"can enter sport mental flow",
+						"European and speaks English",
+						"with excellent health"]
+					}
+				}
+			}
+		}
+	</script>
+</head>
+
+<body>
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-114280489-1"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+
+<header id="top">
+<h1 property="name">When the CPU is hot, and the GPU melts</h1>
+</header>
+
+<main>
+<nav id="topNav">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/index.html">Main</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Programs</a></li>
+</ul>
+</nav>
+
+<article>
+<header>
+<h2>Love Song</h2>
+</header>
+<p>When You run low on a disk space, and the CPU is hot, and the GPU melts,
+<br> You feel lonely inside, contact me, let’s make more love!!!
+<br> There is no need to control the temperature anymore!!!
+<br> Come get closer, I need You, I want You, I love You!!!</p>
+
+<p>Yes, I become stupid when I’m in love,
+<br> Yet nobody can stop me, No I will not allow that!</p>
+
+<p>Embracing Your neck, undressing Your tights,
+<br> kissing Your ear, neck and the belly,</p>
+
+<p>When I’m drunk with love and go crazy, 
+<br> I gonna kiss Your lips, touch Your breasts and lick Your genni!
+<br> when You exit the shower Your skin’s hot, wet and tender,
+<br> Come close to me, let me be drunk with You and rise Your temperature.</p>
+
+<p>Oah yes Your eyes are so beautiful, Your lips so soft, and Your tongue is so hot and quick!
+<br> Oah yes Your breasts are too big to grasp only once, I like them so much, they bong-bong!!!
+<br> Oah yes Your tits became hot and strong, touch and kiss gently.
+<br> Oah yes Your genni is so soft, tight and wet, I can never have enough of.
+<br> Ah, Your genni is so hot and wet, thank You for shaving it for me, meow!</p>
+
+<p>Although I have to wash my face with a soap and brush my teeth and tongue,
+<br> Come, put Your genni upon my face and dance, dance, dance!!!
+<br> Nobody can stop us; I will not allow that!
+<br> hot 18, 28, 38, it doesn’t matter, I love You forever, my love to You will never change.
+<br> Yes, we change, and our love is burning even stronger, our love is forever!</p>
+
+<p>I have always been looking for a special girlfriend. A Real Princess.</p>
+<h3>an Ideal Girl</h3>
+<ul class="list">
+    <li>white</li>
+    <li>17-21y</li>
+    <li>180+cm (5'11"+)</li>
+    <li>fit</li>
+	<li>lives near sea and mountains</li>
+	<li>with good voice</li>
+    <li>sings well</li>
+	<li>a beauty :)</li>
+	<li>a fire</li>
+    <li>trained in martial arts</li>
+	<li>tech competent</li>
+
+    <li>pure</li>
+    <li>kind</li>
+	<li>perceptive</li>
+	<li>communicative, informative, open</li>
+	<li>sensible</li>
+	<li>discernible</li>
+</ul>
+<h3>Special</h3>
+<ul class="list">
+	<li>from Excellent parents</li>
+	<li>with higher education</li>
+	<li>can enter sport mental flow</li>
+	<li>European and speaks English</li>
+	<li>with excellent health</li>
+</ul>
+<p>I admire strong girls.</p>
+</article>
+</main>
+<footer>
+<div class="social">
+    <p>SHARE VIA</p>
+    <amp-social-share width="72" height="72" type="email"></amp-social-share>
+    <amp-social-share width="72" height="72" type="facebook"
+    data-param-app_id="272325784911610"></amp-social-share>
+    <amp-social-share width="72" height="72" type="gplus"></amp-social-share>
+    <amp-social-share width="72" height="72" type="linkedin"></amp-social-share>
+    <amp-social-share width="72" height="72" type="pinterest"
+    data-param-media="https://nakigoe.github.io/_IMG/big.jpg"></amp-social-share>
+    <amp-social-share width="72" height="72" type="tumblr"></amp-social-share>
+    <amp-social-share width="72" height="72" type="twitter"></amp-social-share>
+    <amp-social-share width="72" height="72" type="whatsapp"></amp-social-share>
+    <amp-social-share width="72" height="72" type="line"></amp-social-share>
+    <amp-social-share width="72" height="72" type="vk" 
+      	      data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/articles/girl.html"
+      	      	data-param-text="An Ideal Girlfriend - https://nakigoe.github.io/articles/girl.html"
+      	      ></amp-social-share>
+    <amp-social-share width="72" height="72" type="ok" 
+      	      data-share-endpoint="https://connect.ok.ru/offer
+?url=https://nakigoe.github.io/articles/girl.html
+&title=An Ideal Girlfriend
+&description=A girlfriend with long legs :)"
+      	      	data-param-text="An Ideal Girlfriend - https://nakigoe.github.io/articles/girl.html"
+      	      ></amp-social-share>
+	  <amp-social-share width="72" height="72" type="livejournal" 
+      	      data-share-endpoint="https://www.livejournal.com/update.bml?
+								   subject=An Ideal Girlfriend
+								   &event=A girlfriend with long legs :) - https://nakigoe.github.io/articles/girl.html"
+      	      	data-param-text="An Ideal Girlfriend - https://nakigoe.github.io/articles/girl.html"
+				></amp-social-share>
+				<amp-social-share width="72" height="72" type="telegram" 
+				data-share-endpoint="https://telegram.me/share/url
+				?url=https://nakigoe.github.io/articles/hot.html
+				&text=when the CPU is hot and the GPU melts"				
+	></amp-social-share>
+</div>
+<nav>
+	<ul>
+	<li><a href="../index.html">Main</a></li>
+	<li><a href="../me/me.html">Me</a></li>
+	<li><a href="../articles/apps.html">Useful&nbsp;Programs</a></li>
+	<li id="topLink"><a href="#top">top</a></li>
+	</ul>
+</nav>
+<p id="copyright"><small>&copy; to Ooou 2018</small></p>
+</footer>
+</body>
+</html>
