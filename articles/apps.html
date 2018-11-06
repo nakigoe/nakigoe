@@ -247,7 +247,14 @@ amp-social-share[type="ok"]:hover {
 amp-social-share[type="livejournal"]:hover {
 	background-size: 75%;
 }
-
+amp-social-share[type="telegram"] {
+	background-color: #1e96c8;
+	background-size: 50%;
+	background-image: url(../_SVG/telegram.svg);
+}
+amp-social-share[type="telegram"]:hover {
+	background-size: 75%;
+}
 @media only screen and (max-width:720px) {
 	main {width:90%;}
 	footer {width:90%;}
@@ -339,7 +346,12 @@ amp-social-share[type="livejournal"]:hover {
 								   subject=Recommended Apps
 								   &event=https://nakigoe.github.io/articles/apps.html"
       	      	data-param-text="Recommended Apps - https://nakigoe.github.io/articles/apps.html"
-      	      ></amp-social-share>
+				></amp-social-share>
+				<amp-social-share width="72" height="72" type="telegram" 
+				data-share-endpoint="https://telegram.me/share/url
+				?url=https://nakigoe.github.io/articles/apps.html
+				&text=the best Apps ever, all stable"				
+	></amp-social-share>
 </div>
 <nav>
 <ul>
