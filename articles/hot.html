@@ -277,7 +277,7 @@ amp-social-share[type="telegram"]:hover {
 					"@type": "Person",
 					"name": "Ooou",
 					"seeks": {
-						"@type": "Demand",
+						"@type": ["Demand","Person"],
 						"name": "girlfriend",
 						"description": [
 						"white",
@@ -301,7 +301,19 @@ amp-social-share[type="telegram"]:hover {
 						"with higher education",
 						"can enter sport mental flow",
 						"European and speaks English",
-						"with excellent health"]
+						"with excellent health"],
+						"potentialAction": {
+							"@type": "MarryAction",
+							"agent": {
+								"@type": "Person",
+								"name": "Ooou"
+							  },
+							  "object": {
+								"@type": "Person",
+								"name": "my type girlfriend",
+								"url": "https://nakigoe.github.io/articles/girl.html"
+							  }
+						}
 					}
 				}
 			}
@@ -309,7 +321,7 @@ amp-social-share[type="telegram"]:hover {
 	</script>
 </head>
 
-<body>
+<body vocab="http://schema.org/" typeof="WebPage">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
