@@ -161,18 +161,6 @@
       <priority>0.9</priority>
 
    </url>   
-      
-   <url>
-
-      <loc>https://nakigoe.github.io/video/video.html</loc>
-
-      <lastmod>2018-04-16</lastmod>
-
-      <changefreq>daily</changefreq>
-
-      <priority>0.1</priority>
-
-   </url>
    
    <url>
 
@@ -184,5 +172,18 @@
 
       <priority>0.5</priority>
 
-   </url> 
+   </url>
+   
+   <url>
+
+      <loc>https://nakigoe.github.io/articles/anime.html</loc>
+
+      <lastmod>2018-11-11</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>     
+   
 </urlset>
