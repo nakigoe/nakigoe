@@ -18,7 +18,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content="2018-11-07"/>
+	<meta name="revised" content="2018-11-15"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
 html,body,header,h1,h2,ul,li,p,div{
@@ -40,16 +40,16 @@ h1 {
 	text-align: center;
 	padding-top: 0.8em;
 	padding-bottom: 0.75em;
-	font-size: 4em;
+	font-size: 10vmin;
 	letter-spacing: .12em;
-	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 	}
 	
 h2 {
 	font-family:Calibri;
 	font-size:3em;
 	letter-spacing: .15em;
-	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	text-shadow:0 0 .6em white, 0 0 .3em white;
 	margin:.48em 0 .5em 0;
 }
 
@@ -57,7 +57,7 @@ h3 {
 	font-family:Calibri;
 	font-size:2em;
 	letter-spacing: .15em;
-	text-shadow:0 0 .6em white, 0 0 .6em white;
+	text-shadow:0 0 .6em white;
 	margin-bottom:.5em;
 	}
 
@@ -156,7 +156,7 @@ p {
 	margin-top: 1em;
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
-	font-size:1.2em;
+	font-size:1em;
 	letter-spacing:.02em;
 	}
 em {color:#fff;}
@@ -260,6 +260,22 @@ amp-social-share[type="telegram"]:hover {
 	main {width:90%;}
 	footer {width:90%;}
 	}
+	p	{
+	font-size: 1em;
+	font-stretch: 85%;
+	}
+@media only screen and (min-width: 60em) {
+	p {
+	font-size: 1.125em;
+	font-stretch: 95%;
+	}
+}
+@media only screen and (min-width: 120em) {
+	p {
+	font-size: 1.375em;
+	font-stretch: 110%;
+	}
+}
 </style>
 
 <script type="application/ld+json">
@@ -345,9 +361,9 @@ amp-social-share[type="telegram"]:hover {
 <main>
 <nav id="topNav">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/index.html">Main</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Programs</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
 </ul>
 </nav>
 
@@ -441,7 +457,7 @@ amp-social-share[type="telegram"]:hover {
 	<ul>
 	<li><a href="../index.html">Main</a></li>
 	<li><a href="../me/me.html">Me</a></li>
-	<li><a href="../articles/apps.html">Useful&nbsp;Programs</a></li>
+	<li><a href="../articles/apps.html">Useful&nbsp;Apps</a></li>
 	<li id="topLink"><a href="#top">top</a></li>
 	</ul>
 </nav>
