@@ -58,14 +58,14 @@
             text-align: center;
             padding-top: 0.8em;
             padding-bottom: 0.75em;
-            font-size: 4em;
+            font-size: 10vmin;
             letter-spacing: .12em;
             text-shadow: 0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
         }
     
         h2 {
             font-family: Calibri;
-            font-size: 3em;
+            font-size: calc(1.5em + 2.5vmin);
             letter-spacing: .15em;
             text-shadow: 0 0 .6em white, 0 0 .3em white;
             margin: .48em 0 .5em 0;
@@ -136,7 +136,7 @@
 
         p,
         section li {
-            font-size: 1.4em;
+            font-size: 1em;
             line-height: 1.8em;
             letter-spacing: .02em;
             font-family: 'Nunito Sans', sans-serif;
@@ -230,7 +230,7 @@ amp-social-share[type="livejournal"]:hover {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-        @media only screen and (max-width:720px) {
+@media only screen and (max-width:720px) {
             main {
                 width: 90%;
             }
@@ -239,6 +239,23 @@ amp-social-share[type="telegram"]:hover {
                 width: 90%;
             }
         }
+        
+    p	{
+	font-size: 1em;
+	font-stretch: 85%;
+	}
+@media only screen and (min-width: 60em) {
+	p {
+	font-size: 1.125em;
+	font-stretch: 95%;
+	}
+}
+@media only screen and (min-width: 120em) {
+	p {
+	font-size: 1.375em;
+	font-stretch: 110%;
+	}
+}
     </style>
 </head>
 
