@@ -123,11 +123,46 @@ body {
     font-family: "Nunito Sans ExtraLight";
     src: url("https://nakigoe.github.io/_FNT/NunitoSans-ExtraLight.ttf");
 	}
-	*/
+@supports (font-variation-settings: normal) {
+	@font-face {
+		font-family: "Nunito Sans Light";
+		src: url("NunitoSans.woff2") format("woff2");
+		font-display: fallback;
+		font-style: oblique -90 90;
+		font-stretch: 50% 200%;
+		font-weight: 1 999;
+	}
+}
+@supports not (font-variation-settings: normal) {
+	@font-face {
+		font-family: "Nunito Sans Light";
+		src: url("NunitoSans.woff2") format("woff2");
+		font-display: fallback;
+		font-style: oblique -90 90;
+		font-stretch: 50% 200%;
+		font-weight: 300;
+	}
+}
 	@font-face {
     font-family: "Nunito Sans Light";
     src: url("https://nakigoe.github.io/_FNT/NunitoSans-Light.ttf");
-	}
+		font-style: oblique -90 90;
+		font-stretch: 50% 200%;
+		font-weight: 1 999;
+		
+		
+		src: url("NunitoSans.woff2") format("woff2");
+		font-display: fallback;
+		also use glyphhanger*/
+		/*head font pre-load block rendering of the page
+		<link rel="preload" href="NunitoSans.woff2" as="font" type="font/woff2" crossorigin>
+		*/
+		/*
+		reduce the number of font files
+		find that 27kb font for poor Russia cyrillic bandwidth3
+		https://jhmvhi.jhu.edu/fluid_web_typography.pdf
+		
+	}*/
 	@font-face {
     font-family: "Nunito Sans Regular";
     src: url("https://nakigoe.github.io/_FNT/NunitoSans-Regular.ttf");
@@ -157,25 +192,25 @@ h1 {
 	text-align: center;
 	padding-top: 0.8em;
 	padding-bottom: 0.75em;
-	font-size: 4em;
+	font-size: 10vmin;
 	letter-spacing: .12em;
-	text-shadow: 0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	text-shadow: 0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 }
 h1 span {
 	font-size: .5em;
 	}
 h2 {
 	font-family: sans-serif;
-	font-size: 3em;
+	font-size: calc(1.5em + 2.5vmin);
 	letter-spacing: .15em;
-	text-shadow: 0 0 .6em white, 0 0 .6em white, 0 0 .6em white;
+	text-shadow: 0 0 .6em white, 0 0 .3em white;
 	margin: .48em 0 .5em 0;
 }
 h3 {
 	font-family: sans-serif;
 	font-size: 2em;
 	letter-spacing: .15em;
-	text-shadow: 0 0 .6em white, 0 0 .6em white;
+	text-shadow: 0 0 .6em white;
 	margin-bottom: .5em;
 }
 a {
@@ -320,6 +355,22 @@ footer {
 	width: 90%;
 }
 }
+p	{
+	font-size: 1em;
+	font-stretch: 85%;
+	}
+@media only screen and (min-width: 60em) {
+	p {
+	font-size: 1.125em;
+	font-stretch: 95%;
+	}
+}
+@media only screen and (min-width: 120em) {
+	p {
+	font-size: 1.375em;
+	font-stretch: 110%;
+	}
+}
 </style>
 </head>
 
@@ -434,7 +485,8 @@ footer {
       </ul>
     </section>
   </section>
-  <hr>
+	<hr>
+	<p>$15 / академ. час</p>
 </main>
 <footer>
 	<p>
