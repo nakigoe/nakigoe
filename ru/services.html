@@ -78,9 +78,8 @@ body {
 <meta name="coverage" content="Worldwide">
 <meta name="distribution" content="Global">
 <meta name="rating" content="General">
-<meta name="revised" content="2018-11-15" />
-<link rel="stylesheet" href="https://nakigoe.github.io/_FNT/NunitoSans-Light.ttf">
-<link rel="stylesheet" href="https://nakigoe.github.io/_FNT/NunitoSans-Regular.ttf">
+<meta name="revised" content="2018-11-16" />
+
 <script type="application/ld+json">
 		{
 		  "@context": {
@@ -167,6 +166,10 @@ body {
     font-family: "Nunito Sans Regular";
     src: url("https://nakigoe.github.io/_FNT/NunitoSans-Regular.ttf");
   }
+	@font-face {
+    font-family: "Nunito Sans Light";
+    src: url("https://nakigoe.github.io/_FNT/NunitoSans-Light.ttf");
+  }
 html, body, header, h1, h2, ul, li, p, div {
 	margin: 0;
 	padding: 0;
@@ -219,7 +222,6 @@ h3 {
 a {
 	font-family: 'Nunito Sans', sans-serif;
 	font-weight: 400;
-	font-size: 1.6em;
 	display: inline-block;
 	color: #ffb;
 	margin: .5em 0 0 .7em;
@@ -257,7 +259,7 @@ nav li {
 	margin-bottom: 0.4em;
 }
 nav a {
-	font-size: 1.4em;
+	font-family: 'Adobe Clean Light','Nunito Sans Light', sans-serif;
 }
 p, section li {
 	font-size: 1em;
@@ -362,16 +364,28 @@ p, section li	{
 	font-size: 1em;
 	font-stretch: 85%;
 	}
+nav a {
+	font-size: 1.2em;
+	font-stretch: 85%;
+}
 @media only screen and (min-width: 60em) {
 	p, section li {
-	font-size: 1.125em;
-	font-stretch: 95%;
+	  font-size: 1.125em;
+	  font-stretch: 95%;
+	}
+	nav a {
+		font-size: 1.35em;
+		font-stretch: 95%;
 	}
 }
 @media only screen and (min-width: 120em) {
 	p, section li {
-	font-size: 1.375em;
-	font-stretch: 110%;
+	  font-size: 1.375em;
+	  font-stretch: 110%;
+	}
+	nav a {
+		font-size: 1.65em;
+		font-stretch: 110%;
 	}
 }
 </style>
