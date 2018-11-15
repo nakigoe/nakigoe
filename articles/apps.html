@@ -18,7 +18,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content="2018-11-11"/>
+	<meta name="revised" content="2018-11-15"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
 html,body,header,h1,h2,ul,li,p,div{
@@ -109,15 +109,15 @@ a:active{
 	}
 
 .linksList {
-	font-family: "Adobe Clean Light";
-	font-size:1.6em;
+	font-family: 'Adobe Clean Light','Nunito Sans', sans-serif;
+	font-size:1.2em;
 	margin:1.4em 0 1em .635em;	
 	}
 .linksList li {margin-bottom:1em;}
 
 .list {
-	font-family: "Adobe Clean Light";
-	font-size:1.4em;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:1em;
 	margin-left:1.5em;
 	line-height:1.5em;
 	letter-spacing:.02em;
@@ -135,7 +135,10 @@ nav li{
 	display:inline-block;
 	margin-bottom: 0.4em;
 	}
-nav a{font-size: 1.4em;}
+nav a{
+	font-size: 1.2em;
+	font-family: "Adobe Clean Light",'Nunito Sans', sans-serif;
+	}
 
 .siteLinks {margin-top:.7em;}
 .siteLinks a{margin-bottom:.4em;}
@@ -158,7 +161,7 @@ p {
 	margin-bottom: 1em;
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
-	font-size:1.2em;
+	font-size:1em;
 	letter-spacing:.02em;
 	}
 em {color:#fff;}
@@ -272,15 +275,28 @@ p	{
 	font-size: 1em;
 	font-stretch: 85%;
 	}
+.linksList, nav a {
+	font-size: 1.2em;
+	font-stretch: 85%;
+	}
+
 @media only screen and (min-width: 60em) {
 	p {
 	font-size: 1.125em;
+	font-stretch: 95%;
+	}
+	.linksList, nav a {
+	font-size: 1.35em;
 	font-stretch: 95%;
 	}
 }
 @media only screen and (min-width: 120em) {
 	p {
 	font-size: 1.375em;
+	font-stretch: 110%;
+	}
+	.linksList, nav a {
+	font-size: 1.65em;
 	font-stretch: 110%;
 	}
 }
@@ -361,34 +377,34 @@ p	{
 <footer>
 <div class="social">
     <p>SHARE VIA</p>
-    <amp-social-share width="54" height="54" type="email"></amp-social-share>
-    <amp-social-share width="54" height="54" type="facebook"
+    <amp-social-share width="60" height="60" type="email"></amp-social-share>
+    <amp-social-share width="60" height="60" type="facebook"
     data-param-app_id="272325784911610"></amp-social-share>
-    <amp-social-share width="54" height="54" type="gplus"></amp-social-share>
-    <amp-social-share width="54" height="54" type="linkedin"></amp-social-share>
-    <amp-social-share width="54" height="54" type="pinterest"
+    <amp-social-share width="60" height="60" type="gplus"></amp-social-share>
+    <amp-social-share width="60" height="60" type="linkedin"></amp-social-share>
+    <amp-social-share width="60" height="60" type="pinterest"
     data-param-media="https://nakigoe.github.io/_IMG/big.jpg"></amp-social-share>
-    <amp-social-share width="54" height="54" type="tumblr"></amp-social-share>
-    <amp-social-share width="54" height="54" type="twitter"></amp-social-share>
-    <amp-social-share width="54" height="54" type="whatsapp"></amp-social-share>
-    <amp-social-share width="54" height="54" type="line"></amp-social-share>
-    <amp-social-share width="54" height="54" type="vk" 
+    <amp-social-share width="60" height="60" type="tumblr"></amp-social-share>
+    <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
+    <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
+    <amp-social-share width="60" height="60" type="line"></amp-social-share>
+    <amp-social-share width="60" height="60" type="vk" 
       	      data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/articles/apps.html"
       	      	data-param-text="Recommended Apps - https://nakigoe.github.io/articles/apps.html"
       	      ></amp-social-share>
-    <amp-social-share width="54" height="54" type="ok" 
+    <amp-social-share width="60" height="60" type="ok" 
       	      data-share-endpoint="https://connect.ok.ru/offer
 ?url=https://nakigoe.github.io/articles/apps.html
 &title=Recommended Apps"
       	      	data-param-text="Recommended Apps - https://nakigoe.github.io/articles/apps.html"
       	      ></amp-social-share>
-	  <amp-social-share width="54" height="54" type="livejournal" 
+	  <amp-social-share width="60" height="60" type="livejournal" 
       	      data-share-endpoint="https://www.livejournal.com/update.bml?
 								   subject=Recommended Apps
 								   &event=https://nakigoe.github.io/articles/apps.html"
       	      	data-param-text="Recommended Apps - https://nakigoe.github.io/articles/apps.html"
 				></amp-social-share>
-				<amp-social-share width="54" height="54" type="telegram" 
+				<amp-social-share width="60" height="60" type="telegram" 
 				data-share-endpoint="https://telegram.me/share/url
 				?url=https://nakigoe.github.io/articles/apps.html
 				&text=the best Apps ever, all stable"				
