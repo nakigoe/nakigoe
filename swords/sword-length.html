@@ -35,7 +35,10 @@ main {
 	width: 60%;
 	margin: 0 auto;
 	}
-article {max-width: 1080px;} /*current image size, needs testing*/
+article {
+	max-width: 1080px; /*current image size, needs testing on a larger screen*/
+	margin-bottom: 1em; /*to avoid partly image on a share request*/
+}
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
@@ -185,7 +188,10 @@ em {color:#fff;}
 .answer em {
 	color:#fff;
 }
-
+.wrapper {
+	margin: 1em auto 1em;
+	text-align: center;
+}
 .articleHr {margin:2.25em 0 1em;}
 
 li small  {
@@ -466,6 +472,7 @@ nav a {
   property="image" typeOf="ImageObject">
   <meta property="caption" content="Big Anti-Vehicle Gun beats all the swords!!!">
 </amp-img>
+<p class="wrapper">Big Anti-Vehicle Gun beats all the swords!!!</p>
 </article>
 </main>
 <footer>
