@@ -143,7 +143,11 @@ nav li{
 	display:inline-block;
 	margin-bottom: 0.4em;
 	}
-nav a{font-size: 1.4em;}
+nav a{
+	font-family: "Nunito Sans", Arial;
+	font-weight: 200;
+	font-size: 1.2em;
+	}
 .siteLinks {margin-top:.7em;}
 .siteLinks a{margin-bottom:.4em;}
 hr {display:block;
@@ -190,13 +194,13 @@ footer {
 #topLink {float: right;}/*maybe add red color using class .attention link?*/
 
 #copyright{
-	margin: 10em auto 2em;
+	margin: 8.5em auto 2em;
 	text-align: center;
 }
 
 .social {
 	display: block;
-	margin: 2.5em auto 6.5em;
+	margin: 2.5em auto;
 	text-align: center;
 }
 .social p {
@@ -268,19 +272,32 @@ h1 {
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
 }
-p	{
+p, .list	{
 	font-size: 1em;
 	font-stretch: 85%;
 	}
+.linksList, nav a {
+	font-size: 1.2em;
+	font-stretch: 85%;
+	}
+
 @media only screen and (min-width: 60em) {
-	p {
+	p, .list {
 	font-size: 1.125em;
+	font-stretch: 95%;
+	}
+	.linksList, nav a {
+	font-size: 1.35em;
 	font-stretch: 95%;
 	}
 }
 @media only screen and (min-width: 120em) {
-	p {
+	p, .list {
 	font-size: 1.375em;
+	font-stretch: 110%;
+	}
+	.linksList, nav a {
+	font-size: 1.65em;
 	font-stretch: 110%;
 	}
 }
