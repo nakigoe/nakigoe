@@ -18,7 +18,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content="2018-11-15"/>
+	<meta name="revised" content="2018-11-18"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 
 <style amp-custom>
@@ -39,19 +39,20 @@ main {
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
+.phrase {
+	display: inline-block;
+}
 h1 {
 	font-family:calibri;
 	text-align: center;
 	padding-top: 0.8em;
 	padding-bottom: 0.75em;
-	font-size: 10vmin;
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 	}
 	
 h2 {
 	font-family:Calibri;
-	font-size: calc(1.5em + 2.5vmin);
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white, 0 0 .3em white;
 	margin:.48em 0 .2em 0;
@@ -103,8 +104,10 @@ a:active{
 	color:white;
 	}
 
-nav{
-	margin-bottom: 1.6em;
+nav a{
+	font-family: "Nunito Sans", Arial;
+	font-weight: 200;
+	font-size: 1.2em;
 	}
 nav li{
 	display:inline-block;
@@ -126,7 +129,6 @@ p {
 	margin-bottom: 1em;
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
-	font-size:1em;
 	letter-spacing:.02em;
 	}
 em {color:#fff;}
@@ -145,7 +147,6 @@ table {
 	border-collapse: collapse;
 	margin: .5em auto 0;
 	background: #ECE3AA;
-	font-size:1em;
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 400;
 }
@@ -180,32 +181,33 @@ td:first-child {
 	text-align:center;
 }
 
-tfoot tr td {
+tfoot tr td, tfoot tr td p {
 	background: #450000;
 	color:#eee;
 	font-weight: 200;
+	text-align: center;
 }
-tfoot a {font-size:1.2em;}
+tfoot tr td p:first-of-type {
+	margin-top: 1.25em;
+}
 tfoot .note {
 	display:block;
 	margin-top:.7em;
 	font-size:90%;
 	}
-tfoot amp-img {
-	margin-top: 1.25em;
-}
+/* tfoot amp-img {margin-top: 1.25em;} */
 footer {
 	width:60%;
 	margin: 5.5em auto 0;
 	}
 #topLink {float: right;}
 #copyright{
-	margin: 10em auto 2em;
+	margin: 8.5em auto 2em;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 6.5em;
+	margin: 2.5em auto;
 	text-align: center;
 }
 .social p {
@@ -282,9 +284,18 @@ amp-social-share[type="telegram"]:hover {
 		border-right: 1px solid #250000;
 	}
 	}
-
+h1 {
+	font-size: calc(2em + 3.3334vmin);
+	}
+h2 {
+	font-size: calc(1.5em + 2.5vmin);
+	}
 	p, table	{
 	font-size: 1em;
+	font-stretch: 85%;
+	}
+	nav a {
+	font-size: 1.2em;
 	font-stretch: 85%;
 	}
 @media only screen and (min-width: 60em) {
@@ -292,10 +303,18 @@ amp-social-share[type="telegram"]:hover {
 	font-size: 1.125em;
 	font-stretch: 95%;
 	}
+	nav a {
+	font-size: 1.35em;
+	font-stretch: 95%;
+	}
 }
 @media only screen and (min-width: 120em) {
 	p, table {
 	font-size: 1.375em;
+	font-stretch: 110%;
+	}
+	nav a {
+	font-size: 1.65em;
 	font-stretch: 110%;
 	}
 }
@@ -464,17 +483,27 @@ amp-social-share[type="telegram"]:hover {
     <tfoot>
     <tr>
     	<td colspan="3">
+		  <p>(for girls:) Wow, you look beautiful today.
+		  <br> There's been a diamond robbery in London.
+		  <br> I would love to put diamonds on those pretty ears.
+		  <br> But you, yes, you can sleep safely in your bed tonight.
+		  <br> If You are ready and willing, contact me immediately!</p>
 			<amp-img src="../_IMG/nakigoe-pm.png"
 			width="270"
 			height="50"
 			layout="intrinsic"
 			alt="nakigoe @ pm . me">
-		  	</amp-img>
-		  <br><span class="note">send a short message without attachments
-		  <br>refrain from stupid and simplistic replies like: <wbr>"RTFM chapter X.X.X" or <wbr>"open www.XXX.XXX" or "What do you mean?"
+			  </amp-img>
+		  <p class="note">
+		  <span class="phrase">(for my dad:) (i'm really trying to be extremly polite here, have fun)
+		  <br>send a short message without attachments</span>
+		  <br>refrain from stupid and simplistic replies like: <span class="phrase">"RTFM chapter X.X.X"</span> or <span class="phrase">"open www.XXX.XXX"</span> or <span class="phrase">"What do you mean?"</span>
 		  <br>refrain from near-sighted and mind-controlling questions like: "Why?"
 		  <br>reply only if you've got an article to share
-		  <br>refrain from running experiments on me, provide only reliable info</span>
+		  <br>refrain from running experiments on me, <span class="phrase">provide only reliable info</span>
+		  <br>please feel free to contact me always,<br> <span class="phrase">good luck and have fun!</span>
+		</p>
+		
 		</td>
     </tr>
     </tfoot>
