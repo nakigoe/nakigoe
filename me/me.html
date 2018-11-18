@@ -18,7 +18,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content="2018-11-15"/>
+	<meta name="revised" content="2018-11-18"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 
 <style amp-custom>
@@ -153,7 +153,11 @@ nav li{
 	display:inline-block;
 	margin-bottom: 0.4em;
 	}
-nav a{font-size: 1.4em;}
+nav a{
+	font-size: 1.2em;
+	font-family: "Adobe Clean Light",'Nunito Sans', Verdana, sans-serif;
+	font-weight: 200;
+	}
 hr {display:block;
 	box-shadow:0 0 .5em .1em white;
 	position:relative;
@@ -291,23 +295,28 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-@media only screen and (max-width:540px) {
-	main {width:90%;}
-	footer {width:90%;}
-	}
-	p, .list	{
-	font-size: 1em;
+.linksList, nav a {
+	font-size: 1.2em;
 	font-stretch: 85%;
 	}
+
 @media only screen and (min-width: 60em) {
-	p, .list {
+	p {
 	font-size: 1.125em;
+	font-stretch: 95%;
+	}
+	.linksList, nav a {
+	font-size: 1.35em;
 	font-stretch: 95%;
 	}
 }
 @media only screen and (min-width: 120em) {
-	p, .list {
+	p {
 	font-size: 1.375em;
+	font-stretch: 110%;
+	}
+	.linksList, nav a {
+	font-size: 1.65em;
 	font-stretch: 110%;
 	}
 }
