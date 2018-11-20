@@ -17,7 +17,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content="2018-11-15"/>
+	<meta name="revised" content="2018-11-20"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
 html,body,header,h1,h2,ul,li,p,div{
@@ -101,7 +101,10 @@ nav li{
 	display:inline-block;
 	margin-bottom: 0.4em;
 	}
-nav a{font-size: 1.4em;}
+nav a{
+	font-family: "Nunito Sans", Verdana, Arial, sans-serif;
+	font-weight: 200;
+	}
 
 p {
 	line-height: 1.4;
@@ -129,19 +132,38 @@ footer {
 	footer {width:90%;}
 	}
 
-	p	{
+h1 {
+	font-size: calc(2em + 3vmin);
+}
+h2 {
+	font-size: calc(1.5em + 1.5vmin);
+}
+p, .list	{
 	font-size: 1em;
 	font-stretch: 85%;
 	}
+.linksList, nav a {
+	font-size: 1.2em;
+	font-stretch: 85%;
+	}
+
 @media only screen and (min-width: 60em) {
-	p {
+	p, .list {
 	font-size: 1.125em;
+	font-stretch: 95%;
+	}
+	.linksList, nav a {
+	font-size: 1.35em;
 	font-stretch: 95%;
 	}
 }
 @media only screen and (min-width: 120em) {
-	p {
+	p, .list {
 	font-size: 1.375em;
+	font-stretch: 110%;
+	}
+	.linksList, nav a {
+	font-size: 1.65em;
 	font-stretch: 110%;
 	}
 }
