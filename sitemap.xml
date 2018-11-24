@@ -10,7 +10,7 @@
 
       <loc>https://nakigoe.github.io/</loc>
 
-      <lastmod>2018-11-19</lastmod>
+      <lastmod>2018-11-24</lastmod>
 
       <changefreq>daily</changefreq>
 
@@ -166,12 +166,23 @@
 
       <loc>https://nakigoe.github.io/ru/services.html</loc>
 
-      <lastmod>2018-11-19</lastmod>
+      <lastmod>2018-11-24</lastmod>
 
       <changefreq>daily</changefreq>
 
       <priority>0.5</priority>
 
    </url>
-   
+
+    <url>
+
+      <loc>https://nakigoe.github.io/china/freedom.html</loc>
+
+      <lastmod>2018-11-24</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.7</priority>
+
+   </url>  
 </urlset>
