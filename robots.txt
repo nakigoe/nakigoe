@@ -4,6 +4,7 @@ User-agent: *
 Disallow: /_IMG
 Disallow: /_VID
 Disallow: /_SVG
+Disallow: /_MP3
 
 User-agent: YandexBot
 Allow: /https://nakigoe.github.io/RSS.xml
