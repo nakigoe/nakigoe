@@ -9,6 +9,7 @@
         <category>Politics</category>
         <category>Idealism</category>
         <category>Girls</category>
+        <category>Psychology</category>
         <category>Phylosophy</category>
         <category>Religion</category>
         <category>Military</category>
@@ -23,9 +24,16 @@
         <category>Tutoring</category>
         <category>Online</category>
         <category>Entertainment</category>
+        <category>Film-Making</category>
         <category>Music</category>
         <category>Anime</category>
+        <category>Animation</category>
+        <category>UK</category>
+        <category>United Kingdom</category>
+        <category>USA</category>
+        <category>United States of America</category>
         <category>Russia</category>
+        <category>China</category>
         <category>Japan</category>
         <category>Thailand</category>
         <category>Tajik</category>
@@ -35,11 +43,12 @@
         <amplink hreflang="en">https://nakigoe.github.io</amplink>
         <description>Short description of the feed</description>
         <language>en</language>
+        <language>ja</language>
+        <language>zh-ch</language>
         <language>ru</language>
-        <language>ru</language>
-        <language>ru</language>
+        <language>tg</language>
         <language>th</language>
-        <language>kr</language> 
+        <language>ko</language> 
         <turbo:analytics id = "UA-114280489-1" type = "Google"> </turbo:analytics>
         <item turbo="true">
             <amplink hreflang="ru">https://nakigoe.github.io/ru/services.html</amplink>
