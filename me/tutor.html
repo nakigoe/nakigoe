@@ -377,23 +377,25 @@ nav a {
             "name": "Ooou",
             "honorificPrefix": "God",
             "url": "https://nakigoe.github.io/me/me.html#me",
-			"makesOffer":  [			
-						{"@type": "Offer",
-							"@type": "BusinessFunction",
+			"makesOffer": {			
+				"@type": "Offer",
+				"businessFunction": [
+						{"@type": "BusinessFunction",
 							"name": "Computer Repair",
 							"description": "PC diagnostics, hardware installation, Windows tune-up"
 					  	},
-						{"@type": "Offer",
-							"@type": "BusinessFunction",
+						{"@type": "BusinessFunction",
 							"name": "Tutoring: Math, Web-Design, English, Russian, Tajik, Japanese, Chinese",
 							"description": "Online Teacher: live video-connection and screen sharing, $20 / hour"
 						},
-						{"@type": "Offer",
-							"@type": "BusinessFunction",
+						{"@type": "BusinessFunction",
 							"name": "Web-Design",
 							"description": "Deployment, Logo-Design, Translation, AMP-HTML, CSS, RDFa, JSON-LD, schema.org"
 						}
-			],
+				],
+				"price": "20",
+				"priceCurrency": "USD"
+			},
 			"image": {
 				"@type": "ImageObject",
 				"url": "https://nakigoe.github.io/_IMG/math.jpg",
