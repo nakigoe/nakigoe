@@ -20,7 +20,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content="2018-11-28"><!--Change!!!-->
+	<meta name="revised" content="2018-12-10"><!--Change!!!-->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
 #angelblaze {
@@ -113,7 +113,7 @@ a  {
 	box-shadow:0 0 .5em white;
 	background-image: linear-gradient(180deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
 }
-a:hover, #topNav:hover dl a{
+a:hover{
 	color:white;
 	text-shadow: 0 0 1em white;
 	box-shadow: 0 0 2em white;
@@ -124,25 +124,26 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-	.ru {
-		color: #FF6600;
-        background-color: #1a0000;
-        box-shadow: 0 0 .5em red;
-        background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
-		/*-----margin was .5em (experiment for different screens)-----*/
+.alert {
+	font-family: "Nunito Sans",sans-serif;
+	font-weight: 200;
+	color: #FF6600;
+    background-color: #1a0000;
+    box-shadow: 0 0 .5em red;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
 	}
-	.ru:hover {
-        color: yellow;
-        text-align: center;
-        text-decoration: none;
-        padding: .2em .4em;
-        outline: 0;
-        white-space: nowrap;
-        border-radius: 1em;
-        text-shadow: 0 0 1em red;
-        box-shadow: 0 0 2em red;
-        background-color: #500;
-        background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+.alert:hover {
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    white-space: nowrap;
+    border-radius: 1em;
+    text-shadow: 0 0 1em red;
+    box-shadow: 0 0 2em red;
+    background-color: #500;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
 	}
 
 .link {
@@ -401,7 +402,7 @@ a {
 	<li><a property="significantLink" href="https://nakigoe.github.io/me/tutor.html">Tutoring</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Top&nbsp;Apps</a></li>
 <!--	<li><a property="significantLink" href="articles/video-courses.html">Video-courses</a></li>-->
-	<li class="rightLink"><a class="ru" property="significantLink" href="https://nakigoe.github.io/ru/services.html" hreflang="ru">RU</a></li>
+	<li class="rightLink"><a class="alert" property="significantLink" href="https://nakigoe.github.io/ru/services.html" hreflang="ru">RU</a></li>
 </ul>
 </div>
 
