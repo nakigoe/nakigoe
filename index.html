@@ -145,7 +145,21 @@ a:active{
     background-color: #500;
     background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
 	}
-
+.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
 .link {
 	display:inline;
 	margin:0;
@@ -253,10 +267,6 @@ footer {
 	margin: 5.5em auto 0;
 	}
 /*#mainPageFooter {margin-top:5.5em;}*/
-.rightLink{
-	float: right;
-}
-
 #copyright{
 	margin: 10em auto 2em;
 	text-align: center;
@@ -401,8 +411,10 @@ a {
 	<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/me/tutor.html">Tutoring</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Top&nbsp;Apps</a></li>
-<!--	<li><a property="significantLink" href="articles/video-courses.html">Video-courses</a></li>-->
+</ul>
+<ul class="cf">
 	<li class="rightLink"><a class="alert" property="significantLink" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans">中文</a></li>
+	<li class="rightLink"><a class="alert" property="significantLink" href="https://nakigoe.github.io/japan/tutor.html" hreflang="ja-JA">日本</a></li>
 	<li class="rightLink"><a class="alert" property="significantLink" href="https://nakigoe.github.io/ru/tutor.html" hreflang="ru-RU">RU</a></li>
 </ul>
 </div>
