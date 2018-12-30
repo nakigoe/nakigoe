@@ -157,6 +157,17 @@ nav a {
 .rightLink{
 	float: right;
 }
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    *zoom: 1;
+}
 #math {
 	max-width: 1200px;
 }
@@ -372,7 +383,10 @@ nav a {
 <li><a property="significantLink" href="https://nakigoe.github.io/index.html">Main</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
+</ul>
+<ul class="cf">
 <li class="rightLink"><a class="alert" property="relatedLink" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans">中文</a></li>
+<li class="rightLink"><a class="alert" property="relatedLink" href="https://nakigoe.github.io/japan/tutor.html" hreflang="ja-JP">日本</a></li>
 <li class="rightLink"><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" hreflang="en">EN</a></li>
 </ul>
 	</nav>
