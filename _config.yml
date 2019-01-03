@@ -1,2 +1,7 @@
 plugins:
   - jekyll-redirect-from
+  - jekyll-redirect-to
+
+gems:
+  - jekyll-redirect-from
+  - jekyll-redirect-to
