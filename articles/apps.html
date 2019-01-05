@@ -28,9 +28,14 @@ html,body,header,h1,h2,ul,li,p,div{
 body{
 	color: #eee;
 	width: 100%;
-	background-color:#250000;
+	background-color:#1a0000;
 	}
-
+#topNav {
+	margin-top: 0;
+	margin-bottom: 0;
+	background-color: #120000;
+	font-size: 80%;
+}
 main {
 	width: 60%;
 	margin: 0 auto;
@@ -38,6 +43,9 @@ main {
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
+.phrase {
+	display: inline-block;
+}
 h1 {
 	font-family: 'Nunito Sans', Verdana, sans-serif;
 	text-align: center;
@@ -322,23 +330,20 @@ p	{
 </script>
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
-<header id="top">
-<h1 property="name">Recommended Apps</h1>
-</header>
-
-<main>
 <nav id="topNav">
-<ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/index.html">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-</ul>
+	<ul>
+	<li><a property="significantLink" href="https://nakigoe.github.io/index.html">Main</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
+	</ul>
 </nav>
 
+<main>
 <article property="mainEntity">
-<header>
+<header id="top">
+	<h1 property="name">Recommended Apps</h1>
 </header>
 
-<h2>Browser super-mega-advanced Extensions, Beyond Kawai</h2>
+<h2>Browser super-mega-advanced Extensions, Beyond&nbsp;Kawai</h2>
 <!-- Test youtube download, facebook, kissanime. Test anti-adblock utube, forbes, kissanime. Test new paywall bypass-->
 <ul class="linksList linksListSection">
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://github.com/gorhill/uBlock" target="_blank">uBlock Origin</a><small> ads blocking browser extension</small></li>
@@ -356,7 +361,7 @@ p	{
 <ul class="linksList linksListSection">
 <li class="linkAndComment"><a property="significantLink" class="link" href="https://www.adobe.com/products/dreamweaver/free-trial-download.html" target="_blank">Dreamweaver</a><small> extensive website development</small></li>
 <li class="linkAndComment"><a property="significantLink" class="link" href="https://www.adobe.com/products/photoshop/free-trial-download.html" target="_blank">Photoshop</a><small> extensive photo editing</small></li>
-<li class="linkAndComment"><a property="significantLink" class="link" href="https://products.office.com/en/word" target="_blank">Word</a><small> documents editing and proofing</small></li>
+<li class="linkAndComment"><a property="significantLink" class="link" href="https://products.office.com/en/word" target="_blank">Word</a><small> the only app which Microsoft tried to do right</small></li>
 <li class="linkAndComment"><a property="significantLink" class="link" href="https://code.visualstudio.com/download" target="_blank">Visual Studio Code</a><small> light-weight code editor</small></li>
 <li class="linkAndComment"><a property="significantLink" class="link" href="https://www.7-zip.org/" target="_blank">7-zip</a><small> best file archiver</small></li>
 </ul>
