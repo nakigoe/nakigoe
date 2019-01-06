@@ -17,7 +17,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content="2018-12-22"/>
+	<meta name="revised" content="2019-01-06"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
 html,body,header,h1,h2,ul,li,p,div{
@@ -27,9 +27,16 @@ html,body,header,h1,h2,ul,li,p,div{
 body{
 	color: #eee;
 	width: 100%;
-	background-color:#250000;
+	background-color:#1a0000;
 	}
-
+#topNav {
+	margin-top: 0;
+	background-color: #120000;
+	font-size: 80%;
+}
+#topNav .rightLink {
+	margin-right: 0.75em;/*temporary draft*/
+}
 main {
 	width: 60%;
 	margin: 0 auto;
@@ -93,9 +100,47 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-
+.alert {
+	font-family: "Nunito Sans",sans-serif;
+	font-weight: 200;
+	color: #FF6600;
+    background-color: #1a0000;
+    box-shadow: 0 0 .5em red;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
+	}
+.alert:hover {
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    white-space: nowrap;
+    border-radius: 1em;
+    text-shadow: 0 0 1em red;
+    box-shadow: 0 0 2em red;
+    background-color: #500;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+	}
+.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
 nav{
 	margin-bottom: 1.6em;
+	}
+nav ul{
+	display:inline-block;
 	}
 nav li{
 	display:inline-block;
@@ -187,28 +232,41 @@ p, .list	{
 </script>
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
-
-<header id="top">
-<h1 property="name">Will Appear</h1>
-</header>
-
-<main>
-<nav id="topNav">
+<nav id="topNav" class="cf">
 <ul>
 	<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/me/tutor.html">Tutoring</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
+</ul>
+<ul class="rightLink">
+	<li><a class="alert" property="significantLink" href="https://nakigoe.github.io/ru/tutor.html" hreflang="ru-RU">RU</a></li>
+	<li><a class="alert" property="significantLink" href="https://nakigoe.github.io/japan/tutor.html" hreflang="ja-JP">日本</a></li>
+	<li><a class="alert" property="significantLink" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans">中文</a></li>
 </ul>
 </nav>
 
+<main>
 <article>
-<header>
-	<h2>Active Development</h2>
+<header id="top">
+<h1 property="name">&#xbf;Not Found?</h1>
 </header>
-
-<h3>Bookmark me, new content appears daily!</h3>
-<p>Have fun!!!</p>
-<p>I've got a lot to say, but Christ, government and society kinda make me choose the correct words.</p>
+<section id="newArticles">
+	<h2>New Articles</h2>
+	<ul>
+		<li><a property="significantLink" href="https://nakigoe.github.io/china/freedom.html">China: 'Owned by its People'</a></li>
+		<li><a property="significantLink" href="https://nakigoe.github.io/articles/girl.html">Girl: a Real Princess</a></li>
+		<li><a property="significantLink" href="https://nakigoe.github.io/articles/hot.html">When CPU is hot and GPU melts</a></li>
+		<li><a property="significantLink" href="https://nakigoe.github.io/articles/as.html">the Best of Asia</a></li>
+		<li><a property="significantLink" href="https://nakigoe.github.io/ru/grim.html">Exit Russia</a></li>
+		<li><a property="significantLink" href="https://nakigoe.github.io/usa/america.html">Come to USA!</a></li>
+		<li><a property="significantLink" href="https://nakigoe.github.io/online/online-hour.html">Get Your Website Online in an Hour</a></li>
+		<li><a property="significantLink" href="https://nakigoe.github.io/articles/anime.html">Must See Anime</a></li>
+		<li><a property="significantLink" href="https://nakigoe.github.io/swords/sword-length.html">Ideal Sword Length</a></li>
+	</ul>
+</section>
+<h2>Bookmark me, new content appears daily!</h2>
+<p>I've got a lot to say, but the Kingdom and society kinda make me choose the correct words.</p>
 <p>Yes, family safe and family friendly.</p>
 </article>
 </main>
