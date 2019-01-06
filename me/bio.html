@@ -18,7 +18,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content="2018-11-30"/>
+	<meta name="revised" content="2019-01-07"/>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
 html,body,header,h1,h2,ul,li,p,div{
@@ -28,15 +28,22 @@ html,body,header,h1,h2,ul,li,p,div{
 body{
 	color: #eee;
 	width: 100%;
-	background-color:#250000;
+	background-color:#1a0000;
 	}
-
+#topNav {
+	margin: 0;
+	background-color: #120000;
+	font-size: 80%;
+}
+#topNav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
+h2, h3, h4, h5, h6 {
+	color: white;
+	}
 main {
 	width: 60%;
 	margin: 0 auto;
-	}
-h1, h2, h3, h4, h5, h6 {
-	color: white;
 	}
 h1 {
 	font-family: 'Nunito Sans', verdana, arial, sans-serif;
@@ -111,7 +118,22 @@ a:active{
         box-shadow: 0 0 2em red;
         background-color: #500;
         background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
-	}	
+	}
+.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
 .link {
 	display:inline;
 	margin:0;
@@ -340,23 +362,19 @@ p, .list	{
 </script>
 </amp-analytics>
 
-<header id="top">
-<h1 property="name">Ooou Biography</h1>
-</header>
-
-<main>
 <nav id="topNav">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>	
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/current.html">help&nbsp;needed</a></li></ul>
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/current.html">Help&nbsp;Needed</a></li></ul>
 </nav>
-
+<header id="top">
+<h1 property="name">Ooou Biography</h1>
+</header>
+<main>
 <article property="mainEntity" typeOf="Person">
 	<meta property="name" content="Ooou">
 	<meta property="honorificPrefix" content="God">
-<header>
-</header>
 
 <h2>I am the best!</h2>
     <p>My granddad was a an archaeologist in the mountains of Asia, grandma an innovator in geological Institute. My dad, mom, and older sis spent their time climbing mountains.</p>
@@ -407,11 +425,10 @@ p, .list	{
 	<ul>
 	<li><a href="../index.html">Main</a></li>
 	<li><a href="../me/me.html">Me</a></li>
-	<li><a class="alert" href="../me/current.html">help&nbsp;needed</a></li>
-	<li id="topLink"><a href="#top">top</a></li>
+	<li><a class="alert" href="../me/current.html">Help&nbsp;Needed</a></li>
 	</ul>
 </nav>
-<p id="copyright"><small>&copy; to Ooou 2018</small></p>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
 </body>
 </html>
