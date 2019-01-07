@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <!--[if lt IE9]><script> src="http::/html5.shim/googlecode.com/svn/trunk/html5.js"</script><![end if]-->
-    <title>Sword Length</title>
+    <title>Custom Sword Length</title>
     <meta name="description" content="Figuring out an ideal sword weight, length, curvature; creating custom swords. Proper set of swords for training.">
 	<meta name="author" content="Maxim Angel">
 	<meta name="designer" content="Maxim Angel">
@@ -30,7 +30,14 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
-
+#topNav {
+	margin: 0;
+	background-color: #120000;
+	font-size: 80%;
+}
+#topNav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
 main {
 	width: 60%;
 	margin: 0 auto;
@@ -42,8 +49,11 @@ article {
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
+.phrase {
+	display: inline-block;
+}
 h1 {
-	font-family:calibri;
+	font-family:"Nunito Sans", sans-serif;
 	text-align: center;
 	padding-top: 0.8em;
 	padding-bottom: 0.75em;
@@ -53,22 +63,21 @@ h1 {
 	}
 	
 h2 {
-	font-family:Calibri;
+	font-family:"Nunito Sans", sans-serif;
 	font-size:3em;
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white, 0 0 .3em white;
 	margin:.48em 0 .2em 0;
 }
-
 h3 {
-	font-family:Calibri;
+	font-family:"Nunito Sans", sans-serif;
 	font-size:2em;
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white;
 	margin-bottom:.5em;
 	}
 h4 {
-	font-family:Calibri;
+	font-family:"Nunito Sans", sans-serif;
 	font-size:1.4em;
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white;
@@ -105,7 +114,42 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-	
+.alert {
+	font-family: "Nunito Sans", san-serif;
+	font-weight: 200;
+	color: #FF6600;
+    background-color: #1a0000;
+    box-shadow: 0 0 .5em red;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
+	}
+.alert:hover {
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    white-space: nowrap;
+    border-radius: 1em;
+    text-shadow: 0 0 1em red;
+    box-shadow: 0 0 2em red;
+    background-color: #500;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+	}
+.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}	
 .link {
 	display:inline;
 	margin:0;
@@ -187,6 +231,9 @@ em {color:#fff;}
 	border-radius: 1em;
 	padding: .7em 1em;
 	}
+.answer h3 {
+	margin-top: .5em; /*for the h3 inside a bubble, reducing the top margin*/
+	}
 .answer p, .question p{
 	margin-bottom:.5em;
 	}
@@ -225,7 +272,6 @@ footer {
 	width:60%;
 	margin: 5.5em auto 0;
 	}
-#topLink {float: right;}
 #copyright{
 	margin: 8.5em auto 2em;
 	text-align: center;
@@ -353,12 +399,6 @@ nav a {
 </script>
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
-
-<header id="top">
-<h1 property="name">Custom Sword</h1>
-</header>
-
-<main>
 <nav id="topNav">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io">Main</a></li>
@@ -367,24 +407,30 @@ nav a {
 </ul>
 </nav>
 
+<main>
 <article  property="mainEntity" typeof="Question">
     <meta property="about" content="custom blade">
-    <meta property="keywords" content="custom, ideal, perfect, correct, right, well-fit, length, weight, balance, single-handed, two-handed, blade, sword, knife, machete, rapier, metal, wood, stick, gun, flashlight, ballistic shield">
+    <meta property="keywords" content="custom, ideal, perfect, correct, right, well-fit, length, weight, balance, single-handed, two-handed, blade, sword, knife, machete, rapier, katana, wakizashi, metal, wood, stick, gun, flashlight, ballistic shield">
     <meta property="name" content="Ideal Sword Length">
     <meta property="author" content="Maxim Angel">
-<h2 property="headline">Blade Length, Weight, Form</h2>
-   
+<header>
+<h1 property="headline"><span class="phrase">Custom Sword</span> <span class="phrase">Length, Weight, Form</span></h1>
+</header>  
     <div class="question">
           <p property="alternativeHeadline">Is there an ideal sword length that is some ratio of arm length / height?</p>
           <p>I want a custom blade, and I would like it to be well fit to me.</p>
-    </div>
-    
+	</div>
+	<div class="answer" property="acceptedAnswer" typeof="Answer">
+	<meta property="author" content="Nakigoe">
+	<meta property="dateCreated" content="2019-01-08">
+<p property="text">In general you want to be able to attack your opponent's shins with a two-handed sword or a katana at about 45° degree angle, without the need to bend your knees.</p>
+	</div>    
     <div class="answer" property="acceptedAnswer" typeof="Answer">
-	<meta property="author" content="Ooou">
-	<meta property="dateCreated" content="2019-01-04">
+	<meta property="author" content="Nakigoe">
+	<meta property="dateCreated" content="2019-01-08">
     <section property="text">
     <h3>Practice!</h3>
-        <p>Use metal sticks first. You'll probably very soon find out that You want different weight and length for different types of training:
+        <p>Use metal sticks first to find out the proper weight. You'll probably very soon find out that You want different weight and length for different types of training:
         form training, strength training, and speed training. You'll also find out that the right weight depends on your current condition. Sometimes you need recovery period and want to train with lighter weapons. Sometimes you would like a heavy sword. And when I say 'heavy', I mean 'HEAVY!'</p> 
         
         <p>You'll find out that You want different types of blades for different moves! Long and light for stabbing, mid-length and slightly curvy for cutting moves, shorter for slashing moves, and really short for dagger techniques.
@@ -399,8 +445,6 @@ nav a {
 		</p>
 
 		<p>You'll also find out that you want completely different blades for single-handed vs two-handed techniques. Two-handed blades are usually longer and heavier and are used for slashing and cutting moves. The grip for two-handed swords is usually 1/4 length of a blade.</p>
-		
-		<p>In general you want to be able to attack your opponents shins with a two-handed sword at about 45° degree angle, without the need to bend your knees.</p>
 		
 		<p>Do you plan to cut through heavy armor? Then train maces and axes.</p>
 		
@@ -422,7 +466,7 @@ nav a {
     
     <section property="suggestedAnswer" typeOf="Answer">
 	<meta property="author" content="Ooou">
-	<meta property="dateCreated" content="2018-10-28">
+	<meta property="dateCreated" content="2019-01-08">
     <h3 property="name">Tech Info</h3>
     <div class="answer" property="text">
         <p>Point of Balance is closer to the grip for thrusting, further away for slashing; for smash &amp; slash you want a Point of Non-Vibration around the position of the index, middle, and ring fingers. The length of a single handed blade would be just short of the tip touching the ground when the weapon is held in the hand with the arm relaxed and hanging at your side. It does prevent the tip being scratched or blunted if you do swings from below. More important if the weapon is a work of art.</p>
