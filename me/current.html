@@ -102,13 +102,6 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-.link {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	color:white;
-	}
 .alert {
 	font-family: "Nunito Sans",sans-serif;
 	font-weight: 200;
@@ -129,9 +122,29 @@ a:active{
     box-shadow: 0 0 2em red;
     background-color: #500;
     background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
-	}	
-
-
+	}
+.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
+.link {
+	display:inline;
+	margin:0;
+	padding:0 .5em;
+	font-size:inherit;
+	color:white;
+	}
 nav a{
 	font-family: "Nunito Sans", Arial;
 	font-weight: 200;
@@ -437,12 +450,6 @@ h2 {
 }
 </script>
 </amp-analytics>
-
-<header>
-<h1 property="name">Angel Sweat, Blood, and Tears</h1>
-</header>
-
-<main>
 <nav id="topNav">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>	
@@ -450,10 +457,14 @@ h2 {
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/bio.html">Bio</a></li>
 </ul>
 </nav>
+<header>
+<h1 property="name">Angel Sweat, Blood, and Tears</h1>
+</header>
+
+<main>
+
 
 <article>
-<header>
-</header>
 <!--Remove the repetition!!!-->
 <h2>My Projects</h2>
 <ul class="list">
