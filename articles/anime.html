@@ -42,12 +42,19 @@
         ul, li {
 	        list-style: none;
             }    
-        body {
-            color: #eee;
-            width: 100%;
-            background-color: #250000;
-        }
-    
+body{
+	color: #eee;
+	width: 100%;
+	background-color: #1a0000;
+	}
+#topNav {
+	margin: 0;
+	background-color: #120000;
+	font-size: 80%;
+}
+#topNav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
         main {
             width: 60%;
             margin: 0 auto;
@@ -90,7 +97,6 @@
             margin-top: 4em;
             box-shadow: 0 0 .5em .1em white;
         }
-        #topNav {margin-top: 2.5em;}
         nav {
             margin-bottom: 1.6em;
         }
@@ -135,7 +141,42 @@
             /*offset*/
             text-shadow: 0 0 1em white;
         }
-
+.alert {
+	font-family: "Nunito Sans",sans-serif;
+	font-weight: 200;
+	color: #FF6600;
+    background-color: #1a0000;
+    box-shadow: 0 0 .5em red;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
+	}
+.alert:hover {
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    white-space: nowrap;
+    border-radius: 1em;
+    text-shadow: 0 0 1em red;
+    box-shadow: 0 0 2em red;
+    background-color: #500;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+	}
+.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
         p,
         section li {
             font-size: 1em;
@@ -291,6 +332,13 @@ p	{
     </amp-analytics>
 
     <header>
+	<nav id="topNav">
+	  <ul>
+	    <li><a property="significantLink" href="https://nakigoe.github.io">Main</a></li>
+	    <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
+	    <li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
+	  </ul>
+	</nav>
         <h1 property="name">Must&nbsp;See&nbsp;Anime</h1>
         <!--Change!!!-->
         <div class="full-width">
@@ -303,14 +351,6 @@ p	{
     </header>
 
     <main>
-        <nav id="topNav">
-            <ul>
-                <li><a property="significantLink" href="https://nakigoe.github.io">Main</a></li>
-                <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-                <li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
-            </ul>
-        </nav>
-
     <article>
     <h2>Anime Priority List</h2>
         <section>
@@ -554,7 +594,7 @@ p	{
 	<li><a href="../index.html">Main</a></li>
 	<li><a href="../me/me.html">Me</a></li>
 	<li><a href="../articles/apps.html">Useful&nbsp;Apps</a></li>
-	<li class="rightLink"><a href="#top">top</a></li>
+	<li class="rightLink"><a href="#topNav">top</a></li>
 </ul>
 </nav>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
