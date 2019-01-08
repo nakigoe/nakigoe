@@ -101,7 +101,42 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-	
+.alert {
+	font-family: "Nunito Sans",sans-serif;
+	font-weight: 200;
+	color: #FF6600;
+    background-color: #1a0000;
+    box-shadow: 0 0 .5em red;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
+	}
+.alert:hover {
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    white-space: nowrap;
+    border-radius: 1em;
+    text-shadow: 0 0 1em red;
+    box-shadow: 0 0 2em red;
+    background-color: #500;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+	}
+.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}	
 .link {
 	display:inline;
 	margin:0;
@@ -359,7 +394,7 @@ p	{
 </ul>
 <h2>Website Creation</h2>
 <ul class="linksList linksListSection">
-<li class="linkAndComment"><a property="significantLink" class="link" href="https://git-scm.com/downloads" target="_blank">git</a><small> version control</small></li>
+<li class="linkAndComment"><a property="significantLink" class="link" href="https://git-scm.com/downloads" target="_blank">Git</a><small> version control</small></li>
 <li class="linkAndComment"><a property="significantLink" class="link" href="https://www.adobe.com/products/dreamweaver/free-trial-download.html" target="_blank">Dreamweaver</a><small> extensive website development</small></li>
 <li class="linkAndComment"><a property="significantLink" class="link" href="https://www.adobe.com/products/photoshop/free-trial-download.html" target="_blank">Photoshop</a><small> extensive photo editing</small></li>
 <li class="linkAndComment"><a property="significantLink" class="link" href="https://www.7-zip.org/" target="_blank">7-zip</a><small> best file archiver</small></li>
@@ -411,7 +446,7 @@ p	{
 <ul>
 	<li><a href="../index.html">Main</a></li>
 	<li><a href="../me/me.html">Me</a></li>
-	<li id="topLink"><a href="#topNav">top</a></li>
+	<li class="rightLink"><a href="#topNav">top</a></li>
 </ul>
 </nav>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
