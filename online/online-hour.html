@@ -28,15 +28,25 @@ html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
 body{
 	color: #eee;
 	width: 100%;
-	background-color: #250000;
+	background-color: #1a0000;
 	}
-
+#topNav {
+	margin: 0;
+	background-color: #120000;
+	font-size: 80%;
+}
+#topNav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+	}
 main {
 	width: 60%;
 	margin: 0 auto;
 	}
 h1, h2, h3, h4, h5, h6 {
 	color: white;
+}
+.phrase {
+	display: inline-block;
 }
 h1 {
 	font-family: 'Nunito Sans', verdana, arial, sans-serif;
@@ -104,7 +114,42 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-	
+.alert {
+	font-family: "Nunito Sans",sans-serif;
+	font-weight: 200;
+	color: #FF6600;
+    background-color: #1a0000;
+    box-shadow: 0 0 .5em red;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
+	}
+.alert:hover {
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    white-space: nowrap;
+    border-radius: 1em;
+    text-shadow: 0 0 1em red;
+    box-shadow: 0 0 2em red;
+    background-color: #500;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+	}
+.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
 .link {
 	display:inline;
 	margin:0;
@@ -282,31 +327,31 @@ h2 {
 }
 p, .list	{
 	font-size: 1em;
-	font-stretch: 85%;
+	font-stretch: semi-condensed;
 	}
 .linksList, nav a {
 	font-size: 1.2em;
-	font-stretch: 85%;
+	font-stretch: semi-condensed;
 	}
 
 @media only screen and (min-width: 60em) {
 	p, .list {
 	font-size: 1.125em;
-	font-stretch: 95%;
+	font-stretch: normal;
 	}
 	.linksList, nav a {
 	font-size: 1.35em;
-	font-stretch: 95%;
+	font-stretch: normal;
 	}
 }
 @media only screen and (min-width: 120em) {
 	p, .list {
 	font-size: 1.375em;
-	font-stretch: 110%;
+	font-stretch: semi-expanded;
 	}
 	.linksList, nav a {
 	font-size: 1.65em;
-	font-stretch: 110%;
+	font-stretch: semi-expanded;
 	}
 }
 </style>
@@ -329,11 +374,6 @@ p, .list	{
 </script>
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
-<header>
-<h1 property="name">Get Your Website<wbr> Online In an Hour</h1>
-</header>
-
-<main>
 <nav id="topNav">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
@@ -341,14 +381,15 @@ p, .list	{
 <li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
 </ul>
 </nav>
-
-<article>
 <header>
-<h1 property="headline">Grab a Website Now!</h1>
+<h1 property="name"><span class="phrase">Get Your Website</span> <span class="phrase">Online In an Hour</span></h1>
 </header>
 
-<p>Any of Your questions I'll explain in a video chat.</p>
-<p>It's the fastest way for You to create Your website!!!</p>
+<main>
+<article>
+<header>
+<h2 property="headline">Grab a Website Now!</h2>
+</header>
 
 <section property="text">
 <h2>GitHub, 1 hour</h2>
