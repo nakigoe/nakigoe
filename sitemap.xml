@@ -172,7 +172,19 @@
 
       <priority>0.9</priority>
 
-   </url>   
+   </url> 
+       
+   <url>
+
+      <loc>https://nakigoe.github.io/ru/services.html</loc>
+
+      <lastmod>2019-01-13</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.1</priority>
+
+   </url>
    
    <url>
 
@@ -220,5 +232,6 @@
 
       <priority>0.8</priority>
 
-   </url>    
+   </url>   
+    
 </urlset>
