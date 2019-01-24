@@ -31,12 +31,12 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
-#topNav {
+.topNav {
 	margin: 0;
 	background-color: #120000;
 	font-size: 80%;
 }
-#topNav .rightLink {
+.topNav .rightLink {
 	margin-right: .75em;/*temporary draft*/
 }
 h1, h2, h3, h4, h5, h6 {
@@ -90,7 +90,7 @@ a  {
 	box-shadow:0 0 .5em white;
 	background-image: linear-gradient(180deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
 }
-a:hover, #topNav:hover dl a{
+a:hover, .topNav:hover dl a{
 	color:white;
 	text-shadow: 0 0 1em white;
 	box-shadow: 0 0 2em white;
@@ -182,7 +182,9 @@ nav a{
 	font-family: "Nunito Sans", verdana, Arial, sans-serif;
 	font-weight: 200;
 	}
-
+.topNav ul{
+	display: inline-block;
+}
 .siteLinks {margin-top:.7em;}
 .siteLinks a{margin-bottom:.4em;}
 
@@ -231,22 +233,22 @@ li small  {
 	flex-wrap:nowrap;
 }
 footer {
-	width:60%;
+	width:100%;
 	margin: 5.5em auto 0;
 	}
 
 #copyright{
-	margin: 10em auto 2em;
+	margin: 1.5em auto 1.65em;
 	text-align: center;
 }
 
 .social {
 	display: block;
-	margin: 2.5em auto 6.5em;
+	margin: 2.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	text-align: center;
 	font-weight: 400;
 }
@@ -363,11 +365,22 @@ p, .list	{
 </script>
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
-<nav id="topNav">
+<nav class="topNav cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" title="Homepape">Main</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html" title="About Lovely Me">Me</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/filming.html" title="Film Director">Filming</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/bible.html" title="Bible Tutor">Bible</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+</ul>
+<ul class="rightLink">
+	<li><a class="alert" href="https://meet.jit.si/nakigoe" title="e-mail about preferred time (and time-zone). Love you all.">video&#8209;chat</a></li>
 </ul>
 </nav>
 <header>
@@ -465,15 +478,25 @@ p, .list	{
 				&text=I love America and You"				
 	></amp-social-share>
 </div>
-<nav>
-<ul>
-	<li><a href="../index.html">Main</a></li>
-	<li><a href="../me/me.html">Me</a></li>
-	<li><a href="../articles/apps.html">Useful&nbsp;Apps</a></li>
-	<li class="rightLink"><a href="#topNav">top</a></li>
-</ul>
-</nav>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="topNav">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/" title="Homepape">Main</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html" title="About Lovely Me">Me</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/filming.html" title="Film Director">Filming</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/bible.html" title="Bible Tutor">Bible</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://meet.jit.si/nakigoe" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+</ul>
+</nav>
 </body>
 </html>
