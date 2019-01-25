@@ -119,6 +119,18 @@ a:active{
 	float: right;
 	margin-right: 0.75em;/*temporary draft*/
 }
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
 .link {
 	display:inline;
 	margin:0;
@@ -163,6 +175,7 @@ nav a{
 	font-family: 'Nunito Sans', Verdana, sans-serif;
 	font-weight: 200;
 	}
+nav ul {display: inline-block;}
 hr {display:block;
 	box-shadow:0 0 .5em .1em white;
 	position:relative;
@@ -442,11 +455,13 @@ nav a {
 }
 </script>
 </amp-analytics>
-<nav id="topNav">
-  <ul>
+<nav id="topNav" class="cf">
+ <ul>
 	<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
 	<li><a property="relatedLink" href="https://nakigoe.github.io/me/bio.html">bio</a></li>
 	<li><a property="relatedLink" href="https://nakigoe.github.io/me/current.html">help&nbsp;needed</a></li>
+</ul>
+<ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/filming.html" title="Film Director">Filming</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/bible.html" title="Bible Tutor">Bible</a></li>
@@ -456,8 +471,10 @@ nav a {
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-	<li class="rightLink"><a class="alert" href="https://meet.jit.si/nakigoe" title="e-mail about preferred time (and time-zone)">video&#8209;chat</a></li>
-  </ul>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://meet.jit.si/nakigoe" title="e-mail about preferred time (and time-zone)">video&#8209;chat</a></li>
+</ul>
 </nav>
 
 <main>
