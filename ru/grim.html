@@ -31,14 +31,31 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
-h1, h2, h3, h4, h5, h6 {
-	color: white;
-	}
-#topNav {
-	margin-top: 0;
+nav {
+	margin: 0;
 	background-color: #120000;
 	font-size: 80%;
 }
+nav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
+#topNav {
+	margin-bottom: 1.45em;
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+	}
 main {
 	width: 60%;
 	margin: 0 auto;
@@ -56,7 +73,7 @@ h1 {
 	font-family:"Adobe Clean Light","Nunito Sans", sans-serif;
 	text-align: center;
 	padding-top: 0.8em;
-	padding-bottom: 0.75em;
+	padding-bottom: 0.8em;
 	/*font-size: 4em;*/
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
@@ -161,18 +178,6 @@ a:active{
 	font-size:inherit;
 	color:white;
 	}
-.sameSite {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	}
-.linksList {
-	font-family: "Adobe Clean Light";
-	font-size:1.6em;
-	margin:1.4em 0 1em .635em;	
-	}
-.linksList li {margin-bottom:1em;}
 .list {
 	font-family: "Adobe Clean Light";
 	font-size:1.4em;
@@ -180,24 +185,6 @@ a:active{
 	line-height:1.5em;
 	letter-spacing:.02em;
 	}
- 
-.linksListSection {margin-bottom:2em;}
-.linksListSection p{
-	font-size:.85em;
-	margin:.5em 0 0 .5em}
-nav{
-	margin-bottom: 1.6em;
-	}
-nav li{
-	display:inline-block;
-	margin-bottom: 0.4em;
-	}
-nav a{
-	font-family: "Nunito Sans", verdana, Arial, sans-serif;
-	font-weight: 200;
-	}
-.siteLinks {margin-top:.7em;}
-.siteLinks a{margin-bottom:.4em;}
 hr {display:block;
 	box-shadow:0 0 .5em .1em white;
 	position:relative;
@@ -222,37 +209,21 @@ li small  {
 	margin-left:auto;
 	margin-top:.25em;
 	}
-.linkAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:wrap;
-}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
 footer {
-	width:60%;
+	width:100%;
 	margin: 5.5em auto 0;
 	}
-
-/*maybe add red color using class .attention link?*/
-
 #copyright{
-	margin: 8.5em auto 2em;
+	margin: 1.65em auto;
 	text-align: center;
 }
-
 .social {
 	display: block;
-	margin: 2.5em auto;
+	margin: 2.5em auto 1.5;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	text-align: center;
 	font-weight: 400;
 }
@@ -370,7 +341,7 @@ p, .list	{
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
 <meta property="keywords" content="Leo Moracchioli,This is Halloween,Danny Elfman,true,face,slaves,Russia,SNG,former,USSR,Moscow,Leningrad,Ural,bomb,nuclear,politics,policy,tyranny,murder,kill,power,Putin,Yeltsin,president,leader,leadership,rule,rulership,lie,army,economics,economy,currency,inflation,rubble,RUB,GDP,poverty,police,courts,social,benefits,HIV,how to,fight,Russian,vodka,problem,alcohol">
-<nav id="topNav">
+<nav id="topNav" class="cf">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
@@ -383,6 +354,9 @@ p, .list	{
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://nakigoe.github.io/me/current.html">Help&nbsp;Needed</a></li>
 </ul>
 </nav>
 
@@ -683,15 +657,25 @@ Yet government officials continue to claim that ‘they won’t let rouble fall�
 		data-param-text="Exit Russia. Reasons: policy, economy, poverty, inequality"
 	></amp-social-share>	
 </div>
-<nav>
-	<ul>
-	<li><a href="../index.html">Main</a></li>
-	<li><a href="../me/me.html">Me</a></li>
-	<li><a class="alert" href="../me/current.html">Help&nbsp;Needed</a></li>
-	<li class="rightLink"><a href="#topNav">top</a></li>
-	</ul>
-</nav>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="cf">
+<ul>
+<li><a href="https://nakigoe.github.io/">Main</a></li>
+<li><a href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
+<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://nakigoe.github.io/me/current.html">Help&nbsp;Needed</a></li>
+</ul>
+</nav>
 </body>
 </html>
