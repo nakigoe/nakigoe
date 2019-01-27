@@ -31,11 +31,27 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
-#topNav {
-	margin-top: 0;
-	margin-bottom: 0;
+nav {
+	margin: 0;
 	background-color: #120000;
 	font-size: 80%;
+}
+nav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
+#topNav {
+	margin-bottom: 1.5em;
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
 }
 main {
 	width: 60%;
@@ -138,18 +154,7 @@ a:active{
 	font-size:inherit;
 	color:white;
 	}
-.sameSite {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	}
-.linksList {
-	font-family: 'Nunito Sans', verdana, arial, sans-serif;
-	font-size:1.6em;
-	margin:1.4em 0 1em .635em;	
-	}
-.linksList li {margin-bottom:1em;}
+
 .list {
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
@@ -158,24 +163,7 @@ a:active{
 	margin-left:1.5em;
 	line-height:1.5em;
 	}
- 
-.linksListSection {margin-bottom:2em;}
-.linksListSection p{
-	font-size:.85em;
-	margin:.5em 0 0 .5em}
-nav{
-	margin-bottom: 1.6em;
-	}
-nav li{
-	display:inline-block;
-	margin-bottom: 0.4em;
-	}
-nav a{
-	font-size: 1.2em;
-	font-family: 'Nunito Sans', Verdana, sans-serif;
-	font-weight: 200;
-	}
-nav ul {display: inline-block;}
+
 hr {display:block;
 	box-shadow:0 0 .5em .1em white;
 	position:relative;
@@ -217,21 +205,21 @@ li small  {
 	flex-wrap:nowrap;
 }
 footer {
-	width:60%;
+	width:100%;
 	margin: 5.5em auto 0;
 	}
 .contacts {
-	margin: 1em auto 2em;
+	margin: 1.65em auto;
 	max-width: 270px;
 	text-align: center;
 }
 .contacts p {
 	text-align: center;
+	margin-bottom: 1.65em;
 }
 #copyright{
-	margin: 8.5em auto 2em;
+	margin: 1.65em auto;
 	text-align: center;
-	/*letter-spacing: 0.01em;*/
 }
 #kiss {
 	display:inline-block;
@@ -733,15 +721,6 @@ nav a {
 </main>
 
 <footer>
-<div class="contacts">
-		<p>e-mail:</p>
-		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-		width="270"
-		height="50"
-		layout="intrinsic"
-		alt="nakigoe @ pm . me">
-		</amp-img>
-</div>
 <div class="social">
     <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -778,15 +757,33 @@ nav a {
 				&text=online tutoring: Math, English, Russian, Tajik, Japanese"				
 	></amp-social-share>
 </div>
-<nav>
-<ul>
-<li><a href="../index.html">Main</a></li>
-<li><a href="../me/bio.html">bio</a></li>
-<li><a href="../me/current.html">help&nbsp;needed</a></li>
-<li class="rightLink"><a href="#topNav">top</a></li>
-</ul>
-</nav>
+<div class="contacts">
+		<p>e-mail:</p>
+		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
+		width="270"
+		height="50"
+		layout="intrinsic"
+		alt="nakigoe @ pm . me">
+		</amp-img>
+</div>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="cf">
+<ul>
+<li><a href="https://nakigoe.github.io/">Main</a></li>
+<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://meet.jit.si/nakigoe" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+</ul>
+</nav>
 </body>
 </html>
