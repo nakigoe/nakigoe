@@ -31,13 +31,27 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
-.topNav {
+nav {
 	margin: 0;
 	background-color: #120000;
 	font-size: 80%;
 }
-.topNav .rightLink {
+nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
+}
+#topNav {
+	margin-bottom: 1.5em;
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", verdana, Arial, sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: white;
@@ -50,7 +64,7 @@ h1 {
 	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
 	text-align: center;
 	padding-top: 0.8em;
-	padding-bottom: 0.75em;
+	padding-bottom: 0.8em;
 	font-size: 4em;
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
@@ -170,21 +184,6 @@ a:active{
 .linksListSection p{
 	font-size:.85em;
 	margin:.5em 0 0 .5em}
-
-nav{
-	margin-bottom: 1.6em;
-	}
-nav li{
-	display:inline-block;
-	margin-bottom: 0.4em;
-	}
-nav a{
-	font-family: "Nunito Sans", verdana, Arial, sans-serif;
-	font-weight: 200;
-	}
-.topNav ul{
-	display: inline-block;
-}
 .siteLinks {margin-top:.7em;}
 .siteLinks a{margin-bottom:.4em;}
 
@@ -365,7 +364,7 @@ p, .list	{
 </script>
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
-<nav class="topNav cf">
+<nav class="cf" id="topNav">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
@@ -479,7 +478,7 @@ p, .list	{
 </div>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
-<nav class="topNav">
+<nav>
 <ul>
 <li><a href="https://nakigoe.github.io/">Main</a></li>
 <li><a href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
