@@ -136,22 +136,7 @@ a:active{
         box-shadow: 0 0 2em red;
         background-color: #500;
         background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
-}	
-
-.sameSite {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	}
-
-.linksList {
-	font-family: "Adobe Clean Light";
-	font-size:1.6em;
-	margin:1.4em 0 1em .635em;	
-	}
-.linksList li {margin-bottom:1em;}
-
+}
 .list {
 	font-family: 'Nunito Sans', Verdana, Arial, sans-serif;;
 	font-size:1.2em;
@@ -160,11 +145,6 @@ a:active{
 	line-height:1.5em;
 	letter-spacing:.02em;
 	}
- 
-.linksListSection {margin-bottom:2em;}
-.linksListSection p{
-	font-size:.85em;
-	margin:.5em 0 0 .5em}
 
 nav{
 	margin-bottom: 1.6em;
@@ -178,9 +158,9 @@ nav a{
 	font-family: 'Nunito Sans', Verdana, sans-serif;
 	font-weight: 200;
 	}
-
-.siteLinks {margin-top:.7em;}
-.siteLinks a{margin-bottom:.4em;}
+#strong {
+	max-width: 2880px;
+}
 #machine {
 	max-width: 1080px;
 }
@@ -448,7 +428,19 @@ p, .list	{
 	<li>European and speaks English</li>
 	<li>with excellent health</li>
 </ul>
+<div id="strong">
+<amp-img src="https://nakigoe.github.io/_IMG/machine.jpg"
+  width="2880"
+  height="1800"
+  layout="responsive"
+  alt="strong girls are the best"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="strong girls are the best.">
+</amp-img>
 <p>I admire strong girls.</p>
+</div>
+
 <p>Trust me, bigger is better.</p>
 <p>After all is said and done, only the beautiful face and long legs matter.</p>
 <p>Take in vitamin D daily.</p>
