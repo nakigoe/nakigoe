@@ -47,7 +47,7 @@ nav li{
 	margin-bottom: 0.4em;
 	}
 nav a{
-	font-family: "Nunito Sans", verdana, Arial, sans-serif;
+	font-family: "Nunito Sans", sans-serif;
 	font-weight: 200;
 	}
 nav ul{
@@ -61,7 +61,7 @@ main {
 	margin: 0 auto;
 	}
 h1 {
-	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
+	font-family:'Nunito Sans', sans-serif;
 	text-align: center;
 	padding-top: 0.8em;
 	padding-bottom: 0.8em;
@@ -71,7 +71,7 @@ h1 {
 	}
 	
 h2 {
-	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
+	font-family:'Nunito Sans', sans-serif;
 	font-size: calc(1.5em + 2.5vmin);
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white, 0 0 .3em white;
@@ -79,7 +79,7 @@ h2 {
 }
 
 h3 {
-	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
+	font-family:'Nunito Sans', sans-serif;
 	font-size:2em;
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white;
@@ -158,20 +158,6 @@ a:active{
 	font-size:inherit;
 	color:white;
 	}
-.sameSite {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	}
-
-.linksList {
-	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
-	font-size:1.6em;
-	margin:1.4em 0 1em .635em;	
-	}
-.linksList li {margin-bottom:1em;}
-
 .list {
 	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
 	font-size:1.4em;
@@ -179,25 +165,12 @@ a:active{
 	line-height:1.5em;
 	letter-spacing:.02em;
 	}
- 
-.linksListSection {margin-bottom:2em;}
-.linksListSection p{
-	font-size:.85em;
-	margin:.5em 0 0 .5em}
-.siteLinks {margin-top:.7em;}
-.siteLinks a{margin-bottom:.4em;}
-
 hr {display:block;
 	box-shadow:0 0 .5em .1em white;
 	position:relative;
 	top:-.6em;
 	margin-bottom:0;
 	/*possible to control through margins if necessary*/
-	}
-kbd {
-	border: 1px solid #eee;
-	border-radius:.4em;
-	padding:.2em .4em;
 	}
 p {
 	line-height: 1.4;
@@ -235,9 +208,17 @@ footer {
 	width:100%;
 	margin: 5.5em auto 0;
 	}
-
+.contacts {
+	margin: 1.65em auto;
+	max-width: 270px;
+	text-align: center;
+}
+.contacts p {
+	text-align: center;
+	margin-bottom: 1.65em;
+}
 #copyright{
-	margin: 1.5em auto 1.65em;
+	margin: 1.65em auto;
 	text-align: center;
 }
 
@@ -476,9 +457,18 @@ p, .list	{
 				&text=I love America and You"				
 	></amp-social-share>
 </div>
+<div class="contacts">
+		<p>e-mail:</p>
+		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
+		width="270"
+		height="50"
+		layout="intrinsic"
+		alt="nakigoe @ pm . me">
+		</amp-img>
+</div>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
-<nav>
+<nav class="cf">
 <ul>
 <li><a href="https://nakigoe.github.io/">Main</a></li>
 <li><a href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
