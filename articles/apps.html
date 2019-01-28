@@ -30,11 +30,27 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
-#topNav {
-	margin-top: 0;
-	margin-bottom: 0;
+nav {
+	margin: 0;
 	background-color: #120000;
 	font-size: 80%;
+}
+nav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
+#topNav {
+	margin-bottom: 1.5em;
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
 }
 main {
 	width: 60%;
@@ -149,12 +165,6 @@ a:active{
 	font-size:inherit;
 	color:white;
 	}
-.sameSite {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	}
 
 .linksList {
 	font-family: 'Nunito Sans', sans-serif;
@@ -176,19 +186,6 @@ a:active{
 .linksListSection p{
 	font-size:.85em;
 	margin:.5em 0 0 .5em}
-
-nav{
-	margin-bottom: 1.6em;
-	}
-nav li{
-	display:inline-block;
-	margin-bottom: 0.4em;
-	}
-nav a{
-	font-size: 1.2em;
-	font-family: 'Nunito Sans', Verdana, Arial, sans-serif;
-	font-weight: 200;
-	}
 
 .siteLinks {margin-top:.7em;}
 .siteLinks a{margin-bottom:.4em;}
@@ -238,22 +235,29 @@ li small  {
 	flex-wrap:nowrap;
 }
 footer {
-	width:60%;
+	width:100%;
 	margin: 5.5em auto 0;
 	}
-
-#copyright{
-	margin: 8.5em auto 2em;
+.contacts {
+	margin: 1.65em auto;
+	max-width: 270px;
 	text-align: center;
 }
-
+.contacts p {
+	text-align: center;
+	margin-bottom: 1.65em;
+}
+#copyright{
+	margin: 1.65em auto;
+	text-align: center;
+}
 .social {
 	display: block;
-	margin: 2.5em auto;
+	margin: 2.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	text-align: center;
 	font-weight: 400;
 }
@@ -384,6 +388,9 @@ p	{
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
 </ul>
+<ul class="rightLink">
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/online/online-hour.html">Get&nbsp;Your&nbsp;Website&nbsp;Online&nbsp;in&nbsp;an&nbsp;Hour</a></li>
+</ul>
 </nav>
 
 <main>
@@ -456,14 +463,25 @@ p	{
 				&text=the best Apps ever, all stable"				
 	></amp-social-share>
 </div>
-<nav>
-<ul>
-	<li><a href="../index.html">Main</a></li>
-	<li><a href="../me/me.html">Me</a></li>
-	<li class="rightLink"><a href="#topNav">top</a></li>
-</ul>
-</nav>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="cf">
+<ul>
+<li><a href="https://nakigoe.github.io/">Main</a></li>
+<li><a href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
+<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://nakigoe.github.io/online/online-hour.html">Get&nbsp;Your&nbsp;Website&nbsp;Online&nbsp;in&nbsp;an&nbsp;Hour</a></li>
+</ul>
+</nav>
 </body>
 </html>
