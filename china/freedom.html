@@ -31,13 +31,27 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
-#topNav {
+nav {
 	margin: 0;
 	background-color: #120000;
 	font-size: 80%;
 }
-#topNav .rightLink {
+nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
+}
+#topNav {
+	margin-bottom: 1.5em;
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: white;
@@ -166,18 +180,6 @@ a:active{
 	font-size:inherit;
 	color:white;
 	}
-.sameSite {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	}
-.linksList {
-	font-family: "Adobe Clean Light";
-	font-size:1.6em;
-	margin:1.4em 0 1em .635em;	
-	}
-.linksList li {margin-bottom:1em;}
 .list {
 	font-family: "Adobe Clean Light";
 	font-size:1.4em;
@@ -185,24 +187,6 @@ a:active{
 	line-height:1.5em;
 	letter-spacing:.02em;
 	}
- 
-.linksListSection {margin-bottom:2em;}
-.linksListSection p{
-	font-size:.85em;
-	margin:.5em 0 0 .5em}
-nav{
-	margin-bottom: 1.6em;
-	}
-nav li{
-	display:inline-block;
-	margin-bottom: 0.4em;
-	}
-nav a{
-	font-family: "Nunito Sans", verdana, Arial, sans-serif;
-	font-weight: 200;
-	}
-.siteLinks {margin-top:.7em;}
-.siteLinks a{margin-bottom:.4em;}
 hr {display:block;
 	box-shadow:0 0 .5em .1em white;
 	position:relative;
@@ -227,37 +211,30 @@ li small  {
 	margin-left:auto;
 	margin-top:.25em;
 	}
-.linkAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:wrap;
-}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
 footer {
-	width:60%;
+	width:100%;
 	margin: 5.5em auto 0;
 	}
-
-/*maybe add red color using class .attention link?*/
-
-#copyright{
-	margin: 8.5em auto 2em;
+.contacts {
+	margin: 1.65em auto;
+	max-width: 270px;
 	text-align: center;
 }
-
+.contacts p {
+	text-align: center;
+	margin-bottom: 1.65em;
+}
+#copyright{
+	margin: 1.65em auto;
+	text-align: center;
+}
 .social {
 	display: block;
-	margin: 2.5em auto;
+	margin: 2.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	text-align: center;
 	font-weight: 400;
 }
@@ -374,19 +351,22 @@ p, .list	{
 </script>
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
-<nav id="topNav">
+<nav id="topNav" class="cf">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/current.html">Help&nbsp;Needed</a></li>
 </ul>
 </nav>
 <header>
@@ -421,7 +401,7 @@ p, .list	{
 <p>China’s plan to judge each of its 1.3 billion people based on their social behavior is moving a step closer to reality, with Beijing set to adopt a lifelong points program by 2021 that assigns personalized ratings for each resident.</p>
 <p>The capital city will pool data from several departments to reward and punish some 22 million citizens based on their actions and reputations by the end of 2020, according to a plan posted on the Beijing municipal government’s website on Monday. Those with better so-called social credit will get “green channel” benefits while those who violate laws will find life more difficult.</p>
 <p>The Beijing project will improve blacklist systems so that those deemed untrustworthy will be “unable to move even a single step,” according to the government’s plan. Xinhua reported on the proposal Tuesday, while the report posted on the municipal government’s website is dated July 18.</p>
-<p>China has long experimented with systems that grade its citizens, rewarding good behavior with streamlined services while punishing bad actions with restrictions and penalties. Critics say such moves are fraught with risks and could lead to systems that reduce humans to little more than a report card.
+<p>China has long experimented with systems that grade its citizens, rewarding good behavior with streamlined services while punishing bad actions with restrictions and penalties. Critics say such moves are fraught with risks and could lead to systems that reduce humans to little more than a report card.</p>
 <h3>Ambitious Plan</h3>
 <p>Beijing’s efforts represent the most ambitious yet among more than a dozen cities that are moving ahead with similar programs.</p>
 <p>Hangzhou rolled out its personal credit system earlier this year, rewarding “pro-social behaviors” such as volunteer work and blood donations while punishing those who violate traffic laws and charge under-the-table fees. By the end of May, people with bad credit in China have been blocked from booking more than 11 million flights and 4 million high-speed train trips, according to the National Development and Reform Commission.</p>
@@ -449,7 +429,7 @@ p, .list	{
 <h2>China Companies: Strangulated by Government</h2>
 <p>Though only some firms in China owned directly by government, security personnel and the top management are severely controlled by the government of China.</p>
 <p>China companies are often described by China government folks with a misleading phrase like "owned by its employees". The phrase indicates diffusion of responsibility, also cover-up of those who are really responsible; raises red flag. Nobody can lie 100%. It leaks.</p>
-<p>Another popular phrase like “our company operates independently of Beijing” is wordplay and nonsense. "We operate independently of Beijing, but 90% (or less) of our employees, including the top management, are from Beijing. Guess who is who and doing what."  Guess who is from the government, and what do they do. A hint from a similar case is here: <a class="link" href="https://nakigoe.github.io/ru/grim.html">Exit Russia</a> More freedom than in this case? Doubtfully more free. Of course all top management in all China firms is connected to, reports to, or even being appointed by the Government of China. How many of you have been in an autocratic country? Their government controls the information dissemination, inflow and outflow.</p>
+<p>Another popular phrase like “our company operates independently of Beijing” is wordplay and nonsense. "We operate independently of Beijing, but 90% (or less) of our employees, including the top management, are from Beijing. Guess who is who and doing what."  Guess who is from the government, and what do they do. A hint from a similar case is here: <a class="link" href="https://nakigoe.github.io/ru/grim.html">Exit Russia</a> More freedom than in this case? Doubtfully more free. Of course all top management in all major China firms is connected to, reports to, or even being appointed by the Government of China. How many of you have been in an autocratic country? Their government controls the information dissemination, inflow and outflow.</p>
 <p>Does the China government do the things right? The costs are paid by the China people. Lack of freedom strangulates. They are winning by their numbers and strict, army-like order.</p>
 </div>
 
@@ -496,15 +476,25 @@ p, .list	{
 		data-param-text="Lack of freedom in China handicaps development and grouth"
 	></amp-social-share>	
 </div>
-<nav>
-	<ul>
-	<li><a href="../index.html">Main</a></li>
-	<li><a href="../me/me.html">Me</a></li>
-	<li><a href="../articles/apps.html">Useful&nbsp;Apps</a></li>
-	<li class="rightLink"><a href="#topNav">top</a></li>
-	</ul>
-</nav>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="cf">
+<ul>
+<li><a href="https://nakigoe.github.io/">Main</a></li>
+<li><a href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
+<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://nakigoe.github.io/me/current.html">Help&nbsp;Needed</a></li>
+</ul>
+</nav>
 </body>
 </html>
