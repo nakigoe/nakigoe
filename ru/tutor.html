@@ -42,7 +42,26 @@ html, body, header, h1, h2, ul, li, p, div {
 body {
 	color: #eee;
 	width: 100%;
-	background-color: #250000;
+	background-color: #1a0000;
+}
+nav {
+	margin: 0;
+	background-color: #120000;
+	font-size: 80%;
+}
+nav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: white;
@@ -143,20 +162,6 @@ hr {
 	margin-top: 4em;
 	box-shadow: 0 0 .5em .1em white;
 }
-nav {
-	margin-bottom: 1.6em;
-}
-nav li {
-	display: inline-block;
-	margin-bottom: 0.4em;
-}
-nav a {
-	font-family: 'Nunito Sans ExtraLight', Verdana;
-	font-weight: 200;
-}
-#topNav ul{
-	display: inline-block;
-}
 .rightLink{
 	float: right;
 }
@@ -191,33 +196,32 @@ p, section li {
 .phrase {
 	display: inline-block;
 }
-footer p {
-	text-align: center;
-}
 footer {
-	width: 60%;
+	width:100%;
 	margin: 5.5em auto 0;
-}
-
+	}
 .contacts {
-	margin: 1em auto 2em;
+	margin: 1.65em auto;
 	max-width: 270px;
 	text-align: center;
 }
-
-
-#copyright {
-	margin: 8.5em auto 2em;
+.contacts p {
+	text-align: center;
+	margin-bottom: 1.65em;
+}
+#copyright{
+	margin: 1.65em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto;
+	margin: 2.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1em;
-	font-family: 'Nunito Sans Regular',sans-serif;
+	margin-bottom: 1.5em;
+	text-align: center;
+	font-weight: 400;
 }
 amp-social-share {
 	border-radius: 50%;
@@ -377,22 +381,30 @@ nav a {
 </script> 
 </amp-analytics>
 <meta property="keywords" content="репетитор,учитель,преподаватель,преподавание,для иностранцев,ин яз,методы запоминания,современные,методики,подготовка,ГИА,ЕГЭ,информатика,математика,алгебра,геометрия,тригонометрия,высшая математика,интегральное,дифференциальное,исчисление,язык,английский,IELTS,TOEFL,GMAT,SAT,ACT,PTE,каллиграфия,набор,клавиатура,раскладка,альтернативная,японский,JLPT,китайский,таджикский,русский,онлайн,выезд,на дому,скайп,по скайпу">
+<nav id="topNav" class="cf">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+  <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" hreflang="en">EN</a></li>
+  <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/japan/tutor.html" hreflang="ja-JP">日本</a></li>
+  <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans">中文</a></li>
+</ul>
+</nav>
 <header>
-  <h1 property="name">репетитор:<br> <span class="phrase">математика, веб&#8209;дизайн,</span> <span class="phrase">английский, русский, таджикский, японский, китайский</span></h1>
+  <h1 property="name">репетитор:<br> <span class="phrase">математика, информатика,</span> <span class="phrase">английский, русский, таджикский, японский, китайский</span></h1>
 </header>
 <main>
-  <nav id="topNav" class="cf">
-    <ul>
-	  <li><a property="significantLink" href="https://nakigoe.github.io/index.html">Main</a></li>
-	  <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-	  <li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
-	</ul>
-	<ul class="rightLink">
-	  <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" hreflang="en">EN</a></li>
-	  <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/japan/tutor.html" hreflang="ja-JP">日本</a></li>
-	  <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans">中文</a></li>
-	</ul>
-</nav>
 <div id="math">
 <amp-img src="https://nakigoe.github.io/_IMG/math.jpg"
   width="1200"
@@ -485,15 +497,6 @@ nav a {
 	<p>750 руб / 45 минут</p>
 	<p><span class="phrase">отличникам скидка 10%&nbsp;+&nbsp;1%</span> <span class="phrase">за каждую медаль и сертификат</span></p>
 	</div>
-	<div class="contacts">
-			<p>e-mail:</p>
-			<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-			width="270"
-			height="50"
-			layout="intrinsic"
-			alt="nakigoe @ pm . me">
-			</amp-img>
-	</div>
 </main>
 <footer>
   <div class="social">
@@ -532,14 +535,33 @@ nav a {
 							&text=Репетитор: математика, информатика, веб-дизайн, английский, русский, таджикский, японский, китайский"
       	      ></amp-social-share>		
 	</div>
-  <nav>
-			<ul>
-			<li><a href="../index.html">Main</a></li>
-			<li><a href="../me/me.html">Me</a></li>
-			<li><a href="../articles/apps.html">Useful&nbsp;Apps</a></li>
-			<li class="rightLink"><a href="#topNav">top</a></li>			</ul>
-	</nav>
-  <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
+<div class="contacts">
+		<p>e-mail:</p>
+		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
+		width="270"
+		height="50"
+		layout="intrinsic"
+		alt="nakigoe @ pm . me">
+		</amp-img>
+</div>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="cf">
+<ul>
+<li><a href="https://nakigoe.github.io/">Main</a></li>
+<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://meet.jit.si/nakigoe" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+</ul>
+</nav>
 </body>
 </html>
