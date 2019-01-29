@@ -31,6 +31,25 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
+nav {
+	margin: 0;
+	background-color: #120000;
+	font-size: 80%;
+}
+nav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
+}
 main {
 	width: 60%;
 	margin: 0 auto;
@@ -133,25 +152,6 @@ a:active{
 .cf {
     zoom: 1;
 }
-.link {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	color:white;
-	}
-.sameSite {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	}
-.linksList {
-	font-family: 'Nunito Sans', verdana, arial, sans-serif;
-	font-size:1.6em;
-	margin:1.4em 0 1em .635em;	
-	}
-.linksList li {margin-bottom:1em;}
 .list {
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
@@ -160,26 +160,6 @@ a:active{
 	margin-left:1.5em;
 	line-height:1.5em;
 	}
- 
-.linksListSection {margin-bottom:2em;}
-.linksListSection p{
-	font-size:.85em;
-	margin:.5em 0 0 .5em}
-nav{
-	margin-bottom: 1.6em;
-	}
-nav li{
-	display:inline-block;
-	margin-bottom: 0.4em;
-	}
-nav a{
-	font-size: 1.2em;
-	font-family: 'Nunito Sans', Verdana, sans-serif;
-	font-weight: 200;
-	}
-#topNav ul{
-	display: inline-block;
-}
 #math {
 	max-width: 1200px;
 }
@@ -196,22 +176,6 @@ small {
 	vertical-align:top;
 	margin-right:5.8em;
 	margin-bottom:.1em;
-	}
-	
-#personality h2, #me h2{margin-bottom:.25em;}
-#skills {
-	display:inline-block;
-	vertical-align:top;
-	margin-left:.2em;
-	width:34em;
-	}
-#activities {
-	margin-left:.85em;
-	margin-right:1em;
-	margin-top:3em;
-	}
-#activities small {
-	font-size:1em;
 	}
 p {
 	line-height: 1.4;
@@ -231,22 +195,6 @@ li small  {
 	margin-left:auto;
 	margin-top:.25em;
 	}
-.linkAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:wrap;
-}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
-footer {
-	width:60%;
-	margin: 5.5em auto 0;
-	}
 .how {
 	text-align: center;
 }
@@ -254,7 +202,7 @@ footer {
 	text-align: center;
 	margin-top: 2.5em;
 }
-.price p, .contacts p{
+.price p{
 	text-align: center;
 }
 .contacts {
@@ -262,22 +210,30 @@ footer {
 	max-width: 270px;
 	text-align: center;
 }
-#topLink {
-	float: right;
+footer {
+	width:100%;
+	margin: 5.5em auto 0;
+	}
+.contacts {
+	margin: 1.65em auto;
+	max-width: 270px;
+	text-align: center;
+}
+.contacts p {
+	text-align: center;
+	margin-bottom: 1.65em;
 }
 #copyright{
-	margin: 8.5em auto 2em;
+	margin: 1.65em auto;
 	text-align: center;
-	/*letter-spacing: 0.01em;*/
 }
-
 .social {
 	display: block;
-	margin: 2.5em auto;
+	margin: 2.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	text-align: center;
 	font-weight: 400;
 }
@@ -385,7 +341,7 @@ nav a {
 		"name": "Nakigoe",
 		"url": "https://nakigoe.github.io/me/me.html"},
 	  "name": "Online Tutor",
-	  "description": "Online Teacher: Math, Web-Design, English, Russian, Tajik, Japanese, Mandarin Chinese, Bible.",
+	  "description": "Online Teacher: Math, Web-Design, English, Russian, Tajik, Japanese, Mandarin Chinese, Life Coaching",
       "mainEntity": {
             "@type": "Person",
             "name": "Nakigoe",
@@ -450,7 +406,15 @@ nav a {
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
 </ul>
 <ul class="rightLink">
 <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" hreflang="en">EN</a></li>
@@ -578,15 +542,7 @@ nav a {
 <p><span class="phrase">スーパーマンとスーパーガールは10％の割引を受けます、</span><span class="phrase">そして英雄的な特技ごとに+1％の割引</span></p>
 <p><span class="phrase">強い学習能力を持つ学生は10％以上の割引を受けることができます、</span><span class="phrase">そして学生は優遇を受けるために個人的な達成材料を提供する必要があります。</span></p>
 </div>
-<div class="contacts">
-		<p>メール</p>
-		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-		width="270"
-		height="50"
-		layout="intrinsic"
-		alt="nakigoe @ pm . me">
-		</amp-img>
-</div>
+
 <p class="how">ビデオ接続と画面共有、リアルタイムのオンライン文書 (PDF)</p> 
 </article>
 </main>
@@ -628,14 +584,33 @@ nav a {
 				&text=online tutoring: Math, English, Russian, Tajik, Japanese, Chinese"				
 	></amp-social-share>
 </div>
-<nav>
-  <ul>
-	<li><a href="../index.html">Main</a></li>
-	<li><a href="../me/me.html">Me</a></li>
-	<li><a href="../articles/apps.html">Useful&nbsp;Apps</a></li>
-	<li class="rightLink"><a href="#topNav">top</a></li>  </ul>
-</nav>
+<div class="contacts">
+		<p>e-mail:</p>
+		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
+		width="270"
+		height="50"
+		layout="intrinsic"
+		alt="nakigoe @ pm . me">
+		</amp-img>
+</div>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="cf">
+<ul>
+<li><a href="https://nakigoe.github.io/">Main</a></li>
+<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://meet.jit.si/nakigoe" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+</ul>
+</nav>
 </body>
 </html>
