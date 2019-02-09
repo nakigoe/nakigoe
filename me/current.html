@@ -31,13 +31,24 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
-#topNav {
+nav {
 	margin: 0;
 	background-color: #120000;
 	font-size: 80%;
 }
-#topNav .rightLink {
+nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
 }
 main {
 	width: 60%;
@@ -248,21 +259,29 @@ tfoot .note {
 	}
 /* tfoot amp-img {margin-top: 1.25em;} */
 footer {
-	width:60%;
+	width:100%;
 	margin: 5.5em auto 0;
 	}
-
+/*.contacts {
+	margin: 1.65em auto;
+	max-width: 270px;
+	text-align: center;
+}
+.contacts p {
+	text-align: center;
+	margin-bottom: 1.65em;
+}*/
 #copyright{
-	margin: 8.5em auto 2em;
+	margin: 1.65em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto;
+	margin: 2.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	text-align: center;
 	font-weight: 400;
 }
@@ -456,6 +475,17 @@ h2 {
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/bio.html">Bio</a></li>
 </ul>
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
 </nav>
 <header>
 <h1 property="name">Angel Sweat, Blood, and Tears</h1>
@@ -476,21 +506,21 @@ h2 {
 </ul>
 <h2>I need all of these:</h2>
 <ul class="list">
-	<li>a phone</li>
+	<li>a phone (yes, Nokia survived for 10 years, even after heavy tossing to the ground, but finally died after being in a washing machine 40&#8451; with reagents for 2 hours.)</li>
 	<li>a tablet</li>
 	<li>a photocamera</li>
 	<li>a videocamera</li>
-	<li>a laptop</li>
-	<li>a headphones set</li>
-	<li>a microphone</li>
-	<li>a knife to guard against wolves (yes there are real wolves here)</li>
-	<li>an ultra-sonic whistle</li>
-	<li>an elecrtro-guitar</li>
-	<li>a couple of 200 lumen flashlights</li>
+	<li>a laptop (Sony Vaio survived 10 years of extreme travelling, and had about 20 repairs with a soldering iron. NVidia is bad in a laptop...)</li>
+	<li>a professional headphones set</li>
+	<li>a professional microphone</li>
+	<li>a knife to guard against wolves (yes there are real wolves around here, no kidding. My neigbour got trapped inside his house for 1 week.)</li>
+	<li>an ultra-sonic whistle (see above)</li>
+	<li>an elecrtro-guitar (to retaliate against noizy neighbours, the only lawful way...)</li>
+	<li>a couple of 200 lumen flashlights (it's dark after 17:00)</li>
 	<li>a house</li>
 	<li>a studio</li>
 	<li>a gym</li>
-	<li>a pool</li>
+	<li>a pool (25m will do)</li>
 	<li>a truck of sport twinkies</li>
     <li>a barrel of concentrated orange juice</li>
 	<li>a country: UK / USA / Canada / Australia / Japan</li>
@@ -636,14 +666,28 @@ h2 {
 				&text=Help Needed - visa sponsorship to UK / USA / Canada / Australia / Japan"				
 	></amp-social-share>
 </div>
-<nav>
-	<ul>
-	<li><a href="../index.html">Main</a></li>
-	<li><a href="../me/me.html">Me</a></li>
-	<li><a href="../me/bio.html">Bio</a></li>
-	<li class="rightLink"><a href="#topNav">top</a></li>	</ul>
-</nav>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="cf">
+<ul>
+<li><a href="https://nakigoe.github.io/">Main</a></li>
+<li><a href="https://nakigoe.github.io/me/me.html">Me</a></li>
+<li><a href="https://nakigoe.github.io/me/bio.html">Bio</a></li>
+</ul>
+<ul>
+<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://meet.jit.si/nakigoe" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+</ul>
+</nav>
 </body>
 </html>
