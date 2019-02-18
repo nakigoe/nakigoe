@@ -71,7 +71,12 @@ h1 {
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 	}
-	
+h1 span {
+	font-size: .5em;
+	/* for adobe font font-weight: 200;*/
+	text-shadow:0 0 .6em white;
+	line-height: 200%;
+	}	
 h2 {
 	font-family: 'Nunito Sans', Verdana, sans-serif;
 	font-size:3em;
@@ -79,12 +84,6 @@ h2 {
 	text-shadow:0 0 .6em white, 0 0 .3em white;
 	margin:.48em 0 .2em 0;
 }
-h2 span {
-	font-size: .5em;
-	/* for adobe font font-weight: 200;*/
-	text-shadow:0 0 .6em white;
-	line-height: 200%;
-	}
 h3 {
 	font-family: 'Nunito Sans', Verdana, sans-serif;
 	font-size:2em;
@@ -356,7 +355,6 @@ p	{
 }
 </style>
 </head>
-
 <body vocab="http://schema.org/" typeof="WebPage">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
@@ -396,10 +394,13 @@ p	{
 <main>
 <article property="mainEntity">
 <header>
-	<h1 property="name">Recommended Apps</h1>
+	<h1 property="name">Recommended Apps<br><span>super&#8209;mega&#8209;lovely, beyond&nbsp;kawai</span></h1>
 </header>
-
-	<h2>Browser Extensions <br><span>super&#8209;mega&#8209;lovely, beyond&nbsp;kawai</span></h2>
+<h2>Temporary E-Mail</h2>
+<ul class="linksList linksListSection">
+<li class="linkAndComment"><a property="significantLink" class="link" href="https://pleasenospam.email" target="_blank">Temporary E-Mail</a><small> temporary e-mail service</small></li>
+</ul>
+	<h2>Browser Extensions</h2>
 <!-- Test youtube download, facebook, kissanime. Test anti-adblock utube, forbes, kissanime. Test new paywall bypass-->
 <ul class="linksList linksListSection">
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://www.lastpass.com/" target="_blank">LastPass</a><small> the best password manager</small></li>
