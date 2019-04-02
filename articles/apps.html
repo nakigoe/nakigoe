@@ -95,7 +95,18 @@ h3 {
 ul, li {
 	list-style:none;
 	}
-
+ol {
+	margin: 0;
+	padding: 0;
+}
+ol li {
+	display: list-item;
+	list-style-type: decimal;
+	list-style-position: outside;
+	}
+.details{
+	font-weight: 200;
+	}
 a  {
 	font-size: 1.6em;
 	display: inline-block;
@@ -421,7 +432,8 @@ p	{
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://github.com/gorhill/uBlock" target="_blank">uBlock Origin</a><small> ads blocking browser extension</small></li>
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://github.com/iamadamdev/bypass-paywalls-firefox" target="_blank">Bypass Paywalls for Firefox</a><small> Firefox browser extension to read paid magazines, e.g. Seattle Times, Baltimore Sun, Barrons</small></li>
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://github.com/iamadamdev/bypass-paywalls-chrome" target="_blank">Bypass Paywalls for Chrome</a><small> Chrome browser extension to read paid magazines</small></li>
-	<ol>
+	<small>
+	<ol class="list details">
 	<li>UnZip the extension, remember the folder location</li>
 	<li>Run Chrome</li>
 	<li>Open chrome://extensions/</li>
@@ -435,8 +447,9 @@ p	{
 	<li>Choose "Enabled", then click "Show..."</li>
 	<li>Enter the ID for the extension, Apply</li>
 	<li>Restart Chrome</li>
-	<li>to read The Wall Street Journal wsj.com use TheViolentMonkey and a userscript (see below)</li>
+	<li>to read The Wall Street Journal wsj.com use ViolentMonkey and a userscript (see below)</li>
 	</ol>
+	</small>
 </ul>
 <h2>Browsing Scripts</h2>
 <ul class="linksList linksListSection">
@@ -450,7 +463,7 @@ p	{
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://greasyfork.org/en/scripts/15857-direct-links-out" target="_blank">Direct Links out</a><small> remove "You are leaving our site" message</small></li>
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://greasyfork.org/en/scripts/4900-kissanime-anti-adblock-blocker" target="_blank">KissAnime Anti-Adblock Blocker</a><small> kissanime.ru without ads</small></li>
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://github.com/reek/anti-adblock-killer/" target="_blank">Anti-Adblock Blocker</a><small> removes 'turn off ad-blocker' message on most sites</small></li>
-	<li class="linkAndComment"><a property="significantLink" class="link" href="https://greasyfork.org/en/scripts/377618-the-wall-street-journal-full-text-articles" target="_blank">Wall Street Journal Full Text Articles</a><small> The Wall Street Journal Full Text Articles</small></li>
+	<li class="linkAndComment"><a property="significantLink" class="link" href="https://greasyfork.org/en/scripts/377618-the-wall-street-journal-full-text-articles" target="_blank">Wall Street Journal Full Text Articles</a><small> The Wall Street Journal Full Text Articles from AMP version</small></li>
 </ul>
 <h2>Website Creation</h2>
 <ul class="linksList linksListSection">
