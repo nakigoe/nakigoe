@@ -419,8 +419,24 @@ p	{
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://www.lastpass.com/" target="_blank">LastPass</a><small> the best password manager</small></li>
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://chrome.google.com/webstore/detail/google-analytics-opt-out/fllaojicojecljbmefodhfapmkghcbnh" target="_blank">Google Analytics Opt-out</a><small> prevents Google from collecting any of Your browsing data</small></li>
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://github.com/gorhill/uBlock" target="_blank">uBlock Origin</a><small> ads blocking browser extension</small></li>
-	<li class="linkAndComment"><a property="significantLink" class="link" href="https://github.com/iamadamdev/bypass-paywalls-chrome" target="_blank">Bypass Paywalls for Chrome</a><small> Chrome browser extension to read paid magazines</small></li>
 	<li class="linkAndComment"><a property="significantLink" class="link" href="https://github.com/iamadamdev/bypass-paywalls-firefox" target="_blank">Bypass Paywalls for Firefox</a><small> Firefox browser extension to read paid magazines, e.g. Seattle Times, Baltimore Sun, Barrons</small></li>
+	<li class="linkAndComment"><a property="significantLink" class="link" href="https://github.com/iamadamdev/bypass-paywalls-chrome" target="_blank">Bypass Paywalls for Chrome</a><small> Chrome browser extension to read paid magazines</small></li>
+	<ol>
+	<li>UnZip the extension, remember the folder location</li>
+	<li>Run Chrome</li>
+	<li>Open chrome://extensions/</li>
+	<li>Choose Pack extension</li>
+	<li>Choose the unpacked folder, press Pack extension</li>
+	<li>Drag and drop the formed .crx file into the Chrome window chrome://extensions/</li>
+	<li>Mark the ID of the extension (Copy and Paste into any text editor)</li>
+	<li>Click Start, Run <kbd>Win</kbd> + <kbd>R</kbd></li>
+	<li>run Group Policy Editor to whitelist the extension: gpedit.msc</li>
+	<li>Pick User Configuration / Administrative Templates / Google Chrome / Extensions / Configure extension installation whitelist</li>
+	<li>Choose "Enabled", then click "Show..."</li>
+	<li>Enter the ID for the extension, Apply</li>
+	<li>Restart Chrome</li>
+	<li>to read The Wall Street Journal wsj.com use TheViolentMonkey and a userscript (see below)</li>
+	</ol>
 </ul>
 <h2>Browsing Scripts</h2>
 <ul class="linksList linksListSection">
