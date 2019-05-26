@@ -29,7 +29,19 @@
       <priority>0.6</priority>
 
    </url>
-         
+   
+   <url>
+
+      <loc>https://nakigoe.github.io/me/contact.html</loc>
+
+      <lastmod>2019-05-26</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>  
+       
    <url>
 
       <loc>https://nakigoe.github.io/me/bio.html</loc>
