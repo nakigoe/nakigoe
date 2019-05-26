@@ -1,0 +1,546 @@
+<!DOCTYPE HTML>
+<html amp lang="en-GB">
+<head>
+	<meta charset="utf-8">
+	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+    <link rel="canonical" href="https://nakigoe.github.io/me/connect.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <!--[if lt IE9]><script> src="http::/html5.shim/googlecode.com/svn/trunk/html5.js"</script><![end if]-->
+    <title>Connection</title>
+    <meta name="description" content="Nakigoe contact page.">
+	<meta name="author" content="Maxim Angel">
+	<meta name="designer" content="Maxim Angel">
+	<meta name="copyright" content="Maxim Angel">
+	<meta name="owner" content="Maxim Angel">
+	<meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+	<meta name="rating" content="General">
+	<meta name="revised" content="2019-05-26"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
+
+<style amp-custom>
+#connect{
+	max-width: 1024px;
+	margin-bottom: 1em;
+	}
+html,body,header,h1,h2,ul,li,p,div{
+	margin:0;
+	padding:0;
+	}
+body{
+	color: #eee;
+	width: 100%;
+	background-color:#1a0000;
+	}
+nav {
+	margin: 0;
+	background-color: #120000;
+	font-size: 80%;
+}
+nav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
+}
+main {
+	width: 60%;
+	margin: 0 auto;
+	}
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+	}
+.phrase {
+	display: inline-block;
+}
+h1 {
+	font-family:"Nunito Sans", sans-serif;
+	text-align: center;
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+	letter-spacing: .12em;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
+	}
+	
+h2 {
+	font-family:"Nunito Sans", sans-serif;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white, 0 0 .3em white;
+	margin:.48em 0 .2em 0;
+}
+
+h3 {
+	font-family:"Nunito Sans", sans-serif;
+	font-size:2em;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white;
+	margin-bottom:.5em;
+	}
+
+ul, li {
+	list-style:none;
+	}
+
+a  {
+	font-size: 1.6em;
+	display: inline-block;
+	color: #ffb;
+	margin: .5em 0 0 .7em;
+	padding: .2em .4em;
+	text-decoration: none;
+	outline: 0;
+	white-space:nowrap;
+	border-radius: 1em;
+	background-color: #000;
+	box-shadow:0 0 .5em white;
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
+}
+a:hover, #topNav:hover dl a{
+	color:white;
+	text-shadow: 0 0 1em white;
+	box-shadow: 0 0 2em white;
+	background-color:#555;}
+a:active{
+	color:white;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+	}
+.alert {
+	font-family: "Nunito Sans",sans-serif;
+	font-weight: 200;
+	color: #FF6600;
+    background-color: #1a0000;
+    box-shadow: 0 0 .5em red;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
+	}
+.alert:hover {
+    color: yellow;
+    text-align: center;
+    text-decoration: none;
+    outline: 0;
+    white-space: nowrap;
+    border-radius: 1em;
+    text-shadow: 0 0 1em red;
+    box-shadow: 0 0 2em red;
+    background-color: #500;
+    background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+	}
+.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: " "; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
+.link {
+	display:inline;
+	margin:0;
+	padding:0 .5em;
+	font-size:inherit;
+	color:white;
+	}
+hr {display:block;
+	box-shadow:0 0 .5em .1em white;
+	position:relative;
+	top:-.6em;
+	margin-bottom:0;
+	/*possible to control through margins if necessary*/
+	}
+
+p {
+	line-height: 1.4;
+	text-align: justify;
+	margin-bottom: 1em;
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+	letter-spacing:.02em;
+	}
+em {color:#fff;}
+.list {
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+	letter-spacing:.02em;
+	font-size:1.4em;
+	margin-left:1.5em;
+	line-height:1.5em;
+	}
+.articleHr {margin:2.25em 0 1em;}
+
+li small  {
+	font-size:0.65em;
+	color:#eee;
+	margin-left:auto;
+	margin-top:.25em;
+	}
+footer {
+	width:100%;
+	margin: 5.5em auto 0;
+	}
+.contacts {
+	margin: 1.65em auto;
+	max-width: 270px;
+	text-align: center;
+}
+.contacts p {
+	text-align: center;
+	margin-bottom: 1.65em;
+}
+#copyright{
+	margin: 1.65em auto;
+	text-align: center;
+}
+.social {
+	display: block;
+	margin: 2.5em auto 1.5em;
+	text-align: center;
+}
+.social p {
+	margin-bottom: 1.5em;
+	text-align: center;
+	font-weight: 400;
+}
+amp-social-share {
+	border-radius: 50%;
+	background-size: 60%;
+	border: solid thin #FF0000;
+	box-shadow: 0 0 5px white;
+	margin: .25em;
+}
+amp-social-share:hover {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+}
+
+amp-social-share:active {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+}
+amp-social-share[type="vk"] {
+	background-color: #5D7EFF;
+	background-size: 50%;
+	background-image: url(../_SVG/vk.svg);
+}
+amp-social-share[type="vk"]:hover {
+	background-size: 75%;
+}
+amp-social-share[type="ok"] {
+	background-color: orangered; /*orangered*/
+	background-size: 50%;
+	background-image: url(../_SVG/ok.svg);
+}
+amp-social-share[type="ok"]:hover {
+	background-size: 75%;
+}
+	
+amp-social-share[type="livejournal"] {
+	background-color: #21A5D8;
+	background-size: 50%;
+	background-image: url(../_SVG/livejournal.svg);
+}
+amp-social-share[type="livejournal"]:hover {
+	background-size: 75%;
+}
+amp-social-share[type="telegram"] {
+	background-color: #1e96c8;
+	background-size: 50%;
+	background-image: url(../_SVG/telegram.svg);
+}
+amp-social-share[type="telegram"]:hover {
+	background-size: 75%;
+}
+
+@media only screen and (max-width:720px) {
+	main {width:90%;}
+	footer {width:90%;}
+	table {
+		width: 100vw;
+  		position: relative;
+  		left: 50%;
+  		right: 50%;
+  		margin-left: -50vw;
+  		margin-right: -50vw;
+		border-left: 1px solid #250000;
+		border-right: 1px solid #250000;
+	}
+	}
+h1 {
+	font-size: calc(2em + 3.3334vmin);
+	}
+h2 {
+	font-size: calc(1.5em + 2.5vmin);
+	}
+	p, table, .list	{
+	font-size: 1em;
+	font-stretch: semi-condensed;
+	}
+	nav a {
+	font-size: 1.2em;
+	font-stretch: semi-condensed;
+	}
+@media only screen and (min-width: 60em) {
+	p, table, .list {
+	font-size: 1.125em;
+	font-stretch: normal;
+	}
+	nav a {
+	font-size: 1.35em;
+	font-stretch: normal;
+	}
+}
+@media only screen and (min-width: 120em) {
+	p, table, .list {
+	font-size: 1.375em;
+	font-stretch: semi-expanded;
+	}
+	nav a {
+	font-size: 1.65em;
+	font-stretch: semi-expanded;
+	}
+}
+</style>
+	
+<script type="application/ld+json">
+	{
+		"@context": "http://schema.org/",
+        "@type": "ProfilePage",
+        "isFamilyFriendly": "True",
+        "isPartOf": {
+            "@type": "ProfilePage",
+            "name": "Nakigoe",
+			"url": "https://nakigoe.github.io/me/me.html",
+			"mainEntity": {
+				"@type": "Person",
+				"name": "Nakigoe",
+				"url": "https://nakigoe.github.io/me/me.html#me",
+				"seeks": [
+                    {"@type": "Demand",
+                        "name": ["Holiness", "Purity", "Beauty", "Sensuality", "Deep Strong Feelings"],
+                        "description": "Looking for holiness in every aspect."
+                    },
+                    {"@type": "Demand",
+                        "name": "girlfriend",
+				    	"description": ["• white",
+						"17-21y", 
+						"180cm+ (5'11''+)",
+						"fit",
+						"lives near sea and mountains",
+						"with good voice",
+						"sings well",
+						"a beauty :)",
+						"a fire",
+						"trained in martial arts",
+						"tech competent",
+						"pure",
+						"kind",
+						"perceptive",
+						"communicative, informative, open",
+						"sensible",
+						"discernible",
+						"from Excellent parents",
+						"with higher education",
+						"can enter sport mental flow",
+						"European and speaks English",
+						"with excellent health"],
+				    	"url": "https://nakigoe.github.io/articles/girl.html"
+				    },
+				    {"@type": "Demand",
+                        "name": ["Workstation", "Server", "Sony Laptop", "Tablet PC", "Phone", "Photo Camera", "Professional Video Camera", "Michrophone", "30'' 4K Rec2020 monitor"],
+                        "description": "Taking in all electronics."
+				    },
+				    {"@type": "Demand",
+                        "name": "Work Visa Sponsorship",
+                        "description": "Looking for a work visa sponsorship in UK / USA."
+					},
+				    {"@type": "Demand",
+                        "name": "queit studio",
+                        "description": "I am looking for a quiet studio to work on my projects."
+					}
+				]
+			}
+		}
+	}
+</script>
+</head>
+
+<body vocab="http://schema.org/" typeof="ContactPage">
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-114280489-1"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+<nav id="topNav">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>	
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/bio.html">Bio</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/projects.html" title="Live Projects">Projects</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/equip.html" title="Equipment Wanted">Equips</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/current.html" title="Current Insider">Insider</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">Help</a></li>
+</ul>
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+</nav>
+<main>
+<article>
+<header>
+<h1 property="name">Live Connection</h1>
+</header>
+<div id="connect">
+<amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
+  width="1024"
+  height="1024"
+  layout="responsive"
+  alt="Contact Me"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Contact Me">
+</amp-img>
+</div>
+
+<h2>Video-Chat</h2>
+<p>How to chat really well: the fine points.</p>
+<p>Jitsi refreshes every hour, no history at all. Please e-mail local time preferred (and your city to know the time zone). How about 09:00AM Los Angeles time?</p>
+<p><a class="alert link" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a> to start in the text mode, click the messaging balloon &#128172; in the opening window, it will be in the lower left corner.</p>
+<p>Wear business / sports / dating / one level above casual clothing, feel yourself comfortable. Don't think too much.</p>
+<p>Do enable your video, it's basic courtesy.</p>
+
+<h2>E-mail</h2>
+<p>Please specify the time when it's more convenient for you to video-connect in an e-mail, I'm still working to create instant messaging for the website. Please specify the time and your time zone.</p>
+
+<p>Please, I beg You very much, no text chatting, there is a video-connection to talk things over, and it's of huge effectiveness. And I'd really appreciate your participation in a video-conference. Love you all. Meow.</p>
+
+<p>General wishes for the e-mails, you don't have to follow, but I would really appreciate your attention:</p>
+<p>
+<span class="phrase">send e-mails without attachments</span><br>refrain from stupid and simplistic replies like: <span class="phrase">"RTFM chapter X.X.X"</span> or <span class="phrase">"open www.XXX.XXX"</span> or <span class="phrase">"What do you mean?"</span><br>refrain from near-sighted and mind-controlling questions like: "Why?" or "What&nbsp;for?"<br>reply only if you've got an article to share. Meow?<br><span class="phrase">refrain from running experiments on me,</span> <span class="phrase">provide only reliable info. Meow!!!</span>
+</p>
+<p>I'll try to make the wording for the instructions more friendly, please don't mind. Respect to You all.</p>
+<p class="note">
+<span class="phrase">when you are hungry,</span> <span class="phrase">grab some food and drink,</span>
+<br> <span class="phrase">when you’re on a diet,</span> <span class="phrase">eat fruits, vegetables and fish,</span>
+<br> <span class="phrase">when you become lonely,</span> <span class="phrase">let’s talk, cry and laugh together,</span>
+<br> <span class="phrase">please feel free to contact me always.</span>
+<br> <span class="phrase">Tender kisses and hugs,</span> <span class="phrase">good luck and have fun! Meow! Contact me!!!</span>
+</p>
+</article>
+</main>
+<footer>
+<div class="social">
+    <p>SHARE VIA</p>
+    <amp-social-share width="60" height="60" type="email"></amp-social-share>
+    <amp-social-share width="60" height="60" type="facebook"
+    data-param-app_id="272325784911610"></amp-social-share>
+    <amp-social-share width="60" height="60" type="gplus"></amp-social-share>
+    <amp-social-share width="60" height="60" type="linkedin"></amp-social-share>
+    <amp-social-share width="60" height="60" type="pinterest"
+    data-param-media="https://nakigoe.github.io/_IMG/connect.jpg"></amp-social-share>
+    <amp-social-share width="60" height="60" type="tumblr"></amp-social-share>
+    <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
+    <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
+    <amp-social-share width="60" height="60" type="line"></amp-social-share>
+    <amp-social-share width="60" height="60" type="vk" 
+      	      data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/me/connect.html"
+      	      	data-param-text="Help Needed - https://nakigoe.github.io/me/connect.html"
+      	      ></amp-social-share>
+    <amp-social-share width="60" height="60" type="ok" 
+      	      data-share-endpoint="https://connect.ok.ru/offer
+?url=https://nakigoe.github.io/me/connect.html
+&title=Help Needed
+&description=Help Needed. The list of projects and contact information"
+      	      	data-param-text="Help Needed - https://nakigoe.github.io/me/connect.html"
+      	      ></amp-social-share>
+	<amp-social-share width="60" height="60" type="livejournal" 
+      	      data-share-endpoint="https://www.livejournal.com/update.bml?
+								   subject=Help Needed
+								   &event=Help Needed. The list of projects and contact information - https://nakigoe.github.io/me/connect.html"
+      	      	data-param-text="Help Needed - https://nakigoe.github.io/me/connect.html"
+				></amp-social-share>
+	<amp-social-share width="60" height="60" type="telegram" 
+				data-share-endpoint="https://telegram.me/share/url
+				?url=https://nakigoe.github.io/me/connect.html
+				&text=Help Needed - visa sponsorship to UK / USA / Canada / Australia / Japan"				
+	></amp-social-share>
+</div>
+<div class="contacts">
+	<p>e-mail:</p>
+	<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
+	width="270"
+	height="50"
+	layout="intrinsic"
+	alt="nakigoe @ pm . me">
+	</amp-img>
+</div>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
+</footer>
+<nav class="cf">
+<ul>
+<li><a href="https://nakigoe.github.io/">Main</a></li>
+<li><a href="https://nakigoe.github.io/me/me.html">Me</a></li>
+<li><a href="https://nakigoe.github.io/me/bio.html">Bio</a></li>
+<li><a href="https://nakigoe.github.io/me/projects.html" title="Live Projects">Projects</a></li>
+<li><a href="https://nakigoe.github.io/me/equip.html" title="Equipment Wanted">Equips</a></li>
+<li><a href="https://nakigoe.github.io/me/current.html" title="Current Insider">Insider</a></li>
+<li><a href="https://nakigoe.github.io/me/help.html" title="Help Needed">Help</a></li>
+</ul>
+<ul>
+<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
+<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
+<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
+<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
+<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
+<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
+<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://meeet.jit.si/nakigoe" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+</ul>
+</nav>
+</body>
+</html>
