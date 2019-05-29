@@ -191,12 +191,18 @@ p {
 em {color:#fff;}
 
 .articleHr {margin:2.25em 0 1em;}
-li small  {
+li small {
 	font-size:0.65em;
 	color:#eee;
 	margin-left:auto;
 	margin-top:.25em;
 	}
+.headingAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:nowrap;
+}
 .how {
 	text-align: center;
 }
@@ -384,9 +390,18 @@ nav a {
 </amp-img>
 </div>
 <div property="text">
+<section>
+<header class="headingAndComment" resource="#programming" property="businessFunction" typeOf="BusinessFunction">
+<h2 property="name">Computer Programming</h2>
+<small>ISICv4&nbsp;<span about="#me" property="isicV4">6201</span></small>
+</header>
+<ul class="list" property="description" about="#programming">
+	<li>designing the structure and content of, and writing the computer code necessary to create and implement web pages</li>
+</ul>
+</section>
 <h2>Web-Design</h2>
   <ul class="list">
-	<li>Website Deployment on Proper Providers</li>
+	<li>Website Deployment on Proper Platforms and Providers</li>
 	<li>Logo Design</li>
 	<li>Fonts Design</li>
 	<li>Photo: Search, Shooting, Editing</li>
