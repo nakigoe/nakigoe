@@ -128,6 +128,18 @@
     
    <url>
 
+      <loc>https://nakigoe.github.io/articles/environment.html</loc>
+
+      <lastmod>2019-05-28</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+       
+   <url>
+
       <loc>https://nakigoe.github.io/articles/ask.html</loc>
 
       <lastmod>2019-05-28</lastmod>
