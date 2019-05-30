@@ -374,8 +374,10 @@ nav a {
 
 <main>
 <article>
-<header>
-<h1>Developer</h1>
+<header property="mainEntity" typeOf="Person" resource="#me">
+<meta property="name" content="Nakigoe" about="#me">
+<meta property="url" content="https://nakigoe.github.io" about="#me">
+<h1 property="description" about="#me">Developer</h1>
 </header>
 
 <div id="assembly">
@@ -390,17 +392,20 @@ nav a {
 </amp-img>
 </div>
 <div property="text">
+<div about="#me" property="makesOffer" typeOf="Offer" resource="#o">
+<meta property="name" content="Website Development" about="#o">
+<meta property="description" content="Supreme Web-Development" about="#o">
 <section>
-<header class="headingAndComment" resource="#programming" property="businessFunction" typeOf="BusinessFunction">
-<h2 property="name">Computer Programming</h2>
+<header class="headingAndComment" resource="#programming" property="businessFunction" typeOf="BusinessFunction" about="#o">
+<h2 property="name" about="#programming">Computer Programming</h2>
 <small>ISICv4&nbsp;<span about="#me" property="isicV4">6201</span></small>
 </header>
 <ul class="list" property="description" about="#programming">
 	<li>designing the structure and content of, and writing the computer code necessary to create and implement web pages</li>
 </ul>
 </section>
-<h2>Web-Design</h2>
-  <ul class="list">
+<h2 property="alternateName" about="#programming">Web-Design</h2>
+  <ul class="list" about="#programming" property="disambiguatingDescription">
 	<li>Website Deployment on Proper Platforms and Providers</li>
 	<li>Logo Design</li>
 	<li>Fonts Design</li>
@@ -444,6 +449,7 @@ nav a {
             <li property="instrument" about="#developer">Touch-Typing 300 hpm</li>
 		</ul>
 	</section>
+</div><!--End of Person property="Offer"-->
 </div><!--End of WebPage property="text"-->
 </article>
 </main>
