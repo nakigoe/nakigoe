@@ -438,7 +438,7 @@ nav a {
 
 </head>
 
-<body vocab="http://schema.org/" typeof="ProfilePage">
+<body vocab="http://schema.org/" typeof="ProfilePage" resource="#nakigoe">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -477,6 +477,7 @@ nav a {
 </ul>
 <ul>
 	<li><a property="significantLink" href="https://nakigoe.github.io/services/developer.html" title="Web Programmer">Developer</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/services/computer.html" title="Computer Services">Computer&nbsp;Service</a></li>
 </ul>
 <ul class="rightLink">
 <li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)">video&#8209;chat</a></li>
@@ -490,7 +491,7 @@ nav a {
 	<meta property="honorificPrefix" content="God" about="#me">
 </header>
 <div class="cf">
-<div id="assembly">
+<div id="assembly" about="#nakigoe">
 <amp-img src="https://nakigoe.github.io/_IMG/assembly.png"
   width="315"
   height="320"
@@ -561,6 +562,39 @@ nav a {
             <li>Digital Colour Theory, Digital Colour Spaces, Colour Theory</li>
         </ul>
 	</section>
+	<section property="potentialAction" typeof="WriteAction" resource="#developer">
+	<h3 property="name">Programming: Web&#8209;Development</h3>
+	<meta property="result" content="Website">
+			<ul class="list">
+				<li property="inLanguage">AMP HTML</li>
+				<li property="inLanguage">RDFa</li>
+				<li property="inLanguage">JSON-LD</li>
+				<li property="inLanguage">CSS</li>
+				<li property="inLanguage">SCSS</li>
+				<li property="inLanguage">XML</li>
+				<li property="inLanguage">C#</li>
+				<li property="inLanguage">ASP.NET Core</li>
+            </ul>
+    </section>
+    <section>
+        <h3>Tools and Editors</h3>
+        <ul class="list">
+            <li property="instrument" about="#developer">Visual Studio Code</li>
+            <li property="instrument" about="#developer">Dreamweaver</li>
+            <li property="instrument" about="#developer">Fontlab</li>
+            <li property="instrument" about="#developer">Git</li>
+            <li property="instrument" about="#developer">CorelDRAW</li>
+            <li property="instrument" about="#developer">Corel Painter</li>
+            <li property="instrument" about="#developer">Adobe Photoshop</li>
+            <li property="instrument" about="#developer">Microsoft Office</li>
+            <li property="instrument" about="#developer">Microsoft Word Equation Editor</li>
+			<li property="instrument" about="#developer">Microsoft Mathematics</li>
+			<li property="instrument" about="#developer">Touch-Typing</li>
+            <li property="instrument" about="#developer">KLC</li>
+            <li property="instrument" about="#developer">Autohotkey</li>
+            <li property="instrument" about="#developer">Emmet</li>
+		</ul>
+	</section>
 	<section property="businessFunction" typeOf="BusinessFunction">
 		<meta property="name" content="Academic Readings">
 		<div property="potentialAction" typeOf="Action">
@@ -588,7 +622,21 @@ nav a {
 			<li property="inLanguage" about="#writer">Mandarin Chinese</li>
 		</ul>		
 	</section>
+	<section property="businessFunction" typeOf="BusinessFunction">
+		<h3 property="potentialAction" typeOf="DrawAction PaintAction"><span property="name">Digital Drawing and Painting</span></h3>
+	</section>
+
+	<section property="businessFunction" typeOf="BusinessFunction">
+		<meta property="name" content="Calligraphy">
+		<h3 property="potentialAction" typeof="WriteAction" resource="#calligraphy">Calligraphy</h3>
+		<ul class="list">
+			<li property="name" about="#calligraphy">Writing <span property="inLanguage">English</span> with a Quill</li>
+			<li property="name" about="#calligraphy">Writing <span property="inLanguage">Japanese</span> Kanji with a Brush</li>
+			<li property="name" about="#calligraphy">Writing <span property="inLanguage">Chinese</span> Hanzi with a Brush</li>
+		</ul>		
+	</section>
 </section>
+
 <section id="activities">
 	<h2>Businesses</h2>
 	<hr>
@@ -770,6 +818,7 @@ nav a {
 </ul>
 <ul>
 	<li><a href="https://nakigoe.github.io/services/developer.html" title="Web Programmer">Developer</a></li>
+	<li><a href="https://nakigoe.github.io/services/computer.html" title="Computer Services">Computer&nbsp;Service</a></li>
 </ul>
 <ul class="rightLink">
 <li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
