@@ -78,6 +78,13 @@ h1 {
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 	}
+h1 span {
+	font-size: .5em;
+	/* for adobe font font-weight: 200;*/
+	text-align: center;
+	text-shadow:0 0 .6em white;
+	line-height: 200%;
+	}	
 h2 {
 	font-family: 'Nunito Sans', sans-serif;
 	letter-spacing: .15em;
@@ -465,7 +472,7 @@ nav a {
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">Help</a></li>	
 </ul>
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
@@ -488,7 +495,7 @@ nav a {
 <main>
 <article property="mainEntity" typeof="Person" resource="#me">
 <header>
-	<h1 property="name" about="#me">nakigoe</h1>
+	<h1 property="name" about="#me">nakigoe<br><span class="phrase">Awesome&nbsp;Angel Sweat, Blood, and Tears</span></h1>
 	<meta property="honorificPrefix" content="God" about="#me">
 </header>
 <div class="cf">
@@ -549,53 +556,6 @@ nav a {
 		</li>
 	</ul>
     </section>
-     <section property="businessFunction" typeOf="BusinessFunction">
-		<meta property="name" content="Film Director">
-        <h3>Film Directing</h3>
-        <ul class="list">
-			<li property="potentialAction" typeof="AssessAction"><span property="name">Facial Action &amp; Body Language Evaluation</span>
-				<div property="instrument" typeof="Thing">
-                <meta property="name" content="Facial Action Coding System">
-				<meta property="alternateName" content="FACS">
-				</div>
-            </li>
-			<li property="potentialAction" typeof="FilmAction PhotographAction"><span property="name">Video and Photo Shooting</span> Theory and Techniques</li>
-            <li>Digital Colour Theory, Digital Colour Spaces, Colour Theory</li>
-        </ul>
-	</section>
-	<section property="potentialAction" typeof="WriteAction" resource="#developer">
-	<h3 property="name">Programming: Web&#8209;Development</h3>
-	<meta property="result" content="Website">
-			<ul class="list">
-				<li property="inLanguage">AMP HTML</li>
-				<li property="inLanguage">RDFa</li>
-				<li property="inLanguage">JSON-LD</li>
-				<li property="inLanguage">CSS</li>
-				<li property="inLanguage">SCSS</li>
-				<li property="inLanguage">XML</li>
-				<li property="inLanguage">C#</li>
-				<li property="inLanguage">ASP.NET Core</li>
-            </ul>
-    </section>
-    <section>
-        <h3>Tools and Editors</h3>
-        <ul class="list">
-            <li property="instrument" about="#developer">Visual Studio Code</li>
-            <li property="instrument" about="#developer">Dreamweaver</li>
-            <li property="instrument" about="#developer">Fontlab</li>
-            <li property="instrument" about="#developer">Git</li>
-            <li property="instrument" about="#developer">CorelDRAW</li>
-            <li property="instrument" about="#developer">Corel Painter</li>
-            <li property="instrument" about="#developer">Adobe Photoshop</li>
-            <li property="instrument" about="#developer">Microsoft Office</li>
-            <li property="instrument" about="#developer">Microsoft Word Equation Editor</li>
-			<li property="instrument" about="#developer">Microsoft Mathematics</li>
-			<li property="instrument" about="#developer">Touch-Typing</li>
-            <li property="instrument" about="#developer">KLC</li>
-            <li property="instrument" about="#developer">Autohotkey</li>
-            <li property="instrument" about="#developer">Emmet</li>
-		</ul>
-	</section>
 	<section property="businessFunction" typeOf="BusinessFunction">
 		<meta property="name" content="Academic Readings">
 		<div property="potentialAction" typeOf="Action">
@@ -641,60 +601,6 @@ nav a {
 <section id="activities">
 	<h2>Businesses</h2>
 	<hr>
-	<section>
-    <header class="headingAndComment" resource="#computer" property="businessFunction" typeOf="BusinessFunction">
-	<h3 property="name" about="#computer">Computer Service</h3>
-    <small>ISICv4&nbsp;<span about="#me" property="isicV4">6209</span></small>
-    </header>
-	<ul class="list">
-        <li property="description" about="#computer">computer disaster recovery</li>
-        <li property="description" about="#computer">installation (setting-up) of personal computers</li>
-        <li property="description" about="#computer">software installation</li>
-    </ul>
-    </section>
-    <section>
-    <header class="headingAndComment" resource="#computersrepair" property="businessFunction" typeOf="BusinessFunction">
-    <h3 property="name" about="#computersrepair">Repair of Computers</h3>
-	<small>ISICv4&nbsp;<span about="#me" property="isicV4">9511</span></small>
-    </header>
-    <ul class="list">
-        <li property="description" about="#computersrepair">repair and maintenance of desktop computers</li>
-    </ul>
-    </section>
-    <section>
-    <header class="headingAndComment" resource="#electricity" property="businessFunction" typeOf="BusinessFunction">
-    <h3 property="name">Electrical Installation</h3>
-	<small>ISICv4&nbsp;<span about="#me" property="isicV4">4321</span></small>
-    </header>
-    <ul class="list">
-        <li property="description" about="#electricity">installation of electrical wiring and fittings</li>
-        <li property="description" about="#electricity">telecommunications wiring</li>
-        <li property="description" about="#electricity">computer network</li>
-        <li property="description" about="#electricity">lighting systems</li>
-        <li property="description" about="#electricity">street lighting and electrical signals</li>
-    </ul>
-    </section>
-    <section>
-    <header class="headingAndComment" resource="#toolsrepair" property="businessFunction" typeOf="BusinessFunction">
-	<h3 property="name">Repair of Machinery</h3>
-	<small>ISICv4&nbsp;<span about="#me" property="isicV4">3312</span></small>
-    </header>
-	<ul class="list">
-        <li property="description" about="#toolsrepair">repair of power-driven hand-tools</li>
-    </ul>
-    </section>
-    <section>
-    <header class="headingAndComment" resource="#electricalrepair" property="businessFunction" typeOf="BusinessFunction">
-	<h3 property="name">Repair of Electrical Equipment</h3>
-	<small>ISICv4&nbsp;<span about="#me" property="isicV4">3314</span></small>
-    </header>
-	<ul class="list">
-        <li property="description" about="#electricalrepair">repair and maintenance of electric motors, generators, and motor generator sets</li>
-        <li property="description" about="#electricalrepair">repair and maintenance of switchgear and switchboard apparatus</li>
-        <li property="description" about="#electricalrepair">repair and maintenance of relays and industrial controls</li>
-        <li property="description" about="#electricalrepair">repair and maintenance of electric lighting equipment</li>
-    </ul>
-    </section>
     <section>
     <header class="headingAndComment" resource="#interpretation" property="businessFunction" typeOf="BusinessFunction">
     <h3 property="name">Translation and Interpretation</h3>
@@ -722,25 +628,22 @@ nav a {
         <li property="description" about="#eduservices">computer training</li>
     </ul>
     </section>
-    <section>
-    <header class="headingAndComment" resource="#arts" property="businessFunction" typeOf="BusinessFunction">
-    <h3 property="name">Creative, Arts and Entertainment</h3>
-	<small>ISICv4&nbsp;<span about="#me" property="isicV4">9000</span></small>
-    </header>
-    <ul class="list">
-        <li property="description" about="#arts">author, lecturer, speaker</li>
-        <li property="description" about="#arts">individual writer, for all subjects including fictional writing, technical writing</li>
-    </ul>
-	</section>
-    <section>
-    <header class="headingAndComment" resource="#programming" property="businessFunction" typeOf="BusinessFunction">
-	<h3 property="name">Computer Programming</h3>
-	<small>ISICv4&nbsp;<span about="#me" property="isicV4">6201</span></small>
-    </header>
-	<ul class="list" property="description" about="#programming">
-        <li>designing the structure and content of, and writing the computer code necessary to create and implement web pages</li>
-    </ul>
-    </section>
+    <h2>Scriptures</h2>
+<ul class="list">
+  <li>Authenticity Proofs</li>
+  <li>Scriptures Books Order Drills</li>
+  <li>Line by Line Explanations</li>
+  <li>Explanations in Larger Context</li>
+  <li>Modern Translations</li>
+</ul>
+  
+<h2>Practices</h2>
+  <ul class="list">
+  	<li>Argumentation</li>
+	<li>Prayer and Meditation</li>
+	<li>Personal Reading List</li>
+	<li>Specialized Content for Meetings and Discussions</li>
+  </ul>
 </section>
 </div>
 </div>
@@ -807,7 +710,7 @@ nav a {
 <li><a href="https://nakigoe.github.io/me/help.html" title="Help Needed">Help</a></li>
 </ul>
 <ul>
-<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Coach">Life</a></li>
+<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
 <li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
 <li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
 <li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
