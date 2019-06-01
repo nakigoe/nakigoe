@@ -497,5 +497,29 @@
       <priority>0.9</priority>
 
    </url>
-                      
+   
+   <url>
+
+      <loc>https://nakigoe.github.io/services/filming.html</loc>
+
+      <lastmod>2019-06-01</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+   
+   <url>
+
+      <loc>https://nakigoe.github.io/services/actor.html</loc>
+
+      <lastmod>2019-06-01</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+                          
 </urlset>
