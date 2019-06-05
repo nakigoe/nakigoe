@@ -287,7 +287,7 @@ li small  {
 	flex-wrap:nowrap;
 }
 footer {
-	width:60%;
+	width:100%;
 	margin: 5.5em auto 0;
 	}
 /*#mainPageFooter {margin-top:5.5em;}*/
@@ -360,10 +360,13 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-@media screen{}
+#front {
+	max-width: 2118px; 
+	margin: 0 auto;
+	}
 @media only screen and (max-width:540px) {
 	main {width: 90%;}
-	footer{width: 90%;}
+	footer{width: 100%;}
 	#newArticles {margin-left: 0;}
 	h2 {margin-left: .33em;}
 	}
@@ -451,6 +454,17 @@ a {
 	<li><a class="alert" property="significantLink" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans">中文</a></li>
 </ul>
 </nav>
+<div id="love">
+<amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
+  width="4408"
+  height="1040"
+  layout="responsive"
+  alt="Love"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Love">
+</amp-img>
+</div>
 <header>
   <h1 id="angelblaze">nakigoe
 	  <br><span class="phrase">Awesome&nbsp;Angel&nbsp;Weapons</span></h1>
@@ -652,7 +666,6 @@ a {
 
 </nav>
 </main>
-
 <footer id="mainPageFooter">
 <div class="social">
     <p>SHARE VIA</p>
@@ -662,7 +675,7 @@ a {
     <amp-social-share width="60" height="60" type="gplus"></amp-social-share>
     <amp-social-share width="60" height="60" type="linkedin"></amp-social-share>
     <amp-social-share width="60" height="60" type="pinterest"
-    data-param-media="https://nakigoe.github.io/_IMG/big.jpg"></amp-social-share>
+    data-param-media="https://nakigoe.github.io/_IMG/me.jpg"></amp-social-share>
     <amp-social-share width="60" height="60" type="tumblr"></amp-social-share>
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
@@ -678,5 +691,16 @@ a {
 </div>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<div id="front">
+<amp-img src="https://nakigoe.github.io/_IMG/me.jpg"
+  width="2118"
+  height="976"
+  layout="responsive"
+  alt="Angel"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Angel">
+</amp-img>
+</div>
 </body>
 </html>
