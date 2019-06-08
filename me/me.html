@@ -23,13 +23,24 @@
 
 <style amp-custom>
 #front {
-	max-width: 2118px; 
+	max-width: 2118px;
 	margin: 0 auto;
 	}
-#true {
+#caution {
+	min-width: calc((1080/1350)*10em);
+}
+#mary {
+	min-width: calc((1080/1309)*10em);
+}
+/* #true {
 	max-width: 1440px; 
 	margin: 0 auto;
+	
+	} */
+amp-img {
+	margin-top: .2em;
 	}
+	/*change to class if necessary to target different images*/
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -47,10 +58,6 @@ nav {
 nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
 }
-nav li{
-	display:inline-block;
-	margin-bottom: 0.4em;
-	}
 nav a{
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: 200;
@@ -58,6 +65,10 @@ nav a{
 nav ul{
 	display: inline-block;
 }
+nav li {
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
 main {
 	width: 60%;
 	margin: 0 auto;
@@ -123,7 +134,7 @@ a  {
 	box-shadow:0 0 .5em white;
 	background-image: linear-gradient(180deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
 }
-a:hover, #topNav:hover dl a{
+a:hover{
 	color:white;
 	text-shadow: 0 0 1em white;
 	box-shadow: 0 0 2em white;
@@ -469,15 +480,49 @@ nav a {
 }
 </script>
 </amp-analytics>
+<div id="front">
+<amp-img src="https://nakigoe.github.io/_IMG/me.jpg"
+  width="2118"
+  height="976"
+  layout="responsive"
+  alt="Angel"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="me">
+</amp-img>
+</div>
 <nav id="topNav" class="cf">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/bio.html">Bio</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/bio.html">
+<div id="caution">
+<amp-img src="https://nakigoe.github.io/_IMG/caution.jpg"
+  width="1080"
+  height="1350"
+  layout="responsive"
+  alt="Caution Climbing Mountains"
+  property="image" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Caution Climbing Mountains">
+</amp-img>
+</div>
+Bio</a></li>
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/projects.html" title="Live Projects">Projects</a></li>
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/dreams.html" title="Angel Dreams">Dreams</a></li>
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/equip.html" title="Equipment Wanted">Equips</a></li>
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/current.html" title="Current Insider">Insider</a></li>
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">Help</a></li>	
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">
+<div id="mary">
+<amp-img src="https://nakigoe.github.io/_IMG/mary.png"
+  width="1080"
+  height="1309"
+  layout="responsive"
+  alt="Prayer"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Prayer">
+</amp-img>
+</div>
+Help</a></li>	
 </ul>
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
@@ -503,17 +548,6 @@ nav a {
 <li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)">video&#8209;chat</a></li>
 </ul>
 </nav>
-<div id="front">
-<amp-img src="https://nakigoe.github.io/_IMG/me.jpg"
-  width="2118"
-  height="976"
-  layout="responsive"
-  alt="Angel"
-  property="primaryImageOfPage" typeOf="ImageObject">
-  <meta property="representativeOfPage" content="True">
-  <meta property="caption" content="me">
-</amp-img>
-</div>
 <main>
 <article property="mainEntity" typeof="Person" resource="#me">
 <meta property="honorificPrefix" content="God" about="#me">
@@ -546,8 +580,6 @@ nav a {
 	</ul>
 	</div>
 </section>
-<h2 property="name">Skill Set</h2>
-<hr>
 </section>
 <div property="makesOffer" typeOf="Offer">
 <section id="activities">
