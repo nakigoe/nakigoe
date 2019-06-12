@@ -45,7 +45,8 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
 h1 {
-	font-family:sans-serif;
+	font-family: 'Nunito Sans',Verdana,Arial,sans-serif;
+	/* for adobe font font-weight: 200;*/
 	text-align: center;
 	padding-top: 0.8em;
 	padding-bottom: 0.75em;
@@ -53,9 +54,15 @@ h1 {
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 	}
-	
+h1 span {
+	font-size: .5em;
+	font-weight: 200;
+	text-align: center;
+	text-shadow:0 0 .6em white;
+	line-height: 200%;
+	}		
 h2 {
-	font-family:sans-serif;
+	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
 	font-size: calc(1.5em + 2.5vmin);
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white, 0 0 .3em white;
@@ -63,7 +70,7 @@ h2 {
 }
 
 h3 {
-	font-family:sans-serif;
+	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
 	font-size:2em;
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white;
@@ -278,11 +285,13 @@ a {
 <main>
 <article>
 <header>
-<h1 property="name">&#xbf;Not Found?</h1>
+<h1 property="name">&#xbf;Not Found? 
+<br><span>Meow!!!</span></h1>
 </header>
 <section id="newArticles">
 	<h2>New Articles</h2>
 	<ul>
+		<li><a property="significantLink" href="https://nakigoe.github.io/swords/sword-length.html">Ideal Sword Length</a></li>
 		<li><a property="significantLink" href="https://nakigoe.github.io/articles/environment.html">Prolonged Extreme Exposure</a></li>
 		<li><a property="significantLink" href="https://nakigoe.github.io/articles/ask.html">Ask for Help</a></li>
 		<li><a property="significantLink" href="https://nakigoe.github.io/articles/win.html">Secrets to Win</a></li>
@@ -297,7 +306,6 @@ a {
 		<li><a property="significantLink" href="https://nakigoe.github.io/usa/america.html">Come to USA!</a></li>
 		<li><a property="significantLink" href="https://nakigoe.github.io/online/online-hour.html">Get Your Website Online in an Hour</a></li>
 		<li><a property="significantLink" href="https://nakigoe.github.io/articles/anime.html">Must See Anime</a></li>
-		<li><a property="significantLink" href="https://nakigoe.github.io/swords/sword-length.html">Ideal Sword Length</a></li>
 	</ul>
 </section>
 </article>
