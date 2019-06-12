@@ -36,15 +36,22 @@ a amp-img {
 	margin-top: .2em;
 	}
 #love {
+	width: 100%;
 	max-width: 4416px;
-	margin: 0 auto;
 }
-#me {
-	min-width: calc((2118/976)*20em);
-}
-#life {
-	min-width: calc((1682/2048)*20em);
-}
+#me{
+	margin-left: 0!important;
+	margin-right: 0!important;
+	margin-top: 0!important;
+	padding-left: 0!important;
+	padding-right: 0!important;
+	padding-top: 0!important;
+	border-top: hidden!important;
+	border-left: hidden!important;
+	border-right: hidden!important;
+	width: 100%;
+	text-align: center;
+	}
 #russian {
 	min-width: calc((937/1170)*20em);
 }
@@ -80,6 +87,9 @@ a amp-img {
 }
 #goddess {
 	min-width: calc((1280/1810)*20em);
+}
+#life {
+	min-width: calc((1682/2048)*20em);
 }
 #topNav {
 	margin: 0;
@@ -467,6 +477,9 @@ a {
 </script>
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
+
+<nav id="topNav" class="cf">
+<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html">
 <div id="love">
 <amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
   width="4416"
@@ -478,34 +491,9 @@ a {
   <meta property="caption" content="Love">
 </amp-img>
 </div>
-<nav id="topNav" class="cf">
+Lovely&nbsp;Me</a>
+
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">
-<div id="me">
-<amp-img src="https://nakigoe.github.io/_IMG/me.jpg"
-  width="2118"
-  height="976"
-  layout="responsive"
-  alt="Lovely Me"
-  property="image" typeOf="ImageObject">
-  <meta property="caption" content="Lovely Me">
-</amp-img>
-</div>
-Lovely&nbsp;Me</a></li>
-
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">
-<div id="life">
-<amp-img src="https://nakigoe.github.io/_IMG/life.jpg"
-  width="1682"
-  height="2048"
-  layout="responsive"
-  alt="Life Science Tutor"
-  property="image" typeOf="ImageObject">
-  <meta property="caption" content="Life Science Tutor">
-</amp-img>
-</div>
-Life&nbsp;Science</a></li>
-
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html">
 <div id="russian">
 <amp-img src="https://nakigoe.github.io/_IMG/russian.jpg"
@@ -666,6 +654,19 @@ Actor</a></li>
 </amp-img>
 </div>
 Art&nbsp;Instructor</a></li>
+
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">
+<div id="life">
+<amp-img src="https://nakigoe.github.io/_IMG/life.jpg"
+  width="1682"
+  height="2048"
+  layout="responsive"
+  alt="Life Science Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Life Science Tutor">
+</amp-img>
+</div>
+Life&nbsp;Science&nbsp;Instructor</a></li>
 </ul>
 
 <ul class="rightLink">
