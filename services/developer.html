@@ -340,7 +340,7 @@ nav a {
 </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="ProfilePage">
+<body vocab="http://schema.org/" typeof="ProfilePage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -396,7 +396,8 @@ nav a {
   height="1600"
   layout="responsive"
   alt="Front-End Developer"
-  property="image" typeOf="ImageObject">
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
   <meta property="caption" content="Front-End Developer">
 </amp-img>
 </div>
@@ -434,7 +435,7 @@ nav a {
 	
 	<section property="potentialAction" typeof="WriteAction" resource="#developer">
 	<h2 property="name">Programming: Web&#8209;Development</h2>
-	<div id="assembly">
+	<div id="assembly" about="#page">
 	<amp-img src="https://nakigoe.github.io/_IMG/assembly.png"
 	  width="315"
 	  height="320"
