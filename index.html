@@ -427,11 +427,16 @@ amp-social-share[type="telegram"]:hover {
 	margin: 0 auto;
 	}
 @media only screen and (max-width:540px) {
-	main {width: 99%;}
+	main {width: 100%;}
 	footer{width: 95%;}
 	#newArticles {margin-left: 0;}
 	h2 {margin-left: .33em;}
-	#newArticles a{min-width: 16em;
+	#newArticles a, #topNav a {
+		min-width: 85vmin;
+		margin: inherit auto;
+	}
+	#me {
+		min-width: 100%;
 	}
 	}
 /*these are standard font measures, adjust the font-size if the type-face requires it*/
