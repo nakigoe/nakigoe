@@ -10,7 +10,7 @@
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <!--[if lt IE9]><script> src="http::/html5.shim/googlecode.com/svn/trunk/html5.js"</script><![end if]-->
     <title>Lovely Me</title>
-    <meta name="description" content="Tutor: Computer Science, Math, English, Mandarin Chinese, Japanese, Russian, Tajik, Art, Perfect Life Coaching">
+    <meta name="description" content="Biography, Projects, Contacts">
 	<meta name="author" content="Maxim Angel">
 	<meta name="designer" content="Maxim Angel">
 	<meta name="copyright" content="Maxim Angel">
@@ -28,6 +28,9 @@
 	}
 #caution {
 	min-width: calc((1080/1350)*20em);
+}
+#dreams {
+	min-width: calc((894/1336)*20em);
 }
 #mary {
 	min-width: calc((1080/1309)*20em);
@@ -157,7 +160,6 @@ a:active{
 }
 .alert:hover {
 	color: yellow;
-	text-align: center;
 	text-decoration: none;
 	padding: .2em .4em;
 	outline: 0;
@@ -511,7 +513,21 @@ nav a {
 </div>
 Bio</a></li>
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/projects.html" title="Live Projects">Projects</a></li>
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/dreams.html" title="Angel Dreams">Dreams</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/dreams.html" title="Angel Dreams">
+<div id="dreams">
+<amp-img src="https://nakigoe.github.io/_IMG/dreams.jpg"
+  width="894"
+  height="1336"
+  layout="responsive"
+  alt="Angel Dreams"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Angel Dreams">
+</amp-img>
+</div>
+Dreams</a></li>
+
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/equip.html" title="Equipment Wanted">Equips</a></li>
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/current.html" title="Current Insider">Insider</a></li>
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">
@@ -526,8 +542,9 @@ Bio</a></li>
 </amp-img>
 </div>
 Please&nbsp;Help</a></li>
-</ul>
-<ul class="rightLink">
+
+
+<div class="rightLink">
 <li><a class="alert" href="https://nakigoe.github.io/me/connect.html">
 <div id="connect">
 <amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
@@ -542,6 +559,7 @@ Please&nbsp;Help</a></li>
 </div>
 video&#8209;chat
 <br> <small>e-mail preferred time and the time-zone (city) to connect at exact time</small></a></li>
+</div>
 </ul>
 </nav>
 <main>
