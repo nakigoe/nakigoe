@@ -287,6 +287,12 @@ nav a{
 	font-weight: 400;
 	/*font-size: 1.2em;*/
 	}
+#test a span{
+	white-space: pre-wrap; /* css-3 */
+  	white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+  	white-space: -pre-wrap; /* Opera 4-6 */
+  	white-space: -o-pre-wrap; /* Opera 7 */
+  	word-wrap: break-word; /* Internet Explorer 5.5+ */}
 #topNav ul{
 	display: inline-block;
 }
@@ -620,7 +626,7 @@ Life&nbsp;Science&nbsp;Instructor</a></li>
 </ul>
 
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/services/translator-interpreter.html">
+<li id="test"><a property="significantLink" href="https://nakigoe.github.io/services/translator-interpreter.html">
 <div id="translator">
 <amp-img src="https://nakigoe.github.io/_IMG/translator.jpg"
   width="2560"
@@ -631,7 +637,7 @@ Life&nbsp;Science&nbsp;Instructor</a></li>
   <meta property="caption" content="Translator: Russian, Tajik, Japanese, Mandarin Chinese, English">
 </amp-img>
 </div>
-Translator&nbsp;&amp;&nbsp;Interpreter <small class="phrase">Russian, Tajik, Japanese, Mandarin Chinese, English</small></a></li>
+<span>Translator &amp; Interpreter <small class="phrase">Russian, Tajik, Japanese, Mandarin Chinese, English</small></span></a></li>
 
 <li><a property="significantLink" href="https://nakigoe.github.io/services/developer.html">
 <div id="desire">
