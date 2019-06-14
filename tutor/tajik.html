@@ -158,6 +158,12 @@ a:active{
 	font-size:inherit;
 	color:white;
 	}
+.headingAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:nowrap;
+}
 .list {
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
@@ -404,13 +410,24 @@ nav a {
 </amp-img>
 </div>
 <div property="text">
+
+<div property="makesOffer" typeOf="Offer">
+<section>
+<header class="headingAndComment" resource="#eduservices" property="businessFunction" typeOf="BusinessFunction">
+<h2 property="name">Education Activities</h2>
+<small>ISICv4&nbsp;<span about="#me" property="isicV4">8549</span></small>
+</header>
+</section>
+</div>
 <h2>Tajik Tutoring</h2>
 <ul class="list">
   <li>Authentic Textbook</li>
   <li>Pronucnciation Drills</li>
-  <li>Grammar from Beginner to Advanced</li>	
+  <li>Grammar from Beginner to Advanced</li>
+  <li>Language Instruction and Conversational Skills Instruction</li>
+  <li property="description" about="#eduservices">Public Speaking Training</li>
 </ul>
-  
+ 
 <h2>Tajik Typing</h2>
   <ul class="list">
   	<li>Touch-Typing</li>
