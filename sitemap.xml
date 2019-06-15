@@ -17,7 +17,19 @@
       <priority>0.95</priority>
 
    </url>
-         
+ 
+   <url>
+
+      <loc>https://nakigoe.github.io/me/spirit.html</loc>
+
+      <lastmod>2019-06-15</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+          
    <url>
 
       <loc>https://nakigoe.github.io/me/me.html</loc>
