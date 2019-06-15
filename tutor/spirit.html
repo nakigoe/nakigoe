@@ -424,7 +424,7 @@ nav a {
 
 </head>
 
-<body vocab="http://schema.org/" typeof="ProfilePage">
+<body vocab="http://schema.org/" typeof="ProfilePage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -549,7 +549,7 @@ nav a {
 </div>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
-<nav class="cf">
+<nav class="cf" about="#page">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/" id="test">
 <div id="true">
@@ -565,15 +565,14 @@ nav a {
 Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)">
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)">
 <div id="connect">
 <amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
   width="2048"
   height="2048"
   layout="responsive"
   alt="Contact Me"
-  property="primaryImageOfPage" typeOf="ImageObject">
-  <meta property="representativeOfPage" content="True">
+  property="image" typeOf="ImageObject">
   <meta property="caption" content="Contact Me">
 </amp-img>
 </div>
