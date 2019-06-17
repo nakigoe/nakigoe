@@ -22,7 +22,10 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
-#girl {max-width: 1022px;}
+#girl {
+	max-width: 1022px;
+	margin: 0 auto;
+	}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -63,19 +66,15 @@ h1 {
 	text-align: center;
 	padding-top: 0.8em;
 	padding-bottom: 0.8em;
-	font-size: calc(2em + 3vmin);
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 	}
-	
 h2 {
 	font-family:'Nunito Sans', sans-serif;;
-	font-size: calc(1.5em + 2vmin);
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white, 0 0 .3em white;
 	margin:.48em 0 .5em 0;
 }
-
 h3 {
 	font-family:'Nunito Sans', sans-serif;;
 	font-size:2em;
@@ -94,7 +93,6 @@ h4 {
 ul, li {
 	list-style:none;
 	}
-
 a  {
 	font-size: 1.6em;
 	display: inline-block;
@@ -109,7 +107,7 @@ a  {
 	box-shadow:0 0 .5em white;
 	background-image: linear-gradient(180deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
 }
-a:hover, #topNav:hover dl a{
+a:hover{
 	color:white;
 	text-shadow: 0 0 1em white;
 	box-shadow: 0 0 2em white;
@@ -139,7 +137,6 @@ a:active{
 }
 .alert:hover {
         color: yellow;
-        text-align: center;
         text-decoration: none;
         outline: 0;
         white-space: nowrap;
@@ -197,22 +194,13 @@ footer {
 	width:100%;
 	margin: 5.5em auto 0;
 	}
-.contacts {
-	margin: 1.65em auto;
-	max-width: 270px;
-	text-align: center;
-}
-.contacts p {
-	text-align: center;
-	margin-bottom: 1.65em;
-}
 #copyright{
-	margin: 1.65em auto;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
@@ -278,7 +266,68 @@ amp-social-share[type="telegram"]:hover {
 	main {width:90%;}
 	footer {width:90%;}
 	}
-
+a amp-img {
+	margin-top: .2em;
+	}
+#true {
+	min-width: calc((1440/1018)*20em);
+}
+#hot {
+	min-width: calc((1080/1348)*20em);
+}
+#love {
+	width: 100%;
+	max-width: 4416px;
+}
+#me amp-img {
+	margin-top: 0;
+	}
+#me{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	/*margin-top: 0;*/
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-top: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 100%;
+	box-shadow: 0 0 2em red;
+	text-align: center;
+	}
+#me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+	
+@media only screen and (max-width:540px) {
+	main {width: 100%;}
+	footer{width: 95%;}
+	h2 {margin-left: .4em;}
+	.rightLink{
+		float: none;
+	}
+	#true, #connect {
+		min-width: 85vmin;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#me {
+		min-width: 100%;
+	}
+	}
+/* font size formatting section */
+h1 {
+	font-size: calc(2em + 3.3334vmin);
+}
+h2 {
+	font-size: calc(1.5em + 2.5vmin);
+}
 p, .list	{
 	font-size: 1em;
 	font-stretch: semi-condensed;
@@ -486,6 +535,7 @@ p, .list	{
 </article>
 </main>
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
     <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -498,7 +548,7 @@ p, .list	{
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
     data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/articles/girl.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
@@ -508,25 +558,48 @@ p, .list	{
 	<amp-social-share width="60" height="60" type="telegram" 
 	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/articles/girl.html"></amp-social-share>
 </div>
-<div class="contacts">
-		<p>e-mail:</p>
-		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-		width="270"
-		height="50"
-		layout="intrinsic"
-		alt="nakigoe @ pm . me">
-		</amp-img>
-</div>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
-<nav class="cf">
-	<ul>
-	<li><a href="https://nakigoe.github.io">Main</a></li>
-	<li><a href="https://nakigoe.github.io/me/me.html">Me</a></li>
-	</ul>
-	<ul class="rightLink">
-	<li><a class="alert" href="https://nakigoe.github.io/articles/hot.html">Girls&nbsp;Room</a></li>
-	</ul>
+<nav class="cf" about="#page">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/">
+<div id="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/hot.html">
+<div id="hot">
+<amp-img src="https://nakigoe.github.io/_IMG/hot.jpg"
+  width="1080"
+  height="1348"
+  layout="responsive"
+  alt="Love Song for Girls"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Love Song For Girls">
+</amp-img>
+</div>
+Girls'&nbsp;Room</a></li>
+</ul>
+<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html">
+<div id="love">
+<amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
+  width="4416"
+  height="1048"
+  layout="responsive"
+  alt="Lovely Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Lovely Me">
+</amp-img>
+</div>
+Lovely&nbsp;Me</a>
 </nav>
 </body>
 </html>
