@@ -360,9 +360,66 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
+a amp-img {
+	margin-top: .2em;
+	}
+#true {
+	min-width: calc((1440/1018)*20em);
+}
+#connect {
+	min-width: calc((2048/2048)*20em);
+}
+#love {
+	width: 100%;
+	max-width: 4416px;
+}
+#me amp-img {
+	margin-top: 0;
+	}
+#me{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	/*margin-top: 0;*/
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-top: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 100%;
+	box-shadow: 0 0 2em red;
+	text-align: center;
+	}
 @media only screen and (max-width:540px) {
-	main {width:90%;}
-	footer {width:90%;}
+	main {width: 100%;}
+	footer{width: 95%;}
+	h2 {margin-left: .4em;}
+	.rightLink{
+		float: none;
+	}
+	#true {
+		min-width: 85vmin;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#connect {
+		min-width: 85vmin;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	nav a{
+		margin: inherit auto;
+	}
+	#me {
+		min-width: 100%;
+	}
 	}
 h1 {
 	font-size: calc(2em + 3.3334vmin);
@@ -401,7 +458,7 @@ nav a {
 </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="QAPage">
+<body vocab="http://schema.org/" typeof="QAPage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -433,12 +490,11 @@ nav a {
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
 </ul>
 </nav>
-
 <main>
 <article  property="mainEntity" typeof="Question">
     <meta property="about" content="custom blade">
 	<meta property="dateCreated" content="2019-06-16">
-    <meta property="keywords" content="custom, ideal, perfect, correct, right, well-fit, length, weight, balance, single-handed, two-handed, blade, sword, knife, machete, rapier, katana, wakizashi, metal, wood, stick, gun, flashlight, ballistic shield">
+    <meta property="keywords" content="custom, ideal, perfect, correct, right, well-fit, length, weight, balance, single-handed, two-handed, paired, dual wielding, blade, sword, knife, machete, rapier, katana, wakizashi, metal, wood, stick, gun, flashlight, ballistic shield">
     <meta property="name" content="Ideal Sword Length">
     <meta property="author" content="Awesome Angel">
 <header>
@@ -684,46 +740,59 @@ nav a {
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
-    <amp-social-share width="60" height="60" type="vk" 
-      	      data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/swords/sword-length.html"
-      	      	data-param-text="Custom Sword - https://nakigoe.github.io/swords/sword-length.html"
-      	      ></amp-social-share>
-    <amp-social-share width="60" height="60" type="ok" 
-      	      data-share-endpoint="https://connect.ok.ru/offer
-?url=https://nakigoe.github.io/swords/sword-length.html
-&title=Custom Sword
-&description=Sword weight, length, curvature, custom swords."
-      	      	data-param-text="Custom Sword - https://nakigoe.github.io/swords/sword-length.html"
-      	      ></amp-social-share>
-	  <amp-social-share width="60" height="60" type="livejournal" 
-      	      data-share-endpoint="https://www.livejournal.com/update.bml?
-								   subject=Custom Sword
-								   &event=Sword weight, length, curvature, custom swords - https://nakigoe.github.io/swords/sword-length.html"
-      	      	data-param-text="Custom Sword - https://nakigoe.github.io/swords/sword-length.html"
-				></amp-social-share>
-				<amp-social-share width="60" height="60" type="telegram" 
-				data-share-endpoint="https://telegram.me/share/url
-				?url=https://nakigoe.github.io/swords/sword-length.html
-				&text=Ideal Sword weight, length, curvature, custom swords."				
-	></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="vk" 
+	data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/swords/sword-length.html"></amp-social-share>
+	<amp-social-share width="60" height="60" type="ok" 
+	data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/swords/sword-length.html"></amp-social-share>
+	<amp-social-share width="60" height="60" type="livejournal" 
+	data-share-endpoint="https://www.livejournal.com/update.bml?event=https://nakigoe.github.io/swords/sword-length.html"></amp-social-share>
+	<amp-social-share width="60" height="60" type="telegram" 
+	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/swords/sword-length.html"				></amp-social-share>
 </div>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
-<nav class="cf">
+<nav class="cf" about="#page">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
-<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
-<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
-<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
-<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
-<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
-<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/">
+<div id="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
+<ul class="rightLink">
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)">
+<div id="connect">
+<amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Contact Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Contact Me">
+</amp-img>
+</div>
+video&#8209;chat</a></li>
+</ul>
+<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html">
+<div id="love">
+<amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
+  width="4416"
+  height="1048"
+  layout="responsive"
+  alt="Lovely Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Lovely Me">
+</amp-img>
+</div>
+Lovely&nbsp;Me</a>
 </nav>
 </body>
 </html>
