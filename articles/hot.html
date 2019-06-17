@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
     <!--[if lt IE9]><script> src="http::/html5.shim/googlecode.com/svn/trunk/html5.js"</script><![end if]-->
-    <title>hot CPU &amp; melted GPU</title>
+    <title>Love Song: "hot CPU &amp; melted GPU"</title>
     <meta name="description" content="Love Song, love letter, being in love, love forever">
 	<meta name="author" content="Awesome Angel">
 	<meta name="designer" content="Awesome Angel">
@@ -43,13 +43,24 @@ body{
 	width: 100%;
 	background-color:#1a0000;
 	}
-#topNav {
+nav {
 	margin: 0;
 	background-color: #120000;
 	font-size: 80%;
 }
-#topNav .rightLink {
+nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
 }
 main {
 	width: 60%;
@@ -68,19 +79,22 @@ h1 {
 	text-align: center;
 	padding-top: 0.8em;
 	padding-bottom: 0.75em;
-	font-size: calc(2em + 3vmin);
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 	}
-	
+h1 span {
+	font-size: .5em;
+	/* for adobe font font-weight: 200;*/
+	text-align: center;
+	text-shadow:0 0 .6em white;
+	line-height: 200%;
+	}		
 h2 {
 	font-family: 'Nunito Sans', sans-serif;
-	font-size: calc(1.5em + 1.5vmin);
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white, 0 0 .3em white;
 	margin:.48em 0 .5em 0;
 }
-
 h3 {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size:2em;
@@ -92,7 +106,6 @@ h3 {
 ul, li {
 	list-style:none;
 	}
-
 a  {
 	font-size: 1.6em;
 	display: inline-block;
@@ -129,7 +142,6 @@ a:active{
 	}
 .alert:hover {
     color: yellow;
-    text-align: center;
     text-decoration: none;
     outline: 0;
     white-space: nowrap;
@@ -188,19 +200,6 @@ a:active{
 	font-size:.85em;
 	margin:.5em 0 0 .5em}
 
-nav{
-	margin-bottom: 1.6em;
-	}
-nav li{
-	display:inline-block;
-	margin-bottom: 0.4em;
-	}
-nav a{
-	font-size: 1.2em;
-	font-family: 'Nunito Sans', Verdana, sans-serif;
-	font-weight: 200;
-	}
-
 .siteLinks {margin-top:.7em;}
 .siteLinks a{margin-bottom:.4em;}
 
@@ -246,22 +245,20 @@ li small  {
 	flex-wrap:nowrap;
 }
 footer {
-	width:60%;
+	width:100%;
 	margin: 5.5em auto 0;
 	}
-
 #copyright{
-	margin: 8.5em auto 2em;
+	margin: 1.5em auto;
 	text-align: center;
 }
-
 .social {
 	display: block;
-	margin: 2.5em auto;
+	margin: 1.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	text-align: center;
 	font-weight: 400;
 }
@@ -319,15 +316,79 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
+a amp-img {
+	margin-top: .2em;
+	}
+#true {
+	min-width: calc((1440/1018)*20em);
+}
+#girl {
+	min-width: calc((1022/1500)*20em);
+	}
+#connect {
+	min-width: calc((2048/2048)*20em);
+}
+#love {
+	width: 100%;
+	max-width: 4416px;
+}
+#me amp-img {
+	margin-top: 0;
+	}
+#me{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	/*margin-top: 0;*/
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-top: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 100%;
+	box-shadow: 0 0 2em red;
+	text-align: center;
+	}
+#me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+	
+@media only screen and (max-width:540px) {
+	main {width: 100%;}
+	footer{width: 95%;}
+	h2 {margin-left: .4em;}
+	.rightLink:not(#topNav .rightLink){
+		float: none;
+	}
+	#true, #connect, #girl {
+		min-width: 85vmin;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#me {
+		min-width: 100%;
+	}
+	}
 @media only screen and (max-width:720px) {
 	main {width:90%;}
 	footer {width:90%;}
 	}
-
-	p, .list	{
-	font-size: 1em;
-	font-stretch: semi-condensed;
-	}
+/* font size formatting section */
+h1 {
+	font-size: calc(2em + 3.3334vmin);
+}
+h2 {
+	font-size: calc(1.5em + 2.5vmin);
+}
+p, .list	{
+font-size: 1em;
+font-stretch: semi-condensed;
+}
 .linksList, nav a {
 	font-size: 1.2em;
 	font-stretch: semi-condensed;
@@ -354,67 +415,9 @@ amp-social-share[type="telegram"]:hover {
 	}
 }
 </style>
-
-<script type="application/ld+json">
-		{
-            "@context": "http://schema.org/",
-            "@type": "WebPage",
-			"isFamilyFriendly": "True",
-			"significantLink": "https://nakigoe.github.io/index.html",		
-			"name": "Ideal Girlfriend",
-            "isPartOf": {
-                "@type": "ProfilePage",
-                "name": "Nakigoe",
-				"url": "https://nakigoe.github.io/me/me.html",
-				"mainEntity": {
-					"@type": "Person",
-					"name": "Nakigoe",
-					"seeks": {
-						"@type": ["Demand","Person"],
-						"name": "girlfriend",
-						"description": [
-						"white",
-						"17-21y", 
-						"180cm+ (5'11''+)",
-						"fit",
-						"lives near sea and mountains",
-						"with good voice",
-						"sings well",
-						"a beauty :)",
-						"a fire",
-						"trained in martial arts",
-						"tech competent",
-						"pure",
-						"kind",
-						"perceptive",
-						"communicative, informative, open",
-						"sensible",
-						"discernible",
-						"from Excellent parents",
-						"with higher education",
-						"can enter sport mental flow",
-						"European and speaks English",
-						"with excellent health"],
-						"potentialAction": {
-							"@type": "MarryAction",
-							"agent": {
-								"@type": "Person",
-								"name": "Nakigoe"
-							  },
-							  "object": {
-								"@type": "Person",
-								"name": "my type girlfriend",
-								"url": "https://nakigoe.github.io/articles/girl.html"
-							  }
-						}
-					}
-				}
-			}
-		}
-	</script>
 </head>
 
-<body vocab="http://schema.org/" typeof="WebPage">
+<body vocab="http://schema.org/" typeof="WebPage" resource="#girlspage">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -435,15 +438,16 @@ amp-social-share[type="telegram"]:hover {
 <li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/articles/girl.html">Real&nbsp;Princess</a></li>
-<li class="rightLink"><a class="alert" href="https://nakigoe.github.io/me/connect.html">video&#8209;chat</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" href="https://nakigoe.github.io/me/connect.html">video&#8209;chat</a></li>
 </ul>
 </nav>
 
 <main>
 <article>
 <header>
-<p>only for girls</p>
-<h1 property="name">When <span class="phrase">CPU is hot</span> &amp; <span class="phrase">GPU melts</span></h1>
+<h1 property="name">Love&nbsp;Song<br><span> "When</span> <span class="phrase">CPU is hot</span> <span>&amp;</span> <span class="phrase">GPU melts."</span> <span class="phrase">(only for girls)</span></h1>
 </header>
 <div id="hot">
 <amp-img src="https://nakigoe.github.io/_IMG/hot.jpg"
@@ -456,9 +460,7 @@ amp-social-share[type="telegram"]:hover {
   <meta property="caption" content="Hot Life, Song">
 </amp-img>
 </div>
-<header>
-<h2>Love Song</h2>
-</header>
+
 <p>When You run low on a disk space, and the CPU is hot, and the GPU melts,
 <br>And You feel lonely inside, contact me, let’s delight our love!!!
 <br> There is no need to control the temperature anymore!!!
@@ -536,6 +538,7 @@ amp-social-share[type="telegram"]:hover {
 </article>
 </main>
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
     <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -548,7 +551,7 @@ amp-social-share[type="telegram"]:hover {
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
     data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/articles/hot.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
@@ -558,15 +561,61 @@ amp-social-share[type="telegram"]:hover {
 	<amp-social-share width="60" height="60" type="telegram" 
 	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/articles/hot.html"></amp-social-share>
 </div>
-<nav>
-	<ul>
-	<li><a href="https://nakigoe.github.io">Main</a></li>
-	<li><a href="https://nakigoe.github.io/me/me.html">Me</a></li>
-	<li><a href="https://nakigoe.github.io/articles/girl.html">Real&nbsp;Princess</a></li>
-	<li class="rightLink"><a class="alert" href="https://nakigoe.github.io/me/connect.html">video&#8209;chat</a></li>
-	</ul>
-</nav>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="cf" about="#girlspage">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/">
+<div id="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
+<li><a href="https://nakigoe.github.io/articles/girl.html">
+<div id="girl">
+<amp-img src="https://nakigoe.github.io/_IMG/girl.jpg"
+  width="1022"
+  height="1500"
+  layout="responsive"
+  alt="Princess, An Ideal Girlfriend"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Princess, An Ideal Girlfriend">
+</amp-img>
+</div>
+Real&nbsp;Princess</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)">
+<div id="connect">
+<amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Contact Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Contact Me">
+</amp-img>
+</div>
+video&#8209;chat</a></li>
+</ul>
+<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html">
+<div id="love">
+<amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
+  width="4416"
+  height="1048"
+  layout="responsive"
+  alt="Lovely Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Lovely Me">
+</amp-img>
+</div>
+Lovely&nbsp;Me</a>
+</nav>
 </body>
 </html>
