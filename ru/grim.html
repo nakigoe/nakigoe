@@ -357,10 +357,18 @@ amp-social-share[type="telegram"]:hover {
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 	
 @media only screen and (max-width:540px) {
-	main {width: 100%;}
+	main {width: 95%;}
+	main amp-img, main amp-video {
+		width:100vw;
+	  	position: relative;
+  		left: 50%;
+  		right: 50%;
+  		margin-left: -50vw;
+  		margin-right: -50vw;
+	}
 	footer{width: 95%;}
 	h2 {margin-left: .4em;}
-	.rightLink:not(#topNav .rightLink){
+	.rightLink{
 		float: none;
 	}
 	.true, .china, .america, .mary {
