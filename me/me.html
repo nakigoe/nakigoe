@@ -33,6 +33,12 @@
 #dreams {
 	min-width: calc((894/1336)*20em);
 }
+#equip {
+	min-width: calc((1080/1349)*20em);
+}
+#current {
+	min-width: calc((916/1350)*20em);
+}
 #mary {
 	min-width: calc((1080/1309)*20em);
 }
@@ -268,22 +274,13 @@ footer {
 	width:100%;
 	margin: 5.5em auto 0;
 	}
-.contacts {
-	margin: 1.65em auto;
-	max-width: 270px;
-	text-align: center;
-}
-.contacts p {
-	text-align: center;
-	margin-bottom: 1.65em;
-}
 #copyright{
-	margin: 1.65em auto;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social p {
@@ -356,7 +353,7 @@ amp-social-share[type="telegram"]:hover {
 	.rightLink:not(#topNav .rightLink){
 		float: none;
 	}
-	#true, #connect {
+	#projects, #dreams, #true, #connect, #mary, #equip, #current {
 		min-width: 85vmin;
 		margin-left: auto;
 		margin-right: auto;
@@ -534,20 +531,6 @@ nav a {
 </div>
 Biography</a></li>
 
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/projects.html" title="Live Projects">
-<div id="projects">
-<amp-img src="https://nakigoe.github.io/_IMG/projects.jpg"
-  width="800"
-  height="1350"
-  layout="responsive"
-  alt="Live Projects"
-  property="image" typeOf="ImageObject">
-  <meta property="representativeOfPage" content="True">
-  <meta property="caption" content="Live Projects">
-</amp-img>
-</div>
-Projects</a></li>
-
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/dreams.html" title="Angel Dreams">
 <div id="dreams">
 <amp-img src="https://nakigoe.github.io/_IMG/dreams.jpg"
@@ -562,16 +545,47 @@ Projects</a></li>
 </div>
 Dreams</a></li>
 
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/projects.html" title="Live Projects">
+<div id="projects">
+<amp-img src="https://nakigoe.github.io/_IMG/projects.jpg"
+  width="800"
+  height="1350"
+  layout="responsive"
+  alt="Live Projects"
+  property="image" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Live Projects">
+</amp-img>
+</div>
+Projects</a></li>
+
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/current.html" title="Current Insider">
+<div id="current">
+<amp-img src="https://nakigoe.github.io/_IMG/current.jpg"
+  width="916"
+  height="1350"
+  layout="responsive"
+  alt="Current Projects Overview"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Current Projects Overview">
+</amp-img>
+</div>
+Current Insider</a></li>
 
-Insider</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/equip.html">
+<div id="equip">
+<amp-img src="https://nakigoe.github.io/_IMG/equip.jpg"
+  width="1080"
+  height="1349"
+  layout="responsive"
+  alt="Equip Me for Battle"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Equip Me for Battle">
+</amp-img>
+</div>
+Equipment&nbsp;Wanted</a></li>
 
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/equip.html" title="Equipment Wanted">
-
-Equips</a></li>
-
-
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">
+<li class="rightLink"><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">
 <div id="mary">
 <amp-img src="https://nakigoe.github.io/_IMG/mary.png"
   width="1080"
@@ -622,12 +636,11 @@ Please&nbsp;Help</a></li>
 	<li>Public Speaking</li>
 	<li>Educational Writing</li>
 </ul>
-
-<p>I am a god of languages. Ask me for online lessons!!!</p>
 </article>
 </main>
 
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
     <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -640,40 +653,16 @@ Please&nbsp;Help</a></li>
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
-      	      data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/me/me.html"
-      	      	data-param-text="Nakigoe: CV and Skills - https://nakigoe.github.io/me/me.html"
-      	      ></amp-social-share>
+    data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/me/me.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
-      	      data-share-endpoint="https://connect.ok.ru/offer
-?url=https://nakigoe.github.io/me/me.html
-&title=Nakigoe: CV and Skills
-&description=personal information, business offers"
-      	      	data-param-text="Nakigoe: CV and Skills - https://nakigoe.github.io/me/me.html"
-      	      ></amp-social-share>
-	  <amp-social-share width="60" height="60" type="livejournal" 
-      	      data-share-endpoint="https://www.livejournal.com/update.bml?
-								   subject=Nakigoe: CV and Skills
-								   &event=Nakigoe: personal information, business offers - https://nakigoe.github.io/me/me.html"
-      	      	data-param-text="Nakigoe: CV and Skills - https://nakigoe.github.io/me/me.html"
-				></amp-social-share>
-				<amp-social-share width="60" height="60" type="telegram" 
-				data-share-endpoint="https://telegram.me/share/url
-				?url=https://nakigoe.github.io/me/me.html
-				&text=online tutoring: Math, English, Russian, Tajik, Japanese"				
-	></amp-social-share>
+    data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/me/me.html"></amp-social-share>
+	<amp-social-share width="60" height="60" type="livejournal" 
+    data-share-endpoint="https://www.livejournal.com/update.bml?&event=https://nakigoe.github.io/me/me.html"></amp-social-share>
+	<amp-social-share width="60" height="60" type="telegram" 
+	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/me/me.html"></amp-social-share>
 </div>
-<div class="contacts">
-	<p>e-mail:</p>
-	<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-	width="270"
-	height="50"
-	layout="intrinsic"
-	alt="nakigoe @ pm . me">
-	</amp-img>
-</div>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
 <nav class="cf" about="#nakigoe">
 <ul>
