@@ -31,6 +31,21 @@
 	<meta name="theme-color" content="#1a0000">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	min-width: calc((1440/1018)*20em);
+}
+.china {
+	min-width: calc((1187/911)*20em);
+}
+.america {
+	min-width: calc((564/564)*20em);
+}
+.mary {
+	min-width: calc((1080/1309)*20em);
+}
 #russia {
 	max-width: 1500px;
 	margin: 0 auto;
@@ -311,21 +326,6 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-a amp-img {
-	margin-top: .2em;
-	}
-#true {
-	min-width: calc((1440/1018)*20em);
-}
-#china {
-	min-width: calc((1187/911)*20em);
-}
-#america {
-	min-width: calc((564/564)*20em);
-}
-#mary {
-	min-width: calc((1080/1309)*20em);
-}
 #love {
 	width: 100%;
 	max-width: 4416px;
@@ -363,7 +363,7 @@ a amp-img {
 	.rightLink:not(#topNav .rightLink){
 		float: none;
 	}
-	#true, #china, #america, #mary {
+	.true, .china, .america, .mary {
 		min-width: 85vmin;
 		margin-left: auto;
 		margin-right: auto;
@@ -430,13 +430,60 @@ p, .list	{
 <meta property="keywords" content="Leo Moracchioli,This is Halloween,Danny Elfman,true,face,slaves,Russia,SNG,former,USSR,Moscow,Leningrad,Ural,bomb,nuclear,politics,policy,tyranny,murder,kill,power,Putin,Yeltsin,president,leader,leadership,rule,rulership,lie,army,economics,economy,currency,inflation,rubble,RUB,GDP,poverty,police,courts,social,benefits,HIV,how to,fight,Russian,vodka,problem,alcohol">
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main&nbsp;Menu</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Lovely&nbsp;Me</a></li>
-</ul>
-<ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">Rated&nbsp;in&nbsp;China</a></li>
-<li><a class="alert" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
+
+<li><a href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">
+<div class="china">
+<amp-img src="https://nakigoe.github.io/_IMG/china.png"
+  width="1187"
+  height="911"
+  layout="responsive"
+  alt="China girl with a sword"
+  property="image" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="China girl with a sword">
+</amp-img>
+</div>
+Rated&nbsp;in&nbsp;China</a></li>
+
+<li><a href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
+<div class="america">
+	<amp-img src="https://nakigoe.github.io/_IMG/america.jpg"
+	width="564"
+	height="564"
+	layout="responsive"
+	alt="Statue of Liberty"
+	property="Statue of Liberty" typeOf="ImageObject">
+	<meta property="representativeOfPage" content="True">
+	<meta property="caption" content="Statue of Liberty">
+	</amp-img>
+</div>
 Come&nbsp;to&nbsp;U.S.A.</a></li>
+
+<li class="rightLink"><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/help.html">
+<div class="mary">
+<amp-img src="https://nakigoe.github.io/_IMG/mary.png"
+  width="1080"
+  height="1309"
+  layout="responsive"
+  alt="Prayer"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Prayer">
+</amp-img>
+</div>
+Please&nbsp;Help</a></li>
 </ul>
 </nav>
 
@@ -822,7 +869,7 @@ Yet government officials continue to claim that ‘they won’t let rouble fall�
 <nav class="cf" about="#page">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">
-<div id="true">
+<div class="true">
 <amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
   width="1440"
   height="1018"
@@ -835,7 +882,7 @@ Yet government officials continue to claim that ‘they won’t let rouble fall�
 Main Menu</a></li>
 
 <li><a href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">
-<div id="china">
+<div class="china">
 <amp-img src="https://nakigoe.github.io/_IMG/china.png"
   width="1187"
   height="911"
@@ -849,7 +896,7 @@ Main Menu</a></li>
 Rated&nbsp;in&nbsp;China</a></li>
 
 <li><a href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
-<div id="america">
+<div class="america">
 	<amp-img src="https://nakigoe.github.io/_IMG/america.jpg"
 	width="564"
 	height="564"
@@ -863,7 +910,7 @@ Rated&nbsp;in&nbsp;China</a></li>
 Come&nbsp;to&nbsp;U.S.A.</a></li>
 
 <li class="rightLink"><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/help.html">
-<div id="mary">
+<div class="mary">
 <amp-img src="https://nakigoe.github.io/_IMG/mary.png"
   width="1080"
   height="1309"
