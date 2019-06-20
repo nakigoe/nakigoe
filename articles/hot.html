@@ -22,6 +22,15 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	min-width: calc((1440/1018)*20em);
+}
+.girl {
+	min-width: calc((1022/1500)*20em);
+	}
 #hot {
 	max-width: 1080px;
 	margin: 0 auto;
@@ -324,15 +333,6 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-a amp-img {
-	margin-top: .2em;
-	}
-#true {
-	min-width: calc((1440/1018)*20em);
-}
-#girl {
-	min-width: calc((1022/1500)*20em);
-	}
 #connect {
 	min-width: calc((2048/2048)*20em);
 }
@@ -370,10 +370,10 @@ a amp-img {
 	main {width: 100%;}
 	footer{width: 95%;}
 	h2 {margin-left: .4em;}
-	.rightLink:not(#topNav .rightLink){
+	.rightLink {
 		float: none;
 	}
-	#true, #connect, #girl {
+	.true, .girl, #connect {
 		min-width: 85vmin;
 		margin-left: auto;
 		margin-right: auto;
@@ -443,12 +443,33 @@ font-stretch: semi-condensed;
 </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/articles/girl.html">Real&nbsp;Princess</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html">video&#8209;chat</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/articles/girl.html" target="_blank">
+<div class="girl">
+<amp-img src="https://nakigoe.github.io/_IMG/girl.jpg"
+  width="1022"
+  height="1500"
+  layout="responsive"
+  alt="Princess, An Ideal Girlfriend"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Princess, An Ideal Girlfriend">
+</amp-img>
+</div>
+Real&nbsp;Princess</a></li>
 </ul>
 </nav>
 
@@ -591,8 +612,8 @@ font-stretch: semi-condensed;
 </footer>
 <nav class="cf" about="#girlspage">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">
-<div id="true">
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
 <amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
   width="1440"
   height="1018"
@@ -603,8 +624,8 @@ font-stretch: semi-condensed;
 </amp-img>
 </div>
 Main Menu</a></li>
-<li><a href="https://nakigoe.github.io/articles/girl.html">
-<div id="girl">
+<li><a property="significantLink" href="https://nakigoe.github.io/articles/girl.html" target="_blank">
+<div class="girl">
 <amp-img src="https://nakigoe.github.io/_IMG/girl.jpg"
   width="1022"
   height="1500"
@@ -618,7 +639,7 @@ Main Menu</a></li>
 Real&nbsp;Princess</a></li>
 </ul>
 <ul class="rightLink">
-<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)">
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)" target="_blank">
 <div id="connect">
 <amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
   width="2048"
@@ -631,7 +652,7 @@ Real&nbsp;Princess</a></li>
 </div>
 video&#8209;chat</a></li>
 </ul>
-<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html">
+<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
 <amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
   width="4416"
