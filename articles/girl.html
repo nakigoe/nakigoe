@@ -22,6 +22,15 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	min-width: calc((1440/1018)*20em);
+}
+.hot {
+	min-width: calc((1080/1348)*20em);
+}
 #girl {
 	max-width: 1022px;
 	margin: 0 auto;
@@ -265,15 +274,7 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-a amp-img {
-	margin-top: .2em;
-	}
-#true {
-	min-width: calc((1440/1018)*20em);
-}
-#hot {
-	min-width: calc((1080/1348)*20em);
-}
+
 #love {
 	width: 100%;
 	max-width: 4416px;
@@ -311,7 +312,7 @@ a amp-img {
 	.rightLink:not(#topNav .rightLink){
 		float: none;
 	}
-	#true, #connect {
+	.true, .hot {
 		min-width: 85vmin;
 		margin-left: auto;
 		margin-right: auto;
@@ -421,13 +422,34 @@ p, .list	{
 </script>
 </amp-analytics>
 <nav id="topNav" class="cf">
-  <ul>
-	<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-	<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-  </ul>
-  <ul class="rightLink">
-	<li><a class="alert" property="significantLink" href="https://nakigoe.github.io/articles/hot.html">Girls&nbsp;Room</a></li>
-  </ul>
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/hot.html" target="_blank">
+<div class="hot">
+<amp-img src="https://nakigoe.github.io/_IMG/hot.jpg"
+  width="1080"
+  height="1348"
+  layout="responsive"
+  alt="Love Song for Girls"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Love Song For Girls">
+</amp-img>
+</div>
+Girls'&nbsp;Room</a></li>
+</ul>
 </nav>
 
 <main>
@@ -572,8 +594,8 @@ p, .list	{
 </footer>
 <nav class="cf" about="#page">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">
-<div id="true">
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
 <amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
   width="1440"
   height="1018"
@@ -586,8 +608,8 @@ p, .list	{
 Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/hot.html">
-<div id="hot">
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/hot.html" target="_blank">
+<div class="hot">
 <amp-img src="https://nakigoe.github.io/_IMG/hot.jpg"
   width="1080"
   height="1348"
@@ -599,7 +621,7 @@ Main Menu</a></li>
 </div>
 Girls'&nbsp;Room</a></li>
 </ul>
-<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html">
+<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
 <amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
   width="4416"
