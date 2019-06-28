@@ -18,10 +18,14 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content=" 2019-06-28">
+	<meta name="revised" content=" 2019-06-29">
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+#russian {
+	max-width: 937px;
+	margin: 0 auto;
+}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -167,9 +171,6 @@ a:active{
 	margin-left:1.5em;
 	line-height:1.5em;
 	}
-#russian {
-	max-width: 937px;
-}
 hr {display:block;
 	margin-top: 4em;
 	box-shadow: 0 0 .5em .1em white;
@@ -184,6 +185,13 @@ p {
 	margin-bottom: 1em;
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
+	font-size:1em;
+	letter-spacing:.02em;
+	}
+table {
+	margin: 0 auto;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 200;
 	font-size:1em;
 	letter-spacing:.02em;
 	}
@@ -245,7 +253,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -296,7 +303,7 @@ h1 {
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
 }
-p, .list	{
+p, table, .list	{
 	font-size: 1em;
 	font-stretch: semi-condensed;
 	}
@@ -306,7 +313,7 @@ nav a {
 	}
 
 @media only screen and (min-width: 60em) {
-	p, .list {
+	p, table, .list {
 	font-size: 1.125em;
 	font-stretch: normal;
 	}
@@ -316,7 +323,7 @@ nav a {
 	}
 }
 @media only screen and (min-width: 120em) {
-	p, .list {
+	p, table, .list {
 	font-size: 1.375em;
 	font-stretch: semi-expanded;
 	}
@@ -332,8 +339,8 @@ nav a {
 	"@context": "http://schema.org/",
 	"@type": "Offer",
 	"name": "Russian Tutor: Public Speaking, Educational Writing, Touch-Typing, Alternative Keyboard Layouts",
-	"description": "$15 / hour, students with strong learning ability can get 10% or more discounts",
-	"price": "15",
+	"description": "$5 / hour, students with strong learning ability can get 10% or more discounts",
+	"price": "5",
 	"priceCurrency": "USD",
 	"image": {
 		"@type": "ImageObject",
@@ -417,7 +424,7 @@ nav a {
   <ul class="list">
   	<li>Touch-Typing</li>
 	<li>Alternative Keyboard Layouts</li>
-	<li>keyboard Schemas and Tricks</li>
+	<li>Keyboard Schemas and Tricks</li>
 	<li>Typing Special Symbols and Math Fast</li>
 	<li>Same Punctuation Schema for English and Cyrillic Keyboard Layouts</li>
 	<li>Fast Switching between Typing Modes</li>
@@ -429,7 +436,40 @@ nav a {
 <hr>
 <p class="how">Video-connection &amp; screen sharing, real-time online document (pdf)</p>
 <div class="price">
-<p>$15 / hour</p>
+<table width="300" summary="discounts">
+  <caption>
+    pricing
+  </caption>
+  <thead>
+  	<tr>
+      <td>price per hour</td>
+      <td>total hours in a package</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>$15</td>
+      <td>1 hour</td>
+    </tr>
+    <tr>
+      <td>$12.5</td>
+      <td>20 hours</td>
+    </tr>
+    <tr>
+      <td>$10</td>
+      <td>100 hours</td>
+    </tr>
+    <tr>
+      <td>$7.5</td>
+      <td>200 hours</td>
+    </tr>
+    <tr>
+      <td>$5</td>
+      <td>400 hours</td>
+    </tr>
+  </tbody>
+</table>
+
 <p><span class="phrase">supermen and supergirls get a discount of 10%&nbsp;+&nbsp;1%</span> <span class="phrase">for every heroic feat</span></p>
 <p>Students with strong learning ability can get 10% or more discounts, and students need to provide personal achievement materials to get preferential treatment.</p>
 </div>
@@ -450,9 +490,9 @@ nav a {
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
-	    data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/tutor/russian.html"></amp-social-share>
+	data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/tutor/russian.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
 	    data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/tutor/russian.html"></amp-social-share>
 	<amp-social-share width="60" height="60" type="livejournal" 
