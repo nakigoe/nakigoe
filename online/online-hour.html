@@ -18,11 +18,26 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content=" 2019-06-25">
+	<meta name="revised" content=" 2019-06-28">
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
-#pair{max-width: 807px; margin: 0 auto;}	
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	min-width: calc((1440/1018)*20em);
+}
+.rev {
+	min-width: calc((1280/1142)*20em);
+}
+.secret {
+	min-width: calc((1080/1349)*20em);
+}
+.apps {
+	min-width: calc((1080/1350)*20em);
+}
+#sight {max-width: 807px; margin: 0 auto;}
 html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
 	margin:0;
 	padding:0;
@@ -32,14 +47,25 @@ body{
 	width: 100%;
 	background-color: #1a0000;
 	}
-#topNav {
+nav {
 	margin: 0;
 	background-color: #120000;
 	font-size: 80%;
 }
-#topNav .rightLink {
+nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
 	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
+}
 main {
 	width: 60%;
 	margin: 0 auto;
@@ -58,14 +84,18 @@ h1 {
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 	}
-	
+h1 span {
+	font-size: .5em;
+	line-height: 200%;
+	text-align: center;
+	text-shadow:0 0 .6em white;
+	}	
 h2 {
 	font-family: 'Nunito Sans', sans-serif;
 	letter-spacing: .15em;
 	text-shadow:0 0 .6em white, 0 0 .3em white;
 	margin:.48em 0 .4em 0;
 }
-
 h3 {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size:2em;
@@ -90,7 +120,6 @@ h5 {
 ul, li{
 	list-style:none;
 	}
-
 a  {
 	font-size: 1.6em;
 	display: inline-block;
@@ -158,47 +187,12 @@ a:active{
 	font-size:inherit;
 	color:white;
 	}
-.sameSite {
-	display:inline;
-	margin:0;
-	padding:0 .5em;
-	font-size:inherit;
-	}
-
-.linksList {
-	font-family: "Nunito Sans", verdana, Arial, sans-serif;
-	font-size:1.6em;
-	margin:1.4em 0 1em .635em;	
-	}
-.linksList li {margin-bottom:1em;}
-
 .list {
 	font-family: "Nunito Sans", verdana, Arial, sans-serif;
 	margin-left:1.5em;
 	line-height:1.5em;
 	letter-spacing:.02em;
 	}
- 
-.linksListSection {margin-bottom:2em;}
-.linksListSection p{
-	font-size:.85em;
-	margin:.5em 0 0 .5em}
-
-nav{
-	margin-bottom: 1.6em;
-	}
-nav li{
-	display:inline-block;
-	margin-bottom: 0.4em;
-	}
-nav a{
-	font-family: "Nunito Sans", verdana, Arial, sans-serif;
-	font-weight: 200;
-	}
-
-.siteLinks {margin-top:.7em;}
-.siteLinks a{margin-bottom:.4em;}
-
 hr {display:block;
 	box-shadow:0 0 .5em .1em white;
 	position:relative;
@@ -229,36 +223,21 @@ li small  {
 	margin-left:auto;
 	margin-top:.25em;
 	}
-
-.linkAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:wrap;
-}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
 footer {
-	width:60%;
+	width:100%;
 	margin: 5.5em auto 0;
 	}
-
 #copyright{
-	margin: 8.5em auto 2em;
+	margin: 1.5em auto;
 	text-align: center;
 }
-
 .social {
 	display: block;
-	margin: 2.5em auto;
+	margin: 1.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1em;
+	margin-bottom: 1.5em;
 	text-align: center;
 	font-weight: 400;
 }
@@ -299,8 +278,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }
-	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -316,9 +294,54 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-@media only screen and (max-width:720px) {
-	main {width:90%;}
-	footer {width:90%;}
+#love {
+	width: 100%;
+	max-width: 4416px;
+}
+#me amp-img {
+	margin-top: 0;
+	}
+#me{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	/*margin-top: 0;*/
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-top: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 100%;
+	box-shadow: 0 0 2em red;
+	text-align: center;
+	}
+#me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+	
+@media only screen and (max-width:540px) {
+	main {width: 100%;}
+	h1,h2,h3,h4,p,footer {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	.rightLink{
+		float: none;
+	}
+	.true, .secret, .apps {
+		min-width: 85vmin;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#me {
+		min-width: 100%;
+	}
 	}
 h1 {
 	font-size: calc(2em + 3.3334vmin);
@@ -358,7 +381,7 @@ p, .list	{
 </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="WebPage">
+<body vocab="http://schema.org/" typeof="WebPage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -377,16 +400,64 @@ p, .list	{
 <meta property="isFamilyFriendly" content="True">
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html">Useful&nbsp;Apps</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/rev.html" target="_blank">
+	<div class="rev">
+	<amp-img src="https://nakigoe.github.io/_IMG/rev.jpg"
+	  width="1280"
+	  height="1142"
+	  layout="responsive"
+	  alt="Scriptures for Developers"
+	  property="image" typeOf="ImageObject">
+	  <meta property="caption" content="Scriptures for Developers">
+	</amp-img>
+	</div>
+	Scriptures&nbsp;for&nbsp;Developers</a></li>
+	
+<li><a property="relatedLink" href="/articles/secret.html" target="_blank">
+<div class="secret">
+<amp-img src="https://nakigoe.github.io/_IMG/secret.jpg"
+width="1080"
+height="1349"
+layout="responsive"
+alt="Keep Your Data Safe on Social Platforms"
+property="image" typeOf="ImageObject">
+<meta property="caption" content="Keep Your Data Safe on Social Platforms">
+</amp-img>
+</div>
+Online Privacy</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/apps.html" target="_blank">
+<div class="apps">
+<amp-img src="https://nakigoe.github.io/_IMG/apps.jpg"
+width="1080"
+height="1350"
+layout="responsive"
+alt="Best Apps for Advanced Internet Browsing"
+property="image" typeOf="ImageObject">
+<meta property="caption" content="Best Apps for Advanced Internet Browsing">
+</amp-img>
+</div>
+World&nbsp;Top&nbsp;Apps</a></li>
 </ul>
 </nav>
 
 <main>
 <article>
 <header>
-<h1 property="name"><span class="phrase">Get Your Website</span> <span class="phrase">Online In an Hour</span></h1>
+<h1 property="name">Grab Your Website <span class="phrase">Online In an Hour</span> <span class="phrase">Love from the First Sight!</span></h1>
 </header>
 	<div id="sight">
 	<amp-img src="https://nakigoe.github.io/_IMG/sight.jpg"
@@ -438,6 +509,14 @@ p, .list	{
 <p>Study grammar. Mistakes are unforgivable.</p>
 <p>Study collocations to make the content and descriptions lithe, lissom, vivid, lively. Make the mind and the emotion vibrate with your words.</p>
 <p>Grab a good synonyms dictionary. It's your book N2 after whatever book number one in your life.</p>
+
+<h2>Content Upload Order</h2>
+<p>Test for small screens</p>
+<p>Check grammar and spelling in any editor.</p>
+<p>Validate HTML</p>
+<p>Check the RDFa structure.</p>
+<p>Validate links sitewide</p>
+<p>Upload</p>
 
 <h2>Charisma</h2>
 <p>give your 1000% when interacting with 10 people.</p>
@@ -493,6 +572,7 @@ p, .list	{
 </article>
 </main>
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
     <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -500,43 +580,88 @@ p, .list	{
     data-param-app_id="272325784911610"></amp-social-share>
     <amp-social-share width="60" height="60" type="linkedin"></amp-social-share>
     <amp-social-share width="60" height="60" type="pinterest"
-    data-param-media="https://nakigoe.github.io/_IMG/big.jpg"></amp-social-share>
+    data-param-media="https://nakigoe.github.io/_IMG/sight.jpg"></amp-social-share>
     <amp-social-share width="60" height="60" type="tumblr"></amp-social-share>
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
-      	      data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/online/online-hour.html"
-      	      	data-param-text="Online in One Hour - https://nakigoe.github.io/online/online-hour.html"
-      	      ></amp-social-share>
+    data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/online/online-hour.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
-      	      data-share-endpoint="https://connect.ok.ru/offer
-?url=https://nakigoe.github.io/online/online-hour.html
-&title=Online in One Hour
-&description=Get Online in One Hour."
-      	      	data-param-text="Online in One Hour - https://nakigoe.github.io/online/online-hour.html"
-      	      ></amp-social-share>
-	  <amp-social-share width="60" height="60" type="livejournal" 
-      	      data-share-endpoint="https://www.livejournal.com/update.bml?
-								   subject=Online in One Hour
-								   &event=Get Online in One Hour - https://nakigoe.github.io/online/online-hour.html"
-      	      	data-param-text="Online in One Hour - https://nakigoe.github.io/online/online-hour.html"
-				></amp-social-share>
-				<amp-social-share width="60" height="60" type="telegram" 
-				data-share-endpoint="https://telegram.me/share/url
-				?url=https://nakigoe.github.io/online/online-hour.html
-				&text=get your website online in an hour"				
-	></amp-social-share>
+    data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/online/online-hour.html"></amp-social-share>
+	<amp-social-share width="60" height="60" type="livejournal" 
+    data-share-endpoint="https://www.livejournal.com/update.bml?https://nakigoe.github.io/online/online-hour.html"></amp-social-share>
+	<amp-social-share width="60" height="60" type="telegram" 
+	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/online/online-hour.html"></amp-social-share>
 </div>
-<nav>
-<ul>
-	<li><a href="../index.html">Main</a></li>
-	<li><a href="../me/me.html">Me</a></li>
-	<li><a href="../articles/apps.html">Useful&nbsp;Apps</a></li>
-	<li class="rightLink"><a href="#topNav">top</a></li></ul>
-</nav>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
+<nav class="cf" about="#page">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/rev.html" target="_blank">
+	<div class="rev">
+	<amp-img src="https://nakigoe.github.io/_IMG/rev.jpg"
+	  width="1280"
+	  height="1142"
+	  layout="responsive"
+	  alt="Scriptures for Developers"
+	  property="image" typeOf="ImageObject">
+	  <meta property="caption" content="Scriptures for Developers">
+	</amp-img>
+	</div>
+	Scriptures&nbsp;for&nbsp;Developers</a></li>
+	
+<li><a property="relatedLink" href="/articles/secret.html" target="_blank">
+<div class="secret">
+<amp-img src="https://nakigoe.github.io/_IMG/secret.jpg"
+width="1080"
+height="1349"
+layout="responsive"
+alt="Keep Your Data Safe on Social Platforms"
+property="image" typeOf="ImageObject">
+<meta property="caption" content="Keep Your Data Safe on Social Platforms">
+</amp-img>
+</div>
+Online Privacy</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/apps.html" target="_blank">
+<div class="apps">
+<amp-img src="https://nakigoe.github.io/_IMG/apps.jpg"
+width="1080"
+height="1350"
+layout="responsive"
+alt="Best Apps for Advanced Internet Browsing"
+property="image" typeOf="ImageObject">
+<meta property="caption" content="Best Apps for Advanced Internet Browsing">
+</amp-img>
+</div>
+World&nbsp;Top&nbsp;Apps</a></li>
+</ul>
+<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
+<div id="love">
+<amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
+  width="4416"
+  height="1048"
+  layout="responsive"
+  alt="Lovely Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Lovely Me">
+</amp-img>
+</div>
+Lovely&nbsp;Me</a>
+</nav>
 </body>
 </html>

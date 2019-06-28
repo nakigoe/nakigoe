@@ -18,7 +18,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content=" 2019-06-25">
+	<meta name="revised" content=" 2019-06-28">
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
@@ -213,13 +213,6 @@ a:active{
 	font-size:inherit;
 	}
 
-.linksList {
-	font-family: 'Nunito Sans', sans-serif;
-	font-size:1.2em;
-	margin:1.4em 0 1em .635em;	
-	}
-.linksList li {margin-bottom:1em;}
-
 .list {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size:1.2em;
@@ -227,14 +220,6 @@ a:active{
 	line-height:1.5em;
 	letter-spacing:.02em;
 	}
- 
-.linksListSection {margin-bottom:2em;}
-.linksListSection p{
-	font-size:.85em;
-	margin:.5em 0 0 .5em}
-
-.siteLinks {margin-top:.7em;}
-.siteLinks a{margin-bottom:.4em;}
 
 hr {display:block;
 	box-shadow:0 0 .5em .1em white;
@@ -384,8 +369,11 @@ amp-social-share[type="telegram"]:hover {
 	
 @media only screen and (max-width:540px) {
 	main {width: 100%;}
-	footer{width: 95%;}
-	h2 {margin-left: .4em;}
+	h1,h2,h3,h4,p,footer {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 	.rightLink {
 		float: none;
 	}
@@ -398,10 +386,7 @@ amp-social-share[type="telegram"]:hover {
 		min-width: 100%;
 	}
 	}
-@media only screen and (max-width:720px) {
-	main {width:90%;}
-	footer {width:90%;}
-	}
+
 /* font size formatting section */
 h1 {
 	font-size: calc(2em + 3.3334vmin);
