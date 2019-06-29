@@ -109,7 +109,6 @@ a amp-img {
 #topNav {
 	margin: 0;
 	background-color: #120000;
-	font-size: 80%;
 }
 #topNav .rightLink {
 	margin-right: .75em;/*temporary draft*/
@@ -173,7 +172,6 @@ h2 {
 	text-shadow:0 0 .6em white, 0 0 .3em white;
 	margin:.48em 0 .2em .2em;
 }
-
 h3 {
 	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
 	font-size:2em;
@@ -186,7 +184,6 @@ h3 {
 ul, li {
 	list-style:none;
 	}
-
 a  {
 	font-size: 1.6em;
 	display: inline-block;
@@ -388,7 +385,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -433,24 +429,25 @@ amp-social-share[type="telegram"]:hover {
 	max-width: 2118px; 
 	margin: 0 auto;
 	}
-@media only screen and (max-width:540px) {
+@media only screen and (max-width:800px) {
 	main {width: 100%;}
 	footer{width: 95%;}
 	#newArticles {
 		margin-left: 0;
     }
 	h2 {margin-left: .4em;}
-	#newArticles a{
-		margin-left: .5em
-	}
+	#newArticles a, nav a{
+		margin-left: .5em;
+		text-align: center;
+	} 
 	#newArticles a, #topNav a div:not(.alert){
-		min-width: calc(100vw - 3.32em);;
+		min-width: calc(100vw - 2.725em);;
 	}
 	#me {
 		min-width: 100%;
 	}
 	#test a {
-		margin-right: .6em;
+		min-width: calc(100vw - 5em);;
 	}
 	}
 /*these are standard font measures, adjust the font-size if the type-face requires it*/
