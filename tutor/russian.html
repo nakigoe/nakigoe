@@ -200,6 +200,12 @@ li small  {
 	margin-left:auto;
 	margin-top:.25em;
 	}
+.headingAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:nowrap;
+}
 p {
 	line-height: 1.4;
 	text-align: justify;
@@ -388,25 +394,7 @@ nav a {
 }
 </style>
 
-<script type="application/ld+json">
-	{
-	"@context": "http://schema.org/",
-	"@type": "LocalBusiness",
-	"name": "Awe Angel",
-	"image": {
-			"@type": "ImageObject",
-			"url": "https://nakigoe.github.io/_IMG/russian.jpg",
-			"caption": "Russian Tutor",
-			"representativeOfPage": "True"
-			},
-	"isicV4": "8549",
-	"logo": "https://nakigoe.github.io/_IMG/icon.png",
-	"url": "https://nakigoe.github.io/tutor/russian.html",
-	"priceRange": "$10",
-	"address": "Global: The Earth, the Moon, the Stars, and All the Planets",
-	"telephone": "https://nakigoe.github.io/me/connect.html",
-	"makesOffer": {
-		"@type": "Offer",
+<!--		"@type": "Offer",
 		"name": "Russian Tutor: Public Speaking, Educational Writing, Touch-Typing, Alternative Keyboard Layouts",
 		"description": "$10 / hour, students with strong learning ability can get 10% or more discounts",
 		"price": "10",
@@ -415,10 +403,8 @@ nav a {
 			"@type": "BusinessFunction",
 			"name": "Online Russian Language Tutoring",
 			"description": "Russian Language Teacher Online: live video-connection and screen sharing"
-			}
-		}
-	}
-</script>
+			
+		}-->
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage"  resource="#page">
@@ -437,6 +423,7 @@ nav a {
 }
 </script>
 </amp-analytics>
+<meta property="keywords" content="tutor,tutoring,teacher,teaching,online,Russian,language,pen,typing,Public,Speaking, Educational, Writing, Touch-Typing, Alternative, Keyboard, Layout, Tricks, Same, Punctuation, Schema, English, Cyrillic, Keyboard Layout Creator, KLC, Autohotkey">
 <nav id="topNav" class="cf">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
@@ -468,14 +455,22 @@ Video&#8209;Chat</a></li>
 </ul>
 </nav>
 
-<main>
+<main property="mainEntity" typeOf="LocalBusiness" resource="#business">
+<meta property="url" content="https://nakigoe.github.io/tutor/russian.html">
+<meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
+<meta property="areaServed" content="Global">
+<meta property="address" content="Russia, Polazna">
+<meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
+<meta property="logo" content="https://nakigoe.github.io/_IMG/icon.png">
+<div property="image" typeOf="ImageObject">
+<meta property="url" content="https://nakigoe.github.io/_IMG/russian.jpg">
+</div>
 <article>
-<meta property="keywords" content="tutor,tutoring,teacher,teaching,online,Russian,language,pen,typing,Public,Speaking, Educational, Writing, Touch-Typing, Alternative, Keyboard, Layout, Tricks, Same, Punctuation, Schema, English, Cyrillic, Keyboard Layout Creator, KLC, Autohotkey">
 <header>
-<h1>Russian Tutor</h1>
+<h1 property="name">Russian Tutor</h1>
 </header>
 
-<div id="russian">
+<div id="russian" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/russian.jpg"
   width="937"
   height="1170"
@@ -486,27 +481,41 @@ Video&#8209;Chat</a></li>
   <meta property="caption" content="Russian Tutor">
 </amp-img>
 </div>
-<div property="text">
-<h2>Language Skills</h2>
+	<header class="headingAndComment">
+	<h2 property="description">Education Activities</h2>
+	<small>ISICv4&nbsp;<span property="isicV4">8549</span></small>
+	</header>
+
+<div property="makesOffer" typeOf="Offer">
+<h2 property="name">Russian Language Instruction and Conversational Skills Instruction</h2>
   <ul class="list">
-	  <li>Public Speaking</li>
-	  <li>Educational Writing</li>
-	  <li>Hand-Writing Drills</li>
-	  <li>Russian Classics</li>
+	  <li property="description">Public Speaking</li>
+	  <li property="description">Educational Writing</li>
+	  <li property="description">Hand-Writing Drills</li>
+	  <li property="description">Russian Classics</li>
   </ul>
-  
-<h2>Modern Typing</h2>
+<div property="itemOffered" typeOf="Service">
+<meta property="serviceType" content="Online Tutor">
+</div>
+</div>
+<section property="makesOffer" typeOf="Offer">
+<h2 property="name">Advanced Modern Russian Typing</h2>
+<meta property="alternateName" content="Russian Typing Training">
   <ul class="list">
-  	<li>Touch-Typing</li>
-	<li>Alternative Keyboard Layouts</li>
-	<li>Keyboard Schemas and Tricks</li>
-	<li>Typing Special Symbols and Math Fast</li>
-	<li>Same Punctuation Schema for English and Cyrillic Keyboard Layouts</li>
-	<li>Fast Switching between Typing Modes</li>
-	<li>SharpKeys (delicate registry remapping)</li>
-	<li>Keyboard Layout Creator (creating new keyboard layouts install packages)</li>
-	<li>Autohotkey (advanced typing programming)</li>
+  	<li property="description">Touch-Typing</li>
+	<li property="description">Alternative Keyboard Layouts</li>
+	<li property="description">Keyboard Schemas and Tricks</li>
+	<li property="description">Typing Special Symbols and Math Fast</li>
+	<li property="description">Same Punctuation Schema for English and Cyrillic Keyboard Layouts</li>
+	<li property="description">Fast Switching between Typing Modes</li>
+	<li property="description">SharpKeys (delicate registry remapping)</li>
+	<li property="description">Keyboard Layout Creator (creating new keyboard layouts install packages)</li>
+	<li property="description">Autohotkey (advanced typing programming)</li>
   </ul>
+<div property="itemOffered" typeOf="Service">
+<meta property="serviceType" content="Online Tutor">
+</div> 
+</section> 
 
 <hr>
 <div class="price">
@@ -521,7 +530,7 @@ Video&#8209;Chat</a></li>
       <td>10 hours</td>
     </tr>
     <tr>
-      <td>$10</td>
+      <td property="priceRange" about="#business">$10</td>
       <td>20 hours</td>
     </tr>
   </tbody>
@@ -530,7 +539,6 @@ Video&#8209;Chat</a></li>
 <p>Students with strong learning ability can get 10% or more discounts, and students need to provide personal achievement materials to get preferential treatment.</p>
 </div>
 <hr>
-</div><!--End of WebPage property="text"-->
 </article>
 </main>
 
