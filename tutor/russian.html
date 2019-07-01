@@ -393,18 +393,6 @@ nav a {
 	}
 }
 </style>
-
-<!--		"@type": "Offer",
-		"name": "Russian Tutor: Public Speaking, Educational Writing, Touch-Typing, Alternative Keyboard Layouts",
-		"description": "$10 / hour, students with strong learning ability can get 10% or more discounts",
-		"price": "10",
-		"priceCurrency": "USD",
-		"businessFunction": {
-			"@type": "BusinessFunction",
-			"name": "Online Russian Language Tutoring",
-			"description": "Russian Language Teacher Online: live video-connection and screen sharing"
-			
-		}-->
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage"  resource="#page">
@@ -456,6 +444,7 @@ Video&#8209;Chat</a></li>
 </nav>
 
 <main property="mainEntity" typeOf="LocalBusiness" resource="#business">
+<meta property="priceRange" content="$10">
 <meta property="url" content="https://nakigoe.github.io/tutor/russian.html">
 <meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
 <meta property="areaServed" content="Global">
@@ -487,6 +476,11 @@ Video&#8209;Chat</a></li>
 	</header>
 
 <div property="makesOffer" typeOf="Offer">
+<div property="itemOffered" typeOf="Service">
+<meta property="name" content="Native Russian Tutor">
+<meta property="description" content="Video-connection &amp; screen sharing, real-time online document.">
+<meta property="serviceType" content="Online Tutor">
+</div>
 <h2 property="name">Russian Language Instruction and Conversational Skills Instruction</h2>
   <ul class="list">
 	  <li property="description">Public Speaking</li>
@@ -494,11 +488,7 @@ Video&#8209;Chat</a></li>
 	  <li property="description">Hand-Writing Drills</li>
 	  <li property="description">Russian Classics</li>
   </ul>
-<div property="itemOffered" typeOf="Service">
-<meta property="serviceType" content="Online Tutor">
-</div>
-</div>
-<section property="makesOffer" typeOf="Offer">
+<section property="addOn" typeOf="Offer">
 <h2 property="name">Advanced Modern Russian&nbsp;Typing</h2>
 <meta property="alternateName" content="Russian Typing Training">
   <ul class="list">
@@ -512,13 +502,11 @@ Video&#8209;Chat</a></li>
 	<li property="description">Keyboard Layout Creator (creating new keyboard layouts install packages)</li>
 	<li property="description">AutoHotkey (advanced typing programming)</li>
   </ul>
-<div property="itemOffered" typeOf="Service">
-<meta property="serviceType" content="Online Tutor">
-</div> 
 </section> 
-
 <hr>
-<div class="price">
+<div class="price" property="priceSpecification" typeOf="PriceSpecification">
+<meta property="price" content="10">
+<meta property="priceCurrency" content="USD">
 <table>
   <tbody>
     <tr>
@@ -530,14 +518,15 @@ Video&#8209;Chat</a></li>
       <td>10 hours</td>
     </tr>
     <tr>
-      <td property="priceRange" about="#business">$10</td>
+      <td>$10</td>
       <td>20 hours</td>
     </tr>
   </tbody>
 </table>
-<p><span class="phrase">supermen and supergirls get a discount of 10%&nbsp;+&nbsp;1%</span> <span class="phrase">for every heroic feat</span></p>
-<p>Students with strong learning ability can get 10% or more discounts, and students need to provide personal achievement materials to get preferential treatment.</p>
-</div>
+<p property="description"><span class="phrase">supermen and supergirls get a discount of 10%&nbsp;+&nbsp;1%</span> <span class="phrase">for every heroic feat</span></p>
+<p property="disambiguatingDescription">Students with strong learning ability can get 10% or more discounts, and students need to provide personal achievement materials to get preferential treatment.</p>
+</div><!--END of class="price" style="text-align:center" -->
+</div><!--END of Offer-->
 <hr>
 </article>
 </main>
