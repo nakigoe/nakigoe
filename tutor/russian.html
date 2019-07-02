@@ -26,11 +26,19 @@ a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	min-width: calc((1440/1018)*38vw - 1.4em);
+	max-width: calc((1440/1018)*24em);
+}
+.true amp-img {
+	max-width: calc((1440/1018)*24em);
 }
 .connect {
-	min-width: calc((2048/2048)*20em);
+	min-width: calc((2048/2048)*38vw - 1.4em);
+	max-width: calc((2048/2048)*24em);
 }
+.connect amp-img {
+	max-width: calc((2048/2048)*24em);	
+	}
 #russian {
 	max-width: 937px;
 	margin: 0 auto;
@@ -333,15 +341,16 @@ amp-social-share[type="telegram"]:hover {
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 	width: 100%;
+	min-width: 100%;
 	box-shadow: 0 0 2em red;
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 
-@media only screen and (max-width:1140px) {
+@media only screen and (max-width:480px) {
 	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
 	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
-		width: 90%;
+		width: 95%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
@@ -354,17 +363,21 @@ amp-social-share[type="telegram"]:hover {
 	}
 	.true, .connect {
 		min-width: calc(100vw - 2.725em);
+		max-width: 100vw;
 	}
-	#me {
-		min-width: 100%;
+	.true amp-img, .connect amp-img {
+		max-width: 100vw;
 	}
 	#topNav .rightLink {
 		display: none;
 	}
 	}
-@media only screen and (max-width: 640px) {
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
 	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
-		width: 95%;
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
