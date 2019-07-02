@@ -22,6 +22,15 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	min-width: calc((1440/1018)*20em);
+}
+.connect {
+	min-width: calc((2048/2048)*20em);
+}
 #electra {
 	max-width: 799px;
 	margin: 0 auto;
@@ -302,6 +311,35 @@ amp-social-share[type="telegram"]:hover {
 	main {width:90%;}
 	footer {width:90%;}
 	}
+#love {
+	width: 100%;
+	max-width: 4416px;
+}
+#me amp-img {
+	margin-top: 0;
+	}
+#me{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	/*margin-top: 0;*/
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-top: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 100%;
+	box-shadow: 0 0 2em red;
+	text-align: center;
+	}
+#me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
@@ -515,6 +553,18 @@ nav a {
 <ul class="rightLink">
 <li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
 </ul>
+<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
+<div id="love">
+<amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
+  width="4416"
+  height="1048"
+  layout="responsive"
+  alt="Lovely Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Lovely Me">
+</amp-img>
+</div>
+Lovely&nbsp;Me</a>
 </nav>
 </body>
 </html>
