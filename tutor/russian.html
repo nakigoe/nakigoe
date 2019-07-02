@@ -237,7 +237,7 @@ td:first-child{margin-right: 3em;}
 	text-align: center;
 }
 footer {
-	width:100%;
+	width:95%;
 	margin: 2.5em auto 0;
 	}
 #copyright{
@@ -335,11 +335,11 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
-	
+
 @media only screen and (max-width:1140px) {
-	main {width: 100%;}
-	h1,h2,h3,h4,p,footer {
-		width: 95%;
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p {
+		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
@@ -357,6 +357,15 @@ amp-social-share[type="telegram"]:hover {
 		min-width: 100%;
 	}
 	}
+@media only screen and (max-width: 640px) {
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
