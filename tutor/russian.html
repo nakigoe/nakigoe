@@ -182,10 +182,6 @@ a:active{
 	margin-left:1.5em;
 	line-height:1.5em;
 	}
-hr {display:block;
-	margin-top: 2.5em;
-	box-shadow: 0 0 .5em .1em white;
-	}
 small {
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
@@ -200,12 +196,6 @@ li small  {
 	margin-left:auto;
 	margin-top:.25em;
 	}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
 p {
 	line-height: 1.4;
 	text-align: justify;
@@ -214,6 +204,16 @@ p {
     font-weight: 200;
 	font-size:1em;
 	letter-spacing:.02em;
+	}
+.headingAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:nowrap;
+}
+hr {display:block;
+	margin-top: 2.5em;
+	box-shadow: 0 0 .5em .1em white;
 	}
 table {
 	margin: 2em auto 1em;
@@ -347,7 +347,7 @@ amp-social-share[type="telegram"]:hover {
 		text-align: center;
 		margin-left: .5em;
 	}
-	.rightLink{
+	.rightLink:not(#topNav.rightLink){
 		float: none;
 	}
 	.true, .connect {
@@ -355,6 +355,9 @@ amp-social-share[type="telegram"]:hover {
 	}
 	#me {
 		min-width: 100%;
+	}
+	#topNav .alert {
+		display: none;
 	}
 	}
 @media only screen and (max-width: 640px) {
