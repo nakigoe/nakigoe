@@ -54,7 +54,6 @@ body{
 nav {
 	margin: 0;
 	background-color: #120000;
-	font-size: 80%;
 }
 nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
@@ -261,7 +260,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -286,7 +284,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -343,16 +341,13 @@ amp-social-share[type="telegram"]:hover {
 		text-align: center;
 		margin-left: .5em;
 	}
-	.rightLink:not(#topNav.rightLink){
-		float: none;
-	}
 	.true, .connect {
 		min-width: calc(100vw - 2.725em);
 	}
 	#me {
 		min-width: 100%;
 	}
-	.alert {
+	.rightLink {
 		display: none;
 	}
 	}
@@ -403,7 +398,7 @@ nav a {
 </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="ProfilePage">
+<body vocab="http://schema.org/" typeof="ProfilePage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -450,14 +445,21 @@ Video&#8209;Chat</a></li>
 </ul>
 </nav>
 
-<main>
+<main property="mainEntity" typeOf="Electrician" resource="#light">
+<meta property="priceRange" content="$10">
+<meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
+<meta property="areaServed" content="Global">
+<meta property="address" content="Russia, Polazna">
+<meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
+<meta property="logo" content="https://nakigoe.github.io/_IMG/light.png">
+<div property="image" typeOf="ImageObject">
+<meta property="url" content="https://nakigoe.github.io/_IMG/e-girl.jpg">
+</div>
 <article>
-<header property="mainEntity" typeOf="Person" resource="#me">
-<meta property="name" content="Nakigoe" about="#me">
-<meta property="url" content="https://nakigoe.github.io" about="#me">
-<h1 property="description" about="#me">Electrical Installation</h1>
+<header>
+<h1 property="name">Electrical Installation</h1>
 </header>
-<div id="e-girl">
+<div id="e-girl" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/e-girl.jpg"
   width="1800"
   height="2300"
@@ -468,8 +470,8 @@ Video&#8209;Chat</a></li>
   <meta property="caption" content="Electro Swords Girl">
 </amp-img>
 </div>
-<div property="text">
-<div about="#me">
+<div>
+
 <div property="makesOffer" typeOf="Offer">
 <meta property="name" content="Electrical Installation">
 <meta property="description" content="Supreme Electrical Installation">
@@ -493,7 +495,7 @@ Video&#8209;Chat</a></li>
 <small>ISICv4&nbsp;<span about="#me" property="isicV4">3312</span></small>
 </header>
 <ul class="list">
-<div id="light">
+<div id="light" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/light.png"
   width="501"
   height="480"
@@ -512,7 +514,7 @@ Video&#8209;Chat</a></li>
 <h3 property="name">Repair of Electrical Equipment</h3>
 <small>ISICv4&nbsp;<span about="#me" property="isicV4">3314</span></small>
 </header>
-<div id="repair">
+<div id="repair" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/repair.jpg"
   width="1200"
   height="848"
@@ -533,7 +535,7 @@ Video&#8209;Chat</a></li>
 
 </div><!--End of Person id-->
 </div><!--End of Person property="Offer"-->
-</div><!--End of WebPage property="text"-->
+
 </article>
 </main>
 
