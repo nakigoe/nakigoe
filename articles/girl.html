@@ -22,14 +22,30 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1080 / 1348 ) ) 
+	   - 2.5em
+  );
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	min-width: calc((1440/1018)*var(--coeff));
+	max-width: calc((1440/1018)*var(--restrict));
+}
+.true amp-img {
+	max-width: calc((1440/1018)*var(--restrict));
 }
 .hot {
-	min-width: calc((1080/1348)*20em);
+	min-width: calc((1080/1348)*var(--coeff));
+	max-width: calc((1080/1348)*var(--restrict));
+}
+.hot amp-img {
+	max-width: calc((1080/1348)*var(--restrict));
 }
 #girl {
 	max-width: 1022px;
@@ -179,15 +195,26 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
+.rightLink {
+	float: right;
+	}
+.cf:before,
+.cf:after {
+    content: ""; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
 .link {
 	display:inline;
 	margin:0;
 	padding:0 .5em;
 	font-size:inherit;
 	color:white;
-	}
-.rightLink {
-	float: right;
 	}
 .alert {
 		color: #FF6600;
@@ -352,24 +379,41 @@ amp-social-share[type="telegram"]:hover {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 	
-@media only screen and (max-width:540px) {
-	main {width: 100%;}
-	h1,h2,h3,h4,p,footer {
+@media only screen and (max-width:480px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
+	nav a {
+		text-align: center;
+		margin-left: .5em;
+	}
 	.rightLink{
 		float: none;
 	}
-	.true, .hot {
-		min-width: 85vmin;
+	.true, .hot, .hot amp-img {
+		min-width: calc(100vw - 2.85em);
+		max-width: 100vw;
+	}
+	.true amp-img, .hot amp-img {
+		max-width: 100vw;
+	}  
+	#topNav .rightLink {
+		display: none;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list {
+		width: 90%;
 		margin-left: auto;
-		margin-right: auto;
-	}
-	#me {
-		min-width: 100%;
-	}
+		margin-right: auto;	
+	}	
 	}
 /* font size formatting section */
 h1 {
