@@ -22,11 +22,24 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 2000 / 2922 ) ) 
+	   - 2.5em
+  );
+  --restrict: 24em;
+}
+a amp-img {
+	margin-top: .2em;
+	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( (1440 / 1018) * var(--coeff) );
+	max-width: calc( (1440 / 1018) * var(--restrict) );
 }
 .win {
-	min-width: calc((2000/2922)*20em);
+	width: calc( (2000 / 2922) * var(--coeff) );
+	max-width: calc( (2000 / 2922) * var(--restrict) );
 }
 #ideal {
 	max-width: 1080px;
@@ -238,7 +251,7 @@ a:active{
 /* clear float*/
 .cf:before,
 .cf:after {
-    content: " "; 
+    content: ""; 
     display: table; 
 }
 .cf:after {
@@ -343,7 +356,7 @@ aside {
 	margin: .5em 0 .5em;
 	}
 footer {
-	width:100%;
+	width:95%;
 	margin: 5.5em auto 0;
 	}
 #copyright{
@@ -412,9 +425,6 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-a amp-img {
-	margin-top: .2em;
-	}
 #connect {
 	min-width: calc((2048/2048)*20em);
 }
@@ -448,22 +458,41 @@ a amp-img {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 	
-@media only screen and (max-width:540px) {
-	main {width: 100%;}
-	footer{width: 95%;}
+@media only screen and (max-width:480px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 	h2 {margin-left: .4em;}
-	.rightLink/*:not(#topNav .rightLink)*/ {
+	nav ul, nav li, nav a {display: block;}
+	nav .rightLink {
+		margin-right: 0em;
+	}
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;
+		width: auto;
+	}
+	.rightLink{
 		float: none;
 	}
-	.true, .win, #connect {
-		min-width: 85vmin;
-		margin-left: auto;
-		margin-right: auto;
+	.cf:before,
+	.cf:after {
+    content: none; 
+    display: none; 
+}
+	.true, .win{
+		width: auto;
+		max-width: 100vw;
 	}
-	#me {
-		min-width: 100%;
+	#topNav .rightLink {
+		display: none;
 	}
 	}
+/* font size formatting section */
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
