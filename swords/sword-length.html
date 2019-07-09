@@ -195,9 +195,9 @@ ul, li {
     margin: 0;
 		padding: 0;
 }
-	ol li {
-		display: list-item;
-		list-style-type: decimal;
+ol li {
+	display: list-item;
+	list-style-type: decimal;
     list-style-position: outside;
 	}
 a  {
@@ -491,6 +491,32 @@ amp-social-share[type="telegram"]:hover {
 	#topNav .rightLink {
 		display: none;
 	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4, .headingAndComment, .question, .answer {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 720px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4, .headingAndComment, .question, .answer {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
 	}
 /* font size formatting section */
 h1 {
