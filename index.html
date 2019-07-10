@@ -59,55 +59,56 @@ a amp-img {
 	}
 /*navigation start*/
 :root {
-  --restrict: 20em;
+  --coeff: 20em;
+  --restrict: 24em;
 }
 #spirit {
-	min-width: calc(( 2048 / 1280 ) * var(--restrict));
+	width: calc(( 2048 / 1280 ) * var(--coeff));
 }
 #russian {
-	min-width: calc(( 937 / 1170) * var(--restrict));
+	width: calc(( 937 / 1170) * var(--coeff));
 }
 #tajik {
-	min-width: calc(( 1080 / 1350) * var(--restrict));
+	width: calc(( 1080 / 1350) * var(--coeff));
 }
 #japanese {
-	min-width: calc(( 1128 / 2048) * var(--restrict));
+	width: calc(( 1128 / 2048) * var(--coeff));
 }
 #chinese {
-	min-width: calc(( 1200 / 1800) * var(--restrict));
+	width: calc(( 1200 / 1800) * var(--coeff));
 }
 #british {
-	min-width: calc((639 / 1024) * var(--restrict));
+	width: calc((639 / 1024) * var(--coeff));
 }
 #group {
-	min-width: calc((1756 / 2184) * var(--restrict));
+	width: calc((1756 / 2184) * var(--coeff));
 }
 #it {
-	min-width: calc((930 / 1345) * var(--restrict));
+	width: calc((930 / 1345) * var(--coeff));
 }
 #translator {
-	min-width: calc((2560 / 1453) * var(--restrict));
+	width: calc((2560 / 1453) * var(--coeff));
 }
 #desire {
-	min-width: calc((2300 / 2160) * var(--restrict));
+	width: calc((2300 / 2160) * var(--coeff));
 }
 #a2 {
-	min-width: calc((700 / 880) * var(--restrict));
+	width: calc((700 / 880) * var(--coeff));
 }
 #e-girl {
-	min-width: calc((1800 / 2300) * var(--restrict));
+	width: calc((1800 / 2300) * var(--coeff));
 }
 #director {
-	min-width: calc((1938 / 2740) * var(--restrict));
+	width: calc((1938 / 2740) * var(--coeff));
 }
 #electra {
-	min-width: calc((799 / 999) * var(--restrict));
+	width: calc((799 / 999) * var(--coeff));
 }
 #goddess {
-	min-width: calc((1280 / 1810) * var(--restrict));
+	width: calc((1280 / 1810) * var(--coeff));
 }
 #life {
-	min-width: calc((1682 / 2048) * var(--restrict));
+	width: calc((1682 / 2048) * var(--coeff));
 }
 #topNav {
 	margin: 0;
@@ -313,7 +314,8 @@ nav a{
 #newArticles a{
 	/*font-size:1.2em;*/
 	color:#eee;
-	min-width: 20em;
+	width: var(--coeff);
+	max-width: var(--restrict);
 	}
 #newArticles li:last-child a{margin-bottom:.6em;}
 #newArticles li:first-child a{margin-top:.15em;}
@@ -362,7 +364,7 @@ li small  {
 	flex-wrap:nowrap;
 }
 footer {
-	width:100%;
+	width:95%;
 	margin: 5.5em auto 0;
 	}
 /*#mainPageFooter {margin-top:5.5em;}*/
@@ -436,25 +438,24 @@ amp-social-share[type="telegram"]:hover {
 	max-width: 2118px; 
 	margin: 0 auto;
 	}
-@media only screen and (max-width:800px) {
+@media only screen and (max-width:600px) {
 	main {width: 100%;}
-	footer{width: 95%;}
+
 	#newArticles {
 		margin-left: 0;
+		margin-right: 0;
     }
 	h2 {margin-left: .4em;}
+	nav ul, nav li, nav a {display: block;}
 	nav a{
-		margin-left: .5em;
 		text-align: center;
-	} 
-	#newArticles a, #topNav a div:not(.alert){
-		min-width: calc(100vw - 2.725em);;
+		margin-left: .5em;
+		margin-right: .5em;
+		width: auto;
 	}
-	#me {
-		min-width: 100%;
-	}
-	#test a {
-		min-width: calc(100vw - 5em);;
+	#topNav a, #newArticles a, #topNav a div:not(.alert){
+		width: auto;
+		max-width: 100vw;
 	}
 	}
 /*these are standard font measures, adjust the font-size if the type-face requires it*/
@@ -533,8 +534,8 @@ Lovely&nbsp;Me</a>
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/japan/tutor.html" hreflang="ja-JP">日本</a></li>
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans">中文</a></li>
 </ul>
-<ul>
 
+<ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/spirit.html">
 <div id="spirit">
 <amp-img src="https://nakigoe.github.io/_IMG/spirit.jpg"
@@ -665,9 +666,7 @@ Math&nbsp;Tutor</a></li>
 </amp-img>
 </div>
 Computer&nbsp;Science&nbsp;Tutor</a></li>
-</ul>
 
-<ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/services/developer.html">
 <div id="desire">
 <amp-img src="https://nakigoe.github.io/_IMG/desire.jpg"
