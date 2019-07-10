@@ -197,8 +197,6 @@ small {
     font-weight: 200;
 }
 em {color:#fff;}
-
-.articleHr {margin:2.25em 0 1em;}
 	
 li small  {
 	font-size:0.65em;
@@ -370,7 +368,23 @@ amp-social-share[type="telegram"]:hover {
 		display: none;
 	}
 	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
 /* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
 @media only screen and (max-width: 800px) {
 	main {
 		width: 100%;
@@ -478,7 +492,7 @@ Video&#8209;Chat</a></li>
 <meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
 <meta property="logo" content="https://nakigoe.github.io/_IMG/icon.png">
 <div property="image" typeOf="ImageObject">
-<meta property="url" content="https://nakigoe.github.io/_IMG/russian.jpg">
+	<meta property="url" content="https://nakigoe.github.io/_IMG/russian.jpg">
 </div>
 <article>
 <header>

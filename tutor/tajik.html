@@ -22,6 +22,29 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 2048 / 2048 ) + ( 1440 / 1018 ) ) 
+	   - 2em
+  	);
+  --restrict: 24em;
+}
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	width: calc((1440/1018)*var(--coeff));
+	max-width: calc((1440/1018)*var(--restrict));
+}
+.connect {
+	width: calc((2048/2048)*var(--coeff));
+	max-width: calc((2048/2048)*var(--restrict));
+}
+#tajik {
+	max-width: 1080px;
+	margin: 0 auto;
+}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -33,19 +56,20 @@ body{
 	}
 nav {
 	margin: 0;
+	padding: 0;
 	background-color: #120000;
-	font-size: 80%;
 }
 nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
-}
+} 
 nav li{
 	display:inline-block;
 	margin-bottom: 0.4em;
 	}
 nav a{
 	font-family: "Nunito Sans", sans-serif;
-	font-weight: 200;
+	font-weight: 300;
+	font-size: 80%;
 	}
 nav ul{
 	display: inline-block;
@@ -63,7 +87,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-family: 'Nunito Sans', sans-serif;
 	text-align: center;
-	font-size: calc(2em + 3.3334vmin);
 	padding-top: 0.8em;
 	padding-bottom: 0.8em;
 	letter-spacing: .12em;
@@ -92,6 +115,10 @@ h3 {
 	}
 ul, li {
 	list-style:none;
+	}
+nav ul, nav li {
+	margin: 0;
+	padding: 0;
 	}
 a  {
 	font-size: 1.6em;
@@ -126,9 +153,8 @@ a:active{
 	/*-----margin was .5em (experiment for different screens)-----*/
 }
 .alert:hover {
-        color: yellow;
+	color: yellow;
 	text-decoration: none;
-	padding: .2em .4em;
 	outline: 0;
 	white-space: nowrap;
 	border-radius: 1em;
@@ -158,12 +184,6 @@ a:active{
 	font-size:inherit;
 	color:white;
 	}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
 .list {
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
@@ -172,17 +192,18 @@ a:active{
 	margin-left:1.5em;
 	line-height:1.5em;
 	}
-#tajik {
-	max-width: 2560px;
-}
-hr {display:block;
-	margin-top: 4em;
-	box-shadow: 0 0 .5em .1em white;
-	}
 small {
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
-}	
+}
+em {color:#fff;}
+	
+li small  {
+	font-size:0.65em;
+	color:#eee;
+	margin-left:auto;
+	margin-top:.25em;
+	}
 p {
 	line-height: 1.5;
 	text-align: justify;
@@ -193,45 +214,48 @@ p {
 	font-size:1em;
 	letter-spacing:.02em;
 	}
-em {color:#fff;}
-
-.articleHr {margin:2.25em 0 1em;}
-li small  {
-	font-size:0.65em;
-	color:#eee;
-	margin-left:auto;
-	margin-top:.25em;
-	}
-.how {
-	text-align: center;
+.headingAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:nowrap;
 }
+hr {display:block;
+	margin-top: 2.5em;
+	box-shadow: 0 0 .5em .1em white;
+	}
+table {
+	margin: 2em auto 1em;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 200;
+	font-size:1em;
+	letter-spacing:.02em;
+	}
+tbody {
+	text-align: left;
+	}
+caption, td {
+	padding: .25em 1em;
+	}
+td:first-child{margin-right: 3em;}
 .price {
 	text-align: center;
-	margin-top: 2.5em;
+	margin-top: 1em;
 }
 .price p{
 	text-align: center;
 }
 footer {
-	width:100%;
-	margin: 5.5em auto 0;
+	width:95%;
+	margin: 2.5em auto 0;
 	}
-.contacts {
-	margin: 1.65em auto;
-	max-width: 270px;
-	text-align: center;
-}
-.contacts p {
-	text-align: center;
-	margin-bottom: 1.65em;
-}
 #copyright{
-	margin: 1.65em auto;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
@@ -251,7 +275,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -276,7 +299,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -292,10 +315,6 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-@media only screen and (max-width:720px) {
-	main {width:90%;}
-	footer {width:90%;}
-	}
 #love {
 	width: 100%;
 	max-width: 4416px;
@@ -321,17 +340,70 @@ amp-social-share[type="telegram"]:hover {
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 	width: 100%;
+	min-width: 100%;
 	box-shadow: 0 0 2em red;
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+
+@media only screen and (max-width:480px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	nav a {
+		text-align: center;
+		margin-left: .5em;
+	}
+	.rightLink{
+		float: none;
+	}
+	.true, .connect {
+		min-width: calc(100vw - 2.725em);
+		max-width: 100vw;
+	} 
+	#topNav .rightLink {
+		display: none;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
 }
-p, .list	{
+p, table, .list	{
 	font-size: 1em;
 	font-stretch: semi-condensed;
 	}
@@ -341,7 +413,7 @@ nav a {
 	}
 
 @media only screen and (min-width: 60em) {
-	p, .list {
+	p, table, .list {
 	font-size: 1.125em;
 	font-stretch: normal;
 	}
@@ -351,7 +423,7 @@ nav a {
 	}
 }
 @media only screen and (min-width: 120em) {
-	p, .list {
+	p, table, .list {
 	font-size: 1.375em;
 	font-stretch: semi-expanded;
 	}
@@ -360,29 +432,8 @@ nav a {
 	font-stretch: semi-expanded;
 	}
 }
-</style>
 
-<script type="application/ld+json">
-	{
-	"@context": "http://schema.org/",
-	"@type": "Offer",
-	"name": "Tajik Tutor: Authentic Textbook, Pronucnciation Drills, Grammar from Beginner to Advanced, Touch-Typing",
-	"description": "$15 / hour, students with strong learning ability can get 10% or more discounts",
-	"price": "15",
-	"priceCurrency": "USD",
-	"image": {
-		"@type": "ImageObject",
-		"url": "https://nakigoe.github.io/_IMG/tajik.jpg",
-		"caption": "Tajik Tutor",
-		"representativeOfPage": "True"
-		},
-	"businessFunction": {
-		"@type": "BusinessFunction",
-		"name": "Online Tajik Tutoring",
-		"description": "Online Tajik Teacher: live video-connection and screen sharing"
-		}
-	}
-</script>
+</style>
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage">
@@ -403,32 +454,54 @@ nav a {
 </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html">Life&nbsp;Science</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html">Art</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html">Russian</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html">Japanese</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html">Mandarin</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html">English</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html">Math</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ru/tutor.html" hreflang="ru-RU">RU</a></li>
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/japan/tutor.html" hreflang="ja-JP">日本</a></li>
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans">中文</a></li>
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)" target="_blank">
+<div class="connect">
+<amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Contact Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Contact Me">
+</amp-img>
+</div>
+Video&#8209;Chat</a></li>
 </ul>
 </nav>
 
-<main>
+<main property="mainEntity" typeOf="LocalBusiness" resource="#business">
+<meta property="priceRange" content="$10">
+<meta property="url" content="https://nakigoe.github.io/tutor/tajik.html">
+<meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
+<meta property="areaServed" content="Global">
+<meta property="address" content="Russia, Polazna">
+<meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
+<meta property="logo" content="https://nakigoe.github.io/_IMG/icon.png">
+<div property="image" typeOf="ImageObject">
+	<meta property="url" content="https://nakigoe.github.io/_IMG/tajik.jpg">
+</div>
+
 <article>
 <meta property="keywords" content="tutor,tutoring,teacher,teaching,online,Tajik,language,typing,Public,Speaking, Educational, Writing, Touch-Typing, Alternative, Keyboard, Layout, Tricks, Same, Punctuation, Schema, English, Cyrillic, Keyboard Layout Creator, KLC, Autohotkeytyping,Public,Speaking, Educational, Writing, Touch-Typing, Alternative, Keyboard, Layout, Tricks, Same, Punctuation, Schema, English, Cyrillic, Keyboard Layout Creator, KLC, Autohotkey">
 <header>
-<h1>Tajik Tutor</h1>
+<h1 property="name">Tajik Tutor</h1>
 </header>
 
-<div id="tajik">
+<div id="tajik" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/tajik.jpg"
   width="1080"
   height="1350"
@@ -439,54 +512,72 @@ nav a {
   <meta property="caption" content="Tajik Tutor">
 </amp-img>
 </div>
-<div property="text">
+
+<header class="headingAndComment">
+<h2 property="description">Education Activities</h2>
+<small>ISICv4&nbsp;<span about="#me" property="isicV4">8549</span></small>
+</header>
 
 <div property="makesOffer" typeOf="Offer">
-<section>
-<header class="headingAndComment" resource="#eduservices" property="businessFunction" typeOf="BusinessFunction">
-<h2 property="name">Education Activities</h2>
-<small>ISICv4&nbsp;<span about="#me" property="isicV4">8549</span></small>
-<ul>
-  <li property="description" about="#eduservices">language instruction and conversational skills instruction: Tajik Language</li>
-  <li property="description" about="#eduservices">public speaking training</li>
-</ul>
-</header>
-</section>
+<div property="itemOffered" typeOf="Service">
+<meta property="name" content="Tajik Language Tutor">
+<meta property="description" content="Video-connection &amp; screen sharing, real-time online document.">
+<meta property="serviceType" content="Online Tutor">
 </div>
-<h2 property="description" about="#eduservices">Tajik Tutoring</h2>
+
+<h2 property="name">Tajik Tutoring</h2>
 <ul class="list">
-  <li>Authentic Textbook</li>
-  <li>Pronucnciation Drills</li>
-  <li>Grammar from Beginner to Advanced</li>
-  <li>Language Instruction and Conversational Skills Instruction</li>
-  <li>Public Speaking Training</li>
+  <li property="description">Authentic Textbook</li>
+  <li property="description">Pronucnciation Drills</li>
+  <li property="description">Grammar from Beginner to Advanced</li>
+  <li property="description">Language Instruction and Conversational Skills Instruction</li>
+  <li property="description">Public Speaking Training</li>
 </ul>
- 
-<h2>Tajik Typing</h2>
+<section property="addOn" typeOf="Offer">
+<h2 property="name">Advanced Modern Tajik Typing</h2>
+<meta property="alternateName" content="Tajik Typing Training">
   <ul class="list">
-  	<li>Touch-Typing</li>
-	<li>Alternative Keyboard Layouts</li>
-	<li>keyboard Schemas and Tricks</li>
-	<li>Typing Special Symbols and Math Fast</li>
-	<li>Same Punctuation Schema for English and Tajik Keyboard Layouts</li>
-	<li>Fast Switching between Typing Modes</li>
-	<li>SharpKeys (delicate registry remapping)</li>
-	<li>Keyboard Layout Creator (creating new keyboard layouts install packages)</li>
-	<li>AutoHotkey (advanced typing programming)</li>
+  	<li property="description">Touch-Typing</li>
+	<li property="description">Alternative Keyboard Layouts</li>
+	<li property="description">keyboard Schemas and Tricks</li>
+	<li property="description">Typing Special Symbols and Math Fast</li>
+	<li property="description">Same Punctuation Schema for English and Tajik Keyboard Layouts</li>
+	<li property="description">Fast Switching between Typing Modes</li>
+	<li property="description">SharpKeys (delicate registry remapping)</li>
+	<li property="description">Keyboard Layout Creator (creating new keyboard layouts install packages)</li>
+	<li property="description">AutoHotkey (advanced typing programming)</li>
   </ul>
-  
+</section> 
 <hr>
-<p class="how">Video-connection &amp; screen sharing, real-time online document (pdf)</p>
-<div class="price">
-<p>$15 / hour</p>
-<p><span class="phrase">supermen and supergirls get a discount of 10%&nbsp;+&nbsp;1%</span> <span class="phrase">for every heroic feat</span></p>
-<p>Students with strong learning ability can get 10% or more discounts, and students need to provide personal achievement materials to get preferential treatment.</p>
-</div>
-</div><!--End of WebPage property="text"-->
+<div class="price" property="priceSpecification" typeOf="PriceSpecification">
+<meta property="price" content="10">
+<meta property="priceCurrency" content="USD">
+<table>
+  <tbody>
+    <tr>
+      <td>$15</td>
+      <td>1 hour</td>
+    </tr>
+    <tr>
+      <td>$12.5</td>
+      <td>10 hours</td>
+    </tr>
+    <tr>
+      <td>$10</td>
+      <td>20 hours</td>
+    </tr>
+  </tbody>
+</table>
+<p property="description"><span class="phrase">supermen and supergirls get a discount of 10%&nbsp;+&nbsp;1%</span> <span class="phrase">for every heroic feat</span></p>
+<p property="disambiguatingDescription">students with strong learning ability can get 10% or more discounts, and students need to provide personal achievement materials to get preferential treatment</p>
+</div><!--END of class="price" style="text-align:center" -->
+</div><!--END of Offer-->
+<hr>
 </article>
 </main>
 
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
 <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -499,51 +590,45 @@ nav a {
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
-	    data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/tutor/tajik.html"></amp-social-share>
+	data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/tutor/tajik.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
-	    data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/tutor/tajik.html"></amp-social-share>
+	data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/tutor/tajik.html"></amp-social-share>
 	<amp-social-share width="60" height="60" type="livejournal" 
-	    data-share-endpoint="https://www.livejournal.com/update.bml
-		?event=https://nakigoe.github.io/tutor/tajik.html
-		&subject=Tajik Tutor: Authentic Textbook, Pronucnciation Drills, Grammar from Beginner to Advanced, Touch-Typing"></amp-social-share>
+	data-share-endpoint="https://www.livejournal.com/update.bml?event=https://nakigoe.github.io/tutor/tajik.html"></amp-social-share>
 	<amp-social-share width="60" height="60" type="telegram" 
-	    data-share-endpoint="https://telegram.me/share/url
-		?url=https://nakigoe.github.io/tutor/tajik.html
-		&text=Tajik Tutor: Authentic Textbook, Pronucnciation Drills, Grammar from Beginner to Advanced, Touch-Typing"></amp-social-share>
+	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/tutor/tajik.html"></amp-social-share>
 </div>
-<div class="contacts">
-	<p>e-mail:</p>
-	<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-	width="270"
-	height="50"
-	layout="intrinsic"
-	alt="nakigoe @ pm . me">
-	</amp-img>
-</div>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
-<nav class="cf">
+<nav class="cf" about="#page">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a href="https://nakigoe.github.io/tutor/life.html">Life&nbsp;Science</a></li>
-<li><a href="https://nakigoe.github.io/tutor/art.html">Art</a></li>
-<li><a href="https://nakigoe.github.io/tutor/russian.html">Russian</a></li>
-<li><a href="https://nakigoe.github.io/tutor/japanese.html">Japanese</a></li>
-<li><a href="https://nakigoe.github.io/tutor/mandarin.html">Mandarin</a></li>
-<li><a href="https://nakigoe.github.io/tutor/english.html">English</a></li>
-<li><a href="https://nakigoe.github.io/tutor/math.html">Math</a></li>
-<li><a href="https://nakigoe.github.io/tutor/it.html">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/ru/tutor.html" hreflang="ru-RU">RU</a></li>
-<li><a class="alert" href="https://nakigoe.github.io/japan/tutor.html" hreflang="ja-JP">日本</a></li>
-<li><a class="alert" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans">中文</a></li>
-</ul>
-<ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" target="_blank">
+<div class="connect">
+<amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Contact Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Contact Me">
+</amp-img>
+</div>
+Video&#8209;Chat</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
