@@ -184,7 +184,6 @@ h3 {
 	margin-left:0;
 	margin-bottom:.5em;
 	}
-
 ul, li {
 	list-style:none;
 	}
@@ -446,8 +445,18 @@ amp-social-share[type="telegram"]:hover {
 		margin-right: 0;
     }
 	h2 {margin-left: .4em;}
-	#topNav ul, #topNav li, #topNav a, nav ul, nav li, nav a {
+	#topNav ul, #topNav li, #topNav a:not(.alert), nav ul, nav li, nav a {
 		display: block;
+	}
+	#topNav .rightLink{
+		float: none;
+		display: flex;
+		flex-direction: row-reverse;
+  		align-items: flex-end;
+		margin-right: .5em;
+	}
+	#topNav .rightLink li {
+		display: inline-block;
 	}
 	nav a{
 		text-align: center;
