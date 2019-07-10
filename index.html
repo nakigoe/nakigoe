@@ -58,53 +58,56 @@ a amp-img {
 	text-align: center;
 	}
 /*navigation start*/
+:root {
+  --restrict: 20em;
+}
 #spirit {
-	min-width: calc((2048/1280)*20em);
+	min-width: calc(( 2048 / 1280 ) * var(--restrict));
 }
 #russian {
-	min-width: calc((937/1170)*20em);
+	min-width: calc(( 937 / 1170) * var(--restrict));
 }
 #tajik {
-	min-width: calc((1080/1350)*20em);
+	min-width: calc(( 1080 / 1350) * var(--restrict));
 }
 #japanese {
-	min-width: calc((1128/2048)*20em);
+	min-width: calc(( 1128 / 2048) * var(--restrict));
 }
 #chinese {
-	min-width: calc((1200/1800)*20em);
+	min-width: calc(( 1200 / 1800) * var(--restrict));
 }
 #british {
-	min-width: calc((639/1024)*20em);
+	min-width: calc((639 / 1024) * var(--restrict));
 }
 #group {
-	min-width: calc((1756/2184)*20em);
+	min-width: calc((1756 / 2184) * var(--restrict));
 }
 #it {
-	min-width: calc((930/1345)*20em);
+	min-width: calc((930 / 1345) * var(--restrict));
 }
 #translator {
-	min-width: calc((2560/1453)*20em);
+	min-width: calc((2560 / 1453) * var(--restrict));
 }
 #desire {
-	min-width: calc((2300/2160)*20em);
+	min-width: calc((2300 / 2160) * var(--restrict));
 }
 #a2 {
-	min-width: calc((700/880)*20em);
+	min-width: calc((700 / 880) * var(--restrict));
 }
 #e-girl {
-	min-width: calc((1800/2300)*20em);
+	min-width: calc((1800 / 2300) * var(--restrict));
 }
 #director {
-	min-width: calc((1938/2740)*20em);
+	min-width: calc((1938 / 2740) * var(--restrict));
 }
 #electra {
-	min-width: calc((799/999)*20em);
+	min-width: calc((799 / 999) * var(--restrict));
 }
 #goddess {
-	min-width: calc((1280/1810)*20em);
+	min-width: calc((1280 / 1810) * var(--restrict));
 }
 #life {
-	min-width: calc((1682/2048)*20em);
+	min-width: calc((1682 / 2048) * var(--restrict));
 }
 #topNav {
 	margin: 0;
@@ -546,6 +549,32 @@ Lovely&nbsp;Me</a>
 </div>
 Angel Spirit</a></li>
 
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html">
+<div id="life">
+<amp-img src="https://nakigoe.github.io/_IMG/life.jpg"
+  width="1682"
+  height="2048"
+  layout="responsive"
+  alt="Life Science Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Life Science Tutor">
+</amp-img>
+</div>
+Life&nbsp;Science&nbsp;Instructor</a></li>
+
+<li id="test"><a property="significantLink" href="https://nakigoe.github.io/services/translator-interpreter.html">
+<div id="translator">
+<amp-img src="https://nakigoe.github.io/_IMG/translator.jpg"
+  width="2560"
+  height="1453"
+  layout="responsive"
+  alt="Translator: Russian, Tajik, Japanese, Mandarin Chinese, English"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Translator: Russian, Tajik, Japanese, Mandarin Chinese, English">
+</amp-img>
+</div>
+<span>Translator &amp; Interpreter <small class="phrase">Russian, Tajik, Japanese, Mandarin Chinese, English</small></span></a></li>
+
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html">
 <div id="russian">
 <amp-img src="https://nakigoe.github.io/_IMG/russian.jpg"
@@ -636,35 +665,9 @@ Math&nbsp;Tutor</a></li>
 </amp-img>
 </div>
 Computer&nbsp;Science&nbsp;Tutor</a></li>
-
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html">
-<div id="life">
-<amp-img src="https://nakigoe.github.io/_IMG/life.jpg"
-  width="1682"
-  height="2048"
-  layout="responsive"
-  alt="Life Science Tutor"
-  property="image" typeOf="ImageObject">
-  <meta property="caption" content="Life Science Tutor">
-</amp-img>
-</div>
-Life&nbsp;Science&nbsp;Instructor</a></li>
 </ul>
 
 <ul>
-<li id="test"><a property="significantLink" href="https://nakigoe.github.io/services/translator-interpreter.html">
-<div id="translator">
-<amp-img src="https://nakigoe.github.io/_IMG/translator.jpg"
-  width="2560"
-  height="1453"
-  layout="responsive"
-  alt="Translator: Russian, Tajik, Japanese, Mandarin Chinese, English"
-  property="image" typeOf="ImageObject">
-  <meta property="caption" content="Translator: Russian, Tajik, Japanese, Mandarin Chinese, English">
-</amp-img>
-</div>
-<span>Translator &amp; Interpreter <small class="phrase">Russian, Tajik, Japanese, Mandarin Chinese, English</small></span></a></li>
-
 <li><a property="significantLink" href="https://nakigoe.github.io/services/developer.html">
 <div id="desire">
 <amp-img src="https://nakigoe.github.io/_IMG/desire.jpg"
