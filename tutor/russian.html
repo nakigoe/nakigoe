@@ -353,19 +353,26 @@ amp-social-share[type="telegram"]:hover {
 		margin-left: auto;
 		margin-right: auto;	
 	}
-	nav a {
-		text-align: center;
-		margin-left: .5em;
-	}
-	.rightLink{
+	.rightLink {
 		float: none;
 	}
-	.true, .connect {
-		min-width: calc(100vw - 2.725em);
-		max-width: 100vw;
-	} 
 	#topNav .rightLink {
 		display: none;
+	}
+	nav .rightLink {
+	margin-right: 0;/*temporary draft*/
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	.true, .connect {
+		width: auto;
+		max-width: 100vw;
 	}
 	}
 /* --------- text width section ------------- */
