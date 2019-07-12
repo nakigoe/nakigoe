@@ -22,14 +22,24 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1682 / 2048 ) ) 
+	   - 2.5em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc(( 1440 / 1018) * var(--coeff));
+	max-width: calc(( 1440 / 1018) * var(--restrict));
 }
-.connect {
-	min-width: calc((2048/2048)*20em);
+.life {
+	width: calc(( 1682 / 2048) * var(--coeff));
+	max-width: calc(( 1682 / 2048 ) * var(--restrict));
 }
 #spirit {
 	max-width: 2048px; 
@@ -290,7 +300,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -315,7 +324,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -330,15 +339,6 @@ amp-social-share[type="telegram"] {
 }
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
-}
-a amp-img {
-	margin-top: .2em;
-	}
-#true {
-	min-width: calc((1440/1018)*20em);
-}
-#connect {
-	min-width: calc((2048/2048)*20em);
 }
 #love {
 	width: 100%;
@@ -370,26 +370,64 @@ a amp-img {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 
-@media only screen and (max-width:540px) {
-	main {width: 100%;}
-	footer{width: 95%;}
-	h2 {margin-left: .4em;}
-	.rightLink:not(#topNav .rightLink){
+@media only screen and (max-width:600px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
 		float: none;
 	}
-	#true, #connect {
-		min-width: 85vmin;
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	.true, .life {
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 80%;
 		margin-left: auto;
-		margin-right: auto;
+		margin-right: auto;	
+	}	
 	}
-	#me {
-		min-width: 100%;
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
 	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
 	}
-@media only screen and (max-width:720px) {
-	main {width:90%;}
-	footer {width:90%;}
-	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: 10vmin;
 }
@@ -509,6 +547,7 @@ nav a {
 </main>
 
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
     <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -531,21 +570,11 @@ nav a {
 	<amp-social-share width="60" height="60" type="telegram" 
 	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/me/spirit.html"></amp-social-share>
 </div>
-<div class="contacts">
-	<p>e-mail:</p>
-	<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-	width="270"
-	height="50"
-	layout="intrinsic"
-	alt="nakigoe @ pm . me">
-	</amp-img>
-</div>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
 <nav class="cf" about="#page">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">
-<div id="true">
+<div class="true">
 <amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
   width="1440"
   height="1018"
@@ -558,18 +587,19 @@ nav a {
 Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)">
-<div id="connect">
-<amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
-  width="2048"
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/life.html">
+<div class="life">
+<amp-img src="https://nakigoe.github.io/_IMG/life.jpg"
+  width="1682"
   height="2048"
   layout="responsive"
-  alt="Contact Me"
+  alt="Life Science Instructor"
   property="image" typeOf="ImageObject">
-  <meta property="caption" content="Contact Me">
+  <meta property="caption" content="Life Science Instructor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/life.jpg">
 </amp-img>
 </div>
-video&#8209;chat</a></li>
+Life Science</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html">
 <div id="love">
