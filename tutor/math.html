@@ -70,6 +70,10 @@ a amp-img {
 	max-width: 4700px;
 	margin: 0 auto;
 }
+.wrapper {
+	margin: 1em auto;
+	text-align: center;
+}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -467,7 +471,7 @@ nav a {
 </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="WebPage">
+<body vocab="http://schema.org/" typeof="WebPage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -483,6 +487,7 @@ nav a {
 }
 </script>
 </amp-analytics>
+<meta property="keywords" content="tutor,tutoring,teacher,teaching,problem solving,online,Math,exam,preparation,SAT,GMAT,ACT">
 <nav id="topNav" class="cf">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
@@ -499,7 +504,7 @@ nav a {
 Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a property="relatedtLink" href="https://nakigoe.github.io/tutor/it.html" target="_blank">
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/it.html" target="_blank">
 <div class="it">
 <amp-img src="https://nakigoe.github.io/_IMG/it.jpg"
   width="930"
@@ -514,15 +519,24 @@ Computer Science</a></li>
 </ul>
 </nav>
 
-<main>
+<main property="mainEntity" typeOf="LocalBusiness" resource="#business">
+<meta property="priceRange" content="$10">
+<meta property="url" content="https://nakigoe.github.io/tutor/math.html">
+<meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
+<meta property="areaServed" content="Global">
+<meta property="address" content="Russia, Polazna">
+<meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
+<meta property="logo" content="https://nakigoe.github.io/_IMG/icon.png">
+<div property="image" typeOf="ImageObject">
+	<meta property="url" content="https://nakigoe.github.io/_IMG/math.jpg">
+</div>
 <article>
-<meta property="keywords" content="tutor,tutoring,teacher,teaching,problem solving,online,Math,exam,preparation,SAT,GMAT,ACT">
 <header>
-<h1>Math Tutor<br>
+<h1 property="name">Math Tutor<br>
 <span class="phrase">Algebra, Geometry, Trigonometry, Calculus</span></h1>
 </header>
 
-<div id="math">
+<div id="math" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/math.jpg"
   width="1200"
   height="675"
@@ -533,9 +547,8 @@ Computer Science</a></li>
   <meta property="caption" content="Math Tutor">
 </amp-img>
 </div>
-<div property="text">
-<h2>Math</h2>
-<div id="integration">
+<p class="wrapper">count</p>
+<div id="integration" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/math.png"
   width="4700"
   height="3000"
@@ -546,35 +559,46 @@ Computer Science</a></li>
   <meta property="caption" content="Math Tutor">
 </amp-img>
 </div>
+<header class="headingAndComment">
+	<h2 property="description">Math Education Activities</h2>
+	<small>ISICv4&nbsp;<span property="isicV4">8549</span></small>
+</header>
+<div property="makesOffer" typeOf="Offer">
+<div property="itemOffered" typeOf="Service">
+<meta property="name" content="Math Tutor">
+<meta property="description" content="Video-connection &amp; screen sharing, real-time online document.">
+<meta property="serviceType" content="Online Tutor">
+</div>
+<meta property="name" content="Academic Math Tutor">
 <ul class="list">
-	<li>Mental Math</li>
-	<li>Word Problem Solving</li>
-	<li>Proofs</li>
-	<li>Algebra</li>
-	<li>Geometry</li>
-	<li>Trigonometry</li>
-	<li>Calculus: Functions, Differentiation, Integration</li>
-	<li>Multivariable Calculus</li>
-	<li>Differential Equations</li>
-	<li>Combinatorics, Probability Theory, Number Theory</li>
-	<li>Equations, Graphics and Formulas in .doc and .pdf Format</li>
-	<li>Professional Math Typing</li>
-	<li>Exam Preparation: SAT, GMAT, ACT</li>
+	<li property="description">Mental Math</li>
+	<li property="description">Word Problem Solving</li>
+	<li property="description">Proofs</li>
+	<li property="description">Algebra</li>
+	<li property="description">Geometry</li>
+	<li property="description">Trigonometry</li>
+	<li property="description">Calculus: Functions, Differentiation, Integration</li>
+	<li property="description">Multivariable Calculus</li>
+	<li property="description">Differential Equations</li>
+	<li property="description">Combinatorics, Probability Theory, Number Theory</li>
+	<li property="description">Equations, Graphics and Formulas in .doc and .pdf Format</li>
+	<li property="description">Professional Math Typing</li>
+	<li property="description">Exam Preparation: SAT, GMAT, ACT</li>
 </ul>
-
- <h2>Apps:</h2>	
+<section property="addOn" typeOf="Offer">
+<h2 property="name">Advanced Math Typing</h2>
   <ul class="list">
-	<li>Microsoft Word Equation Editor</li>
-	<li>Microsoft Mathematics</li>
+	<li property="description">SharpKeys (delicate registry remapping)</li>
+	<li property="description">Keyboard Layout Creator (creating new keyboard layouts install packages)</li>
+	<li property="description">AutoHotkey (advanced typing programming)</li>
   </ul>
-
-<h2>Math Typing</h2>
+  
+<h2>Apps:</h2>	
   <ul class="list">
-	<li>SharpKeys (delicate registry remapping)</li>
-	<li>Keyboard Layout Creator (creating new keyboard layouts install packages)</li>
-	<li>AutoHotkey (advanced typing programming)</li>
+	<li property="description">Microsoft Word Equation Editor</li>
+	<li property="description">Microsoft Mathematics</li>
   </ul>
-
+</section>
 <hr>
 <div class="price" property="priceSpecification" typeOf="PriceSpecification">
 <meta property="price" content="10">
@@ -644,7 +668,7 @@ Computer Science</a></li>
 Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a property="relatedtLink" href="https://nakigoe.github.io/tutor/it.html" target="_blank">
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/it.html" target="_blank">
 <div class="it">
 <amp-img src="https://nakigoe.github.io/_IMG/it.jpg"
   width="930"
