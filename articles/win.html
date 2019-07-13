@@ -22,14 +22,28 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 800 / 1200 ) ) 
+	   - 2.5em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
-.connect {
-	min-width: calc((2048/2048)*20em);
+.exposure {
+	width: calc( ( 800 / 1200 ) * var(--coeff) );
+	max-width: calc( ( 800 / 1200 ) * var(--restrict) );
+}
+.ask {
+	width: calc( ( 2947 / 1814 ) * var(--coeff) );
+	max-width: calc( ( 2947 / 1814 ) * var(--restrict) );
 }
 #win {
 	max-width: 2000px;
@@ -393,6 +407,66 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+	
+@media only screen and (max-width:600px) {
+	main {width: 100%;}
+	h1,h2,h3,h4,p {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	.rightLink {
+		float: none;
+	}
+	#topNav .rightLink {
+		display: none;
+	}
+	nav .rightLink {
+	margin-right: 0;/*temporary draft*/
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+	.true, .exposure {
+		width: auto;
+		max-width: 100vw;
+	} 
+	}
+
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
@@ -430,7 +504,7 @@ nav a {
 </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="WebPage">
+<body vocab="http://schema.org/" typeof="WebPage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -449,17 +523,34 @@ nav a {
 <meta property="isFamilyFriendly" content="True">
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/environment.html" target="_blank">
+<div class="exposure">
+<amp-img src="https://nakigoe.github.io/_IMG/environment.jpg"
+  width="800"
+  height="1200"
+  layout="responsive"
+  alt="Prolongued Extreme Exposure"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Prolongued Extreme Exposure">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/environment.jpg">
+</amp-img>
+</div>
+Prolongued Exposure</a></li>
 </ul>
 </nav>
 
@@ -579,6 +670,7 @@ nav a {
 </article>
 </main>
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
     <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -601,21 +693,37 @@ nav a {
 	<amp-social-share width="60" height="60" type="telegram"
 	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/articles/win.html"></amp-social-share>
 </div>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
-<nav class="cf">
+<nav class="cf" about="#page">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
-<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
-<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
-<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
-<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
-<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
-<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/environment.html" target="_blank">
+<div class="exposure">
+<amp-img src="https://nakigoe.github.io/_IMG/environment.jpg"
+  width="800"
+  height="1200"
+  layout="responsive"
+  alt="Prolongued Extreme Exposure"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Prolongued Extreme Exposure">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/environment.jpg">
+</amp-img>
+</div>
+Prolongued Exposure</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
