@@ -25,8 +25,8 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) + ( 1080 / 1350 ) ) 
-	   - 2.5em
+	  ( ( 1440 / 1018 ) + ( 1080 / 1350 ) + ( 520 / 720 ) + ( 1128 / 2048 ) + ( 639 / 1024 ) ) 
+	   - 2.3em
   	);
   --restrict: 24em;
 }
@@ -34,12 +34,24 @@ a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	width: calc(( 1440 / 1018) * var(--coeff));
-	max-width: calc(( 1440 / 1018) * var(--restrict));
+	width: calc( ( 1440 / 1018 ) * var(--coeff));
+	max-width: calc(( 1440 / 1018 ) * var(--restrict));
 }
 .tajik {
-	width: calc(( 1080 / 1350) * var(--coeff));
-	max-width: calc(( 1080 / 1350) * var(--restrict));
+	width: calc( ( 1080 / 1350 ) * var(--coeff));
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict));
+}
+.mandarin {
+	width: calc( ( 520 / 720 ) * var(--coeff));
+	max-width: calc(( 1080 / 1350 ) * var(--restrict));
+}
+.japanese {
+	width: calc( ( 1128 / 2048 ) * var(--coeff));
+	max-width: calc( ( 1128 / 2048 ) * var(--restrict));
+}
+.english {
+	width: calc( ( 639 / 1024 ) * var(--coeff));
+	max-width: calc( ( 639 / 1024 ) * var(--restrict));
 }
 #russian {
 	max-width: 937px;
@@ -234,7 +246,12 @@ table {
 tbody {
 	text-align: left;
 	}
-caption, td {
+caption {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+	}
+td {
 	padding: .25em 1em;
 	}
 td:first-child{margin-right: 3em;}
@@ -245,6 +262,9 @@ td:first-child{margin-right: 3em;}
 .price p{
 	text-align: center;
 }
+.fish {
+	color: red;
+	}
 footer {
 	width:95%;
 	margin: 2.5em auto 0;
@@ -346,7 +366,7 @@ amp-social-share[type="telegram"]:hover {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 
-@media only screen and (max-width:480px) {
+@media only screen and (max-width:800px) {
 	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
 	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
 		width: 95%;
@@ -474,6 +494,7 @@ nav a {
 </div>
 Main Menu</a></li>
 </ul>
+
 <ul class="rightLink">
 <li><a property="relatedLink" href="https://nakigoe.github.io/tutor/tajik.html" target="_blank">
 <div class="tajik">
@@ -483,16 +504,55 @@ Main Menu</a></li>
   layout="responsive"
   alt="Tajik Tutor"
   property="image" typeOf="ImageObject">
-  <meta property="url" content="https://nakigoe.github.io/_IMG/tajik.jpg">
   <meta property="caption" content="Tajik Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/tajik.jpg">
 </amp-img>
 </div>
-Tajik Tutor</a></li>
+Tajik</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/mandarin.html" target="_blank">
+<div class="mandarin">
+<amp-img src="https://nakigoe.github.io/_IMG/chinese.jpg"
+  width="520"
+  height="720"
+  layout="responsive"
+  alt="Mandarin Chinese Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Mandarin Chinese Tutor">
+</amp-img>
+</div>
+Mandarin</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/japanese.html" target="_blank">
+<div class="japanese">
+<amp-img src="https://nakigoe.github.io/_IMG/japanese.jpg"
+  width="1128"
+  height="2048"
+  layout="responsive"
+  alt="Japanese Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Japanese Tutor">
+</amp-img>
+</div>
+Japanese</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/english.html" target="_blank">
+<div class="english">
+<amp-img src="https://nakigoe.github.io/_IMG/british.jpg"
+  width="639"
+  height="1024"
+  layout="responsive"
+  alt="English Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="English Tutor">
+</amp-img>
+</div>
+English</a></li>
 </ul>
 </nav>
 
 <main property="mainEntity" typeOf="LocalBusiness" resource="#business">
-<meta property="priceRange" content="$10">
+<meta property="priceRange" content="$5">
 <meta property="url" content="https://nakigoe.github.io/tutor/russian.html">
 <meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
 <meta property="areaServed" content="Global">
@@ -518,10 +578,11 @@ Tajik Tutor</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/russian.jpg">
 </amp-img>
 </div>
-	<header class="headingAndComment">
-	<h2 property="description">Education Activities</h2>
-	<small>ISICv4&nbsp;<span property="isicV4">8549</span></small>
-	</header>
+
+<header class="headingAndComment">
+<h2 property="description">Education Activities</h2>
+<small>ISICv4&nbsp;<span property="isicV4">8549</span></small>
+</header>
 
 <div property="makesOffer" typeOf="Offer">
 <div property="itemOffered" typeOf="Service">
@@ -529,8 +590,9 @@ Tajik Tutor</a></li>
 <meta property="description" content="Video-connection &amp; screen sharing, real-time online document.">
 <meta property="serviceType" content="Online Tutor">
 </div>
-<h2 property="name">Russian Language Instruction and Conversational Skills Instruction</h2>
+<h2 property="name">Russian Language Instruction</h2>
   <ul class="list">
+	  <li property="description">Conversational Skills Instruction</li>
 	  <li property="description">Public Speaking</li>
 	  <li property="description">Educational Writing</li>
 	  <li property="description">Hand-Writing Drills</li>
@@ -552,9 +614,6 @@ Tajik Tutor</a></li>
   </ul>
 </section> 
 <hr>
-<div class="price" property="priceSpecification" typeOf="PriceSpecification">
-<meta property="price" content="10">
-<meta property="priceCurrency" content="USD">
 <table>
   <tbody>
     <tr>
@@ -571,8 +630,28 @@ Tajik Tutor</a></li>
     </tr>
   </tbody>
 </table>
+<div class="price" property="priceSpecification" typeOf="PriceSpecification">
+<meta property="price" content="6">
+<meta property="priceCurrency" content="USD">
 <p property="description"><span class="phrase">supermen and supergirls get a discount of 10%&nbsp;+&nbsp;1%</span> <span class="phrase">for every heroic feat</span></p>
 <p property="disambiguatingDescription">students with strong learning ability can get 10% or more discounts, and students need to provide personal achievement materials to get preferential treatment</p>
+<table class="fish">
+<caption>summer discounts!</caption>
+  <tbody>
+    <tr>
+      <td>$12</td>
+      <td>1 hour</td>
+    </tr>
+    <tr>
+      <td>$9</td>
+      <td>10 hours</td>
+    </tr>
+    <tr>
+      <td>$6</td>
+      <td>20 hours</td>
+    </tr>
+  </tbody>
+</table>
 </div><!--END of class="price" style="text-align:center" -->
 </div><!--END of Offer-->
 <hr>
@@ -619,6 +698,7 @@ Tajik Tutor</a></li>
 </div>
 Main Menu</a></li>
 </ul>
+
 <ul class="rightLink">
 <li><a property="relatedLink" href="https://nakigoe.github.io/tutor/tajik.html" target="_blank">
 <div class="tajik">
@@ -628,11 +708,50 @@ Main Menu</a></li>
   layout="responsive"
   alt="Tajik Tutor"
   property="image" typeOf="ImageObject">
-  <meta property="url" content="https://nakigoe.github.io/_IMG/tajik.jpg">
   <meta property="caption" content="Tajik Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/tajik.jpg">
 </amp-img>
 </div>
-Tajik Tutor</a></li>
+Tajik</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/mandarin.html" target="_blank">
+<div class="mandarin">
+<amp-img src="https://nakigoe.github.io/_IMG/chinese.jpg"
+  width="520"
+  height="720"
+  layout="responsive"
+  alt="Mandarin Chinese Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Mandarin Chinese Tutor">
+</amp-img>
+</div>
+Mandarin</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/japanese.html" target="_blank">
+<div class="japanese">
+<amp-img src="https://nakigoe.github.io/_IMG/japanese.jpg"
+  width="1128"
+  height="2048"
+  layout="responsive"
+  alt="Japanese Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Japanese Tutor">
+</amp-img>
+</div>
+Japanese</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/english.html" target="_blank">
+<div class="english">
+<amp-img src="https://nakigoe.github.io/_IMG/british.jpg"
+  width="639"
+  height="1024"
+  layout="responsive"
+  alt="English Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="English Tutor">
+</amp-img>
+</div>
+English</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
