@@ -205,36 +205,50 @@ li small  {
 	margin-left:auto;
 	margin-top:.25em;
 	}
-.how {
+hr {display:block;
+	margin-top: 2.5em;
+	box-shadow: 0 0 .5em .1em white;
+	}
+table {
+	margin: 2em auto 1em;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 200;
+	font-size:1em;
+	letter-spacing:.02em;
+	}
+tbody {
+	text-align: left;
+	}
+caption {
+	width: 100%;
 	text-align: center;
-}
+	margin-bottom: 1em;
+	}
+td {
+	padding: .25em 1em;
+	}
+td:first-child{margin-right: 3em;}
 .price {
 	text-align: center;
-	margin-top: 2.5em;
+	margin-top: 1em;
 }
 .price p{
 	text-align: center;
 }
+.fish {
+	color: red;
+	}
 footer {
 	width:95%;
-	margin: 5.5em auto 0;
+	margin: 2.5em auto 0;
 	}
-.contacts {
-	margin: 1.65em auto;
-	max-width: 270px;
-	text-align: center;
-}
-.contacts p {
-	text-align: center;
-	margin-bottom: 1.65em;
-}
 #copyright{
-	margin: 1.65em auto;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
@@ -464,19 +478,48 @@ nav a {
 <section property="businessFunction" typeOf="BusinessFunction">
 	<h2 property="potentialAction" typeOf="DrawAction PaintAction"><span property="name">Digital Drawing and Painting</span></h2>
 </section>
-<h3>Apps:</h3>	
-  <ul class="list">
-    <li>Adobe Photoshop</li>
-    <li>Corel Draw</li>
-  </ul>
 <hr>
-<p class="how">Video-connection &amp; screen sharing, real-time online document (pdf)</p>
-<div class="price">
-<p>$15 / hour</p>
-<p><span class="phrase">supermen and supergirls get a discount of 10%&nbsp;+&nbsp;1%</span> <span class="phrase">for every heroic feat</span></p>
-<p>Students with strong learning ability can get 10% or more discounts, and students need to provide personal achievement materials to get preferential treatment.</p>
-</div>
-</div><!--End of WebPage property="text"-->
+<table>
+  <tbody>
+    <tr>
+      <td>$15</td>
+      <td>1 hour</td>
+    </tr>
+    <tr>
+      <td>$12.5</td>
+      <td>10 hours</td>
+    </tr>
+    <tr>
+      <td>$10</td>
+      <td>20 hours</td>
+    </tr>
+  </tbody>
+</table>
+<div class="price" property="priceSpecification" typeOf="PriceSpecification">
+<meta property="price" content="6">
+<meta property="priceCurrency" content="USD">
+<p property="description"><span class="phrase">supermen and supergirls get a discount of 10%&nbsp;+&nbsp;1%</span> <span class="phrase">for every heroic feat</span></p>
+<p property="disambiguatingDescription">students with strong learning ability can get 10% or more discounts, and students need to provide personal achievement materials to get preferential treatment</p>
+<table class="fish">
+<caption>summer discounts!</caption>
+  <tbody>
+    <tr>
+      <td>$12</td>
+      <td>1 hour</td>
+    </tr>
+    <tr>
+      <td>$9</td>
+      <td>10 hours</td>
+    </tr>
+    <tr>
+      <td>$6</td>
+      <td>20 hours</td>
+    </tr>
+  </tbody>
+</table>
+</div><!--END of class="price" style="text-align:center" -->
+</div><!--END of Offer-->
+<hr>
 </article>
 </main>
 <footer>
