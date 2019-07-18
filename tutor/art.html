@@ -22,14 +22,28 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1938 / 2740 ) + ( 799 / 999 ) ) 
+	   - 2.25em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff));
+	max-width: calc(( 1440 / 1018 ) * var(--restrict));
 }
-.connect {
-	min-width: calc((2048/2048)*20em);
+.director {
+	width: calc( ( 1938 / 2740 ) * var(--coeff));
+	max-width: calc( ( 1938 / 2740 ) * var(--restrict));
+}
+.actor {
+	width: calc( ( 799 / 999 ) * var(--coeff));
+	max-width: calc( ( 799 / 999 ) * var(--restrict));
 }
 #goddess {
 	max-width: 1280px;
@@ -46,18 +60,20 @@ body{
 	}
 nav {
 	margin: 0;
+	padding: 0;
 	background-color: #120000;
-	}
+}
 nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
-}
+} 
 nav li{
 	display:inline-block;
 	margin-bottom: 0.4em;
 	}
 nav a{
 	font-family: "Nunito Sans", sans-serif;
-	font-weight: 200;
+	font-weight: 300;
+	font-size: 80%;
 	}
 nav ul{
 	display: inline-block;
@@ -75,7 +91,6 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
 	font-family: 'Nunito Sans', sans-serif;
 	text-align: center;
-	font-size: calc(2em + 3.3334vmin);
 	padding-top: 0.8em;
 	padding-bottom: 0.8em;
 	letter-spacing: .12em;
@@ -104,6 +119,10 @@ h3 {
 	}
 ul, li {
 	list-style:none;
+	}
+nav ul, nav li {
+	margin: 0;
+	padding: 0;
 	}
 a  {
 	font-size: 1.6em;
@@ -138,9 +157,8 @@ a:active{
 	/*-----margin was .5em (experiment for different screens)-----*/
 }
 .alert:hover {
-        color: yellow;
+	color: yellow;
 	text-decoration: none;
-	padding: .2em .4em;
 	outline: 0;
 	white-space: nowrap;
 	border-radius: 1em;
@@ -178,14 +196,18 @@ a:active{
 	margin-left:1.5em;
 	line-height:1.5em;
 	}
-hr {display:block;
-	margin-top: 4em;
-	box-shadow: 0 0 .5em .1em white;
-	}
 small {
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
-}	
+}
+em {color:#fff;}
+	
+li small  {
+	font-size:0.65em;
+	color:#eee;
+	margin-left:auto;
+	margin-top:.25em;
+	}
 p {
 	line-height: 1.5;
 	text-align: justify;
@@ -196,15 +218,12 @@ p {
 	font-size:1em;
 	letter-spacing:.02em;
 	}
-em {color:#fff;}
-
-.articleHr {margin:2.25em 0 1em;}
-li small  {
-	font-size:0.65em;
-	color:#eee;
-	margin-left:auto;
-	margin-top:.25em;
-	}
+.headingAndComment {
+    display: flex;
+    justify-content: space-between;
+	align-items:baseline;
+	flex-wrap:nowrap;
+}
 hr {display:block;
 	margin-top: 2.5em;
 	box-shadow: 0 0 .5em .1em white;
@@ -292,7 +311,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -333,18 +352,77 @@ amp-social-share[type="telegram"]:hover {
 	border-bottom-left-radius: 0;
 	border-bottom-right-radius: 0;
 	width: 100%;
+	min-width: 100%;
 	box-shadow: 0 0 2em red;
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+
+@media only screen and (max-width:600px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
+		float: none;
+	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	.true, .director, .actor {
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
 	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
 }
-p, .list	{
+p, table, .list	{
 	font-size: 1em;
 	font-stretch: semi-condensed;
 	}
@@ -354,7 +432,7 @@ nav a {
 	}
 
 @media only screen and (min-width: 60em) {
-	p, .list {
+	p, table, .list {
 	font-size: 1.125em;
 	font-stretch: normal;
 	}
@@ -364,7 +442,7 @@ nav a {
 	}
 }
 @media only screen and (min-width: 120em) {
-	p, .list {
+	p, table, .list {
 	font-size: 1.375em;
 	font-stretch: semi-expanded;
 	}
@@ -392,22 +470,56 @@ nav a {
 }
 </script>
 </amp-analytics>
+<meta property="keywords" content="tutor,tutoring,teacher,teaching,online,Filming, Video,Photo, Shooting,Techniques, Body, Language, Evaluation, Facial, Action, Coding, System, F.A.C.S. , Face++, theory, Digital, Colour, Spaces,exam,preparation">
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html">Russian</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html">Tajik</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html">Japanese</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html">Mandarin</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html">English</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html">Math</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html">IT</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html">Life&nbsp;Science</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
+</ul>
+
+<ul class="rightLink">
+<li><a property="relatedLink" href="/services/director.html" target="_blank">
+<div class="director">
+<amp-img src="https://nakigoe.github.io/_IMG/director.jpg"
+  width="1938"
+  height="2740"
+  layout="responsive"
+  alt="Film Director"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Film Director">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/director.jpg">
+</amp-img>
+</div>
+Film&nbsp;Director</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/services/actor.html" target="_blank">
+<div class="actor">
+<amp-img src="https://nakigoe.github.io/_IMG/electra.jpg"
+  width="799"
+  height="999"
+  layout="responsive"
+  alt="Actor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Actor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/electra.jpg">
+</amp-img>
+</div>
+Actor</a></li>
 </ul>
 </nav>
 <main>
 <article>
-<meta property="keywords" content="tutor,tutoring,teacher,teaching,online,Filming, Video,Photo, Shooting,Techniques, Body, Language, Evaluation, Facial, Action, Coding, System, F.A.C.S. , Face++, theory, Digital, Colour, Spaces,exam,preparation">
 <header>
 <h1>Art Instructor</h1>
 </header>
@@ -517,20 +629,51 @@ nav a {
 	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/tutor/art.html"></amp-social-share>
 </div>
 </footer>
-<nav class="cf">
+<nav class="cf" about="#page">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/tutor/russian.html">Russian</a></li>
-<li><a href="https://nakigoe.github.io/tutor/tajik.html">Tajik</a></li>
-<li><a href="https://nakigoe.github.io/tutor/japanese.html">Japanese</a></li>
-<li><a href="https://nakigoe.github.io/tutor/mandarin.html">Mandarin</a></li>
-<li><a href="https://nakigoe.github.io/tutor/english.html">English</a></li>
-<li><a href="https://nakigoe.github.io/tutor/math.html">Math</a></li>
-<li><a href="https://nakigoe.github.io/tutor/it.html">IT</a></li>
-<li><a href="https://nakigoe.github.io/tutor/life.html">Life&nbsp;Science</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
+
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a property="relatedLink" href="/services/director.html" target="_blank">
+<div class="director">
+<amp-img src="https://nakigoe.github.io/_IMG/director.jpg"
+  width="1938"
+  height="2740"
+  layout="responsive"
+  alt="Film Director"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Film Director">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/director.jpg">
+</amp-img>
+</div>
+Film&nbsp;Director</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/services/actor.html" target="_blank">
+<div class="actor">
+<amp-img src="https://nakigoe.github.io/_IMG/electra.jpg"
+  width="799"
+  height="999"
+  layout="responsive"
+  alt="Actor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Actor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/electra.jpg">
+</amp-img>
+</div>
+Actor</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
