@@ -22,14 +22,40 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 720 ) + ( 1128 / 2048 ) + ( 639 / 1024 ) ) 
+	   - 2.3em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff));
+	max-width: calc(( 1440 / 1018 ) * var(--restrict));
 }
-.connect {
-	min-width: calc((2048/2048)*20em);
+.russian {
+	width: calc( ( 937 / 1170 ) * var(--coeff));
+	max-width: calc( ( 937 / 1170 ) * var(--restrict));
+}
+.tajik {
+	width: calc( ( 1080 / 1350 ) * var(--coeff));
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict));
+}
+.mandarin {
+	width: calc( ( 520 / 720 ) * var(--coeff));
+	max-width: calc(( 1080 / 1350 ) * var(--restrict));
+}
+.japanese {
+	width: calc( ( 1128 / 2048 ) * var(--coeff));
+	max-width: calc( ( 1128 / 2048 ) * var(--restrict));
+}
+.english {
+	width: calc( ( 639 / 1024 ) * var(--coeff));
+	max-width: calc( ( 639 / 1024 ) * var(--restrict));
 }
 #interpreter {
 	max-width: 3366px;
@@ -399,11 +425,90 @@ nav a {
 </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
+
 <ul class="rightLink">
-<li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/russian.html" target="_blank">
+<div class="russian">
+<amp-img src="https://nakigoe.github.io/_IMG/russian.jpg"
+  width="937"
+  height="1170"
+  layout="responsive"
+  alt="Russian Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Russian Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/russian.jpg">
+</amp-img>
+</div>
+Russian</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/tajik.html" target="_blank">
+<div class="tajik">
+<amp-img src="https://nakigoe.github.io/_IMG/tajik.jpg"
+  width="1080"
+  height="1350"
+  layout="responsive"
+  alt="Tajik Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Tajik Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/tajik.jpg">
+</amp-img>
+</div>
+Tajik</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/mandarin.html" target="_blank">
+<div class="mandarin">
+<amp-img src="https://nakigoe.github.io/_IMG/chinese.jpg"
+  width="520"
+  height="720"
+  layout="responsive"
+  alt="Mandarin Chinese Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Mandarin Chinese Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/chinese.jpg">
+</amp-img>
+</div>
+Mandarin</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/japanese.html" target="_blank">
+<div class="japanese">
+<amp-img src="https://nakigoe.github.io/_IMG/japanese.jpg"
+  width="1128"
+  height="2048"
+  layout="responsive"
+  alt="Japanese Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Japanese Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/japanese.jpg">
+</amp-img>
+</div>
+Japanese</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/english.html" target="_blank">
+<div class="english">
+<amp-img src="https://nakigoe.github.io/_IMG/british.jpg"
+  width="639"
+  height="1024"
+  layout="responsive"
+  alt="English Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="English Tutor">
+</amp-img>
+</div>
+English</a></li>
 </ul>
 </nav>
 
@@ -468,6 +573,7 @@ nav a {
 </main>
 
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
 <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -480,34 +586,103 @@ nav a {
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
-	    data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/services/translator-interpreter.html"></amp-social-share>
+	data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/services/translator-interpreter.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
-	    data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/services/translator-interpreter.html"></amp-social-share>
+	data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/services/translator-interpreter.html"></amp-social-share>
 	<amp-social-share width="60" height="60" type="livejournal" 
-	    data-share-endpoint="https://www.livejournal.com/update.bml?event=https://nakigoe.github.io/services/translator-interpreter.html"></amp-social-share>
+	data-share-endpoint="https://www.livejournal.com/update.bml?event=https://nakigoe.github.io/services/translator-interpreter.html"></amp-social-share>
 	<amp-social-share width="60" height="60" type="telegram" 
-	    data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/services/translator-interpreter.html"></amp-social-share>
+	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/services/translator-interpreter.html"></amp-social-share>
 </div>
-<div class="contacts">
-		<p>e-mail:</p>
-		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-		width="270"
-		height="50"
-		layout="intrinsic"
-		alt="nakigoe @ pm . me">
-		</amp-img>
-</div>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
 <nav class="cf">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/me/me.html">Me</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
+
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/russian.html" target="_blank">
+<div class="russian">
+<amp-img src="https://nakigoe.github.io/_IMG/russian.jpg"
+  width="937"
+  height="1170"
+  layout="responsive"
+  alt="Russian Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Russian Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/russian.jpg">
+</amp-img>
+</div>
+Russian</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/tajik.html" target="_blank">
+<div class="tajik">
+<amp-img src="https://nakigoe.github.io/_IMG/tajik.jpg"
+  width="1080"
+  height="1350"
+  layout="responsive"
+  alt="Tajik Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Tajik Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/tajik.jpg">
+</amp-img>
+</div>
+Tajik</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/mandarin.html" target="_blank">
+<div class="mandarin">
+<amp-img src="https://nakigoe.github.io/_IMG/chinese.jpg"
+  width="520"
+  height="720"
+  layout="responsive"
+  alt="Mandarin Chinese Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Mandarin Chinese Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/chinese.jpg">
+</amp-img>
+</div>
+Mandarin</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/japanese.html" target="_blank">
+<div class="japanese">
+<amp-img src="https://nakigoe.github.io/_IMG/japanese.jpg"
+  width="1128"
+  height="2048"
+  layout="responsive"
+  alt="Japanese Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Japanese Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/japanese.jpg">
+</amp-img>
+</div>
+Japanese</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/english.html" target="_blank">
+<div class="english">
+<amp-img src="https://nakigoe.github.io/_IMG/british.jpg"
+  width="639"
+  height="1024"
+  layout="responsive"
+  alt="English Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="English Tutor">
+</amp-img>
+</div>
+English</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
