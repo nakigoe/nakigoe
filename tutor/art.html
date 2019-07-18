@@ -25,7 +25,7 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) + ( 1938 / 2740 ) + ( 799 / 999 ) ) 
+	  ( ( 1440 / 1018 ) + ( 1938 / 2740 ) + ( 799 / 999 ) )
 	   - 2.2em
   	);
   --restrict: 24em;
@@ -454,7 +454,7 @@ nav a {
 </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="WebPage">
+<body vocab="http://schema.org/" typeof="WebPage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -518,12 +518,21 @@ Film&nbsp;Director</a></li>
 Actor</a></li>
 </ul>
 </nav>
-<main>
+<main property="mainEntity" typeOf="LocalBusiness">
+<meta property="priceRange" content="$5">
+<meta property="url" content="https://nakigoe.github.io/tutor/art.html">
+<meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
+<meta property="areaServed" content="Global">
+<meta property="address" content="Russia, Polazna">
+<meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
+<meta property="logo" content="https://nakigoe.github.io/_IMG/icon.png">
+<meta property="image" content="https://nakigoe.github.io/_IMG/goddess.jpg">
+
 <article>
 <header>
-<h1>Art Instructor</h1>
+<h1 property="name">Art Instructor</h1>
 </header>
-<div id="goddess">
+<div id="goddess" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/goddess.jpg"
   width="1280"
   height="1810"
@@ -532,21 +541,31 @@ Actor</a></li>
   property="primaryImageOfPage" typeOf="ImageObject">
   <meta property="representativeOfPage" content="True">
   <meta property="caption" content="Art: Film Director">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/goddess.jpg">
 </amp-img>
 </div>
-<div property="text">
-<h2>Filming</h2>
+<header class="headingAndComment">
+<h2 property="description">Education Activities</h2>
+<small>ISICv4&nbsp;<span property="isicV4">8549</span></small>
+</header>
+<div property="makesOffer" typeOf="Offer">
+<div property="itemOffered" typeOf="Service">
+<meta property="name" content="Art Lessons">
+<meta property="description" content="Video-connection &amp; screen sharing, real-time online document.">
+<meta property="serviceType" content="Online Tutor">
+</div>
+<h2 property="name">Filming</h2>
 <ul class="list">
-	<li>Video and Photo Shooting Theory and Techniques</li>
-	<li>Facial Action and Body Language Evaluation</li>
-	<li>Digital Colour Theory, Digital Colour Spaces</li>
-	<li>Facial Action Coding System (F.A.C.S.)</li>
-	<li>Face plus plus (Face++)</li>
+	<li property="description">Video and Photo Shooting Theory and Techniques</li>
+	<li property="description">Facial Action and Body Language Evaluation</li>
+	<li property="description">Digital Colour Theory, Digital Colour Spaces</li>
+	<li property="description">Facial Action Coding System (F.A.C.S.)</li>
+	<li property="description">Face plus plus (Face++)</li>
 </ul>
-<h2>Drawing and Painting</h2>
+<h2 property="name">Drawing and Painting</h2>
 <ul class="list">
-	<li>Composition</li>
-	<li>Colour Theory</li>
+	<li property="description">Composition</li>
+	<li property="description">Colour Theory</li>
 </ul>
 <section property="businessFunction" typeOf="BusinessFunction">
 	<meta property="name" content="Calligraphy">
@@ -684,6 +703,7 @@ Actor</a></li>
   alt="Lovely Me"
   property="image" typeOf="ImageObject">
   <meta property="caption" content="Lovely Me">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/love.jpg">
 </amp-img>
 </div>
 Lovely&nbsp;Me</a>
