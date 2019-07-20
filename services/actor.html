@@ -22,14 +22,24 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1938 / 2740 ) ) 
+	   - 2.1em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
-.connect {
-	min-width: calc((2048/2048)*20em);
+.director {
+	width: calc( ( 1938 / 2740 ) * var(--coeff) );
+	max-width: calc( ( 1938 / 2740 ) * var(--restrict) );
 }
 #electra {
 	max-width: 799px;
@@ -394,12 +404,36 @@ nav a {
 }
 </script>
 </amp-analytics>
-<nav id="topNav">
-<ul class="cf">
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
+<nav id="topNav" class="cf">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a property="significantLink" href="/services/director.html" title="Film Director">Director</a></li>
+<li><a property="relatedLink" href="/services/director.html" target="_blank">
+<div class="director">
+<amp-img src="https://nakigoe.github.io/_IMG/director.jpg"
+  width="1938"
+  height="2740"
+  layout="responsive"
+  alt="Film Director"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Film Director">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/director.jpg">
+</amp-img>
+</div>
+Film&nbsp;Director</a></li>
 </ul>
 </nav>
 
@@ -477,6 +511,7 @@ nav a {
 </main>
 
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
 <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -484,56 +519,52 @@ nav a {
     data-param-app_id="272325784911610"></amp-social-share>
     <amp-social-share width="60" height="60" type="linkedin"></amp-social-share>
     <amp-social-share width="60" height="60" type="pinterest"
-    data-param-media="https://nakigoe.github.io/_IMG/light.png"></amp-social-share>
+    data-param-media="https://nakigoe.github.io/_IMG/electra.jpg"></amp-social-share>
     <amp-social-share width="60" height="60" type="tumblr"></amp-social-share>
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
-	    data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/services/computer.html"></amp-social-share>
+	data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/services/computer.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
-	    data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/services/computer.html"></amp-social-share>
+	data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/services/computer.html"></amp-social-share>
 	<amp-social-share width="60" height="60" type="livejournal" 
-	    data-share-endpoint="https://www.livejournal.com/update.bml?event=https://nakigoe.github.io/services/computer.html"></amp-social-share>
+	data-share-endpoint="https://www.livejournal.com/update.bml?event=https://nakigoe.github.io/services/computer.html"></amp-social-share>
 	<amp-social-share width="60" height="60" type="telegram" 
-	    data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/services/computer.html"></amp-social-share>
+	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/services/computer.html"></amp-social-share>
 </div>
-<div class="contacts">
-		<p>e-mail:</p>
-		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-		width="270"
-		height="50"
-		layout="intrinsic"
-		alt="nakigoe @ pm . me">
-		</amp-img>
-</div>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
 <nav class="cf">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a href="https://nakigoe.github.io/tutor/life.html">Life&nbsp;Science</a></li>
-<li><a href="https://nakigoe.github.io/tutor/art.html">Art</a></li>
-<li><a href="https://nakigoe.github.io/tutor/russian.html">Russian</a></li>
-<li><a href="https://nakigoe.github.io/tutor/tajik.html">Tajik</a></li>
-<li><a href="https://nakigoe.github.io/tutor/japanese.html">Japanese</a></li>
-<li><a href="https://nakigoe.github.io/tutor/mandarin.html">Mandarin</a></li>
-<li><a href="https://nakigoe.github.io/tutor/english.html">English</a></li>
-<li><a href="https://nakigoe.github.io/tutor/math.html">Math</a></li>
-<li><a href="https://nakigoe.github.io/tutor/it.html">IT</a></li>
-</ul>
-<ul>
-<li><a href="https://nakigoe.github.io/services/developer.html" title="Web Programmer">Developer</a></li>
-<li><a href="https://nakigoe.github.io/services/computer.html" title="Computer Services">Computer&nbsp;Service</a></li>
-<li><a href="https://nakigoe.github.io/services/light.html" title="Electrical Installation">Electra</a></li>
-</ul>
-<ul>
-	<li><a href="/services/director.html" title="Film Director">Director</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a property="relatedLink" href="/services/director.html" target="_blank">
+<div class="director">
+<amp-img src="https://nakigoe.github.io/_IMG/director.jpg"
+  width="1938"
+  height="2740"
+  layout="responsive"
+  alt="Film Director"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Film Director">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/director.jpg">
+</amp-img>
+</div>
+Film&nbsp;Director</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
