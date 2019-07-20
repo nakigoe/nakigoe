@@ -22,14 +22,24 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 799 / 999 ) ) 
+	   - 2.1em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
-.connect {
-	min-width: calc((2048/2048)*20em);
+.electra {
+	width: calc( ( 799 / 999 ) * var(--coeff) );
+	max-width: calc( ( 799 / 999 ) * var(--restrict) );
 }
 #director {
 	max-width: 1938px;
@@ -134,39 +144,39 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-	.alert {
-		color: #FF6600;
-        background-color: #1a0000;
-        box-shadow: 0 0 .5em red;
-        background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
-		/*-----margin was .5em (experiment for different screens)-----*/
+.alert {
+	color: #FF6600;
+	background-color: #1a0000;
+	box-shadow: 0 0 .5em red;
+	background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
 	}
-	.alert:hover {
-        color: yellow;
-        text-decoration: none;
-        padding: .2em .4em;
-        outline: 0;
-        white-space: nowrap;
-        border-radius: 1em;
-        text-shadow: 0 0 1em red;
-        box-shadow: 0 0 2em red;
-        background-color: #500;
-        background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+.alert:hover {
+	color: yellow;
+	text-decoration: none;
+	padding: .2em .4em;
+	outline: 0;
+	white-space: nowrap;
+	border-radius: 1em;
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em red;
+	background-color: #500;
+	background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
 	}
 .rightLink {
 	float: right;
-}
+	}
 .cf:before,
 .cf:after {
     content: ""; 
     display: table; 
-}
+	}
 .cf:after {
     clear: both;
-}
+	}
 .cf {
     zoom: 1;
-}
+	}
 .link {
 	display:inline;
 	margin:0;
@@ -217,36 +227,17 @@ li small  {
 	align-items:baseline;
 	flex-wrap:nowrap;
 }
-.how {
-	text-align: center;
-}
-.price {
-	text-align: center;
-	margin-top: 2.5em;
-}
-.price p, .contacts p{
-	text-align: center;
-}
 footer {
 	width:95%;
 	margin: 5.5em auto 0;
 	}
-.contacts {
-	margin: 1.65em auto;
-	max-width: 270px;
-	text-align: center;
-}
-.contacts p {
-	text-align: center;
-	margin-bottom: 1.65em;
-}
 #copyright{
-	margin: 1.65em auto;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social p {
@@ -266,7 +257,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -291,7 +281,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -340,6 +330,65 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+
+@media only screen and (max-width:600px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
+		float: none;
+	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	}
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	.true, .electra {
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
@@ -378,7 +427,7 @@ nav a {
 </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="ProfilePage">
+<body vocab="http://schema.org/" typeof="ProfilePage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -396,10 +445,34 @@ nav a {
 </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
-<ul>
-	<li><a property="significantLink" href="https://nakigoe.github.io/services/actor.html" title="Actor">Actor</a></li>
+<ul class="rightLink">
+<li><a property="relatedLink" href="https://nakigoe.github.io/services/actor.html" target="_blank">
+<div class="electra">
+<amp-img src="https://nakigoe.github.io/_IMG/electra.jpg"
+  width="799"
+  height="999"
+  layout="responsive"
+  alt="Actor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Actor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/electra.jpg">
+</amp-img>
+</div>
+Actor</a></li>
 </ul>
 </nav>
 
@@ -496,13 +569,36 @@ nav a {
 	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/services/filming.html"></amp-social-share>
 </div>
 </footer>
-<nav class="cf">
+<nav class="cf" about="#page">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/services/actor.html" title="Actor">Actor</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/services/actor.html" target="_blank">
+<div class="electra">
+<amp-img src="https://nakigoe.github.io/_IMG/electra.jpg"
+  width="799"
+  height="999"
+  layout="responsive"
+  alt="Actor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Actor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/electra.jpg">
+</amp-img>
+</div>
+Actor</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
