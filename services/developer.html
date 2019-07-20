@@ -22,14 +22,32 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 700 / 880 ) + ( 1756 / 2184 ) + ( 930 / 1345 ) ) 
+	   - 2.3em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff));
+	max-width: calc(( 1440 / 1018 ) * var(--restrict));
 }
-.connect {
-	min-width: calc((2048/2048)*20em);
+.a2 {
+	width: calc( ( 700 / 880 ) * var(--coeff));
+	max-width: calc( ( 700 / 880 ) * var(--restrict));
+}
+.group {
+	width: calc( ( 1756 / 2184 ) * var(--coeff));
+	max-width: calc( ( 1756 / 2184 ) * var(--restrict));
+}
+.it {
+	width: calc( ( 930 / 1345 ) * var(--coeff));
+	max-width: calc( ( 930 / 1345 ) * var(--restrict));
 }
 #developer {
 	max-width: 2560px;
@@ -341,6 +359,65 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+
+@media only screen and (max-width:800px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
+		float: none;
+	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	.true, .a2, .group, .it {
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
@@ -397,37 +474,78 @@ nav a {
 </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html">Life&nbsp;Science</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html">Art</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html">Russian</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html">Tajik</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html">Japanese</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html">Mandarin</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html">English</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html">Math</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
-<ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/services/computer.html" title="Computer Services">Computer&nbsp;Service</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/services/light.html" title="Electrical Installation">Electra</a></li>
-</ul>
-<ul>
-	<li><a property="significantLink" href="/services/director.html" title="Film Director">Director</a></li>
-	<li><a property="significantLink" href="https://nakigoe.github.io/services/actor.html" title="Actor">Actor</a></li>
-</ul>
+
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/services/computer.html" target="_blank">
+<div class="a2">
+<amp-img src="https://nakigoe.github.io/_IMG/a2.jpg"
+  width="700"
+  height="880"
+  layout="responsive"
+  alt="Computer Service"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Computer Service">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/a2.jpg">
+</amp-img>
+</div>
+Computer</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/math.html" target="_blank">
+<div class="group">
+<amp-img src="https://nakigoe.github.io/_IMG/groupmath.jpg"
+  width="1756"
+  height="2184"
+  layout="responsive"
+  alt="Math Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Math Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/groupmath.jpg">
+</amp-img>
+</div>
+Math</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/it.html" target="_blank">
+<div class="it">
+<amp-img src="https://nakigoe.github.io/_IMG/it.jpg"
+  width="930"
+  height="1345"
+  layout="responsive"
+  alt="Computer Science Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Computer Science Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/it.jpg">
+</amp-img>
+</div>
+Science</a></li>
 </ul>
 </nav>
 
-<main>
+<main property="mainEntity" typeOf="LocalBusiness">
+<meta property="priceRange" content="$">
+<meta property="url" content="https://nakigoe.github.io/services/developer.html">
+<meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
+<meta property="areaServed" content="Global">
+<meta property="address" content="Russia, Polazna">
+<meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
+<meta property="logo" content="https://nakigoe.github.io/_IMG/icon.png">
+<meta property="image" content="https://nakigoe.github.io/_IMG/developer.jpg">
 <article>
-<header property="mainEntity" typeOf="Person" resource="#me">
-<meta property="name" content="Nakigoe" about="#me">
-<meta property="url" content="https://nakigoe.github.io" about="#me">
-<h1 property="description" about="#me">Front&#8209;End&nbsp;Developer</h1>
+<header>
+<h1 property="name">Front&#8209;End&nbsp;Developer</h1>
 </header>
 <div id="developer">
 <amp-img src="https://nakigoe.github.io/_IMG/developer.jpg"
@@ -438,23 +556,22 @@ nav a {
   property="primaryImageOfPage" typeOf="ImageObject">
   <meta property="representativeOfPage" content="True">
   <meta property="caption" content="Front-End Developer">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/developer.jpg">
 </amp-img>
 </div>
 
-<div property="text">
-<div about="#me">
+<header class="headingAndComment">
+<h2 property="description">Computer Programming</h2>
+<small>ISICv4&nbsp;<span property="isicV4">6201</span></small>
+</header>
+
 <div property="makesOffer" typeOf="Offer">
 <meta property="name" content="Website Development">
 <meta property="description" content="Supreme Web-Development">
-<section>
-<header class="headingAndComment" resource="#programming" property="businessFunction" typeOf="BusinessFunction">
-<h2 property="name" about="#programming">Computer Programming</h2>
-<small>ISICv4&nbsp;<span about="#me" property="isicV4">6201</span></small>
-</header>
 <ul class="list" property="description" about="#programming">
 	<li>designing the structure and content of, and writing the computer code necessary to create and implement web pages</li>
 </ul>
-</section>
+
 <h2 property="alternateName" about="#programming">Web-Design</h2>
   <ul class="list" about="#programming" property="disambiguatingDescription">
 	<li>Website Deployment on Proper Platforms and Providers</li>
@@ -508,16 +625,24 @@ nav a {
             <li property="instrument" about="#developer">Keyboard Layout Creator (creating new keyboard layouts install packages)</li>
             <li property="instrument" about="#developer">AutoHotkey (advanced typing programming)</li>
             <li property="instrument" about="#developer">Emmet (automated abbreviation expansion for writing HTML)</li>
-            <li property="instrument" about="#developer">Touch-Typing 300 hpm</li>
+            <li property="description" about="#developer">Touch-Typing 300 hpm</li>
 		</ul>
 	</section>
 </div>
-</div><!--End of Person property="Offer"-->
-</div><!--End of WebPage property="text"-->
 </article>
 </main>
 
 <footer>
+<div class="contacts">
+		<p>e-mail:</p>
+		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
+		width="270"
+		height="50"
+		layout="intrinsic"
+		alt="nakigoe @ pm . me">
+		</amp-img>
+</div>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
 <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -530,51 +655,76 @@ nav a {
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
-	    data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/services/developer.html"></amp-social-share>
+	data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/services/developer.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
-	    data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/services/developer.html"></amp-social-share>
+	data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/services/developer.html"></amp-social-share>
 	<amp-social-share width="60" height="60" type="livejournal" 
-	    data-share-endpoint="https://www.livejournal.com/update.bml?event=https://nakigoe.github.io/services/developer.html"></amp-social-share>
+	data-share-endpoint="https://www.livejournal.com/update.bml?event=https://nakigoe.github.io/services/developer.html"></amp-social-share>
 	<amp-social-share width="60" height="60" type="telegram" 
-	    data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/services/developer.html"></amp-social-share>
+	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/services/developer.html"></amp-social-share>
 </div>
-<div class="contacts">
-		<p>e-mail:</p>
-		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
-		width="270"
-		height="50"
-		layout="intrinsic"
-		alt="nakigoe @ pm . me">
-		</amp-img>
-</div>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
-<nav class="cf">
+<nav class="cf" about="#page">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/me/me.html">Me</a></li>
-<li><a href="https://nakigoe.github.io/tutor/life.html">Life&nbsp;Science</a></li>
-<li><a href="https://nakigoe.github.io/tutor/art.html">Art</a></li>
-<li><a href="https://nakigoe.github.io/tutor/russian.html">Russian</a></li>
-<li><a href="https://nakigoe.github.io/tutor/tajik.html">Tajik</a></li>
-<li><a href="https://nakigoe.github.io/tutor/japanese.html">Japanese</a></li>
-<li><a href="https://nakigoe.github.io/tutor/mandarin.html">Mandarin</a></li>
-<li><a href="https://nakigoe.github.io/tutor/english.html">English</a></li>
-<li><a href="https://nakigoe.github.io/tutor/math.html">Math</a></li>
-<li><a href="https://nakigoe.github.io/tutor/it.html">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
-<ul>
-<li><a href="https://nakigoe.github.io/services/computer.html" title="Computer Services">Computer&nbsp;Service</a></li>
-<li><a href="https://nakigoe.github.io/services/light.html" title="Electrical Installation">Electra</a></li>
-</ul>
-<ul>
-	<li><a href="/services/director.html" title="Film Director">Director</a></li>
-	<li><a href="https://nakigoe.github.io/services/actor.html" title="Actor">Actor</a></li>
-</ul>
+
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/services/computer.html" target="_blank">
+<div class="a2">
+<amp-img src="https://nakigoe.github.io/_IMG/a2.jpg"
+  width="700"
+  height="880"
+  layout="responsive"
+  alt="Computer Service"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Computer Service">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/a2.jpg">
+</amp-img>
+</div>
+Computer</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/math.html" target="_blank">
+<div class="group">
+<amp-img src="https://nakigoe.github.io/_IMG/groupmath.jpg"
+  width="1756"
+  height="2184"
+  layout="responsive"
+  alt="Math Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Math Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/groupmath.jpg">
+</amp-img>
+</div>
+Math</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/tutor/it.html" target="_blank">
+<div class="it">
+<amp-img src="https://nakigoe.github.io/_IMG/it.jpg"
+  width="930"
+  height="1345"
+  layout="responsive"
+  alt="Computer Science Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Computer Science Tutor">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/it.jpg">
+</amp-img>
+</div>
+Science</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
@@ -585,6 +735,7 @@ nav a {
   alt="Lovely Me"
   property="image" typeOf="ImageObject">
   <meta property="caption" content="Lovely Me">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/love.jpg">
 </amp-img>
 </div>
 Lovely&nbsp;Me</a>
