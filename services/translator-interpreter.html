@@ -26,7 +26,7 @@
   --coeff: calc( 
 	  100vw / 
 	  ( ( 1440 / 1018 ) + ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 720 ) + ( 1128 / 2048 ) + ( 639 / 1024 ) ) 
-	   - 2.3em
+	   - 2.34em
   	);
   --restrict: 24em;
 }
@@ -368,6 +368,65 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+	
+@media only screen and (max-width:960px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
+		float: none;
+	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	.true, .russian, .tajik, .mandarin, .japanese, .english{
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
