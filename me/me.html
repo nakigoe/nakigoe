@@ -23,46 +23,58 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1080 / 1350 ) + ( 800 / 1350 ) + ( 894 / 1336 ) + ( 1080 / 1349 ) + ( 916 / 1350 ) + ( 1080 / 1309 ) ) 
+	   - 2.6em
+  	);
+  --coeff2: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 2048 / 2048 ) ) 
+	   - 2.2em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+		width: calc( ( 1440 / 1018 ) * var(--coeff2) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict));
 }
 .connect {
-	min-width: calc((2048/2048)*20em);
+		width: calc( ( 2048 / 2048 ) * var(--coeff2) );
+	max-width: calc( ( 2048 / 2048 ) * var(--restrict) );
+}
+#caution {
+		width: calc( ( 1080 / 1350 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
+}
+#projects {
+		width: calc( ( 800 / 1350 ) * var(--coeff) );
+	max-width: calc( ( 800 / 1350 ) * var(--restrict) );
+}
+#dreams {
+		width: calc( ( 894 / 1336 ) * var(--coeff) );
+	max-width: calc( ( 894 / 1336 ) * var(--restrict) );
+}
+#equip {
+		width: calc( ( 1080 / 1349 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1349 ) * var(--restrict) );
+}
+#current {
+		width: calc( ( 916 / 1350 ) * var(--coeff) );
+	max-width: calc( ( 916 / 1350 ) * var(--restrict) );
+}
+#mary {
+		width: calc( ( 1080 / 1309 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1309 ) * var(--restrict) );
 }
 #front {
 	max-width: 2118px;
 	margin: 0 auto;
 	}
-#projects {
-	min-width: calc((800/1350)*20em);
-}
-#dreams {
-	min-width: calc((894/1336)*20em);
-}
-#equip {
-	min-width: calc((1080/1349)*20em);
-}
-#current {
-	min-width: calc((916/1350)*20em);
-}
-#mary {
-	min-width: calc((1080/1309)*20em);
-}
-#connect {
-	min-width: calc((2048/2048)*20em);
-}
-/* #true {
-	max-width: 1440px; 
-	margin: 0 auto;
-	
-	} */
-a amp-img {
-	margin-top: .2em;
-	}
-	/*change to class if necessary to target different images*/
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -76,8 +88,9 @@ nav {
 	margin: 0;
 	background-color: #120000;
 	}
-nav .rightLink {
-	margin-right: .75em;/*temporary draft*/
+.rightLink {
+	float: right;
+	margin-right: 0.75em;
 }
 nav a{
 	font-family: "Nunito Sans", sans-serif;
@@ -184,10 +197,6 @@ a:active{
 	box-shadow: 0 0 2em red;
 	background-color: #500;
 	background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
-}
-.rightLink {
-	float: right;
-	margin-right: 0.75em;/*temporary draft*/
 }
 /* clear float*/
 .cf:before,
@@ -358,34 +367,67 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-#true {
-	min-width: calc((1440/1018)*20em);
-}
-#caution {
-	min-width: calc((1080/1350)*20em);
-}
-@media only screen and (max-width:540px) {
-	main {width: 100%;}
-	footer{width: 95%;}
-	h2 {margin-left: .4em;}
-	.rightLink:not(#topNav .rightLink){
+
+@media only screen and (max-width:800px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
 		float: none;
 	}
-	#projects, #dreams, #true, #connect, #mary, #equip, #current {
-		min-width: 85vmin;
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	#caution, #projects, #dreams, #mary, #equip, #current {
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 80%;
 		margin-left: auto;
-		margin-right: auto;
+		margin-right: auto;	
+	}	
 	}
-	#me {
-		min-width: 100%;
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
 	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, hr {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
 	}
-@media only screen and (max-width:720px) {
-	main {width:90%;}
-	footer {width:90%;}
-	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
-	font-size: 10vmin;
+	font-size: calc(2em + 3.3334vmin);
 }
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
@@ -588,7 +630,7 @@ Projects</a></li>
   <meta property="caption" content="Current Projects Overview">
 </amp-img>
 </div>
-Current Insider</a></li>
+Insider</a></li>
 
 <li><a property="relatedLink" href="https://nakigoe.github.io/me/equip.html">
 <div id="equip">
@@ -601,9 +643,10 @@ Current Insider</a></li>
   <meta property="caption" content="Equip Me for Battle">
 </amp-img>
 </div>
-Equipment&nbsp;Wanted</a></li>
-
-<li class="rightLink"><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">
+Equips</a></li>
+</ul>
+<ul class="rightLink">
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">
 <div id="mary">
 <amp-img src="https://nakigoe.github.io/_IMG/mary.png"
   width="1080"
@@ -622,7 +665,7 @@ Please&nbsp;Help</a></li>
 <meta property="honorificPrefix" content="God" about="#me">
 <meta property="name" content="Nakigoe" about="#me">
 <header>
-	<h1 property="description" about="#me">Lovely Me<br> <span class="phrase">Angel Sweat, Blood, and Tears</span></h1>
+	<h1 property="description" about="#me">Lovely Me<br> <span class="phrase">Angel Sweat,&nbsp;Blood,&nbsp;and&nbsp;Tears</span></h1>
 </header>
 
 <section id="personality">
@@ -707,7 +750,7 @@ Please&nbsp;Help</a></li>
 <nav class="cf" about="#nakigoe">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/">
-<div id="true">
+<div class="true">
 <amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
   width="1440"
   height="1018"
@@ -721,7 +764,7 @@ Main Menu</a></li>
 </ul>
 <ul class="rightLink">
 <li><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/connect.html" title="e-mail about preferred time (and time-zone)">
-<div id="connect">
+<div class="connect">
 <amp-img src="https://nakigoe.github.io/_IMG/connect.jpg"
   width="2048"
   height="2048"
@@ -731,7 +774,7 @@ Main Menu</a></li>
   <meta property="caption" content="Contact Me">
 </amp-img>
 </div>
-video&#8209;chat</a></li>
+Video&#8209;Chat</a></li>
 </ul>
 </nav>
 </body>
