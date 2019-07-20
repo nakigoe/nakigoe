@@ -295,7 +295,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -320,7 +319,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -512,14 +511,20 @@ English</a></li>
 </ul>
 </nav>
 
-<main>
+<main property="mainEntity" typeOf="LocalBusiness">
+<meta property="priceRange" content="$5">
+<meta property="url" content="https://nakigoe.github.io/services/translator-interpreter.html">
+<meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
+<meta property="areaServed" content="Global">
+<meta property="address" content="Russia, Polazna">
+<meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
+<meta property="logo" content="https://nakigoe.github.io/_IMG/icon.png">
+<meta property="image" content="https://nakigoe.github.io/_IMG/interpreter.jpg">
 <article>
-<header property="mainEntity" typeOf="Person" resource="#me">
-<meta property="name" content="Nakigoe" about="#me">
-<meta property="url" content="https://nakigoe.github.io" about="#me">
-<h1 property="description" about="#me">Translator&nbsp;&amp; Interpreter</h1>
+<header>
+<h1 property="name">Translator&nbsp;&amp; Interpreter</h1>
 </header>
-<div id="interpreter">
+<div id="interpreter" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/interpreter.jpg"
   width="3366"
   height="1650"
@@ -528,32 +533,31 @@ English</a></li>
   property="primaryImageOfPage" typeOf="ImageObject">
   <meta property="representativeOfPage" content="True">
   <meta property="caption" content="Interpreter">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/interpreter.jpg">
 </amp-img>
 </div>
 
-<div property="text">
-<div about="#me">
-<div property="makesOffer" typeOf="Offer">
-<meta property="name" content="Translation and Interpretation">
-<meta property="description" content="English, Russian, Tajik, Japanese, and Mandarin Chinese">
-   
-<section>
-<header class="headingAndComment" property="businessFunction" typeOf="BusinessFunction" resource="#translation">
-<h2 property="name">Translation and Interpretation</h2>
-<small>ISICv4&nbsp;<span about="#me" property="isicV4">7490</span></small>
+<header class="headingAndComment">
+<h2 property="description">Translation and Interpretation</h2>
+<small>ISICv4&nbsp;<span property="isicV4">7490</span></small>
 </header>
-<div about="#translation">
-<ul class="list" property="potentialAction" typeof="WriteAction">
-<meta property="name" content="translation and interpretation">
-<meta property="description" content="awesome">
+
+<div property="makesOffer" typeOf="Offer">
+<div property="itemOffered" typeOf="Service">
+<meta property="name" content="Translation and Interpretation">
+<meta property="description" content="Video-connection &amp; screen sharing, real-time online document.">
+<meta property="serviceType" content="Online Translation and Interpretation">
+</div>
+
+<ul class="list" property="potentialAction" typeof="WriteAction" resource="#translation">
+<meta property="name" content="awesome translation and interpretation">
 	<li property="inLanguage">English</li>
 	<li property="inLanguage">Russian</li>
 	<li property="inLanguage">Tajik</li>
 	<li property="inLanguage">Japanese</li>
 	<li property="inLanguage">Mandarin Chinese</li>
 </ul>
-</div>
-</section>
+
 <div id="translator" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/translator.jpg"
   width="2560"
@@ -563,12 +567,11 @@ English</a></li>
   property="primaryImageOfPage" typeOf="ImageObject">
   <meta property="representativeOfPage" content="True">
   <meta property="caption" content="Translator">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/translator.jpg">
 </amp-img>
 <p property="description" about="#translation">Touch-Typing 300 hpm</p>
 </div>
 </div><!--End of Person property="Offer"-->
-</div><!--End of reference to the Person about="#me"-->
-</div><!--End of WebPage property="text"-->
 </article>
 </main>
 
@@ -581,7 +584,7 @@ English</a></li>
     data-param-app_id="272325784911610"></amp-social-share>
     <amp-social-share width="60" height="60" type="linkedin"></amp-social-share>
     <amp-social-share width="60" height="60" type="pinterest"
-    data-param-media="https://nakigoe.github.io/_IMG/assembly.png"></amp-social-share>
+    data-param-media="https://nakigoe.github.io/_IMG/translator.jpg"></amp-social-share>
     <amp-social-share width="60" height="60" type="tumblr"></amp-social-share>
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
