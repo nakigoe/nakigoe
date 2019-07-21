@@ -511,15 +511,21 @@ Computer Science</a></li>
 </ul>
 </nav>
 
-<main>
+<main property="mainEntity" typeOf="LocalBusiness" resource="#business">
+<meta property="priceRange" content="$">
+<meta property="url" content="https://nakigoe.github.io/services/computer.html">
+<meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
+<meta property="areaServed" content="Global">
+<meta property="address" content="Russia, Polazna">
+<meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
+<meta property="logo" content="https://nakigoe.github.io/_IMG/icon.png">
+<meta property="image" content="https://nakigoe.github.io/_IMG/a2.jpg">
 <article>
-<header property="mainEntity" typeOf="Person" resource="#me">
-<meta property="name" content="Nakigoe" about="#me">
-<meta property="url" content="https://nakigoe.github.io" about="#me">
-<h1 property="description" about="#me">Computer Service</h1>
+<header>
+<h1 property="name">Computer Service</h1>
 </header>
 
-<div id="real">
+<div id="real" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/real.jpg"
   width="960"
   height="725"
@@ -531,22 +537,20 @@ Computer Science</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/real.jpg">
 </amp-img>
 </div>
-<div property="text">
-<div about="#me" property="makesOffer" typeOf="Offer" resource="#o">
-<meta property="name" content="Computer Upgrades and Tune-Up" about="#o">
-<meta property="description" content="Supreme Computer Resurrection" about="#o">
-<section>
-    <header class="headingAndComment" resource="#computer" property="businessFunction" typeOf="BusinessFunction" about="#o">
-	<h3 property="name" about="#computer">Computer Service</h3>
-    <small>ISICv4&nbsp;<span about="#me" property="isicV4">6209</span></small>
-    </header>
-	<ul class="list">
-        <li property="description" about="#computer">computer disaster recovery</li>
-        <li property="description" about="#computer">installation (setting-up) of personal computers</li>
-        <li property="description" about="#computer">software installation</li>
-    </ul>
-    </section>
-<div id="a2">
+
+<header class="headingAndComment">
+<h2 property="description">Computer Service</h2>
+<small>ISICv4&nbsp;<span property="isicV4">6209</span></small>
+</header>
+
+<div property="makesOffer" typeOf="Offer">
+<ul class="list">
+	<li property="description">computer disaster recovery</li>
+	<li property="description">installation (setting-up) of personal computers</li>
+	<li property="description">software installation</li>
+</ul>
+
+<div id="a2" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/a2.jpg"
   width="700"
   height="880"
@@ -558,17 +562,20 @@ Computer Science</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/a2.jpg">
 </amp-img>
 </div>
-    <section>
-    <header class="headingAndComment" resource="#computersrepair" property="businessFunction" typeOf="BusinessFunction" about="#o">
-    <h3 property="name" about="#computersrepair">Repair of Computers</h3>
-	<small>ISICv4&nbsp;<span about="#me" property="isicV4">9511</span></small>
-    </header>
-    <ul class="list">
-        <li property="description" about="#computersrepair">repair and maintenance of desktop computers</li>
-    </ul>
-    </section>
-</div><!--End of Person property="Offer"-->
-</div><!--End of WebPage property="text"-->
+
+<header class="headingAndComment">
+<h2 property="name">Repair of Computers</h2>
+<small>ISICv4&nbsp;<span about="#business" property="isicV4">9511</span></small>
+</header>
+<ul class="list">
+	<li property="description">repair and maintenance of desktop computers</li>
+</ul>    
+<ul class="list" property="itemOffered" typeOf="Service">
+<li property="serviceType">on-site computer repair</li>
+<li property="name">computer upgrades and tune-up</li>
+<li property="description">supreme computer resurrection</li>
+</ul>
+</div><!--End of property="Offer"-->
 </article>
 </main>
 
