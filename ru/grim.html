@@ -31,54 +31,33 @@
 	<meta name="theme-color" content="#1a0000">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1600 / 1300 ) + ( 564 / 564 ) + ( 1080 / 1309 ) ) 
+	   - 1.8em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+		width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
 .china {
-	min-width: calc((1600/1300)*20em);
+		width: calc( ( 1600 / 1300 ) * var(--coeff) );
+	max-width: calc( ( 1600 / 1300 ) * var(--restrict) );
 }
 .america {
-	min-width: calc((564/564)*20em);
+		width: calc( ( 564 / 564 ) * var(--coeff) );
+	max-width: calc( ( 564 / 564 ) * var(--restrict) );
 }
 .mary {
-	min-width: calc((1080/1309)*20em);
+		width: calc( ( 1080 / 1309 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1309 ) * var(--restrict) );
 }
-/*
-	vw, 2vw, 3vw
-	true + china + america + mary + 4margins = vw * widthcoeff
-	widthcoeff=(true + china + america + mary + 4horizontalmarginspaddings)/100vw
-	truenewwidth=true/widthcoeff
-	find height, set limit of 12? to 20em
-	
-*/
-/*
-.true {	
-	min-width: calc(1018 / ( 1440 + 1187 + 564 + 1080 ) * 100vw);
-	}
-.china {
-	min-width: calc(911 / ( 1440 + 1187 + 564 + 1080 ) * 100vw);
-}
-.america {
-	min-width: calc(564 / ( 1440 + 1187 + 564 + 1080 ) * 100vw);
-}
-.mary {
-	min-width: calc(1309 / ( 1440 + 1187 + 564 + 1080 ) * 100vw);
-}*/
-/*
-.true {	
-	min-width: calc(1018 / ( 1440 + 1187 + 564 + 1080 ) * 100vw);
-	}
-.china {
-	min-width: calc(911 / ( 1440 + 1187 + 564 + 1080 ) * 100vw);
-}
-.america {
-	min-width: calc(564 / ( 1440 + 1187 + 564 + 1080 ) * 100vw);
-}
-.mary {
-	min-width: calc(1309 / ( 1440 + 1187 + 564 + 1080 ) * 100vw);}*/
 #russia {
 	max-width: 1500px;
 	margin: 0 auto;
@@ -508,8 +487,9 @@ Rated&nbsp;in&nbsp;China</a></li>
 	</amp-img>
 </div>
 Come&nbsp;to&nbsp;U.S.A.</a></li>
-
-<li class="rightLink"><a class="alert" property="significantLink" href="https://nakigoe.github.io/me/help.html" target="_blank">
+</ul>
+<ul class="rightLink">
+<li><a class="alert" property="significantLink" href="https://nakigoe.github.io/me/help.html" target="_blank">
 <div class="mary">
 <amp-img src="https://nakigoe.github.io/_IMG/mary.png"
   width="1080"
