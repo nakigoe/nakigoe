@@ -371,26 +371,64 @@ amp-social-share[type="telegram"]:hover {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 	
-@media only screen and (max-width:540px) {
-	main {width: 100%;}
-	h1,h2,h3,h4,p {
+@media only screen and (max-width:720px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p,hr, .list {
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
-	footer{width: 95%;}
-	.rightLink{
+	#topNav .rightLink, #topNav .compact {
+		display: none;
+	}
+	.rightLink {
 		float: none;
 	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	}
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
 	.true, .china, .america, .mary {
-		min-width: 85vmin;
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 80%;
 		margin-left: auto;
-		margin-right: auto;
-	}
-	#me {
-		min-width: 100%;
+		margin-right: auto;	
 	}
 	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3vmin);
 }
@@ -462,7 +500,7 @@ p, .list	{
 </div>
 Main Menu</a></li>
 
-<li><a property="significantLink" href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">
+<li class="compact"><a property="significantLink" href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">
 <div class="china">
 <amp-img src="https://nakigoe.github.io/_IMG/china.jpg"
   width="1600"
@@ -475,7 +513,7 @@ Main Menu</a></li>
 </div>
 Rated&nbsp;in&nbsp;China</a></li>
 
-<li><a property="significantLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
+<li class="compact"><a property="significantLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
 <div class="america">
 	<amp-img src="https://nakigoe.github.io/_IMG/america.jpg"
 	width="564"
