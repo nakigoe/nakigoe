@@ -58,8 +58,10 @@ a amp-img {
 	max-width: 1700px;
 	margin: 0 auto;
 }
-#happy {margin: 0 auto;}
-amp-audio {margin: 0 auto;}
+.audio{
+	width: auto;
+	margin: auto;
+	}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -341,7 +343,7 @@ amp-social-share[type="telegram"]:hover {
 	
 @media only screen and (max-width:600px) {
 	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
-	h1,h2,h3,h4,p,hr, .list {
+	h1,h2,h3,h4,p,hr, .audio, .list {
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -379,7 +381,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p,hr, .list {
+	h1,h2,h3,h4,p,hr, .audio, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -389,7 +391,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p,hr, .list {
+	h1,h2,h3,h4,p,hr, .audio, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -525,7 +527,7 @@ Rated&nbsp;in&nbsp;China</a></li>
 <main property="mainEntity" typeOf="Country">
 <meta property="name" content="USA">
 <article property="description">
-<div id="happy">
+<div class="audio">
 	<amp-audio width="400"
 	  src="https://nakigoe.github.io/_MP3/happy.mp3"
 	  title="God Rest Ye Merry Gentlemen" artist="Hai! Robotto"
