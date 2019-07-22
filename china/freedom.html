@@ -23,20 +23,28 @@
 	<meta name="theme-color" content="#1a0000">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1500 / 1500 ) + ( 564 / 564 ) ) 
+	   - 1.88em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+		width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
 .ru {
-	min-width: calc((1500/1500)*20em);
+		width: calc( ( 1500 / 1500 ) * var(--coeff) );
+	max-width: calc( ( 1500 / 1500 ) * var(--restrict) );
 }
 .america {
-	min-width: calc((564/564)*20em);
-}
-.mary {
-	min-width: calc((1080/1309)*20em);
+		width: calc( ( 564 / 564 ) * var(--coeff) );
+	max-width: calc( ( 564 / 564 ) * var(--restrict) );
 }
 #china {
 	max-width: 1600px;
@@ -330,26 +338,64 @@ amp-social-share[type="telegram"]:hover {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 	
-@media only screen and (max-width:540px) {
-	main {width: 100%;}
-	h1,h2,h3,h4,p {
+@media only screen and (max-width:600px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	h1,h2,h3,h4,p,hr, .list {
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
-	footer{width: 95%;}
-	.rightLink{
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
 		float: none;
 	}
-	.true, .america, .ru, .mary {
-		min-width: 85vmin;
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	}
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	.true, .ru, .america{
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 80%;
 		margin-left: auto;
-		margin-right: auto;
-	}
-	#me {
-		min-width: 100%;
+		margin-right: auto;	
 	}
 	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3vmin);
 }
@@ -388,7 +434,7 @@ p, .list	{
 </style>
 </head>
 
-<body vocab="http://schema.org/" typeof="WebPage">
+<body vocab="http://schema.org/" typeof="WebPage" resource="#page">
 <amp-analytics type="googleanalytics">
 <script type="application/json">
 {
@@ -419,8 +465,9 @@ p, .list	{
 </amp-img>
 </div>
 Main Menu</a></li>
-
-<li><a property="significantLink" href="https://nakigoe.github.io/ru/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
+</ul>
+<ul class="rightLink">
+<li><a property="relatedLink" href="https://nakigoe.github.io/ru/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
 	<div class="ru">
 	<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
 	  width="1500"
@@ -433,7 +480,7 @@ Main Menu</a></li>
 	</div>
 	Exit Russia</a></li>
 	
-<li><a property="significantLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
+<li><a property="relatedLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
 <div class="america">
 	<amp-img src="https://nakigoe.github.io/_IMG/america.jpg"
 	width="564"
@@ -445,19 +492,6 @@ Main Menu</a></li>
 	</amp-img>
 </div>
 Come&nbsp;to&nbsp;U.S.A.</a></li>
-
-<li class="rightLink"><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/help.html" target="_blank">
-<div class="mary">
-<amp-img src="https://nakigoe.github.io/_IMG/mary.png"
-  width="1080"
-  height="1309"
-  layout="responsive"
-  alt="Prayer"
-  property="image" typeOf="ImageObject">
-  <meta property="caption" content="Prayer">
-</amp-img>
-</div>
-Please&nbsp;Help</a></li>
 </ul>
 </nav>
 <header>
@@ -619,7 +653,7 @@ Please&nbsp;Help</a></li>
 	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/china/freedom.html"></amp-social-share>	
 </div>
 </footer>
-<nav class="cf">
+<nav class="cf" about="#page">
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
 <div class="true">
@@ -633,8 +667,9 @@ Please&nbsp;Help</a></li>
 </amp-img>
 </div>
 Main Menu</a></li>
-
-<li><a property="significantLink" href="https://nakigoe.github.io/ru/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
+</ul>
+<ul class="rightLink">
+<li><a property="relatedLink" href="https://nakigoe.github.io/ru/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
 	<div class="ru">
 	<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
 	  width="1500"
@@ -647,7 +682,7 @@ Main Menu</a></li>
 	</div>
 	Exit Russia</a></li>
 	
-<li><a property="significantLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
+<li><a property="relatedLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
 <div class="america">
 	<amp-img src="https://nakigoe.github.io/_IMG/america.jpg"
 	width="564"
@@ -659,19 +694,6 @@ Main Menu</a></li>
 	</amp-img>
 </div>
 Come&nbsp;to&nbsp;U.S.A.</a></li>
-
-<li class="rightLink"><a property="significantLink" class="alert" href="https://nakigoe.github.io/me/help.html" target="_blank">
-<div class="mary">
-<amp-img src="https://nakigoe.github.io/_IMG/mary.png"
-  width="1080"
-  height="1309"
-  layout="responsive"
-  alt="Prayer"
-  property="image" typeOf="ImageObject">
-  <meta property="caption" content="Prayer">
-</amp-img>
-</div>
-Please&nbsp;Help</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
