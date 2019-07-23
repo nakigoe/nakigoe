@@ -215,6 +215,10 @@ p {
 em {color:#fff;}
 
 .articleHr {margin:2.25em 0 1em;}
+.wrapper {
+	margin: 1em auto;
+	text-align: center;
+}
 li small  {
 	font-size:0.65em;
 	color:#eee;
@@ -482,14 +486,20 @@ Actor</a></li>
 </ul>
 </nav>
 
-<main>
+<main property="mainEntity" typeOf="EntertainmentBusiness" resource="#business">
+<meta property="priceRange" content="$">
+<meta property="url" content="https://nakigoe.github.io/services/director.html">
+<meta property="telephone" content="https://nakigoe.github.io/me/connect.html">
+<meta property="areaServed" content="Global">
+<meta property="address" content="Russia, Polazna">
+<meta property="hasMap" content="https://www.google.com/maps?ie=UTF8&hq&ll=58.293389,56.396152">
+<meta property="logo" content="https://nakigoe.github.io/_IMG/icon.png">
+<meta property="image" content="https://nakigoe.github.io/_IMG/director.jpg">
 <article>
 <header>
-<meta property="name" content="Nakigoe" about="#me">
-<meta property="url" content="https://nakigoe.github.io" about="#me">
-<h1 property="description" about="#me">Film Director</h1>
+<h1 property="name">Film Director</h1>
 </header>
-<div id="director">
+<div id="director" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/director.jpg"
   width="1938"
   height="2740"
@@ -498,30 +508,28 @@ Actor</a></li>
   property="primaryImageOfPage" typeOf="ImageObject">
   <meta property="representativeOfPage" content="True">
   <meta property="caption" content="Film Director">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/director.jpg">
 </amp-img>
+<p class="wrapper" property="slogan" about="#business">If You are not having fun, it's not worth it!</p>
 </div>
 
-<div property="text">
-<div about="#me">
-<div property="makesOffer" typeOf="Offer">
-<meta property="name" content="Filming and Photo-Sessions">
-<meta property="description" content="Supreme Film and Photo shooting">
-
-<section>
-<header class="headingAndComment" resource="#arts" property="businessFunction" typeOf="BusinessFunction">
-<h2 property="name">Creative, Arts and Entertainment</h2>
-<small>ISICv4&nbsp;<span about="#me" property="isicV4">9000</span></small>
+<header class="headingAndComment">
+<h2 property="disambiguatingDescription">Creative, Arts and Entertainment</h2>
+<small>ISICv4&nbsp;<span property="isicV4">9000</span></small>
 </header>
 <ul class="list">
-	<li property="description" about="#arts">individual artist, author, actor, director, musician, lecturer, speaker, stage-set designer and builder.</li>
-	<li property="description" about="#arts">operation of concert and theatre halls and other arts facilities</li>
-	<li property="description" about="#arts">individual writer, for all subjects including fictional writing, technical writing</li>
+	<li property="description">individual artist, author, actor, director, musician, lecturer, speaker, stage-set designer and builder.</li>
+	<li property="description">operation of concert and theatre halls and other arts facilities</li>
+	<li property="description">individual writer, for all subjects including fictional writing, technical writing</li>
 </ul>
-</section>
-	
-<section property="businessFunction" typeOf="BusinessFunction">
-<meta property="name" content="Film Director">
-<div id="sniper">
+
+<div property="makesOffer" typeOf="Offer">
+<ul class="list">
+	<li property="name">Filming and Photo-Sessions</li>
+	<li property="description">Supreme Film and Photo Shooting</li>
+</ul>
+
+<div id="sniper" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/sniper.jpg"
   width="2048"
   height="1345"
@@ -535,18 +543,14 @@ Actor</a></li>
 <h3>Specialties</h3>
 <ul class="list">
 	<li property="potentialAction" typeof="AssessAction"><span property="name">Facial Action &amp; Body Language Evaluation</span>
-		<div property="instrument" typeof="Thing">
-		<meta property="name" content="Facial Action Coding System">
-		<meta property="alternateName" content="FACS">
-		</div>
+		<ul property="instrument" typeof="Thing">
+		<li><span property="name">Facial Action Coding System</span> or <span property="alternateName">F.A.C.S.</span></li>
+		</ul>
 	</li>
 	<li property="potentialAction" typeof="FilmAction PhotographAction"><span property="name">Video and Photo Shooting</span> Theory and Techniques</li>
 	<li property="potentialAction" typeof="ControlAction"><span property="name">Digital Colour Theory, Digital Colour Spaces, Colour Theory</span></li>
 </ul>
-</section>
-</div><!--End of Person id-->
-</div><!--End of Person property="Offer"-->
-</div><!--End of WebPage property="text"-->
+</div><!--End of property="Offer"-->
 </article>
 </main>
 
