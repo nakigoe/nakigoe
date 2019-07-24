@@ -22,20 +22,32 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1280 / 1142 ) + ( 807 / 807 ) + ( 1080 / 1349 ) ) 
+	   - 1.85em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
 .rev {
-	min-width: calc((1280/1142)*20em);
+	width: calc( ( 1280 / 1142 ) * var(--coeff) );
+	max-width: calc( ( 1280 / 1142 ) * var(--restrict) );
 }
 .sight {
-	min-width: calc((807/807)*20em);
+	width: calc( ( 807 / 807 ) * var(--coeff) );
+	max-width: calc( ( 807 / 807 ) * var(--restrict) );
 }
 .secret {
-	min-width: calc((1080/1349)*20em);
+	width: calc( ( 1080 / 1349 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1349 ) * var(--restrict) );
 }
 #apps {
 	max-width: 1080px;
@@ -453,7 +465,8 @@ p, .list	{
 </amp-img>
 </div>
 Main Menu</a></li>
-
+</ul>
+<ul class="rightLink">
 <li><a property="relatedLink" href="https://nakigoe.github.io/articles/rev.html" target="_blank">
 	<div class="rev">
 	<amp-img src="https://nakigoe.github.io/_IMG/rev.jpg"
@@ -622,7 +635,8 @@ Online Privacy</a></li>
 </amp-img>
 </div>
 Main Menu</a></li>
-
+</ul>
+<ul class="rightLink">
 <li><a property="relatedLink" href="https://nakigoe.github.io/articles/rev.html" target="_blank">
 	<div class="rev">
 	<amp-img src="https://nakigoe.github.io/_IMG/rev.jpg"
