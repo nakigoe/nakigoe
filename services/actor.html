@@ -221,7 +221,10 @@ p {
 	letter-spacing:.02em;
 	}
 em {color:#fff;}
-
+.wrapper {
+	margin: 1em auto;
+	text-align: center;
+}
 .articleHr {margin:2.25em 0 1em;}
 li small  {
 	font-size:0.65em;
@@ -524,11 +527,10 @@ Film&nbsp;Director</a></li>
 <div property="makesOffer" typeOf="Offer">
 <p property="name">supreme action</p>
 
-<section property="businessFunction" typeOf="BusinessFunction">
-<h2 property="name">Sports</h2>
-<meta property="alternateName" content="Sport Performance">
-<ul class="list">
-<li property="potentialAction" typeOf="PerformAction"><span property="name">Wing-Chun</span>, <span property="description">Chinese Martial Arts</span></li>
+<h2 property="description">Sports</h2>
+<meta property="disambiguatingDescription" content="Sport Performance">
+
+<p property="potentialAction" typeOf="PerformAction"><span property="name">Wing-Chun</span>, <span property="description">Chinese Martial Arts</span></p>
 <div id="dual" about="#page">
 	<amp-img src="https://nakigoe.github.io/_IMG/dual.jpg"
 	width="2000"
@@ -541,11 +543,11 @@ Film&nbsp;Director</a></li>
 	<meta property="url" content="https://nakigoe.github.io/_IMG/electra.jpg">
 	</amp-img>	
 </div>
-<li property="potentialAction" typeOf="PerformAction">
+<p class="wrapper" property="potentialAction" typeOf="PerformAction">
 	<meta property="name" content="Pair Swords Fencing">
 	<meta property="alternateName" content="Double-Yield Fencing">
 	<span property="instrument">Paired Swords</span> Fencing
-</li>
+</p>
 <div id="sniper" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/sniper.jpg"
   width="2048"
@@ -558,11 +560,8 @@ Film&nbsp;Director</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/sniper.jpg">
 </amp-img>
 </div>
-	<li property="potentialAction" typeOf="PerformAction">
-		<span property="name">Swimming</span>
-	</li>
-</ul>
-</section>
+<p class="wrapper" property="potentialAction" typeOf="PerformAction"><span property="name">Swimming</span></p>
+
 <div id="actor" about="#page">
 <amp-img src="https://nakigoe.github.io/_IMG/actor.png"
   width="2000"
