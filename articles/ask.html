@@ -22,14 +22,20 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1080 / 1348 ) ) 
+	   - 2.5em
+  );
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
-}
-.connect {
-	min-width: calc((2048/2048)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018) * var(--restrict) );
 }
 #meow {
 	max-width: 2947px;
@@ -226,42 +232,10 @@ p {
 	}
 em {color:#fff;}
 
-.question {
-	margin: 1em 2em 1em 0;
-	box-shadow: inset 0 0 .2em #f00,inset 0 0 2em #f00;
-	color: #ffb;
-	border-radius: 1em;
-	padding: .7em 1em;
-	}
-.question:first-of-type {
-	max-width: 1280px;
-	min-width: 640px;}
-.answer {
-	margin:1em 0 1em 2em;
-	box-shadow: inset 0 0 1.5em #fff;
-	border-radius: 1em;
-	padding: .7em 1em;
-	}
-.answer h3 {
-	margin-top: .5em; /*for the h3 inside a bubble, reducing the top margin*/
-	}
-.answer p, .question p{
-	margin-bottom:.5em;
-	}
-.answer p:last-child, .question p:last-child{
-	margin-bottom:.2em;
-	}
-.answer em {
-	color:#fff;
-}
 .wrapper {
 	margin: 1em auto 1em;
 	text-align: center;
 }
-.info { 
-	margin-left: 0;
-	}
-.articleHr {margin:2.25em 0 1em;}
 
 li small  {
 	font-size:0.65em;
@@ -269,42 +243,17 @@ li small  {
 	margin-left:auto;
 	margin-top:.25em;
 	}
-
-.linkAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:wrap;
-}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
-aside {
-	margin: .5em 0 .5em;
-	}
 footer {
 	width:95%;
 	margin: 5.5em auto 0;
 	}
-.contacts {
-	margin: 1.65em auto;
-	max-width: 270px;
-	text-align: center;
-}
-.contacts p {
-	text-align: center;
-	margin-bottom: 1.65em;
-}
 #copyright{
-	margin: 1.65em auto;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto 1.5em;
 	text-align: center;
 }
 .social p {
@@ -324,7 +273,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -349,8 +297,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }
-	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -451,17 +398,9 @@ nav a {
 <meta property="isFamilyFriendly" content="True">
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+<li><a href="https://nakigoe.github.io/" target="_blank">Main</a></li>
+<li><a href="https://nakigoe.github.io/tutor/spirit.html" target="_blank">Angel Spirit</a></li>
+<li><a href="https://nakigoe.github.io/tutor/life.html" target="_blank">Life&nbsp;Science Tutor</a></li>
 </ul>
 </nav>
 
@@ -503,6 +442,7 @@ nav a {
 </article>
 </main>
 <footer>
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
     <p>SHARE VIA</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
@@ -515,7 +455,7 @@ nav a {
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
     <amp-social-share width="60" height="60" type="line"></amp-social-share>
-<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
     <amp-social-share width="60" height="60" type="vk" 
     data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/articles/ask.html"></amp-social-share>
     <amp-social-share width="60" height="60" type="ok" 
@@ -525,21 +465,12 @@ nav a {
 	<amp-social-share width="60" height="60" type="telegram"
 	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/articles/ask.html"></amp-social-share>
 </div>
-<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 </footer>
 <nav class="cf">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/me/me.html" title="Lovely Me">Me</a></li>
-<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
-<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
-<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
-<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
-<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
-<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+<li><a href="https://nakigoe.github.io/" target="_blank">Main</a></li>
+<li><a href="https://nakigoe.github.io/tutor/spirit.html" target="_blank">Angel Spirit</a></li>
+<li><a href="https://nakigoe.github.io/tutor/life.html" target="_blank">Life&nbsp;Science Tutor</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
