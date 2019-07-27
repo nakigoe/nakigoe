@@ -22,14 +22,24 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 800 / 1200 ) ) 
+	   - 2.25em
+  );
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018) * var(--restrict) );
 }
-.connect {
-	min-width: calc((2048/2048)*20em);
+.ask {
+	width: calc( ( 800 / 1200 ) * var(--coeff) );
+	max-width: calc( ( 800 / 1200 ) * var(--restrict) );
 }
 #environment {max-width: 800px;}
 #battle {
