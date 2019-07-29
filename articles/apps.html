@@ -18,7 +18,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content=" 2019-07-28">
+	<meta name="revised" content=" 2019-07-29">
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
@@ -222,7 +222,6 @@ a:active{
 	line-height:1.5em;
 	letter-spacing:.02em;
 	}
- 
 .linksListSection {margin-bottom:2em;}
 .linksListSection p{
 	font-size:.85em;
@@ -378,11 +377,6 @@ amp-social-share[type="telegram"]:hover {
 	
 @media only screen and (max-width:800px) {
 	main {width: 100%;}
-	h1,h2,h3,h4,p,.list {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;	
-	}
 	#topNav .rightLink {
 		display: none;
 	}
@@ -420,7 +414,8 @@ amp-social-share[type="telegram"]:hover {
 		width: 100%;
 	}
 	li small {margin-right: 1em;}
-	h1,h2,h3,h4,p,.list {
+	ol {margin-left: 3em;}
+	h1,h2,h3,h4,p, .list, .linkAndComment {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -430,11 +425,21 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p,.list {
+	h1,h2,h3,h4,p, .list, .linkAndComment {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list, .linkAndComment {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 	}
 /* font size formatting section */
 h1 {
