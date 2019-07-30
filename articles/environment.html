@@ -18,7 +18,7 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content=" 2019-07-29">
+	<meta name="revised" content=" 2019-07-30">
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
@@ -41,7 +41,10 @@ a amp-img {
 	width: calc( ( 800 / 1200 ) * var(--coeff) );
 	max-width: calc( ( 800 / 1200 ) * var(--restrict) );
 }
-#environment {max-width: 800px;}
+#environment {
+	max-width: 800px;
+	margin: 0 auto;
+	}
 #battle {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -87,12 +90,6 @@ h1, h2, h3, h4, h5, h6 {
 .phrase {
 	display: inline-block;
 }
-blockquote {
-	width: 100%;
-	margin: 0 auto;
-	text-align: center;
-}
-cite {color: white;}
 h1 {
 	font-family:"Nunito Sans", sans-serif;
 	text-align: center;
@@ -102,7 +99,6 @@ h1 {
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
 	}
-	
 h2 {
 	font-family:"Nunito Sans", sans-serif;
 	font-size:3em;
@@ -129,15 +125,6 @@ h4 {
 ul, li {
 	list-style:none;
 	}
-	ol {
-    margin: 0;
-		padding: 0;
-}
-	ol li {
-		display: list-item;
-		list-style-type: decimal;
-    list-style-position: outside;
-	}
 a  {
 	font-size: 1.6em;
 	display: inline-block;
@@ -147,7 +134,6 @@ a  {
 	text-decoration: none;
 	outline: 0;
 	white-space:nowrap;
-
 	border-radius: 1em;
 	background-color: #000;
 	box-shadow:0 0 .5em white;
@@ -221,7 +207,6 @@ hr {display:block;
 	margin-bottom:0;
 	/*possible to control through margins if necessary*/
 	}
-
 p {
 	line-height: 1.5;
 	text-align: justify;
@@ -234,34 +219,6 @@ p {
 	}
 em {color:#fff;}
 
-.question {
-	margin: 1em 2em 1em 0;
-	box-shadow: inset 0 0 .2em #f00,inset 0 0 2em #f00;
-	color: #ffb;
-	border-radius: 1em;
-	padding: .7em 1em;
-	}
-.question:first-of-type {
-	max-width: 1280px;
-	min-width: 640px;}
-.answer {
-	margin:1em 0 1em 2em;
-	box-shadow: inset 0 0 1.5em #fff;
-	border-radius: 1em;
-	padding: .7em 1em;
-	}
-.answer h3 {
-	margin-top: .5em; /*for the h3 inside a bubble, reducing the top margin*/
-	}
-.answer p, .question p{
-	margin-bottom:.5em;
-	}
-.answer p:last-child, .question p:last-child{
-	margin-bottom:.2em;
-	}
-.answer em {
-	color:#fff;
-}
 .wrapper {
 	margin: 1em auto 1em;
 	text-align: center;
@@ -277,7 +234,6 @@ li small  {
 	margin-left:auto;
 	margin-top:.25em;
 	}
-
 .linkAndComment {
     display: flex;
     justify-content: space-between;
@@ -295,24 +251,15 @@ aside {
 	}
 footer {
 	width:95%;
-	margin: 5.5em auto 0;
+	margin: 2.5em auto 0;
 	}
-.contacts {
-	margin: 1.65em auto;
-	max-width: 270px;
-	text-align: center;
-}
-.contacts p {
-	text-align: center;
-	margin-bottom: 1.65em;
-}
 #copyright{
-	margin: 1.65em auto;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social p {
@@ -332,7 +279,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -357,8 +303,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }
-	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -403,6 +348,66 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+	
+@media only screen and (max-width:600px) {
+	main {width: 100%;}
+	h1,h2,h3,h4,p {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	.rightLink {
+		float: none;
+	}
+	#topNav .rightLink {
+		display: none;
+	}
+	nav .rightLink {
+	margin-right: 0;/*temporary draft*/
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+	.true, .environment {
+		width: auto;
+		max-width: 100vw;
+	} 
+	}
+
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
@@ -459,7 +464,20 @@ nav a {
 <meta property="isFamilyFriendly" content="True">
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
+
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
 </ul>
 </nav>
