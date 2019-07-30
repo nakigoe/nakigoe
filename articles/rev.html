@@ -22,20 +22,32 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1080 / 1350 ) + ( 807 / 807 ) + ( 1080 / 1349 ) ) 
+	   - 2.05em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
-}
-.secret {
-	min-width: calc((1080/1349)*20em);
-}
-.sight  {
-	min-width: calc((807/807)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
 .apps {
-	min-width: calc((1080/1350)*20em);
+	width: calc( ( 1080 / 1350 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
+}
+.sight {
+	width: calc( ( 807 / 807 ) * var(--coeff) );
+	max-width: calc( ( 807 / 807 ) * var(--restrict) );
+}
+.secret {
+	width: calc( ( 1080 / 1349 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1349 ) * var(--restrict) );
 }
 #rev { 
 	max-width: 1280px;
@@ -96,8 +108,7 @@ h1 {
 	font-size: 4em;
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
-	}
-	
+	}	
 h2 {
 	font-family:"Nunito Sans", sans-serif;
 	font-size:3em;
@@ -214,7 +225,6 @@ hr {display:block;
 	margin-bottom:0;
 	/*possible to control through margins if necessary*/
 	}
-
 p {
 	line-height: 1.5;
 	text-align: justify;
@@ -237,7 +247,7 @@ li small  {
 	}
 footer {
 	width:95%;
-	margin: 5.5em auto 0;
+	margin: 2.5em auto 0;
 	}
 #copyright{
 	margin: 1.5em auto;
@@ -245,7 +255,7 @@ footer {
 }
 .social {
 	display: block;
-	margin: 1.5em auto 1.5em;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social p {
@@ -335,23 +345,70 @@ amp-social-share[type="telegram"]:hover {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 	
-@media only screen and (max-width:540px) {
+@media only screen and (max-width:720px) {
 	main {width: 100%;}
-	h1,h2,h3,h4,p,footer {
+	#topNav .rightLink {
+		display: none;
+	}
+	nav ul, nav li, nav a {display: block;}
+	nav .rightLink {
+		margin-right: 0em;
+	}	
+	.rightLink{
+		float: none;
+	}	
+	.cf:before,
+	.cf:after {
+    content: none; 
+    display: none; 
+	}
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+	.true, .sight, .apps, .secret {
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	li small {margin-right: 1em;}
+	ol {margin-left: 3em;}
+	h1,h2,h3,h4,p, .list, .linkAndComment {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 720px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list, .linkAndComment {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list, .linkAndComment {
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;	
-	}
-	.rightLink{
-		float: none;
-	}
-	.true, .sight, .apps, .secret {
-		min-width: 85vmin;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#me {
-		min-width: 100%;
 	}
 	}
 /* font size formatting section */
@@ -423,7 +480,9 @@ nav a {
 </amp-img>
 </div>
 Main Menu</a></li>
+</ul>
 
+<ul class="rightLink">
 <li><a property="relatedLink" href="https://nakigoe.github.io/online/online-hour.html" target="_blank">
 <div class="sight">
 <amp-img src="https://nakigoe.github.io/_IMG/sight.jpg"
@@ -435,7 +494,7 @@ property="image" typeOf="ImageObject">
 <meta property="caption" content="Love from the First Sight">
 </amp-img>
 </div>
-Grab Your Website</a></li>
+Your Website</a></li>
 	
 <li><a property="relatedLink" href="/articles/secret.html" target="_blank">
 <div class="secret">
@@ -448,7 +507,7 @@ property="image" typeOf="ImageObject">
 <meta property="caption" content="Keep Your Data Safe on Social Platforms">
 </amp-img>
 </div>
-Online Privacy</a></li>
+Privacy</a></li>
 
 <li><a property="relatedLink" href="https://nakigoe.github.io/articles/apps.html" target="_blank">
 <div class="apps">
@@ -461,7 +520,7 @@ property="image" typeOf="ImageObject">
 <meta property="caption" content="Best Apps for Advanced Internet Browsing">
 </amp-img>
 </div>
-Browsing&nbsp;and&nbsp;Download&nbsp;Apps</a></li>
+Top Apps</a></li>
 </ul>
 </nav>
 
@@ -549,7 +608,9 @@ Browsing&nbsp;and&nbsp;Download&nbsp;Apps</a></li>
 </amp-img>
 </div>
 Main Menu</a></li>
+</ul>
 
+<ul class="rightLink">
 <li><a property="relatedLink" href="https://nakigoe.github.io/online/online-hour.html" target="_blank">
 <div class="sight">
 <amp-img src="https://nakigoe.github.io/_IMG/sight.jpg"
@@ -561,7 +622,7 @@ property="image" typeOf="ImageObject">
 <meta property="caption" content="Love from the First Sight">
 </amp-img>
 </div>
-Grab Your Website</a></li>
+Your Website</a></li>
 	
 <li><a property="relatedLink" href="/articles/secret.html" target="_blank">
 <div class="secret">
@@ -574,7 +635,7 @@ property="image" typeOf="ImageObject">
 <meta property="caption" content="Keep Your Data Safe on Social Platforms">
 </amp-img>
 </div>
-Online Privacy</a></li>
+Privacy</a></li>
 
 <li><a property="relatedLink" href="https://nakigoe.github.io/articles/apps.html" target="_blank">
 <div class="apps">
@@ -587,7 +648,7 @@ property="image" typeOf="ImageObject">
 <meta property="caption" content="Best Apps for Advanced Internet Browsing">
 </amp-img>
 </div>
-Browsing&nbsp;and&nbsp;Download&nbsp;Apps</a></li>
+Top Apps</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
