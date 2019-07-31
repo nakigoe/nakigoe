@@ -28,6 +28,25 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 
     <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1080 / 1350 ) ) 
+	   - 2.25em
+  	);
+  --restrict: 24em;
+}
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.apps {
+	width: calc( ( 1080 / 1350 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
+}
         html,
         body,
         header,
@@ -367,16 +386,35 @@ p, .list	{
     </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
+
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/articles/apps.html">Download</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/apps.html" target="_blank">
+<div class="apps">
+<amp-img src="https://nakigoe.github.io/_IMG/apps.jpg"
+width="1080"
+height="1350"
+layout="responsive"
+alt="Best Apps for Advanced Internet Browsing"
+property="image" typeOf="ImageObject">
+<meta property="caption" content="Best Apps for Advanced Internet Browsing">
+<meta property="url" content="https://nakigoe.github.io/_IMG/apps.jpg">
+</amp-img>
+</div>
+Download Apps</a></li>
 </ul>
 </nav>
     <header>
@@ -620,17 +658,37 @@ p, .list	{
 </footer>
 <nav class="cf" about="#page">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
-<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
-<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
+
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/articles/apps.html">Download</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/apps.html" target="_blank">
+<div class="apps">
+<amp-img src="https://nakigoe.github.io/_IMG/apps.jpg"
+width="1080"
+height="1350"
+layout="responsive"
+alt="Best Apps for Advanced Internet Browsing"
+property="image" typeOf="ImageObject">
+<meta property="caption" content="Best Apps for Advanced Internet Browsing">
+<meta property="url" content="https://nakigoe.github.io/_IMG/apps.jpg">
+</amp-img>
+</div>
+Download Apps</a></li>
 </ul>
+
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
 <amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
@@ -640,6 +698,7 @@ p, .list	{
   alt="Lovely Me"
   property="image" typeOf="ImageObject">
   <meta property="caption" content="Lovely Me">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/love.jpg">
 </amp-img>
 </div>
 Lovely&nbsp;Me</a>
