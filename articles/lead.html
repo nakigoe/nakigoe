@@ -22,10 +22,29 @@
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 2000 / 2922 ) ) 
+	   - 2.25em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
-#lead {max-width: 1280px;}
+.true {
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.win {
+	width: calc( ( 2000 / 2922 ) * var(--coeff) );
+	max-width: calc( ( 2000 / 2922 ) * var(--restrict) );
+}
+#lead {
+	max-width: 1280px;
+	margin: 0 auto;
+	}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -66,6 +85,10 @@ h1, h2, h3, h4, h5, h6 {
 	}
 .phrase {
 	display: inline-block;
+}
+.wrapper {
+	margin: 1em auto;
+	text-align: center;
 }
 blockquote {
 	width: 100%;
@@ -116,7 +139,6 @@ a  {
 	text-decoration: none;
 	outline: 0;
 	white-space:nowrap;
-
 	border-radius: 1em;
 	background-color: #000;
 	box-shadow:0 0 .5em white;
@@ -294,6 +316,66 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+	
+@media only screen and (max-width:600px) {
+	main {width: 100%;}
+	h1,h2,h3,h4,p {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	.rightLink {
+		float: none;
+	}
+	#topNav .rightLink {
+		display: none;
+	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+	.true, .win {
+		width: auto;
+		max-width: 100vw;
+	} 
+	}
+
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
@@ -350,15 +432,41 @@ nav a {
 <meta property="isFamilyFriendly" content="True">
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="significantLink" href="https://nakigoe.github.io/articles/win.html" target="_blank">
+<div class="win">
+<amp-img src="https://nakigoe.github.io/_IMG/win.jpg"
+  width="2000"
+  height="2922"
+  layout="responsive"
+  alt="Win"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Win">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/win.jpg">
+</amp-img>
+</div>
+Secrets to Win</a></li>
 </ul>
 </nav>
 
 <main>
 <article>
 <header id="top">
-<h1 property="name">AI for Leaders</h1>
+<h1 property="name">AI Citations for Leaders</h1>
 </header>
 <div id="lead">
 <amp-img src="https://nakigoe.github.io/_IMG/lead.jpg"
@@ -373,7 +481,7 @@ nav a {
 </div>
 <blockquote>
 <!--<p><span class="phrase">God never makes mistakes,</span> <span class="phrase">but people are bloody famous for it.</span></p>-->
-<p><span class="phrase">Every job in the world needs a bit of thinking.</span> <span class="phrase">Who thinks better than AI?</span></p>
+<p class="wrapper"><span class="phrase">Every job in the world needs a bit of thinking.</span> <span class="phrase">Who thinks better than AI?</span></p>
 </blockquote>
 <h2>Aspire to be a Prince(ss) of the Universe</h2>
 <p>Ambition is a moral matter of the mind.</p>
@@ -444,8 +552,34 @@ nav a {
 </footer>
 <nav class="cf">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="significantLink" href="https://nakigoe.github.io/articles/win.html" target="_blank">
+<div class="win">
+<amp-img src="https://nakigoe.github.io/_IMG/win.jpg"
+  width="2000"
+  height="2922"
+  layout="responsive"
+  alt="Win"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Win">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/win.jpg">
+</amp-img>
+</div>
+Secrets to Win</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
