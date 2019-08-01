@@ -18,10 +18,42 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content=" 2019-07-31">
+	<meta name="revised" content=" 2019-08-02">
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 720 ) + ( 1128 / 2048 ) + ( 639 / 1024 ) ) 
+	   - 2.34em
+  	);
+  --restrict: 24em;
+}
+.translator {
+	width: calc( ( 1440 / 1018 ) * var(--coeff));
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict));
+}
+.russian {
+	width: calc( ( 937 / 1170 ) * var(--coeff));
+	max-width: calc( ( 937 / 1170 ) * var(--restrict));
+}
+.tajik {
+	width: calc( ( 1080 / 1350 ) * var(--coeff));
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict));
+}
+.mandarin {
+	width: calc( ( 520 / 720 ) * var(--coeff));
+	max-width: calc(( 1080 / 1350 ) * var(--restrict));
+}
+.japanese {
+	width: calc( ( 1128 / 2048 ) * var(--coeff));
+	max-width: calc( ( 1128 / 2048 ) * var(--restrict));
+}
+.english {
+	width: calc( ( 639 / 1024 ) * var(--coeff));
+	max-width: calc( ( 639 / 1024 ) * var(--restrict));
+}
 html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
 	margin:0;
 	padding:0;

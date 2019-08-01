@@ -18,15 +18,24 @@
 	<meta name="coverage" content="Worldwide">
     <meta name="distribution" content="Global">
 	<meta name="rating" content="General">
-	<meta name="revised" content=" 2019-07-31">
+	<meta name="revised" content=" 2019-08-02">
 	<meta name="theme-color" content="#1a0000">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) ) 
+	   - 1.875em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
 #caution {
 	max-width: 1080px;
@@ -81,7 +90,6 @@ h2 {
 	text-shadow:0 0 .6em white, 0 0 .3em white;
 	margin:.48em 0 .5em 0; /*left margin was 0.2em*/
 }
-
 h3 {
 	font-family: 'Nunito Sans', sans-serif;
 	font-size:2em;
@@ -90,11 +98,9 @@ h3 {
 	margin-left:0;
 	margin-bottom:.5em;
 	}
-
 ul, li{
 	list-style:none;
 	}
-
 a  {
 	font-size: 1.6em;
 	display: inline-block;
@@ -120,25 +126,25 @@ a:active{
 	top: 1px; /*offset*/
 	text-shadow: 0 0 1em white;
 	}
-	.alert {
-		color: #FF6600;
-        background-color: #1a0000;
-        box-shadow: 0 0 .5em red;
-        background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
-		/*-----margin was .5em (experiment for different screens)-----*/
-	}
-	.alert:hover {
-        color: yellow;
-        text-decoration: none;
-        padding: .2em .4em;
-        outline: 0;
-        white-space: nowrap;
-        border-radius: 1em;
-        text-shadow: 0 0 1em red;
-        box-shadow: 0 0 2em red;
-        background-color: #500;
-        background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
-	}
+.alert {
+	color: #FF6600;
+	background-color: #1a0000;
+	box-shadow: 0 0 .5em red;
+	background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
+}
+.alert:hover {
+	color: yellow;
+	text-decoration: none;
+	padding: .2em .4em;
+	outline: 0;
+	white-space: nowrap;
+	border-radius: 1em;
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em red;
+	background-color: #500;
+	background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+}
 .rightLink{
 	float: right;
 }
@@ -211,15 +217,6 @@ footer {
 	width:95%;
 	margin: 5.5em auto 0;
 	}
-.contacts {
-	margin: 1.65em auto;
-	max-width: 270px;
-	text-align: center;
-}
-.contacts p {
-	text-align: center;
-	margin-bottom: 1.65em;
-}
 #copyright{
 	margin: 1.5em auto;
 	text-align: center;
@@ -316,27 +313,69 @@ amp-social-share[type="telegram"]:hover {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 	
-@media only screen and (max-width:1140px) {
-	main {width: 100%;}
-	h1,h2,h3,h4,p,footer {
+@media only screen and (max-width:800px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
+		float: none;
+	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	#caution, #projects, #dreams, #mary, #equip, #current, .true, .connect {
+		width: auto;
+		max-width: 100vw;
+	}
+	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;	
+	}	
 	}
-	nav a {
-		text-align: center;
-		margin-left: .5em;
-	}
-	.rightLink{
-		float: none;
-	}
-	.true, .connect {
-		min-width: calc(100vw - 2.725em);
-	}
-	#me {
-		min-width: 100%;
-	}
-	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }
@@ -373,23 +412,6 @@ p, .list	{
 	}
 }
 </style>
-	
-<script type="application/ld+json">
-		{
-		  "@context": "http://schema.org/",
-		  "@type": "WebPage",
-          "isFamilyFriendly": "True",
-          "isPartOf": {
-              "@type": "ProfilePage",
-              "name": "Nakigoe",
-              "url": "https://nakigoe.github.io/me/me.html"},
-		  "mainEntity": {
-			  "@type": "Person",
-			  "name": "Nakigoe",
-			  "honorificPrefix": "God",
-			  "url": "https://nakigoe.github.io/me/me.html#me"}
-		}
-	</script>	
 </head>
 
 <body vocab="http://schema.org/" typeof="ProfilePage">
