@@ -23,17 +23,50 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1080 / 1350 ) + ( 894 / 1336 ) + ( 1080 / 1349 ) + ( 916 / 1350 ) ) 
+	   - 2.74em
+  	);
+  --coeff2: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1080 / 1309 ) ) 
+	   - 2.1em
+  	);
+  --restrict: 24em;
+}
 a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	min-width: calc((1440/1018)*20em);
+		width: calc( ( 1440 / 1018 ) * var(--coeff2) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict));
 }
-.connect {
-	min-width: calc((2048/2048)*20em);
+#mary {
+		width: calc( ( 1080 / 1309 ) * var(--coeff2) );
+	max-width: calc( ( 1080 / 1309 ) * var(--restrict) );
+}
+#caution {
+		width: calc( ( 1080 / 1350 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
+}
+#dreams {
+		width: calc( ( 894 / 1336 ) * var(--coeff) );
+	max-width: calc( ( 894 / 1336 ) * var(--restrict) );
+}
+#equip {
+		width: calc( ( 1080 / 1349 ) * var(--coeff) );
+	max-width: calc( ( 1080 / 1349 ) * var(--restrict) );
+}
+#current {
+		width: calc( ( 916 / 1350 ) * var(--coeff) );
+	max-width: calc( ( 916 / 1350 ) * var(--restrict) );
 }
 #projects {
 	max-width: 800px;
+	margin: 0 auto;
+	margin-bottom: 1em;
 }
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
@@ -205,22 +238,13 @@ footer {
 	width:95%;
 	margin: 5.5em auto 0;
 	}
-.contacts {
-	margin: 1.65em auto;
-	max-width: 270px;
-	text-align: center;
-}
-.contacts p {
-	text-align: center;
-	margin-bottom: 1.65em;
-}
 #copyright{
-	margin: 1.65em auto;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social p {
@@ -240,7 +264,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -265,7 +288,6 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }
-	
 amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
@@ -311,20 +333,70 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
-@media only screen and (max-width:720px) {
-	main {width:90%;}
-	footer {width:90%;}
-	table {
-		width: 100vw;
-  		position: relative;
-  		left: 50%;
-  		right: 50%;
-  		margin-left: -50vw;
-  		margin-right: -50vw;
-		border-left: 1px solid #250000;
-		border-right: 1px solid #250000;
+
+@media only screen and (max-width:600px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
+		float: none;
+	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	#caution, #dreams, #equip, #current, #mary, .true {
+		width: auto;
+		max-width: 100vw;
 	}
 	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 	}
@@ -442,12 +514,61 @@ h2 {
 </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>	
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/bio.html">Bio</a></li>
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/dreams.html" title="Angel Dreams">Dreams</a></li>
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/equip.html" title="Equipment Wanted">Equips</a></li>
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/current.html" title="Current Insider">Insider</a></li>
-<li><a property="relatedLink" href="https://nakigoe.github.io/me/help.html" title="Help Needed">Help</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/bio.html" target="_blank">
+<div id="caution">
+<amp-img src="https://nakigoe.github.io/_IMG/caution.jpg"
+  width="1080"
+  height="1350"
+  layout="responsive"
+  alt="Caution Climbing Mountains"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Caution Climbing Mountains">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/caution.jpg">
+</amp-img>
+</div>
+Biography</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/dreams.html" target="_blank">
+<div id="dreams">
+<amp-img src="https://nakigoe.github.io/_IMG/dreams.jpg"
+  width="894"
+  height="1336"
+  layout="responsive"
+  alt="Angel Dreams"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Angel Dreams">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/dreams.jpg">
+</amp-img>
+</div>
+Dreams</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/current.html" target="_blank">
+<div id="current">
+<amp-img src="https://nakigoe.github.io/_IMG/current.jpg"
+  width="916"
+  height="1350"
+  layout="responsive"
+  alt="Current Projects Overview"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Current Projects Overview">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/current.jpg">
+</amp-img>
+</div>
+Insider</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/me/equip.html" target="_blank">
+<div id="equip">
+<amp-img src="https://nakigoe.github.io/_IMG/equip.jpg"
+  width="1080"
+  height="1349"
+  layout="responsive"
+  alt="Equip Me for Battle"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Equip Me for Battle">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/equip.jpg">
+</amp-img>
+</div>
+Equips</a></li>
 </ul>
 </nav>
 <main>
@@ -507,15 +628,34 @@ h2 {
 </footer>
 <nav class="cf">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/me/bio.html">Bio</a></li>
-<li><a href="https://nakigoe.github.io/me/dreams.html" title="Angel Dreams">Dreams</a></li>
-<li><a href="https://nakigoe.github.io/me/equip.html" title="Equipment Wanted">Equips</a></li>
-<li><a href="https://nakigoe.github.io/me/current.html" title="Current Insider">Insider</a></li>
-<li><a href="https://nakigoe.github.io/me/help.html" title="Help Needed">Help</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="True"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Main Menu</a></li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/help.html" target="_blank">
+<div id="mary">
+<amp-img src="https://nakigoe.github.io/_IMG/mary.png"
+  width="1080"
+  height="1309"
+  layout="responsive"
+  alt="Prayer"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Prayer">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/mary.png">
+</amp-img>
+</div>
+Please&nbsp;Help</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
@@ -526,6 +666,7 @@ h2 {
   alt="Lovely Me"
   property="image" typeOf="ImageObject">
   <meta property="caption" content="Lovely Me">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/love.jpg">
 </amp-img>
 </div>
 Lovely&nbsp;Me</a>
