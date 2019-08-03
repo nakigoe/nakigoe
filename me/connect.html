@@ -214,7 +214,7 @@ li small  {
 	}
 footer {
 	width:95%;
-	margin: 5.5em auto 0;
+	margin: 1.65em auto 0;
 	}
 .contacts {
 	margin: 1.65em auto;
@@ -231,7 +231,7 @@ footer {
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social p {
@@ -323,20 +323,70 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
-@media only screen and (max-width:720px) {
-	main {width:90%;}
-	footer {width:90%;}
-	table {
-		width: 100vw;
-  		position: relative;
-  		left: 50%;
-  		right: 50%;
-  		margin-left: -50vw;
-  		margin-right: -50vw;
-		border-left: 1px solid #250000;
-		border-right: 1px solid #250000;
+	
+@media only screen and (max-width:400px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	#topNav .rightLink {
+		display: none;
+	}
+	.rightLink {
+		float: none;
+	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	.true, .connect {
+		width: auto;
+		max-width: 100vw;
 	}
 	}
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .list {
+		width: 95%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+	
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 	}
