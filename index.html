@@ -34,76 +34,13 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400">
 <style amp-custom>
 :root {
-  --coeff: calc( 
+  --lang: calc( 
 	  100vw / 
-	  ( ( 2560 / 1453 ) + ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 720 ) + ( 1128 / 2048 ) + ( 639 / 1024 ) ) 
-	   - 2.34em
+	  ( ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 720 ) + ( 1128 / 2048 ) + ( 639 / 1024 ) ) 
+	   - 2.75em
   	);
   --restrict: 24em;
-}
-#translator {
-	width: calc( ( 2560 / 1453 ) * var(--coeff));
-	max-width: calc( ( 2560 / 1453 ) * var(--restrict));
-}
-#russian {
-	width: calc( ( 937 / 1170 ) * var(--coeff));
-	max-width: calc( ( 937 / 1170 ) * var(--restrict));
-}
-#tajik {
-	width: calc( ( 1080 / 1350 ) * var(--coeff));
-	max-width: calc( ( 1080 / 1350 ) * var(--restrict));
-}
-#mandarin {
-	width: calc( ( 520 / 720 ) * var(--coeff));
-	max-width: calc(( 1080 / 1350 ) * var(--restrict));
-}
-#japanese {
-	width: calc( ( 1128 / 2048 ) * var(--coeff));
-	max-width: calc( ( 1128 / 2048 ) * var(--restrict));
-}
-#english {
-	width: calc( ( 639 / 1024 ) * var(--coeff));
-	max-width: calc( ( 639 / 1024 ) * var(--restrict));
-}
-html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
-	margin:0;
-	padding:0;
-	}
-body{
-	color: #eee;
-	width: 100%;
-	background-color: #1a0000;
-	}
-a amp-img {
-	margin-top: .2em;
-	}
-/*Lovely Me link special formatting section*/
-#love {
-	width: 100%;
-	max-width: 4416px;
-}
-#me amp-img {
-	margin-top: 0;
-	}
-#me{
-	margin-left: 0;
-	margin-right: 0;
-	margin-top: 0;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 0;
-	border-top: hidden;
-	border-left: hidden;
-	border-right: hidden;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	width: 100%;
-	text-align: center;
-	}
-/*navigation start*/
-:root {
   --coeff: 20em;
-  --restrict: 24em;
 }
 #spirit {
 	width: calc( ( 2048 / 1280 ) * var(--coeff));
@@ -169,6 +106,66 @@ a amp-img {
 	width: calc( ( 1682 / 2048 ) * var(--coeff));
 	max-width: calc( ( 1682 / 2048 ) * var(--restrict));
 }
+	
+/*---wide screens----*/
+@media only screen and (min-width:1100px) {
+#russian {
+	width: calc( ( 937 / 1170 ) * var(--lang));
+	max-width: calc( ( 937 / 1170 ) * var(--restrict));
+}
+#tajik {
+	width: calc( ( 1080 / 1350 ) * var(--lang));
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict));
+}
+#chinese {
+	width: calc( ( 520 / 720 ) * var(--lang));
+	max-width: calc(( 1080 / 1350 ) * var(--restrict));
+}
+#japanese {
+	width: calc( ( 1128 / 2048 ) * var(--lang));
+	max-width: calc( ( 1128 / 2048 ) * var(--restrict));
+}
+#british {
+	width: calc( ( 639 / 1024 ) * var(--lang));
+	max-width: calc( ( 639 / 1024 ) * var(--restrict));
+}
+}
+
+html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
+	margin:0;
+	padding:0;
+	}
+body{
+	color: #eee;
+	width: 100%;
+	background-color: #1a0000;
+	}
+a amp-img {
+	margin-top: .2em;
+	}
+/*Lovely Me link special formatting section*/
+#love {
+	width: 100%;
+	max-width: 4416px;
+}
+#me amp-img {
+	margin-top: 0;
+	}
+#me{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	border-top: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	width: 100%;
+	text-align: center;
+	}
 #meow {
 	display: inline-block;
 	width: 40%;
@@ -654,7 +651,8 @@ Life&nbsp;Science&nbsp;Instructor</a></li>
 </amp-img>
 </div>
 <span>Translator &amp; Interpreter <small class="phrase">Russian, Tajik, Japanese, Mandarin Chinese, English</small></span></a></li>
-
+</ul>
+<ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" target="_blank">
 <div id="russian">
 <amp-img src="https://nakigoe.github.io/_IMG/russian.jpg"
@@ -719,7 +717,8 @@ Mandarin&nbsp;Tutor</a></li>
 </amp-img>
 </div>
 English&nbsp;Tutor</a></li>
-
+</ul>
+<ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" target="_blank">
 <div id="group">
 <amp-img src="https://nakigoe.github.io/_IMG/groupmath.jpg"
