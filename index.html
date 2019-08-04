@@ -33,6 +33,29 @@
 	<link rel="apple-touch-icon-precomposed" href="https://nakigoe.github.io/_IMG/meow.png">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400">
 <style amp-custom>
+/*Lovely Me link special formatting section*/
+#love {
+	width: 100%;
+	max-width: 4416px;
+}
+#me amp-img {
+	margin-top: 0;
+	}
+#me{
+	margin-left: 0;
+	margin-right: 0;
+	margin-top: 0;
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	border-top: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	width: 100%;
+	text-align: center;
+	}
 :root {
   --lang: calc( 
 	  100vw / 
@@ -143,7 +166,9 @@
 	max-width: calc( ( 639 / 1024 ) * var(--restrict));
 }
 }
-
+a amp-img {
+	margin-top: .2em;
+	}
 html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
 	margin:0;
 	padding:0;
@@ -153,46 +178,55 @@ body{
 	width: 100%;
 	background-color: #1a0000;
 	}
-a amp-img {
-	margin-top: .2em;
-	}
-/*Lovely Me link special formatting section*/
-#love {
-	width: 100%;
-	max-width: 4416px;
+#topNav {
+	margin: 0;
+	background-color: #120000;
 }
-#me amp-img {
-	margin-top: 0;
-	}
-#me{
-	margin-left: 0;
-	margin-right: 0;
-	margin-top: 0;
-	padding-left: 0;
-	padding-right: 0;
-	padding-top: 0;
-	border-top: hidden;
-	border-left: hidden;
-	border-right: hidden;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	width: 100%;
-	text-align: center;
+header {
+	display: flex;
+	align-items: center;
 	}
 #meow {
 	display: inline-block;
 	width: 40%;
 	}
-#topNav {
-	margin: 0;
-	background-color: #120000;
-}
-#topNav .rightLink {
-	margin-right: .75em;/*temporary draft*/
+@media only screen and (max-width:600px) {
+h1 {
+	margin-left: -5%;
 	}
-header {
-	display: flex;
-	align-items: center;
+	}
+@media only screen and (min-width:960px) {
+h1 {
+	margin-left: 5%;
+	}
+	}
+h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	font-family: 'Nunito Sans',Verdana,Arial,sans-serif;
+	font-weight: 400;
+	font-size: calc( 1em + 3.4vw );
+	text-align: center;
+	/*font-size: 4em;*/
+	letter-spacing: .12em;
+	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
+	}
+h1 span {
+	font-size: .5em;
+	/* for adobe font font-weight: 200;*/
+	text-align: center;
+	text-shadow:0 0 .6em white;
+	line-height: 200%;
+	}	
+.rightLink li {
+	display: block;
+	text-align: right;
+	}
+.rightLink {
+	margin-right: .75em;/*temporary draft*/
+	margin-left: auto;
 	}
 #angelblaze {
 	-webkit-animation:angelblaze 6s ease-out 0s infinite alternate;
@@ -227,24 +261,7 @@ main {
 	}
 .phrase {
 	display: inline-block;
-}
-h1 {
-	font-family: 'Nunito Sans',Verdana,Arial,sans-serif;
-	font-weight: 400;
-	text-align: center;
-	padding-top: 0.8em;
-	padding-bottom: 0.75em;
-	/*font-size: 4em;*/
-	letter-spacing: .12em;
-	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
-	}
-h1 span {
-	font-size: .5em;
-	/* for adobe font font-weight: 200;*/
-	text-align: center;
-	text-shadow:0 0 .6em white;
-	line-height: 200%;
-	}		
+}	
 h2 {
 	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
 	font-weight: 400;
@@ -521,21 +538,18 @@ amp-social-share[type="telegram"]:hover {
 		margin-left: 0;
 		margin-right: 0;
     }
-	h1 {margin-left: -10%;}
+/*	h1 {margin-left: -10%;}*/
 	h2 {margin-left: .4em;}
 	#topNav ul, #topNav li, #topNav a:not(.alert), nav ul, nav li, nav a {
 		display: block;
 	}
-	#topNav .rightLink{
+/*	#topNav .rightLink {
 		float: none;
 		display: flex;
 		flex-direction: row-reverse;
   		align-items: flex-end;
 		margin-right: .5em;
-	}
-	#topNav .rightLink li {
-		display: inline-block;
-	}
+	} */
 	nav a{
 		text-align: center;
 		margin-left: .5em;
@@ -548,9 +562,6 @@ amp-social-share[type="telegram"]:hover {
 	}
 	}
 /*these are standard font measures, adjust the font-size if the type-face requires it*/
-h1 {
-	font-size: calc(2em + 3vmin);
-}
 h2 {
 	font-size: calc(1.5em + 1.5vmin);
 }
@@ -604,7 +615,7 @@ a {
 </amp-analytics>
 <meta property="isFamilyFriendly" content="True">
 
-<nav id="topNav" class="cf">
+<nav id="topNav">
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
 <amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
@@ -618,11 +629,29 @@ a {
 </amp-img>
 </div>
 Lovely&nbsp;Me</a>
+
+<header property="mainEntity" typeOf="Organization" class="cf">
+<meta property="name" content="Nakigoe">
+<div id="meow">
+<amp-img src="https://nakigoe.github.io/_IMG/meow.png"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Nakigoe Logo"
+  property="logo" typeOf="ImageObject">
+  <meta property="caption" content="Nakigoe Logo">
+</amp-img>
+</div>
+  <h1 id="angelblaze"><span>meow!</span><br>nakigoe!
+  	<br><span class="phrase">awesome&nbsp;angel</span>
+	<br><span class="phrase">SUPREME&nbsp;SERVICE</span>
+  </h1>
 <ul class="rightLink">
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/ru/tutor.html" hreflang="ru-RU" target="_blank">RU</a></li>
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/japan/tutor.html" hreflang="ja-JP" target="_blank">日本</a></li>
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/china/tutor.html" hreflang="zh-Hans" target="_blank">中文</a></li>
 </ul>
+</header>
 
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/spirit.html" target="_blank">
@@ -837,23 +866,6 @@ Film&nbsp;Director</a></li>
 Actor</a></li>
 </ul>
 </nav>
-<header property="mainEntity" typeOf="Organization">
-<meta property="name" content="Nakigoe">
-<div id="meow">
-<amp-img src="https://nakigoe.github.io/_IMG/meow.png"
-  width="2048"
-  height="2048"
-  layout="responsive"
-  alt="Nakigoe Logo"
-  property="logo" typeOf="ImageObject">
-  <meta property="caption" content="Nakigoe Logo">
-</amp-img>
-</div>
-  <h1 id="angelblaze"><span>meow!</span><br>nakigoe!
-  	<br><span class="phrase">awesome&nbsp;angel</span>
-	<br><span class="phrase">SUPREME&nbsp;SERVICE</span>
-  </h1>
-</header>
 
 <main>
 <nav>
