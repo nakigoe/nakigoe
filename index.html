@@ -39,12 +39,21 @@
 	  ( ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 720 ) + ( 1128 / 2048 ) + ( 639 / 1024 ) ) 
 	   - 2.75em
   	);
+  --life: calc( 
+	  100vw / 
+	  ( ( 2048 / 1280 ) + ( 1682 / 2048 ) ) 
+	   - 1.88em
+  	);
   --restrict: 24em;
   --coeff: 20em;
 }
 #spirit {
 	width: calc( ( 2048 / 1280 ) * var(--coeff));
 	max-width: calc( ( 2048 / 1280 ) * var(--restrict));
+}
+#life {
+	width: calc( ( 1682 / 2048 ) * var(--coeff));
+	max-width: calc( ( 1682 / 2048 ) * var(--restrict));
 }
 #russian {
 	width: calc( ( 937 / 1170 ) * var(--coeff));
@@ -78,6 +87,10 @@
 	width: calc( ( 2560 / 1453 ) * var(--coeff));
 	max-width: calc( ( 2560 / 1453 ) * var(--restrict));
 }
+#goddess {
+	width: calc( ( 1280 / 1810 ) * var(--coeff));
+	max-width: calc( ( 1280 / 1810 ) * var(--restrict));
+}
 #desire {
 	width: calc( ( 2300 / 2160 ) * var(--coeff));
 	max-width: calc( ( 2300 / 2160 ) * var(--restrict));
@@ -98,15 +111,15 @@
 	width: calc( ( 799 / 999 ) * var(--coeff));
 	max-width: calc( ( 799 / 999 ) * var(--restrict));
 }
-#goddess {
-	width: calc( ( 1280 / 1810 ) * var(--coeff));
-	max-width: calc( ( 1280 / 1810 ) * var(--restrict));
+
+#spirit {
+	width: calc( ( 2048 / 1280 ) * var(--life));
+	max-width: calc( ( 2048 / 1280 ) * var(--restrict));
 }
 #life {
-	width: calc( ( 1682 / 2048 ) * var(--coeff));
+	width: calc( ( 1682 / 2048 ) * var(--life));
 	max-width: calc( ( 1682 / 2048 ) * var(--restrict));
 }
-	
 /*---wide screens----*/
 @media only screen and (min-width:1100px) {
 #russian {
