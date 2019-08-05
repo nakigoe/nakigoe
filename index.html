@@ -49,6 +49,9 @@
 	width: 100%;
 	text-align: center;
 	} */
+a amp-img {
+	margin-top: .2em;
+	}
 :root {
   --lang: calc( 
 	  100vw / 
@@ -64,6 +67,16 @@
 	  100vw / 
 	  ( ( 1756 / 2184 ) + ( 930 / 1345 ) + ( 2300 / 2160 ) ) 
 	   - 2.45em
+  	);
+  --int: calc( 
+	  100vw / 
+	  ( ( 1600 / 1300 ) + ( 1500 / 1500 ) + ( 564 / 564 ) ) 
+	   - 1.95em
+  	);
+  --dev: calc( 
+	  100vw / 
+	  ( ( 1080 / 1350 ) + ( 1280 / 1142 ) + ( 807 / 807 ) + ( 1080 / 1349 ) ) 
+	   - 2.15em
   	);
   --restrict: 24em;
   --coeff: 20em;
@@ -140,6 +153,7 @@
 	width: calc( ( 1682 / 2048 ) * var(--life));
 	max-width: calc( ( 1682 / 2048 ) * var(--restrict));
 }
+
 /*---wide screens section for languages----*/
 @media only screen and (min-width:1100px) {
 #russian {
@@ -178,8 +192,69 @@
 	max-width: calc( ( 2300 / 2160 ) * var(--restrict));
 }
 }
-a amp-img {
-	margin-top: .2em;
+/*---New articles general section---*/
+#newArticles li {
+	display: block;
+	}
+article div {
+	width: var(--coeff);
+	}
+/*---wide screens section for China, Russia, America ----*/
+@media only screen and (min-width:960px) {
+#kingdom li {
+	display: inline-block;
+	}
+#china {
+	width: calc( ( 1600 / 1300 ) * var(--int));
+	max-width: calc( ( 1600 / 1300 ) * var(--restrict));
+}
+#fun {
+	width: calc( ( 1500 / 1500 ) * var(--int));
+	max-width: calc( ( 1500 / 1500 ) * var(--restrict));
+}
+#america {
+	width: calc( ( 564 / 564 ) * var(--int));
+	max-width: calc( ( 564 / 564 ) * var(--restrict));
+}
+}
+/*---wide screens section for China, Russia, America ----*/
+@media only screen and (min-width:960px) {
+#dev li {
+	display: inline-block;
+	}
+#rev {
+	width: calc( ( 1280 / 1142 ) * var(--dev) );
+	max-width: calc( ( 1280 / 1142 ) * var(--restrict) );
+}
+#apps {
+	width: calc( ( 1080 / 1350 ) * var(--dev) );
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
+}
+#sight {
+	width: calc( ( 807 / 807 ) * var(--dev) );
+	max-width: calc( ( 807 / 807 ) * var(--restrict) );
+}
+#secret {
+	width: calc( ( 1080 / 1349 ) * var(--dev) );
+	max-width: calc( ( 1080 / 1349 ) * var(--restrict) );
+}
+}
+#ani{
+	margin: 0 auto;
+	}
+	#ani li {
+		display: block;
+	}
+#ani a {
+	display: block;
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+#anime{
+	width: auto;
+	max-width: 1455px;
+	max-width: 100vw;
 	}
 html,body,header,h1,h2,ul,li,dl,dd,dt,p,div{
 	margin:0;
@@ -272,7 +347,7 @@ h2, h3, h4, h5, h6 {
 	color: white;
 	}
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
 .phrase {
@@ -377,13 +452,6 @@ a:active{
 	margin:1.4em 0 1em .635em;	
 	}
 .linksList li {margin-bottom:1em;}
-
-.list {
-	font-family:'Nunito Sans',Verdana,Arial,sans-serif;
-	font-size:1em;
-	margin-left:1.5em;
-	line-height:1.5em;
-	}
  
 .linksListSection {margin-bottom:2em;}
 .linksListSection p{
@@ -415,20 +483,17 @@ nav a{
 	display: inline-block;
 }
 #newArticles{
-	margin: 1em 1em .5em;
-	}
-#newArticles li{
-	display: block;
-	}
-#newArticles a{
-	/*font-size:1.2em;*/
-	color:#eee;
-	width: var(--coeff);
-	max-width: var(--restrict);
+	margin: 0;
 	}
 #newArticles li:last-child a{margin-bottom:.6em;}
 #newArticles li:first-child a{margin-top:.15em;}
-#newArticles a:hover {color:white;}
+#newArticles a{
+	/*font-size:1.2em;*/
+	color:#eee;
+	}
+#newArticles a:hover {
+	color:white;
+	}
 
 .siteLinks {margin-top:.7em;}
 .siteLinks a{margin-bottom:.4em;}
@@ -452,31 +517,16 @@ p {
 	}
 em {color:#fff;}
 
-.articleHr {margin:2.25em 0 1em;}
-
 li small  {
 	font-size:0.65em;
 	color:#eee;
 	margin-left:auto;
 	margin-top:.25em;
 	}
-.linkAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:wrap;
-}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
 footer {
 	width:95%;
-	margin: 5.5em auto 0;
+	margin: 2.5em auto 0;
 	}
-/*#mainPageFooter {margin-top:5.5em;}*/
 #copyright{
 	margin: 1.5em auto;
 	text-align: center;
@@ -899,7 +949,7 @@ Art Instructor</a></li>
 
 <main>
 <nav>
-<section id="newArticles">
+<article id="newArticles">
 <h2>New Articles</h2>
 <ul>
 	<li><a property="significantLink" href="https://nakigoe.github.io/swords/sword-length.html" target="_blank">
@@ -972,20 +1022,6 @@ Art Instructor</a></li>
 	</div>
 	Artificial&nbsp;Intelligence&nbsp;for&nbsp;Leaders</a></li>
 	
-	<li><a property="significantLink" href="https://nakigoe.github.io/china/freedom.html" target="_blank">
-	<div id="china">
-	<amp-img src="https://nakigoe.github.io/_IMG/china.jpg"
-	  width="1600"
-	  height="1300"
-	  layout="responsive"
-	  alt="China girl with a sword"
-	  property="image" typeOf="ImageObject">
-	  <meta property="representativeOfPage" content="True">
-	  <meta property="caption" content="China girl with a sword">
-	</amp-img>
-	</div>
-	China: 'Owned by its People'</a></li>
-	
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/girl.html" target="_blank">
 	<div id="girl">
 	<amp-img src="https://nakigoe.github.io/_IMG/girl.jpg"
@@ -1028,7 +1064,23 @@ Art Instructor</a></li>
 		</amp-img>
 		</div>
 	the Best of Thai</a></li>
+	</ul>
 	
+	<ul id="kingdom">
+	<li><a property="significantLink" href="https://nakigoe.github.io/china/freedom.html" target="_blank">
+	<div id="china">
+	<amp-img src="https://nakigoe.github.io/_IMG/china.jpg"
+	  width="1600"
+	  height="1300"
+	  layout="responsive"
+	  alt="China girl with a sword"
+	  property="image" typeOf="ImageObject">
+	  <meta property="representativeOfPage" content="True">
+	  <meta property="caption" content="China girl with a sword">
+	</amp-img>
+	</div>
+	China: 'Owned by its People'</a></li>
+		
 	<li><a property="significantLink" href="https://nakigoe.github.io/ru/grim.html" target="_blank">
 	<div id="fun">
 	<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
@@ -1055,9 +1107,9 @@ Art Instructor</a></li>
 	<meta property="caption" content="Statue of Liberty">
 	</amp-img>
 	</div>
-	Come to USA!
-	<br><small>Nipples of Liberty.</small></a></li>
-	
+	Come to USA! <small>Nipples of Liberty</small></a></li>
+	</ul>
+	<ul id="dev">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/rev.html" target="_blank">
 	<div id="rev">
 	<amp-img src="https://nakigoe.github.io/_IMG/rev.jpg"
@@ -1070,7 +1122,8 @@ Art Instructor</a></li>
 	  <meta property="caption" content="Scriptures for Developers">
 	</amp-img>
 	</div>
-	Scriptures&nbsp;for&nbsp;Developers</a></li>
+	Scriptures &amp; Developers
+	<br><small>APP Metaphysics: Saints vs Villains</small></a></li>
 			
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/apps.html" target="_blank">
 	<div id="apps">
@@ -1100,7 +1153,7 @@ Art Instructor</a></li>
 	</amp-img>
 	</div>
 	Grab Your Website 
-	<br><small>Online in an Hour. Love from the First Sight!</small></a></li>
+	<br><small>Online in an Hour</small></a></li>
 	
 	<li><a property="significantLink" href="/articles/secret.html" target="_blank">
 	<div id="secret">
@@ -1116,7 +1169,8 @@ Art Instructor</a></li>
 	</div>
 	Online Privacy
 	<br> <small>advanced tips</small></a></li>
-	
+	</ul>
+	<ul id="ani">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/anime.html" target="_blank">
 	<div id="anime">
 	<amp-img src="https://nakigoe.github.io/_IMG/anime.jpg"
@@ -1129,14 +1183,15 @@ Art Instructor</a></li>
 	<meta property="caption" content="Anime Table">
 	</amp-img>
 	</div>
-	Must See Anime</a></li>
+	Must See Anime
+	<br> <small>priority list</small></a></li>
 <!--
 <li><a property="significantLink" href="articles/typing.html">Modern Touch-Typing</a></li>
 <li><a property="significantLink" href="articles/ai.html">AI vs Emotions and Feelings</a></li>
 <li><a property="significantLink" href="articles/science.html">Modern Science</a></li> 
 -->
 </ul>
-</section>
+</article>
 
 <!--
 <div class="siteLinks">
@@ -1185,16 +1240,5 @@ Art Instructor</a></li>
 </div>
 Lovely&nbsp;Me</a>
 </nav>
-<!--<div id="front">
-<amp-img src="https://nakigoe.github.io/_IMG/me.jpg"
-  width="2118"
-  height="976"
-  layout="responsive"
-  alt="Angel"
-  property="primaryImageOfPage" typeOf="ImageObject">
-  <meta property="representativeOfPage" content="True">
-  <meta property="caption" content="Angel">
-</amp-img>
-</div>-->
 </body>
 </html>
