@@ -33,30 +33,7 @@
 	<link rel="apple-touch-icon-precomposed" href="https://nakigoe.github.io/_IMG/meow.png">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400">
 <style amp-custom>
-/*Lovely Me link special formatting section*/
-#love {
-	width: 100%;
-	max-width: 4416px;
-}
-#me{
-	width: 100%;
-	text-align: center;
-	margin-left: 0;
-	margin-right: 0;
-	padding-left: 0;
-	padding-right: 0;
-	box-shadow: 0 0 2em red;
-	border-top-left-radius: 0;
-	border-top-right-radius: 0;
-	border-bottom-left-radius: 0;
-	border-bottom-right-radius: 0;
-	padding-top: 0;
-	border-top: hidden;
-	}
-#me amp-img {
-	margin-top: 0;
-	}
-#me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}/* 
+/*Lovely Me on top special formatting section
 #me{
 	margin-left: 0;
 	margin-right: 0;
@@ -82,6 +59,11 @@
 	  100vw / 
 	  ( ( 2048 / 1280 ) + ( 1682 / 2048 ) ) 
 	   - 1.88em
+  	);
+  --it: calc( 
+	  100vw / 
+	  ( ( 1756 / 2184 ) + ( 930 / 1345 ) + ( 2300 / 2160 ) ) 
+	   - 2.45em
   	);
   --restrict: 24em;
   --coeff: 20em;
@@ -114,14 +96,6 @@
 	width: calc( ( 639 / 1024 ) * var(--coeff));
 	max-width: calc( ( 639 / 1024 ) * var(--restrict));
 }
-#group {
-	width: calc( ( 1756 / 2184 ) * var(--coeff));
-	max-width: calc( ( 1756 / 2184 ) * var(--restrict));
-}
-#it {
-	width: calc( ( 930 / 1345 ) * var(--coeff));
-	max-width: calc( ( 930 / 1345 ) * var(--restrict));
-}
 #translator {
 	width: calc( ( 2560 / 1453 ) * var(--coeff));
 	max-width: calc( ( 2560 / 1453 ) * var(--restrict));
@@ -129,6 +103,14 @@
 #goddess {
 	width: calc( ( 1280 / 1810 ) * var(--coeff));
 	max-width: calc( ( 1280 / 1810 ) * var(--restrict));
+}
+#group {
+	width: calc( ( 1756 / 2184 ) * var(--coeff));
+	max-width: calc( ( 1756 / 2184 ) * var(--restrict));
+}
+#it {
+	width: calc( ( 930 / 1345 ) * var(--coeff));
+	max-width: calc( ( 930 / 1345 ) * var(--restrict));
 }
 #desire {
 	width: calc( ( 2300 / 2160 ) * var(--coeff));
@@ -158,7 +140,7 @@
 	width: calc( ( 1682 / 2048 ) * var(--life));
 	max-width: calc( ( 1682 / 2048 ) * var(--restrict));
 }
-/*---wide screens----*/
+/*---wide screens section for languages----*/
 @media only screen and (min-width:1100px) {
 #russian {
 	width: calc( ( 937 / 1170 ) * var(--lang));
@@ -179,6 +161,21 @@
 #british {
 	width: calc( ( 639 / 1024 ) * var(--lang));
 	max-width: calc( ( 639 / 1024 ) * var(--restrict));
+}
+}
+/*---wide screens section for Math, Computer Science, Web-Design ----*/
+@media only screen and (min-width:960px) {
+#group {
+	width: calc( ( 1756 / 2184 ) * var(--it));
+	max-width: calc( ( 1756 / 2184 ) * var(--restrict));
+}
+#it {
+	width: calc( ( 930 / 1345 ) * var(--it));
+	max-width: calc( ( 930 / 1345 ) * var(--restrict));
+}
+#desire {
+	width: calc( ( 2300 / 2160 ) * var(--it));
+	max-width: calc( ( 2300 / 2160 ) * var(--restrict));
 }
 }
 a amp-img {
@@ -546,10 +543,36 @@ amp-social-share[type="telegram"] {
 amp-social-share[type="telegram"]:hover {
 	background-size: 75%;
 }
-#front {
-	max-width: 2118px; 
-	margin: 0 auto;
+#love {
+	width: 100%;
+	max-width: 4416px;
+}
+#me amp-img {
+	margin-top: 0;
 	}
+#me{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	/*margin-top: 0;*/
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-top: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 100%;
+	box-shadow: 0 0 2em red;
+	text-align: center;
+	}
+#me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+	
 @media only screen and (max-width:720px) {
 	main {width: 100%;}
 
@@ -767,19 +790,6 @@ English&nbsp;Tutor</a></li>
 </amp-img>
 </div>
 <span>Translator &amp; Interpreter <small class="phrase">Russian, Tajik, Japanese, Mandarin Chinese, English</small></span></a></li>
-
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" target="_blank">
-<div id="goddess">
-<amp-img src="https://nakigoe.github.io/_IMG/goddess.jpg"
-  width="1280"
-  height="1810"
-  layout="responsive"
-  alt="Art Instructor"
-  property="image" typeOf="ImageObject">
-  <meta property="caption" content="Art Instructor">
-</amp-img>
-</div>
-Art Tutor</a></li>
 </ul>
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" target="_blank">
@@ -872,6 +882,18 @@ Film&nbsp;Director</a></li>
 </amp-img>
 </div>
 Actor</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" target="_blank">
+<div id="goddess">
+<amp-img src="https://nakigoe.github.io/_IMG/goddess.jpg"
+  width="1280"
+  height="1810"
+  layout="responsive"
+  alt="Art Instructor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Art Instructor">
+</amp-img>
+</div>
+Art Instructor</a></li>
 </ul>
 </nav>
 
