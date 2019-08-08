@@ -223,25 +223,12 @@ p {
 	}
 em {color:#fff;}
 
-.articleHr {margin:2.25em 0 1em;}
 li small  {
 	font-size:0.65em;
 	color:#eee;
 	margin-left:auto;
 	margin-top:.25em;
 	}
-.linkAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:wrap;
-}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
 .how {
 	text-align: center;
 }
@@ -254,7 +241,7 @@ li small  {
 }
 footer {
 	width:95%;
-	margin: 5.5em auto 0;
+	margin: 2.8em auto 0;
 	}
 .contacts {
 	margin: 1.65em auto;
@@ -263,15 +250,15 @@ footer {
 }
 .contacts p {
 	text-align: center;
-	margin-bottom: 1.65em;
+	margin-bottom: 1.5em;
 }
 #copyright{
-	margin: 1.65em auto;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.5em auto;
 	text-align: center;
 }
 .social p {
@@ -365,6 +352,46 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
 }

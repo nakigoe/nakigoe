@@ -201,7 +201,7 @@ p, section li {
 }
 footer {
 	width:95%;
-	margin: 5.5em auto 0;
+	margin: 2.8em auto 0;
 	}
 .contacts {
 	margin: 1.65em auto;
@@ -218,11 +218,11 @@ footer {
 }
 .social {
 	display: block;
-	margin: 2.5em auto 1.5em;
+	margin: 1.65em auto;
 	text-align: center;
 }
 .social p {
-	margin-bottom: 1.5em;
+	margin-bottom: 1.65em;
 	text-align: center;
 	font-weight: 400;
 }
@@ -238,7 +238,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -263,8 +262,7 @@ amp-social-share[type="ok"] {
 amp-social-share[type="ok"]:hover {
 	background-size: 75%;
 }
-	
-	amp-social-share[type="livejournal"] {
+amp-social-share[type="livejournal"] {
 	background-color: #21A5D8;
 	background-size: 50%;
 	background-image: url(../_SVG/livejournal.svg);
@@ -272,8 +270,7 @@ amp-social-share[type="ok"]:hover {
 amp-social-share[type="livejournal"]:hover {
 	background-size: 75%;
 }
-
-	amp-social-share[type="telegram"] {
+amp-social-share[type="telegram"] {
 	background-color: #1e96c8;
 	background-size: 50%;
 	background-image: url(../_SVG/telegram.svg);
@@ -310,14 +307,46 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
-@media only screen and (max-width:540px) {
-main {
-	width: 90%;
-}
-footer {
-	width: 90%;
-}
-}
+
+/* --------- text width section ------------- */
+@media only screen and (max-width: 1300px) {
+	main {
+		width: 70%;
+	}
+	}
+/* --------- text width section , images 100vw ---------------- */
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .list {
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 p, section li	{
 	font-size: 1em;
 	font-stretch: semi-condensed;
