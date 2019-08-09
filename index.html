@@ -55,7 +55,7 @@ a amp-img {
 :root {
   --lang: calc( 
 	  100vw / 
-	  ( ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 720 ) + ( 1128 / 2048 ) + ( 639 / 1024 ) ) 
+	  ( ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 656 ) + ( 1128 / 1968 ) + ( 639 / 1024 ) ) 
 	   - 2.75em
   	);
   --life: calc( 
@@ -113,8 +113,8 @@ a amp-img {
 	max-width: calc( ( 1128 / 2048 ) * var(--restrict));
 }
 #chinese {
-	width: calc( ( 520 / 720 ) * var(--coeff));
-	max-width: calc( ( 520 / 720 ) * var(--restrict));
+	width: calc( ( 520 / 656 ) * var(--coeff));
+	max-width: calc( ( 520 / 656 ) * var(--restrict));
 }
 #british {
 	width: calc( ( 639 / 1024 ) * var(--coeff));
@@ -176,12 +176,12 @@ a amp-img {
 	max-width: calc( ( 1080 / 1350 ) * var(--restrict));
 }
 #chinese {
-	width: calc( ( 520 / 720 ) * var(--lang));
-	max-width: calc(( 1080 / 1350 ) * var(--restrict));
+	width: calc( ( 520 / 656 ) * var(--lang));
+	max-width: calc( ( 520 / 656 ) * var(--restrict));
 }
 #japanese {
-	width: calc( ( 1128 / 2048 ) * var(--lang));
-	max-width: calc( ( 1128 / 2048 ) * var(--restrict));
+	width: calc( ( 1128 / 1968 ) * var(--lang));
+	max-width: calc( ( 1128 / 1968 ) * var(--restrict));
 }
 #british {
 	width: calc( ( 639 / 1024 ) * var(--lang));
@@ -845,7 +845,7 @@ Tajik&nbsp;Tutor</a></li>
 <div id="japanese">
 <amp-img src="https://nakigoe.github.io/_IMG/japanese.jpg"
   width="1128"
-  height="2048"
+  height="1968"
   layout="responsive"
   alt="Japanese Tutor"
   property="image" typeOf="ImageObject">
@@ -858,7 +858,7 @@ Japanese&nbsp;Tutor</a></li>
 <div id="chinese">
 <amp-img src="https://nakigoe.github.io/_IMG/chinese.jpg"
   width="520"
-  height="720"
+  height="656"
   layout="responsive"
   alt="Mandarin Chinese Tutor"
   property="image" typeOf="ImageObject">
