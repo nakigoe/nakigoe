@@ -88,6 +88,11 @@ a amp-img {
 	  ( ( 1329 / 1864 ) + ( 1280 / 1707 ) + ( 2000 / 2922 ) ) 
 	   - 3em
   	);
+  --esc: calc( 
+	  100vw / 
+	  ( ( 652 / 860 ) + ( 800 / 1200 ) + ( 1320 / 1742 ) ) 
+	   - 3em
+  	);
   --restrict: 24em;
   --coeff: 20em;
 }
@@ -284,6 +289,24 @@ article div {
 #win {
 	width: calc( ( 2000 / 2922 ) * var(--conq) );
 	max-width: calc( ( 2000 / 2922 ) * var(--restrict));
+}
+}
+/*---wide screens section for darkness, environment, ask ----*/
+@media only screen and (min-width:960px) {
+#escape li {
+	display: inline-block;
+	}
+#dark {
+	width: calc( ( 652 / 860 ) * var(--esc) );
+	max-width: calc( ( 652 / 860 ) * var(--restrict) );
+}
+#environment {
+	width: calc( ( 800 / 1200 ) * var(--esc) );
+	max-width: calc( ( 800 / 1200 ) * var(--restrict) );
+}
+#ask {
+	width: calc( ( 1320 / 1742 ) * var(--esc) );
+	max-width: calc( ( 1320 / 1742 ) * var(--restrict));
 }
 }
 #ani a, #interpreter a {
@@ -1035,9 +1058,9 @@ Art Instructor</a></li>
 	
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/ask.html" target="_blank">
 	<div id="ask">
-	<amp-img src="https://nakigoe.github.io/_IMG/meow.jpg"
-	  width="2947"
-	  height="1814"
+	<amp-img src="https://nakigoe.github.io/_IMG/walk.jpg"
+	  width="1320"
+	  height="1742"
 	  layout="responsive"
 	  alt="Ask for Help"
 	  property="primaryImageOfPage" typeOf="ImageObject">
