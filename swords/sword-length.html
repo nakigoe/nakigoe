@@ -81,9 +81,12 @@ a amp-img {
 .kendo {
 	max-width: 640px;
 	display: inline;
+	margin: 0 auto;
 	}
-#armed {max-width: 2000px;}
-
+#armed {
+	max-width: 2000px;
+	margin: 0 auto;
+	}
 #defence {
 	max-width: 1300px;
 	margin: 0 auto;
@@ -344,6 +347,8 @@ em {color:#fff;}
 	}
 .answer h3 {
 	margin-top: .5em; /*for the h3 inside a bubble, reducing the top margin*/
+	width: 100%;
+	margin-left: .25em;
 	}
 .answer p, .question p{
 	margin-bottom:.5em;
@@ -479,12 +484,6 @@ amp-social-share[type="telegram"]:hover {
 	
 @media only screen and (max-width:480px) {
 	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
-	h1,h2,h3,h4,p, .headingAndComment, .list {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;	
-	}
-	h2 {margin-left: .4em;}
 	nav ul, nav li, nav a {display: block;}
 	nav .rightLink {
 		margin-right: 0em;
@@ -533,6 +532,16 @@ amp-social-share[type="telegram"]:hover {
 	}
 	h1,h2,h3,h4, .question, .answer {
 		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4, .question, .answer {
+		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
