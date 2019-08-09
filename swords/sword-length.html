@@ -172,13 +172,12 @@ nav ul{
 	display: inline-block;
 }
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
-article {
-	max-width: 1080px; /*current image size, needs testing on a larger screen*/
-	margin-bottom: 1em; /*to avoid partly image on a share request*/
-}
+h1,h2,h3,h4, .headingAndComment, .question, .answer {
+	width: 60%;
+	}
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
@@ -365,27 +364,16 @@ em {color:#fff;}
 .info { 
 	margin-left: 0;
 	}
-.articleHr {margin:2.25em 0 1em;}
-
+h1,h2,h3,h4, .headingAndComment, .question, .answer {
+	margin-left: auto;
+	margin-right: auto;
+	}
 li small  {
 	font-size:0.65em;
 	color:#eee;
 	margin-left:auto;
 	margin-top:.25em;
 	}
-
-.linkAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:wrap;
-}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
 aside {
 	margin: .5em 0 .5em;
 	}
@@ -524,7 +512,7 @@ amp-social-share[type="telegram"]:hover {
 	}
 /* --------- text width section ------------- */
 @media only screen and (max-width: 1300px) {
-	main {
+	h1,h2,h3,h4, .headingAndComment, .question, .answer {
 		width: 70%;
 	}
 	}
@@ -815,9 +803,7 @@ Secrets to Win</a></li>
 	</div>
    
     <section>
-    <header>
     <h3>American Style Swordplay</h3>
-    </header>
     <div class="answer">
     <p>Uhh... are you being realistic here?</p>
     <p><em>A custom blade?</em> If it's for historical re-enactments that's one thing... But a true personal blade will cost you in the realm of $8000 and up. Who is going to make your sword?</p>
@@ -904,6 +890,16 @@ Secrets to Win</a></li>
 		alt="Properly Equipped for Street Sword Combat"
 		property="image" typeOf="ImageObject">
 		<meta property="caption" content="Properly Equipped for Street Sword Combat">
+		</amp-img>
+	</div>
+    <div id="intruders" about="#real">
+		<amp-img src="https://nakigoe.github.io/_IMG/intruders.jpg"
+		width="2000"
+		height="1125"
+		layout="responsive"
+		alt="Armed Intruder Assault Girls Team"
+		property="image" typeOf="ImageObject">
+		<meta property="caption" content="Armed Intruder Assault Girls Team">
 		</amp-img>
 	</div>
     <div class="answer"><p>Ok, just my thought on the <em>custom made sword for home defence...</em> Have a shotgun built into the thing. If someone breaks into your house they will most likely have a gun and if you pull a sword on them they will just have an excuse to shoot you.</p></div>
