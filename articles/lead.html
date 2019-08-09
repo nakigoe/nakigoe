@@ -32,7 +32,7 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) + ( 2000 / 2922 ) ) 
+	  ( ( 1440 / 1018 ) + ( 1329 / 1864 ) + ( 2000 / 2922 ) + ( 800 / 1200 ) ) 
 	   - 2.25em
   	);
   --restrict: 24em;
@@ -44,9 +44,17 @@ a amp-img {
 	width: calc( ( 1440 / 1018 ) * var(--coeff) );
 	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
+.inquire {
+	width: calc( ( 1329 / 1864 ) * var(--coeff) );
+	max-width: calc( ( 1329 / 1864 ) * var(--restrict) );
+}
 .win {
 	width: calc( ( 2000 / 2922 ) * var(--coeff) );
 	max-width: calc( ( 2000 / 2922 ) * var(--restrict) );
+}
+.exposure {
+	width: calc( ( 800 / 1200 ) * var(--coeff) );
+	max-width: calc( ( 800 / 1200 ) * var(--restrict) );
 }
 #lead {
 	max-width: 1280px;
@@ -451,9 +459,20 @@ nav a {
 </amp-img>
 </div>
 Main Menu</a></li>
-</ul>
-<ul class="rightLink">
-<li><a property="significantLink" href="https://nakigoe.github.io/articles/win.html" target="_blank">
+<li class="hide"><a property="relatedLink" href="https://nakigoe.github.io/articles/inquire.html">
+<div class="inquire">
+<amp-img src="https://nakigoe.github.io/_IMG/inquire.jpg"
+  width="1329"
+  height="1864"
+  layout="responsive"
+  alt="Inquire"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Inquire">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/inquire.jpg">
+</amp-img>
+</div>
+Inquire</a></li>
+<li class="hide"><a property="relatedLink" href="https://nakigoe.github.io/articles/win.html" target="_blank">
 <div class="win">
 <amp-img src="https://nakigoe.github.io/_IMG/win.jpg"
   width="2000"
@@ -465,7 +484,22 @@ Main Menu</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/win.jpg">
 </amp-img>
 </div>
-Secrets to Win</a></li>
+Win</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="relatedLink" class="alert" href="https://nakigoe.github.io/articles/environment.html" target="_blank">
+<div class="exposure">
+<amp-img src="https://nakigoe.github.io/_IMG/environment.jpg"
+  width="800"
+  height="1200"
+  layout="responsive"
+  alt="Prolongued Extreme Exposure"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Prolongued Extreme Exposure">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/environment.jpg">
+</amp-img>
+</div>
+Exposure</a></li>
 </ul>
 </nav>
 
@@ -571,9 +605,20 @@ Secrets to Win</a></li>
 </amp-img>
 </div>
 Main Menu</a></li>
-</ul>
-<ul class="rightLink">
-<li><a property="significantLink" href="https://nakigoe.github.io/articles/win.html" target="_blank">
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/inquire.html">
+<div class="inquire">
+<amp-img src="https://nakigoe.github.io/_IMG/inquire.jpg"
+  width="1329"
+  height="1864"
+  layout="responsive"
+  alt="Inquire"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Inquire">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/inquire.jpg">
+</amp-img>
+</div>
+Inquire</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/win.html" target="_blank">
 <div class="win">
 <amp-img src="https://nakigoe.github.io/_IMG/win.jpg"
   width="2000"
@@ -585,7 +630,22 @@ Main Menu</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/win.jpg">
 </amp-img>
 </div>
-Secrets to Win</a></li>
+Win</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="relatedLink" class="alert" href="https://nakigoe.github.io/articles/environment.html" target="_blank">
+<div class="exposure">
+<amp-img src="https://nakigoe.github.io/_IMG/environment.jpg"
+  width="800"
+  height="1200"
+  layout="responsive"
+  alt="Prolongued Extreme Exposure"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Prolongued Extreme Exposure">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/environment.jpg">
+</amp-img>
+</div>
+Exposure</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
@@ -596,6 +656,7 @@ Secrets to Win</a></li>
   alt="Lovely Me"
   property="image" typeOf="ImageObject">
   <meta property="caption" content="Lovely Me">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/love.jpg">
 </amp-img>
 </div>
 Lovely&nbsp;Me</a>
