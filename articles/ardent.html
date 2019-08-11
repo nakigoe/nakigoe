@@ -33,7 +33,7 @@
   --coeff: calc( 
 	  100vw / 
 	  ( ( 1440 / 1018 ) + ( 2000 / 2922 ) + ( 1080 / 1348 ) ) 
-	   - 2.05em
+	   - 2.175em
   	);
   --restrict: 24em;
 }
@@ -366,7 +366,7 @@ amp-social-share[type="telegram"]:hover {
 	}
 	nav .rightLink {
 	margin-right: 0;/*temporary draft*/
-}
+	}
 	nav a, nav li, nav ul {
 		display: block;
 	} 
@@ -381,23 +381,23 @@ amp-social-share[type="telegram"]:hover {
 	} 
 	}
 
-/* --------- text width section ------------- */
-@media only screen and (max-width: 1300px) {
-	h1,h2,h3,h4,p,hr, .list {
-		width: 70%;
-	}
-	}
 /* --------- text width section , images 100vw ---------------- */
-h1,h2,h3,h4,p,hr, .list {
+h1:not(.logo),h2,h3,h4,p,hr, .list {
 		width: 60%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
+@media only screen and (max-width: 1300px) {
+	h1:not(.logo),h2,h3,h4,p,hr, .list {
+		width: 70%;
+	}
+	}
+
 @media only screen and (max-width: 960px) {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p,hr, .list {
+	h1:not(.logo),h2,h3,h4,p,hr, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -407,7 +407,7 @@ h1,h2,h3,h4,p,hr, .list {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p,hr, .list {
+	h1:not(.logo),h2,h3,h4,p,hr, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -415,12 +415,12 @@ h1,h2,h3,h4,p,hr, .list {
 	}
 @media only screen and (max-width:600px) {
 	main {width: 100%;}
-	h1,h2,h3,h4,p,hr, .list {
+	h1:not(.logo),h2,h3,h4,p,hr, .list {
 		width: 95%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
-	
+	}
 /*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
@@ -533,12 +533,12 @@ Girls'&nbsp;Room</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
 </amp-img>
 </div>
-<h1>Ardent <br><span>by Awesome Angel</span></h1>
+<h1 class="logo">Ardent <br><span>by Awesome Angel</span></h1>
 </header>
 <main>
 <article>
 <header>
-<h1 property="name">Lili: <span> "When the Blood Boils"</span> <span class="phrase"><small>18-</small></span></h1>
+<h2 property="name">Lili: <span> "When the Blood Boils"</span> <span class="phrase"><small>18-</small></span></h2>
 </header>
 <div id="flame">
 <amp-img src="https://nakigoe.github.io/_IMG/ardent.jpg"
