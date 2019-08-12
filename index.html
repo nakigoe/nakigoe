@@ -70,8 +70,8 @@ a amp-img {
   	);
   --int: calc( 
 	  100vw / 
-	  ( ( 1600 / 1300 ) + ( 1500 / 1500 ) + ( 564 / 564 ) ) 
-	   - 1.95em
+	  ( ( 960 / 960 ) + ( 1600 / 1300 ) + ( 1500 / 1500 ) + ( 564 / 564 ) ) 
+	   - 1.88em
   	);
   --dev: calc( 
 	  100vw / 
@@ -86,7 +86,7 @@ a amp-img {
   --conq: calc( 
 	  100vw / 
 	  ( ( 1329 / 1864 ) + ( 1280 / 1707 ) + ( 2000 / 2922 ) ) 
-	   - 2.925em
+	   - 2.95em
   	);
   --esc: calc( 
 	  100vw / 
@@ -220,6 +220,10 @@ article div {
 #kingdom li {
 	display: inline-block;
 	}
+#thai {
+	width: calc( ( 960 / 960 ) * var(--int));
+	max-width: calc( ( 960 / 960 ) * var(--restrict));
+}
 #china {
 	width: calc( ( 1600 / 1300 ) * var(--int));
 	max-width: calc( ( 1600 / 1300 ) * var(--restrict));
@@ -1167,6 +1171,20 @@ Art Instructor</a></li>
 	</ul>
 
 	<ul id="kingdom">
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/thai.html" target="_blank">
+		<div id="thai">
+		<amp-img src="https://nakigoe.github.io/_IMG/pair.jpg"
+		width="960"
+		height="960"
+		layout="responsive"
+		alt="The best of Thailand are its girls!!!"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="The best of Thailand are its girls!!!">
+		</amp-img>
+		</div>
+	The Best of Thai</a></li>
+	
 	<li><a property="significantLink" href="https://nakigoe.github.io/china/freedom.html" target="_blank">
 	<div id="china">
 	<amp-img src="https://nakigoe.github.io/_IMG/china.jpg"
@@ -1179,7 +1197,7 @@ Art Instructor</a></li>
 	  <meta property="caption" content="China girl with a sword">
 	</amp-img>
 	</div>
-	China: 'Owned by its People'</a></li>
+	China <small>'Owned by its People'</small></a></li>
 		
 	<li><a property="significantLink" href="https://nakigoe.github.io/ru/grim.html" target="_blank">
 	<div id="fun">
@@ -1207,23 +1225,9 @@ Art Instructor</a></li>
 	<meta property="caption" content="Statue of Liberty">
 	</amp-img>
 	</div>
-	Come to USA! <small>Nipples of Liberty</small></a></li>
+	Come to USA!</a></li>
 	</ul>
-	<ul>
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/thai.html" target="_blank">
-		<div id="pair">
-		<amp-img src="https://nakigoe.github.io/_IMG/pair.jpg"
-		width="960"
-		height="960"
-		layout="responsive"
-		alt="The best of Thailand are its girls!!!"
-		property="primaryImageOfPage" typeOf="ImageObject">
-		<meta property="representativeOfPage" content="True">
-		<meta property="caption" content="The best of Thailand are its girls!!!">
-		</amp-img>
-		</div>
-	the Best of Thai</a></li>
-	</ul>
+
 	<ul id="dev">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/rev.html" target="_blank">
 	<div id="rev">
