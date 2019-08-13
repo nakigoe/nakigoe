@@ -37,8 +37,8 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) ) 
-	   - 1.875em
+	  ( ( 1440 / 1018 ) + ( 1600 / 1300 ) + ( 1500 / 1500 ) + ( 564 / 564 ) ) 
+	   - 1.75em
   	);
   --restrict: 24em;
 }
@@ -46,8 +46,20 @@ a amp-img {
 	margin-top: .2em;
 	}
 .true {
-	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+		width: calc( ( 1440 / 1018 ) * var(--coeff) );
 	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.china {
+		width: calc( ( 1600 / 1300 ) * var(--coeff) );
+	max-width: calc( ( 1600 / 1300 ) * var(--restrict) );
+}
+.ru {
+		width: calc( ( 1500 / 1500 ) * var(--coeff) );
+	max-width: calc( ( 1500 / 1500 ) * var(--restrict) );
+}
+.america {
+		width: calc( ( 564 / 564 ) * var(--coeff) );
+	max-width: calc( ( 564 / 564 ) * var(--restrict) );
 }
 		#pair{max-width: 960px; margin: 0 auto;}
 		#as{max-width: 930px; margin: 0 auto;}
@@ -73,17 +85,28 @@ a amp-img {
             width: 100%;
             background-color: #1a0000;
         }
- nav {
+nav {
 	margin: 0;
 	background-color: #120000;
 	}
-#topNav .rightLink {
+nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
-}   
-        main {
-            width: 60%;
-            margin: 0 auto;
-        }
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
+}
+main {
+	width: 100%;
+	margin: 0;
+	}
 ul, li {
 	list-style: none;
 }
@@ -155,6 +178,21 @@ h1, h2, h3, h4, h5, h6 {color: white;}
             font-size: 1.2em;
             font-weight: 200;
         }
+	.rightLink{
+	float: right;
+}
+/* clear float*/
+.cf:before,
+.cf:after {
+    content: ""; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}	
         p,
         section li {
             font-size: 1em;
@@ -166,10 +204,7 @@ h1, h2, h3, h4, h5, h6 {color: white;}
         section {margin: 1em 0;}
 footer {
 	width: 95%;
-	margin: 5.5em auto 0;
-}
-.rightLink{
-	float: right;
+	margin: 2.8em auto 0;
 }
 .wrapper {
 	margin: 1em auto;
@@ -293,49 +328,42 @@ amp-social-share[type="telegram"]:hover {
 		margin-left: .5em;
 		margin-right: .5em;
 	}
-	.true {
+	.true, .ru, .china, .america {
 		width: auto;
 		max-width: 100vw;
 	}
 	}
-/* --------- text width section ------------- */
+/* --------- text width section , images 100vw ---------------- */
+h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	}
 @media only screen and (max-width: 1300px) {
-	main {
+	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
 		width: 70%;
 	}
 	}
-/* --------- text width section , images 100vw ---------------- */
 @media only screen and (max-width: 960px) {
-	main {
-		width: 100%;
-	}
-	li small {margin-right: 1em;}
-	ol {margin-left: 3em;}
-	h1,h2,h3,h4,p, .list {
+	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
-@media only screen and (max-width: 720px) {
-	main {
-		width: 100%;
-	}
-	h1,h2,h3,h4,p, .list {
+@media only screen and (max-width: 800px) {
+	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
 @media only screen and (max-width: 600px) {
-	main {
-		width: 100%;
-	}
-	h1,h2,h3,h4,p, .list{
-		width: 95%;
+	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
-	}
+	}	
 	}
 
 /* font size formatting section */	
@@ -402,6 +430,46 @@ nav a {
 </amp-img>
 </div>
 Main Menu</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="relatedLink" href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">
+<div class="china">
+<amp-img src="https://nakigoe.github.io/_IMG/china.jpg"
+  width="1600"
+  height="1300"
+  layout="responsive"
+  alt="China girl with a sword"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="China girl with a sword">
+</amp-img>
+</div>
+Ranked&nbsp;in&nbsp;China</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/ru/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
+	<div class="ru">
+	<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
+	  width="1500"
+	  height="1500"
+	  layout="responsive"
+	  alt="Russia"
+	  property="image" typeOf="ImageObject">
+	  <meta property="caption" content="Russia">
+	</amp-img>
+	</div>
+	Exit Russia</a></li>
+	
+<li><a property="relatedLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
+<div class="america">
+	<amp-img src="https://nakigoe.github.io/_IMG/america.jpg"
+	width="564"
+	height="564"
+	layout="responsive"
+	alt="Statue of Liberty"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Statue of Liberty">
+	</amp-img>
+</div>
+Come&nbsp;to&nbsp;USA</a></li>
 </ul>
 </nav>
     <main>
@@ -503,6 +571,46 @@ Main Menu</a></li>
 </amp-img>
 </div>
 Main Menu</a></li>
+</ul>
+<ul class="rightLink">
+<li><a property="relatedLink" href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">
+<div class="china">
+<amp-img src="https://nakigoe.github.io/_IMG/china.jpg"
+  width="1600"
+  height="1300"
+  layout="responsive"
+  alt="China girl with a sword"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="China girl with a sword">
+</amp-img>
+</div>
+Ranked&nbsp;in&nbsp;China</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/ru/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
+	<div class="ru">
+	<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
+	  width="1500"
+	  height="1500"
+	  layout="responsive"
+	  alt="Russia"
+	  property="image" typeOf="ImageObject">
+	  <meta property="caption" content="Russia">
+	</amp-img>
+	</div>
+	Exit Russia</a></li>
+	
+<li><a property="relatedLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
+<div class="america">
+	<amp-img src="https://nakigoe.github.io/_IMG/america.jpg"
+	width="564"
+	height="564"
+	layout="responsive"
+	alt="Statue of Liberty"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Statue of Liberty">
+	</amp-img>
+</div>
+Come&nbsp;to&nbsp;USA</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
