@@ -238,38 +238,22 @@ p {
 em {color:#fff;}
 
 .wrapper {
-	margin: 1em auto 1em;
+	margin: 1em auto;
 	text-align: center;
 }
-.info { 
-	margin-left: 0;
+.kai {
+	margin: 1em auto;
+	width: 34em;
 	}
-.articleHr {margin:2.25em 0 1em;}
-
 li small  {
 	font-size:0.65em;
 	color:#eee;
 	margin-left:auto;
 	margin-top:.25em;
 	}
-.linkAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:wrap;
-}
-.headingAndComment {
-    display: flex;
-    justify-content: space-between;
-	align-items:baseline;
-	flex-wrap:nowrap;
-}
-aside {
-	margin: .5em 0 .5em;
-	}
 footer {
 	width:95%;
-	margin: 2.5em auto 0;
+	margin: 2.8em auto 0;
 	}
 #copyright{
 	margin: 1.5em auto;
@@ -372,7 +356,7 @@ amp-social-share[type="telegram"]:hover {
 	.rightLink {
 		float: none;
 	}
-	#topNav .rightLink {
+	#topNav .rightLink, .hide {
 		display: none;
 	}
 	nav .rightLink {
@@ -460,6 +444,11 @@ nav a {
 		font-stretch: semi-expanded;
 	}
 }
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: calc(1em + 3.3334vmin);
+	}	
+	}
 </style>
 </head>
 
@@ -496,7 +485,7 @@ nav a {
 </div>
 Main Menu</a></li>
 
-<li><a property="relatedLink" href="https://nakigoe.github.io/articles/darkness.html" target="_blank">
+<li class="hide"><a property="relatedLink" href="https://nakigoe.github.io/articles/darkness.html" target="_blank">
 <div class="dark">
 	<amp-img src="https://nakigoe.github.io/_IMG/darkness.jpg"
 	width="652"
@@ -605,7 +594,8 @@ Ask for Help</a></li>
   <meta property="caption" content="Environment Induced Burnout">
 </amp-img>
 </div>
-<p>Break out, break out <br>
+<div class="kai">
+ <p>Break out, break out <br>
   From the sorrowful unbearable fate.<br>
   Your are not a flower-in-Hell,<br>
   At this place do not bloom,<br>
@@ -627,6 +617,7 @@ Ask for Help</a></li>
   At this place do not bloom,<br>
   Do not walk bound in fetters.</p>
 <p>Soundlessly fly around fragments of events.</p>
+</div>
 </article>
 </main>
 <footer>
