@@ -60,6 +60,18 @@ a amp-img {
 	max-width: 1200px;
 	margin: 0 auto;
 	}
+#burnout {
+	max-width: 8000px;
+	margin: 0 auto;
+	}
+#hurt {
+	max-width: 2352px;
+	margin: 0 auto;
+	}
+#chains {
+	max-width: 1680px;
+	margin: 0 auto;
+	}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -88,13 +100,9 @@ nav ul{
 	display: inline-block;
 }
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
-article {
-	max-width: 1080px; /*current image size, needs testing on a larger screen*/
-	margin-bottom: 1em; /*to avoid partly image on a share request*/
-}
 h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
@@ -361,11 +369,6 @@ amp-social-share[type="telegram"]:hover {
 	
 @media only screen and (max-width:600px) {
 	main {width: 100%;}
-	h1,h2,h3,h4,p {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;	
-	}
 	.rightLink {
 		float: none;
 	}
@@ -383,35 +386,40 @@ amp-social-share[type="telegram"]:hover {
 		margin-left: .5em;
 		margin-right: .5em;
 	}
-	.true, .ask {
+	.true, .dark, .ask {
 		width: auto;
 		max-width: 100vw;
 	} 
 	}
 
-/* --------- text width section ------------- */
+/* --------- text width section , images 100vw ---------------- */
+h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	}
 @media only screen and (max-width: 1300px) {
-	main {
+	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
 		width: 70%;
 	}
 	}
-/* --------- text width section , images 100vw ---------------- */
 @media only screen and (max-width: 960px) {
-	main {
-		width: 100%;
-	}
-	h1,h2,h3,h4,p, .list {
+	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
 @media only screen and (max-width: 800px) {
-	main {
-		width: 100%;
-	}
-	h1,h2,h3,h4,p, .list {
+	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
 		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 600px) {
+	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
@@ -537,7 +545,7 @@ Ask for Help</a></li>
 </amp-img>
 </div>
 
-<p>When we face chronic stress, it cannot be fixed by yoga and mindfulness alone.</p>
+<p class="wrapper">When we face chronic stress, it cannot be fixed by yoga and mindfulness alone.</p>
 <div id="battle">
 <amp-img src="https://nakigoe.github.io/_IMG/battle.png"
   width="1200"
