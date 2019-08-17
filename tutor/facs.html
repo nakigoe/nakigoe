@@ -86,7 +86,7 @@ nav ul{
 	display: inline-block;
 }
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
 h1, h2, h3, h4, h5, h6 {
@@ -367,11 +367,6 @@ amp-social-share[type="telegram"]:hover {
 
 @media only screen and (max-width:600px) {
 	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
-	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;	
-	}
 	#topNav .rightLink {
 		display: none;
 	}
@@ -394,13 +389,26 @@ amp-social-share[type="telegram"]:hover {
 		max-width: 100vw;
 	}
 	}
-/* --------- text width section ------------- */
-@media only screen and (max-width: 1300px) {
-	main {
-		width: 70%;
-	}
-	}
+
 /* --------- text width section , images 100vw ---------------- */
+h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;	
+	}
+.headingAndComment h2 {
+	margin-left: 0;
+	}
+@media only screen and (max-width: 1300px) {
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 70%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	.headingAndComment h2 {
+		margin-left: 0;
+	}
+	}
 @media only screen and (max-width: 960px) {
 	main {
 		width: 100%;
@@ -420,6 +428,19 @@ amp-social-share[type="telegram"]:hover {
 	}
 	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
 		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	.headingAndComment h2 {
+		margin-left: 0;
+	}
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p, .headingAndComment, .list, .price p, hr {
+		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
