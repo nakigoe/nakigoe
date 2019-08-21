@@ -476,7 +476,19 @@
 
    <url>
 
-      <loc>https://nakigoe.github.io/japan/tutor.html</loc>
+      <loc>https://nakigoe.github.io/ja/igo.html</loc>
+
+      <lastmod> 2019-08-21</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+   
+   <url>
+
+      <loc>https://nakigoe.github.io/ja/tutor.html</loc>
 
       <lastmod> 2019-08-21</lastmod>
 
