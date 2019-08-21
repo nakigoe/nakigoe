@@ -140,6 +140,36 @@ h1 span {
 	text-align: center;
 	text-shadow:0 0 .6em white;
 	}
+header {
+	display: flex;
+	align-items: center;
+	}
+#meow {
+	display: inline-block;
+	width: 40%;
+	}
+@media only screen and (max-width:600px) {
+h1 {
+	margin-left: -5%;
+	}
+	}
+@media only screen and (min-width:960px) {
+h1 {
+	margin-left: 2.5%;
+	}
+	}
+.lang li {
+	display: block;
+	}
+.lang {
+	margin-right: .75em;/*temporary draft*/
+	margin-left: auto;
+	}
+.lang a {
+	text-align: center;
+	width: auto;
+	display: block;
+	}
 h2 {
 	font-family: 'Nunito Sans', sans-serif;
 	letter-spacing: .15em;
@@ -474,6 +504,11 @@ font-stretch: semi-condensed;
 	font-stretch: semi-expanded;
 	}
 }
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: calc(1em + 3.3334vmin);
+	}	
+	}
 </style>
 </head>
 
@@ -553,27 +588,30 @@ Lead</a></li>
 </amp-img>
 </div>
 <h1 class="logo">Win Modern&nbsp;Go<br> <span>by Awesome Angel</span></h1>
+<ul class="lang">
+<li><a class="alert" property="significantLink" href="https://nakigoe.github.io/ja/igo.html" hreflang="ja-JP" target="_blank">日本</a></li>
+</ul>
 </header>
 <main>
 <article>
 <h2>Fuseki: Opening</h2>
 <p>Use <a class="link" href="https://alphagoteach.deepmind.com">AlphaGo Fuseki</a> to find the best opening moves.</p>
 <p>The larger the numbers are, the greater the chance for black to win.</p>
-<p>The smalle the numbers are, the greater the chance for white to win.</p>
-<h2>Kifu: Mid-Game</h2>
+<p>The smaller the numbers are, the greater the chance for white to win.</p>
+<h2>Joseki and Kifu: Mid&#8209;Game</h2>
 <p>Use <a class="link" href="https://ps.waltheri.net">Kifu Search</a> to find the best continuations.</p>
-<p>Pay attention to the win-rates, they are shown at the right side of the screen for the current player (independent of color).</p>
+<p>Pay attention to the win-rates, they are shown at the right side of the screen for the current player (independent of colour).</p>
 <p><kbd>Shift</kbd> + <kbd>Mouse Click</kbd> puts a black stone on the board.</p>
 <p><kbd>Control</kbd> + <kbd>Mouse Click</kbd> puts a white stone on the board.</p>
 <p>Choose "Around Stones" in the top menu to perform area search.</p>
 <p>Press the mouse button and drag to select specific search area!</p>
 <p>Choose "Search W" to find White continuations.</p>
 <p>Choose "Search B" to find Black continuations.</p>
-<p>There are about 80,000 professional games stored, so on rare occasions the database isn't fully searched, but all results all cached, so repeated search can gain new results. The number of games searched is displayed above the winrates on the right side of the screen.</p>
+<p>There are about 80,000 professional games stored, so on rare occasions the database isn't fully searched, but all results are cached, so repeated search can gain new results. The number of games searched is displayed above the win-rates on the right side of the screen.</p>
 <h2>Artificial Intelligence</h2>
 <p>Use Zen engine <a class="link" href="https://book.mynavi.jp/ec/products/detail/id=79528">Zenith Go 7 Zen</a></p>
 <p>Set the mode to 120sec.</p>
-<p>Sometimes the app plays too aggressively, or too far, or too defencively.</p>
+<p>Sometimes the app plays too aggressively, or too far, or too defensively.</p>
 <p>In that case you'll have to run the app 2-9 times to find the move You consider the best.</p>
 <p>Study AlphaGo games to find safer, and / or more gaining moves.</p>
 <p>The app plays better when the board position is settled and simple.</p>
@@ -582,7 +620,7 @@ Lead</a></li>
 <p>Cheap monitor.</p>
 <p>Cheap ATI video-card.</p>
 <p>Best MotherBoard</p>
-<p>Best 2 Core Intel processor: <a class="link" href="https://www.intel.com/content/www/us/en/products/processors/core/i3-processors/i3-7350k.html">i3-7350K (4M Cache, 4.20 GHz)</a></p>
+<p>Best dual-core Intel processor: <a class="link" href="https://www.intel.com/content/www/us/en/products/processors/core/i3-processors/i3-7350k.html">i3-7350K (4M Cache, 4.20 GHz)</a></p>
 </article>
 </main>
 <footer>
