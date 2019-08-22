@@ -30,9 +30,24 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 
 <style amp-custom>
-#math {
-	max-width: 2048px;
-	margin: 0 auto;
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 2048 / 1638 ) ) 
+	   - 1.7em
+  	);
+  --restrict: 24em;
+}
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.write {
+	width: calc( ( 2048 / 1638 ) * var(--coeff) );
+	max-width: calc( ( 2048 / 1638 ) * var(--restrict) );
 }
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
@@ -417,11 +432,35 @@ nav a {
 </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">メインメニュー</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">教師</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="メイン"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="メイン">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+メインメニュー</a></li>
 </ul>
+
 <ul class="rightLink">
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/articles/go.html" target="_blank" hreflang="en">EN</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
+<div class="write">
+<amp-img src="https://nakigoe.github.io/_IMG/tutor-ja.jpg"
+  width="2048"
+  height="1638"
+  layout="responsive"
+  alt="英語の先生"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/tutor-ja.jpg">
+</amp-img>
+</div>
+英語と数学の先生</a></li>
 </ul>
 </nav>
 
@@ -430,6 +469,7 @@ nav a {
 <header>
 <h1>囲碁で勝つ道<br> 
 <span class="phrase">現代の囲碁で勝つ手</span></h1>
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/articles/go.html" target="_blank" hreflang="en">EN</a></li>
 </header>
 
 <h2>布石</h2>
@@ -490,6 +530,7 @@ nav a {
 		alt="nakigoe @ pm . me">
 		</amp-img>
 </div>
+<a class="alert" href="https://nakigoe.github.io/me/connect.html" target="_blank">ビデオチャット</a>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
 <div class="social">
     <p>共有して、よろしくお願いします</p>
@@ -516,11 +557,35 @@ nav a {
 </footer>
 <nav class="cf">
 <ul>
-<li><a href="https://nakigoe.github.io/" target="_blank">メインメニュー</a></li>
-<li><a href="https://nakigoe.github.io/ja/tutor.html" target="_blank">教師</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="メイン"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="メイン">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+メインメニュー</a></li>
 </ul>
+
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" target="_blank">ビデオチャット</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
+<div class="write">
+<amp-img src="https://nakigoe.github.io/_IMG/tutor-ja.jpg"
+  width="2048"
+  height="1638"
+  layout="responsive"
+  alt="英語の先生"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/tutor-ja.jpg">
+</amp-img>
+</div>
+英語と数学の先生</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
