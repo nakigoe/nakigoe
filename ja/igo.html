@@ -372,15 +372,17 @@ amp-social-share[type="telegram"]:hover {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 
-
+.external a{
+	color: #eee;
+	}
 /* --------- text width section , images 100vw ---------------- */
-h1:not(.logo),h2,h3,h4,p,hr, .list {
+h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
 		width: 60%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
 @media only screen and (max-width: 1300px) {
-	h1:not(.logo),h2,h3,h4,p,hr, .list {
+	h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
 		width: 70%;
 	}
 	}
@@ -389,7 +391,7 @@ h1:not(.logo),h2,h3,h4,p,hr, .list {
 	main {
 		width: 100%;
 	}
-	h1:not(.logo),h2,h3,h4,p,hr, .list {
+	h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -399,7 +401,7 @@ h1:not(.logo),h2,h3,h4,p,hr, .list {
 	main {
 		width: 100%;
 	}
-	h1:not(.logo),h2,h3,h4,p,hr, .list {
+	h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -407,7 +409,7 @@ h1:not(.logo),h2,h3,h4,p,hr, .list {
 	}
 @media only screen and (max-width:600px) {
 	main {width: 100%;}
-	h1:not(.logo),h2,h3,h4,p,hr, .list {
+	h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
 		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -425,7 +427,7 @@ p, .list	{
 	font-size: 1em;
 	font-stretch: semi-condensed;
 	}
-.lang a, nav a {
+.lang a, nav a, article a {
 	font-size: 1.2em;
 	font-stretch: semi-condensed;
 	}
@@ -435,7 +437,7 @@ p, .list	{
 	font-size: 1.125em;
 	font-stretch: normal;
 	}
-	.lang a, nav a {
+	.lang a, nav a, article a {
 	font-size: 1.35em;
 	font-stretch: normal;
 	}
@@ -445,7 +447,7 @@ p, .list	{
 	font-size: 1.375em;
 	font-stretch: semi-expanded;
 	}
-	.lang a, nav a {
+	.lang a, nav a, article a {
 	font-size: 1.65em;
 	font-stretch: semi-expanded;
 	}
@@ -531,12 +533,12 @@ p, .list	{
 </header>
 
 <h2>布石</h2>
-<a class="link" href="https://alphagoteach.deepmind.com/">アルファ碁</a>
+<div class="external"><a href="https://alphagoteach.deepmind.com/">アルファ碁</a></div>
 <p>数字は高い程に黒の勝ち。</p>
 <p>数字は低い程に白の勝ち。</p>
 
 <h2>定石や手筋と棋譜</h2>
-<a class="link" href="https://ps.waltheri.net/">棋譜</a>
+<div class="external"><a href="https://ps.waltheri.net/">棋譜</a></div>
 
 <p>Ａｒｏｕｎｄ　Ｓｔｏｎｅｓエリアサチモードが 一大事です。</p>
 <p>メニューで：</p>
@@ -554,7 +556,7 @@ p, .list	{
 <p>勝つ確率は普通、黒か白か関係ない、今の手番で教えている。</p>
 
 <h2>ＡＩ</h2>
-<a class="link" href="https://book.mynavi.jp/ec/products/detail/id=77803">天頂の囲碁7 Zen</a>
+<div class="external"><a href="https://book.mynavi.jp/ec/products/detail/id=77803">天頂の囲碁7 Zen</a></div>
 <p>１２０秒モードを選んで</p>
 <p>ＡＩには決めたコーナーや決めたエリアボードがやりやすい。ＡＩにシムプルイズベスト。</p>
 
@@ -572,7 +574,7 @@ p, .list	{
 
 <p>高いマザーボード</p>
 <p>最高のデュアルコアIntelプロセッサー</p>
-<a class="link" href="https://intel.com/content/www/us/en/products/processors/core/i3-processors/i3-7350k.html">i3-7350K PROCESSOR (4M Cache, 4.20 GHz)</a>
+<div class="external"><a href="https://intel.com/content/www/us/en/products/processors/core/i3-processors/i3-7350k.html">i3-7350K PROCESSOR (4M Cache, 4.20 GHz)</a></div>
 <hr>
 
 <p class="how">誰かが私にＡＩを買って下されますかな。。。</p> 
