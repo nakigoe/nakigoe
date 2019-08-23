@@ -30,6 +30,25 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 664 / 896 ) ) 
+	   - 2.15em
+  	);
+  --restrict: 24em;
+}
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.go {
+	width: calc( ( 664 / 896 ) * var(--coeff) );
+	max-width: calc( ( 664 / 896 ) * var(--restrict) );
+}
 #math {
 	max-width: 2048px;
 	margin: 0 auto;
@@ -411,9 +430,23 @@ nav a {
 </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">メインメニュー</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="メイン"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="メイン">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+メインメニュー</a></li>
+</ul>
+<ul class="rightLink">
 <li><a property="significantLink" href="https://nakigoe.github.io/ja/igo.html" target="_blank">
-<div id="go">
+<div class="go">
 	<amp-img src="https://nakigoe.github.io/_IMG/go.jpg"
 	width="664"
 	height="896"
@@ -421,22 +454,23 @@ nav a {
 	alt="Girls Playing WeiQi | Igo in a bath"
 	property="image" typeOf="ImageObject">
 	<meta property="caption" content="Girls Playing WeiQi | Igo in a bath">
+	<meta property="url" content="https://nakigoe.github.io/_IMG/go.jpg">
 	</amp-img>
 </div>
 囲碁で勝つ手</a></li>
-</ul>
-<ul class="rightLink">
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" target="_blank" hreflang="en">EN</a></li>
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ru/tutor.html" target="_blank" hreflang="ru">RU</a></li>
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/china/tutor.html" target="_blank" hreflang="zh-Hans">中文</a></li>
 </ul>
 </nav>
 
 <main>
 <article>
-<header>
+<header class="cf">
 <h1>オンライン師傅<br> 
 <span class="phrase">ロシア語、タジク語、中国語、日本語、英語</span><span class="phrase">数学、コンピュータサイエンス、ウェブデザイン</span></h1>
+<ul class="rightLink">
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" target="_blank" hreflang="en">EN</a></li>
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ru/tutor.html" target="_blank" hreflang="ru">RU</a></li>
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/china/tutor.html" target="_blank" hreflang="zh-Hans">中文</a></li>
+</ul>
 </header>
 
 <div id="math">
@@ -592,10 +626,34 @@ nav a {
 </footer>
 <nav class="cf">
 <ul>
-<li><a href="https://nakigoe.github.io/" target="_blank">メインメニュー</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="メイン"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="メイン">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+メインメニュー</a></li>
 </ul>
 <ul class="rightLink">
-<li><a property="significantLink" href="https://nakigoe.github.io/ja/igo.html" target="_blank">囲碁で勝つ道</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/ja/igo.html" target="_blank">
+<div class="go">
+	<amp-img src="https://nakigoe.github.io/_IMG/go.jpg"
+	width="664"
+	height="896"
+	layout="responsive"
+	alt="Girls Playing WeiQi | Igo in a bath"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Girls Playing WeiQi | Igo in a bath">
+	<meta property="url" content="https://nakigoe.github.io/_IMG/go.jpg">
+	</amp-img>
+</div>
+囲碁で勝つ手</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
