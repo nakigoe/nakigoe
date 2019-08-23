@@ -93,6 +93,12 @@ a amp-img {
 	  ( ( 652 / 860 ) + ( 800 / 1200 ) + ( 1320 / 1742 ) ) 
 	   - 2.85em
   	);
+  --fence: calc( 
+	  100vw / 
+	  ( ( 1080 / 1350 ) + ( 664 / 896 ) ) 
+	   - 2.85em
+  	);
+	
   --restrict: 25em;
   --coeff: 20em;
 }
@@ -316,6 +322,20 @@ article div {
 #ask {
 	width: calc( ( 1320 / 1742 ) * var(--esc) );
 	max-width: calc( ( 1320 / 1742 ) * var(--restrict));
+}
+}
+/*---wide screens section for sword, go ----*/
+@media only screen and (min-width:960px) {
+#fence li {
+	display: inline-block;
+	}
+#sword {
+	width: calc( ( 1080 / 1350 ) * var(--fence) );
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
+}
+#go {
+	width: calc( ( 664 / 896 ) * var(--fence) );
+	max-width: calc( ( 664 / 896 ) * var(--restrict) );
 }
 }
 /*----- find ways to unhack -----*/
@@ -1061,8 +1081,6 @@ Public Speaking Tutor</a></li>
 <article id="newArticles">
 <h2>New Articles</h2>
 	<ul>
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/go.html" target="_blank">
-	Win at Go</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/master.html" target="_blank">
 	Grim</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/improve.html" target="_blank">
@@ -1076,7 +1094,7 @@ Public Speaking Tutor</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/escape.html" target="_blank">
 	Government Grim</a></li>
 	</ul>
-	<ul>
+	<ul id="fence">
 	<li><a property="significantLink" href="https://nakigoe.github.io/swords/sword-length.html" target="_blank">
 	<div id="ideal">
 		<amp-img src="https://nakigoe.github.io/_IMG/ideal.jpg"
@@ -1090,6 +1108,18 @@ Public Speaking Tutor</a></li>
 		</amp-img>
 	</div>
 	Ideal Sword Length</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/go.html" target="_blank">
+	<div id="go">
+		<amp-img src="https://nakigoe.github.io/_IMG/go.jpg"
+		width="664"
+		height="896"
+		layout="responsive"
+		alt="Girls Playing WeiQi | Igo in a bath"
+		property="image" typeOf="ImageObject">
+		<meta property="caption" content="Girls Playing WeiQi | Igo in a bath">
+		</amp-img>
+	</div>
+	Win at Go</a></li>
 	</ul>
 	<ul id="escape">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/darkness.html" target="_blank">
