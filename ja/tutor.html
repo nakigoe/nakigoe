@@ -34,7 +34,7 @@
   --coeff: calc( 
 	  100vw / 
 	  ( ( 1440 / 1018 ) + ( 664 / 896 ) ) 
-	   - 2.15em
+	   - 2.175em
   	);
   --restrict: 24em;
 }
@@ -81,7 +81,7 @@ nav ul{
 	display: inline-block;
 }
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
 h1, h2, h3, h4, h5, h6 {
@@ -98,6 +98,36 @@ h1 {
 	padding-bottom: 0.75em;
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
+	}
+header {
+	display: flex;
+	align-items: center;
+	}
+#meow {
+	display: inline-block;
+	width: 40%;
+	}
+@media only screen and (max-width:600px) {
+h1 {
+	margin-left: -5%;
+	}
+	}
+@media only screen and (min-width:960px) {
+h1 {
+	margin-left: 5%;
+	}
+	}
+.lang li {
+	display: block;
+	}
+.lang {
+	margin-right: .75em;/*temporary draft*/
+	margin-left: auto;
+	}
+.lang a {
+	text-align: center;
+	width: auto;
+	display: block;
 	}
 h1 span {
 	font-size: .5em;
@@ -209,7 +239,6 @@ p {
 	}
 em {color:#fff;}
 
-.articleHr {margin:2.25em 0 1em;}
 li small  {
 	font-size:0.65em;
 	color:#eee;
@@ -335,18 +364,23 @@ amp-social-share[type="telegram"]:hover {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 
-/* --------- text width section ------------- */
+/* --------- text width section , images 100vw ---------------- */
+h1:not(.logo),h2,h3,h4,p,hr, .list {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 @media only screen and (max-width: 1300px) {
-	main {
+	h1:not(.logo),h2,h3,h4,p,hr, .list {
 		width: 70%;
 	}
 	}
-/* --------- text width section , images 100vw ---------------- */
+
 @media only screen and (max-width: 960px) {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p, .list {
+	h1:not(.logo),h2,h3,h4,p,hr, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -356,23 +390,21 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p, .list {
+	h1:not(.logo),h2,h3,h4,p,hr, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
-@media only screen and (max-width: 600px) {
-	main {
-		width: 100%;
-	}
-	h1,h2,h3,h4,p, .list {
+@media only screen and (max-width:600px) {
+	main {width: 100%;}
+	h1:not(.logo),h2,h3,h4,p,hr, .list {
 		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
-	}	
 	}
-
+	}
+	
 /*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3.3334vmin);
@@ -384,7 +416,7 @@ p, .list	{
 	font-size: 1em;
 	font-stretch: semi-condensed;
 	}
-nav a {
+.lang a, nav a {
 	font-size: 1.2em;
 	font-stretch: semi-condensed;
 	}
@@ -394,7 +426,7 @@ nav a {
 	font-size: 1.125em;
 	font-stretch: normal;
 	}
-	.linksList, nav a {
+	.lang a, nav a {
 	font-size: 1.35em;
 	font-stretch: normal;
 	}
@@ -404,11 +436,16 @@ nav a {
 	font-size: 1.375em;
 	font-stretch: semi-expanded;
 	}
-	.linksList, nav a {
+	.lang a, nav a {
 	font-size: 1.65em;
 	font-stretch: semi-expanded;
 	}
 }
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: calc(1em + 3.3334vmin);
+	}	
+	}
 </style>
 </head>
 
@@ -463,10 +500,21 @@ nav a {
 
 <main>
 <article>
-<header class="cf">
-<h1>オンライン師傅<br> 
+<header class="intro">
+<div id="meow">
+<amp-img src="https://nakigoe.github.io/_IMG/meow.png"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Awe Angel Logo"
+  property="logo" typeOf="ImageObject">
+  <meta property="caption" content="Awe Angel Logo">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
+</amp-img>
+</div>
+<h1 class="logo">オンライン家庭教師<br>  
 <span class="phrase">ロシア語、タジク語、中国語、日本語、英語</span><span class="phrase">数学、コンピュータサイエンス、ウェブデザイン</span></h1>
-<ul class="rightLink">
+<ul class="lang">
 <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" target="_blank" hreflang="en">EN</a></li>
 <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ru/tutor.html" target="_blank" hreflang="ru">RU</a></li>
 <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/china/tutor.html" target="_blank" hreflang="zh-Hans">中文</a></li>
