@@ -127,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
 .phrase {
@@ -279,8 +279,8 @@ li small  {
 	margin-top:.25em;
 	}
 footer {
-	width:95%;
-	margin: 5.5em auto 0;
+	width:96%;
+	margin: 2.8em auto 0;
 	}
 #copyright{
 	margin: 1.5em auto;
@@ -402,7 +402,12 @@ amp-social-share[type="telegram"]:hover {
 		max-width: 100vw;
 	}
 	}
-/* --------- text width section ------------- */
+/* --------- text width section , images 100vw ---------------- */
+	h1,h2,h3,h4,p,hr, .list {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 @media only screen and (max-width: 1300px) {
 	main {
 		width: 100%;
@@ -413,7 +418,6 @@ amp-social-share[type="telegram"]:hover {
 		margin-right: auto;	
 	}
 	}
-/* --------- text width section , images 100vw ---------------- */
 @media only screen and (max-width: 960px) {
 	main {
 		width: 100%;
@@ -480,6 +484,11 @@ p, .list	{
 	font-stretch: semi-expanded;
 	}
 }
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: calc(1em + 3.3334vmin);
+	}	
+	}
 </style>
 </head>
 

@@ -33,8 +33,8 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) + ( 1600 / 1300 ) + ( 1500 / 1500 ) ) 
-	   - 1.76em
+	  ( ( 1440 / 1018 ) + ( 1600 / 1300 ) + ( 1500 / 1500 ) + ( 420 / 812 )) 
+	   - 1.96em
   	);
   --restrict: 24em;
 }
@@ -52,6 +52,10 @@ a amp-img {
 .ru {
 		width: calc( ( 1500 / 1500 ) * var(--coeff) );
 	max-width: calc( ( 1500 / 1500 ) * var(--restrict) );
+}
+.gov {
+		width: calc( ( 420 / 812 ) * var(--coeff) );
+	max-width: calc( ( 420 / 812 ) * var(--restrict) );
 }
 #america {
 	max-width: 564px;
@@ -103,7 +107,7 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
 .phrase {
@@ -276,7 +280,6 @@ amp-social-share:hover {
 	box-shadow: 0 0 2em white;
 	background-size: 90%;
 }
-
 amp-social-share:active {
 	text-shadow: 0 0 1em red;
 	box-shadow: 0 0 2em white;
@@ -349,12 +352,7 @@ amp-social-share[type="telegram"]:hover {
 	
 @media only screen and (max-width:600px) {
 	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
-	h1,h2,h3,h4,p,hr, .audio, .list {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;	
-	}
-	#topNav .rightLink {
+	#topNav .rightLink, #topNav .compact {
 		display: none;
 	}
 	.rightLink {
@@ -371,18 +369,27 @@ amp-social-share[type="telegram"]:hover {
 		margin-left: .5em;
 		margin-right: .5em;	
 	}
-	.true, .ru, .china{
+	.true, .ru, .china, .gov {
 		width: auto;
 		max-width: 100vw;
 	}
 	}
-/* --------- text width section ------------- */
+/* --------- text width section , images 100vw ---------------- */
+	h1,h2,h3,h4,p,hr, .audio, .list {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 @media only screen and (max-width: 1300px) {
 	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .audio, .list {
 		width: 70%;
+		margin-left: auto;
+		margin-right: auto;	
 	}
 	}
-/* --------- text width section , images 100vw ---------------- */
 @media only screen and (max-width: 960px) {
 	main {
 		width: 100%;
@@ -399,6 +406,16 @@ amp-social-share[type="telegram"]:hover {
 	}
 	h1,h2,h3,h4,p,hr, .audio, .list {
 		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	}
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .audio, .list {
+		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
@@ -440,6 +457,11 @@ p, .list	{
 	font-stretch: semi-expanded;
 	}
 }
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: calc(1em + 3.3334vmin);
+	}	
+	}
 </style>
 </head>
 
@@ -474,9 +496,8 @@ p, .list	{
 </amp-img>
 </div>
 Main Menu</a></li>
-</ul>
-<ul class="rightLink">
-<li><a property="relatedLink" href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">
+
+<li class="compact"><a property="relatedLink" href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">
 <div class="china">
 <amp-img src="https://nakigoe.github.io/_IMG/china.jpg"
   width="1600"
@@ -489,7 +510,7 @@ Main Menu</a></li>
 </div>
 Rated&nbsp;in&nbsp;China</a></li>
 
-<li><a property="relatedLink" href="https://nakigoe.github.io/articles/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
+<li class="compact"><a property="relatedLink" href="https://nakigoe.github.io/articles/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
 	<div class="ru">
 	<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
 	  width="1500"
@@ -501,6 +522,21 @@ Rated&nbsp;in&nbsp;China</a></li>
 	</amp-img>
 	</div>
 	Exit Russia</a></li>
+</ul>
+
+<ul class="rightLink">
+<li><a property="relatedLink" class="alert" href="https://nakigoe.github.io/articles/escape.html" target="_blank">
+<div class="gov">
+	<amp-img src="https://nakigoe.github.io/_IMG/government.jpg"
+	width="420"
+	height="812"
+	layout="responsive"
+	alt="Escape from Government Darkenss"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Escape from Government Darkenss">
+	</amp-img>
+</div>
+.gov</a></li>
 </ul>
 </nav>
 <header>
@@ -640,8 +676,7 @@ Rated&nbsp;in&nbsp;China</a></li>
 </amp-img>
 </div>
 Main Menu</a></li>
-</ul>
-<ul class="rightLink">
+
 <li><a property="relatedLink" href="https://nakigoe.github.io/china/freedom.html" title="Study Mandarin. It's China Time. Enter China!" target="_blank">
 <div class="china">
 <amp-img src="https://nakigoe.github.io/_IMG/china.jpg"
@@ -667,6 +702,21 @@ Rated&nbsp;in&nbsp;China</a></li>
 	</amp-img>
 	</div>
 	Exit Russia</a></li>
+</ul>
+
+<ul class="rightLink">
+<li><a property="relatedLink" class="alert" href="https://nakigoe.github.io/articles/escape.html" target="_blank">
+<div class="gov">
+	<amp-img src="https://nakigoe.github.io/_IMG/government.jpg"
+	width="420"
+	height="812"
+	layout="responsive"
+	alt="Escape from Government Darkenss"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Escape from Government Darkenss">
+	</amp-img>
+</div>
+.gov</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">

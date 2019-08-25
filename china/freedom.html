@@ -33,8 +33,8 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) + ( 1500 / 1500 ) + ( 564 / 564 ) ) 
-	   - 1.88em
+	  ( ( 1440 / 1018 ) + ( 1500 / 1500 ) + ( 564 / 564 ) + ( 420 / 812 ) ) 
+	   - 2.06em
   	);
   --restrict: 24em;
 }
@@ -52,6 +52,10 @@ a amp-img {
 .america {
 		width: calc( ( 564 / 564 ) * var(--coeff) );
 	max-width: calc( ( 564 / 564 ) * var(--restrict) );
+}
+.gov {
+		width: calc( ( 420 / 812 ) * var(--coeff) );
+	max-width: calc( ( 420 / 812 ) * var(--restrict) );
 }
 #china {
 	max-width: 1600px;
@@ -77,9 +81,6 @@ nav {
 nav .rightLink {
 	margin-right: .75em;/*temporary draft*/
 }
-#topNav {
-	margin-bottom: 1.5em;
-}
 nav li{
 	display:inline-block;
 	margin-bottom: 0.4em;
@@ -95,14 +96,11 @@ h1, h2, h3, h4, h5, h6 {
 	color: white;
 	}
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
 .phrase {
 	display: inline-block;
-}
-#china {
-	max-width: 1600px;
 }
 h1 {
 	font-family:"Adobe Clean Light","Nunito Sans", Arial;
@@ -242,7 +240,6 @@ p {
 	letter-spacing:.02em;
 	}
 em {color:#fff;}
-.articleHr {margin:2.25em 0 1em;}
 li small  {
 	font-size:0.65em;
 	color:#eee;
@@ -250,8 +247,8 @@ li small  {
 	margin-top:.25em;
 	}
 footer {
-	width:95%;
-	margin: 5.5em auto 0;
+	width:96%;
+	margin: 2.8em auto 0;
 	}
 #copyright{
 	margin: 1.5em auto;
@@ -351,12 +348,7 @@ amp-social-share[type="telegram"]:hover {
 	
 @media only screen and (max-width:600px) {
 	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
-	h1,h2,h3,h4,p,hr, .audio, .list {
-		width: 95%;
-		margin-left: auto;
-		margin-right: auto;	
-	}
-	#topNav .rightLink {
+	#topNav .rightLink, #topNav .compact {
 		display: none;
 	}
 	.rightLink {
@@ -373,18 +365,28 @@ amp-social-share[type="telegram"]:hover {
 		margin-left: .5em;
 		margin-right: .5em;	
 	}
-	.true, .ru, .america{
+	.true, .ru, .america, .gov {
 		width: auto;
 		max-width: 100vw;
 	}
 	}
-/* --------- text width section ------------- */
+
+/* --------- text width section , images 100vw ---------------- */
+	h1,h2,h3,h4,p,hr, .audio, .list {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
 @media only screen and (max-width: 1300px) {
 	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .audio, .list {
 		width: 70%;
+		margin-left: auto;
+		margin-right: auto;	
 	}
 	}
-/* --------- text width section , images 100vw ---------------- */
 @media only screen and (max-width: 960px) {
 	main {
 		width: 100%;
@@ -405,7 +407,16 @@ amp-social-share[type="telegram"]:hover {
 		margin-right: auto;	
 	}
 	}
-	
+@media only screen and (max-width: 600px) {
+	main {
+		width: 100%;
+	}
+	h1,h2,h3,h4,p,hr, .audio, .list {
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	}	
 /*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
 h1 {
 	font-size: calc(2em + 3vmin);
@@ -442,6 +453,11 @@ p, .list	{
 	font-stretch: semi-expanded;
 	}
 }
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: calc(1em + 3.3334vmin);
+	}	
+	}
 </style>
 </head>
 
@@ -476,9 +492,8 @@ p, .list	{
 </amp-img>
 </div>
 Main Menu</a></li>
-</ul>
-<ul class="rightLink">
-<li><a property="relatedLink" href="https://nakigoe.github.io/articles/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
+
+<li class="compact"><a property="relatedLink" href="https://nakigoe.github.io/articles/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
 	<div class="ru">
 	<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
 	  width="1500"
@@ -491,7 +506,7 @@ Main Menu</a></li>
 	</div>
 	Exit Russia</a></li>
 	
-<li><a property="relatedLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
+<li class="compact"><a property="relatedLink" href="https://nakigoe.github.io/usa/america.html" title="The Right to the Freedom of Movement" target="_blank">
 <div class="america">
 	<amp-img src="https://nakigoe.github.io/_IMG/america.jpg"
 	width="564"
@@ -502,7 +517,22 @@ Main Menu</a></li>
 	<meta property="caption" content="Statue of Liberty">
 	</amp-img>
 </div>
-Come&nbsp;to&nbsp;U.S.A.</a></li>
+Come&nbsp;to&nbsp;U.S.</a></li>
+</ul>
+
+<ul class="rightLink">
+<li><a property="relatedLink" class="alert" href="https://nakigoe.github.io/articles/escape.html" target="_blank">
+<div class="gov">
+	<amp-img src="https://nakigoe.github.io/_IMG/government.jpg"
+	width="420"
+	height="812"
+	layout="responsive"
+	alt="Escape from Government Darkenss"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Escape from Government Darkenss">
+	</amp-img>
+</div>
+.gov</a></li>
 </ul>
 </nav>
 <header>
@@ -680,17 +710,16 @@ Come&nbsp;to&nbsp;U.S.A.</a></li>
 </amp-img>
 </div>
 Main Menu</a></li>
-</ul>
-<ul class="rightLink">
+
 <li><a property="relatedLink" href="https://nakigoe.github.io/articles/grim.html" title="For the Love of God! Exit Russia and forget the World War III Scenarios!" target="_blank">
 	<div class="ru">
 	<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
 	  width="1500"
 	  height="1500"
 	  layout="responsive"
-	  alt="Evil Russia"
+	  alt="Russia"
 	  property="image" typeOf="ImageObject">
-	  <meta property="caption" content="Evil Russia">
+	  <meta property="caption" content="Russia">
 	</amp-img>
 	</div>
 	Exit Russia</a></li>
@@ -706,7 +735,22 @@ Main Menu</a></li>
 	<meta property="caption" content="Statue of Liberty">
 	</amp-img>
 </div>
-Come&nbsp;to&nbsp;U.S.A.</a></li>
+Come&nbsp;to&nbsp;U.S.</a></li>
+</ul>
+
+<ul class="rightLink">
+<li><a property="relatedLink" class="alert" href="https://nakigoe.github.io/articles/escape.html" target="_blank">
+<div class="gov">
+	<amp-img src="https://nakigoe.github.io/_IMG/government.jpg"
+	width="420"
+	height="812"
+	layout="responsive"
+	alt="Escape from Government Darkenss"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Escape from Government Darkenss">
+	</amp-img>
+</div>
+.gov</a></li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
