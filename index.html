@@ -90,8 +90,8 @@ a amp-img {
   	);
   --esc: calc( 
 	  100vw / 
-	  ( ( 652 / 860 ) + ( 800 / 1200 ) + ( 1320 / 1742 ) ) 
-	   - 2.85em
+	  ( ( 420 / 812 ) + ( 652 / 860 ) + ( 800 / 1200 ) + ( 1320 / 1742 ) ) 
+	   - 2.95em
   	);
   --fence: calc( 
 	  100vw / 
@@ -306,11 +306,15 @@ article div {
 	max-width: calc( ( 2000 / 2922 ) * var(--restrict));
 }
 }
-/*---wide screens section for darkness, environment, ask ----*/
+/*---wide screens section for gov, darkness, environment, ask ----*/
 @media only screen and (min-width:960px) {
 #escape li {
 	display: inline-block;
 	}
+#gov {
+	width: calc( ( 420 / 812 ) * var(--esc) );
+	max-width: calc( ( 420 / 812 ) * var(--restrict) );
+}
 #dark {
 	width: calc( ( 652 / 860 ) * var(--esc) );
 	max-width: calc( ( 652 / 860 ) * var(--restrict) );
@@ -1091,8 +1095,6 @@ Public Speaking Tutor</a></li>
 	A Chance Worth Taking</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/south.html" target="_blank">
 	When Things Go South</a></li>
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/escape.html" target="_blank">
-	Government Grim</a></li>
 	</ul>
 	<ul id="fence">
 	<li><a property="significantLink" href="https://nakigoe.github.io/swords/sword-length.html" target="_blank">
@@ -1122,6 +1124,20 @@ Public Speaking Tutor</a></li>
 	Win at Go</a></li>
 	</ul>
 	<ul id="escape">
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/escape.html" target="_blank">
+	<div id="gov">
+		<amp-img src="https://nakigoe.github.io/_IMG/government.jpg"
+		width="420"
+		height="812"
+		layout="responsive"
+		alt="Escape from Government Darkenss"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="Escape from Government Darkenss">
+		</amp-img>
+	</div>
+	Government</a></li>
+	
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/darkness.html" target="_blank">
 	<div id="dark">
 		<amp-img src="https://nakigoe.github.io/_IMG/darkness.jpg"
