@@ -56,7 +56,7 @@ a amp-img {
   --lang: calc( 
 	  100vw / 
 	  ( ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 656 ) + ( 1128 / 1968 ) + ( 639 / 1024 ) ) 
-	   - 2.74em
+	   - 2.73em
   	);
   --life: calc( 
 	  100vw / 
@@ -67,6 +67,11 @@ a amp-img {
 	  100vw / 
 	  ( ( 1756 / 2184 ) + ( 930 / 1345 ) + ( 2300 / 2160 ) ) 
 	   - 2.45em
+  	);
+  --sc: calc( 
+	  100vw / 
+	  ( ( 1756 / 2184 ) + ( 930 / 1345 ) + ( 2300 / 2160 ) + ( 700 / 880 ) + ( 1800 / 2300 ) ) 
+	   - 2.375em
   	);
   --int: calc( 
 	  100vw / 
@@ -96,9 +101,13 @@ a amp-img {
   --fence: calc( 
 	  100vw / 
 	  ( ( 1080 / 1350 ) + ( 664 / 896 ) ) 
-	   - 2.85em
+	   - 1.2em
   	);
-	
+  --art: calc( 
+	  100vw / 
+	  ( ( 1938 / 2740 ) + ( 799 / 999 ) + ( 1280 / 1810 ) + ( 2056 / 3552 ) + ( 638 / 960 ) + ( 920 / 1382 ) ) 
+	   - 2.95em
+  	);	
   --restrict: 25em;
   --coeff: 20em;
 }
@@ -135,10 +144,6 @@ a amp-img {
 	width: calc( ( 2560 / 1453 ) * var(--coeff));
 	max-width: calc( ( 2560 / 1453 ) * var(--restrict));
 }
-#goddess {
-	width: calc( ( 1280 / 1810 ) * var(--coeff));
-	max-width: calc( ( 1280 / 1810 ) * var(--restrict));
-}
 #group {
 	width: calc( ( 1756 / 2184 ) * var(--coeff));
 	max-width: calc( ( 1756 / 2184 ) * var(--restrict));
@@ -166,6 +171,10 @@ a amp-img {
 #electra {
 	width: calc( ( 799 / 999 ) * var(--coeff));
 	max-width: calc( ( 799 / 999 ) * var(--restrict));
+}
+#goddess {
+	width: calc( ( 1280 / 1810 ) * var(--coeff));
+	max-width: calc( ( 1280 / 1810 ) * var(--restrict));
 }
 #sinon {
 	width: calc( ( 2056 / 3552 ) * var(--coeff));
@@ -225,6 +234,56 @@ a amp-img {
 #desire {
 	width: calc( ( 2300 / 2160 ) * var(--it));
 	max-width: calc( ( 2300 / 2160 ) * var(--restrict));
+}
+}
+/*---wide screens section for Math, Computer Science, Web-Design ----*/
+@media only screen and (min-width:1200px) {
+#group {
+	width: calc( ( 1756 / 2184 ) * var(--sc));
+	max-width: calc( ( 1756 / 2184 ) * var(--restrict));
+}
+#it {
+	width: calc( ( 930 / 1345 ) * var(--sc));
+	max-width: calc( ( 930 / 1345 ) * var(--restrict));
+}
+#desire {
+	width: calc( ( 2300 / 2160 ) * var(--sc));
+	max-width: calc( ( 2300 / 2160 ) * var(--restrict));
+}
+#a2 {
+	width: calc( ( 700 / 880 ) * var(--sc));
+	max-width: calc( ( 700 / 880 ) * var(--restrict));
+}
+#e-girl {
+	width: calc( ( 1800 / 2300 ) * var(--sc));
+	max-width: calc( ( 1800 / 2300 ) * var(--restrict));
+}
+}
+/*---wide screens section for Director, Actor, Art, Calligraphy, FACS, Speaking ----*/
+@media only screen and (min-width:1400px) {
+#director {
+	width: calc( ( 1938 / 2740 ) * var(--art));
+	max-width: calc( ( 1938 / 2740 ) * var(--restrict));
+}
+#electra {
+	width: calc( ( 799 / 999 ) * var(--art));
+	max-width: calc( ( 799 / 999 ) * var(--restrict));
+}
+#goddess {
+	width: calc( ( 1280 / 1810 ) * var(--art));
+	max-width: calc( ( 1280 / 1810 ) * var(--restrict));
+}
+#sinon {
+	width: calc( ( 2056 / 3552 ) * var(--art));
+	max-width: calc( ( 2056 / 3552 ) * var(--restrict));
+}
+#facs {
+	width: calc( ( 638 / 960 ) * var(--art));
+	max-width: calc( ( 638 / 960 ) * var(--restrict));
+}
+#speaker {
+	width: calc( ( 920 / 1382 ) * var(--art));
+	max-width: calc( ( 920 / 1382 ) * var(--restrict));
 }
 }
 /*---New articles general section---*/
@@ -945,7 +1004,8 @@ Mandarin&nbsp;Tutor</a></li>
 </div>
 English&nbsp;Tutor</a></li>
 </ul>
-<ul>
+
+<ul id="sc">
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" target="_blank">
 <div id="group">
 <amp-img src="https://nakigoe.github.io/_IMG/groupmath.jpg"
@@ -970,7 +1030,7 @@ Math&nbsp;Tutor</a></li>
   <meta property="caption" content="Computer Science Tutor">
 </amp-img>
 </div>
-Computer&nbsp;Science&nbsp;Tutor</a></li>
+C.Sc. | IT Tutor</a></li>
 
 <li><a property="significantLink" href="https://nakigoe.github.io/services/developer.html" target="_blank">
 <div id="desire">
@@ -1012,7 +1072,7 @@ Computer&nbsp;Service</a></li>
 Electrical Installation</a></li>
 </ul>
 
-<ul>
+<ul id="art">
 <li><a property="significantLink" href="/services/director.html" title="Film Director" target="_blank">
 <div id="director">
 <amp-img src="https://nakigoe.github.io/_IMG/director.jpg"
@@ -1038,8 +1098,7 @@ Film&nbsp;Director</a></li>
 </amp-img>
 </div>
 Actor</a></li>
-</ul>
-<ul>
+
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" target="_blank">
 <div id="goddess">
 <amp-img src="https://nakigoe.github.io/_IMG/goddess.jpg"
@@ -1065,8 +1124,7 @@ Art Instructor</a></li>
 </amp-img>
 </div>
 Calligraphy Tutor</a></li>
-</ul>
-<ul>
+
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/facs.html" target="_blank">
 <div id="facs">
 <amp-img src="https://nakigoe.github.io/_IMG/facs.jpg"
@@ -1079,6 +1137,7 @@ Calligraphy Tutor</a></li>
 </amp-img>
 </div>
 F.A.C.S. Tutor</a></li>
+
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/speech.html" target="_blank">
 <div id="speaker">
 <amp-img src="https://nakigoe.github.io/_IMG/speaker.jpg"
