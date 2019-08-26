@@ -32,8 +32,8 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) + ( 652 / 860 ) + ( 800 / 1200 ) + ( 1320 / 1742 ) ) 
-	   - 2.205em
+	  ( ( 1440 / 1018 ) + ( 652 / 860 ) + ( 800 / 1200 ) + ( 1320 / 1742 ) + ( 420 / 812 ) ) 
+	   - 2.355em
   	);
   --restrict: 24em;
 }
@@ -43,6 +43,10 @@ a amp-img {
 .true {
 	width: calc( ( 1440 / 1018 ) * var(--coeff) );
 	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.gov {
+		width: calc( ( 420 / 812 ) * var(--coeff) );
+	max-width: calc( ( 420 / 812 ) * var(--restrict) );
 }
 .dark {
 	width: calc( ( 652 / 860 ) * var(--coeff) );
@@ -370,7 +374,7 @@ amp-social-share[type="telegram"]:hover {
 		margin-left: .5em;
 		margin-right: .5em;
 	}
-	.true, .dark, .exposure, .ask {
+	.true, .gov, .dark, .exposure, .ask {
 		width: auto;
 		max-width: 100vw;
 	} 
@@ -485,6 +489,19 @@ nav a {
 </div>
 Main Menu</a></li>
 
+<li class="hide"><a property="relatedLink" href="https://nakigoe.github.io/articles/escape.html" target="_blank">
+<div class="gov">
+	<amp-img src="https://nakigoe.github.io/_IMG/government.jpg"
+	width="420"
+	height="812"
+	layout="responsive"
+	alt="Escape from Government Darkenss"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Escape from Government Darkenss">
+	</amp-img>
+</div>
+.gov</a></li>
+
 <li class="hide"><a property="relatedLink" href="https://nakigoe.github.io/articles/darkness.html" target="_blank">
 <div class="dark">
 	<amp-img src="https://nakigoe.github.io/_IMG/darkness.jpg"
@@ -590,7 +607,20 @@ Ask for Help</a></li>
 </div>
 Main Menu</a></li>
 
-<li class="hide"><a property="relatedLink" href="https://nakigoe.github.io/articles/darkness.html" target="_blank">
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/escape.html" target="_blank">
+<div class="gov">
+	<amp-img src="https://nakigoe.github.io/_IMG/government.jpg"
+	width="420"
+	height="812"
+	layout="responsive"
+	alt="Escape from Government Darkenss"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Escape from Government Darkenss">
+	</amp-img>
+</div>
+.gov</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/darkness.html" target="_blank">
 <div class="dark">
 	<amp-img src="https://nakigoe.github.io/_IMG/darkness.jpg"
 	width="652"
