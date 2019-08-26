@@ -137,7 +137,19 @@
       <priority>0.5</priority>
 
    </url>
-         
+       
+   <url>
+
+      <loc>https://nakigoe.github.io/articles/ggg.html</loc>
+
+      <lastmod> 2019-08-26</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+          
    <url>
 
       <loc>https://nakigoe.github.io/articles/master.html</loc>
