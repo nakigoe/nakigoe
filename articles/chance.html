@@ -32,8 +32,8 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) + ( 1329 / 1864 ) + ( 2000 / 2922 ) ) 
-	   - 2.275em
+	  ( ( 1440 / 1018 ) + ( 2000 / 2922 ) + ( 1280 / 1707 ) + ( 1329 / 1864 ) ) 
+	   - 2.26em
   	);
   --restrict: 24em;
 }
@@ -44,13 +44,17 @@ a amp-img {
 	width: calc( ( 1440 / 1018 ) * var(--coeff) );
 	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
 }
-.inquire {
-	width: calc( ( 1329 / 1864 ) * var(--coeff) );
-	max-width: calc( ( 1329 / 1864 ) * var(--restrict) );
-}
 .win {
 	width: calc( ( 2000 / 2922 ) * var(--coeff) );
 	max-width: calc( ( 2000 / 2922 ) * var(--restrict) );
+}
+.lead {
+	width: calc( ( 1280 / 1707 ) * var(--coeff) );
+	max-width: calc( ( 1280 / 1707 ) * var(--restrict) );
+}	
+.inquire {
+	width: calc( ( 1329 / 1864 ) * var(--coeff) );
+	max-width: calc( ( 1329 / 1864 ) * var(--restrict) );
 }
 #meow {
 	display: inline-block;
@@ -370,7 +374,7 @@ amp-social-share[type="telegram"]:hover {
 		margin-left: .5em;
 		margin-right: .5em;
 	}
-	.true, .dark, .exposure, .ask {
+	.true, .lead, .win, .inquire {
 		width: auto;
 		max-width: 100vw;
 	} 
@@ -484,19 +488,7 @@ nav a {
 </amp-img>
 </div>
 Main Menu</a></li>
-<li class="hide"><a property="relatedLink" href="https://nakigoe.github.io/articles/inquire.html">
-<div class="inquire">
-<amp-img src="https://nakigoe.github.io/_IMG/inquire.jpg"
-  width="1329"
-  height="1864"
-  layout="responsive"
-  alt="Inquire"
-  property="image" typeOf="ImageObject">
-  <meta property="caption" content="Inquire">
-  <meta property="url" content="https://nakigoe.github.io/_IMG/inquire.jpg">
-</amp-img>
-</div>
-Inquire</a></li>
+
 <li class="hide"><a property="relatedLink" href="https://nakigoe.github.io/articles/win.html" target="_blank">
 <div class="win">
 <amp-img src="https://nakigoe.github.io/_IMG/win.jpg"
@@ -510,10 +502,35 @@ Inquire</a></li>
 </amp-img>
 </div>
 Win</a></li>
+<li class="hide"><a property="relatedLink" href="https://nakigoe.github.io/articles/lead.html" target="_blank">
+<div class="lead">
+<amp-img src="https://nakigoe.github.io/_IMG/lead.jpg"
+  width="1280"
+  height="1707"
+  layout="responsive"
+  alt="Lead"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Lead">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/lead.jpg">
+</amp-img>
+</div>
+Lead</a></li>
 </ul>
 
 <ul class="rightLink">
-
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/articles/inquire.html">
+<div class="inquire">
+<amp-img src="https://nakigoe.github.io/_IMG/inquire.jpg"
+  width="1329"
+  height="1864"
+  layout="responsive"
+  alt="Inquire"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Inquire">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/inquire.jpg">
+</amp-img>
+</div>
+Inquire</a></li>
 </ul>
 </nav>
 
@@ -633,8 +650,10 @@ Win</a></li>
 </div>
 <p>Avoid “gift from God”, “blessing”, kind of guidance by unusual occurrence or for that reason popular eastern culture “Luck” - type of miracle thinking. Or for that reason "curse", "jinx", "Moridor's box", kind of reasoning based on a bad rare occurance, bad time, bad day. Be brave!!!
 Test for coincidences. Is that an ordinary occurrence that coincides with general statistics?</p> 
+<p>Sometimes You have to tune up the piano and perform Your best even in extraudinary circumstances.</p>
 <p>Avoid daydreaming and wishful thinking.</p>
-<p>Wise girl has eyes in her head.</p>
+<p>Wise girl has eyes in her head. Find ways next to You. Find stuff next to You.</p>
+<p>Study hacking. Very often the only thing between You and the precious data is Windows XP. Yes, it's 2019, but many firms still use WinXP to get it for free. Heavens, it's often not even a database, but an uncoded Excel file. Sometimes You might need this simple piece of information like air. In fact, forget about hacking. Just carry a USB flashcard in Your bag. Use it, drag and drop. Do Your worst.</p>
 <div id="message">
 <amp-img src="https://nakigoe.github.io/_IMG/message.jpg"
   width="800"
@@ -704,20 +723,6 @@ Test for coincidences. Is that an ordinary occurrence that coincides with genera
 </div>
 Main Menu</a></li>
 
-<li><a property="relatedLink" href="https://nakigoe.github.io/articles/inquire.html">
-<div class="inquire">
-<amp-img src="https://nakigoe.github.io/_IMG/inquire.jpg"
-  width="1329"
-  height="1864"
-  layout="responsive"
-  alt="Inquire"
-  property="image" typeOf="ImageObject">
-  <meta property="caption" content="Inquire">
-  <meta property="url" content="https://nakigoe.github.io/_IMG/inquire.jpg">
-</amp-img>
-</div>
-Inquire</a></li>
-
 <li><a property="relatedLink" href="https://nakigoe.github.io/articles/win.html" target="_blank">
 <div class="win">
 <amp-img src="https://nakigoe.github.io/_IMG/win.jpg"
@@ -731,10 +736,36 @@ Inquire</a></li>
 </amp-img>
 </div>
 Win</a></li>
+
+<li><a property="relatedLink" href="https://nakigoe.github.io/articles/lead.html" target="_blank">
+<div class="lead">
+<amp-img src="https://nakigoe.github.io/_IMG/lead.jpg"
+  width="1280"
+  height="1707"
+  layout="responsive"
+  alt="Lead"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Lead">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/lead.jpg">
+</amp-img>
+</div>
+Lead</a></li>
 </ul>
 
 <ul class="rightLink">
-
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/articles/inquire.html">
+<div class="inquire">
+<amp-img src="https://nakigoe.github.io/_IMG/inquire.jpg"
+  width="1329"
+  height="1864"
+  layout="responsive"
+  alt="Inquire"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Inquire">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/inquire.jpg">
+</amp-img>
+</div>
+Inquire</a></li>
 </ul>
 
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
