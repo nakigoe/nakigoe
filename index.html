@@ -90,8 +90,8 @@ a amp-img {
   	);
   --conq: calc( 
 	  100vw / 
-	  ( ( 1329 / 1864 ) + ( 1280 / 1707 ) + ( 2000 / 2922 ) ) 
-	   - 2.95em
+	  ( ( 800 / 1200 ) + ( 1329 / 1864 ) + ( 1280 / 1707 ) + ( 2000 / 2922 ) ) 
+	   - 2.825em
   	);
   --esc: calc( 
 	  100vw / 
@@ -360,6 +360,10 @@ article div {
 #conquer li {
 	display: inline-block;
 	}
+#chance {
+	width: calc( ( 800 / 1200 ) * var(--conq) );
+	max-width: calc( ( 800 / 1200 ) * var(--restrict) );
+}
 #inquire {
 	width: calc( ( 1329 / 1864 ) * var(--conq) );
 	max-width: calc( ( 1329 / 1864 ) * var(--restrict) );
@@ -1166,21 +1170,6 @@ Speech Tutor</a></li>
 	When Things Go South</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/master.html" target="_blank">
 	Grim Master</a></li>
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/chance.html" target="_blank">
-	<div id="chance0">
-	<amp-img src="https://nakigoe.github.io/_IMG/chance2.jpg"
-	  width="800"
-	  height="1200"
-	  layout="responsive"
-	  alt="Not Gambling Girl"
-	  property="image" typeOf="ImageObject">
-	  <meta property="caption" content="Not Gambling Girl">
-	  <meta property="url" content="https://nakigoe.github.io/_IMG/chance2.jpg">
-	</amp-img>
-	</div>
-	A Chance Worth Taking</a></li>
-	</ul>
-	<ul>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/ggg.html" target="_blank">
 	<div id="govt1">
 	<amp-img src="https://nakigoe.github.io/_IMG/govt1.jpg"
@@ -1281,7 +1270,21 @@ Speech Tutor</a></li>
 	</ul>
 	
 	<ul id="conquer">
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/inquire.html">
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/chance.html" target="_blank">
+	<div id="chance">
+	<amp-img src="https://nakigoe.github.io/_IMG/chance2.jpg"
+	  width="800"
+	  height="1200"
+	  layout="responsive"
+	  alt="Not Gambling Girl"
+	  property="image" typeOf="ImageObject">
+	  <meta property="caption" content="Not Gambling Girl">
+	  <meta property="url" content="https://nakigoe.github.io/_IMG/chance2.jpg">
+	</amp-img>
+	</div>
+	A Chance Worth Taking</a></li>
+	
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/inquire.html" target="_blank">
 	<div id="inquire">
 	<amp-img src="https://nakigoe.github.io/_IMG/inquire.jpg"
 	  width="1329"
