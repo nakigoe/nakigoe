@@ -73,8 +73,20 @@ a amp-img {
 	display: flex;
 	align-items: center;
 	}
-	.logo {
-		width: 60%;
+.logo {
+	width: 60%;
+	margin: 0;
+	padding: 0;
+	margin-left: -5%;
+	}
+h1 {
+	margin: 0;
+	padding: 0;
+	}
+.logo div div{
+	padding-left: .6em;
+	padding-top: .6em;
+	padding-bottom: .6em;
 	}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
@@ -122,8 +134,6 @@ cite {color: white;}
 h1 {
 	font-family:"Nunito Sans", sans-serif;
 	text-align: center;
-	padding-top: 0.8em;
-	padding-bottom: 0.8em;
 	/*font-size: 4em;*/
 	letter-spacing: .12em;
 	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
@@ -134,7 +144,7 @@ h1 span {
 	/* for adobe font font-weight: 200;*/
 	text-align: center;
 	text-shadow:0 0 .6em white;
-	}	
+	}
 h2 {
 	font-family:"Nunito Sans", sans-serif;
 	font-size:3em;
@@ -380,7 +390,7 @@ amp-social-share[type="telegram"]:hover {
 	.rightLink {
 		float: none;
 	}
-	#topNav .rightLink {
+	#topNav .rightLink, #topNav .hide {
 		display: none;
 	}
 	nav .rightLink {
@@ -564,9 +574,9 @@ Darkness</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
 </amp-img>
 </div>
-<amp-fit-text layout="responsive">
-<h1 class="logo" property="name">How&nbsp;to Ask&nbsp;for&nbsp;Help<br> <span>by&nbsp;Awesome&nbsp;Angel</span></h1>
-</amp-fit-text>
+
+<h1 class="logo" property="name"><amp-fit-text layout="responsive" width="2" height="1">How&nbsp;to Ask&nbsp;for&nbsp;Help<br> <span>by&nbsp;Awesome&nbsp;Angel</span></amp-fit-text></h1>
+
 </header>
 
 <div id="forest">
