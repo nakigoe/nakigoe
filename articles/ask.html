@@ -65,16 +65,7 @@ a amp-img {
 	max-width: 1980px;
 	margin: 0.2em auto 0;
 	}
-#meow {
-	display: inline-block;
-	width: 40%;
-	position: relative;
-	z-index: -1;
-	}
-.intro {
-	display: flex;
-	align-items: center;
-	}
+
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -118,6 +109,33 @@ blockquote {
 	text-align: center;
 }
 cite {color: white;}
+	
+/*---------------------- Logo and Headline -------------*/
+.intro {
+	display: flex;
+	align-items: center;
+	}
+#meow {
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	z-index: -1;
+	}
+#magnum {
+	display: inline-block; 
+	width: 100%; 
+	margin-left: -6.9%;
+	}
+#appellation {
+	text-align: center; 
+	padding-left: 1em; 
+	padding-top: .6em; 
+	padding-bottom: .3em; 
+	padding-right: 1em; 
+	line-height: normal; 
+	position: relative; 
+	z-index: 10;
+	}
 h1 {
 	font-family:"Nunito Sans", sans-serif;
 	text-align: center;
@@ -398,32 +416,32 @@ amp-social-share[type="telegram"]:hover {
 	}
 
 /* --------- text width section , images 100vw ---------------- */
-h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+h2,h3,h4,p,blockquote, .list {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	}
 @media only screen and (max-width: 1300px) {
-	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 70%;
 	}
 	}
 @media only screen and (max-width: 960px) {
-	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
 @media only screen and (max-width: 800px) {
-	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
 @media only screen and (max-width: 600px) {
-	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -561,9 +579,9 @@ Darkness</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
 </amp-img>
 </div>
-<div style="display: inline-block; width: 100%; margin-left: -6.9%;">
+<div id="magnum">
 <amp-fit-text layout="responsive" width="3" height="1">
-<h1 class="logo" property="name" style="text-align: center; padding-left: 1em; padding-top: .6em; padding-bottom: .3em; padding-right: 1em; line-height: normal; position: relative; z-index: 10;">How to Ask&nbsp;for&nbsp;Help<br> <span>by&nbsp;Awesome&nbsp;Angel</span>
+<h1 id="appellation" property="name">How to Ask&nbsp;for&nbsp;Help<br> <span>by&nbsp;Awesome&nbsp;Angel</span>
 </h1>
 </amp-fit-text>
 </div>
