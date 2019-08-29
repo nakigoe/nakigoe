@@ -34,7 +34,7 @@
   --coeff: calc( 
 	  100vw / 
 	  ( ( 1440 / 1018 ) + ( 1080 / 1350 ) + ( 652 / 860 ) + ( 420 / 812 ) ) 
-	   - 2.4em
+	   - 2.3em
   );
   --restrict: 24em;
 }
@@ -101,6 +101,10 @@ blockquote {
 	width: 100%;
 	margin: 0 auto;
 	text-align: center;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-family: 'Nunito Sans', sans-serif;
+	font-weight: 400;
 }
 cite {color: white;}
 	
@@ -449,7 +453,7 @@ h2,h3,h4,p,blockquote, .list {
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
 }
-p, .list	{
+p, blockquote, .list, {
 	font-size: 1em;
 	font-stretch: semi-condensed;
 	}
@@ -458,7 +462,7 @@ nav a {
 	font-stretch: semi-condensed;
 }
 @media only screen and (min-width: 60em) {
-	p, .list {
+	p, blockquote, .list {
 	  font-size: 1.125em;
 	  font-stretch: normal;
 	}
@@ -468,7 +472,7 @@ nav a {
 	}
 }
 @media only screen and (min-width: 120em) {
-	p, .list {
+	p, blockquote, .list {
 	  font-size: 1.375em;
 	  font-stretch: semi-expanded;
 	}
