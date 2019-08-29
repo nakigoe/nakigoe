@@ -96,12 +96,12 @@ a amp-img {
   --esc: calc( 
 	  100vw / 
 	  ( ( 420 / 812 ) + ( 652 / 860 ) + ( 800 / 1200 ) + ( 1320 / 1742 ) ) 
-	   - 2.95em
+	   - 2.925em
   	);
   --fence: calc( 
 	  100vw / 
-	  ( ( 1080 / 1350 ) + ( 664 / 896 ) ) 
-	   - 1.2em
+	  ( ( 1164 / 1778 ) + ( 1080 / 1350 ) + ( 664 / 896 ) ) 
+	   - 2.85em
   	);
   --art: calc( 
 	  100vw / 
@@ -399,11 +399,15 @@ article div {
 	max-width: calc( ( 1320 / 1742 ) * var(--restrict));
 }
 }
-/*---wide screens section for sword, go ----*/
+/*---wide screens section for exec, sword, go ----*/
 @media only screen and (min-width:960px) {
 #fence li {
 	display: inline-block;
 	}
+#exec {
+	width: calc( ( 1164 / 1778 ) * var(--fence) );
+	max-width: calc( ( 1164 / 1778 ) * var(--restrict) );
+}
 #sword {
 	width: calc( ( 1080 / 1350 ) * var(--fence) );
 	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
@@ -1200,7 +1204,7 @@ Speech Tutor</a></li>
 	</div>
 	Exec</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/sword-length.html" target="_blank">
-	<div id="ideal">
+	<div id="sword">
 		<amp-img src="https://nakigoe.github.io/_IMG/ideal.jpg"
 		width="1080"
 		height="1350"
