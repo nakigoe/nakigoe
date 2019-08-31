@@ -216,10 +216,7 @@ a:active{
 	}
 hr {display:block;
 	box-shadow:0 0 .5em .1em white;
-	position:relative;
-	top:-.6em;
-	margin-bottom:0;
-	/*possible to control through margins if necessary*/
+	margin: 1.6em 0;
 	}
 kbd {
 	border: 1px solid #eee;
@@ -566,10 +563,10 @@ Top Apps</a></li>
 	<p>Copy the correct text into the index.html article</p>
 	<p>Save index.html</p>
 	<p>preview in the browser! (type in Your DOMAIN in the browser address line)</p>
-	
+
 <h3>Files and Folders</h3>	
 <h3>Proper File Names</h3>
-    <p>Create folders.</p>
+    <p>Create folders to keep the docs organized.</p>
     <p>In the root directory you can create themed folders.</p>
     <p>Create a folder named articles.</p>
     <p>no spaces, underscores, CAPS in naming the files or folders!!!</p>
@@ -592,7 +589,17 @@ Top Apps</a></li>
 	<p>Use absolute links, Youl need them for RDFa markup later. For RDFa markup viable are absolute links only, they are RDFa life!!! RDFa is all about absolute links and item identifiers, like &lt;section id="item1"&gt; is referenced like https://nakigoe.github.io/articles/new.html#item1</p>
 	<p>&lt;a href=&quot;https://nakigoe.github.io/articles/new.html&quot;&gt;new file&lt;/a&gt;</p>
 
-<h4>Metadata</h4>
+<h3>AMP HTML instead of JavaScript</h3>
+	<p>An advice from kendo: "Do the RIGHT thing first, and THEN move on to advanced"
+    Doing right is hard.
+    Have some order in a webpage. Avoid extreme stuff one can do with a webpage.
+    Like in studying any language: "do the right thing first, then move on to advanced."</p>
+    <p>AMP HTML provides tones of basic stuff, and takes away the need of writing tedious JavaScript.</p>
+    <p>AMP HTML is a way to bring order into the page.</p>
+	<p>Study HTML, CSS and AMP HTML simultaneously, this way you can solve tons of questions.</p>
+	
+<h2>Metadata</h2>
+<p>This one is for a search engine and a browser</p>
 <p>Copy and Paste to start quickly</p>
 <p>AMP HTML declarations</p>
 <p>paste, then edit where necessary:</p>
@@ -604,15 +611,6 @@ Top Apps</a></li>
 	<li>review date</li>
 </ul>
 
-<h3>AMP HTML instead of JavaScript</h3>
-	<p>An advice from kendo: "Do the RIGHT thing first, and THEN move on to advanced"
-    Doing right is hard.
-    Have some order in a webpage. Avoid extreme stuff one can do with a webpage.
-    Like in studying any language: "do the right thing first, then move on to advanced."</p>
-    <p>AMP HTML provides tones of basic stuff, and takes away the need of writing tedious JavaScript.</p>
-    <p>AMP HTML is a way to bring order into the page.</p>
-	<p>Study HTML, CSS and AMP HTML simultaneously, this way you can solve tons of questions.</p>
-	
 <h3>Use Dreamweaver to Start Editing index.html</h3>
 <p>No time to experiment, grab the <a class="link" href="https://www.adobe.com/products/dreamweaver/free-trial-download.html" target="_blank">Dreamweaver</a> !!!</p>
     <h4>You need a full-fledged suit!!! (IDE)</h4>
@@ -628,28 +626,7 @@ Top Apps</a></li>
 <h3>Install Git</h3>
     <p><a class="link" href="https://git-scm.com/downloads" target="_blank">git</a></p>
     <p>This one is extermely important to keep the track of changes and versions automatically. Concentrate on creating new and useful. The changes will be documented automatically!</p>
-	
-<h3>index.html, 1 hour</h3>
-	<p>Edit index.html, it's now Your Website main page (the landing page).</p>
-	<p>write plaintext!</p>
-	<p>Save the file.</p>
-	<p>preview in the browser!</p>
 
-<h3>Proper File Names</h3>
-    <h4>Create Folders</h4>
-    <p>In the root folder create a folder named articles</p>
-    <p>no spaces, underscores, CAPS in naming the files or folders!!!</p>
-    <p>use lowcase letters and dashes to name the folders and new articlse</p>
-    <p>keep the docs organized</p>
-    <p>if you would like to use underscores in names on GitHub, like _IMG folder to keep the images safer, create .nojekyll file in the root folder</p>
-
-<h3>Create Links to New Articles</h3>
-	<p>use an <xmp><a href="">...</a></xmp> element to create links to future html docutments in the repository</p>
-<xmp><a href="/new.html">new file</a></xmp>
-<p>where the slash sign means new.html is located at the same folder as index.html (the Root folder)</p>
-<p>create an articles folder in the repository</p>
-<p>then the links to the files in the articles folder will look like this: </p>
-<xmp><a href="/articles/new.html">new file</a></xmp>
 <h2>nav Should I include a into li into ul?</h2>
 <p>It really depends on how the complex current site navigation is.</p>
 <p>If that is a couple of links on a page with no complications in visual presentation, then no. There is no any need to, to be exact.</p>
@@ -661,6 +638,7 @@ Top Apps</a></li>
 <p>/nav</p>
 <p>But if the menu is complex visually, and there are several groups of links, images, languages - then definitely yes, to make separate groups of links targetable by CSS. In that case you have to use either ul li structure, or div (divide). You much better with ul li structure if you plan to use flex container, and especially floats in navigation bar. In that case ul li structure makes links organization more logical and understandable than div inside a div then a.</p>
 <p>Just remember to create a separate class for the usual text list. Minimize targeting ul and li in navigation. CSS Target nav ul li only if you absolutely have to. Make sure that text li and nav li do not intersect in any way, especially if you use em units for the font-size. There are tons of ways: CSS nav ul li, main ul li, separate class for text ul.</p>
+
 <h4>Header</h4>
 <p>Copy and Paste to start quickly</p>
 <p>AMP HTML declarations</p>
@@ -687,21 +665,19 @@ Top Apps</a></li>
 <h5>Meaningful Naming</h5>
 <p>Name classes referring to their role of the elements on the page.</p>
 <p>Write classes names in small letters. Use CAPS letters when dividing the composite descriptions.</p>
-<xmp>
-	<div class="leftColumn"></div>
-	<div class="rightColumn"></div>
-</xmp>
+
+	<p>&lt;div class=&quot;leftColumn&quot;&gt;&lt;/div&gt;</p>
+	<p>&lt;div class=&quot;rightColumn&quot;&gt;&lt;/div&gt;</p>
+
 <p>then apply styles in the styles section</p>
-<xmp>
-	<style>
-		.leftColumn {
-			color: red;
-		}
-		.rightColumn {
-			color: orange;
-		}
-	</style>
-</xmp>
+	<p>&lt;style&gt;</p>
+		<p>.leftColumn {</p>
+			<p>color: red;</p>
+		<p>}</p>
+		<p>.rightColumn {</p>
+			<p>color: orange;</p>
+		<p>}</p>
+	<p>&lt;/style&gt;</p>
 <p>Think about readers of Your code! You may want to hire a developer.</p>
 
 <h3>Semantic HTML</h3>
@@ -746,27 +722,6 @@ Top Apps</a></li>
 	<p>pairs are separated by commas</p>
 	<p>types are created with {} </p>
 	<p>arrays of similar data and types are created by []</p>
-<h3>index.html, 1 hour</h3>
-	<p>Edit index.html, it's now Your Website main page (the landing page).</p>
-
-<h3>Proper File Names</h3>
-    <h4>Create Folders</h4>
-    <p>In the root directory you can create themed folders.</p>
-    <p>Create a folder named articles.</p>
-    <p>no spaces, underscores, CAPS in naming the files or folders!!!</p>
-    <p>use lowcase letters and dashes to name the folders and new articles.</p>
-    <p>keep the docs organized</p>
-    <p>if you would like to use underscores in names on GitHub, like _IMG folder to keep the images safer, create .nojekyll file in the root folder</p>
-
-<h3>Create Links to New Articles</h3>
-	<p>use an</p>
-	<xmp><a href=""></a></xmp>
-	<p>element to create links to future html docutments in the repository</p>
-	<xmp><a href="/new.html">new file</a></xmp>
-	<p>where the slash sign means new.html is located at the same folder as index.html (the Root folder)</p>
-	<p>create an articles folder in the repository</p>
-	<p>then the links to the files in the articles folder will look like this: </p>
-	<xmp><a href="/articles/new.html">new file</a></xmp>
 
 <h4>Metadata</h4>
 <p>Copy and Paste to start quickly</p>
