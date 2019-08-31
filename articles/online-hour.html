@@ -604,16 +604,16 @@ Top Apps</a></li>
 	<p>Use absolute links, Youl need them for RDFa markup later. For RDFa markup viable are absolute links only, they are RDFa life!!! RDFa is all about absolute links and item identifiers, like &lt;section id="item1"&gt; is referenced like https://nakigoe.github.io/articles/new.html#item1</p>
 	<p>&lt;a href=&quot;https://nakigoe.github.io/articles/new.html&quot;&gt;new file&lt;/a&gt;</p>
 
-<h2>nav Should I include a into li into ul?</h2>
+<h2>nav element Should I include a into li into ul?</h2>
 <p>It really depends on how the complex current site navigation is.</p>
 <p>If that is a couple of links on a page with no complications in visual presentation, then no. There is no any need to, to be exact.</p>
 <p>Why make the structure complex if it's not reperesented visually in any way ?</p>
-<p>nav</p>
-<p>a</p>
-<p>a</p>
-<p>a</p>
-<p>/nav</p>
-<p>But if the menu is complex visually, and there are several groups of links, images, languages - then definitely yes, to make separate groups of links targetable by CSS. In that case you have to use either ul li structure, or div (divide). You much better with ul li structure if you plan to use flex container, and especially floats in navigation bar. In that case ul li structure makes links organization more logical and understandable than div inside a div then a.</p>
+<p>&lt;nav&gt;</p>
+<p>&lt;a&gt;</p>
+<p>&lt;a&gt;</p>
+<p>&lt;a&gt;</p>
+<p>&lt;/nav&gt;</p>
+<p>But if the menu is complex visually, and there are several groups of links, images, languages - then definitely yes, to make separate groups of links targetable by CSS. In that case you have to use either ul li structure, or div (divide). You much better with ul li structure if you plan to use a flex container, and especially floats in navigation bar. In that case ul li structure makes links organization more logical and understandable than div inside a div then a.</p>
 <p>Just remember to create a separate class for the usual text list. Minimize targeting ul and li in navigation. CSS Target nav ul li only if you absolutely have to. Make sure that text li and nav li do not intersect in any way, especially if you use em units for the font-size. There are tons of ways: CSS nav ul li, main ul li, separate class for text ul.</p>
 
 <h2>AMP HTML instead of JavaScript</h2>
@@ -652,8 +652,6 @@ Top Apps</a></li>
 <h4>header</h4>
 <h4>main</h4>
 <h4>footer</h4>
-<h4>nav</h4>
-
 
 <h2>AMP HTML instead of JavaScript</h2>
 <p>an advice from kendo: "Do the right thing first, and THEN move on to advanced"
