@@ -641,36 +641,30 @@ Top Apps</a></li>
 </div>
 <p>Just remember to create a separate class for the usual text list. Minimize targeting &lt;ul&gt; and &lt;li&gt; inside navigation. CSS Target &lt;nav&gt; &lt;ul&gt; &lt;li&gt; only if you absolutely have to. Make sure that visual text &lt;li&gt; and &lt;nav&gt; &lt;li&gt; styling parameters do not intersect in any way, especially if you use em units for font-size. There are tons of ways: CSS target nav ul li, then target main ul li, create a separate class for text &lt;ul&gt;.</p>
 
-<h2>AMP HTML instead of JavaScript</h2>
-	<p>An advice from kendo: "Do the RIGHT thing first, and THEN move on to advanced"
-    Doing right is hard.
-    Have some order in a webpage. Avoid extreme stuff one can do with a webpage.
-    Like in studying any language: "do the right thing first, then move on to advanced."</p>
-    <p>AMP HTML provides tones of basic stuff, and takes away the need of writing tedious JavaScript.</p>
-    <p>AMP HTML is a way to bring order into the page.</p>
-	<p>Study HTML, CSS and AMP HTML simultaneously, this way you can solve tons of questions.</p>
-
-<h4>CSS Classes</h4>
-<p>More specific addressing overwrites general styles. Thats why use classes</p>
-<h5>Meaningful Naming</h5>
+<h2>CSS Classes</h2>
+<p>More specific addressing overwrites general styles. Thats why use classes.</p>
+<h3>Meaningful Naming</h3>
 <p>Name classes referring to their role of the elements on the page.</p>
 <p>Write classes names in small letters. Use CAPS letters when dividing the composite descriptions.</p>
 
-	<p>&lt;div class=&quot;leftColumn&quot;&gt;&lt;/div&gt;</p>
-	<p>&lt;div class=&quot;rightColumn&quot;&gt;&lt;/div&gt;</p>
-
+<div class="code">
+<p>&lt;div class=&quot;leftColumn&quot;&gt;&lt;/div&gt;</p>
+<p>&lt;div class=&quot;rightColumn&quot;&gt;&lt;/div&gt;</p>
+</div>
 <p>then apply styles in the styles section</p>
-	<p>&lt;style&gt;</p>
-		<p>.leftColumn {</p>
-			<p>color: red;</p>
-		<p>}</p>
-		<p>.rightColumn {</p>
-			<p>color: orange;</p>
-		<p>}</p>
-	<p>&lt;/style&gt;</p>
-<p>Think about readers of Your code! You may want to hire a developer.</p>
+<div class="code">
+<p>&lt;style&gt;</p>
+	<p class="tab1">.leftColumn {</p>
+		<p class="tab2">color: red;</p>
+	<p class="tab1">}</p>
+	<p class="tab1">.rightColumn {</p>
+		<p class="tab2">color: orange;</p>
+	<p class="tab1">}</p>
+<p>&lt;/style&gt;</p>
+</div>
+<p>Think about readers of Your code! You may want to hire a developer to collaborate, to learn from, and to speed up the process.</p>
 
-<h3>Semantic HTML</h3>
+<h2>Semantic HTML</h2>
 <h4>h1, h2, h3, h4, h5, h6</h4>
 <h4>paragraph</h4>
 <h4>article</h4>
