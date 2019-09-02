@@ -214,6 +214,16 @@ a:active{
 	line-height:1.5em;
 	letter-spacing:.02em;
 	}
+.code p {
+	margin-bottom: 0;
+	margin-top: 0;
+	}
+.tab1 {
+	margin-left: 2em;
+	}
+.tab2 {
+	margin-left: 4em;
+	}
 hr {
 	display:block;
 	box-shadow:0 0 .5em .1em white;
@@ -605,17 +615,31 @@ Top Apps</a></li>
 	<p>Use absolute links, You will need them for RDFa markup later. For RDFa markup viable are absolute links only, they are RDFa life!!! RDFa is all about absolute links and item identifiers, like &lt;section id="item1"&gt; is referenced like https://nakigoe.github.io/articles/new.html#item1</p>
 	<p>&lt;a href=&quot;https://nakigoe.github.io/articles/new.html&quot;&gt;new file&lt;/a&gt;</p>
 
-<h2>nav element Should I include a into li into ul?</h2>
+<h2>&lt;nav&gt; element:<br> Shoul I nest &lt;a&gt; into &lt;li&gt; into &lt;ul&gt; into &lt;nav&gt;???</h2>
 <p>It really depends on how the complex current site navigation is.</p>
 <p>If that is a couple of links on a page with no complications in visual presentation, then no. There is no any need to, to be exact.</p>
 <p>Why make the structure complex if it's not reperesented visually in any way ?</p>
+<div class="code">
 <p>&lt;nav&gt;</p>
-<p>&lt;a&gt;</p>
-<p>&lt;a&gt;</p>
-<p>&lt;a&gt;</p>
+<p class="tab1">&lt;a&gt;</p>
+<p class="tab1">&lt;a&gt;</p>
+<p class="tab1">&lt;a&gt;</p>
 <p>&lt;/nav&gt;</p>
-<p>But if the menu is complex visually, and there are several groups of links, images, languages - then definitely yes, to make separate groups of links targetable by CSS. In that case you have to use either ul li structure, or div (divide). You much better with ul li structure if you plan to use a flex container, and especially floats in navigation bar. In that case ul li structure makes links organization more logical and understandable than div inside a div then a.</p>
-<p>Just remember to create a separate class for the usual text list. Minimize targeting ul and li in navigation. CSS Target nav ul li only if you absolutely have to. Make sure that text li and nav li do not intersect in any way, especially if you use em units for the font-size. There are tons of ways: CSS nav ul li, main ul li, separate class for text ul.</p>
+</div>
+<p>But if the menu is complex visually, and there are several groups of links, images, languages - then definitely yes, to make separate groups of links targetable by CSS. In that case you have to use either &lt;ul&gt; &lt;li&gt; structure, or &lt;div&gt;. You much better with &lt;ul&gt; &lt;li&gt; structure if you plan to use a flex container, and especially floats in navigation bar. In that case &lt;ul&gt; &lt;li&gt; structure makes links organization more logical and understandable than &lt;div&gt; inside a &lt;div&gt; then &lt;a&gt;.</p>
+<div class="code">
+<p>&lt;nav&gt;</p>
+<p class="tab1">&lt;ul&gt;</p>
+<p class="tab2">&lt;li&gt;&lt;a&gt;&lt;/li&gt;</p>
+<p class="tab2">&lt;li&gt;&lt;a&gt;&lt;/li&gt;</p>
+<p class="tab2">&lt;li&gt;&lt;a&gt;&lt;/li&gt;</p>
+<p class="tab1">&lt;/ul&gt;</p>
+<p class="tab1">&lt;ul&gt;</p>
+<p class="tab2">&lt;li&gt;&lt;a&gt;&lt;/li&gt;</p>
+<p class="tab1">&lt;/ul&gt;</p>
+<p>&lt;/nav&gt;</p>
+</div>
+<p>Just remember to create a separate class for the usual text list. Minimize targeting &lt;ul&gt; and &lt;li&gt; inside navigation. CSS Target &lt;nav&gt; &lt;ul&gt; &lt;li&gt; only if you absolutely have to. Make sure that visual text &lt;li&gt; and &lt;nav&gt; &lt;li&gt; styling parameters do not intersect in any way, especially if you use em units for font-size. There are tons of ways: CSS target nav ul li, then target main ul li, create a separate class for text &lt;ul&gt;.</p>
 
 <h2>AMP HTML instead of JavaScript</h2>
 	<p>An advice from kendo: "Do the RIGHT thing first, and THEN move on to advanced"
@@ -654,7 +678,7 @@ Top Apps</a></li>
 <h4>main</h4>
 <h4>footer</h4>
 
-<h2>AMP HTML instead of JavaScript</h2>
+<h2>AMP-HTML instead of JavaScript</h2>
 <p>an advice from kendo: "Do the right thing first, and THEN move on to advanced"
     You mean "Do easy things first then advanced things"?
     No, not easy, Do HTML right
