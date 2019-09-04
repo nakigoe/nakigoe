@@ -107,7 +107,12 @@ a amp-img {
 	  100vw / 
 	  ( ( 1938 / 2740 ) + ( 799 / 999 ) + ( 1280 / 1810 ) + ( 2056 / 3552 ) + ( 638 / 960 ) + ( 920 / 1382 ) ) 
 	   - 2.8em
-  	);	
+  	);
+  --arena: calc( 
+	  100vw / 
+	  ( ( 1024 / 2080 ) + ( 1200 / 1800 ) ) 
+	   - 1.8em
+  	);
   --restrict: 25em;
   --coeff: 20em;
 }
@@ -415,6 +420,20 @@ article div {
 #go {
 	width: calc( ( 664 / 896 ) * var(--fence) );
 	max-width: calc( ( 664 / 896 ) * var(--restrict) );
+}
+}
+/*---wide screens section for exec, sword, go ----*/
+@media only screen and (min-width:960px) {
+#arena li {
+	display: inline-block;
+	}
+#master {
+	width: calc( ( 1024 / 2080 ) * var(--arena) );
+	max-width: calc( ( 1024 / 2080 ) * var(--restrict) );
+}
+#ggg {
+	width: calc( ( 1200 / 1800 ) * var(--arena) );
+	max-width: calc( ( 1200 / 1800 ) * var(--restrict) );
 }
 }
 /*----- find ways to unhack -----*/
@@ -1178,22 +1197,6 @@ Speech Tutor</a></li>
 	Enter Uni</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/south.html" target="_blank">
 	When Things Go South</a></li>
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/master.html" target="_blank">
-	Grim Master</a></li>
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/ggg.html" target="_blank">
-	<div id="govt1">
-	<amp-img src="https://nakigoe.github.io/_IMG/govt1.jpg"
-	  width="1200"
-	  height="1800"
-	  layout="responsive"
-	  alt="Government Girl Loaded"
-	  property="primaryImageOfPage" typeOf="ImageObject">
-	  <meta property="representativeOfPage" content="True">
-	  <meta property="caption" content="Government Girl Loaded">
-	  <meta property="url" content="https://nakigoe.github.io/_IMG/govt1.jpg">
-	</amp-img>
-	</div>
-	Grim Government Girls</a></li>
 	</ul>
 	<ul id="fence">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/exec.html" target="_blank">
@@ -1513,6 +1516,36 @@ Speech Tutor</a></li>
 	</div>
 	Online Privacy
 	<br> <small>advanced tips</small></a></li>
+	</ul>
+	<ul id="arena">
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/master.html" target="_blank">
+	<div id="master">
+	<amp-img src="https://nakigoe.github.io/_IMG/master2.jpg"
+	  width="1024"
+	  height="2080"
+	  layout="responsive"
+	  alt="Government Girl Loaded"
+	  property="primaryImageOfPage" typeOf="ImageObject">
+	  <meta property="representativeOfPage" content="True">
+	  <meta property="caption" content="Government Girl Loaded">
+	  <meta property="url" content="https://nakigoe.github.io/_IMG/master2.jpg">
+	</amp-img>
+	</div>
+	Grim Master</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/ggg.html" target="_blank">
+	<div id="ggg">
+	<amp-img src="https://nakigoe.github.io/_IMG/govt1.jpg"
+	  width="1200"
+	  height="1800"
+	  layout="responsive"
+	  alt="Government Girl Loaded"
+	  property="primaryImageOfPage" typeOf="ImageObject">
+	  <meta property="representativeOfPage" content="True">
+	  <meta property="caption" content="Government Girl Loaded">
+	  <meta property="url" content="https://nakigoe.github.io/_IMG/govt1.jpg">
+	</amp-img>
+	</div>
+	Grim Government Girls</a></li>
 	</ul>
 	<ul id="ani">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/anime.html" target="_blank">
