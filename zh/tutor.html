@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <link rel="canonical" href="https://nakigoe.github.io/zh/tutor.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -51,7 +52,7 @@ a amp-img {
 }
 #math {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 0.2em auto 0;
 }
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
@@ -144,7 +145,19 @@ h1 span {
 	/* for adobe font font-weight: 200;*/
 	text-align: center;
 	text-shadow:0 0 .6em white;
-	}	
+	}
+.lang li {
+	display: block;
+	}
+.lang {
+	margin-right: .75em;
+	margin-left: auto;
+	}
+.lang a {
+	text-align: center;
+	width: auto;
+	display: block;
+	}
 h2 {
 	font-family: 'Nunito Sans', sans-serif;
 	letter-spacing: .15em;
@@ -244,28 +257,6 @@ small {
 	font-family: 'Nunito Sans', sans-serif;
     font-weight: 200;
 }
-#kiss {
-	display:inline-block;
-	vertical-align:top;
-	margin-right:5.8em;
-	margin-bottom:.1em;
-	}
-	
-#personality h2, #me h2{margin-bottom:.25em;}
-#skills {
-	display:inline-block;
-	vertical-align:top;
-	margin-left:.2em;
-	width:34em;
-	}
-#activities {
-	margin-left:.85em;
-	margin-right:1em;
-	margin-top:3em;
-	}
-#activities small {
-	font-size:1em;
-	}
 p {
 	line-height: 1.5;
 	text-align: justify;
@@ -278,7 +269,6 @@ p {
 	}
 em {color:#fff;}
 
-.articleHr {margin:2.25em 0 1em;}
 li small  {
 	font-size:0.65em;
 	color:#eee;
@@ -412,7 +402,12 @@ amp-social-share[type="telegram"]:hover {
 /* --------- text width section ------------- */
 @media only screen and (max-width: 1300px) {
 	main {
+		width: 100%;
+	}
+	h2,h3,h4,p, .list {
 		width: 70%;
+		margin-left: auto;
+		margin-right: auto;	
 	}
 	}
 /* --------- text width section , images 100vw ---------------- */
@@ -420,7 +415,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p, .list {
+	h2,h3,h4,p, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -430,7 +425,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p, .list {
+	h2,h3,h4,p, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -440,7 +435,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p, .list {
+	h2,h3,h4,p, .list {
 		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -448,9 +443,6 @@ amp-social-share[type="telegram"]:hover {
 	}
 
 /*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
-h1 {
-	font-size: calc(2em + 3.3334vmin);
-}
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
 }
@@ -537,10 +529,24 @@ nav a {
 </nav>
 <main>
 <article>
-<header>
-<h1>在线导师<br>
-<span class="phrase">数学，网页设计，</span><span class="phrase">俄语，塔吉克语，</span><span class="phrase">日语，英语</span></h1>
-<ul class="rightLink">
+<header class="intro">
+<div id="meow">
+<amp-img src="https://nakigoe.github.io/_IMG/meow.png"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Awe Angel Logo"
+  property="logo" typeOf="ImageObject">
+  <meta property="caption" content="Awe Angel Logo">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
+</amp-img>
+</div>
+<div id="magnum">
+<amp-fit-text layout="responsive" width="3" height="1">
+<h1 id="appellation" property="name">在线导师<br><span class="phrase">数学，网页设计，</span><span class="phrase">俄语，塔吉克语，日语，英语</span><br> <span>Awe&nbsp;Angel</span></h1>
+</amp-fit-text>
+</div>
+<ul class="lang">
 <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" hreflang="en" target="_blank">EN</a></li>
 <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ru/tutor.html" hreflang="ru" target="_blank">RU</a></li>
 <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" hreflang="ja" target="_blank">日本</a></li>
