@@ -30,6 +30,25 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
 
 <style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 1500 / 1500 ) ) 
+	   - 1.95em
+  	);
+  --restrict: 24em;
+}
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.ru {
+	width: calc( ( 1500 / 1500 ) * var(--coeff) );
+	max-width: calc( ( 1500 / 1500 ) * var(--restrict) );
+}
 #math {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -62,7 +81,7 @@ nav ul{
 	display: inline-block;
 }
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
 h1, h2, h3, h4, h5, h6 {
@@ -72,21 +91,59 @@ h1, h2, h3, h4, h5, h6 {
 .phrase {
 	display: inline-block;
 }
+blockquote {
+	width: 100%;
+	margin: 1em auto;
+	text-align: right;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	font-size: 1.2em;
+	font-style: italic;
+}
+cite {
+	color: white;
+	display: block;
+	text-align: right;
+	}
+/*---------------------- Logo and Headline -------------*/
+.intro {
+	display: flex;
+	align-items: center;
+	}
+#meow {
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	z-index: -1;
+	}
+#magnum {
+	display: inline-block; 
+	width: 100%; 
+	margin-left: -6.9%;
+	}
+#appellation {
+	text-align: center; 
+	padding-left: 1em; 
+	padding-top: .6em; 
+	padding-bottom: .3em; 
+	padding-right: 1em; 
+	line-height: normal; 
+	position: relative; 
+	z-index: 10;
+	}
 h1 {
-	font-family: 'Nunito Sans', sans-serif;
+	font-family:"Nunito Sans", sans-serif;
 	text-align: center;
-	font-size: calc(2em + 3.3334vmin);
-	padding-top: 0.8em;
-	padding-bottom: 0.75em;
+	/*font-size: 4em;*/
 	letter-spacing: .12em;
-	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
+	text-shadow:0 0 .6em white, 0 0 .6em white;
 	}
 h1 span {
 	font-size: .5em;
+	line-height: 200%;
 	/* for adobe font font-weight: 200;*/
 	text-align: center;
 	text-shadow:0 0 .6em white;
-	line-height: 200%;
 	}	
 h2 {
 	font-family: 'Nunito Sans', sans-serif;
@@ -427,42 +484,6 @@ nav a {
 	}
 }
 </style>
-
-<script type="application/ld+json">
-	{
-	  "@context": "http://schema.org/",
-            "@type": "Organization",
-            "name": "Nakigoe",
-            "url": "https://nakigoe.github.io",
-			"makesOffer": {			
-				"@type": "Offer",
-				"businessFunction": [
-						{"@type": "BusinessFunction",
-							"name": "Computer Repair",
-							"description": "PC diagnostics, hardware installation, Windows tune-up"
-					  	},
-						{"@type": "BusinessFunction",
-							"name": "Tutoring: Math, Web-Design, English, Russian, Tajik, Japanese, Chinese",
-							"description": "Online Teacher: live video-connection and screen sharing, $20 / hour"
-						},
-						{"@type": "BusinessFunction",
-							"name": "Web-Design",
-							"description": "Deployment, Logo-Design, Translation, AMP-HTML, CSS, RDFa, JSON-LD, schema.org"
-						}
-				],
-				"name": "Online Tutor: Math, Web-Design, English, Russian, Tajik, Japanese, Chinese",
-				"description": "6USD / hour, supermen and supergirls get a discount of 10% + 1% for every heroic feast",
-				"price": "6",
-				"priceCurrency": "USD"			
-			},
-			"image": {
-				"@type": "ImageObject",
-				"url": "https://nakigoe.github.io/_IMG/math.jpg",
-				"caption": "Math Tutoring",
-				"primaryImageOfPage": "True"
-			}	
-      }
-</script>
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage">
@@ -483,12 +504,35 @@ nav a {
 </amp-analytics>
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">主菜单</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="主"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="主">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+主菜单</a>
+</li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" hreflang="en" target="_blank">EN</a></li>
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ru/tutor.html" hreflang="ru" target="_blank">RU</a></li>
-<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" hreflang="ja" target="_blank">日本</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/zh/grim.html" target="_blank">
+<div class="ru">
+<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
+  width="1500"
+  height="1500"
+  layout="responsive"
+  alt="Russia"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Russia">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/ru.jpg">
+</amp-img>
+</div>
+退出俄国</a></li>
 </ul>
 </nav>
 <main>
@@ -496,6 +540,11 @@ nav a {
 <header>
 <h1>在线导师<br>
 <span class="phrase">数学，网页设计，</span><span class="phrase">俄语，塔吉克语，</span><span class="phrase">日语，英语</span></h1>
+<ul class="rightLink">
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" hreflang="en" target="_blank">EN</a></li>
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ru/tutor.html" hreflang="ru" target="_blank">RU</a></li>
+<li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" hreflang="ja" target="_blank">日本</a></li>
+</ul>
 </header>
 
 <div id="math">
@@ -643,10 +692,36 @@ alt="nakigoe @ pm . me">
 </footer>
 <nav class="cf">
 <ul>
-<li><a href="https://nakigoe.github.io/" target="_blank">主菜单</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="主"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="主">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+主菜单</a>
+</li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" target="_blank">视频聊天</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/zh/grim.html" target="_blank">
+<div class="ru">
+<amp-img src="https://nakigoe.github.io/_IMG/ru.jpg"
+  width="1500"
+  height="1500"
+  layout="responsive"
+  alt="Russia"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Russia">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/ru.jpg">
+</amp-img>
+</div>
+退出俄国</a>
+</li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">

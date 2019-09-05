@@ -509,7 +509,19 @@
       <priority>0.5</priority>
 
    </url>
-     
+      
+   <url>
+
+      <loc>https://nakigoe.github.io/zh/grim.html</loc>
+
+      <lastmod>2019-09-05</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+      
    <url>
 
       <loc>https://nakigoe.github.io/zh/tutor.html</loc>
