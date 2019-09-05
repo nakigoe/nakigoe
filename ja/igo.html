@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <link rel="canonical" href="https://nakigoe.github.io/ja/igo.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -90,39 +91,59 @@ h1, h2, h3, h4, h5, h6 {
 .phrase {
 	display: inline-block;
 }
-h1 {
-	font-family: 'Nunito Sans', sans-serif;
-	text-align: center;
-	font-size: calc(2em + 3.3334vmin);
-	padding-top: 0.8em;
-	padding-bottom: 0.75em;
-	letter-spacing: .12em;
-	text-shadow:0 0 .6em white, 0 0 .6em white;
+blockquote {
+	width: 100%;
+	margin: 1em auto;
+	text-align: right;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	font-size: 1.2em;
+	font-style: italic;
+}
+cite {
+	color: white;
+	display: block;
+	text-align: right;
 	}
-h1 span {
-	font-size: .5em;
-	/* for adobe font font-weight: 200;*/
-	text-align: center;
-	text-shadow:0 0 .6em white;
-	line-height: 200%;
-	}
-header {
+/*---------------------- Logo and Headline -------------*/
+.intro {
 	display: flex;
 	align-items: center;
 	}
 #meow {
 	display: inline-block;
 	width: 40%;
+	position: relative;
+	z-index: -1;
 	}
-@media only screen and (max-width:600px) {
+#magnum {
+	display: inline-block; 
+	width: 100%; 
+	margin-left: -6.9%;
+	}
+#appellation {
+	text-align: center; 
+	padding-left: 1em; 
+	padding-top: .6em; 
+	padding-bottom: .3em; 
+	padding-right: 1em; 
+	line-height: normal; 
+	position: relative; 
+	z-index: 10;
+	}
 h1 {
-	margin-left: -5%;
+	font-family:"Nunito Sans", sans-serif;
+	text-align: center;
+	/*font-size: 4em;*/
+	letter-spacing: .12em;
+	text-shadow:0 0 .6em white, 0 0 .6em white;
 	}
-	}
-@media only screen and (min-width:960px) {
-h1 {
-	margin-left: 5%;
-	}
+h1 span {
+	font-size: .5em;
+	line-height: 200%;
+	/* for adobe font font-weight: 200;*/
+	text-align: center;
+	text-shadow:0 0 .6em white;
 	}
 .lang li {
 	display: block;
@@ -245,7 +266,6 @@ p {
 	}
 em {color:#fff;}
 
-.articleHr {margin:2.25em 0 1em;}
 li small  {
 	font-size:0.65em;
 	color:#eee;
@@ -425,9 +445,6 @@ h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
 	}
 
 /*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
-h1 {
-	font-size: calc(2em + 3.3334vmin);
-}
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
 }
@@ -460,11 +477,6 @@ p, .list	{
 	font-stretch: semi-expanded;
 	}
 }
-@media only screen and (max-width: 600px) {
-	h1 {
-		font-size: calc(1em + 3.3334vmin);
-	}	
-	}
 </style>
 </head>
 
@@ -532,9 +544,12 @@ p, .list	{
   <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
 </amp-img>
 </div>
-<h1 class="logo">囲碁で勝つ道<br> 
-<span class="phrase">現代の囲碁で勝つ手</span><br> 
-<span>by Awesome Angel</span></h1>
+<div id="magnum">
+<amp-fit-text layout="responsive" width="3" height="1">
+<h1 id="appellation" property="name">囲碁で勝つ道<br><span class="phrase">現代の囲碁で勝つ手</span><br> <span>Awe&nbsp;Angel</span></h1>
+</amp-fit-text>
+</div>
+
 <ul class="lang">
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/articles/go.html" hreflang="en" target="_blank">EN</a></li>
 </ul>
