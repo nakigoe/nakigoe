@@ -58,7 +58,7 @@ a amp-img {
 }
 #lead {
 	max-width: 1280px;
-	margin: 0 auto;
+	margin: .2em auto 0;
 	}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
@@ -88,7 +88,7 @@ nav ul{
 	display: inline-block;
 }
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 	}
 article {
@@ -107,19 +107,58 @@ h1, h2, h3, h4, h5, h6 {
 }
 blockquote {
 	width: 100%;
-	margin: 0 auto;
-	text-align: center;
+	margin: 1em auto;
+	text-align: right;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	font-size: 1.2em;
+	font-style: italic;
 }
-cite {color: white;}
+cite {
+	color: white;
+	display: block;
+	text-align: right;
+	}
+/*---------------------- Logo and Headline -------------*/
+.intro {
+	display: flex;
+	align-items: center;
+	}
+#meow {
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	z-index: -1;
+	}
+#magnum {
+	display: inline-block; 
+	width: 100%; 
+	margin-left: -6.9%;
+	}
+#appellation {
+	text-align: center; 
+	padding-left: 1em; 
+	padding-top: .6em; 
+	padding-bottom: .3em; 
+	padding-right: 1em; 
+	line-height: normal; 
+	position: relative; 
+	z-index: 10;
+	}
 h1 {
 	font-family:"Nunito Sans", sans-serif;
 	text-align: center;
-	padding-top: 0.8em;
-	padding-bottom: 0.8em;
-	font-size: 4em;
+	/*font-size: 4em;*/
 	letter-spacing: .12em;
-	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
-	}	
+	text-shadow:0 0 .6em white, 0 0 .6em white;
+	}
+h1 span {
+	font-size: .5em;
+	line-height: 200%;
+	/* for adobe font font-weight: 200;*/
+	text-align: center;
+	text-shadow:0 0 .6em white;
+	}
 h2 {
 	font-family:"Nunito Sans", sans-serif;
 	font-size:3em;
@@ -356,45 +395,39 @@ amp-social-share[type="telegram"]:hover {
 	} 
 	}
 
-/* --------- text width section ------------- */
+/* --------- text width section , images 100vw ---------------- */
+h2,h3,h4,p,blockquote, .list {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	}
 @media only screen and (max-width: 1300px) {
-	main {
+	h2,h3,h4,p,blockquote, .list {
 		width: 70%;
 	}
 	}
-/* --------- text width section , images 100vw ---------------- */
 @media only screen and (max-width: 960px) {
-	main {
-		width: 100%;
-	}
-	h1,h2,h3,h4,p, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
 @media only screen and (max-width: 800px) {
-	main {
-		width: 100%;
-	}
-	h1,h2,h3,h4,p, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
-@media only screen and (max-width:600px) {
-	main {width: 100%;}
-	h1,h2,h3,h4,p, .list {
+@media only screen and (max-width: 600px) {
+	h2,h3,h4,p,blockquote, .list {
 		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
-	}
+	}	
 	}
 /*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
-h1 {
-	font-size: calc(2em + 3.3334vmin);
-}
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
 }
@@ -507,8 +540,23 @@ Exposure</a></li>
 
 <main>
 <article>
-<header id="top">
-<h1 property="name">AI Citations for Leaders</h1>
+<header class="intro">
+<div id="meow">
+<amp-img src="https://nakigoe.github.io/_IMG/meow.png"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Awe Angel Logo"
+  property="logo" typeOf="ImageObject">
+  <meta property="caption" content="Awe Angel Logo">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
+</amp-img>
+</div>
+<div id="magnum">
+<amp-fit-text layout="responsive" width="3" height="1">
+<h1 id="appellation" property="name">AI&nbsp;Citations for Leaders<br> <span>Awe&nbsp;Angel</span></h1>
+</amp-fit-text>
+</div>
 </header>
 <div id="lead">
 <amp-img src="https://nakigoe.github.io/_IMG/lead.jpg"
