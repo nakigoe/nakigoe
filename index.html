@@ -110,8 +110,13 @@ a amp-img {
   	);
   --arena: calc( 
 	  100vw / 
-	  ( ( 1024 / 2080 ) + ( 1200 / 1800 ) + ( 4000 / 3000 ) ) 
-	   - 2.49em
+	  ( ( 1024 / 2080 ) + ( 1200 / 1800 ) ) 
+	   - 1.6em
+  	);
+  --prince: calc( 
+	  100vw / 
+	  ( ( 1080 / 1350 ) + ( 1200 / 1464 ) + ( 4000 / 3000 ) ) 
+	   - 2.15em
   	);
   --restrict: 25em;
   --coeff: 20em;
@@ -422,7 +427,7 @@ article div {
 	max-width: calc( ( 664 / 896 ) * var(--restrict) );
 }
 }
-/*---wide screens section for exec, sword, go ----*/
+/*---wide screens section for grim master, grim government girls ----*/
 @media only screen and (min-width:960px) {
 #arena li {
 	display: inline-block;
@@ -435,8 +440,22 @@ article div {
 	width: calc( ( 1200 / 1800 ) * var(--arena) );
 	max-width: calc( ( 1200 / 1800 ) * var(--restrict) );
 }
+}
+/*---wide screens section for south, bring it, attack ----*/
+@media only screen and (min-width:960px) {
+#prince li {
+	display: inline-block;
+	}
+#south {
+	width: calc( ( 1080 / 1350 ) * var(--prince) );
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
+}
+#shotty {
+	width: calc( ( 1200 / 1464 ) * var(--prince) );
+	max-width: calc( ( 1200 / 1464 ) * var(--restrict) );
+}
 #nier {
-	width: calc( ( 4000 / 3000 ) * var(--arena) );
+	width: calc( ( 4000 / 3000 ) * var(--prince) );
 	max-width: calc( ( 4000 / 3000 ) * var(--restrict) );
 }
 }
@@ -1199,6 +1218,8 @@ Speech Tutor</a></li>
 	Improve</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/uni.html" target="_blank">
 	Enter Uni</a></li>
+	</ul>
+	<ul id="prince">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/south.html" target="_blank">
 	<div id="south">
 		<amp-img src="https://nakigoe.github.io/_IMG/south.jpg"
@@ -1212,6 +1233,33 @@ Speech Tutor</a></li>
 		</amp-img>
 	</div>
 	When Things Go South</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/prince.html" target="_blank">
+	<div id="shotty">
+		<amp-img src="https://nakigoe.github.io/_IMG/shotty.jpg"
+		width="1200"
+		height="1464"
+		layout="responsive"
+		alt="Shotgun Shooting Star Girl"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="Shotgun Shooting Star Girl">
+		</amp-img>
+	</div>
+	Bring It</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/attack.html" target="_blank">
+	<div id="nier">
+	<amp-img src="https://nakigoe.github.io/_IMG/nier.jpg"
+	  width="4000"
+	  height="3000"
+	  layout="responsive"
+	  alt="Nier Automata A2 Super-Girl Attack"
+	  property="primaryImageOfPage" typeOf="ImageObject">
+	  <meta property="representativeOfPage" content="True">
+	  <meta property="caption" content="Nier Automata A2 Super-Girl Attack">
+	  <meta property="url" content="https://nakigoe.github.io/_IMG/nier.jpg">
+	</amp-img>
+	</div>
+	Attack</a></li>
 	</ul>
 	<ul id="fence">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/exec.html" target="_blank">
@@ -1561,20 +1609,6 @@ Speech Tutor</a></li>
 	</amp-img>
 	</div>
 	Grim Government Girls</a></li>
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/attack.html" target="_blank">
-	<div id="nier">
-	<amp-img src="https://nakigoe.github.io/_IMG/nier.jpg"
-	  width="4000"
-	  height="3000"
-	  layout="responsive"
-	  alt="Nier Automata A2 Super-Girl Attack"
-	  property="primaryImageOfPage" typeOf="ImageObject">
-	  <meta property="representativeOfPage" content="True">
-	  <meta property="caption" content="Nier Automata A2 Super-Girl Attack">
-	  <meta property="url" content="https://nakigoe.github.io/_IMG/nier.jpg">
-	</amp-img>
-	</div>
-	Attack</a></li>
 	</ul>
 	<ul id="ani">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/anime.html" target="_blank">
