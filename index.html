@@ -110,8 +110,8 @@ a amp-img {
   	);
   --arena: calc( 
 	  100vw / 
-	  ( ( 1024 / 2080 ) + ( 1200 / 1800 ) ) 
-	   - 1.8em
+	  ( ( 1024 / 2080 ) + ( 1200 / 1800 ) + ( 4000 / 3000 ) ) 
+	   - 2.49em
   	);
   --restrict: 25em;
   --coeff: 20em;
@@ -434,6 +434,10 @@ article div {
 #ggg {
 	width: calc( ( 1200 / 1800 ) * var(--arena) );
 	max-width: calc( ( 1200 / 1800 ) * var(--restrict) );
+}
+#nier {
+	width: calc( ( 4000 / 3000 ) * var(--arena) );
+	max-width: calc( ( 4000 / 3000 ) * var(--restrict) );
 }
 }
 /*----- find ways to unhack -----*/
@@ -1557,6 +1561,20 @@ Speech Tutor</a></li>
 	</amp-img>
 	</div>
 	Grim Government Girls</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/attack.html" target="_blank">
+	<div id="nier">
+	<amp-img src="https://nakigoe.github.io/_IMG/nier.jpg"
+	  width="4000"
+	  height="3000"
+	  layout="responsive"
+	  alt="Nier Automata A2 Super-Girl Attack"
+	  property="primaryImageOfPage" typeOf="ImageObject">
+	  <meta property="representativeOfPage" content="True">
+	  <meta property="caption" content="Nier Automata A2 Super-Girl Attack">
+	  <meta property="url" content="https://nakigoe.github.io/_IMG/nier.jpg">
+	</amp-img>
+	</div>
+	Attack</a></li>
 	</ul>
 	<ul id="ani">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/anime.html" target="_blank">
