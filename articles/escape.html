@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
     <link rel="canonical" href="https://nakigoe.github.io/articles/escape.html">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
@@ -111,8 +112,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 blockquote {
 	width: 100%;
-	margin: 0 auto;
-	text-align: center;
+	margin: 1em auto;
+	text-align: right;
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: 200;
 	font-size: 1.2em;
@@ -123,14 +124,38 @@ cite {
 	display: block;
 	text-align: right;
 	}
+/*---------------------- Logo and Headline -------------*/
+.intro {
+	display: flex;
+	align-items: center;
+	}
+#meow {
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	z-index: -1;
+	}
+#magnum {
+	display: inline-block; 
+	width: 100%; 
+	margin-left: -6.9%;
+	}
+#appellation {
+	text-align: center; 
+	padding-left: 1em; 
+	padding-top: .6em; 
+	padding-bottom: .3em; 
+	padding-right: 1em; 
+	line-height: normal; 
+	position: relative; 
+	z-index: 10;
+	}
 h1 {
 	font-family:"Nunito Sans", sans-serif;
 	text-align: center;
-	padding-top: 0.8em;
-	padding-bottom: 0.8em;
-	font-size: 4em;
+	/*font-size: 4em;*/
 	letter-spacing: .12em;
-	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
+	text-shadow:0 0 .6em white, 0 0 .6em white;
 	}
 h1 span {
 	font-size: .5em;
