@@ -65,14 +65,6 @@ a amp-img {
 	max-width: 4000px;
 	margin: 0 auto;
 	}
-#meow {
-	display: inline-block;
-	width: 40%;
-	}
-.intro {
-	display: flex;
-	align-items: center;
-	}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
 	padding:0;
@@ -113,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 blockquote {
 	width: 100%;
 	margin: 1em auto;
-	text-align: right;
+	text-align: center;
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: 200;
 	font-size: 1.2em;
@@ -122,7 +114,7 @@ blockquote {
 cite {
 	color: white;
 	display: block;
-	text-align: right;
+	text-align: center;
 	}
 /*---------------------- Logo and Headline -------------*/
 .intro {
@@ -412,32 +404,32 @@ amp-social-share[type="telegram"]:hover {
 	}
 
 /* --------- text width section , images 100vw ---------------- */
-h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+h2,h3,h4,p,blockquote, .list {
 	width: 60%;
 	margin-left: auto;
 	margin-right: auto;
 	}
 @media only screen and (max-width: 1300px) {
-	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 70%;
 	}
 	}
 @media only screen and (max-width: 960px) {
-	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
 @media only screen and (max-width: 800px) {
-	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
 	}	
 	}
 @media only screen and (max-width: 600px) {
-	h1:not(.logo),h2,h3,h4,p,blockquote, .list {
+	h2,h3,h4,p,blockquote, .list {
 		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -568,12 +560,16 @@ Ask for Help</a></li>
   height="2048"
   layout="responsive"
   alt="Awe Angel Logo"
-  property="image" typeOf="ImageObject">
+  property="logo" typeOf="ImageObject">
   <meta property="caption" content="Awe Angel Logo">
   <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
 </amp-img>
 </div>
-<h1 class="logo" property="name">Government Grim<br> <span>by Awesome Angel</span></h1>
+<div id="magnum">
+<amp-fit-text layout="responsive" width="3" height="1">
+<h1 id="appellation" property="name">Government Grim<br> <span>Awe&nbsp;Angel</span></h1>
+</amp-fit-text>
+</div>
 </header>
 
 <h2>Government Induced Darkness</h2>
