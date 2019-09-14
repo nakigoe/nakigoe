@@ -43,7 +43,7 @@
   }
 #math {
 	max-width: 1200px;
-	margin: 0 auto;
+	margin: 0.2em auto 0;
 }
 html, body, header, h1, h2, ul, li, p, div {
 	margin: 0;
@@ -77,7 +77,7 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: 'Nunito Sans Regular',sans-serif;
 	}
 main {
-	width: 60%;
+	width: 100%;
 	margin: 0 auto;
 }
 footer p {
@@ -87,20 +87,57 @@ footer p {
 ul, li {
 	list-style: none;
 }
+/*---------------------- Logo and Headline -------------*/
+.intro {
+	display: flex;
+	align-items: center;
+	}
+#meow {
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	z-index: -1;
+	}
+#magnum {
+	display: inline-block; 
+	width: 100%; 
+	margin-left: -6.9%;
+	}
+#appellation {
+	text-align: center; 
+	padding-left: 1em; 
+	padding-top: .6em; 
+	padding-bottom: .3em; 
+	padding-right: 1em; 
+	line-height: normal; 
+	position: relative; 
+	z-index: 10;
+	}
 h1 {
+	font-family:"Nunito Sans", sans-serif;
 	text-align: center;
-	padding-top: 0.8em;
-	padding-bottom: 0.75em;
-	font-size: calc(2em + 3.3334vmin);	
+	/*font-size: 4em;*/
 	letter-spacing: .12em;
-	text-shadow: 0 0 .6em white, 0 0 .3em white;
-}
+	text-shadow:0 0 .6em white, 0 0 .6em white;
+	}
 h1 span {
 	font-size: .5em;
 	line-height: 200%;
 	font-weight: 200;
 	text-align: center;
 	text-shadow:0 0 .6em white;
+	}
+.lang li {
+	display: block;
+	}
+.lang {
+	margin-right: .75em;
+	margin-left: auto;
+	}
+.lang a {
+	text-align: center;
+	width: auto;
+	display: block;
 	}
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
@@ -313,7 +350,12 @@ amp-social-share[type="telegram"]:hover {
 /* --------- text width section ------------- */
 @media only screen and (max-width: 1300px) {
 	main {
+		width: 100%;
+	}
+	h2,h3,h4,p, .list {
 		width: 70%;
+		margin-left: auto;
+		margin-right: auto;	
 	}
 	}
 /* --------- text width section , images 100vw ---------------- */
@@ -321,7 +363,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p, .list {
+	h2,h3,h4,p, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -331,7 +373,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p, .list {
+	h2,h3,h4,p, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -341,7 +383,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h1,h2,h3,h4,p, .list {
+	h2,h3,h4,p, .list {
 		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -378,52 +420,6 @@ nav a {
 	}
 }
 </style>
-<script type="application/ld+json">
-	{
-	  "@context": "http://schema.org/",
-	  "@type": "WebPage",
-	  "isFamilyFriendly": "True",
-	  "isPartOf": {
-		  "@type": "ProfilePage",
-		  "name": "Nakigoe",
-		  "url": "https://nakigoe.github.io/me/me.html"},
-	  "name": "Репетитор",
-	  "description": "репетитор: математика, информатика, веб-дизайн, английский, русский, таджикский, японский, китайский.",
-    "mainEntity": {
-            "@type": "Person",
-            "name": "Nakigoe",
-            "honorificPrefix": "God",
-            "url": "https://nakigoe.github.io/me/me.html#me",
-		"makesOffer": {			
-				"@type": "Offer",
-				"businessFunction": [
-						{"@type": "BusinessFunction",
-							"name": "ремонт компьютерной техники",
-							"description": "диагностика, сборка и установка нового оборудования, настройка Windows"
-					  	},
-						{"@type": "BusinessFunction",
-							"name": "репетитор: математика, информатика, веб-дизайн, английский, русский, таджикский, японский, китайский.",
-							"description": "Видеосвязь, общий экран для печати и графики, общий документ (pdf), Скайп"
-						},
-						{"@type": "BusinessFunction",
-							"name": "Веб-Дизайн",
-							"description": "Деплоймент, дизайн логотипа, перевод сайта на английский, таджикский, японский, китайский, AMP-HTML, CSS, RDFa, JSON-LD, schema.org"
-						}
-				],
-				"name": "репетитор: математика, информатика, веб-дизайн, английский, русский, таджикский, японский, китайский",
-				"description": "онлайн занятия 750 руб / 45 минут; суперменам и супергёлам скидка 10% + 1% за каждый подвиг",
-				"price": "750",
-				"priceCurrency": "RUB"
-			},
-		"image": {
-				"@type": "ImageObject",
-				"url": "https://nakigoe.github.io/_IMG/math.jpg",
-				"caption": "Math Tutoring",
-				"representativeOfPage": "True"
-			}	
-    }
-	}
-</script>
 </head>
 
 <body vocab="http://schema.org/" typeof="WebPage">
@@ -456,14 +452,29 @@ nav a {
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
 </ul>
-<ul class="rightLink">
+</nav>
+<header class="intro">
+<div id="meow">
+<amp-img src="https://nakigoe.github.io/_IMG/meow.png"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Awe Angel Logo"
+  property="logo" typeOf="ImageObject">
+  <meta property="caption" content="Awe Angel Logo">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
+</amp-img>
+</div>
+<div id="magnum">
+<amp-fit-text layout="responsive" width="3" height="1">
+<h1 id="appellation" property="name">репетитор:<br> <span class="phrase">математика, информатика,</span><br><span class="phrase">английский, русский, таджикский, японский, китайский</span></h1>
+</amp-fit-text>
+</div>
+<ul class="lang">
   <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" hreflang="en">EN</a></li>
   <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" hreflang="ja-JP">日本</a></li>
   <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/zh/tutor.html" hreflang="zh-Hans">中文</a></li>
 </ul>
-</nav>
-<header>
-  <h1 property="name">репетитор:<br> <span class="phrase">математика, информатика,</span> <span class="phrase">английский, русский, таджикский, японский, китайский</span></h1>
 </header>
 <main>
 <div id="math">
@@ -479,7 +490,7 @@ nav a {
 </div>
 	<section>
 		<h2>Математика</h2>
-		<ul>
+		<ul class="list">
 			<li>продвинутый устный счёт</li>
 			<li>алгебра</li>
 			<li>геометрия</li>
@@ -492,7 +503,7 @@ nav a {
 	</section>
 	<section>
 		<h2>Веб-дизайн</h2>
-		<ul>
+		<ul class="list">
 			<li>деплоймент</li>
 			<li>дизайн логотипа</li>
 			<li>редактирование шрифтов</li>
@@ -503,31 +514,33 @@ nav a {
 	</section>
 	<section>
 		<h2>Английский</h2>
-		<ul>
+		<ul class="list">
+			<li>умение вести беседу и ораторское искусство</li>
+			<li>составление мотивационных писем и резюме</li>
 			<li>постановка британского произношения</li>
 			<li>английская каллиграфия</li>
 			<li>методы запоминания слов</li>
 			<li>современные методики освоения языков</li>
-			<li>подготовка к TOEFL, IELTS, PTE</li>
+			<li>подготовка к ГИА, ЕГЭ, TOEFL, IELTS, PTE</li>
 		</ul>
 	</section>
 	<section>
 		<h2>Русский</h2>
-		<ul>
+		<ul class="list">
 			<li>постановка почерка</li>
 			<li>закрепление грамматики</li>
 		</ul>
 	</section>
 	<section>
 		<h2>Таджикский</h2>
-		<ul>
+		<ul class="list">
 			<li>занятия по авторскому учебнику</li>
 			<li>закрепление грамматики</li>
 		</ul>
 	</section>
 	<section>
 		<h2>Японский</h2>
-		<ul>
+		<ul class="list">
 			<li>быстрое запоминание иероглифов (3000)</li>
 			<li>каллиграфия</li>
 			<li>подготовка к JLPT</li>
@@ -535,7 +548,7 @@ nav a {
 	</section>
 	<section>
 		<h2>Китайский</h2>
-		<ul>
+		<ul class="list">
 			<li>постановка произношения</li>
 			<li>быстрое запоминание иероглифов (3000)</li>
 			<li>каллиграфия</li>
@@ -543,7 +556,7 @@ nav a {
 	</section>
 	<section>
 		<h2>Обучение набору на компьютере</h2>
-		<ul>
+		<ul class="list">
 			<li>современный набор на компьютере, альтернативные раскладки</li>
 			<li>одинаковая пунктуация для русской, таджикский и английской раскладки</li>
 			<li>изменение английской, русской, таджикской раскладки</li>
