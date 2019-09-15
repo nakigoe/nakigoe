@@ -52,7 +52,7 @@ a amp-img {
 }
 #math {
 	max-width: 2048px;
-	margin: 0 auto;
+	margin: 0.2em auto 0;
 }
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
@@ -91,38 +91,51 @@ h1, h2, h3, h4, h5, h6 {
 .phrase {
 	display: inline-block;
 }
-h1 {
-	font-family: 'Nunito Sans', sans-serif;
-	text-align: center;
-	font-size: calc(2em + 3.3334vmin);
-	padding-top: 0.8em;
-	padding-bottom: 0.75em;
-	letter-spacing: .12em;
-	text-shadow:0 0 .6em white, 0 0 .6em white;
-	}
-header {
+/*---------------------- Logo and Headline -------------*/
+.intro {
 	display: flex;
 	align-items: center;
 	}
 #meow {
 	display: inline-block;
 	width: 40%;
+	position: relative;
+	z-index: -1;
 	}
-@media only screen and (max-width:600px) {
+#magnum {
+	display: inline-block; 
+	width: 100%; 
+	margin-left: -6.9%;
+	}
+#appellation {
+	text-align: center; 
+	padding-left: 1em; 
+	padding-top: .6em; 
+	padding-bottom: .3em; 
+	padding-right: 1em; 
+	line-height: normal; 
+	position: relative; 
+	z-index: 10;
+	}
 h1 {
-	margin-left: -7.5%;
+	font-family:"Nunito Sans", sans-serif;
+	text-align: center;
+	/*font-size: 4em;*/
+	letter-spacing: .12em;
+	text-shadow:0 0 .6em white, 0 0 .6em white;
 	}
-	}
-@media only screen and (min-width:960px) {
-h1 {
-	margin-left: 0;
-	}
+h1 span {
+	font-size: .5em;
+	line-height: 200%;
+	font-weight: 200;
+	text-align: center;
+	text-shadow:0 0 .6em white;
 	}
 .lang li {
 	display: block;
 	}
 .lang {
-	margin-right: .75em;/*temporary draft*/
+	margin-right: .75em;
 	margin-left: auto;
 	}
 .lang a {
@@ -130,13 +143,6 @@ h1 {
 	width: auto;
 	display: block;
 	}
-h1 span {
-	font-size: .5em;
-	/* for adobe font font-weight: 200;*/
-	text-align: center;
-	text-shadow:0 0 .6em white;
-	line-height: 200%;
-	}	
 h2 {
 	font-family: 'Nunito Sans', sans-serif;
 	letter-spacing: .15em;
@@ -407,9 +413,6 @@ h1:not(.logo),h2,h3,h4,p,hr, .list {
 	}
 	
 /*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
-h1 {
-	font-size: calc(2em + 3.3334vmin);
-}
 h2 {
 	font-size: calc(1.5em + 2.5vmin);
 }
@@ -442,11 +445,6 @@ p, .list	{
 	font-stretch: semi-expanded;
 	}
 }
-@media only screen and (max-width: 600px) {
-	h1 {
-		font-size: calc(1em + 3.3334vmin);
-	}	
-	}
 </style>
 </head>
 
@@ -513,8 +511,12 @@ p, .list	{
   <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
 </amp-img>
 </div>
-<h1 class="logo">オンライン家庭教師<br>  
+<div id="magnum">
+<amp-fit-text layout="responsive" width="3" height="1">
+<h1 id="appellation" property="name">オンライン家庭教師<br>  
 <span class="phrase">ロシア語、タジク語、中国語、日本語、英語</span><span class="phrase">数学、コンピュータサイエンス、ウェブデザイン</span></h1>
+</amp-fit-text>
+</div>
 <ul class="lang">
 <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/me/tutor.html" target="_blank" hreflang="en">EN</a></li>
 <li><a class="alert" property="relatedLink" href="https://nakigoe.github.io/ru/tutor.html" target="_blank" hreflang="ru">RU</a></li>
