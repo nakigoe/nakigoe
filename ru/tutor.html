@@ -41,6 +41,21 @@
     font-family: "Nunito Sans ExtraLight";
     src: url("/_FNT/NunitoSans-ExtraLight-subset.woff2") format("woff2");
   }
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) ) 
+	   - 1.95em
+  	);
+  --restrict: 24em;
+}
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
 #math {
 	max-width: 1200px;
 	margin: 0.2em auto 0;
@@ -395,7 +410,7 @@ p, section li	{
 	font-size: 1em;
 	font-stretch: semi-condensed;
 	}
-nav a {
+nav a, .lang a {
 	font-size: 1.2em;
 	font-stretch: semi-condensed;
 }
@@ -404,7 +419,7 @@ nav a {
 	  font-size: 1.125em;
 	  font-stretch: normal;
 	}
-	nav a {
+	nav a, .lang a {
 		font-size: 1.35em;
 		font-stretch: normal;
 	}
@@ -414,7 +429,7 @@ nav a {
 	  font-size: 1.375em;
 	  font-stretch: semi-expanded;
 	}
-	nav a {
+	nav a, .lang a {
 		font-size: 1.65em;
 		font-stretch: semi-expanded;
 	}
@@ -441,16 +456,21 @@ nav a {
 <meta property="keywords" content="репетитор,учитель,преподаватель,преподавание,для иностранцев,ин яз,методы запоминания,современные,методики,подготовка,ГИА,ЕГЭ,информатика,математика,алгебра,геометрия,тригонометрия,высшая математика,интегральное,дифференциальное,исчисление,язык,английский,IELTS,TOEFL,GMAT,SAT,ACT,PTE,каллиграфия,набор,клавиатура,раскладка,альтернативная,японский,JLPT,китайский,таджикский,русский,онлайн,выезд,на дому,скайп,по скайпу">
 <nav id="topNav" class="cf">
 <ul>
-<li><a property="significantLink" href="https://nakigoe.github.io/">Main</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
-<li><a property="significantLink" href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="ДОМ"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="ДОМ">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Дом</a>
+</li>
+
 </ul>
 </nav>
 <header class="intro">
@@ -577,7 +597,7 @@ nav a {
 </main>
 <footer>
 <div class="contacts">
-		<p>e-mail:</p>
+		<p>почта:</p>
 		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
 		width="270"
 		height="50"
@@ -587,7 +607,7 @@ nav a {
 </div>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
   <div class="social">
-    <p>SHARE VIA</p>
+    <p>СЪЕШЬ И ПОДЕЛИСЬ С ДРУГОМ</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
     <amp-social-share width="60" height="60" type="facebook"
     data-param-app_id="272325784911610"></amp-social-share>
@@ -611,16 +631,20 @@ nav a {
 </footer>
 <nav class="cf">
 <ul>
-<li><a href="https://nakigoe.github.io/">Main</a></li>
-<li><a href="https://nakigoe.github.io/tutor/life.html" title="Life Science Tutor">Life&nbsp;Science</a></li>
-<li><a href="https://nakigoe.github.io/tutor/art.html" title="Art Tutor">Art</a></li>
-<li><a href="https://nakigoe.github.io/tutor/russian.html" title="Russian Tutor">Russian</a></li>
-<li><a href="https://nakigoe.github.io/tutor/tajik.html" title="Tajik Tutor">Tajik</a></li>
-<li><a href="https://nakigoe.github.io/tutor/japanese.html" title="Japanese Tutor">Japanese</a></li>
-<li><a href="https://nakigoe.github.io/tutor/mandarin.html" title="Mandarin Tutor">Mandarin</a></li>
-<li><a href="https://nakigoe.github.io/tutor/english.html" title="English Tutor">English</a></li>
-<li><a href="https://nakigoe.github.io/tutor/math.html" title="Math Tutor">Math</a></li>
-<li><a href="https://nakigoe.github.io/tutor/it.html" title="Computer Science Tutor">IT</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="ДОМ"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="ДОМ">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+Дом</a>
+</li>
 </ul>
 <ul class="rightLink">
 <li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
@@ -636,7 +660,7 @@ nav a {
   <meta property="caption" content="Lovely Me">
 </amp-img>
 </div>
-Lovely&nbsp;Me</a>
+Я, Страсть</a>
 </nav>
 </body>
 </html>
