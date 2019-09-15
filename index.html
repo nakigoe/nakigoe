@@ -101,8 +101,8 @@ a amp-img {
   	);
   --fence: calc( 
 	  100vw / 
-	  ( ( 1164 / 1778 ) + ( 1080 / 1350 ) + ( 664 / 896 ) ) 
-	   - 2.825em
+	  ( ( 1164 / 1778 ) + ( 1080 / 1350 ) + ( 664 / 896 ) + ( 900 / 1349 ) ) 
+	   - 2.75em
   	);
   --art: calc( 
 	  100vw / 
@@ -415,6 +415,10 @@ article div {
 #fence li {
 	display: inline-block;
 	}
+#fiora {
+	width: calc( ( 900 / 1349 ) * var(--fence) );
+	max-width: calc( ( 900 / 1349 ) * var(--restrict) );
+}
 #exec {
 	width: calc( ( 1164 / 1778 ) * var(--fence) );
 	max-width: calc( ( 1164 / 1778 ) * var(--restrict) );
@@ -1209,19 +1213,6 @@ Speech Tutor</a></li>
 <article id="newArticles">
 <h2>New Articles</h2>
 	<ul>
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/write.html" target="_blank">
-	<div id="fiora">
-		<amp-img src="https://nakigoe.github.io/_IMG/fiora.jpg"
-		width="900"
-		height="1349"
-		layout="responsive"
-		alt="Fiora Writing Girl"
-		property="primaryImageOfPage" typeOf="ImageObject">
-		<meta property="representativeOfPage" content="True">
-		<meta property="caption" content="Fiora Writing Girl">
-		</amp-img>
-	</div>
-	How to Write Good</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/improve.html" target="_blank">
 	Improve</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/uni.html" target="_blank">
@@ -1285,6 +1276,19 @@ Speech Tutor</a></li>
 	Attack</a></li>
 	</ul>
 	<ul id="fence">
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/write.html" target="_blank">
+	<div id="fiora">
+		<amp-img src="https://nakigoe.github.io/_IMG/fiora.jpg"
+		width="900"
+		height="1349"
+		layout="responsive"
+		alt="Fiora Writing Girl"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="Fiora Writing Girl">
+		</amp-img>
+	</div>
+	How to Write Good</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/exec.html" target="_blank">
 	<div id="exec">
 		<amp-img src="https://nakigoe.github.io/_IMG/killer.jpg"
