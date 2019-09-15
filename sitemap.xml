@@ -524,6 +524,18 @@
     
    <url>
 
+      <loc>https://nakigoe.github.io/ru/poetry.html</loc>
+
+      <lastmod>2019-09-15</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+	
+   <url>
+
       <loc>https://nakigoe.github.io/ru/tutor.html</loc>
 
       <lastmod>2019-09-15</lastmod>
