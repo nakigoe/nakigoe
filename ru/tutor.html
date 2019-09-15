@@ -44,8 +44,8 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) ) 
-	   - 1.95em
+	  ( ( 1440 / 1018 ) + ( 700 / 1050 ) ) 
+	   - 2.275em
   	);
   --restrict: 24em;
 }
@@ -55,6 +55,10 @@ a amp-img {
 .true {
 	width: calc( ( 1440 / 1018 ) * var(--coeff) );
 	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.kneel {
+	width: calc( ( 700 / 1050 ) * var(--coeff) );
+	max-width: calc( ( 700 / 1050 ) * var(--restrict) );
 }
 #math {
 	max-width: 1200px;
@@ -473,6 +477,17 @@ nav a, .lang a {
 </ul>
 <ul class="rightLink">
 <li><a property="significantLink" href="https://nakigoe.github.io/ru/poetry.html" target="_blank">
+<div class="kneel">
+<amp-img src="https://nakigoe.github.io/_IMG/kneel.jpg"
+  width="700"
+  height="1050"
+  layout="responsive"
+  alt="Kneeling Girl Princess"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Kneeling Girl Princess">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/kneel.jpg">
+</amp-img>
+</div>
 Поэзия</a>
 </li>
 </ul>
@@ -651,7 +666,20 @@ nav a, .lang a {
 </li>
 </ul>
 <ul class="rightLink">
-<li><a class="alert" href="https://nakigoe.github.io/me/connect.html" title="please e-mail preferred time and the time-zone">video&#8209;chat</a></li>
+<li><a property="significantLink" href="https://nakigoe.github.io/ru/poetry.html" target="_blank">
+<div class="kneel">
+<amp-img src="https://nakigoe.github.io/_IMG/kneel.jpg"
+  width="700"
+  height="1050"
+  layout="responsive"
+  alt="Kneeling Girl Princess"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Kneeling Girl Princess">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/kneel.jpg">
+</amp-img>
+</div>
+Поэзия</a>
+</li>
 </ul>
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
