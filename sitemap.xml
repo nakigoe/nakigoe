@@ -524,6 +524,18 @@
     
    <url>
 
+      <loc>https://nakigoe.github.io/ru/polazna.html</loc>
+
+      <lastmod>2019-09-19</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.6</priority>
+
+   </url>
+	
+   <url>
+
       <loc>https://nakigoe.github.io/ru/poetry.html</loc>
 
       <lastmod>2019-09-19</lastmod>
