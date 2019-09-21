@@ -111,15 +111,15 @@ a amp-img {
   	);
   --arena: calc( 
 	  100vw / 
-	  ( ( 1024 / 2080 ) + ( 1200 / 1800 ) ) 
-	   - 1.6em
+	  ( ( 1024 / 2080 ) + ( 1200 / 1800 ) + ( 537 / 996 ) ) 
+	   - 3.675em
   	);
   --prince: calc( 
 	  100vw / 
 	  ( ( 1080 / 1350 ) + ( 1200 / 1464 ) + ( 4000 / 3000 ) ) 
 	   - 2.1em
   	);
-  --restrict: 25em;
+  --restrict: 32em;
   --coeff: 20em;
 }
 
@@ -432,7 +432,7 @@ article div {
 	max-width: calc( ( 664 / 896 ) * var(--restrict) );
 }
 }
-/*---wide screens section for grim master, grim government girls ----*/
+/*---wide screens section for grim master, grim government girls, blood midnight ----*/
 @media only screen and (min-width:960px) {
 #arena li {
 	display: inline-block;
@@ -444,6 +444,10 @@ article div {
 #ggg {
 	width: calc( ( 1200 / 1800 ) * var(--arena) );
 	max-width: calc( ( 1200 / 1800 ) * var(--restrict) );
+}
+#blood {
+	width: calc( ( 537 / 996 ) * var(--arena) );
+	max-width: calc( ( 537 / 996 ) * var(--restrict) );
 }
 }
 /*---wide screens section for south, bring it, attack ----*/
@@ -1636,6 +1640,20 @@ Speech Tutor</a></li>
 	</amp-img>
 	</div>
 	Grim Government Girls</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/ggg.html" target="_blank">
+	<div id="blood">
+	<amp-img src="https://nakigoe.github.io/_IMG/moon.jpg"
+	  width="537"
+	  height="996"
+	  layout="responsive"
+	  alt="Government Girl Loaded"
+	  property="primaryImageOfPage" typeOf="ImageObject">
+	  <meta property="representativeOfPage" content="True">
+	  <meta property="caption" content="Government Girl Loaded">
+	  <meta property="url" content="https://nakigoe.github.io/_IMG/moon.jpg">
+	</amp-img>
+	</div>
+	Blood Midnight</a></li>
 	</ul>
 	<ul id="ani">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/anime.html" target="_blank">
