@@ -28,19 +28,8 @@
 	<meta name="msapplication-TileColor" content="#1a0000">
 	<link rel="icon" href="https://nakigoe.github.io/_IMG/meow.png">
 	<link rel="apple-touch-startup-image" href="https://nakigoe.github.io/_IMG/meow.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400">
 <style amp-custom>
-	@font-face {
-    font-family: "Nunito Sans Regular";
-    src: url("/_FNT/NunitoSans-Regular-subset.woff2") format("woff2");
-  }
-	@font-face {
-    font-family: "Nunito Sans Light";
-    src: url("/_FNT/NunitoSans-Light-subset.woff2") format("woff2");
-	}
-	@font-face {
-    font-family: "Nunito Sans ExtraLight";
-    src: url("/_FNT/NunitoSans-ExtraLight-subset.woff2") format("woff2");
-  }
 :root {
   --coeff: calc( 
 	  100vw / 
@@ -85,15 +74,16 @@ nav li{
 	margin-bottom: 0.4em;
 	}
 nav a{
-	font-family: "Nunito Sans ExtraLight", sans-serif;
-	font-weight: 200;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	letter-spacing: .02em;
 	}
 nav ul{
 	display: inline-block;
 }
 h1, h2, h3, h4, h5, h6 {
 	color: white;
-	font-family: 'Nunito Sans Regular',sans-serif;
+	font-family: "Roboto", sans-serif;
 	}
 main {
 	width: 100%;
@@ -133,7 +123,7 @@ ul, li {
 	z-index: 10;
 	}
 h1 {
-	font-family:"Nunito Sans", sans-serif;
+	font-family:"Roboto", sans-serif;
 	text-align: center;
 	/*font-size: 4em;*/
 	letter-spacing: .12em;
@@ -177,8 +167,9 @@ h4 {
 	margin-bottom: .5em;
 	}
 a {
-	font-family: 'Nunito Sans', sans-serif;
-	font-weight: 400;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+	letter-spacing: .02em;
 	display: inline-block;
 	color: #ffb;
 	margin: .5em 0 0 .7em;
@@ -243,9 +234,12 @@ hr {display:block;
 p, section li {
 	font-size: 1em;
 	line-height: 1.8em;
-	letter-spacing: .02em;
-	font-family: 'Nunito Sans Light', Verdana;
-	/*font-weight: 200;*/
+	letter-spacing: .025em;
+	font-family: "Roboto", sans-serif;
+	font-weight: 300;
+}
+.list {
+	font-weight: 200;
 }
 .how {
 	text-align: center;
