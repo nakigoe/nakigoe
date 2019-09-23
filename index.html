@@ -4,6 +4,7 @@
     <meta charset="utf-8">
 	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-audio" src="https://cdn.ampproject.org/v0/amp-audio-0.1.js"></script>
 	<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
 	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
 	<link rel="canonical" href="https://nakigoe.github.io">
@@ -535,7 +536,12 @@ h1 span {
 	text-align: center;
 	text-shadow:0 0 .6em white;
 	line-height: 200%;
-	}	
+	}
+.audio{
+	width: auto;
+	margin: auto;
+	margin-top: calc( .5em + 1.5vw );
+	}
 .rightLink li {
 	display: block;
 	}
@@ -944,18 +950,31 @@ a {
   <meta property="caption" content="Nakigoe Logo">
 </amp-img>
 </div>
-  <h1 id="angelblaze">nakigoe
-  	<br><span class="phrase">awesome&nbsp;angel</span>
-	<br><span class="phrase">SUPREME&nbsp;SERVICE</span>
-  </h1>
+<div style="display: block;">	
+	<h1 id="angelblaze">nakigoe
+	  <br><span class="phrase">awesome&nbsp;angel</span>
+	  <br><span class="phrase">SUPREME&nbsp;SERVICE</span>
+	</h1>
+	<div class="audio">
+	<amp-audio width="400"
+	  src="https://nakigoe.github.io/_MP3/front.mp3"
+	  title="Tribal Warfare"
+	  album="Epic Action & Adventure"
+	  artist="Future World Music"
+	  controlsList="nodownload"
+	  loop
+	  autoplay>
+	</amp-audio>
+	</div>
+</div>
 <ul class="rightLink">
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/ru/tutor.html" hreflang="ru-RU" target="_blank">РУС</a></li>
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/tg/tutor.html" hreflang="tg-TJ" target="_blank">ТОҶ</a></li>
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/ja/tutor.html" hreflang="ja-JP" target="_blank">日本</a></li>
 <li><a class="alert" property="significantLink" href="https://nakigoe.github.io/zh/tutor.html" hreflang="zh-Hans" target="_blank">中文</a></li>
 </ul>
-</header>
 
+</header>
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/spirit.html" target="_blank">
 <div id="spirit">
