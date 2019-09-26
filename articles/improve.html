@@ -57,13 +57,9 @@ a amp-img {
 	width: calc( ( 1320 / 1742 ) * var(--coeff) );
 	max-width: calc( ( 1320 / 1742 ) * var(--restrict) );
 }
-#meow {
-	display: inline-block;
-	width: 40%;
-	}
-.intro {
-	display: flex;
-	align-items: center;
+#ripped {
+	max-width: 1000px;
+	margin: .2em auto 0;
 	}
 html,body,header,h1,h2,ul,li,p,div{
 	margin:0;
@@ -104,8 +100,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 blockquote {
 	width: 100%;
-	margin: 0 auto;
-	text-align: left;
+	margin: 1em auto;
+	text-align: right;
 	font-family: "Nunito Sans", sans-serif;
 	font-weight: 200;
 	font-size: 1.2em;
@@ -114,15 +110,40 @@ blockquote {
 cite {
 	color: white;
 	display: block;
+	text-align: right;
+	}
+/*---------------------- Logo and Headline -------------*/
+.intro {
+	display: flex;
+	align-items: center;
+	}
+#meow {
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	z-index: -1;
+	}
+#magnum {
+	display: inline-block; 
+	width: 100%; 
+	margin-left: -6.9%;
+	}
+#appellation {
+	text-align: center; 
+	padding-left: 1em; 
+	padding-top: .6em; 
+	padding-bottom: .3em; 
+	padding-right: 1em; 
+	line-height: normal; 
+	position: relative; 
+	z-index: 10;
 	}
 h1 {
 	font-family:"Nunito Sans", sans-serif;
 	text-align: center;
-	padding-top: 0.8em;
-	padding-bottom: 0.8em;
-	font-size: 4em;
+	/*font-size: 4em;*/
 	letter-spacing: .12em;
-	text-shadow:0 0 .6em white, 0 0 .6em white, 0 0 .3em white;
+	text-shadow:0 0 .6em white, 0 0 .6em white;
 	}
 h1 span {
 	font-size: .5em;
@@ -546,10 +567,26 @@ Ask for Help</a></li>
   <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
 </amp-img>
 </div>
-<h1 class="logo" property="name">Improve<br> <span>by Awesome Angel</span></h1>
+<div id="magnum">
+<amp-fit-text layout="responsive" width="3" height="1">
+<h1 id="appellation" property="name">Improve<br> <span>Get Ripped</span><br> <span>Awe&nbsp;Angel</span></h1>
+</amp-fit-text>
+</div>
 </header>
+<div id="ripped">
+<amp-img src="https://nakigoe.github.io/_IMG/improve.jpg"
+  width="1000"
+  height="1416"
+  layout="responsive"
+  alt="Ripped Girl"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Ripped Girl">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/improve.jpg">
+</amp-img>
+</div>
 <h2>Working on mistakes</h2>
-<ol>
+<ol class="list">
 	<li>take proper analyses instruments</li>
 	<li>cover red areas first. And when I say red, I mean RED. Burning RED.</li>
 	<li>create base, protect bases, the points of fulcrum</li>
@@ -569,7 +606,7 @@ Ask for Help</a></li>
     data-param-app_id="272325784911610"></amp-social-share>
     <amp-social-share width="60" height="60" type="linkedin"></amp-social-share>
     <amp-social-share width="60" height="60" type="pinterest"
-    data-param-media="https://nakigoe.github.io/_IMG/panties.jpg"></amp-social-share>
+    data-param-media="https://nakigoe.github.io/_IMG/improve.jpg"></amp-social-share>
     <amp-social-share width="60" height="60" type="tumblr"></amp-social-share>
     <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
     <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
