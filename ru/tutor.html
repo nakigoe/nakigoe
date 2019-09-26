@@ -44,8 +44,8 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) + ( 700 / 1050 ) ) 
-	   - 2.275em
+	  ( ( 1440 / 1018 ) + ( 700 / 1050 ) + ( 960 / 960 ) ) 
+	   - 2.05em
   	);
   --restrict: 24em;
 }
@@ -59,6 +59,10 @@ a amp-img {
 .kneel {
 	width: calc( ( 700 / 1050 ) * var(--coeff) );
 	max-width: calc( ( 700 / 1050 ) * var(--restrict) );
+}
+.ex {
+	width: calc( ( 960 / 960 ) * var(--coeff) );
+	max-width: calc( ( 960 / 960 ) * var(--restrict) );
 }
 #math {
 	max-width: 1200px;
@@ -365,7 +369,31 @@ amp-social-share[type="telegram"]:hover {
 	text-align: center;
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
-
+	
+@media only screen and (max-width:600px) {
+	main {width: 100%;} /*to keep the images stretched full-screen width 100%*/
+	#topNav .rightLink, #topNav .compact {
+		display: none;
+	}
+	.rightLink {
+		float: none;
+	}
+	nav .rightLink {
+	margin-right: 0;
+}
+	nav a, nav li, nav ul {
+		display: block;
+	}
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;	
+	}
+	.true, .ex, .kneel {
+		width: auto;
+		max-width: 100vw;
+	}
+	}
 /* --------- text width section ------------- */
 @media only screen and (max-width: 1300px) {
 	main {
@@ -474,16 +502,16 @@ nav a, .lang a {
 </div>
 Дом</a>
 </li>
-<li><a property="significantLink" href="https://nakigoe.github.io/ru/polazna.html" target="_blank">
-<div class="kneel">
-<amp-img src="https://nakigoe.github.io/_IMG/kneel.jpg"
-  width="700"
-  height="1050"
+<li class="compact"><a property="significantLink" href="https://nakigoe.github.io/ru/polazna.html" target="_blank">
+<div class="ex">
+<amp-img src="https://nakigoe.github.io/_IMG/ex.jpg"
+  width="960"
+  height="960"
   layout="responsive"
   alt="Британская Королева на Охоте"
   property="image" typeOf="ImageObject">
   <meta property="caption" content="Британская Королева на Охоте">
-  <meta property="url" content="https://nakigoe.github.io/_IMG/kneel.jpg">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/ex.jpg">
 </amp-img>
 </div>
 Эпицентр Зла</a>
@@ -641,7 +669,7 @@ nav a, .lang a {
 </div>
 <p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
   <div class="social">
-    <p>СЪЕШЬ И ПОДЕЛИСЬ С ДРУГОМ</p>
+    <p>СЪЕШЬ САМ, ПОДЕЛИСЬ С ДРУГОМ, ОТПРАВЬ ВРАГУ</p>
     <amp-social-share width="60" height="60" type="email"></amp-social-share>
     <amp-social-share width="60" height="60" type="facebook"
     data-param-app_id="272325784911610"></amp-social-share>
@@ -678,6 +706,20 @@ nav a, .lang a {
 </amp-img>
 </div>
 Дом</a>
+</li>
+<li><a property="significantLink" href="https://nakigoe.github.io/ru/polazna.html" target="_blank">
+<div class="ex">
+<amp-img src="https://nakigoe.github.io/_IMG/ex.jpg"
+  width="960"
+  height="960"
+  layout="responsive"
+  alt="Британская Королева на Охоте"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Британская Королева на Охоте">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/ex.jpg">
+</amp-img>
+</div>
+Эпицентр Зла</a>
 </li>
 </ul>
 <ul class="rightLink">
