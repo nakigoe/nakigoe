@@ -120,6 +120,11 @@ a amp-img {
 	  ( ( 1080 / 1350 ) + ( 1200 / 1464 ) + ( 4000 / 3000 ) ) 
 	   - 2.1em
   	);
+  --wise: calc( 
+	  100vw /
+	  ( ( 1000 / 1416 ) + ( 2210 / 3181 ) + ( 640 / 960 ) + ( 1080 / 1350 ) )
+	   - 2.75em
+  	);
   --restrict: 32em;
   --coeff: 20em;
 }
@@ -467,6 +472,28 @@ article div {
 #nier {
 	width: calc( ( 4000 / 3000 ) * var(--prince) );
 	max-width: calc( ( 4000 / 3000 ) * var(--restrict) );
+}
+}
+/*---wide screens section for improve, uni, life, wife ----*/
+@media only screen and (min-width:960px) {
+#wise li {
+	display: inline-block;
+	}
+#ripped {
+	width: calc( ( 1000 / 1416 ) * var(--wise) );
+	max-width: calc( ( 1000 / 1416 ) * var(--restrict) );
+}
+#school {
+	width: calc( ( 2210 / 3181 ) * var(--wise) );
+	max-width: calc( ( 2210 / 3181 ) * var(--restrict) );
+}
+#exam {
+	width: calc( ( 640 / 960 ) * var(--wise) );
+	max-width: calc( ( 640 / 960 ) * var(--restrict) );
+}
+#wife {
+	width: calc( ( 1080 / 1350 ) * var(--wise) );
+	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
 }
 }
 /*----- find ways to unhack -----*/
@@ -1238,7 +1265,7 @@ Speech Tutor</a></li>
 <nav>
 <article id="newArticles">
 <h2>New Articles</h2>
-	<ul>
+	<ul id="wise">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/improve.html" target="_blank">
 	<div id="ripped">
 		<amp-img src="https://nakigoe.github.io/_IMG/improve.jpg"
@@ -1277,7 +1304,7 @@ Speech Tutor</a></li>
 		<meta property="caption" content="No Fate Girl">
 		</amp-img>
 	</div>
-	No Fate: Life Examined</a></li>
+	No Fate</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/marry.html" target="_blank">
 	<div id="wife">
 		<amp-img src="https://nakigoe.github.io/_IMG/complete.jpg"
