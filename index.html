@@ -12,7 +12,7 @@
 	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
 	<!--[if lt IE9]><script> src="http::/html5.shim/googlecode.com/svn/trunk/html5.js"</script><![end if]-->
     <title>Nakigoe</title>
-    <meta name="description" content="Tutor, Translator, Interpreter, Front-End Developer: Russian | Tajik | Japanese | Mandarin Chinese | English | Computer Science | Math | Art | Life Science. Services: Computer Service | Electrical Installation | Film Director | Performer.">
+    <meta name="description" content="Tutor, Translator, Interpreter, Front-End Developer: Russian | Tajik | Japanese | Mandarin Chinese | English | Computer Science | Touch-Typing | Math | Art | Life Science. Services: Computer Service | Electrical Installation | Film Director | Performer.">
 	<meta name="author" content="Awesome Angel">
 	<meta name="designer" content="Awesome Angel">
 	<meta name="copyright" content="Awesome Angel">
@@ -55,10 +55,15 @@ a amp-img {
 	margin-top: .2em;
 	}
 :root {
+    --trin: calc( 
+	  100vw / 
+	  ( ( 2560 / 1453 ) + ( 3555 / 2000 ) ) 
+	   - 1.275em
+  	);
   --lang: calc( 
 	  100vw / 
 	  ( ( 937 / 1170 ) + ( 1080 / 1350 ) + ( 520 / 656 ) + ( 1128 / 1968 ) + ( 639 / 1024 ) ) 
-	   - 2.73em
+	   - 2.7em
   	);
   --life: calc( 
 	  100vw / 
@@ -214,7 +219,17 @@ a amp-img {
 	width: calc( ( 1682 / 2048 ) * var(--life));
 	max-width: calc( ( 1682 / 2048 ) * var(--restrict));
 }
-
+/*---wide screens section for trin: translator-interpreter, typing tutor ----*/
+@media only screen and (min-width:960px) {
+#translator {
+	width: calc( ( 2560 / 1453 ) * var(--trin));
+	max-width: calc( ( 2560 / 1453 ) * var(--restrict));
+}
+#typing {
+	width: calc( ( 3555 / 2000 ) * var(--trin));
+	max-width: calc( ( 3555 / 2000 ) * var(--restrict));
+}
+}
 /*---wide screens section for languages----*/
 @media only screen and (min-width:1100px) {
 #russian {
@@ -496,18 +511,18 @@ article div {
 	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
 }
 }
-/*----- find ways to unhack -----*/
-#ani a, #interpreter a {
+/*----- find ways to unhack, maybe delete #translator calculations from the #translator id above-----*/
+#ani a /*, #interpreter a*/ {
 	display: block;
 	text-align: center;
 	margin-left: .5em;
 	margin-right: .5em;
 	}
-#translator{
+/*#translator{
 	width: calc( 100vw - 2.71em);
 	max-width: 2560px;
 	max-width: 100vw;
-	}
+	}*/
 #anime{
 	width: auto;
 	max-width: 1455px;
@@ -1032,8 +1047,10 @@ Angel Spirit</a></li>
 </div>
 Life&nbsp;Science&nbsp;Instructor</a></li>
 </ul>
-<ul id="interpreter">
-<li id="test"><a property="significantLink" href="https://nakigoe.github.io/services/translator-interpreter.html" target="_blank">
+
+<ul id="trin">
+<!--<li id="test">-->
+<li><a property="significantLink" href="https://nakigoe.github.io/services/translator-interpreter.html" target="_blank">
 <div id="translator">
 <amp-img src="https://nakigoe.github.io/_IMG/translator.jpg"
   width="2560"
@@ -1044,8 +1061,22 @@ Life&nbsp;Science&nbsp;Instructor</a></li>
   <meta property="caption" content="Translator: Russian, Tajik, Japanese, Mandarin Chinese, English">
 </amp-img>
 </div>
-<span>Translator &amp; Interpreter <small class="phrase">Russian, Tajik, Japanese, Mandarin Chinese, English</small></span></a></li>
+<span>Translator &amp; Interpreter <small class="phrase">Russian, Tajik, Japanese, Mandarin, English</small></span></a></li>
+
+<li><a property="significantLink" href="https://nakigoe.github.io/tutor/typing.html" target="_blank">
+<div id="typing">
+<amp-img src="https://nakigoe.github.io/_IMG/type.jpg"
+  width="3555"
+  height="2000"
+  layout="responsive"
+  alt="Touch-Typing Tutor"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Touch-Typing Tutor">
+</amp-img>
+</div>
+Modern Touch&#8209;Typing&nbsp;Tutor <small class="phrase">300 hpm</small></a></li>
 </ul>
+	
 <ul>
 <li><a property="significantLink" href="https://nakigoe.github.io/tutor/russian.html" target="_blank">
 <div id="russian">
