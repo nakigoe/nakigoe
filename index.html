@@ -87,8 +87,8 @@ a amp-img {
   	);
   --dev: calc( 
 	  100vw / 
-	  ( ( 1080 / 1350 ) + ( 1280 / 1142 ) + ( 807 / 807 ) + ( 1080 / 1349 ) ) 
-	   - 2.15em
+	  ( ( 1080 / 1350 ) + ( 1280 / 1142 ) + ( 1080 / 1349 ) ) 
+	   - 2.3em
   	);
   --sex: calc( 
 	  100vw / 
@@ -107,13 +107,13 @@ a amp-img {
   	);
   --fence: calc( 
 	  100vw / 
-	  ( ( 1164 / 1778 ) + ( 1080 / 1350 ) + ( 664 / 896 ) + ( 900 / 1349 ) ) 
-	   - 2.75em
+	  ( ( 1164 / 1778 ) + ( 1080 / 1350 ) + ( 664 / 896 ) ) 
+	   - 2.825em
   	);
   --art: calc( 
 	  100vw / 
 	  ( ( 1938 / 2740 ) + ( 799 / 999 ) + ( 1280 / 1810 ) + ( 2056 / 3552 ) + ( 638 / 960 ) + ( 920 / 1382 ) ) 
-	   - 2.75em
+	   - 2.825em
   	);
   --arena: calc( 
 	  100vw / 
@@ -130,6 +130,12 @@ a amp-img {
 	  ( ( 1000 / 1416 ) + ( 2210 / 3181 ) + ( 640 / 960 ) + ( 1080 / 1350 ) )
 	   - 2.75em
   	);
+  --write: calc( 
+	  100vw /
+	  ( ( 900 / 1349 ) + ( 807 / 807 ) + ( 960 / 1035 ) )
+	   - 2.4em
+  	);
+	
   --restrict: 32em;
   --coeff: 20em;
 }
@@ -360,10 +366,6 @@ article div {
 	width: calc( ( 1080 / 1350 ) * var(--dev) );
 	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
 }
-#sight {
-	width: calc( ( 807 / 807 ) * var(--dev) );
-	max-width: calc( ( 807 / 807 ) * var(--restrict) );
-}
 #secret {
 	width: calc( ( 1080 / 1349 ) * var(--dev) );
 	max-width: calc( ( 1080 / 1349 ) * var(--restrict) );
@@ -436,10 +438,6 @@ article div {
 #fence li {
 	display: inline-block;
 	}
-#fiora {
-	width: calc( ( 900 / 1349 ) * var(--fence) );
-	max-width: calc( ( 900 / 1349 ) * var(--restrict) );
-}
 #exec {
 	width: calc( ( 1164 / 1778 ) * var(--fence) );
 	max-width: calc( ( 1164 / 1778 ) * var(--restrict) );
@@ -509,6 +507,24 @@ article div {
 #wife {
 	width: calc( ( 1080 / 1350 ) * var(--wise) );
 	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
+}
+}
+/*---wide screens section for write, website, type ----*/
+@media only screen and (min-width:960px) {
+#write li {
+	display: inline-block;
+	}
+#fiora {
+	width: calc( ( 900 / 1349 ) * var(--write) );
+	max-width: calc( ( 900 / 1349 ) * var(--restrict) );
+}
+#sight {
+	width: calc( ( 807 / 807 ) * var(--write) );
+	max-width: calc( ( 807 / 807 ) * var(--restrict) );
+}
+#machine-gun {
+	width: calc( ( 960 / 1035 ) * var(--write) );
+	max-width: calc( ( 960 / 1035 ) * var(--restrict) );
 }
 }
 /*----- find ways to unhack, maybe delete #translator calculations from the #translator id above-----*/
@@ -777,13 +793,6 @@ nav a{
 .siteLinks {margin-top:.7em;}
 .siteLinks a{margin-bottom:.4em;}
 
-hr {display:block;
-	box-shadow:0 0 .5em .1em white;
-	position:relative;
-	top:-.6em;
-	margin-bottom:0;
-	/*possible to control through margins if necessary*/
-	}
 p {
 	line-height: 1.5;
 	text-align: justify;
@@ -1296,6 +1305,50 @@ Speech Tutor</a></li>
 <nav>
 <article id="newArticles">
 <h2>New Articles</h2>
+	<ul id="write">
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/write.html" target="_blank">
+	<div id="fiora">
+		<amp-img src="https://nakigoe.github.io/_IMG/fiora.jpg"
+		width="900"
+		height="1349"
+		layout="responsive"
+		alt="Fiora Writing Girl"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="Fiora Writing Girl">
+		</amp-img>
+	</div>
+	How to Write Good</a></li>
+		
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/online-hour.html" target="_blank">
+		<div id="sight">
+		<amp-img src="https://nakigoe.github.io/_IMG/sight.jpg"
+		width="807"
+		height="807"
+		layout="responsive"
+		alt="Love from the First Sight"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="Love from the First Sight">
+		</amp-img>
+		</div>
+	Grab Your Website</a></li>
+		
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/online-hour.html" target="_blank">
+		<div id="machine-gun">
+		<amp-img src="https://nakigoe.github.io/_IMG/happy.jpg"
+		width="960"
+		height="1035"
+		layout="responsive"
+		alt="Machine-Gun Girl"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="Machine-Gun Girl">
+		</amp-img>
+		</div>
+	Advanced Modern Typing</a></li>
+	</ul>
+	
 	<ul id="wise">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/improve.html" target="_blank">
 	<div id="ripped">
@@ -1393,19 +1446,6 @@ Speech Tutor</a></li>
 	Attack</a></li>
 	</ul>
 	<ul id="fence">
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/write.html" target="_blank">
-	<div id="fiora">
-		<amp-img src="https://nakigoe.github.io/_IMG/fiora.jpg"
-		width="900"
-		height="1349"
-		layout="responsive"
-		alt="Fiora Writing Girl"
-		property="primaryImageOfPage" typeOf="ImageObject">
-		<meta property="representativeOfPage" content="True">
-		<meta property="caption" content="Fiora Writing Girl">
-		</amp-img>
-	</div>
-	How to Write Good</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/exec.html" target="_blank">
 	<div id="exec">
 		<amp-img src="https://nakigoe.github.io/_IMG/killer.jpg"
@@ -1693,21 +1733,6 @@ Speech Tutor</a></li>
 	</div>
 	World Top Apps 
 	<br><small>File Hunt&nbsp;and&nbsp;Download</small></a></li>
-	
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/online-hour.html" target="_blank">
-	<div id="sight">
-	<amp-img src="https://nakigoe.github.io/_IMG/sight.jpg"
-	width="807"
-	height="807"
-	layout="responsive"
-	alt="Love from the First Sight"
-	property="primaryImageOfPage" typeOf="ImageObject">
-	<meta property="representativeOfPage" content="True">
-	<meta property="caption" content="Love from the First Sight">
-	</amp-img>
-	</div>
-	Grab Your Website 
-	<br><small>Online in an Hour</small></a></li>
 	
 	<li><a property="significantLink" href="/articles/secret.html" target="_blank">
 	<div id="secret">
