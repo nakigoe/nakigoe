@@ -106,6 +106,23 @@ footer p {
 ul, li {
 	list-style: none;
 }
+.phrase {
+	display: inline-block;
+}
+blockquote {
+	width: 100%;
+	margin: 1em auto;
+	text-align: right;
+	font-family: 'Nunito Sans Light', sans-serif;
+	font-weight: 100;
+	font-size: 1.2em;
+	font-style: italic;
+}
+cite {
+	color: white;
+	display: block;
+	text-align: right;
+	}
 /*---------------------- Logo and Headline -------------*/
 .intro {
 	display: flex;
@@ -366,23 +383,22 @@ amp-social-share[type="telegram"]:hover {
 	}
 #me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
 
-/* --------- text width section ------------- */
+/* --------- text width section , images 100vw ---------------- */
 @media only screen and (max-width: 1300px) {
 	main {
 		width: 100%;
 	}
-	h2,h3,h4,p,hr, .list {
+	h2,h3,h4,p,hr,blockquote, .list {
 		width: 70%;
 		margin-left: auto;
 		margin-right: auto;	
 	}
 	}
-/* --------- text width section , images 100vw ---------------- */
 @media only screen and (max-width: 960px) {
 	main {
 		width: 100%;
 	}
-	h2,h3,h4,p,hr, .list {
+	h2,h3,h4,p,hr,blockquote, .list {
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -392,7 +408,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h2,h3,h4,p,hr, .list {
+	h2,h3,h4,p,hr,blockquote, .list {
 		width: 90%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -402,7 +418,7 @@ amp-social-share[type="telegram"]:hover {
 	main {
 		width: 100%;
 	}
-	h2,h3,h4,p,hr, .list {
+	h2,h3,h4,p,hr,blockquote, .list {
 		width: 96%;
 		margin-left: auto;
 		margin-right: auto;	
@@ -522,9 +538,11 @@ nav a, .lang a {
   <meta property="url" content="https://nakigoe.github.io/_IMG/ex.jpg">
 </amp-img>
 </div>
-<blockquote>"Хороший. Плохой. Самое главное - у кого ружьё."<cite>Наш, Зловещие Мертвецы 3</cite></blockquote>
-<blockquote>"Когда твоё государство говорит, что тебе не нужна пушка - купи две."</blockquote>
-<h2>Холодные и Жестокие</h2>
+<blockquote>"Хороший. Плохой. Самое главное - у кого ружьё." <cite>Наш, Зловещие Мертвецы 3</cite></blockquote>
+<blockquote>"Мир разделён на две половины: те, кто с пушкой, и те, кто работает лопатой." <cite>Клим Изя, Хороший, Плохой, и Отвратный</cite></blockquote>
+<blockquote>"Когда твоё государство говорит, что тебе не нужна пушка - купи две." <cite>Клава-о-Гонор, Терминатор</cite></blockquote>
+<blockquote>"Я обязательно к вам вернусь. На волге." Терминатор</blockquote>
+
 <p>Отсутсвие сострадания в Пермском крае.</p>
 <p>Власти в посёлке холодные и жестокие, как сам Дьявол.</p>
 <p>Зарплаты нашего НЕФТЯНОГО региона в 11 раз меньше, чем в Норвегии.</p>
