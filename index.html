@@ -113,7 +113,7 @@ a amp-img {
   --art: calc( 
 	  100vw / 
 	  ( ( 1938 / 2740 ) + ( 799 / 999 ) + ( 1280 / 1810 ) + ( 2056 / 3552 ) + ( 638 / 960 ) + ( 920 / 1382 ) ) 
-	   - 2.825em
+	   - 2.75em
   	);
   --arena: calc( 
 	  100vw / 
@@ -127,7 +127,7 @@ a amp-img {
   	);
   --wise: calc( 
 	  100vw /
-	  ( ( 1000 / 1416 ) + ( 2210 / 3181 ) + ( 640 / 960 ) + ( 1080 / 1350 ) )
+	  ( ( 640 / 960 ) + ( 1080 / 1350 ) )
 	   - 2.75em
   	);
   --write: calc( 
@@ -135,7 +135,11 @@ a amp-img {
 	  ( ( 900 / 1349 ) + ( 807 / 807 ) + ( 960 / 1035 ) )
 	   - 2.4em
   	);
-	
+  --uni: calc( 
+	  100vw /
+	  ( ( 1000 / 1416 ) + ( 2210 / 3181 ) + ( 1075 / 1474 ) )
+	   - 2.95em
+  	);
   --restrict: 32em;
   --coeff: 20em;
 }
@@ -491,19 +495,11 @@ article div {
 	max-width: calc( ( 4000 / 3000 ) * var(--restrict) );
 }
 }
-/*---wide screens section for improve, uni, life, wife ----*/
+/*---wide screens section for life, wife ----*/
 @media only screen and (min-width:960px) {
 #wise li {
 	display: inline-block;
 	}
-#ripped {
-	width: calc( ( 1000 / 1416 ) * var(--wise) );
-	max-width: calc( ( 1000 / 1416 ) * var(--restrict) );
-}
-#school {
-	width: calc( ( 2210 / 3181 ) * var(--wise) );
-	max-width: calc( ( 2210 / 3181 ) * var(--restrict) );
-}
 #exam {
 	width: calc( ( 640 / 960 ) * var(--wise) );
 	max-width: calc( ( 640 / 960 ) * var(--restrict) );
@@ -511,6 +507,24 @@ article div {
 #wife {
 	width: calc( ( 1080 / 1350 ) * var(--wise) );
 	max-width: calc( ( 1080 / 1350 ) * var(--restrict) );
+}
+}
+/*---wide screens section for improve, uni, courses ----*/
+@media only screen and (min-width:960px) {
+#uni li {
+	display: inline-block;
+	}
+#ripped {
+	width: calc( ( 1000 / 1416 ) * var(--uni) );
+	max-width: calc( ( 1000 / 1416 ) * var(--restrict) );
+}
+#school {
+	width: calc( ( 2210 / 3181 ) * var(--uni) );
+	max-width: calc( ( 2210 / 3181 ) * var(--restrict) );
+}
+#arrows {
+	width: calc( ( 1075 / 1474 ) * var(--uni) );
+	max-width: calc( ( 1075 / 1474 ) * var(--restrict) );
 }
 }
 /*---wide screens section for write, website, type ----*/
@@ -1308,9 +1322,46 @@ Speech Tutor</a></li>
 <nav>
 <article id="newArticles">
 <h2>New Articles</h2>
-<ul>
+<ul id="uni">
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/improve.html" target="_blank">
+	<div id="ripped">
+		<amp-img src="https://nakigoe.github.io/_IMG/improve.jpg"
+		width="1000"
+		height="1416"
+		layout="responsive"
+		alt="Improve: Get Ripped!"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="Improve: Get Ripped!">
+		</amp-img>
+	</div>
+	Improve: Get Ripped</a></li>
+	<li><a property="significantLink" href="https://nakigoe.github.io/articles/uni.html" target="_blank">
+	<div id="school">
+		<amp-img src="https://nakigoe.github.io/_IMG/school.jpg"
+		width="2210"
+		height="3181"
+		layout="responsive"
+		alt="University Preparation Girl"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="University Preparation Girl">
+		</amp-img>
+	</div>
+	Enter Uni</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/courses.html" target="_blank">
-	Courses for Leaders</a></li>
+	<div id="arrows">
+		<amp-img src="https://nakigoe.github.io/_IMG/aweme.jpg"
+		width="1075"
+		height="1474"
+		layout="responsive"
+		alt="Awe Me Bow Girl!"
+		property="primaryImageOfPage" typeOf="ImageObject">
+		<meta property="representativeOfPage" content="True">
+		<meta property="caption" content="Awe Me Bow Girl!">
+		</amp-img>
+	</div>
+	World Best Video-Courses</a></li>
 </ul>
 	<ul id="write">
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/write.html" target="_blank">
@@ -1357,32 +1408,6 @@ Speech Tutor</a></li>
 	</ul>
 	
 	<ul id="wise">
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/improve.html" target="_blank">
-	<div id="ripped">
-		<amp-img src="https://nakigoe.github.io/_IMG/improve.jpg"
-		width="1000"
-		height="1416"
-		layout="responsive"
-		alt="Improve: Get Ripped!"
-		property="primaryImageOfPage" typeOf="ImageObject">
-		<meta property="representativeOfPage" content="True">
-		<meta property="caption" content="Improve: Get Ripped!">
-		</amp-img>
-	</div>
-	Improve: Get Ripped</a></li>
-	<li><a property="significantLink" href="https://nakigoe.github.io/articles/uni.html" target="_blank">
-	<div id="school">
-		<amp-img src="https://nakigoe.github.io/_IMG/school.jpg"
-		width="2210"
-		height="3181"
-		layout="responsive"
-		alt="University Preparation Girl"
-		property="primaryImageOfPage" typeOf="ImageObject">
-		<meta property="representativeOfPage" content="True">
-		<meta property="caption" content="University Preparation Girl">
-		</amp-img>
-	</div>
-	Enter Uni</a></li>
 	<li><a property="significantLink" href="https://nakigoe.github.io/articles/life.html" target="_blank">
 	<div id="exam">
 		<amp-img src="https://nakigoe.github.io/_IMG/exam.jpg"
