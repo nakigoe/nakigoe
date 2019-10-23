@@ -653,7 +653,19 @@
       <priority>0.6</priority>
 
    </url>
-   
+
+   <url>
+
+      <loc>https://nakigoe.github.io/ja/saisei.html</loc>
+
+      <lastmod>2019-10-23</lastmod>
+
+      <changefreq>daily</changefreq>
+
+      <priority>0.9</priority>
+
+   </url>
+	
    <url>
 
       <loc>https://nakigoe.github.io/ja/igo.html</loc>
@@ -662,7 +674,7 @@
 
       <changefreq>daily</changefreq>
 
-      <priority>0.5</priority>
+      <priority>0.9</priority>
 
    </url>
    

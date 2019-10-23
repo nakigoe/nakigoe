@@ -34,8 +34,8 @@
 :root {
   --coeff: calc( 
 	  100vw / 
-	  ( ( 1440 / 1018 ) + ( 2048 / 1638 ) ) 
-	   - 1.75em
+	  ( ( 1440 / 1018 ) + ( 2508 / 3541 ) + ( 2048 / 1638 ) ) 
+	   - 1.95em
   	);
   --restrict: 24em;
 }
@@ -45,6 +45,10 @@ a amp-img {
 .true {
 	width: calc( ( 1440 / 1018 ) * var(--coeff) );
 	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.injured {
+	width: calc( ( 2508 / 3541 ) * var(--coeff) );
+	max-width: calc( ( 2508 / 3541 ) * var(--restrict) );
 }
 .write {
 	width: calc( ( 2048 / 1638 ) * var(--coeff) );
@@ -403,6 +407,30 @@ amp-social-share[type="telegram"]:hover {
 .external a{
 	color: #eee;
 	}
+/*------------------------ Navigation query ----------------------*/	
+@media only screen and (max-width:800px) {
+	.rightLink {
+		float: none;
+	}
+	#topNav .rightLink, #topNav .compact {
+		display: none;
+	}
+	nav .rightLink {
+	margin-right: 0;/*temporary draft*/
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+	.true, .injured, .write {
+		width: auto;
+		max-width: 100vw;
+	} 
+	}
 /* --------- text width section , images 100vw ---------------- */
 h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
 		width: 60%;
@@ -511,10 +539,23 @@ p, .list	{
 </amp-img>
 </div>
 メインメニュー</a></li>
+<li class="compact"><a property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
+<div class="injured">
+<amp-img src="https://nakigoe.github.io/_IMG/injured.jpg"
+  width="2508"
+  height="3541"
+  layout="responsive"
+  alt="グロ：マシンガンの女の子"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="グロ：マシンガンの女の子">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/injured.jpg">
+</amp-img>
+</div>
+負けからの再生</a></li>
 </ul>
 
 <ul class="rightLink">
-<li><a property="significantLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
+<li><a property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
 <div class="write">
 <amp-img src="https://nakigoe.github.io/_IMG/tutor-ja.jpg"
   width="2048"
@@ -522,7 +563,7 @@ p, .list	{
   layout="responsive"
   alt="英語の先生"
   property="image" typeOf="ImageObject">
-  <meta property="caption" content="True">
+  <meta property="caption" content="英語の先生">
   <meta property="url" content="https://nakigoe.github.io/_IMG/tutor-ja.jpg">
 </amp-img>
 </div>
@@ -661,10 +702,23 @@ p, .list	{
 </amp-img>
 </div>
 メインメニュー</a></li>
+<li><a property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
+<div class="injured">
+<amp-img src="https://nakigoe.github.io/_IMG/injured.jpg"
+  width="2508"
+  height="3541"
+  layout="responsive"
+  alt="グロ：マシンガンの女の子"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="グロ：マシンガンの女の子">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/injured.jpg">
+</amp-img>
+</div>
+負けからの再生</a></li>
 </ul>
 
 <ul class="rightLink">
-<li><a property="significantLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
+<li><a property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
 <div class="write">
 <amp-img src="https://nakigoe.github.io/_IMG/tutor-ja.jpg"
   width="2048"
@@ -672,12 +726,13 @@ p, .list	{
   layout="responsive"
   alt="英語の先生"
   property="image" typeOf="ImageObject">
-  <meta property="caption" content="True">
+  <meta property="caption" content="英語の先生">
   <meta property="url" content="https://nakigoe.github.io/_IMG/tutor-ja.jpg">
 </amp-img>
 </div>
 英語と数学の先生</a></li>
 </ul>
+
 <a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
 <div id="love">
 <amp-img src="https://nakigoe.github.io/_IMG/love.jpg"

@@ -1,0 +1,1722 @@
+<!DOCTYPE HTML>
+<html amp lang="ja">
+<head>
+	<meta charset="utf-8">
+	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+	<script async src="https://cdn.ampproject.org/v0.js"></script>
+	<script async custom-element="amp-fit-text" src="https://cdn.ampproject.org/v0/amp-fit-text-0.1.js"></script>
+	<script async custom-element="amp-social-share" src="https://cdn.ampproject.org/v0/amp-social-share-0.1.js"></script>
+    <link rel="canonical" href="https://nakigoe.github.io/ja/saisei.html">
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <!--[if lt IE9]><script> src="http::/html5.shim/googlecode.com/svn/trunk/html5.js"</script><![end if]-->
+    <title>負からの再生</title>
+    <meta name="description" content="負けた時からの再生。勝つ！">
+	<meta name="author" content="Awesome Angel">
+	<meta name="designer" content="Awesome Angel">
+	<meta name="copyright" content="Awesome Angel">
+	<meta name="owner" content="Awesome Angel">
+	<meta name="coverage" content="Worldwide">
+    <meta name="distribution" content="Global">
+	<meta name="rating" content="General">
+	<meta name="revised" content="2019-10-23">
+	<meta name="theme-color" content="#1a0000">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#1a0000">
+	<meta name="msapplication-navbutton-color" content="#1a0000">
+	<meta name="msapplication-TileColor" content="#1a0000">
+	<meta name="msapplication-TileImage" content="https://nakigoe.github.io/_IMG/meow.png">
+	<link rel="icon" href="https://nakigoe.github.io/_IMG/meow.png">
+	<link rel="apple-touch-startup-image" href="https://nakigoe.github.io/_IMG/meow.png">
+	<link rel="apple-touch-icon-precomposed" href="https://nakigoe.github.io/_IMG/meow.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,400">
+
+<style amp-custom>
+:root {
+  --coeff: calc( 
+	  100vw / 
+	  ( ( 1440 / 1018 ) + ( 664 / 896 ) + ( 2048 / 1638 ) ) 
+	   - 1.9em
+  	);
+  --restrict: 24em;
+}
+a amp-img {
+	margin-top: .2em;
+	}
+.true {
+	width: calc( ( 1440 / 1018 ) * var(--coeff) );
+	max-width: calc( ( 1440 / 1018 ) * var(--restrict) );
+}
+.go {
+	width: calc( ( 664 / 896 ) * var(--coeff) );
+	max-width: calc( ( 664 / 896 ) * var(--restrict) );
+}
+.write {
+	width: calc( ( 2048 / 1638 ) * var(--coeff) );
+	max-width: calc( ( 2048 / 1638 ) * var(--restrict) );
+}
+#injured {
+	max-width: 2508px;
+	margin: .2em auto 0;
+	}
+html,body,header,h1,h2,ul,li,p,div{
+	margin:0;
+	padding:0;
+	}
+body{
+	color: #eee;
+	width: 100%;
+	background-color:#1a0000;
+	}
+nav {
+	margin: 0;
+	background-color: #120000;
+	}
+nav .rightLink {
+	margin-right: .75em;/*temporary draft*/
+}
+nav li{
+	display:inline-block;
+	margin-bottom: 0.4em;
+	}
+nav a{
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	}
+nav ul{
+	display: inline-block;
+}
+main {
+	width: 100%;
+	margin: 0 auto;
+	}
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+	}
+.phrase {
+	display: inline-block;
+}
+blockquote {
+	width: 100%;
+	margin: 1em auto;
+	text-align: right;
+	font-family: "Nunito Sans", sans-serif;
+	font-weight: 200;
+	font-size: 1.2em;
+	font-style: italic;
+}
+cite {
+	color: white;
+	display: block;
+	text-align: right;
+	}
+/*---------------------- Logo and Headline -------------*/
+.intro {
+	display: flex;
+	align-items: center;
+	}
+#meow {
+	display: inline-block;
+	width: 40%;
+	position: relative;
+	z-index: -1;
+	}
+#magnum {
+	display: inline-block; 
+	width: 100%; 
+	margin-left: -6.9%;
+	}
+#appellation {
+	text-align: center; 
+	padding-left: 1em; 
+	padding-top: .6em; 
+	padding-bottom: .3em; 
+	padding-right: 1em; 
+	line-height: normal; 
+	position: relative; 
+	z-index: 10;
+	}
+h1 {
+	font-family:"Nunito Sans", sans-serif;
+	text-align: center;
+	/*font-size: 4em;*/
+	letter-spacing: .12em;
+	text-shadow:0 0 .6em white, 0 0 .6em white;
+	}
+h1 span {
+	font-size: .5em;
+	line-height: 200%;
+	/* for adobe font font-weight: 200;*/
+	text-align: center;
+	text-shadow:0 0 .6em white;
+	}
+.lang li {
+	display: block;
+	}
+.lang {
+	margin-right: .75em;/*temporary draft*/
+	margin-left: auto;
+	}
+.lang a {
+	text-align: center;
+	width: auto;
+	display: block;
+	}
+h2 {
+	font-family: 'Nunito Sans', sans-serif;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white, 0 0 .3em white;
+	margin:.48em 0 .2em .2em;
+}
+h3 {
+	font-family: 'Nunito Sans', sans-serif;
+	font-size:2em;
+	letter-spacing: .15em;
+	text-shadow:0 0 .6em white;
+	margin-left:0.5em;
+	margin-bottom:.5em;
+	}
+ul, li {
+	list-style:none;
+	}
+a  {
+	font-size: 1.6em;
+	display: inline-block;
+	color: #ffb;
+	margin: .5em 0 0 .7em;
+	padding: .2em .4em;
+	text-decoration: none;
+	outline: 0;
+	white-space:nowrap;
+	border-radius: 1em;
+	background-color: #000;
+	box-shadow:0 0 .5em white;
+	background-image: linear-gradient(180deg,rgba(255,255,255,0.90) 0%,rgba(137,137,137,0.00) 50.78%,rgba(0,0,0,1.00) 100%);
+}
+a:hover {
+	color:white;
+	text-shadow: 0 0 1em white;
+	box-shadow: 0 0 2em white;
+	background-color:#555;}
+a:active{
+	color:white;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+	}
+.alert {
+	color: #FF6600;
+	background-color: #1a0000;
+	box-shadow: 0 0 .5em red;
+	background-image: linear-gradient(180deg, rgba(255, 0, 255, 1.00) 0%, rgba(255, 0, 149, 0.50) 50.0%, rgba(25, 0, 0, 1.00) 100%);
+	/*-----margin was .5em (experiment for different screens)-----*/
+}
+.alert:hover {
+	color: yellow;
+	text-decoration: none;
+	padding: .2em .4em;
+	outline: 0;
+	white-space: nowrap;
+	border-radius: 1em;
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em red;
+	background-color: #500;
+	background-image: linear-gradient(180deg, rgba(255, 0, 255, 0.90) 0%, rgba(255, 0, 0, 0.50) 50.0%, rgba(50, 0, 0, 1.00) 100%);		
+}
+.rightLink {
+	float: right;
+}
+.cf:before,
+.cf:after {
+    content: ""; 
+    display: table; 
+}
+.cf:after {
+    clear: both;
+}
+.cf {
+    zoom: 1;
+}
+.list {
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+	letter-spacing:.02em;
+	font-size:1.4em;
+	margin-left:1.5em;
+	line-height:1.5em;
+	}
+small {
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+}
+hr {
+	display:block;
+	box-shadow:0 0 .5em .1em white;
+	margin: 2.8em 0 2em;
+	}
+kbd {
+	border: 1px solid #eee;
+	border-radius:.4em;
+	padding:.2em .4em;
+	}
+p {
+	line-height: 1.5;
+	text-align: justify;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-family: 'Nunito Sans', sans-serif;
+    font-weight: 200;
+	font-size:1em;
+	letter-spacing:.02em;
+	}
+em {color:#fff;}
+
+li small  {
+	font-size:0.65em;
+	color:#eee;
+	margin-left:auto;
+	margin-top:.25em;
+	}
+.center{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	}
+.how {
+	text-align: center;
+}
+.price {
+	text-align: center;
+	margin-top: 2.5em;
+}
+.price p{
+	text-align: center;
+}
+footer {
+	width:95%;
+	margin: 2.8em auto 0;
+	}
+.contacts {
+	margin: 1.65em auto;
+	max-width: 270px;
+	text-align: center;
+}
+.contacts p {
+	text-align: center;
+	margin-bottom: 1.65em;
+}
+.contacts a {
+	margin-top: 1.5em;
+	margin-bottom: .45em;
+}
+#copyright{
+	margin: 1.5em auto;
+	text-align: center;
+}
+.social {
+	display: block;
+	margin: 1.5em auto;
+	text-align: center;
+}
+.social p {
+	margin-bottom: 1.5em;
+	text-align: center;
+	font-weight: 400;
+}
+amp-social-share {
+	border-radius: 50%;
+	background-size: 60%;
+	border: solid thin #FF0000;
+	box-shadow: 0 0 5px white;
+	margin: .25em;
+}
+amp-social-share:hover {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+}
+amp-social-share:active {
+	text-shadow: 0 0 1em red;
+	box-shadow: 0 0 2em white;
+	background-size: 90%;
+	position: relative;
+	top: 1px; /*offset*/
+	text-shadow: 0 0 1em white;
+}
+amp-social-share[type="vk"] {
+	background-color: #5D7EFF;
+	background-size: 50%;
+	background-image: url(../_SVG/vk.svg);
+}
+amp-social-share[type="vk"]:hover {
+	background-size: 75%;
+}
+amp-social-share[type="ok"] {
+	background-color: orangered; /*orangered*/
+	background-size: 50%;
+	background-image: url(../_SVG/ok.svg);
+}
+amp-social-share[type="ok"]:hover {
+	background-size: 75%;
+}	
+amp-social-share[type="livejournal"] {
+	background-color: #21A5D8;
+	background-size: 50%;
+	background-image: url(../_SVG/livejournal.svg);
+}
+amp-social-share[type="livejournal"]:hover {
+	background-size: 75%;
+}
+amp-social-share[type="telegram"] {
+	background-color: #1e96c8;
+	background-size: 50%;
+	background-image: url(../_SVG/telegram.svg);
+}
+amp-social-share[type="telegram"]:hover {
+	background-size: 75%;
+}
+#love {
+	width: 100%;
+	max-width: 4416px;
+}
+#me amp-img {
+	margin-top: 0;
+	}
+#me{
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	/*margin-top: 0;*/
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border-bottom: hidden;
+	border-left: hidden;
+	border-right: hidden;
+	border-top: hidden;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	width: 100%;
+	box-shadow: 0 0 2em red;
+	text-align: center;
+	}
+#me:hover {box-shadow:  0 0 2em red, 0 0 2em red;}
+
+.external a{
+	color: #eee;
+	}
+/*------------------------ Navigation query ----------------------*/	
+@media only screen and (max-width:719px) {
+	.rightLink {
+		float: none;
+	}
+	#topNav .rightLink, #topNav .compact {
+		display: none;
+	}
+	nav .rightLink {
+	margin-right: 0;/*temporary draft*/
+}
+	nav a, nav li, nav ul {
+		display: block;
+	} 
+	nav a{
+		text-align: center;
+		margin-left: .5em;
+		margin-right: .5em;
+	}
+	.true, .go, .write {
+		width: auto;
+		max-width: 100vw;
+	} 
+	}
+/* --------- text width section , images 100vw ---------------- */
+h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
+		width: 60%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+@media only screen and (max-width: 1300px) {
+	h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
+		width: 70%;
+	}
+	}
+
+@media only screen and (max-width: 960px) {
+	main {
+		width: 100%;
+	}
+	h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width: 800px) {
+	main {
+		width: 100%;
+	}
+	h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;	
+	}	
+	}
+@media only screen and (max-width:600px) {
+	main {width: 100%;}
+	h1:not(.logo),h2,h3,h4,p,hr, .list, .external {
+		width: 96%;
+		margin-left: auto;
+		margin-right: auto;	
+	}
+	}
+
+/*----- font size formatting section: these are standard font measures, adjust the font-size if the type-face requires it -----*/
+h2 {
+	font-size: calc(1.5em + 2.5vmin);
+}
+p, .list	{
+	font-size: 1em;
+	font-stretch: semi-condensed;
+	}
+.lang a, nav a, article a {
+	font-size: 1.2em;
+	font-stretch: semi-condensed;
+	}
+
+@media only screen and (min-width: 60em) {
+	p, .list {
+	font-size: 1.125em;
+	font-stretch: normal;
+	}
+	.lang a, nav a, article a {
+	font-size: 1.35em;
+	font-stretch: normal;
+	}
+}
+@media only screen and (min-width: 120em) {
+	p, .list {
+	font-size: 1.375em;
+	font-stretch: semi-expanded;
+	}
+	.lang a, nav a, article a {
+	font-size: 1.65em;
+	font-stretch: semi-expanded;
+	}
+}
+</style>
+</head>
+
+<body vocab="http://schema.org/" typeof="WebPage">
+<amp-analytics type="googleanalytics">
+<script type="application/json">
+{
+  "vars": {
+    "account": "UA-114280489-1"
+  },
+  "triggers": {
+    "trackPageview": {
+      "on": "visible",
+      "request": "pageview"
+    }
+  }
+}
+</script>
+</amp-analytics>
+<nav id="topNav" class="cf">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="メイン"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="メイン">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+メインメニュー</a></li>
+<li class="compact"><a property="relatedLink" href="https://nakigoe.github.io/ja/igo.html" target="_blank">
+<div class="go">
+	<amp-img src="https://nakigoe.github.io/_IMG/go.jpg"
+	width="664"
+	height="896"
+	layout="responsive"
+	alt="Girls Playing WeiQi | Igo in a bath"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Girls Playing WeiQi | Igo in a bath">
+	<meta property="url" content="https://nakigoe.github.io/_IMG/go.jpg">
+	</amp-img>
+</div>
+囲碁で勝つ手</a></li>
+</ul>
+
+<ul class="rightLink">
+<li><a property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
+<div class="write">
+<amp-img src="https://nakigoe.github.io/_IMG/tutor-ja.jpg"
+  width="2048"
+  height="1638"
+  layout="responsive"
+  alt="英語の先生"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/tutor-ja.jpg">
+</amp-img>
+</div>
+英語と数学の先生</a></li>
+</ul>
+</nav>
+
+<main>
+<article>
+<header class="intro">
+<div id="meow">
+<amp-img src="https://nakigoe.github.io/_IMG/meow.png"
+  width="2048"
+  height="2048"
+  layout="responsive"
+  alt="Awe Angel Logo"
+  property="logo" typeOf="ImageObject">
+  <meta property="caption" content="Awe Angel Logo">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/meow.png">
+</amp-img>
+</div>
+<div id="magnum">
+<amp-fit-text layout="responsive" width="3" height="1">
+<h1 id="appellation" property="name">負けからの再生<br> <span>Awe&nbsp;Angel</span></h1>
+</amp-fit-text>
+</div>
+</header>
+<div id="injured">
+<amp-img src="https://nakigoe.github.io/_IMG/injured.jpg"
+  width="2508"
+  height="3541"
+  layout="responsive"
+  alt="Guro: Injured Girl with a Machine-Gun"
+  property="primaryImageOfPage" typeOf="ImageObject">
+  <meta property="representativeOfPage" content="True">
+  <meta property="caption" content="Guro: Injured Girl with a Machine-Gun">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/injured.jpg">
+</amp-img>
+</div>
+<h2>大災害</h2>
+<p>最悪の夏だった。普通に酷く。悪魔の様な夏。吐くの様な夏。朝から夜まで、40年間の生地獄。</p>
+<p>（直継）うほ…　やっぱし生で見ると
+迫力ありすぎ祭り。
+（フェデリコ）七なる庭園のルセアート。
+（ヴォイネン）偵察隊の報告どおり
+こいつも　ヘイロースにいたのと
+そっくりですね。
+さっさと終わらせて
+チキン　ありつこ～ぜ。
+さっさとは　いかないだろうけど
+打ち合わせどおりに進めれば
+何とかなるはずだよ。
+（てとら）で？　ぶちゃけ勝率は？
+シロエさん。
+五分と…　五分。
+（オープニングテーマ）
+…２０ｍ圏内に入りました！
+気を付けて！
+（ディンクロン）来い！
+ぐぉぉおお…！
+（浮世）ヒール！
+（東湖）障壁　張ります！
+射程内　到達！
+アンカー・ハウル！
+（念話・ウィリアム＝マサチューセッツ）
+っしゃ！　いくぜ　レイダーども！
+攻撃　開始ィィ！
+（ウィリアム）第３　第４は　火力重視！
+第２の前衛は　追従
+他は　第１のメイン盾を
+補助と　アタッカーのバフ！
+いけない！
+（念話）警戒！
+ルセアートのモーションに注意！
+ぬおおお！
+わきゃ～っ！
+…即死　２。　クリティカルの条件不明
+前衛のバフを強化！
+細雪　カウントォ！
+（細雪）１　２…。
+（念話・ウィリアム）
+二人の蘇生と　手負いの
+回復の間は　遠距離で削れ！
+今の特技　見覚えはありますが。
+ヘイロースの時とは段違い。
+（順三）
+モーションから発動までが　短いな。
+２３　２４…。
+（エルテンディスカ）来ます！
+（羅喉丸）下がれ　下がれ！
+（念話）…いや　モーションが違う。
+別の技です！
+（プロメシュース）一撃一撃が　重い…！
+（ポロロッカ）位置取りミスっても
+即死だな。
+（念話・細雪）８８　８９　９０…。
+来る！
+防御！
+セイクリッドウォール！
+サンクチュアリ！
+（ハイランドスカイ）
+しのいだら　即カウンターだな！
+合点しょ～ちのスケ！
+…即死　ゼロ！
+リキャスト・タイム　９０秒！
+（デミクァス）さっさと回復させろ！
+やってるってば～。
+（念話・ウィリアム）
+回復　障壁　済んだ奴から
+ガンガン行けぇ！
+特技発動後は　スキだらけだな！
+（中居河太郎）
+こちらも　攻撃に回ります！
+二発目で　もう即死ナシか
+大したモンだぜ。
+（念話）うん。
+さすがの対応の早さだね。
+ダメージ　あげろォ！
+ちんたらしてんじゃねぇ。
+回転上げて　削れぇぇ！
+クロス・スラッシュ！
+（フェデリコ）ラウンドウィンドミル！
+（デミクァス）ターニングスワロー！
+（えんかーたんと）レゾナンス・ビート！
+立ち上がり　順調ですね！
+（爆発音）
+一拍待て！　ＤＰＳ　上げすぎだ！
+このままじゃ　ヘイトが…
+これは…　行動
+いや　移動阻害！
+（ボロネーゼ親方）
+奴の足元から　わいておるぞ！
+（ハイランドスカイ）う　動けね～っす！
+（ディンクロン）ダメージあり！　属性　邪毒！
+（念話・ディンクロン）
+攻撃速度　及び　威力も低下！
+　心の声　
+これも　ヘイロースに無かったパターンだ。
+ダメージは　小さいようだけど…。
+（ディンクロン）アンカー・ハウル！
+んな？　無視！？
+アンカー・ハウルが　通じてない…？
+（ウィリアム）ダメージの小さい
+広範囲拘束攻撃…！
+危ない！
+（念話・ウィリアム）範囲遮断！
+範囲回復！　踏ん張れぇっ！
+ヤベ…！
+うわっ！
+うっ！
+アッ　オイ！
+（念話）
+…し　死亡　１０　いや　１１…！
+…第１のヒーラーは　前線維持
+第２　下がって蘇生復旧
+３　４は　ダメージ落とせ　７割だ。
+復旧優先…！
+へへ…　面白ぇ…！
+これこそ　レイドだぜ！
+（デミクァス）ライトニングストレェェトォォ！
+ワイヴァーンキィィック！
+ヤロォ…。
+カベ役　スイッチ！
+直継　引きつけろ！
+任せとけ祭り！
+こっち向きやがれ　デカイのォ！
+ダメージ蓄積からの　モードチェンジ…。
+前は　ダンジョンギミックでの
+発動だったけど。
+（念話・浮世）こっちのは
+自在に使えるってわけね。
+（念話・ヴォイネン）
+真・白騎士モードってとこですかね。
+（念話）これからです。
+…気を抜かないで！
+（ボロネーゼ親方）偵察隊の報告どおり
+鎧の破片が　モンスターになりおった。
+（フェデリコ）
+ったく　うじゃうじゃと…。
+メンドいな　コイツら。
+ザコなんざ　大した事ねぇ
+いけるぜ！
+前衛は　レイドモブを引きつけろ！
+他は　ルセアートに攻撃を集中！
+ぬん！
+うおっと！
+ぬぐ！
+オラァ！
+…あン？
+ナンだ…。
+アッチャ～　マズイよ　直継さん。
+マジかよ…！
+ＨＰが　回復してやがる。
+なるほど。
+影の先兵を　一体倒すごとに
+ルセアートのＨＰが　回復するのか。
+おい！　黒騎士モードに戻ってるぞ！
+せわしない奴だ。
+８８　８９　９０…！
+待て待て
+こいつら　邪魔…！
+（一同）どわ～…！
+ちまちま回復しよ～が
+カンケーねえ！
+回復が追いつかね～勢いで殴れ！
+削れぇっ！
+（デミクァス）何でぇ　またかよ！
+（ボロネーゼ親方）これは　やっかい。
+せいっ！
+はわっ！
+わ～い　キリがないですねェ。
+全員で　デカイ方　殴りゃ
+いいだろ～が！
+影の先兵は　無視できない！
+一撃の重さは
+後衛職の脅威になる。
+下手すれば　連携が崩壊する！
+（念話）問題は　人数だ。
+黒騎士モードのルセアートに
+ダメージを与えた人数と同じだけ
+影の先兵が生まれる。
+ほうほう　って事は…。
+攻撃は　高いダメージを
+たたき出す者に絞り　人数を抑え
+他のメンバーは　補助に徹すれば…。
+フン！
+タア！
+（念話）出現する影の先兵を
+１０体前後までで　コントロールできる。
+聞いたであろう
+倒さぬよう　引きつけろ！
+分かってらぁ！
+ぬぐ…。
+　心の声　
+悔しいが…
+今の俺じゃ　奴に勝てねェ。
+いや…　許したわけじゃねぇ。
+いつか　ぶっ潰してやる。
+その時は　みんなの前でだ。
+青白いそのツラを　叩きのめして
+後悔の涙に　暮れさせてやる！
+残りＨＰ　５割ちょいだよ！
+よし　いけそうですね！
+　心の声　（デミクァス）このレイドで
+幻想級を　手に入れて…！
+レベルを上げ　技を磨き…！
+（ゲートが開く音）
+　心の声　
+（デミクァス）エンチャンター…　クソエンクのシロエ！
+いつか　お前を…！
+６９　７０　７０…
+なっ！？
+（ウィリアム）んなっ…！？　こいつは…
+タルタウルガーだと！？
+え…！？
+（浮世）キャーッ！
+イブラ・ハブラだよ～！？
+（東湖）そんなバカな！
+ここは　ルセアートのゾーンですよ！？
+んな…　ありえね～だろ
+こんなん…。
+レイドボスが…。
+同時に　３体だと…！？
+（ポロロッカ）何でだよ！
+汚ねぇぞ！
+（軟体＠アキバ）レイドボスは１体ずつ
+それが　ルールでは！？
+正々堂々と…。
+（ウィリアム）…ザケンなよ
+ムリゲーかっつ～の…
+こんなもん…　勝てっこねぇ…！
+（デミクァス）シロエェェェ！
+うわ？
+シロ！
+へっ…　ざまァみろ
+とんだ間抜けヅラだぜ。
+（シロエ　直継）うわっ！
+（クリスマスソング）
+え…？　ここは…。
+　心の声　
+…僕の街？
+僕が生まれて育った…。
+看板が…？
+何て店だっけ…。
+　心の声　
+ああ　そうか…
+記憶を失うって　こういう事か…。
+そうだ　僕は死んだんだ…。
+　心の声　
+これといって
+特徴のない町だった。
+住むのに不便はない。
+でも
+ちょっと何かを探そうと思うと
+都心に出なければならない。
+小さな　普通の　よくある町。
+（ドアが開く音）
+…あ。
+　心の声　
+僕だ。
+　心の声　
+両親が共働きだった僕は
+よく家を抜け出し
+夜の街を　歩き回っていた。
+一人で過ごす家は
+ベッドの中にいても
+つらい気持ちが
+追いかけてきた。
+繁華街に行くのは　怖かった。
+それで…。
+　心の声　
+たくさんの夜を
+このベンチで過ごした。
+何かイヤな気持ちになった時
+それを忘れるには
+そうするしかなかったんだ。
+…そうか。　だから
+ここに来たんだ
+また　失敗しちゃったから…。
+　心の声　
+…大人びた子供だって
+よく言われてた。
+確かに　年の割に理解力も
+自制心もあったと思う。
+でも　そのせいで
+自分から　同世代の子たちと
+距離を置いてしまった。
+（ため息）
+　心の声　
+…たくさんの間違いを犯した。
+他人の親切を
+バカにしてしまった。
+差し伸べられた手を
+振り払ってしまった。
+踏みとどまって
+戦わなければならない場所を
+投げ出してしまった。
+両親の苦労や　気持ちを
+分かってあげる事ができなかった。
+　心の声　
+どれも　ささいで
+取り返しのつかない失敗だ。
+その度に　ここに来て
+僕は泣いていた。
+もう二度としないと誓っても
+また繰り返して…。
+　回想　
+死ぬと　いろいろ分かんだよ。
+下手くそとか　セコいとことか
+つまんね～とことか。
+百回　死ねば
+百回　分かんだよ。
+それが　つらくて
+続かねえんだ。
+　心の声　
+そうか。　死ぬって
+こういう事だったんだ。
+死にたい気持ちに
+なるという事…。
+それなら　何度だって味わった。
+大切にしていたノートを捨てた夜も
+作り笑顔で　いってらっしゃいを
+言った夜も
+図書館に　お別れをした夜も…
+何度も　何度も味わった…。
+デミクァスは　なぜ
+僕を突き飛ばしたんだろう？
+ウィリアムは　なぜ　僕の頼みを
+引き受けてくれたんだろう？
+直継は　どうして　僕に
+ついてきてくれたんだろう…。
+僕は　僕を信じてくれる
+大切な人たちにも
+隠し事を　しているのに。
+　回想　
+（ミノリ）ミナミのスパイが　アキバに
+入り込んでいる可能性もある…
+どこから情報が漏れるか
+分からない　という事ですね？
+正解。
+　心の声　
+…僕が　本当に警戒しているのは
+ミナミじゃない。
+この世界には　僕たち冒険者と
+大地人の他に　ナニかがいる。
+僕たちを　この世界へと連れて来た
+３番目の誰かが…
+…その誰かが
+何者かを知るために
+円卓会議のコネを利用して
+調査を続けた。
+ロデリックさんには
+フレーバーテキストの可能性を。
+ソウジロウには
+モンスターの生体変化を。
+ミチタカさんには
+南方の植物についてを。
+カラシンさんには　イースタルの
+民間説話の収集と整理を。
+もちろん　調査の本当の目的は
+明かさないまま。
+う～ん…。
+　心の声　
+集められた資料の数々は
+この世界に　第三者などいないと
+思わせるものばかりだった。
+けど…。
+タイミングよく現れた証拠は
+僕が　そう思うよう
+用意されたモノに思えた。
+（苦笑）
+　心の声　
+それも　言い訳だな。
+心配をかけまいと
+思っての事だとしても
+迷惑をかけている事に
+変わりはない。
+…あの時　二人が待っていてくれた
+ように　みんなも　きっと…
+僕が
+一人で　遠ざかっていただけで
+もっと　ちゃんと　みんなと
+向き合うべきだったんだ。
+…菫星さんにも。
+　心の声　
+疑って　言葉を惜しんだ。
+本心を明かして
+もっと　話すべきだったんだ。
+…？
+…そう。
+そうだよね。
+もう行かなくちゃ　ダメだよね…。
+このベンチから立ち上がって
+みんなの所へ…。
+…あ。　…地球？
+じゃあ　ここは　月…？
+　心の声　
+ラテン語…　確か　静かな海…
+やっぱり月だ。　でも　なんで…
+もしかして　テストサーバー？
+…ゲームである　エルダー・テイルは
+その全域を
+１３のサーバーで分割管理していた。
+テストサーバーは　そこに正式に
+加わっていない　１４番目のサーバーだ。
+月にあるって　噂では聞いてたけど
+まさか本当に…。
+こんなに静かな所だとは
+思わなかったよ。
+（アカツキ）うん…。
+（クリスタルが響く音）
+（クリスタルの音）
+何か…　消えてった…。
+感じたのか？　主君も。
+アカツキ。
+（波の音）
+すごいね。
+雪…　では　ないのだな。
+うん…。
+みんなの思い…。
+ささげられた記憶の欠片。
+もう一度　立ち上がるために…。
+アカツキは　倒れちゃったの？
+そっか　僕もなんだよね。
+死んじゃった。
+主君もか。
+うん。
+本当に　さんざんな
+クリスマス・イブだったな…　主君。
+失敗した。　見込みが甘かった。
+信じ切れなかった。
+私は　分かっていない。
+…勝てなかった事が
+悔しいわけでは　ない。
+そのために
+最善を　つくさなかった。
+なすべき事を　なさなかった。
+　心の声　
+アカツキ　君は倒れたかもしれない。
+けど
+まだ負けては　いないんだね。
+大丈夫。　僕が分かってる。
+君が頑張ってるって
+僕が　分かってるよ。
+だから　僕も…。
+…不思議だなぁ。　ここで　アカツキに
+会えるだなんて　思わなかった。
+うん　主君。　不思議だ。
+もう一度　やろうと思う。
+僕も　もう一度かな。
+…みんなに教えられた。
+主君…。
+（水滴が落ちた音）
+＜こうして　僕は蘇った＞
+（エンディングテーマ）
+（ウィリアム＝マサチューセッツ）
+…ザケンなよ　ムリゲーかっつの。
+（オープニングテーマ）
+　心の声　
+（ウィリアム）負けた…
+俺たちは　負けたんだ…。
+（ディンクロン）こんなの　ありかよ？
+（東湖）レイドボスが　いっぺんに
+三体も現れるなんて…。
+（ハイランドスカイ）あんまりだ…。
+（浮世）一体なんなのよ　あれ…？
+（ピアニッシモ）こ…　ここだけ
+なんでしょうか？
+（ヴォイネン）そうですね
+他のレイドゾーンも　みんな
+こんなふうになってたら…。
+（えんかーたんと）
+不可能…　ですね～。
+（ボロネーゼ親方）
+あぁ　レイドに勝利する事など…
+もはや　到底できん。
+（オーディソ）う　うぅ…。
+（ポロロッカ）
+俺たち　今まで必死になって
+何を…。
+（中居河太郎）訓練して
+装備を集めて　連携して
+失敗して　やり直して…。
+（アザレア）うまくいった時は
+うれしかったよなぁ。
+成長したって思えたし…。
+（エルテンディスカ）そういうの
+もう無くなっちゃったんだね。
+ぐすっ…。
+（羅喉丸）あぁ…　意味ねぇよ。
+もう何やったって無駄だ…。
+（プロメシュース）
+俺たちは　見捨てられたんだよ
+ゲームに…　エルダー・テイルにな。
+（クラスメートＡ）で　それって
+何の役に立つの？
+（クラスメートＢ）へ～　ゲーム？　ふ～ん。
+（クラスメートＣ）今どき　ＰＣで？
+ソシャゲで　よくね？
+（クラスメートＤ）休日に　家にいるの？
+くそ食らえだ…。
+（クラスメートＥ）お前　カラオケとか
+誘われなさそうだもんな。
+（クラスメートＦ）それって　パソコンに
+話しかけんでしょ？　わ～。
+（クラスメートＧ）もっと　将来の役に立つ
+趣味にすれば？
+（クラスメートＨ）
+まあ　そういう人もいるよね。
+いいんじゃね？
+くそ食らえだ。
+あ…。
+　心の声　
+何を言えば　いい？
+次は勝てるから　頑張ろう…
+他のレイドゾーンなら　大丈夫だ…
+うそだ
+んな事　言えねぇ。
+ちょっと待てよ。　どういう事だ？
+じゃあ　俺たちは　ここで…。
+（フェデリコ）
+これで　終わりかよ。
+（順三）ススキノに帰って　治安維持の
+善良ギルドにでもなるか…。
+それも　いいかもしれませんね。
+（軟体系＠アキバ）
+エッゾは　モンスターも多いですしね。
+（細雪）
+大地人には　感謝されるな。
+（ハイランドスカイ）
+大地人の彼女が　出来たりして。
+アハ…。
+それが
+賢い生き方ってヤツかもな…。
+（ウィリアム）そうかもしれない…。
+　心の声　
+でも　それじゃあ
+アイツらと同じじゃねぇか…。
+分かったふうな顔をして
+ありがてぇアドバイスとやらを
+してきやがった　アイツらと…。
+（ウィリアム）そうなんだろうな。
+そのとおりだと思うよ…
+でも　それがどうした…
+くそ食らえだ。
+…ウィリアム？
+負けちまったぜ。
+全滅だ…　もう　おしまいかもな。
+無駄だったんだろう。
+連中が　いつも言うように
+俺たちが　馬鹿で
+愚にもつかない事を
+やり続けてきただけなんだろうよ。
+引きこもりの　ゲームジャンキーだ。
+廃人だぜ。
+でも　それがどうした
+そんな事　先刻ご承知なんだ。
+分かってて　やってるんだ。
+でも　俺たちは　ゲームが好きなんだ。
+これを　選んだんだ。
+　心の声　
+これで　終わりでもいい。
+だがよ　譲れねぇ…
+譲っちゃいけねぇもんってのが
+あるんだよ。
+大した事ないさ
+レイドに負けただけだ。
+そんな事は　よくある事だ。
+ショックを受ける必要なんてない。
+だって　こんなのサーバーに記録された
+勝敗データが
+一個　増えるか増えないか
+ってだけの事じゃないか…
+ゲームなんて　子供の遊びだ。
+　心の声　
+違う　俺にとっちゃ特別だった。
+そろそろ大人になって　街に戻れよ
+なんて事は言わない。
+誰にだって　言わせない。
+俺らは負けて　糞虫で
+サイテーかもしれないけど
+神様にだって
+無駄だったなんて言わせねぇ。
+　心の声　
+そう　俺にとっちゃ
+宇宙の中心だ。
+（ウィリアム）
+サーバに記録されたビットの情報に
+何の意味が　あるかって？
+あるんだよ　意味が。
+俺があるって決めたんだ。
+それは　凄くて素晴らしいもんだ
+って　俺が決めたんだよ。
+神様の決めた
+正しい価値ってもんが　あって
+それが　万人に通じるはずだとか
+そういう与太を信じてる連中には
+分からねぇよ。
+どんなにアホに見えたって
+偽物じみた　金ぴかだって
+俺が　俺たちが
+それは凄いって思ったら
+それは　凄いんだよ。
+それが　選ぶって事じゃね～か。
+俺たちは　選んで
+ここにいるんだ！
+　心の声　
+そいつを侮辱する事は
+誰だろうと　許さねぇ！
+俺たちは　エルダー・テイルで過ごした…
+長い長い間　過ごした。
+そこに　強敵が現れて
+俺たちは　剣だの　弓だの担いで
+突撃するんだ。
+わ～って叫んで
+ガキみたいに　突っ込むのさ。
+そんでもって
+勝ったり　負けたりするんだよ。
+ああ　そうだよ。
+全部　サーバーの上で
+ビットが　パカパカ１になったり
+０になったりしてるだけだよ。
+それが　ど～した。　俺たちは
+そのために　血道を上げてんだ。
+それが　すげ～んだ！
+勝ったら　大喜びで戦勝記念だ。
+幻想級を山分けで　乾杯だ。
+負けたら　悔しくなって
+そのまま反省会で
+日をまたぐまで　騒ぐんだよ。
+くだらねぇって言いたければ
+言えよ。
+おもちゃだろうが　安ピカだろうが
+関係ない。
+俺らが　すげぇって思って　俺らが
+時間をぶっ込むって決めたら…
+それは　本物なんだよ！
+はぁ…。
+　心の声　
+で　俺たちは　そのレイドに負けた。
+犯すべからざる　神聖なものに。
+それで　どうする？
+俺は…　俺は　こいつらに
+何て言えばいい？
+何が言える？
+だって　俺たちは　それだろう？
+そういうのだったろう？
+いろいろ持ってる奴の事なんか
+知ったこっちゃねぇよ。
+　心の声　
+て　なんだよ　これ？
+何言ってんだ　俺？
+小器用に愛想よく暮らしていける
+奴は　なんでも持ってんだから
+そういうので　やってきゃ
+いいじゃねぇか。
+　心の声　
+なんの話だよ。
+お前ら　そういうの
+持ってるのか？
+　心の声　
+分かんねぇ。
+なんでもいいよ。　ドコでも行って
+誰とでも仲良くなれるようなさ。
+　心の声　
+けど　俺には
+もう　こんな事しか…。
+賢さでもいいし　格好良さでもいい
+明るい性格でも　いいし
+おもしれぇギャグでも　いいよ。
+何でもいいから　そういうリアルが
+キラキラしてる奴の　キラキラってのをさ
+持ってるのかよ…
+俺は　ね～よ。
+一個も持ってね～よ。
+俺はさ
+今まで　ずっと言わなかったし
+言えなかったけど
+お前らが　友達だよ。
+…え？
+だって俺　ゲームがなきゃ
+友達　作れねぇもん。
+カッコ悪いなぁ　俺。
+だっせぇ。
+…でも　ゲームがあったから
+やってこれたんだよ…
+ゲームがあったから
+お前らの考えが　分かるんだよ。
+ピコピコやって　あぁ　こいつは
+回復して欲しいんだな　とか
+こいつは後ろに下がってるけど
+本当は前に出てぇんだな　とか
+こいつは遠慮しがちだから
+言いだせないけど
+本当は　この魔法が強くなる
+腕輪が欲しいんだな　とかさ。
+それだけじゃねぇよ。
+こいつは
+仲間思いの奴だなぁ　とか
+臆病なのに
+声　振り絞ってんだなぁ　とか
+疲れてるのに　今日は気合い入れて
+ログインしたんだなぁ　とか
+そういうのが　分かるんだよ。
+俺には　本当に分かるんだよ。
+　心の声　
+そう。　そうなんだ。
+エルダー・テイルは　俺に
+たくさんの事を教えてくれた…
+他人の気持ちが分からない。
+独善的。　思いやりがない。
+協調性がない。
+堪え性がない。　空気が読めない。
+人の輪に　加わろうとしない。
+そう言われ続け　自分の方からも
+他人とつるむのを拒んでた。
+そんな俺でも　エルダー・テイルの中じゃ
+少しは
+誰かと　つながる事ができて
+そして　そいつを
+大事にしているかぎり
+エルダー・テイルは　たくさんの秘密を
+明かしてくれたんだ。
+最初に知ったのは　連携だった。
+うまくいく奴も　いる。
+そうでない奴も　いる。
+いい腕の奴も
+下手くそな奴らも…
+でも大事なのは　俺が
+相手に合わせるって事だった。
+下手に思えた奴でも
+そいつの　やりたい事を
+こっちが
+分かってないだけだったりした。
+そして　レイドを始めた。
+どういう訳か
+俺が　ギルドマスターになっちまって…
+次に知ったのは
+バカ話で盛り上がった夜は
+不思議と
+勝率が上がるって事だった。
+体調がいい仲間や
+悪い仲間がいる。
+悩みを抱えている仲間も
+当たり前の事だ。
+みんな　自分と同じだ
+という事が分かった。
+仲間の生活に関心を持ち
+相手が何をして欲しいのかも。
+そして俺は　周りに尋ねる事と
+寛容さを知った…
+それは　仲間たちが
+俺の癇癪を我慢するのを
+覚えたあとだった…
+レイドギルドの多くは　短命に終わる。
+レイドの結果
+アイテムを手に入れたとしても
+誰の物になるかは　分からない。
+その分け方に
+不満を持つメンバーも出てくるし
+損得勘定や　ギスギスした人間関係も
+生まれてくる。
+でも　俺たちは
+話し合う事を覚えた。
+俺は　仲間たちには
+何でも正直に話したし
+仲間たちも　俺の短気を許して
+信頼してくれた。
+そして…　シルバーソードの名前は
+新進気鋭のレイドギルドとして
+エルダー・テイルの世界で
+知られるようになっていった。
+（ウィリアム）
+だから　今だって分かるよ。
+…もう終わってるって感じだろ。
+ゲームオーバーだ。
+正真正銘の終わりって
+気分だよな。
+そうかもしれねぇよ。
+そうかもしれねぇけど…
+俺は　この世界に来た時
+ぶっちゃけ　うれしかったよ。
+え？
+お前らだって
+少しくらいは　そうだったろ？
+本当に１００％　嫌だった奴なんて
+ここには　いないんじゃないか？
+だって　この世界は
+エルダー・テイルなんだぜ。
+俺らが　アホみたいに入れ込んだ
+あの世界だ。
+俺らが　誰より得意な
+レイドの世界だ。
+これは　イケるんじゃねぇかって
+思ったよ。
+（ディンクロン）ウィリアム！
+（エルテンディスカ）ギルマス！
+おう。
+（ウィリアム）
+でも　そんな事より　なにより
+俺　お前らと一緒で
+うれしかったよ。
+お前ら　ゲームのままだもんな。
+俺もなんだけどよ。
+そんなのは　どうでもいいか。
+一緒にレイド　出来りゃいい。
+この世界には　俺たちを
+馬鹿にする奴は　誰もいねぇ。
+でも　だから　負けても逃げちゃ
+駄目なんだよ　俺らはさぁ！
+勝てねぇかもしれねぇ！
+まぁ　勝てねぇだろ。
+十中八九　負けだろ。
+でも　駄目なんだ。
+絶対に認めちゃ駄目な事って
+あんだろ。
+だいたい　それで帰って
+どうするんだよ。
+なにすんだよ？
+俺らから　コレとって
+何が残んだよ。
+他の連中がドン引きするくらい
+エルダー・テイル　やって来たんだぞ。
+俺の　この二年は
+丸ごと　エルダー・テイルだぜ。
+朝から晩まで
+その事　考えてた。
+飯食うのも　寝るのも
+風呂　入るのも
+全部　そのために
+やってたんだ。
+勉強するのだって
+エルダー・テイルのためだった。
+僕もだよ。
+ふ…。
+（ウィリアム）
+ド廃人だって　言いたきゃ言え。
+俺は　ドン引きゲーマーだ。
+レアアイテム一個で　一晩中　大喜び
+できるほどの　社会不適合者だ。
+クソ本気で　やって来たんだよ。
+でも　だから　たかがレイドボスが
+ニ体や三体　増えたくらいで
+逃げ出せねぇ。
+だいたい逃げて　ドコ行くんだよ？
+逃げた先で　ゲームを馬鹿にして
+生きるのかよ！？
+レイド　やめたら
+友達　出来るのかよ。
+無駄な時間
+使っちゃいましたねぇ～って
+半笑いかよ。
+死ねよ　そんなクソは。
+（デミクァス）無茶苦茶だな。
+逃げずに
+死に続けろってのかよ？
+あんな思いを
+あと何度　味わえってんだ。
+…デミクァス。
+勝てる見込みがありゃ　いいぜ。
+でも　んなもんは　もうねぇ…。
+俺らのやってる事は
+ただの　お遊びだ。
+世界が変わったって同じだろ。
+俺たちァ　何の役にも立たねぇ
+穀潰しだ。
+その遊びにすら
+勝てねぇんだからな…。
+それでも　てめぇは
+逃げるなってのか？
+俺は…　逃げた事があるよ。
+モヤモヤしてたけど
+やっと分かった…。
+アキバの街で
+最初の円卓会議だった。
+あの時　俺は
+始まったばかりの　この世界で
+レイドが　やりたくて
+しかたがなかった。
+　回想　
+（ウィリアム）やってられっかよ。
+街の治安？
+ふん　くだらねぇ。
+時間の無駄だぜ。
+正直　勝ち目がねぇのに
+よくやるぜ。
+豚野郎どもがって
+馬鹿にしてたよ。
+俺がやられたら　ブン殴りたいほど
+嫌な事を　俺がやってたよ。
+笑っちまうぜ。　今は分かってる。
+俺は　逃げたんだ。
+駄目そうだったんで
+スルーしたんだ。
+　心の声　
+それでも…
+逃げなかった　プレーヤーもいた…。
+そいつは…
+俺の憧れだった…。
+かつて　難関クエストを舞台に
+ギルドも作らず
+大手と互角に渡り合った
+伝説のパーティー…
+放蕩者の茶会
+デボーチェリ・ティーパーティー…。
+そいつらの噂を聞いちゃ
+胸を躍らせてた。
+いつか　俺も
+入れるようになるんだって…
+でも…　俺が　レベル９０になる前に
+解散しちまった…
+メンバーは　ギルドも作らず
+ソロに戻って　てんでバラバラ…
+それじゃあ　なんのために伝説を
+残したのか分からねぇって…
+そう思ってた…。
+意味ねぇ　出来ねぇ　勝てっこねぇ
+って俺が思ってたレイドに　奴は…
+シロエは勝って　アキバをつくったよ。
+街をつくった　レイドだぜ。
+馬鹿にしたもんじゃねぇ。
+すげえ指揮官だって思ったよ。
+　心の声　
+当然だ。　俺が…
+この俺が　憧れてたんだ。
+只者な訳ねぇ。
+そのシロエが　頭下げて来たから
+うれしくて
+二つ返事で　引き受けたんだ。
+勝ち目がない事ぐらい
+当たり前だ。
+腹ぐろ眼鏡が
+持ち込んできたんだから
+全員　ひどい目に遭うのが
+当たり前なんだよ。
+あいつが　面倒くさいドＳなんて
+顔見りゃあ分かんだろ…
+でも　楽しいと思ったんだよ。
+勝てたらいいなってな。
+理由は…　俺らが
+クソゲーマーだからだっ！
+…やってみっか。
+あぁ　もう一回ぐらいならな…。
+うむ…。
+　心の声　
+マジで　俺は馬鹿だ…。
+でも　勝ちてぇんだ。
+いや…　こいつらを…
+仲間を　勝たせてやりてぇ…！
+ギルマス　か…。
+（直継）よう　シロ。　起きたか。
+（シロエ）…うん。
+…いいギルドだな。
+うん…。
+　心の声　
+僕は…
+僕に　あんな事ができるかな？
+ミノリやトウヤが　悲しんでいたら…
+五十鈴やルディが　泣いていたら…
+僕に　あんな素直な言葉で
+みんなを励ますなんて…。
+もし　アカツキが…。
+（アカツキ）余計な心配をするな。
+守るのは　私の仕事だ。
+ふ…。
+（てとら）勝たせてあげたいな。
+ね　シロエさん。
+お前　いい事　言うな。
+ボク　一流アイドルだからね。
+で　なんか考えがあるのか？
+参謀。
+直継には　言わなきゃいけない事が
+あるんだ。
+てとらさんにも。
+ウィリアムにも　みんなにも…。
+どうして　このレイドが必要なのか。
+この奥に　何があるのか。
+なんのために
+僕が　黄金を求めているのか
+ちゃんと言わなきゃいけなかった。
+みんなに甘えて
+一人で　やろうとしてたんだ…。
+もし許してくれるなら
+多少は　マシな作戦がある。
+でも　多少マシなだけだ。
+勝率は？
+…１５％。
+そりゃ上等だ。
+完璧だね[外:AEEFFDEBFBEEFCC]
+そして　菫星さんたちにも
+言わなきゃならない。
+僕らの願いを
+ヤマトの大地の事を。
+今度こそ　目を見て話すんだ…。
+じゃあな。　なる早で帰るからよ。
+（念話・マリエール）きばってな。
+チキン入りのお雑煮
+用意して　待っとるから…。
+あぁ　約束だ祭り！
+あれから一週間　準備は整った。
+これから　最後の戦いだ。
+年越しソバは　お預けだな。
+（念話）七草がゆには戻るからって
+班長に　伝えておいて。
+みんなにも　話さなきゃ
+いけない事が　あるんだ。
+分かった。
+主君　待っているぞ。
+うん　必ず帰る。　みんなの所へ。
+お前ら　気合い入れて行け！
+俺たちの旗を　立ててやるぜ！
+（一同）おぉ～！
+　心の声　
+そうだ　必ず帰る。
+みんなの所へ…　そして…。
+（エンディングテーマ）
+この子は普通だと思うんですけど。
+普通　普通。</p>
+</article>
+</main>
+<footer>
+<div class="contacts">
+		<p>メイル:</p>
+		<amp-img src="https://nakigoe.github.io/_IMG/nakigoe-pm.png"
+		width="270"
+		height="50"
+		layout="intrinsic"
+		alt="nakigoe @ pm . me">
+		</amp-img>
+<a class="alert" href="https://nakigoe.github.io/me/connect.html" target="_blank">ビデオチャット</a>
+</div>
+
+<p id="copyright"><small>&copy; to Nakigoe 2019</small></p>
+<div class="social">
+    <p>共有して、よろしくお願いします</p>
+    <amp-social-share width="60" height="60" type="email"></amp-social-share>
+    <amp-social-share width="60" height="60" type="facebook"
+    data-param-app_id="272325784911610"></amp-social-share>
+    <amp-social-share width="60" height="60" type="linkedin"></amp-social-share>
+    <amp-social-share width="60" height="60" type="pinterest"
+    data-param-media="https://nakigoe.github.io/_IMG/injured.jpg"></amp-social-share>
+    <amp-social-share width="60" height="60" type="tumblr"></amp-social-share>
+    <amp-social-share width="60" height="60" type="twitter"></amp-social-share>
+    <amp-social-share width="60" height="60" type="whatsapp"></amp-social-share>
+    <amp-social-share width="60" height="60" type="line"></amp-social-share>
+	<amp-social-share width="60" height="60" type="sms"></amp-social-share>
+    <amp-social-share width="60" height="60" type="vk" 
+    data-share-endpoint="http://vk.com/share.php?url=https://nakigoe.github.io/ja/saisei.html"></amp-social-share>
+    <amp-social-share width="60" height="60" type="ok" 
+    data-share-endpoint="https://connect.ok.ru/offer?url=https://nakigoe.github.io/ja/saisei.html"></amp-social-share>
+	<amp-social-share width="60" height="60" type="livejournal" 
+    data-share-endpoint="https://www.livejournal.com/update.bml?event=https://nakigoe.github.io/ja/saisei.html"></amp-social-share>
+	<amp-social-share width="60" height="60" type="telegram" 
+	data-share-endpoint="https://telegram.me/share/url?url=https://nakigoe.github.io/ja/saisei.html"></amp-social-share>
+</div>
+</footer>
+<nav class="cf">
+<ul>
+<li><a property="significantLink" href="https://nakigoe.github.io/" target="_blank">
+<div class="true">
+<amp-img src="https://nakigoe.github.io/_IMG/true.jpg"
+  width="1440"
+  height="1018"
+  layout="responsive"
+  alt="メイン"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="メイン">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/true.jpg">
+</amp-img>
+</div>
+メインメニュー</a></li>
+<li class="compact"><a property="relatedLink" href="https://nakigoe.github.io/ja/igo.html" target="_blank">
+<div class="go">
+	<amp-img src="https://nakigoe.github.io/_IMG/go.jpg"
+	width="664"
+	height="896"
+	layout="responsive"
+	alt="Girls Playing WeiQi | Igo in a bath"
+	property="image" typeOf="ImageObject">
+	<meta property="caption" content="Girls Playing WeiQi | Igo in a bath">
+	<meta property="url" content="https://nakigoe.github.io/_IMG/go.jpg">
+	</amp-img>
+</div>
+囲碁で勝つ手</a></li>
+</ul>
+
+<ul class="rightLink">
+<li><a property="relatedLink" href="https://nakigoe.github.io/ja/tutor.html" target="_blank">
+<div class="write">
+<amp-img src="https://nakigoe.github.io/_IMG/tutor-ja.jpg"
+  width="2048"
+  height="1638"
+  layout="responsive"
+  alt="英語の先生"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="True">
+  <meta property="url" content="https://nakigoe.github.io/_IMG/tutor-ja.jpg">
+</amp-img>
+</div>
+英語と数学の先生</a></li>
+</ul>
+<a id="me" property="significantLink" href="https://nakigoe.github.io/me/me.html" target="_blank">
+<div id="love">
+<amp-img src="https://nakigoe.github.io/_IMG/love.jpg"
+  width="4416"
+  height="1048"
+  layout="responsive"
+  alt="Lovely Me"
+  property="image" typeOf="ImageObject">
+  <meta property="caption" content="Lovely Me">
+</amp-img>
+</div>
+愛すうべき私、素敵な私</a>
+</nav>
+</body>
+</html>
