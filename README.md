@@ -1,37 +1,39 @@
 ## О великий, могучий, правдивый и свободный русский язык!
-### Избранные репозитории (их больше, смотрите [репозитории](https://github.com/nakigoe?tab=repositories)
+### Избранные репозитории. Их больше, смотрите [все репозитории](https://github.com/nakigoe?tab=repositories)
 
- • заказчик из Японии www.nihonga.love: Python, библиотека Matplotlib, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
+⭐ заказчик из Японии www·nihonga·love: Python, библиотека Matplotlib, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
 https://github.com/nakigoe/sea
 
- • заказчик из Японии www.nihonga.love: Python, библиотека Django, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
+⭐заказчик из Японии www·nihonga·love: Python, библиотека Django, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
 https://github.com/nakigoe/django-form
 
- • Python, библиотека Selenium, бот для автоматической отправки резюме и сопроводительных писем на hh·ru,
+⭐Python, библиотека Selenium, бот для автоматической отправки резюме и сопроводительных писем на hh·ru,
 отправка 200 резюме с сопроводительными письмами за 15 минут одним кликом: 
 https://github.com/nakigoe/hh-ru-bot
 
- • Python, библиотека Selenium, YAML GitHub Actions бот для автоматического поднятия резюме на hh·ru каждые четыре часа: 
+⭐Python, библиотека Selenium, YAML GitHub Actions бот для автоматического поднятия резюме на hh·ru каждые четыре часа: 
 https://github.com/nakigoe/hh-ru-raise-bot
 
- • Python, библиотека Selenium, бот для автоматической отправки резюме и сопроводительных писем на японском сайте работы en-gage·net
+⭐Python, библиотека Selenium, бот для автоматической отправки резюме и сопроводительных писем на японском сайте работы en-gage·net
 отправка 5000 резюме с сопроводительными письмами за день одним кликом (знание японского обязательно): 
 https://github.com/nakigoe/en-gage-net-bot
 
- • Python, библиотека Selenium, бот для автоматической отправки личных приглашений пользователям на LinkedIn, включая имя пользователя в письмо
+⭐Python, библиотека Selenium, бот для автоматической отправки личных приглашений пользователям на LinkedIn, включая имя пользователя в письмо
 отправка 200 сообщений за 15 минут одним кликом: 
 https://github.com/nakigoe/linkedin-bot
 
- • Python, библиотека Selenium, бот для автоматического подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
+⭐Python, библиотека Selenium, бот для автоматического подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
 https://github.com/nakigoe/linkedin-endorse-bot
 
- • ASP·NET Core Blazor WebAssembly вебсайт: https://nakigoe.org
- • Bootstrap & jQuery & Leaflet вебсайт: https://maps.nakigoe.org
+⭐ASP·NET Core Blazor WebAssembly вебсайт: https://nakigoe.org
 
-Избранные статьи:
+⭐Bootstrap & jQuery & Leaflet вебсайт: https://maps.nakigoe.org
 
-«Криптовалюта: звон монет»: https://nakigoe.org/ru/articles/crypto
-«Бесплатный хостинг сайта C# Blazor WebAssembly»: https://nakigoe.org/ru/articles/host
+## Избранные статьи:
+
+❥ «Криптовалюта: звон монет»: https://nakigoe.org/ru/articles/crypto
+
+❥ «Бесплатный хостинг сайта C# Blazor WebAssembly»: https://nakigoe.org/ru/articles/host
 
 
 <h2 style="margin: 0 auto" align="center">Place all stars on GitHub and share!!!</h2>
