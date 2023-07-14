@@ -1,4 +1,0 @@
-Sitemap: https://nakigoe.github.io/sitemap.xml
-
-User-agent: YandexBot
-Allow: https://nakigoe.github.io/RSS.xml
