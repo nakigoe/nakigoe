@@ -1,6 +1,6 @@
 <kbd style="width: 2em; height: 2em;"><a href="#en">ENGLISH</a></kbd> | <kbd><a href="#ru">РУССКИЙ</a></kbd> | <kbd>[日本語](#ja)</kbd>
 
-<h1 name="en">There are more repositories, see also
+<h1 name="en" id="en">There are more repositories, see also
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
 
 ## Python, Matplotlib library
@@ -67,7 +67,7 @@ sending 200 messages in 15 minutes with one click:
 
 <hr>
 
-<h1 name="ja">さらに多くのリポジトリがあります。以下も参照してください。
+<h1 name="ja" id="ja">さらに多くのリポジトリがあります。以下も参照してください。
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">NAKIGOE リポジトリのリスト</a></h1>
 
 ## Python、Matplotlib ライブラリ
@@ -129,7 +129,7 @@ sending 200 messages in 15 minutes with one click:
 
 <hr>
 
-<h1 name="ru">Репозиториев больше, смотрите также 
+<h1 name="ru" id="ru">Репозиториев больше, смотрите также 
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a></h1>
 
 ## Python, библиотека Matplotlib
