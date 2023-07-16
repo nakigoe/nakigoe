@@ -1,12 +1,16 @@
 <hr>
+
 ## О великий, могучий, правдивый и свободный русский язык!
+
 ### Репозиториев больше, смотрите также <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a>
 
-⭐ заказчик из Японии www·nihonga·love: Python, библиотека Matplotlib, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
-https://github.com/nakigoe/sea
+## Python, библиотека Matplotlib
+⭐ заказчик из Японии www·nihonga·love, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
+<a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
-⭐заказчик из Японии www·nihonga·love: Python, библиотека Django, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
-https://github.com/nakigoe/django-form
+## Python, библиотека Django
+⭐заказчик из Японии www·nihonga·love, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
+<a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
 
 ## Python, библиотека Selenium
 
