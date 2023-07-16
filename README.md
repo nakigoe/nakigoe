@@ -1,38 +1,39 @@
 <hr>
 
-# Репозиториев больше, смотрите также <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a>
+# Репозиториев больше, смотрите также 
+<br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a>
 
 ## Python, библиотека Matplotlib
 ⭐ заказчик из Японии www·nihonga·love, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
-<a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
+<br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
 ## Python, библиотека Django
 ⭐заказчик из Японии www·nihonga·love, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
-<a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
+<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
 
 ## Python, библиотека Selenium
 
 ⭐автоматизация отправки резюме и сопроводительных писем на HH·RU,
 отправка 200 резюме с сопроводительными письмами за 15 минут одним кликом: 
-<a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
+<br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
 
 ⭐YAML GitHub Actions автоматизация поднятия резюме на HH·RU каждые четыре часа: 
-<a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
+<br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
 ⭐автоматизация отправки резюме и сопроводительных писем на японском сайте работы en-gage·net
 отправка 5000 резюме с сопроводительными письмами за день одним кликом (знание японского обязательно): 
-<a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+<br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
 
 ⭐автоматизация отправки личных приглашений пользователям на LinkedIn, включая имя пользователя в письмо
 отправка 200 сообщений за 15 минут одним кликом: 
-<a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
+<br> <a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
 
 ⭐автоматизация подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
-<a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
+<br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
 
 ## Microsoft Access VBA E-mailer
 ⭐автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
-<a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
+<br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
 
 
 ## Мои сайты
