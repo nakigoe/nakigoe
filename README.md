@@ -1,4 +1,4 @@
-[English](#en) [русский](#ru) [日本語](#ja)
+[ENGLISH](#en) | [РУССКИЙ](#ru) | <kbd>[日本語](#ja)</kbd>
 
 <h1 name="en">There are more repositories, see also
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
