@@ -1,4 +1,4 @@
-<kbd>[ENGLISH](#en)</kbd> | <kbd>[РУССКИЙ](#ru)</kbd> | <kbd>[日本語](#ja)</kbd>
+<kbd><a href="#en">[English lanugage flag](https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg)ENGLISH</a></kbd> | <kbd>[РУССКИЙ](#ru)</kbd> | <kbd>[日本語](#ja)</kbd>
 
 <h1 name="en">There are more repositories, see also
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
