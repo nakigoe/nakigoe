@@ -1,5 +1,5 @@
-<h1><kbd>[ENGLISH](#en)</kbd> | <kbd>[РУССКИЙ](#ru)</kbd> | <kbd>[日本語](#ja)</kbd></h1>
-<p style="border: 2px solid white">a</p>
+<kbd>[ENGLISH](#en)</kbd> | <kbd>[РУССКИЙ](#ru)</kbd> | <kbd>[日本語](#ja)</kbd>
+
 <h1 name="en">There are more repositories, see also
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
 
