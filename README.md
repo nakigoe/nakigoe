@@ -33,7 +33,7 @@ sending 200 messages in 15 minutes with one click:
 ⭐automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
 
-## .NET Template MAUI Blazor Hybrid
+## .NET MAUI Blazor Hybrid Template 
 ⭐Application that works as a website and simultaneously on Windows, macOS, iOS, Android and Tizen(Samsung):
 <br> <a href="https://github.com/nakigoe/angel" target="_blank">github.com/nakigoe/angel</a>
 
