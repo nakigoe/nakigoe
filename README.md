@@ -124,6 +124,9 @@ sending 200 messages in 15 minutes with one click:
 
 ❥ <a href="https://nakigoe.org/ja/igo" target="_blank">家庭PC用の囲碁AI</a>
 
+## 私の完全なスキルリスト
+📋 <a href="https://nakigoe.org/_PDF/CV-ja.pdf" target="_blank">スキルリスト</a>
+
 <hr>
 
 <h1 name="ru">Репозиториев больше, смотрите также 
