@@ -8,39 +8,39 @@
 <br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
 ## Python, Django library
-⭐A customer from Japan www·nihonga·love, a browser-based application for the company intranet that sends user files (PDF, photo) to a remote Amazon S3 server:
+⭐ A customer from Japan www·nihonga·love, a browser-based application for the company intranet that sends user files (PDF, photo) to a remote Amazon S3 server:
 <br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
 
 ## Python, Selenium library
 
-⭐automation of sending resumes and cover letters to HH·RU (Russian jobs website),
+⭐ Automation of sending resumes and cover letters to HH·RU (Russian jobs website),
 send 200 resumes with cover letters in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
 
 ⭐YAML GitHub Actions automation of pushing one's resume up on HH·RU (Russian jobs website) every four hours:
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
-⭐automation of sending resumes and cover letters on the Japanese job site en-gage·net,
+⭐ Automation of sending resumes and cover letters on the Japanese job site en-gage·net,
 send 5,000 resumes with cover letters a day with one click (knowledge of Japanese is required):
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
 
-⭐automation of sending personal invitations to users on LinkedIn, including the username in the LinkedIn message,
+⭐ Automation of sending personal invitations to users on LinkedIn, including the username in the LinkedIn message,
 sending 200 messages in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
 
-⭐automation of endorsing of all skills of all users in your contact list on LinkedIn:
+⭐ Automation of endorsing of all skills of all users in your contact list on LinkedIn:
 <br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
 
 ## Microsoft Access VBA E-mailer
-⭐automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
+⭐ Automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
 
 ## .NET MAUI Blazor Hybrid Template 
-⭐Application that works as a website and simultaneously on Windows, macOS, iOS, Android and Tizen(Samsung):
+⭐ Application that works as a website and simultaneously on Windows, macOS, iOS, Android and Tizen(Samsung):
 <br> <a href="https://github.com/nakigoe/angel" target="_blank">github.com/nakigoe/angel</a>
 
 ## ASP.NET Core Blazor WebAssembly Website Template
-⭐website code:
+⭐ Website code:
 <br> <a href="https://github.com/nakigoe/blazorwasm" target="_blank">github.com/nakigoe/blazorwasm</a>
 
 ❥ A published ASP.NET Core Blazor WebAssembly website template: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
@@ -75,19 +75,19 @@ sending 200 messages in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
 ## Python、Django ライブラリ
-⭐日本からのお客様 www・nihonga・love。これは、ユーザー ファイル (PDF、写真) をリモートの Amazon S3 サーバーに送信する、企業イントラネット用のブラウザベースのアプリケーションです：
+⭐ 日本からのお客様 www・nihonga・love。これは、ユーザー ファイル (PDF、写真) をリモートの Amazon S3 サーバーに送信する、企業イントラネット用のブラウザベースのアプリケーションです：
 <br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
 
 ## Python、Selenium ライブラリ
 
-⭐HH・RU（ロシアの求人サイト）への履歴書とカバーレターの送信の自動化、
+⭐ HH・RU（ロシアの求人サイト）への履歴書とカバーレターの送信の自動化、
 ワンクリックで 15 分以内にカバーレター付きの 200 件の履歴書を送信します。
 <br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
 
 ⭐ YAML GitHub Actions の自動化により、履歴書を 4 時間ごとに HH・RU (ロシアの求人 Web サイト) にアップします：
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
-⭐日本の求人サイト en-gage・net での履歴書とカバーレターの送信の自動化、
+⭐ 日本の求人サイト en-gage・net での履歴書とカバーレターの送信の自動化、
 カバーレター付きの履歴書を 1 日あたり 5,000 件、ワンクリックで送信できます:
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
 
@@ -95,7 +95,7 @@ sending 200 messages in 15 minutes with one click:
 ワンクリックで 15 分間に 200 メッセージを送信:
 <br> <a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
 
-⭐LinkedIn の連絡先リスト内のすべてのユーザーのすべてのスキルの承認を自動化:
+⭐ LinkedIn の連絡先リスト内のすべてのユーザーのすべてのスキルの承認を自動化:
 <br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
 
 ## Microsoft Access VBA 電子メーラー
@@ -107,7 +107,7 @@ sending 200 messages in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/angel" target="_blank">github.com/nakigoe/angel</a>
 
 ## ASP.NET Core Blazor WebAssembly ウェブサイト テンプレート
-⭐ウェブサイトのコード:
+⭐ ウェブサイトのコード:
 <br> <a href="https://github.com/nakigoe/blazorwasm" target="_blank">github.com/nakigoe/blazorwasm</a>
 
 ❥ 公開された ASP.NET Core Blazor WebAssembly ウェブサイト テンプレート: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
@@ -133,43 +133,43 @@ sending 200 messages in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a></h1>
 
 ## Python, библиотека Matplotlib
-⭐ заказчик из Японии www·nihonga·love, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
+⭐ Заказчик из Японии www·nihonga·love, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
 <br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
 ## Python, библиотека Django
-⭐заказчик из Японии www·nihonga·love, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
+⭐ Заказчик из Японии www·nihonga·love, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
 <br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
 
 ## Python, библиотека Selenium
 
-⭐автоматизация отправки резюме и сопроводительных писем на HH·RU,
+⭐ Автоматизация отправки резюме и сопроводительных писем на HH·RU,
 отправка 200 резюме с сопроводительными письмами за 15 минут одним кликом: 
 <br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
 
-⭐YAML GitHub Actions автоматизация поднятия резюме на HH·RU каждые четыре часа: 
+⭐ YAML GitHub Actions автоматизация поднятия резюме на HH·RU каждые четыре часа: 
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
-⭐автоматизация отправки резюме и сопроводительных писем на японском сайте работы en-gage·net,
+⭐ Автоматизация отправки резюме и сопроводительных писем на японском сайте работы en-gage·net,
 отправка 5000 резюме с сопроводительными письмами за день одним кликом (знание японского обязательно): 
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
 
-⭐автоматизация отправки личных приглашений пользователям на LinkedIn, включая имя пользователя в письмо
+⭐ Автоматизация отправки личных приглашений пользователям на LinkedIn, включая имя пользователя в письмо
 отправка 200 сообщений за 15 минут одним кликом: 
 <br> <a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
 
-⭐автоматизация подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
+⭐ Автоматизация подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
 <br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
 
 ## Microsoft Access VBA E-mailer
-⭐автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
+⭐ Автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
 
 ## Темплейт .NET MAUI Blazor Hybrid
-⭐Приложение, которое работает как веб-сайт и одновременно на Windows, macOS, iOS, Android и Tizen(Samsung): 
+⭐ Приложение, которое работает как веб-сайт и одновременно на Windows, macOS, iOS, Android и Tizen(Samsung): 
 <br> <a href="https://github.com/nakigoe/angel" target="_blank">github.com/nakigoe/angel</a>
 
 ## Темплейт сайта ASP.NET Core Blazor WebAssembly
-⭐код сайта: 
+⭐ Код сайта: 
 <br> <a href="https://github.com/nakigoe/blazorwasm" target="_blank">github.com/nakigoe/blazorwasm</a>
 
 ❥ Опубликованный темплейт сайта ASP.NET Core Blazor WebAssembly: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
