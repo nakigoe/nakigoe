@@ -20,7 +20,7 @@
 ⭐YAML GitHub Actions автоматизация поднятия резюме на HH·RU каждые четыре часа: 
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
-⭐автоматизация отправки резюме и сопроводительных писем на японском сайте работы en-gage·net
+⭐автоматизация отправки резюме и сопроводительных писем на японском сайте работы en-gage·net,
 отправка 5000 резюме с сопроводительными письмами за день одним кликом (знание японского обязательно): 
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
 
