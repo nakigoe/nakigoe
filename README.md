@@ -1,3 +1,4 @@
+<hr>
 ## О великий, могучий, правдивый и свободный русский язык!
 ### Репозиториев больше, смотрите также <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a>
 
@@ -7,23 +8,30 @@ https://github.com/nakigoe/sea
 ⭐заказчик из Японии www·nihonga·love: Python, библиотека Django, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
 https://github.com/nakigoe/django-form
 
-⭐Python, библиотека Selenium, бот для автоматической отправки резюме и сопроводительных писем на hh·ru,
+## Python, библиотека Selenium
+
+⭐автоматизация отправки резюме и сопроводительных писем на HH·RU,
 отправка 200 резюме с сопроводительными письмами за 15 минут одним кликом: 
 https://github.com/nakigoe/hh-ru-bot
 
-⭐Python, библиотека Selenium, YAML GitHub Actions бот для автоматического поднятия резюме на hh·ru каждые четыре часа: 
+⭐YAML GitHub Actions автоматизация поднятия резюме на HH·RU каждые четыре часа: 
 https://github.com/nakigoe/hh-ru-raise-bot
 
-⭐Python, библиотека Selenium, бот для автоматической отправки резюме и сопроводительных писем на японском сайте работы en-gage·net
+⭐автоматизация отправки резюме и сопроводительных писем на японском сайте работы en-gage·net
 отправка 5000 резюме с сопроводительными письмами за день одним кликом (знание японского обязательно): 
 https://github.com/nakigoe/en-gage-net-bot
 
-⭐Python, библиотека Selenium, бот для автоматической отправки личных приглашений пользователям на LinkedIn, включая имя пользователя в письмо
+⭐автоматизация отправки личных приглашений пользователям на LinkedIn, включая имя пользователя в письмо
 отправка 200 сообщений за 15 минут одним кликом: 
 https://github.com/nakigoe/linkedin-bot
 
-⭐Python, библиотека Selenium, бот для автоматического подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
+⭐автоматизация подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
 https://github.com/nakigoe/linkedin-endorse-bot
+
+## Microsoft Access VBA E-mailer
+⭐автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
+https://github.com/nakigoe/mailer
+
 
 ## Мои сайты
 
@@ -36,6 +44,7 @@ https://github.com/nakigoe/linkedin-endorse-bot
 ## Избранные статьи:
 
 ❥ <a href="https://nakigoe.org/ru/articles/crypto" target="_blank">«Криптовалюта: звон монет»</a>
+
 ❥ <a href="https://nakigoe.org/ru/articles/host" target="_blank">«Бесплатный хостинг сайта C# Blazor WebAssembly»</a>
 
 
