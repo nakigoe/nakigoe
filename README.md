@@ -1,4 +1,4 @@
-<kbd><a href="#en">![image](https://github.com/nakigoe/nakigoe/assets/35993388/8d447b8c-7fa9-444a-86ac-387b93273554)ENGLISH</a></kbd> | <kbd>[РУССКИЙ](#ru)</kbd> | <kbd>[日本語](#ja)</kbd>
+<kbd><a href="#en">ENGLISH</a></kbd> | <kbd>[РУССКИЙ](#ru)</kbd> | <kbd>[日本語](#ja)</kbd>
 
 <h1 name="en">There are more repositories, see also
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
@@ -67,7 +67,7 @@ sending 200 messages in 15 minutes with one click:
 
 <hr>
 
-<h1 name="en">さらに多くのリポジトリがあります。以下も参照してください。
+<h1 name="ja">さらに多くのリポジトリがあります。以下も参照してください。
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">NAKIGOE リポジトリのリスト</a></h1>
 
 ## Python、Matplotlib ライブラリ
