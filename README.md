@@ -35,6 +35,17 @@
 ⭐автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
 
+## Темплейт .NET MAUI Blazor Hybrid
+⭐Приложение, которое работает как веб-сайт и одновременно на Windows, macOS, iOS, Android и Tizen(Samsung): 
+<br> <a href="https://github.com/nakigoe/angel" target="_blank">github.com/nakigoe/angel</a>
+
+## Темплейт сайта ASP.NET Core Blazor WebAssembly
+⭐код сайта: 
+<br> <a href="https://github.com/nakigoe/blazorwasm" target="_blank">github.com/nakigoe/blazorwasm</a>
+
+❥ Опубликованный темплейт сайта ASP.NET Core Blazor WebAssembly: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
+
+❥ Подробные инструкции к темплейту: <a href="https://nakigoe.org/ru/articles/host" target="_blank">«Бесплатный хостинг сайта C# Blazor WebAssembly»</a>
 
 ## Мои сайты
 
@@ -42,13 +53,9 @@
 
 ❥ Bootstrap & jQuery & Leaflet JS: <a href="https://maps.nakigoe.org" target="_blank">MAPS.NAKIGOE.ORG</a>
 
-❥ Кастомизированный темплейт сайта ASP.NET Core Blazor WebAssembly с открытым кодом и подробными инструкциями: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
-
 ## Избранные статьи:
 
 ❥ <a href="https://nakigoe.org/ru/articles/crypto" target="_blank">«Криптовалюта: звон монет»</a>
-
-❥ <a href="https://nakigoe.org/ru/articles/host" target="_blank">«Бесплатный хостинг сайта C# Blazor WebAssembly»</a>
 
 
 <h2 style="margin: 0 auto" align="center">Place all stars on GitHub and share!!!</h2>
