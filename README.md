@@ -118,9 +118,9 @@ sending 200 messages in 15 minutes with one click:
 
 ❥ ブートストラップ、jQuery、リーフレット JS: <a href="https://maps.nakigoe.org" target="_blank">MAPS.NAKIGOE.ORG</a>
 
-＃＃ 注目の記事：
+## 注目の記事
 
-❥ <a href="https://nakigoe.org/ja/articles/win" target="_blank">「勝つ方法」</a>
+❥ <a href="https://nakigoe.org/ja/igo" target="_blank">家庭PC用の囲碁AI</a>
 
 <hr>
 
