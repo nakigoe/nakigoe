@@ -1,6 +1,4 @@
-- <a href="#en">ENGLISH</a>
-- [РУССКИЙ](#ru)
-- [日本語](#ja)
+<kbd style="width: 2em; height: 2em;"><a href="#en">ENGLISH</a></kbd> | <kbd><a href="#ru">РУССКИЙ</a></kbd> | <kbd>[日本語](#ja)</kbd>
 
 <h1 name="en">There are more repositories, see also
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
