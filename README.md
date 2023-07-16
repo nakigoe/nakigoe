@@ -1,5 +1,5 @@
 ## О великий, могучий, правдивый и свободный русский язык!
-### Репозиториев больше, смотрите <a href="https://github.com/nakigoe?tab=repositories" target="_blank">ВСЕ РЕПОЗИТОРИИ</a>
+### Репозиториев больше, смотрите также <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a>
 
 ⭐ заказчик из Японии www·nihonga·love: Python, библиотека Matplotlib, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
 https://github.com/nakigoe/sea
@@ -25,15 +25,18 @@ https://github.com/nakigoe/linkedin-bot
 ⭐Python, библиотека Selenium, бот для автоматического подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
 https://github.com/nakigoe/linkedin-endorse-bot
 
-⭐ASP·NET Core Blazor WebAssembly вебсайт: https://nakigoe.org
+## Мои сайты
 
-⭐Bootstrap & jQuery & Leaflet вебсайт: https://maps.nakigoe.org
+❥ ASP·NET Core Blazor WebAssembly: <a href="https://nakigoe.org/ru" target="_blank">NAKIGOE.ORG</a>
+
+❥ Bootstrap & jQuery & Leaflet JS: <a href="https://maps.nakigoe.org" target="_blank">MAPS.NAKIGOE.ORG</a>
+
+❥ Кастомизированный темплейт сайта ASP.NET Core Blazor WebAssembly с открытым кодом и подробными инструкциями: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
 
 ## Избранные статьи:
 
-❥ «Криптовалюта: звон монет»: https://nakigoe.org/ru/articles/crypto
-
-❥ «Бесплатный хостинг сайта C# Blazor WebAssembly»: https://nakigoe.org/ru/articles/host
+❥ <a href="https://nakigoe.org/ru/articles/crypto" target="_blank">«Криптовалюта: звон монет»</a>
+❥ <a href="https://nakigoe.org/ru/articles/host" target="_blank">«Бесплатный хостинг сайта C# Blazor WebAssembly»</a>
 
 
 <h2 style="margin: 0 auto" align="center">Place all stars on GitHub and share!!!</h2>
