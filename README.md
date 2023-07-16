@@ -53,16 +53,16 @@ sending 200 messages in 15 minutes with one click:
 
 ## Featured Articles:
 
-❥ <a href="https://nakigoe.org/en/articles/win" target="_blank">"How to Win"</a>
+❥ <a href="https://nakigoe.org/en/articles/win" target="_blank">How to Win</a>
 
-❥ <a href="https://nakigoe.org/en/articles/girl" target="_blank">"Real Princess"</a>
+❥ <a href="https://nakigoe.org/en/articles/secrecy" target="_blank">Why Keep Secrecy?</a>
 
-❥ <a href="https://nakigoe.org/en/articles/sword-length" target="_blank">"An Ideal Sword Length"</a>
-<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="display: inline-block; color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/secrecy" target="_blank">Why Keep Secrecy?</a></p>
-<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/win" target="_blank">How to Win</a></p>
-<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/sword-length" target="_blank">Ideal Sword Length</a></p>
-<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/write" target="_blank">How to Write Good</a></p>
-<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/girl" target="_blank">Real Princess</a></p>
+❥ <a href="https://nakigoe.org/en/articles/write" target="_blank">How to Write Good</a>
+
+❥ <a href="https://nakigoe.org/en/articles/girl" target="_blank">Real Princess</a>
+
+❥ <a href="https://nakigoe.org/en/articles/sword-length" target="_blank">Ideal Sword Length</a>
+
 <hr>
 
 <h1 name="en">さらに多くのリポジトリがあります。以下も参照してください。
