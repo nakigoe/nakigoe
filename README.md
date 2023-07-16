@@ -1,5 +1,5 @@
 ## О великий, могучий, правдивый и свободный русский язык!
-### Избранные репозитории. Их больше, смотрите <a href="https://github.com/nakigoe?tab=repositories" target="_blank">ВСЕ РЕПОЗИТОРИИ</a>
+### Репозиториев больше, смотрите <a href="https://github.com/nakigoe?tab=repositories" target="_blank">ВСЕ РЕПОЗИТОРИИ</a>
 
 ⭐ заказчик из Японии www·nihonga·love: Python, библиотека Matplotlib, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
 https://github.com/nakigoe/sea
