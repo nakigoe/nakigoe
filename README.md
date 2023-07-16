@@ -116,9 +116,9 @@ sending 200 messages in 15 minutes with one click:
 
 ## 私のサイト
 
-❥ ASP NET Core Blazor WebAssembly: <a href="https://nakigoe.org/ja" target="_blank">NAKIGOE.ORG</a>
+❥ ASP·NET Core Blazor WebAssembly: <a href="https://nakigoe.org/ja" target="_blank">NAKIGOE.ORG</a>
 
-❥ ブートストラップ、jQuery、リーフレット JS: <a href="https://maps.nakigoe.org" target="_blank">MAPS.NAKIGOE.ORG</a>
+❥ Bootstrap、jQuery、Leaflet JS: <a href="https://maps.nakigoe.org" target="_blank">MAPS.NAKIGOE.ORG</a>
 
 ## 注目の記事
 
