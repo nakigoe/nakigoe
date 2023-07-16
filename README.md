@@ -1,3 +1,5 @@
+[English](#en) [русский](#ru) [日本語](#ja)
+
 <h1 name="en">There are more repositories, see also
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
 
