@@ -58,6 +58,69 @@ sending 200 messages in 15 minutes with one click:
 ❥ <a href="https://nakigoe.org/en/articles/girl" target="_blank">"Real Princess"</a>
 
 ❥ <a href="https://nakigoe.org/en/articles/sword-length" target="_blank">"An Ideal Sword Length"</a>
+<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="display: inline-block; color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/secrecy" target="_blank">Why Keep Secrecy?</a></p>
+<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/win" target="_blank">How to Win</a></p>
+<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/sword-length" target="_blank">Ideal Sword Length</a></p>
+<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/write" target="_blank">How to Write Good</a></p>
+<p style="margin: 0 0 20px 0;"> <span style="color: red;">❥</span> <a style="color: rgb(255, 200, 255);" href="https://nakigoe.org/en/articles/girl" target="_blank">Real Princess</a></p>
+<hr>
+
+<h1 name="en">さらに多くのリポジトリがあります。以下も参照してください。
+<br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">NAKIGOE リポジトリのリスト</a></h1>
+
+## Python、Matplotlib ライブラリ
+⭐ 日本からのお客様 www・nihonga・love、Matplotlib プロット: 海水温、海の波の方向と強さ、海のセンサーからの CSV データに基づく風向き:
+<br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
+
+## Python、Django ライブラリ
+⭐日本からのお客様 www・nihonga・love。これは、ユーザー ファイル (PDF、写真) をリモートの Amazon S3 サーバーに送信する、企業イントラネット用のブラウザベースのアプリケーションです。
+<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
+
+## Python、Selenium ライブラリ
+
+⭐HH・RU（ロシアの求人サイト）への履歴書とカバーレターの送信の自動化、
+ワンクリックで 15 分以内にカバーレター付きの 200 件の履歴書を送信します。
+<br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
+
+⭐ YAML GitHub Actions により、4 時間ごとに履歴書を HH・RU (ロシアの求人 Web サイト) にプッシュする自動化:
+<br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
+
+⭐日本の求人サイト en-gage・net での履歴書とカバーレターの送信の自動化、
+カバーレター付きの履歴書を 1 日あたり 5,000 件、ワンクリックで送信できます (日本語の知識が必要です):
+<br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+
+⭐ LinkedIn メッセージにユーザー名を含む、LinkedIn 上のユーザーへの個人招待状の送信の自動化、
+ワンクリックで 15 分間に 200 メッセージを送信:
+<br> <a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
+
+⭐LinkedIn の連絡先リスト内のすべてのユーザーのすべてのスキルの承認を自動化:
+<br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
+
+## Microsoft Access VBA 電子メーラー
+⭐ Gmail 経由でデータベース内の受信者のリストに HTML 電子メールを送信する自動化 (このマクロを使用すると、BCC リストを回避でき、各受信者は個別の電子メールを受信します):
+<br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
+
+## .NET MAUI Blazor ハイブリッド テンプレート
+⭐ Web サイトとして動作し、同時に Windows、macOS、iOS、Android、Tizen (Samsung) 上で動作するアプリケーション:
+<br> <a href="https://github.com/nakigoe/angel" target="_blank">github.com/nakigoe/angel</a>
+
+## ASP.NET Core Blazor WebAssembly Web サイト テンプレート
+⭐ウェブサイトコード:
+<br> <a href="https://github.com/nakigoe/blazorwasm" target="_blank">github.com/nakigoe/blazorwasm</a>
+
+❥ 公開された ASP.NET Core Blazor WebAssembly Web サイト テンプレート: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
+
+❥ テンプレートの詳細な手順 (手順は進行中です): <a href="https://nakigoe.org/en/articles/host" target="_blank">C# Blazor WebAssembly Free Website Hosting</a>
+
+## 私のサイト
+
+❥ ASP NET Core Blazor WebAssembly: <a href="https://nakigoe.org/ja" target="_blank">NAKIGOE.ORG</a>
+
+❥ ブートストラップ、jQuery、リーフレット JS: <a href="https://maps.nakigoe.org" target="_blank">MAPS.NAKIGOE.ORG</a>
+
+＃＃ 注目の記事：
+
+❥ <a href="https://nakigoe.org/ja/articles/win" target="_blank">「勝つ方法」</a>
 
 <hr>
 
@@ -117,7 +180,6 @@ sending 200 messages in 15 minutes with one click:
 ## Избранные статьи:
 
 ❥ <a href="https://nakigoe.org/ru/articles/crypto" target="_blank">«Криптовалюта: звон монет»</a>
-
 
 <h2 style="margin: 0 auto" align="center">Place all stars on GitHub and share!!!</h2>
 <br>
