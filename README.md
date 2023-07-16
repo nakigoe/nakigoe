@@ -75,7 +75,7 @@ sending 200 messages in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
 ## Python、Django ライブラリ
-⭐日本からのお客様 www・nihonga・love。これは、ユーザー ファイル (PDF、写真) をリモートの Amazon S3 サーバーに送信する、企業イントラネット用のブラウザベースのアプリケーションです。
+⭐日本からのお客様 www・nihonga・love。これは、ユーザー ファイル (PDF、写真) をリモートの Amazon S3 サーバーに送信する、企業イントラネット用のブラウザベースのアプリケーションです：
 <br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
 
 ## Python、Selenium ライブラリ
@@ -84,11 +84,11 @@ sending 200 messages in 15 minutes with one click:
 ワンクリックで 15 分以内にカバーレター付きの 200 件の履歴書を送信します。
 <br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
 
-⭐ YAML GitHub Actions により、4 時間ごとに履歴書を HH・RU (ロシアの求人 Web サイト) にプッシュする自動化:
+⭐ YAML GitHub Actions の自動化により、履歴書を 4 時間ごとに HH・RU (ロシアの求人 Web サイト) にアップします：
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
 ⭐日本の求人サイト en-gage・net での履歴書とカバーレターの送信の自動化、
-カバーレター付きの履歴書を 1 日あたり 5,000 件、ワンクリックで送信できます (日本語の知識が必要です):
+カバーレター付きの履歴書を 1 日あたり 5,000 件、ワンクリックで送信できます:
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
 
 ⭐ LinkedIn メッセージにユーザー名を含む、LinkedIn 上のユーザーへの個人招待状の送信の自動化、
@@ -102,15 +102,15 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Gmail 経由でデータベース内の受信者のリストに HTML 電子メールを送信する自動化 (このマクロを使用すると、BCC リストを回避でき、各受信者は個別の電子メールを受信します):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
 
-## .NET MAUI Blazor ハイブリッド テンプレート
-⭐ Web サイトとして動作し、同時に Windows、macOS、iOS、Android、Tizen (Samsung) 上で動作するアプリケーション:
+## .NET MAUI Blazor Hybrid テンプレート
+⭐ ウェブサイトとして動作し、同時に Windows、macOS、iOS、Android、Tizen (Samsung) 上で動作するアプリケーション:
 <br> <a href="https://github.com/nakigoe/angel" target="_blank">github.com/nakigoe/angel</a>
 
-## ASP.NET Core Blazor WebAssembly Web サイト テンプレート
-⭐ウェブサイトコード:
+## ASP.NET Core Blazor WebAssembly ウェブサイト テンプレート
+⭐ウェブサイトのコード:
 <br> <a href="https://github.com/nakigoe/blazorwasm" target="_blank">github.com/nakigoe/blazorwasm</a>
 
-❥ 公開された ASP.NET Core Blazor WebAssembly Web サイト テンプレート: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
+❥ 公開された ASP.NET Core Blazor WebAssembly ウェブサイト テンプレート: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
 
 ❥ テンプレートの詳細な手順 (手順は進行中です): <a href="https://nakigoe.org/en/articles/host" target="_blank">C# Blazor WebAssembly Free Website Hosting</a>
 
