@@ -15,14 +15,14 @@
 send 200 resumes with cover letters in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
 
-⭐YAML GitHub Actions automation pushing resumes up on HH·RU (Russian jobs website) every four hours:
+⭐YAML GitHub Actions automation of pushing one's resume up on HH·RU (Russian jobs website) every four hours:
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
 ⭐automation of sending resumes and cover letters on the Japanese job site en-gage·net,
-Send 5,000 resumes with cover letters per day with one click (knowledge of Japanese is required):
+send 5,000 resumes with cover letters a day with one click (knowledge of Japanese is required):
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
 
-⭐automation of sending personal invitations to users on LinkedIn, including the username in the email,
+⭐automation of sending personal invitations to users on LinkedIn, including the username in the LinkedIn message,
 sending 200 messages in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
 
@@ -41,9 +41,9 @@ sending 200 messages in 15 minutes with one click:
 ⭐website code:
 <br> <a href="https://github.com/nakigoe/blazorwasm" target="_blank">github.com/nakigoe/blazorwasm</a>
 
-❥ ASP.NET Core Blazor WebAssembly site template published: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
+❥ A published ASP.NET Core Blazor WebAssembly website template: <a href="https://blazorwasm.nakigoe.org" target="_blank">BLAZORWASM.NAKIGOE.ORG</a>
 
-❥ Detailed instructions for the template (work in progress): <a href="https://nakigoe.org/en/articles/host" target="_blank">"C# Blazor WebAssembly Free Website Hosting"</a>
+❥ Detailed instructions for the template (instructions work in progress): <a href="https://nakigoe.org/en/articles/host" target="_blank">"C# Blazor WebAssembly Free Website Hosting"</a>
 
 ## My sites
 
@@ -54,6 +54,10 @@ sending 200 messages in 15 minutes with one click:
 ## Featured Articles:
 
 ❥ <a href="https://nakigoe.org/en/articles/win" target="_blank">"How to Win"</a>
+
+❥ <a href="https://nakigoe.org/en/articles/girl" target="_blank">"Real Princess"</a>
+
+❥ <a href="https://nakigoe.org/en/articles/sword-length" target="_blank">"An Ideal Sword Length"</a>
 
 <hr>
 
