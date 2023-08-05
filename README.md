@@ -31,6 +31,9 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Automation of endorsing of all skills of all users in your contact list on LinkedIn:
 <br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
 
+⭐ Automation of adding stars to all repositories of the accounts you indicated on GitHub:
+<br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
+
 ## Microsoft Access VBA E-mailer
 ⭐ Automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
@@ -159,6 +162,9 @@ sending 200 messages in 15 minutes with one click:
 
 ⭐ Автоматизация подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
 <br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
+
+⭐ Автоматизация раздачи звёзд на все репозитории, указанные в списке аккаунтов GitHub:
+<br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
 
 ## Microsoft Access VBA E-mailer
 ⭐ Автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
