@@ -101,6 +101,9 @@ sending 200 messages in 15 minutes with one click:
 ⭐ LinkedIn の連絡先リスト内のすべてのユーザーのすべてのスキルの承認を自動化:
 <br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
 
+⭐ GitHub で指定したアカウントのすべてのリポジトリにスターを追加する自動化：
+<br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
+
 ## Microsoft Access VBA 電子メーラー
 ⭐ Gmail 経由でデータベース内の受信者のリストに HTML 電子メールを送信する自動化 (このマクロを使用すると、BCC リストを回避でき、各受信者は個別の電子メールを受信します):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
