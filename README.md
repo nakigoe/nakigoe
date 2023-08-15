@@ -291,3 +291,7 @@ sending 200 messages in 15 minutes with one click:
       https://nakigoe.org/_SRC/logo-hot-bevel-300.jpg 300w"
     alt="NAKIGOE.ORG">
 </a></h1>
+
+<p style="margin: 0 auto" align="center">© NAKIGOE.ORG</p> 
+
+<p style="margin: 0 auto" align="center">All rights reserved and no permissions are granted.</p>
