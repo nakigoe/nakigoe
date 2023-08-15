@@ -34,7 +34,7 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Automation of adding stars to all repositories of the accounts you indicated on GitHub:
 <br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
 
-⭐ Facebook automation: mass unsend unresponding friend requests to get a new quota:
+⭐ Facebook automation. Mass unsend unresponding friend requests to get a new sending quota:
 <br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
 
 ## Microsoft Access VBA E-mailer
@@ -107,7 +107,7 @@ sending 200 messages in 15 minutes with one click:
 ⭐ GitHub で指定したアカウントのすべてのリポジトリにスターを追加する自動化：
 <br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
 
-⭐ Facebook 自動化。新しい割り当てを得るために応答しないフレンドリクエストを大量に取り消し：
+⭐ Facebook 自動化。応答しないフレンドリクエストを大量に取り消して、新しい送信枠を取得：
 <br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
 
 ## Microsoft Access VBA 電子メーラー
