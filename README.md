@@ -48,7 +48,7 @@ sending 200 messages in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
 
 ⭐ Facebook: Automatically Connect with Your Friend's Friends. Pick a friend and auto-send friend requests with customized messages, including personal names, to all of his or her connections:
-<br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
+<br> <a href="https://github.com/nakigoe/facebook-bot" target="_blank">github.com/nakigoe/facebook-bot</a>
 
 ## Microsoft Access VBA E-mailer
 ⭐ Automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
@@ -99,6 +99,8 @@ sending 200 messages in 15 minutes with one click:
 
 ## Python、Selenium ライブラリ
 
+### HH.RU(ロシア語の仕事ウェブサイト）自動化
+
 ⭐ HH・RU（ロシアの求人サイト）への履歴書とカバーレターの送信の自動化、
 ワンクリックで 15 分以内にカバーレター付きの 200 件の履歴書を送信します。
 <br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
@@ -106,9 +108,13 @@ sending 200 messages in 15 minutes with one click:
 ⭐ YAML GitHub Actions の自動化により、履歴書を 4 時間ごとに HH・RU (ロシアの求人 Web サイト) にアップします：
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
+### En-gage.net (日本仕事ウェブサイト）自動化
+
 ⭐ 日本の求人サイト en-gage・net での履歴書とカバーレターの送信の自動化、
 カバーレター付きの履歴書を 1 日あたり 5,000 件、ワンクリックで送信できます:
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+
+### LinkedIn 自動化
 
 ⭐ LinkedIn メッセージにユーザー名を含む、LinkedIn 上のユーザーへの個人招待状の送信の自動化、
 ワンクリックで 15 分間に 200 メッセージを送信:
@@ -117,11 +123,18 @@ sending 200 messages in 15 minutes with one click:
 ⭐ LinkedIn の連絡先リスト内のすべてのユーザーのすべてのスキルの承認を自動化:
 <br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
 
+### GitHub 自動化
+
 ⭐ GitHub で指定したアカウントのすべてのリポジトリにスターを追加する自動化：
 <br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
 
+### Facebook 自動化
+
 ⭐ Facebook 自動化。応答しないフレンドリクエストを大量に取り消して、新しい送信枠を取得：
 <br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
+
+⭐ Facebook: 友人の友人と自動的につながります。友人を選び、彼または彼女の全てのつながりに、個人名を含んだカスタマイズされたメッセージで友達リクエストを自動送信します：
+<br> <a href="https://github.com/nakigoe/facebook-bot" target="_blank">github.com/nakigoe/facebook-bot</a>
 
 ## Microsoft Access VBA 電子メーラー
 ⭐ Gmail 経由でデータベース内の受信者のリストに HTML 電子メールを送信する自動化 (このマクロを使用すると、BCC リストを回避でき、各受信者は個別の電子メールを受信します):
@@ -167,6 +180,8 @@ sending 200 messages in 15 minutes with one click:
 
 ## Python, библиотека Selenium
 
+### Автоматизация HH.RU (русскоязычный сайт поиска работы)
+
 ⭐ Автоматизация отправки резюме и сопроводительных писем на HH·RU,
 отправка 200 резюме с сопроводительными письмами за 15 минут одним кликом: 
 <br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
@@ -174,9 +189,13 @@ sending 200 messages in 15 minutes with one click:
 ⭐ YAML GitHub Actions автоматизация поднятия резюме на HH·RU каждые четыре часа: 
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
+### Автоматизация en-gage.net (японский сайт поиска работы)
+
 ⭐ Автоматизация отправки резюме и сопроводительных писем на японском сайте работы en-gage·net,
 отправка 5000 резюме с сопроводительными письмами за день одним кликом (знание японского обязательно): 
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+
+### Автоматизация LinkedIn
 
 ⭐ Автоматизация отправки личных приглашений пользователям на LinkedIn, включая имя пользователя в письмо
 отправка 200 сообщений за 15 минут одним кликом: 
@@ -185,11 +204,18 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Автоматизация подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
 <br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
 
+### Автоматизация GitHub
+
 ⭐ Автоматизация раздачи звёзд на все репозитории, указанные в списке аккаунтов GitHub:
 <br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
 
+### Автоматизация Facebook
+
 ⭐ Автоматизация Facebook. Массово отозвать все запросы на дружбу, оставшиеся без ответа, чтобы получить новую квоту для отправки новых приглашений:
 <br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
+
+⭐ Автоматизация Facebook: Автоматическое добавление друзей друзей. Выбиерите друга и автоматически отправьте приглашение и кастомизированное личное сообщение с именем нового друга всем друзьям друга!
+<br> <a href="https://github.com/nakigoe/facebook-bot" target="_blank">github.com/nakigoe/facebook-bot</a>
 
 ## Microsoft Access VBA E-mailer
 ⭐ Автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
