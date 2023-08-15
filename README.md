@@ -34,6 +34,9 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Automation of adding stars to all repositories of the accounts you indicated on GitHub:
 <br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
 
+⭐ Facebook automation: mass unsend unresponding friend requests to get a new quota:
+<br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
+
 ## Microsoft Access VBA E-mailer
 ⭐ Automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
@@ -104,6 +107,9 @@ sending 200 messages in 15 minutes with one click:
 ⭐ GitHub で指定したアカウントのすべてのリポジトリにスターを追加する自動化：
 <br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
 
+⭐ Facebook 自動化。新しい割り当てを得るために応答しないフレンドリクエストを大量に取り消し：
+<br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
+
 ## Microsoft Access VBA 電子メーラー
 ⭐ Gmail 経由でデータベース内の受信者のリストに HTML 電子メールを送信する自動化 (このマクロを使用すると、BCC リストを回避でき、各受信者は個別の電子メールを受信します):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
@@ -168,6 +174,9 @@ sending 200 messages in 15 minutes with one click:
 
 ⭐ Автоматизация раздачи звёзд на все репозитории, указанные в списке аккаунтов GitHub:
 <br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
+
+⭐ Автоматизация Facebook. Массово отозвать все запросы на дружбу, оставшиеся без ответа, чтобы получить новую квоту для отправки новых приглашений:
+<br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
 
 ## Microsoft Access VBA E-mailer
 ⭐ Автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
