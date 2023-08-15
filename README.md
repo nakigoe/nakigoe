@@ -13,6 +13,8 @@
 
 ## Python, Selenium library
 
+### HH·RU (Russian Job Board) Automation
+
 ⭐ Automation of sending resumes and cover letters to HH·RU (Russian jobs website),
 send 200 resumes with cover letters in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
@@ -20,9 +22,13 @@ send 200 resumes with cover letters in 15 minutes with one click:
 ⭐YAML GitHub Actions automation of pushing one's resume up on HH·RU (Russian jobs website) every four hours:
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
+### En-gage.net Automation
+
 ⭐ Automation of sending resumes and cover letters on the Japanese job site en-gage·net,
 send 5,000 resumes with cover letters a day with one click (knowledge of Japanese is required):
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+
+### LinkedIn Automation
 
 ⭐ Automation of sending personal invitations to users on LinkedIn, including the username in the LinkedIn message,
 sending 200 messages in 15 minutes with one click:
@@ -31,10 +37,17 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Automation of endorsing of all skills of all users in your contact list on LinkedIn:
 <br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
 
+### GitHub Automation
+
 ⭐ Automation of adding stars to all repositories of the accounts you indicated on GitHub:
 <br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
 
-⭐ Facebook automation. Mass unsend unresponding friend requests to get a new sending quota:
+### Facebook Automation
+
+⭐ Facebook automation. Mass unsend unresponding friend requests to get a new friend request sending quota:
+<br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
+
+⭐ Facebook: Automatically Connect with Your Friend's Friends. Pick a friend and auto-send friend requests with customized messages, including personal names, to all of his or her connections:
 <br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
 
 ## Microsoft Access VBA E-mailer
