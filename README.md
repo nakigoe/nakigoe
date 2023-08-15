@@ -13,7 +13,7 @@
 
 ## Python, Selenium library
 
-### HH·RU (Russian Job Board) Automation
+### HH.RU (Russian Job Board) Automation
 
 ⭐ Automation of sending resumes and cover letters to HH·RU (Russian jobs website),
 send 200 resumes with cover letters in 15 minutes with one click:
@@ -22,7 +22,7 @@ send 200 resumes with cover letters in 15 minutes with one click:
 ⭐YAML GitHub Actions automation of pushing one's resume up on HH·RU (Russian jobs website) every four hours:
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
-### En-gage.net Automation
+### En-gage.net (Japanese Job Board) Automation
 
 ⭐ Automation of sending resumes and cover letters on the Japanese job site en-gage·net,
 send 5,000 resumes with cover letters a day with one click (knowledge of Japanese is required):
