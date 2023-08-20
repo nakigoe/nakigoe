@@ -50,6 +50,11 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Facebook: Automatically Connect with Your Friend's Friends. Pick a friend and auto-send friend requests with customized messages, including personal names, to all of his or her connections:
 <br> <a href="https://github.com/nakigoe/facebook-bot" target="_blank">github.com/nakigoe/facebook-bot</a>
 
+### Moodle Automation
+
+⭐ Moodle: Mass-Send A Message to Everyone in Your School:
+<br> <a href="https://github.com/nakigoe/moodle-bot" target="_blank">github.com/nakigoe/moodle-bot</a>
+
 ## Microsoft Access VBA E-mailer
 ⭐ Automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
@@ -136,6 +141,11 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Facebook: 友人の友人と自動的につながります。友人を選び、彼または彼女の全てのつながりに、個人名を含んだカスタマイズされたメッセージで友達リクエストを自動送信します：
 <br> <a href="https://github.com/nakigoe/facebook-bot" target="_blank">github.com/nakigoe/facebook-bot</a>
 
+### Moodle 自動化
+
+⭐ Moodle: Mass-Send A Message to Everyone in Your School:
+<br> <a href="https://github.com/nakigoe/moodle-bot" target="_blank">github.com/nakigoe/moodle-bot</a>
+
 ## Microsoft Access VBA 電子メーラー
 ⭐ Gmail 経由でデータベース内の受信者のリストに HTML 電子メールを送信する自動化 (このマクロを使用すると、BCC リストを回避でき、各受信者は個別の電子メールを受信します):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
@@ -217,6 +227,11 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Автоматизация Facebook: Автоматическое добавление друзей друзей. Выбиерите друга и автоматически отправьте приглашение и кастомизированное личное сообщение с именем нового друга всем друзьям друга!
 <br> <a href="https://github.com/nakigoe/facebook-bot" target="_blank">github.com/nakigoe/facebook-bot</a>
 
+### Автоматизация Moodle
+
+⭐ Moodle: массовая отправка сообщений студентам и работникам школы / академии / ВУЗа:
+<br> <a href="https://github.com/nakigoe/moodle-bot" target="_blank">github.com/nakigoe/moodle-bot</a>
+
 ## Microsoft Access VBA E-mailer
 ⭐ Автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
@@ -295,3 +310,5 @@ sending 200 messages in 15 minutes with one click:
 <p style="margin: 0 auto" align="center">© NAKIGOE.ORG</p> 
 
 <p style="margin: 0 auto" align="center">All rights reserved and no permissions are granted.</p>
+
+<p style="margin: 0 auto" align="center">Please add stars to the repositories!</p>
