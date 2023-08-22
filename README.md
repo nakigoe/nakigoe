@@ -63,9 +63,6 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Any-test.ru Harvester: collect all opensource test questions, answers and dummies for further review and export into Your Moodle Questions Bank!
 <br> <a href="https://github.com/nakigoe/any-test-ru-reaper" target="_blank">github.com/nakigoe/any-test-ru-reaper</a>
 
-⭐ Moodle: Mass-Fill Your Moodle Questions Bank with Questions and Answers:
-<br> <a href="https://github.com/nakigoe/moodle-bank" target="_blank">github.com/nakigoe/moodle-bank</a>
-
 ## Microsoft Access VBA E-mailer
 ⭐ Automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
