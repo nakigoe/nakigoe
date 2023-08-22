@@ -253,7 +253,7 @@ sending 200 messages in 15 minutes with one click:
 
 ### Веб-скрейпинг (автоматизированный сбор данных с вебсайтов)
 
-⭐ Any-test.ru колектор: сохраните все вопросы и ответы конкретного теста для последующей подготовки к тесту и / или сохранения в Вашем банке вопросов Moodle:
+⭐ Any-test.ru коллектор: сохраните все вопросы и ответы конкретного теста для последующей подготовки к тесту и / или сохранения в Вашем банке вопросов Moodle:
 <br> <a href="https://github.com/nakigoe/any-test-ru-reaper" target="_blank">github.com/nakigoe/any-test-ru-reaper</a>
 
 ## Microsoft Access VBA E-mailer
