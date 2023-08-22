@@ -55,6 +55,17 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Moodle: Mass-Send A Message to Everyone in Your School:
 <br> <a href="https://github.com/nakigoe/moodle-bot" target="_blank">github.com/nakigoe/moodle-bot</a>
 
+⭐ Moodle: Mass-Fill Your Moodle Questions Bank with Questions and Answers:
+<br> <a href="https://github.com/nakigoe/moodle-bank" target="_blank">github.com/nakigoe/moodle-bank</a>
+
+### Website Scraping
+
+⭐ Any-test.ru Harvester: collect all opensource test questions, answers and dummies for further review and export into Your Moodle Questions Bank!
+<br> <a href="https://github.com/nakigoe/any-test-ru-reaper" target="_blank">github.com/nakigoe/any-test-ru-reaper</a>
+
+⭐ Moodle: Mass-Fill Your Moodle Questions Bank with Questions and Answers:
+<br> <a href="https://github.com/nakigoe/moodle-bank" target="_blank">github.com/nakigoe/moodle-bank</a>
+
 ## Microsoft Access VBA E-mailer
 ⭐ Automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
 <br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
@@ -143,8 +154,16 @@ sending 200 messages in 15 minutes with one click:
 
 ### Moodle 自動化
 
-⭐ Moodle: Mass-Send A Message to Everyone in Your School:
+⭐ Moodle: 友達の友達と自動的につながる
 <br> <a href="https://github.com/nakigoe/moodle-bot" target="_blank">github.com/nakigoe/moodle-bot</a>
+
+⭐ Moodle: 一回のクリックで Moodle 問題銀行を大量に記入！
+<br> <a href="https://github.com/nakigoe/moodle-bank" target="_blank">github.com/nakigoe/moodle-bank</a>
+
+### Web Scraping ウェブ スクレイピング
+
+⭐ Any-test.ru Harvester：すべてのオープンソースのテスト問題、回答、ダミーを収集し、後であなたの Moodle の問題バンクにエクスポートします！
+<br> <a href="https://github.com/nakigoe/any-test-ru-reaper" target="_blank">github.com/nakigoe/any-test-ru-reaper</a>
 
 ## Microsoft Access VBA 電子メーラー
 ⭐ Gmail 経由でデータベース内の受信者のリストに HTML 電子メールを送信する自動化 (このマクロを使用すると、BCC リストを回避でき、各受信者は個別の電子メールを受信します):
@@ -231,6 +250,14 @@ sending 200 messages in 15 minutes with one click:
 
 ⭐ Moodle: массовая отправка сообщений студентам и работникам школы / академии / ВУЗа:
 <br> <a href="https://github.com/nakigoe/moodle-bot" target="_blank">github.com/nakigoe/moodle-bot</a>
+
+⭐ Moodle: массовое заполнение банка вопросов Moodle одним кликом:
+<br> <a href="https://github.com/nakigoe/moodle-bank" target="_blank">github.com/nakigoe/moodle-bank</a>
+
+### Веб-скрейпинг (автоматизированный сбор данных с вебсайтов)
+
+⭐ Any-test.ru колектор: сохраните все вопросы и ответы конкретного теста для последующей подготовки к тесту и / или сохранения в Вашем банке вопросов Moodle:
+<br> <a href="https://github.com/nakigoe/any-test-ru-reaper" target="_blank">github.com/nakigoe/any-test-ru-reaper</a>
 
 ## Microsoft Access VBA E-mailer
 ⭐ Автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
