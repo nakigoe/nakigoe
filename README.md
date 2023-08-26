@@ -22,11 +22,13 @@ send 200 resumes with cover letters in 15 minutes with one click:
 ⭐YAML GitHub Actions automation of pushing one's resume up on HH·RU (Russian jobs website) every four hours:
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
-### En-gage.net (Japanese Job Board) Automation
+### Japanese Job Boards Automation
 
-⭐ Automation of sending resumes and cover letters on the Japanese job site en-gage·net,
-send 5,000 resumes with cover letters a day with one click (knowledge of Japanese is required):
-<br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+⭐ En-gage.net (knowledge of Japanese is required) Automation: send 5,000 resumes with cover letters a day with one click:
+ <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+
+⭐ Enworld.com (Japan Job Board for English Speakers) Automation: send 1,000 resumes with one click:
+ <br> <a href="https://github.com/nakigoe/enworld-com-bot" target="_blank">github.com/nakigoe/enworld-com-bot</a>
 
 ### LinkedIn Automation
 
@@ -121,11 +123,13 @@ sending 200 messages in 15 minutes with one click:
 ⭐ YAML GitHub Actions の自動化により、履歴書を 4 時間ごとに HH・RU (ロシアの求人 Web サイト) にアップします：
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
-### En-gage.net (日本仕事ウェブサイト）自動化
+### 日本の求人掲示板自動化
 
-⭐ 日本の求人サイト en-gage・net での履歴書とカバーレターの送信の自動化、
-カバーレター付きの履歴書を 1 日あたり 5,000 件、ワンクリックで送信できます:
+⭐ En-gage.net（日本語の知識が必要です）自動化：一回のクリックで 1 日に 5,000 通の履歴書とカバーレターを送信：
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+
+⭐ Enworld.com（英語話者向けの日本の求人掲示板）自動化：一回のクリックで 1,000 通の履歴書を送信：
+<br> <a href="https://github.com/nakigoe/enworld-com-bot" target="_blank">github.com/nakigoe/enworld-com-bot</a>
 
 ### LinkedIn 自動化
 
@@ -215,10 +219,12 @@ sending 200 messages in 15 minutes with one click:
 ⭐ YAML GitHub Actions автоматизация поднятия резюме на HH·RU каждые четыре часа: 
 <br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
 
-### Автоматизация en-gage.net (японский сайт поиска работы)
+### Автоматизация японских сайтов работы
 
-⭐ Автоматизация отправки резюме и сопроводительных писем на японском сайте работы en-gage·net,
-отправка 5000 резюме с сопроводительными письмами за день одним кликом (знание японского обязательно): 
+⭐ Автоматизация Enworld.com (знание английского обязательно), отправка 1000 резюме одним кликом:
+ <br> <a href="https://github.com/nakigoe/enworld-com-bot" target="_blank">github.com/nakigoe/enworld-com-bot</a>
+
+⭐ Автоматизация en-gage.net (знание японского обязательно), отправка 5000 резюме с сопроводительными письмами за день одним кликом: 
 <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
 
 ### Автоматизация LinkedIn
