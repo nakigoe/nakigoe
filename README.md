@@ -122,8 +122,9 @@ sending 200 messages in 15 minutes with one click:
 
 ### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (作家向けAI) 無料デイリートークン自動収集
 
-⭐YAML GitHub Actions ボットは、<a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> で無料デイリートークンを自動で収集します（こちらは私の紹介リンクです。このリンクを使用してサービスに登録すると、学生である私が新しいラップトップを手に入れ、海外での教育資金を支援できます）：
-<br> <a href="github.com/nakigoe/dreampress-ai-tokens" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
+⭐YAML GitHub Actionsボットは、<a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> で無料デイリートークンを自動で収集します（こちらは私の紹介リンクです。このリンクを使用してサービスに登録すると、学生である私が新しいラップトップを手に入れ、海外での教育資金を支援できます）：
+<br> <a href="https://github.com/nakigoe/dreampress-ai-tokens" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
+<br>パーティーへようこそ、読者のみなさん！
 
 ### HH.RU (ロシア語の仕事ウェブサイト）自動化
 
