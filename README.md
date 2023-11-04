@@ -17,7 +17,7 @@
 
 ⭐YAML GitHub Actions bot that automates free daily tokens' collection on <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (that is my referral link. By using that link and subscribing to their service, You help the student (me) acquire a new laptop and fund my education abroad):
 <br> <a href="https://github.com/nakigoe/dreampress-ai-tokens" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
-<br>パーティーへようこそ、読者のみなさん！
+<br> Welcome to the writing party！
 
 ### HH.RU (Russian Job Board) Automation
 
