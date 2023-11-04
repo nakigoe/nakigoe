@@ -13,7 +13,7 @@
 
 ## Python, Selenium library
 
-### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (Writers' AI) Free Daily Tokens Collecton Automation
+### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (Writers' AI) Free Daily Tokens Collection Automation
 
 ⭐YAML GitHub Actions bot that automates free daily tokens' collection on <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (that is my referral link. By using that link and subscribing to their service, You help the student (me) acquire a new laptop and fund my education abroad):
 <br> <a href="github.com/nakigoe/dreampress-ai-tokens" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
@@ -119,7 +119,12 @@ sending 200 messages in 15 minutes with one click:
 
 ## Python、Selenium ライブラリ
 
-### HH.RU(ロシア語の仕事ウェブサイト）自動化
+### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (作家向けAI) 無料デイリートークン自動収集
+
+⭐YAML GitHub Actions ボットは、<a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> で無料デイリートークンを自動で収集します（こちらは私の紹介リンクです。このリンクを使用してサービスに登録すると、学生である私が新しいラップトップを手に入れ、海外での教育資金を支援できます）：
+<br> <a href="github.com/nakigoe/dreampress-ai-tokens" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
+
+### HH.RU (ロシア語の仕事ウェブサイト）自動化
 
 ⭐ HH・RU（ロシアの求人サイト）への履歴書とカバーレターの送信の自動化、
 ワンクリックで 15 分以内にカバーレター付きの 200 件の履歴書を送信します。
