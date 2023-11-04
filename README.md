@@ -224,7 +224,7 @@ sending 200 messages in 15 minutes with one click:
 
 ### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (писательский искусственный интеллект): автоматизация сбора бесплатных ежедневных токенов
 
-⭐Бот YAML GitHub Actions, автоматизирует бесплатный ежедневный сбор токенов на <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (это моя реферальная ссылка; используя эту ссылку и подписываясь на их услуги, Вы помогаете студенту (мне) приобрести новый ноутбук и финансировать мое обучение за рубежом):
+⭐Бот YAML GitHub Actions, автоматизирует бесплатный ежедневный сбор токенов на <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (это моя реферальная ссылка; используя эту ссылку и подписываясь на их услуги, Вы помогаете студенту (мне) приобрести новый ноутбук и финансировать моё обучение за рубежом):
 <br> <a href="https://github.com/nakigoe/dreampress-ai-tokens#ru" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
 
 ### Автоматизация HH.RU (русскоязычный сайт поиска работы)
