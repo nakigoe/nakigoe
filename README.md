@@ -13,6 +13,11 @@
 
 ## Python, Selenium library
 
+### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (Writers' AI) Free Daily Tokens Collecton Automation
+
+⭐YAML GitHub Actions bot that automates free daily tokens' collection on <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (that is my referral link. By using that link and subscribing to their service, You help the student (me) acquire a new laptop and fund my education abroad):
+<br> <a href="github.com/nakigoe/dreampress-ai-tokens" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
+
 ### HH.RU (Russian Job Board) Automation
 
 ⭐ Automation of sending resumes and cover letters to HH·RU (Russian jobs website),
@@ -209,6 +214,11 @@ sending 200 messages in 15 minutes with one click:
 <br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
 
 ## Python, библиотека Selenium
+
+### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (писательский искусственный интеллект): автоматизация сбора бесплатных ежедневных токенов
+
+⭐Бот YAML GitHub Actions, автоматизирует бесплатный ежедневный сбор токенов на <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (это моя реферальная ссылка; используя эту ссылку и подписываясь на их услуги, Вы помогаете студенту (мне) приобрести новый ноутбук и финансировать мое обучение за рубежом):
+<br> <a href="github.com/nakigoe/dreampress-ai-tokens" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
 
 ### Автоматизация HH.RU (русскоязычный сайт поиска работы)
 
