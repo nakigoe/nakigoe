@@ -7,9 +7,9 @@
 ⭐ A customer from Japan www·nihonga·love, Matplotlib plotting: sea temperature, direction and strength of sea waves, wind direction according to CSV data coming from sea sensors:
 <br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
-## Python, Django library
+<!-- ## Python, Django library
 ⭐ A customer from Japan www·nihonga·love, a browser-based application for the company intranet that sends user files (PDF, photo) to a remote Amazon S3 server:
-<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
+<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a> -->
 
 ## Python, Selenium library
 
@@ -114,9 +114,9 @@ sending 200 messages in 15 minutes with one click:
 ⭐ 日本からのお客様 www・nihonga・love、Matplotlib プロット: 海水温、海の波の方向と強さ、海のセンサーからの CSV データに基づく風向き:
 <br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
-## Python、Django ライブラリ
+<!-- ## Python、Django ライブラリ
 ⭐ 日本からのお客様 www・nihonga・love。これは、ユーザー ファイル (PDF、写真) をリモートの Amazon S3 サーバーに送信する、企業イントラネット用のブラウザベースのアプリケーションです：
-<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
+<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a> -->
 
 ## Python、Selenium ライブラリ
 
@@ -216,9 +216,9 @@ sending 200 messages in 15 minutes with one click:
 ⭐ Заказчик из Японии www·nihonga·love, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
 <br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
-## Python, библиотека Django
+<!-- ## Python, библиотека Django
 ⭐ Заказчик из Японии www·nihonga·love, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
-<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
+<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a> -->
 
 ## Python, библиотека Selenium
 
