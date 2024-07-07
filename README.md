@@ -4,7 +4,7 @@
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
 
 ## Bash, Ansible Automata
-⭐ A Bash script to create and test your starting Ansible template on a Docker container with SSH setup before running the Ansible project on a physical remote server.
+⭐ A Bash script to create and test your starting Ansible template on a Docker container with SSH setup before running the Ansible project on a physical remote server:
 <br> <a href="https://github.com/nakigoe/ansible-automata/" target="_blank">github.com/nakigoe/ansible-automata/</a>
 
 ## Python, Matplotlib library
@@ -113,6 +113,10 @@ sending 200 messages in 15 minutes with one click:
 
 <h1 name="ja" id="ja">さらに多くのリポジトリがあります。以下も参照してください。
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">NAKIGOE リポジトリのリスト</a></h1>
+
+## Bash, Ansible Automata
+⭐ Bashスクリプトで、Ansibleプロジェクトの開始テンプレートと適切なファイル・フォルダを生成し、SSH設定とパスワードを含むDockerfileも作成します。これにより、Ansibleを実際のサーバーで実行する前に、プロジェクトを迅速に作成してテストできます:
+<br> <a href="https://github.com/nakigoe/ansible-automata/" target="_blank">github.com/nakigoe/ansible-automata/</a>
 
 ## Python、Matplotlib ライブラリ
 ⭐ 日本からのお客様 www・nihonga・love、Matplotlib プロット: 海水温、海の波の方向と強さ、海のセンサーからの CSV データに基づく風向き:
