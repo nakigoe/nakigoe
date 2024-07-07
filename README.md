@@ -3,6 +3,10 @@
 <h1 name="en" id="en">There are more repositories, see also
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
 
+## Bash, Ansible Automata
+⭐ A Bash script to create and test your starting Ansible template on a Docker container with SSH setup before running the Ansible project on a physical remote server.
+<br> <a href="https://github.com/nakigoe/ansible-automata/" target="_blank">github.com/nakigoe/ansible-automata/</a>
+
 ## Python, Matplotlib library
 ⭐ A customer from Japan www·nihonga·love, Matplotlib plotting: sea temperature, direction and strength of sea waves, wind direction according to CSV data coming from sea sensors:
 <br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
@@ -211,6 +215,10 @@ sending 200 messages in 15 minutes with one click:
 
 <h1 name="ru" id="ru">Репозиториев больше, смотрите также 
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a></h1>
+
+## Bash, Ansible Automata
+⭐ Bash-скрипт для создания и тестирования проекта Ansible из шаблона вместе с контейнером Docker и настроенным SSH-соединением и паролем перед запуском скрипта Ansible на удалённом физическом сервере.
+<br> <a href="https://github.com/nakigoe/ansible-automata/" target="_blank">github.com/nakigoe/ansible-automata/</a>
 
 ## Python, библиотека Matplotlib
 ⭐ Заказчик из Японии www·nihonga·love, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
