@@ -3,6 +3,10 @@
 <h1 name="en" id="en">There are more repositories, see also
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
 
+## Skill, Server and Website Penetration Testing Script in Bash
+⭐ A Bash-script for server and website penetration testing. Tries to locate real server IPs behind Cloudflare, tests servers by real IPs and websites by domain names:
+<br> <a href="https://github.com/nakigoe/skill/" target="_blank">github.com/nakigoe/skill/</a>
+
 ## Bash, Ansible Automata
 ⭐ A Bash script to create and test your starting Ansible template on a Docker container with SSH setup before running the Ansible project on a physical remote server:
 <br> <a href="https://github.com/nakigoe/ansible-automata/" target="_blank">github.com/nakigoe/ansible-automata/</a>
