@@ -118,6 +118,10 @@ sending 200 messages in 15 minutes with one click:
 <h1 name="ja" id="ja">さらに多くのリポジトリがあります。以下も参照してください。
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">NAKIGOE リポジトリのリスト</a></h1>
 
+## Skill、サーバーとウェブサイトのペネトレーションテスト用Bashスクリプト
+⭐ サーバーとウェブサイトのペネトレーションテスト用のBashスクリプト。Cloudflareの背後にある実際のサーバーIPを特定し、実際のIPアドレスでサーバーをテストし、ドメイン名でウェブサイトをテストします：
+<br> <a href="https://github.com/nakigoe/skill/" target="_blank">github.com/nakigoe/skill/</a>
+
 ## Bash, Ansible Automata
 ⭐ Bashスクリプトで、Ansibleプロジェクトの開始テンプレートと適切なファイル・フォルダを生成し、SSH設定とパスワードを含むDockerfileも作成します。これにより、Ansibleを実際のサーバーで実行する前に、プロジェクトを迅速に作成してテストできます:
 <br> <a href="https://github.com/nakigoe/ansible-automata/" target="_blank">github.com/nakigoe/ansible-automata/</a>
@@ -223,6 +227,10 @@ sending 200 messages in 15 minutes with one click:
 
 <h1 name="ru" id="ru">Репозиториев больше, смотрите также 
 <br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a></h1>
+
+## Skill, пентестинг серверов и веб-сайтов на проникновение
+⭐ Bash-скрипт для тестирования серверов и веб-сайтов на проникновение. Находит реальные IP-адреса серверов за Cloudflare, тестирует сервера по реальным IP и веб-сайты по доменным именам:
+<br> <a href="https://github.com/nakigoe/skill/" target="_blank">github.com/nakigoe/skill/</a>
 
 ## Bash, Ansible Automata
 ⭐ Bash-скрипт для создания и тестирования проекта Ansible из шаблона вместе с контейнером Docker и настроенным SSH-соединением и паролем перед запуском скрипта Ansible на удалённом физическом сервере.
