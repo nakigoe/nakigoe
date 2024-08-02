@@ -1,5 +1,6 @@
 <kbd style="width: 2em; height: 2em;"><a href="#en">ENGLISH</a></kbd> | <kbd><a href="#ru">РУССКИЙ</a></kbd> | <kbd>[日本語](#ja)</kbd>
 <hr>
+
 > <p name="en" id="en">Due to repeated incidents of unauthorized use and exploitation of my projects without attribution or support, I have moved all automation projects to private repositories. If you are a hiring manager or have a potential job offer, please contact me through my LinkedIn profile.</p>
 >
 > <p>Thank you for your understanding.</p>
@@ -209,6 +210,7 @@ sending 200 messages in 15 minutes with one click.
 ❥ <a href="https://nakigoe.org/_PDF/CV-ja.pdf" target="_blank">スキルリスト</a>
 
 <hr>
+
 > <p name="ru" id="ru">В связи с неоднократными случаями несанкционированного использования и эксплуатации моих проектов без указания авторства или поддержки, все проекты по автоматизации перемещены в частные репозитории. Если вы менеджер по найму или имеете предложение о работе, пожалуйста, свяжитесь со мной через мой профиль LinkedIn.</p>
 >
 > ## Контакт для профессиональных запросов
