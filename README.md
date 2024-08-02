@@ -103,9 +103,9 @@ sending 200 messages in 15 minutes with one click.
 <hr>
 
 > <p name="ja" id="ja">私のプロジェクトが無断で使用され、サポートもなく利用されることが繰り返されたため、すべての自動化プロジェクトをプライベートリポジトリに移行しました。採用担当者または潜在的な仕事のオファーがある場合は、LinkedIn プロフィールを通じてご連絡ください。</p>
-
-## 専門的な問い合わせの連絡先
-採用マネージャーおよび仕事のオファーについては: [Nakigoe LinkedIn](https://www.linkedin.com/in/nakigoe)
+> 
+> ## 専門的な問い合わせの連絡先
+> 採用マネージャーおよび仕事のオファーについては: [Nakigoe LinkedIn](https://www.linkedin.com/in/nakigoe)
 
 ## Skill、サーバーとウェブサイトのペネトレーションテスト用Bashスクリプト
 ⭐ サーバーとウェブサイトのペネトレーションテスト用のBashスクリプト。Cloudflareの背後にある実際のサーバーIPを特定し、実際のIPアドレスでサーバーをテストし、ドメイン名でウェブサイトをテストします。
