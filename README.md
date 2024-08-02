@@ -10,84 +10,66 @@
 For hiring managers and potential job offers: [Nakigoe LinkedIn](https://www.linkedin.com/in/nakigoe)
 
 ## Skill, Server and Website Penetration Testing Script in Bash
-⭐ A Bash-script for server and website penetration testing. Tries to locate real server IPs behind Cloudflare, tests servers by real IPs and websites by domain names:
-<br> <a href="https://github.com/nakigoe/skill/" target="_blank">github.com/nakigoe/skill/</a>
+⭐ A Bash-script for server and website penetration testing. Tries to locate real server IPs behind Cloudflare, tests servers by real IPs and websites by domain names.
 
 ## Bash, Ansible Automata
-⭐ A Bash script to create and test your starting Ansible template on a Docker container with SSH setup before running the Ansible project on a physical remote server:
-<br> <a href="https://github.com/nakigoe/ansible-automata/" target="_blank">github.com/nakigoe/ansible-automata/</a>
+⭐ A Bash script to create and test your starting Ansible template on a Docker container with SSH setup before running the Ansible project on a physical remote server.
 
 ## Python, Matplotlib library
-⭐ A customer from Japan www·nihonga·love, Matplotlib plotting: sea temperature, direction and strength of sea waves, wind direction according to CSV data coming from sea sensors:
-<br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
+⭐ A customer from Japan www·nihonga·love, Matplotlib plotting: sea temperature, direction and strength of sea waves, wind direction according to CSV data coming from sea sensors.
 
-<!-- ## Python, Django library
-⭐ A customer from Japan www·nihonga·love, a browser-based application for the company intranet that sends user files (PDF, photo) to a remote Amazon S3 server:
-<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a> -->
+## Python, Django library
+⭐ A customer from Japan www·nihonga·love, a browser-based application for the company intranet that sends user files (PDF, photo) to a remote Amazon S3 server.
 
 ## Python, Selenium library
 
 ### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (Writers' AI) Free Daily Tokens Collection Automation
 
-⭐YAML GitHub Actions bot that automates free daily tokens' collection on <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (that is my referral link. By using that link and subscribing to their service, You help the student (me) acquire a new laptop and fund my education abroad):
-<br> <a href="https://github.com/nakigoe/dreampress-ai-tokens" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
+⭐YAML GitHub Actions bot that automates free daily tokens' collection on <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (that is my referral link. By using that link and subscribing to their service, You help the student (me) acquire a new laptop and fund my education abroad).
 <br> Welcome to the writers' party!
 
 ### HH.RU (Russian Job Board) Automation
 
 ⭐ Automation of sending resumes and cover letters to HH·RU (Russian jobs website),
-send 200 resumes with cover letters in 15 minutes with one click:
-<br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
+send 200 resumes with cover letters in 15 minutes with one click.
 
-⭐YAML GitHub Actions automation of pushing one's resume up on HH·RU (Russian jobs website) every four hours:
-<br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
+⭐YAML GitHub Actions automation of pushing one's resume up on HH·RU (Russian jobs website) every four hours.
 
 ### Japanese Job Boards Automation
 
-⭐ En-gage.net (knowledge of Japanese is required) Automation: send 5,000 resumes with cover letters a day with one click:
- <br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+⭐ En-gage.net (knowledge of Japanese is required) Automation: send 5,000 resumes with cover letters a day with one click.
 
-⭐ Enworld.com (Japan Job Board for English Speakers) Automation: send 1,000 resumes with one click:
- <br> <a href="https://github.com/nakigoe/enworld-com-bot" target="_blank">github.com/nakigoe/enworld-com-bot</a>
+⭐ Enworld.com (Japan Job Board for English Speakers) Automation: send 1,000 resumes with one click,
 
 ### LinkedIn Automation
 
 ⭐ Automation of sending personal invitations to users on LinkedIn, including the username in the LinkedIn message,
-sending 200 messages in 15 minutes with one click:
-<br> <a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
+sending 200 messages in 15 minutes with one click.
 
-⭐ Automation of endorsing of all skills of all users in your contact list on LinkedIn:
-<br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
+⭐ Automation of endorsing of all skills of all users in your contact list on LinkedIn.
 
 ### GitHub Automation
 
-⭐ Automation of adding stars to all repositories of the accounts you indicated on GitHub:
-<br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
+⭐ Automation of adding stars to all repositories of the accounts you indicated on GitHub.
 
 ### Facebook Automation
 
-⭐ Facebook automation. Mass unsend unresponding friend requests to get a new friend request sending quota:
-<br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
+⭐ Facebook automation. Mass unsend unresponding friend requests to get a new friend request sending quota.
 
-⭐ Facebook: Automatically Connect with Your Friend's Friends. Pick a friend and auto-send friend requests with customized messages, including personal names, to all of his or her connections:
-<br> <a href="https://github.com/nakigoe/facebook-bot" target="_blank">github.com/nakigoe/facebook-bot</a>
+⭐ Facebook: Automatically Connect with Your Friend's Friends. Pick a friend and auto-send friend requests with customized messages, including personal names, to all of his or her connections.
 
 ### Moodle Automation
 
-⭐ Moodle: Mass-Send A Message to Everyone in Your School:
-<br> <a href="https://github.com/nakigoe/moodle-bot" target="_blank">github.com/nakigoe/moodle-bot</a>
+⭐ Moodle: Mass-Send A Message to Everyone in Your School.
 
-⭐ Moodle: Mass-Fill Your Moodle Questions Bank with Questions and Answers:
-<br> <a href="https://github.com/nakigoe/moodle-bank" target="_blank">github.com/nakigoe/moodle-bank</a>
+⭐ Moodle: Mass-Fill Your Moodle Questions Bank with Questions and Answers.
 
 ### Website Scraping
 
 ⭐ Any-test.ru Harvester: collect all opensource test questions, answers and dummies for further review and export into Your Moodle Questions Bank!
-<br> <a href="https://github.com/nakigoe/any-test-ru-reaper" target="_blank">github.com/nakigoe/any-test-ru-reaper</a>
 
 ## Microsoft Access VBA E-mailer
-⭐ Automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email):
-<br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
+⭐ Automation of sending HTML-Email via Gmail to a list of recipients in the database (allows you to avoid the bcc list, with this macro each recipient receives a separate email).
 
 ## .NET MAUI Blazor Hybrid Template 
 ⭐ Application that works as a website and simultaneously on Windows, macOS, iOS, Android and Tizen(Samsung):
