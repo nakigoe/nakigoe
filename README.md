@@ -1,6 +1,6 @@
 <kbd style="width: 2em; height: 2em;"><a href="#en">ENGLISH</a></kbd> | <kbd><a href="#ru">РУССКИЙ</a></kbd> | <kbd>[日本語](#ja)</kbd>
 
-<p>Due to repeated incidents of unauthorized use and exploitation of my projects without attribution or support, I have moved all automation projects to private repositories. If you are a hiring manager or have a potential job offer, please contact me through my LinkedIn profile.</p>
+<p name="en" id="en">Due to repeated incidents of unauthorized use and exploitation of my projects without attribution or support, I have moved all automation projects to private repositories. If you are a hiring manager or have a potential job offer, please contact me through my LinkedIn profile.</p>
 
 <p>Thank you for your understanding.</p>
 
@@ -210,7 +210,7 @@ sending 200 messages in 15 minutes with one click.
 
 <hr>
 
-<p>В связи с неоднократными случаями несанкционированного использования и эксплуатации моих проектов без указания авторства или поддержки, я переместил все проекты по автоматизации в частные репозитории. Если вы менеджер по найму или имеете предложение о работе, пожалуйста, свяжитесь со мной через мой профиль LinkedIn.</p>
+<p name="ru" id="ru">В связи с неоднократными случаями несанкционированного использования и эксплуатации моих проектов без указания авторства или поддержки, я переместил все проекты по автоматизации в частные репозитории. Если вы менеджер по найму или имеете предложение о работе, пожалуйста, свяжитесь со мной через мой профиль LinkedIn.</p>
 
 ## Контакт для профессиональных запросов
 Для менеджеров по найму и предложений о работе: [Nakigoe LinkedIn](https://www.linkedin.com/in/nakigoe)
