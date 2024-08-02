@@ -1,7 +1,5 @@
 <kbd style="width: 2em; height: 2em;"><a href="#en">ENGLISH</a></kbd> | <kbd><a href="#ru">РУССКИЙ</a></kbd> | <kbd>[日本語](#ja)</kbd>
 
-<h1 name="en" id="en">Update</h1>
-
 <p>Due to repeated incidents of unauthorized use and exploitation of my projects without attribution or support, I have moved all automation projects to private repositories. If you are a hiring manager or have a potential job offer, please contact me through my LinkedIn profile.</p>
 
 <p>Thank you for your understanding.</p>
@@ -10,7 +8,7 @@
 For hiring managers and potential job offers: [Nakigoe LinkedIn](https://www.linkedin.com/in/nakigoe)
 
 ## Skill, Server and Website Penetration Testing Script in Bash
-⭐ A Bash-script for server and website penetration testing. Tries to locate real server IPs behind Cloudflare, tests servers by real IPs and websites by domain names.
+⭐ A Bash-script for server and website penetration testing. Locates real server IPs behind Cloudflare, tests servers by real IPs and websites by domain names.
 
 ## Bash, Ansible Automata
 ⭐ A Bash script to create and test your starting Ansible template on a Docker container with SSH setup before running the Ansible project on a physical remote server.
@@ -118,9 +116,8 @@ sending 200 messages in 15 minutes with one click.
 ⭐ 日本からのお客様 www・nihonga・love、Matplotlib プロット: 海水温、海の波の方向と強さ、海のセンサーからの CSV データに基づく風向き:
 <br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
 
-<!-- ## Python、Django ライブラリ
-⭐ 日本からのお客様 www・nihonga・love。これは、ユーザー ファイル (PDF、写真) をリモートの Amazon S3 サーバーに送信する、企業イントラネット用のブラウザベースのアプリケーションです：
-<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a> -->
+## Python、Django ライブラリ
+⭐ 日本からのお客様 www・nihonga・love。これは、ユーザー ファイル (PDF、写真) をリモートの Amazon S3 サーバーに送信する、企業イントラネット用のブラウザベースのアプリケーションです。
 
 ## Python、Selenium ライブラリ
 
@@ -213,87 +210,72 @@ sending 200 messages in 15 minutes with one click.
 
 <hr>
 
-<h1 name="ru" id="ru">Репозиториев больше, смотрите также 
-<br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">СПИСОК РЕПОЗИТОРИЕВ NAKIGOE</a></h1>
+<p>В связи с неоднократными случаями несанкционированного использования и эксплуатации моих проектов без указания авторства или поддержки, я переместил все проекты по автоматизации в частные репозитории. Если вы менеджер по найму или имеете предложение о работе, пожалуйста, свяжитесь со мной через мой профиль LinkedIn.</p>
+
+## Контакт для профессиональных запросов
+Для менеджеров по найму и предложений о работе: [Nakigoe LinkedIn](https://www.linkedin.com/in/nakigoe)
 
 ## Skill, пентестинг серверов и веб-сайтов на проникновение
-⭐ Bash-скрипт для тестирования серверов и веб-сайтов на проникновение. Находит реальные IP-адреса серверов за Cloudflare, тестирует сервера по реальным IP и веб-сайты по доменным именам:
-<br> <a href="https://github.com/nakigoe/skill/" target="_blank">github.com/nakigoe/skill/</a>
+⭐ Bash-скрипт для тестирования серверов и веб-сайтов на проникновение. Находит реальные IP-адреса серверов за Cloudflare, тестирует сервера по реальным IP и веб-сайты по доменным именам.
 
 ## Bash, Ansible Automata
 ⭐ Bash-скрипт для создания и тестирования проекта Ansible из шаблона вместе с контейнером Docker и настроенным SSH-соединением и паролем перед запуском скрипта Ansible на удалённом физическом сервере.
-<br> <a href="https://github.com/nakigoe/ansible-automata/" target="_blank">github.com/nakigoe/ansible-automata/</a>
 
 ## Python, библиотека Matplotlib
-⭐ Заказчик из Японии www·nihonga·love, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков:
-<br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
+⭐ Заказчик из Японии www·nihonga·love, построение графиков температуры моря, направления и силы морских волн, направления ветра по данным в формате CSV, приходящих с морских датчиков.
 
-<!-- ## Python, библиотека Django
+## Python, библиотека Django
 ⭐ Заказчик из Японии www·nihonga·love, браузерное приложение для внутренней сети компании, которое отправляет файлы пользователя (PDF, фото) на удалённый сервер Amazon S3: 
-<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a> -->
+<br> <a href="https://github.com/nakigoe/django-form" target="_blank">github.com/nakigoe/django-form</a>
 
 ## Python, библиотека Selenium
 
 ### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (писательский искусственный интеллект): автоматизация сбора бесплатных ежедневных токенов
 
-⭐Бот YAML GitHub Actions, автоматизирует бесплатный ежедневный сбор токенов на <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (это моя реферальная ссылка; используя эту ссылку и подписываясь на их услуги, Вы помогаете студенту (мне) приобрести новый ноутбук и финансировать моё обучение за рубежом):
-<br> <a href="https://github.com/nakigoe/dreampress-ai-tokens#ru" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
+⭐Бот YAML GitHub Actions, автоматизирует бесплатный ежедневный сбор токенов на <a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> (это моя реферальная ссылка; используя эту ссылку и подписываясь на их услуги, Вы помогаете финансировать моё обучение за рубежом.
 
 ### Автоматизация HH.RU (русскоязычный сайт поиска работы)
 
 ⭐ Автоматизация отправки резюме и сопроводительных писем на HH·RU,
-отправка 200 резюме с сопроводительными письмами за 15 минут одним кликом: 
-<br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
+отправка 200 резюме с сопроводительными письмами за 15 минут одним кликом.
 
-⭐ YAML GitHub Actions автоматизация поднятия резюме на HH·RU каждые четыре часа: 
-<br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
+⭐ YAML GitHub Actions автоматизация поднятия резюме на HH·RU каждые четыре часа.
 
 ### Автоматизация японских сайтов работы
 
-⭐ Автоматизация Enworld.com (знание английского обязательно), отправка 1000 резюме одним кликом:
- <br> <a href="https://github.com/nakigoe/enworld-com-bot" target="_blank">github.com/nakigoe/enworld-com-bot</a>
+⭐ Автоматизация Enworld.com (знание английского обязательно), отправка 1000 резюме одним кликом.
 
-⭐ Автоматизация en-gage.net (знание японского обязательно), отправка 5000 резюме с сопроводительными письмами за день одним кликом: 
-<br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+⭐ Автоматизация en-gage.net (знание японского обязательно), отправка 5000 резюме с сопроводительными письмами за день одним кликом.
 
 ### Автоматизация LinkedIn
 
 ⭐ Автоматизация отправки личных приглашений пользователям на LinkedIn, включая имя пользователя в письмо
-отправка 200 сообщений за 15 минут одним кликом: 
-<br> <a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
+отправка 200 сообщений за 15 минут одним кликом.
 
-⭐ Автоматизация подтверждения всех скиллов всех пользователей в контакте на LinkedIn: 
-<br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
+⭐ Автоматизация подтверждения всех скиллов всех пользователей в контакте на LinkedIn.
 
 ### Автоматизация GitHub
 
-⭐ Автоматизация раздачи звёзд на все репозитории, указанные в списке аккаунтов GitHub:
-<br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
+⭐ Автоматизация раздачи звёзд на все репозитории, указанные в списке аккаунтов GitHub.
 
 ### Автоматизация Facebook
 
-⭐ Автоматизация Facebook. Массово отозвать все запросы на дружбу, оставшиеся без ответа, чтобы получить новую квоту для отправки новых приглашений:
-<br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
+⭐ Автоматизация Facebook. Массово отозвать все запросы на дружбу, оставшиеся без ответа, чтобы получить новую квоту для отправки новых приглашений.
 
 ⭐ Автоматизация Facebook: Автоматическое добавление друзей друзей. Выбиерите друга и автоматически отправьте приглашение и кастомизированное личное сообщение с именем нового друга всем друзьям друга!
-<br> <a href="https://github.com/nakigoe/facebook-bot" target="_blank">github.com/nakigoe/facebook-bot</a>
 
 ### Автоматизация Moodle
 
-⭐ Moodle: массовая отправка сообщений студентам и работникам школы / академии / ВУЗа:
-<br> <a href="https://github.com/nakigoe/moodle-bot" target="_blank">github.com/nakigoe/moodle-bot</a>
+⭐ Moodle: массовая отправка сообщений студентам и работникам школы / академии / ВУЗа.
 
-⭐ Moodle: массовое заполнение банка вопросов Moodle одним кликом:
-<br> <a href="https://github.com/nakigoe/moodle-bank" target="_blank">github.com/nakigoe/moodle-bank</a>
+⭐ Moodle: массовое заполнение банка вопросов Moodle одним кликом.
 
 ### Веб-скрейпинг (автоматизированный сбор данных с вебсайтов)
 
-⭐ Any-test.ru коллектор: сохраните все вопросы и ответы конкретного теста для последующей подготовки к тесту и / или сохранения в Вашем банке вопросов Moodle:
-<br> <a href="https://github.com/nakigoe/any-test-ru-reaper" target="_blank">github.com/nakigoe/any-test-ru-reaper</a>
+⭐ Any-test.ru коллектор: сохраните все вопросы и ответы конкретного теста для последующей подготовки к тесту и / или сохранения в Вашем банке вопросов Moodle.
 
 ## Microsoft Access VBA E-mailer
-⭐ Автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо): 
-<br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
+⭐ Автоматизация отправки HTML-Email через Gmail списку адресатов в базе данных (позволяет избежать bcc списка, с этим макросом каждый реципиент получает своё отдельное письмо).
 
 ## Темплейт .NET MAUI Blazor Hybrid
 ⭐ Приложение, которое работает как веб-сайт и одновременно на Windows, macOS, iOS, Android и Tizen(Samsung): 
