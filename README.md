@@ -1,7 +1,13 @@
 <kbd style="width: 2em; height: 2em;"><a href="#en">ENGLISH</a></kbd> | <kbd><a href="#ru">РУССКИЙ</a></kbd> | <kbd>[日本語](#ja)</kbd>
 
-<h1 name="en" id="en">There are more repositories, see also
-<br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">LIST OF NAKIGOE REPOSITORIES</a></h1>
+<h1 name="en" id="en">Update</h1>
+
+<p>Due to repeated incidents of unauthorized use and exploitation of my projects without attribution or support, I have moved all automation projects to private repositories. If you are a hiring manager or have a potential job offer, please contact me through my LinkedIn profile.</p>
+
+<p>Thank you for your understanding.</p>
+
+## Contact for Professional Inquiries
+For hiring managers and potential job offers: [Nakigoe LinkedIn](https://www.linkedin.com/in/nakigoe)
 
 ## Skill, Server and Website Penetration Testing Script in Bash
 ⭐ A Bash-script for server and website penetration testing. Tries to locate real server IPs behind Cloudflare, tests servers by real IPs and websites by domain names:
