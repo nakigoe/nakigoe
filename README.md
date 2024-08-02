@@ -102,20 +102,19 @@ sending 200 messages in 15 minutes with one click.
 
 <hr>
 
-<h1 name="ja" id="ja">さらに多くのリポジトリがあります。以下も参照してください。
-<br> <a href="https://github.com/nakigoe?tab=repositories" target="_blank">NAKIGOE リポジトリのリスト</a></h1>
+> <p name="ja" id="ja">私のプロジェクトが無断で使用され、サポートもなく利用されることが繰り返されたため、すべての自動化プロジェクトをプライベートリポジトリに移行しました。採用担当者または潜在的な仕事のオファーがある場合は、LinkedIn プロフィールを通じてご連絡ください。</p>
+
+## 専門的な問い合わせの連絡先
+採用マネージャーおよび仕事のオファーについては: [Nakigoe LinkedIn](https://www.linkedin.com/in/nakigoe)
 
 ## Skill、サーバーとウェブサイトのペネトレーションテスト用Bashスクリプト
-⭐ サーバーとウェブサイトのペネトレーションテスト用のBashスクリプト。Cloudflareの背後にある実際のサーバーIPを特定し、実際のIPアドレスでサーバーをテストし、ドメイン名でウェブサイトをテストします：
-<br> <a href="https://github.com/nakigoe/skill/" target="_blank">github.com/nakigoe/skill/</a>
+⭐ サーバーとウェブサイトのペネトレーションテスト用のBashスクリプト。Cloudflareの背後にある実際のサーバーIPを特定し、実際のIPアドレスでサーバーをテストし、ドメイン名でウェブサイトをテストします。
 
 ## Bash, Ansible Automata
-⭐ Bashスクリプトで、Ansibleプロジェクトの開始テンプレートと適切なファイル・フォルダを生成し、SSH設定とパスワードを含むDockerfileも作成します。これにより、Ansibleを実際のサーバーで実行する前に、プロジェクトを迅速に作成してテストできます:
-<br> <a href="https://github.com/nakigoe/ansible-automata/" target="_blank">github.com/nakigoe/ansible-automata/</a>
+⭐ Bashスクリプトで、Ansibleプロジェクトの開始テンプレートと適切なファイル・フォルダを生成し、SSH設定とパスワードを含むDockerfileも作成します。これにより、Ansibleを実際のサーバーで実行する前に、プロジェクトを迅速に作成してテストできます。
 
 ## Python、Matplotlib ライブラリ
-⭐ 日本からのお客様 www・nihonga・love、Matplotlib プロット: 海水温、海の波の方向と強さ、海のセンサーからの CSV データに基づく風向き:
-<br> <a href="https://github.com/nakigoe/sea" target="_blank">github.com/nakigoe/sea</a>
+⭐ 日本からのお客様 www・nihonga・love、Matplotlib プロット: 海水温、海の波の方向と強さ、海のセンサーからの CSV データに基づく風向き。
 
 ## Python、Django ライブラリ
 ⭐ 日本からのお客様 www・nihonga・love。これは、ユーザー ファイル (PDF、写真) をリモートの Amazon S3 サーバーに送信する、企業イントラネット用のブラウザベースのアプリケーションです。
@@ -124,65 +123,51 @@ sending 200 messages in 15 minutes with one click.
 
 ### <a href="https://fas.st/t/jptRsd9W" target="_blank">Dreampress.ai</a> (作家向けAI) 無料デイリートークン自動収集
 
-⭐YAML GitHub Actionsボットは、<a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> で無料デイリートークンを自動で収集します（こちらは私の紹介リンクです。このリンクを使用してサービスに登録すると、学生である私が新しいラップトップを手に入れ、海外での教育資金を支援できます）：
-<br> <a href="https://github.com/nakigoe/dreampress-ai-tokens" target="_blank">github.com/nakigoe/dreampress-ai-tokens</a>
+⭐YAML GitHub Actionsボットは、<a href="https://fas.st/t/jptRsd9W" target="_blank">dreampress.ai</a> で無料デイリートークンを自動で収集します（こちらは私の紹介リンクです。このリンクを使用してサービスに登録すると、学生である私が新しいラップトップを手に入れ、海外での教育資金を支援できます）。
 <br>パーティーへようこそ、読者のみなさん！
 
 ### HH.RU (ロシア語の仕事ウェブサイト）自動化
 
 ⭐ HH・RU（ロシアの求人サイト）への履歴書とカバーレターの送信の自動化、
 ワンクリックで 15 分以内にカバーレター付きの 200 件の履歴書を送信します。
-<br> <a href="https://github.com/nakigoe/hh-ru-bot" target="_blank">github.com/nakigoe/hh-ru-bot</a>
 
-⭐ YAML GitHub Actions の自動化により、履歴書を 4 時間ごとに HH・RU (ロシアの求人 Web サイト) にアップします：
-<br> <a href="https://github.com/nakigoe/hh-ru-raise-bot" target="_blank">github.com/nakigoe/hh-ru-raise-bot</a>
+⭐ YAML GitHub Actions の自動化により、履歴書を 4 時間ごとに HH・RU (ロシアの求人 Web サイト) にアップします。
 
 ### 日本の求人掲示板自動化
 
-⭐ En-gage.net（日本語の知識が必要です）自動化：一回のクリックで 1 日に 5,000 通の履歴書とカバーレターを送信：
-<br> <a href="https://github.com/nakigoe/en-gage-net-bot" target="_blank">github.com/nakigoe/en-gage-net-bot</a>
+⭐ En-gage.net（日本語の知識が必要です）自動化：一回のクリックで 1 日に 5,000 通の履歴書とカバーレターを送信。
 
-⭐ Enworld.com（英語話者向けの日本の求人掲示板）自動化：一回のクリックで 1,000 通の履歴書を送信：
-<br> <a href="https://github.com/nakigoe/enworld-com-bot" target="_blank">github.com/nakigoe/enworld-com-bot</a>
+⭐ Enworld.com（英語話者向けの日本の求人掲示板）自動化：一回のクリックで 1,000 通の履歴書を送信。
 
 ### LinkedIn 自動化
 
 ⭐ LinkedIn メッセージにユーザー名を含む、LinkedIn 上のユーザーへの個人招待状の送信の自動化、
-ワンクリックで 15 分間に 200 メッセージを送信:
-<br> <a href="https://github.com/nakigoe/linkedin-bot" target="_blank">github.com/nakigoe/linkedin-bot</a>
+ワンクリックで 15 分間に 200 メッセージを送信。
 
-⭐ LinkedIn の連絡先リスト内のすべてのユーザーのすべてのスキルの承認を自動化:
-<br> <a href="https://github.com/nakigoe/linkedin-endorse-bot" target="_blank">github.com/nakigoe/linkedin-endorse-bot</a>
+⭐ LinkedIn の連絡先リスト内のすべてのユーザーのすべてのスキルの承認を自動化。
 
 ### GitHub 自動化
 
-⭐ GitHub で指定したアカウントのすべてのリポジトリにスターを追加する自動化：
-<br> <a href="https://github.com/nakigoe/github-star" target="_blank">github.com/nakigoe/github-star</a>
+⭐ GitHub で指定したアカウントのすべてのリポジトリにスターを追加する自動化。
 
 ### Facebook 自動化
 
-⭐ Facebook 自動化。応答しないフレンドリクエストを大量に取り消して、新しい送信枠を取得：
-<br> <a href="https://github.com/nakigoe/facebook-unsend" target="_blank">github.com/nakigoe/facebook-unsend</a>
+⭐ Facebook 自動化。応答しないフレンドリクエストを大量に取り消して、新しい送信枠を取得。
 
-⭐ Facebook: 友人の友人と自動的につながります。友人を選び、彼または彼女の全てのつながりに、個人名を含んだカスタマイズされたメッセージで友達リクエストを自動送信します：
-<br> <a href="https://github.com/nakigoe/facebook-bot" target="_blank">github.com/nakigoe/facebook-bot</a>
+⭐ Facebook: 友人の友人と自動的につながります。友人を選び、彼または彼女の全てのつながりに、個人名を含んだカスタマイズされたメッセージで友達リクエストを自動送信します。
 
 ### Moodle 自動化
 
-⭐ Moodle: 友達の友達と自動的につながる
-<br> <a href="https://github.com/nakigoe/moodle-bot" target="_blank">github.com/nakigoe/moodle-bot</a>
+⭐ Moodle: 友達の友達と自動的につながる。
 
 ⭐ Moodle: 一回のクリックで Moodle 問題銀行を大量に記入！
-<br> <a href="https://github.com/nakigoe/moodle-bank" target="_blank">github.com/nakigoe/moodle-bank</a>
 
 ### Web Scraping ウェブ スクレイピング
 
 ⭐ Any-test.ru Harvester：すべてのオープンソースのテスト問題、回答、ダミーを収集し、後であなたの Moodle の問題バンクにエクスポートします！
-<br> <a href="https://github.com/nakigoe/any-test-ru-reaper" target="_blank">github.com/nakigoe/any-test-ru-reaper</a>
 
 ## Microsoft Access VBA 電子メーラー
-⭐ Gmail 経由でデータベース内の受信者のリストに HTML 電子メールを送信する自動化 (このマクロを使用すると、BCC リストを回避でき、各受信者は個別の電子メールを受信します):
-<br> <a href="https://github.com/nakigoe/mailer" target="_blank">github.com/nakigoe/mailer</a>
+⭐ Gmail 経由でデータベース内の受信者のリストに HTML 電子メールを送信する自動化 (このマクロを使用すると、BCC リストを回避でき、各受信者は個別の電子メールを受信します)。
 
 ## .NET MAUI Blazor Hybrid テンプレート
 ⭐ ウェブサイトとして動作し、同時に Windows、macOS、iOS、Android、Tizen (Samsung) 上で動作するアプリケーション:
