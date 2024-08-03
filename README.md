@@ -1,7 +1,7 @@
 <kbd style="width: 2em; height: 2em;"><a href="#en">ENGLISH</a></kbd> | <kbd><a href="#ru">РУССКИЙ</a></kbd> | <kbd>[日本語](#ja)</kbd>
 <hr>
 
-> <p name="en" id="en">Due to repeated incidents of unauthorized use and exploitation of my projects without attribution or support, I have moved all automation projects to private repositories. If you are a hiring manager or have a potential job offer, please contact me through my LinkedIn profile.</p>
+> <p name="en" id="en">Due to incidents of unauthorized use and exploitation of my projects, I have moved automation repositories to private. Unauthorized use of my scripts is prohibited. If you have any professional inquiries, please contact me directly through LinkedIn.</p>
 >
 > <p>Thank you for your understanding.</p>
 >
